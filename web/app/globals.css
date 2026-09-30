@@ -272,7 +272,7 @@ h2 {
   transition: background 0.15s, border-color 0.15s;
 }
 .dl:hover { background: #1b1b1e; border-color: rgba(255, 255, 255, 0.16); }
-.dl span { display: grid; gap: 2px; }
+.dl > span { display: grid; gap: 2px; }
 .dl strong { font-size: 15px; font-weight: 500; }
 .dl small { font-size: 13px; color: var(--muted); }
 .dl .end { margin-left: auto; color: var(--muted); }
@@ -325,7 +325,6 @@ h2 {
   max-width: 1120px;
   margin: 0 auto;
   padding: 48px 24px 56px;
-  border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 32px 64px;
@@ -459,3 +458,41 @@ h2 {
 .features-note strong { color: #fff; font-weight: 500; }
 
 .foot-brand .site-note { margin-top: 6px; font-size: 12px; color: #7c7c80; }
+
+/* Polish: one content width, one vertical rhythm, balanced headings */
+h1, h2, h3, .desk figcaption { text-wrap: balance; }
+p, li, summary { text-wrap: pretty; }
+.section, .spotlight, .download-row, .faq { max-width: 1000px; margin-top: 144px; }
+.cta { margin-top: 160px; }
+.download-row, .faq { gap: 64px; align-items: start; }
+.download-row > div:first-child, .faq h2 { padding-top: 4px; }
+.features-note { margin-top: 56px; }
+.footer { max-width: 1048px; margin: 112px auto 0; padding: 0 24px 56px; gap: 40px 64px; }
+.legal { margin-top: 8px; line-height: 1.6; max-width: 760px; }
+@media (max-width: 860px) {
+  .section, .spotlight, .download-row, .faq, .cta { margin-top: 104px; }
+  .download-row, .faq { gap: 28px; }
+  .footer { margin-top: 88px; gap: 32px; }
+}
+
+/* Motion: hero fades in on load (pure CSS, works without JS); sections reveal on scroll (Reveal.tsx). */
+@keyframes rise-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.hero > * { animation: rise-in 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero > :nth-child(2) { animation-delay: 60ms; }
+.hero > :nth-child(3) { animation-delay: 120ms; }
+.hero > :nth-child(4) { animation-delay: 180ms; }
+.hero > :nth-child(5) { animation-delay: 240ms; }
+.js-reveal :is(.mockup, .section-head, .grid.three > *, .features-note, .spotlight > *, .download-row > *, .faq > *, .cta, .footer > *) {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1), transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.js-reveal :is(.mockup, .section-head, .grid.three > *, .features-note, .spotlight > *, .download-row > *, .faq > *, .cta, .footer > *).is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero > * { animation: none; }
+  .js-reveal :is(.mockup, .section-head, .grid.three > *, .features-note, .spotlight > *, .download-row > *, .faq > *, .cta, .footer > *) { opacity: 1; transform: none; transition: none; }
+}

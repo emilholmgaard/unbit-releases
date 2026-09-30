@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Reveal from "@/components/Reveal";
 import { DESCRIPTION, SITE_NAME, SITE_URL, TITLE } from "@/lib/site";
 import "./globals.css";
 
@@ -45,11 +46,19 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+// Hide scroll-reveal elements only when JS runs and the user hasn't asked for reduced motion.
+// If the Reveal component doesn't mount within 3 s, show everything again.
+const revealBootstrap = `(function(){try{var d=document.documentElement;if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("js-reveal");setTimeout(function(){if(!d.classList.contains("reveal-ready"))d.classList.remove("js-reveal")},3000)}catch(e){}})();`;
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: revealBootstrap }} />
+      </head>
       <body>
         {children}
+        <Reveal />
         <Analytics />
         <SpeedInsights />
       </body>
