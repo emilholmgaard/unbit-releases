@@ -124,7 +124,7 @@ h1 {
 
 .actions { display: flex; justify-content: center; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
 
-.meta { margin: 18px 0 0; font-size: 13px; color: #6e6e73; }
+.meta { margin: 18px 0 0; font-size: 13px; color: #7c7c80; }
 
 /* Mockup */
 .mockup {
@@ -331,12 +331,12 @@ h2 {
   gap: 32px 64px;
   font-size: 14px;
 }
-.foot-brand p { margin: 12px 0 0; font-size: 13px; color: #6e6e73; }
+.foot-brand p { margin: 12px 0 0; font-size: 13px; color: #7c7c80; }
 .foot-cols { display: flex; gap: 72px; }
 .foot-cols h2 { margin: 0 0 12px; font-size: 14px; font-weight: 500; }
 .foot-cols a { display: block; margin-top: 8px; color: var(--muted); }
 .foot-cols a:hover { color: var(--text); }
-.legal { grid-column: 1 / -1; margin: 16px 0 0; font-size: 12px; color: #6e6e73; }
+.legal { grid-column: 1 / -1; margin: 16px 0 0; font-size: 12px; color: #7c7c80; }
 
 @media (max-width: 860px) {
   .links, .hide-sm { display: none; }
@@ -458,4 +458,4 @@ h2 {
 .features-note svg { flex: none; width: 20px; height: 20px; color: #fff; }
 .features-note strong { color: #fff; font-weight: 500; }
 
-.foot-brand .site-note { margin-top: 6px; font-size: 12px; color: #6e6e73; }
+.foot-brand .site-note { margin-top: 6px; font-size: 12px; color: #7c7c80; }
