@@ -1,5 +1,5 @@
 /** Canonical site URL. Change it here or set NEXT_PUBLIC_SITE_URL (e.g. when a custom domain is added). */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://unbit-mu.vercel.app").replace(/\/+$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://unbit.app").replace(/\/+$/, "");
 
 export const SITE_NAME = "Unbit";
 export const TITLE = "Unbit – Open BitLocker on Mac | Read BitLocker USB drives on macOS";
