@@ -1,22 +1,43 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { DESCRIPTION, SITE_NAME, SITE_URL, TITLE } from "@/lib/site";
 import "./globals.css";
 
-const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: "Unbit – Open BitLocker drives on your Mac",
-  description:
-    "Unbit opens BitLocker-encrypted USB drives on your Mac. Read-only, no extra drivers, everything runs locally. Notarized by Apple.",
-  icons: { icon: "/favicon.png", apple: "/apple-touch-icon.png" },
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  applicationName: SITE_NAME,
+  keywords: [
+    "open BitLocker on Mac",
+    "BitLocker reader for Mac",
+    "read BitLocker USB drive macOS",
+    "BitLocker To Go Mac",
+    "unlock BitLocker drive Mac",
+    "BitLocker recovery key Mac",
+  ],
+  authors: [{ name: "Emil Holmgaard" }],
+  creator: "Emil Holmgaard",
+  alternates: { canonical: "/" },
+  icons: { icon: [{ url: "/favicon.png", type: "image/png", sizes: "64x64" }], apple: "/apple-touch-icon.png" },
   openGraph: {
-    title: "Meet Unbit – Open BitLocker drives on your Mac",
-    description: "Read-only access to BitLocker-encrypted USB drives. No extra drivers. Everything runs locally.",
-    images: ["/icon.png"],
     type: "website",
+    url: "/",
+    siteName: SITE_NAME,
+    title: "Unbit – Open BitLocker drives on your Mac",
+    description: "Read BitLocker-encrypted USB drives on macOS with your password or recovery key. Read-only, no drivers, runs locally.",
+    locale: "en_US",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Unbit – Open BitLocker drives on your Mac" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unbit – Open BitLocker drives on your Mac",
+    description: "Read BitLocker-encrypted USB drives on macOS. Read-only, no drivers, runs locally.",
+    images: ["/og.png"],
+  },
+  robots: { index: true, follow: true },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
@@ -29,6 +50,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -333,7 +333,7 @@ h2 {
 }
 .foot-brand p { margin: 12px 0 0; font-size: 13px; color: #6e6e73; }
 .foot-cols { display: flex; gap: 72px; }
-.foot-cols h4 { margin: 0 0 12px; font-size: 14px; font-weight: 500; }
+.foot-cols h2 { margin: 0 0 12px; font-size: 14px; font-weight: 500; }
 .foot-cols a { display: block; margin-top: 8px; color: var(--muted); }
 .foot-cols a:hover { color: var(--text); }
 .legal { grid-column: 1 / -1; margin: 16px 0 0; font-size: 12px; color: #6e6e73; }
@@ -457,3 +457,5 @@ h2 {
 .features-note { display: flex; align-items: center; gap: 10px; margin: 48px 0 0; font-size: 15px; color: var(--muted); line-height: 1.6; }
 .features-note svg { flex: none; width: 20px; height: 20px; color: #fff; }
 .features-note strong { color: #fff; font-weight: 500; }
+
+.foot-brand .site-note { margin-top: 6px; font-size: 12px; color: #6e6e73; }

@@ -1,38 +1,56 @@
-const FEEDS = [
-  "https://emilholmgaard.github.io/unbit-releases/appcast.xml",
-  "https://raw.githubusercontent.com/emilholmgaard/unbit-releases/main/appcast.xml",
-];
-const DOWNLOAD_URL = "https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg";
-const FALLBACK = { version: "1.0.2", minOS: "13" };
+import Image from "next/image";
+import { DESCRIPTION, DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 
-// Re-read the Sparkle feed at most every 10 minutes (ISR), so new releases show up without a redeploy.
 export const revalidate = 600;
 
-async function latestRelease(): Promise<{ version: string; minOS: string }> {
-  for (const url of FEEDS) {
-    try {
-      const res = await fetch(url, { next: { revalidate } });
-      if (!res.ok) continue;
-      const xml = await res.text();
-      const item = xml.split("<item>")[1];
-      const version = item?.match(/<sparkle:shortVersionString>\s*([^<\s]+)\s*</)?.[1];
-      if (!version) continue;
-      const minOS = item.match(/<sparkle:minimumSystemVersion>\s*([^<\s]+)\s*</)?.[1]?.split(".")[0];
-      return { version, minOS: minOS ?? FALLBACK.minOS };
-    } catch {
-      // try the next feed
-    }
-  }
-  return FALLBACK;
-}
+const FAQ: { q: string; a: string }[] = [
+  { q: "Should I use the password or the recovery key?", a: "Either one works. The password is the one chosen when BitLocker was turned on for the drive. The recovery key is the 48-digit key (8 groups of 6 digits) that Windows asked you to save at the same time, for example to a Microsoft account, a file or a printout. Pick whichever you have in the app." },
+  { q: "Why does Unbit need Full Disk Access?", a: "To decrypt the drive, Unbit has to read the raw, encrypted data straight from the USB device. macOS only allows that for apps with Full Disk Access. Unbit uses it to read the drive you choose and nothing else." },
+  { q: "Can I write to the drive?", a: "No. Unbit is read-only by design and never writes to the drive. You can open files and copy them to your Mac. To change files on the drive, use Windows." },
+  { q: "Does it work on Apple silicon and Intel Macs?", a: "Yes. Unbit is a universal app that runs natively on both Apple silicon and Intel Macs with macOS 13 Ventura or later." },
+  { q: "Which drives are supported?", a: "External drives and USB sticks encrypted with BitLocker or BitLocker To Go on Windows 7 or later, using AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys. Once unlocked, macOS reads the file system on the drive itself." },
+  { q: "Is my password stored anywhere?", a: "Only if you tick \"Remember this drive on this Mac\". The code is then saved encrypted in your macOS keychain after a successful unlock, and you can forget it at any time from the gear menu. It's never sent anywhere." },
+];
 
 export default async function Home() {
-  const { version, minOS } = await latestRelease();
+  const { version, minOS, date } = await latestRelease();
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Unbit",
+      description: DESCRIPTION,
+      url: `${SITE_URL}/`,
+      image: `${SITE_URL}/icon.png`,
+      screenshot: [`${SITE_URL}/shot-unlock.png`, `${SITE_URL}/shot-open.png`],
+      operatingSystem: `macOS ${minOS} or later`,
+      applicationCategory: "UtilitiesApplication",
+      softwareVersion: version,
+      ...(date ? { datePublished: date } : {}),
+      downloadUrl: DOWNLOAD_URL,
+      installUrl: DOWNLOAD_URL,
+      releaseNotes: RELEASES_URL,
+      fileFormat: "application/x-apple-diskimage",
+      isAccessibleForFree: true,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      author: { "@type": "Person", name: "Emil Holmgaard" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: FAQ.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    },
+  ];
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <header className="nav-wrap">
           <div className="nav">
-            <a className="brand" href="/"><img src="/icon.png" width="24" height="24" alt="" />Unbit</a>
+            <a className="brand" href="/"><Image src="/icon.png" width={24} height={24} alt="" />Unbit</a>
             <nav className="links" aria-label="Main">
               <a href="#how">How it works</a>
               <a href="#features">Features</a>
@@ -51,7 +69,7 @@ export default async function Home() {
               <strong><span>Unbit {version}</span> is here</strong><span className="dot">·</span>What's new
               <span className="arrow" aria-hidden="true">↗</span>
             </a>
-            <h1>Meet <img className="inline-icon" src="/icon.png" width="96" height="96" alt="" /> Unbit</h1>
+            <h1>Meet <Image className="inline-icon" src="/icon.png" width={96} height={96} alt="" loading="eager" fetchPriority="high" /> Unbit</h1>
             <p className="sub">Open BitLocker-encrypted USB drives on your Mac. Read-only, with no extra drivers. Just enter the password or recovery key.</p>
             <div className="actions">
               <a className="pill white" href={DOWNLOAD_URL}>
@@ -74,11 +92,11 @@ export default async function Home() {
             </div>
             <div className="desk">
               <figure>
-                <img src="/shot-unlock.png" width="320" height="538" alt="Unbit menu bar window with a detected SanDisk drive and a BitLocker password field" />
+                <Image src="/shot-unlock.png" width={320} height={538} alt="Unbit menu bar window with a detected SanDisk drive and a BitLocker password field" />
                 <figcaption>Pick the drive and enter your password or recovery key</figcaption>
               </figure>
               <figure>
-                <img src="/shot-open.png" width="320" height="431" alt="Unbit menu bar window showing an open drive, read activity and storage used" />
+                <Image src="/shot-open.png" width={320} height={431} alt="Unbit menu bar window showing an open drive, read activity and storage used" />
                 <figcaption>Browse it in Finder, then eject it safely</figcaption>
               </figure>
             </div>
@@ -163,11 +181,11 @@ export default async function Home() {
           <section className="spotlight privacy" id="privacy" aria-labelledby="privacy-title">
             <div className="spot-text">
               <h2 id="privacy-title">Your drive never leaves your Mac</h2>
-              <p>Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere. There are no accounts and no analytics. The only thing Unbit fetches from the internet is its daily update check.</p>
+              <p>Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere. The app has no accounts, analytics or tracking. The only thing Unbit fetches from the internet is its daily update check.</p>
               <ul className="ticks">
                 <li>Decrypted data stays on your Mac</li>
                 <li>Saved codes live only in your keychain</li>
-                <li>No accounts, no tracking</li>
+                <li>No accounts, analytics or tracking in the app</li>
               </ul>
             </div>
             <div className="grad-panel orange" aria-hidden="true"><span>Stays on<br />your Mac</span></div>
@@ -197,30 +215,12 @@ export default async function Home() {
           <section className="faq" id="faq" aria-labelledby="faq-title">
             <h2 id="faq-title">FAQs</h2>
             <div className="faq-list">
-              <details open>
-                <summary>Should I use the password or the recovery key?</summary>
-                <p>Either one works. The password is the one chosen when BitLocker was turned on for the drive. The recovery key is the 48-digit key (8 groups of 6 digits) that Windows asked you to save at the same time, for example to a Microsoft account, a file or a printout. Pick whichever you have in the app.</p>
-              </details>
-              <details>
-                <summary>Why does Unbit need Full Disk Access?</summary>
-                <p>To decrypt the drive, Unbit has to read the raw, encrypted data straight from the USB device. macOS only allows that for apps with Full Disk Access. Unbit uses it to read the drive you choose and nothing else.</p>
-              </details>
-              <details>
-                <summary>Can I write to the drive?</summary>
-                <p>No. Unbit is read-only by design and never writes to the drive. You can open files and copy them to your Mac. To change files on the drive, use Windows.</p>
-              </details>
-              <details>
-                <summary>Does it work on Apple silicon and Intel Macs?</summary>
-                <p>Yes. Unbit is a universal app that runs natively on both Apple silicon and Intel Macs with macOS 13 Ventura or later.</p>
-              </details>
-              <details>
-                <summary>Which drives are supported?</summary>
-                <p>External drives and USB sticks encrypted with BitLocker or BitLocker To Go on Windows 7 or later, using AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys. Once unlocked, macOS reads the file system on the drive itself.</p>
-              </details>
-              <details>
-                <summary>Is my password stored anywhere?</summary>
-                <p>Only if you tick "Remember this drive on this Mac". The code is then saved encrypted in your macOS keychain after a successful unlock, and you can forget it at any time from the gear menu. It's never sent anywhere.</p>
-              </details>
+              {FAQ.map((item, i) => (
+                <details key={item.q} open={i === 0}>
+                  <summary>{item.q}</summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
             </div>
           </section>
 
@@ -234,26 +234,27 @@ export default async function Home() {
             </div>
             <div className="arcs" aria-hidden="true">
               <svg viewBox="0 0 900 360" fill="none" stroke="currentColor" strokeWidth="1.2"><circle cx="450" cy="470" r="400"/><circle cx="450" cy="470" r="250"/><circle cx="450" cy="470" r="120"/></svg>
-              <img src="/icon.png" width="112" height="112" alt="" />
+              <Image src="/icon.png" width={112} height={112} alt="" />
             </div>
           </section>
         </main>
 
         <footer className="footer">
           <div className="foot-brand">
-            <a className="brand" href="/"><img src="/icon.png" width="24" height="24" alt="" />Unbit</a>
+            <a className="brand" href="/"><Image src="/icon.png" width={24} height={24} alt="" />Unbit</a>
             <p>© 2026 Emil Holmgaard</p>
+            <p className="site-note">This website uses privacy-friendly, cookieless analytics.</p>
           </div>
           <div className="foot-cols">
             <div>
-              <h4>Product</h4>
+              <h2>Product</h2>
               <a href={DOWNLOAD_URL}>Download</a>
               <a href="#how">How it works</a>
               <a href="#features">Features</a>
               <a href="#privacy">Privacy</a>
             </div>
             <div>
-              <h4>Resources</h4>
+              <h2>Resources</h2>
               <a href="#faq">FAQ</a>
               <a href="https://github.com/emilholmgaard/unbit-releases/releases">Release notes</a>
               <a href="https://github.com/emilholmgaard/unbit-releases">GitHub</a>
