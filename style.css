@@ -429,3 +429,27 @@ h2 {
   .grad-panel { min-height: 220px; margin: 12px; }
   .grad-cta { padding-top: 64px; border-radius: 22px; }
 }
+
+/* Simplified layout: fewer boxes, more air. Only the mockup and gradient panels are panels. */
+.grid.three { gap: 56px 48px; }
+.step, .feature { padding: 0; }
+.step .num { margin-bottom: 18px; }
+.feature svg { margin-bottom: 18px; width: 24px; height: 24px; }
+.step h3, .feature h3 { margin: 0 0 8px; font-size: 17px; font-weight: 500; letter-spacing: -0.01em; }
+.step p, .feature p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.6; }
+#features .grid.three { row-gap: 64px; }
+
+.spotlight { gap: 40px; min-height: 0; overflow: visible; }
+.spot-text { padding: 0; }
+.spotlight .grad-panel { margin: 0; min-height: 320px; }
+
+.dl-list { gap: 0; border-top: 1px solid var(--line); }
+.dl { border-radius: 0; padding: 20px 4px; border-bottom: 1px solid var(--line); background: none; }
+.dl:hover { background: none; }
+.dl:hover strong { color: var(--soft); }
+
+@media (max-width: 860px) {
+  .grid.three, #features .grid.three { gap: 40px; }
+  .spotlight { gap: 24px; }
+  .spotlight .grad-panel { min-height: 220px; }
+}
