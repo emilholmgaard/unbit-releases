@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.4</title>
+      <pubDate>Wed, 30 Sep 2026 23:10:07 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Refreshed installer window.</li></ul>]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.4/Unbit-1.0.4.dmg" type="application/octet-stream" sparkle:edSignature="CRmd5EOUtXpJDlR86N/4bAntp7/rxFfC+M7XqjtEMkWz+xszdKFRuy546lxyCMSsZZolDe5F/L8WU7PeGbBUDA==" length="4209219" />
+    </item>
+    <item>
       <title>Version 1.0.3</title>
       <pubDate>Wed, 30 Sep 2026 23:06:17 +0000</pubDate>
       <sparkle:version>4</sparkle:version>
