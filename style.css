@@ -241,14 +241,6 @@ h2 {
 }
 .spot-text { padding: 56px 48px; }
 .spot-text h2 { font-size: clamp(26px, 3.2vw, 34px); }
-.spot-art {
-  align-self: stretch;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: radial-gradient(260px 260px at 60% 50%, rgba(255, 255, 255, 0.04), transparent 70%);
-}
-.spot-art svg { width: min(220px, 60%); height: auto; opacity: 0.95; }
 .ticks { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; font-size: 15px; color: var(--soft); }
 .ticks li { display: flex; align-items: center; gap: 10px; }
 .ticks li::before {
@@ -365,3 +357,75 @@ h2 {
 .spotlight .spot-text p { margin-top: 16px; font-size: 16px; }
 .section-head { max-width: 760px; }
 .dl small { white-space: nowrap; }
+
+/* Grainy gradient panels (x.ai style): soft colour fields fading into black, with film grain */
+:root {
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.grad-panel {
+  position: relative;
+  isolation: isolate;
+  align-self: stretch;
+  margin: 14px;
+  min-height: 292px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: #0b0b0c;
+}
+.grad-panel::after,
+.grad-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--grain);
+  background-size: 220px 220px;
+  mix-blend-mode: overlay;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: -1;
+}
+.grad-panel span {
+  font-size: clamp(30px, 3.4vw, 42px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-align: center;
+  color: #fff;
+}
+.grad-panel.teal {
+  background:
+    radial-gradient(115% 95% at 0% 100%, #6fd0e0 0%, #3aa7bf 18%, #17596b 38%, rgba(11, 11, 12, 0) 64%),
+    radial-gradient(60% 55% at 100% 0%, rgba(58, 167, 191, 0.35) 0%, rgba(11, 11, 12, 0) 70%),
+    #0b0b0c;
+}
+.grad-panel.orange {
+  background:
+    radial-gradient(85% 75% at 8% 0%, #f38a3c 0%, #e0681f 26%, rgba(120, 45, 10, 0.55) 48%, rgba(11, 11, 12, 0) 70%),
+    radial-gradient(80% 70% at 100% 100%, #f0a060 0%, #d4661f 24%, rgba(90, 35, 8, 0.5) 46%, rgba(11, 11, 12, 0) 68%),
+    radial-gradient(45% 45% at 52% 52%, #0b0b0c 0%, rgba(11, 11, 12, 0) 100%),
+    #0b0b0c;
+}
+
+/* Final CTA on a large, subtle grainy panel */
+.grad-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 1000px;
+  padding: 88px 24px 0;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(70% 60% at 50% 115%, rgba(224, 104, 31, 0.55) 0%, rgba(120, 45, 10, 0.25) 38%, rgba(11, 11, 12, 0) 70%),
+    radial-gradient(45% 45% at 0% 100%, rgba(58, 167, 191, 0.22) 0%, rgba(11, 11, 12, 0) 70%),
+    #0b0b0c;
+}
+.grad-cta .arcs { color: rgba(255, 255, 255, 0.16); }
+
+@media (max-width: 860px) {
+  .grad-panel { min-height: 220px; margin: 12px; }
+  .grad-cta { padding-top: 64px; border-radius: 22px; }
+}
