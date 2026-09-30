@@ -453,3 +453,7 @@ h2 {
   .spotlight { gap: 24px; }
   .spotlight .grad-panel { min-height: 220px; }
 }
+
+.features-note { display: flex; align-items: center; gap: 10px; margin: 48px 0 0; font-size: 15px; color: var(--muted); line-height: 1.6; }
+.features-note svg { flex: none; width: 20px; height: 20px; color: #fff; }
+.features-note strong { color: #fff; font-weight: 500; }
