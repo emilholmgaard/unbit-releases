@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Unbit – Open BitLocker drives on your Mac</title>
   <meta name="description" content="Unbit opens BitLocker-encrypted USB drives on your Mac. Read-only, no extra drivers, notarized by Apple.">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Unbit – Open BitLocker drives on your Mac">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Meet Unbit – Open BitLocker drives on your Mac">
   <meta property="og:description" content="Read-only access to BitLocker-encrypted USB drives. No extra drivers.">
   <meta property="og:image" content="https://emilholmgaard.github.io/unbit-releases/icon.png">
   <link rel="icon" type="image/png" href="favicon.png">
@@ -16,43 +15,75 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="nav">
+    <a class="brand" href="./"><img src="icon.png" width="24" height="24" alt="">Unbit</a>
+    <nav class="links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="https://github.com/emilholmgaard/unbit-releases/releases">Releases</a>
+      <a href="https://github.com/emilholmgaard/unbit-releases">GitHub</a>
+    </nav>
+    <a class="pill white small" href="https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg">Download</a>
+  </header>
+
   <main>
     <section class="hero">
-      <img class="icon" src="icon.png" width="128" height="128" alt="Unbit app icon">
-      <p class="eyebrow">Unbit for macOS</p>
-      <h1>Open BitLocker drives<br>on your Mac.</h1>
-      <p class="sub">Plug in an encrypted USB drive, enter the password or recovery key, and browse your files. Read-only. No extra drivers.</p>
-      <a class="download" href="https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg">
-        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
-        Download for Mac
+      <a class="badge" href="https://github.com/emilholmgaard/unbit-releases/releases/latest">
+        <strong><span class="js-version">Unbit 1.0.1</span> is here</strong><span class="dot">·</span>What's new
+        <span class="arrow" aria-hidden="true">↗</span>
       </a>
-      <p class="meta" id="meta">Version 1.0.1 · macOS 13 or later · Apple silicon &amp; Intel</p>
+      <h1>Meet <img class="inline-icon" src="icon.png" width="96" height="96" alt=""> Unbit</h1>
+      <p class="sub">Open BitLocker-encrypted USB drives on your Mac. Read-only, with no extra drivers. Just enter the password or recovery key.</p>
+      <div class="actions">
+        <a class="pill white" href="https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg">
+          <svg aria-hidden="true" width="15" height="18" viewBox="0 0 814 1000" fill="currentColor"><path d="M788 341c-6 4-108 62-108 190 0 149 131 201 135 203-1 3-21 72-69 142-43 62-88 124-156 124s-86-40-165-40c-77 0-104 41-167 41s-106-58-156-128C44 791 0 669 0 553c0-186 121-285 240-285 63 0 116 42 156 42 38 0 97-44 169-44 27 0 125 2 190 75zM554 167c30-35 51-84 51-133 0-7-1-14-2-19-48 2-106 32-141 73-27 31-53 80-53 130 0 8 1 15 2 18 3 1 9 1 14 1 43 0 97-29 129-70z"/></svg>
+          Download for macOS
+        </a>
+        <a class="pill dark" href="#how">How it works</a>
+      </div>
+      <p class="meta"><span class="js-meta">Version 1.0.1 · macOS 13 or later</span> · Apple silicon &amp; Intel · Notarized by Apple</p>
+    </section>
+
+    <section class="mockup" aria-label="Unbit in the menu bar">
+      <div class="menubar" aria-hidden="true">
+        <span class="mb-left"><b>Finder</b><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Window</span></span>
+        <span class="mb-right">
+          <span class="readout"><svg width="16" height="12" viewBox="0 0 24 16" fill="currentColor"><rect x="1" y="3" width="22" height="10" rx="3"/></svg>8,4M/s</span>
+          <span>Wed 23:54</span>
+        </span>
+      </div>
+      <div class="desk">
+        <figure>
+          <img src="shot-unlock.png" width="320" height="538" alt="Unbit menu bar window with a detected SanDisk drive and a BitLocker password field">
+          <figcaption>Pick the drive and enter your password or recovery key</figcaption>
+        </figure>
+        <figure>
+          <img src="shot-open.png" width="320" height="431" alt="Unbit menu bar window showing an open drive, read activity and storage used">
+          <figcaption>Browse it in Finder, then eject it safely</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="features" aria-label="Features">
-      <div class="feature">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div>
         <h2>Read-only by design</h2>
-        <p>Nothing is ever written to your drive, so your data stays exactly as it was.</p>
+        <p>Nothing is ever written to your drive, so your files stay exactly as they were.</p>
       </div>
-      <div class="feature">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><path d="M8 14h3"/></svg>
+      <div>
         <h2>No extra drivers</h2>
-        <p>No kernel extensions and no third-party file systems. It's a single notarized app.</p>
+        <p>No kernel extensions and no third-party file systems. It's a single app, notarized by Apple.</p>
       </div>
-      <div class="feature">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg>
+      <div>
         <h2>Lives in your menu bar</h2>
-        <p>One click away when you need it. Updates install automatically.</p>
+        <p>It's one click away when you need it, and updates install automatically.</p>
       </div>
     </section>
 
-    <section class="install" aria-labelledby="install-title">
-      <h2 id="install-title">Install in a minute</h2>
+    <section class="how" id="how" aria-labelledby="how-title">
+      <h2 id="how-title">Up and running in a minute</h2>
       <ol>
-        <li><span aria-hidden="true">1</span><div><strong>Drag to Applications</strong><p>Open the DMG and drag Unbit into your Applications folder.</p></div></li>
-        <li><span aria-hidden="true">2</span><div><strong>Grant Full Disk Access</strong><p>Unbit walks you through it. You only do this once.</p></div></li>
-        <li><span aria-hidden="true">3</span><div><strong>Plug in your drive</strong><p>Click the menu bar icon and enter your password or recovery key.</p></div></li>
+        <li><span>1</span><strong>Drag to Applications</strong><p>Open the DMG and drag Unbit into your Applications folder.</p></li>
+        <li><span>2</span><strong>Grant Full Disk Access</strong><p>Unbit walks you through it. You only do this once.</p></li>
+        <li><span>3</span><strong>Plug in your drive</strong><p>Click the menu bar icon and enter the password or recovery key.</p></li>
       </ol>
     </section>
   </main>
@@ -67,13 +98,13 @@
         var doc = new DOMParser().parseFromString(text, "application/xml");
         var ns = "http://www.andymatuschak.org/xml-namespaces/sparkle";
         var item = doc.getElementsByTagName("item")[0];
-        if (!item) return;
-        var version = item.getElementsByTagNameNS(ns, "shortVersionString")[0];
-        var minOS = item.getElementsByTagNameNS(ns, "minimumSystemVersion")[0];
+        var version = item && item.getElementsByTagNameNS(ns, "shortVersionString")[0];
         if (!version) return;
+        var minOS = item.getElementsByTagNameNS(ns, "minimumSystemVersion")[0];
+        var v = version.textContent.trim();
         var major = minOS ? minOS.textContent.trim().split(".")[0] : "13";
-        document.getElementById("meta").textContent =
-          "Version " + version.textContent.trim() + " · macOS " + major + " or later · Apple silicon & Intel";
+        document.querySelectorAll(".js-version").forEach(function (el) { el.textContent = "Unbit " + v; });
+        document.querySelectorAll(".js-meta").forEach(function (el) { el.textContent = "Version " + v + " · macOS " + major + " or later"; });
       })
       .catch(function () {});
   </script>
