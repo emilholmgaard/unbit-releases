@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Unbit – Open BitLocker on Mac | Read BitLocker USB drives on macOS",
+    "description": "Open BitLocker-encrypted USB drives on your Mac. Unbit reads BitLocker drives on macOS with your password or recovery key. Read-only, no drivers, runs locally. Free.",
+    "ogTitle": "Unbit – Open BitLocker drives on your Mac",
+    "ogDescription": "Read BitLocker-encrypted USB drives on macOS with your password or recovery key. Read-only, no drivers, runs locally.",
+    "twitterDescription": "Read BitLocker-encrypted USB drives on macOS. Read-only, no drivers, runs locally.",
+    "keywords": [
+      "open BitLocker on Mac",
+      "BitLocker reader for Mac",
+      "read BitLocker USB drive macOS",
+      "BitLocker To Go Mac",
+      "unlock BitLocker drive Mac",
+      "BitLocker recovery key Mac"
+    ]
+  },
+  "nav": {
+    "label": "Main",
+    "how": "How it works",
+    "features": "Features",
+    "privacy": "Privacy",
+    "faq": "FAQ",
+    "releases": "Releases",
+    "download": "Download"
+  },
+  "language": { "label": "Language" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "is here",
+    "badgeLink": "What's new",
+    "h1Before": "Meet",
+    "h1After": "Unbit",
+    "sub": "Open BitLocker-encrypted USB drives on your Mac. Read-only, with no extra drivers. Just enter the password or recovery key.",
+    "download": "Download for macOS",
+    "how": "How it works",
+    "metaVersion": "Version {version} · macOS {minOS} or later",
+    "metaRest": "Apple silicon & Intel · Notarized by Apple"
+  },
+  "mockup": {
+    "label": "Unbit in the menu bar",
+    "menu": ["File", "Edit", "View", "Go", "Window"],
+    "day": "Wed",
+    "unlockAlt": "Unbit menu bar window with a detected SanDisk drive and a BitLocker password field",
+    "unlockCaption": "Pick the drive and enter your password or recovery key",
+    "openAlt": "Unbit menu bar window showing an open drive, read activity and storage used",
+    "openCaption": "Browse it in Finder, then eject it safely"
+  },
+  "how": {
+    "title": "How it works",
+    "intro": "Three steps from a locked drive to your files in Finder. The one-time setup takes about a minute.",
+    "steps": [
+      { "title": "Drag to Applications", "text": "Open the DMG and drag Unbit into your Applications folder. It lives in the menu bar, not the Dock." },
+      { "title": "Grant Full Disk Access", "text": "A short guide shows you where to switch it on in System Settings. You only do this once." },
+      { "title": "Plug in and unlock", "text": "Unbit spots the drive automatically. Enter the password or recovery key, and the drive opens in Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Read-only, by design",
+    "text": "Unbit attaches the unlocked drive to macOS as read-only. Nothing is ever written back, so your files, and the drive's BitLocker setup, stay exactly as Windows left them. Copy what you need, then eject.",
+    "panel": "Read-only"
+  },
+  "features": {
+    "title": "Everything you need, nothing you don't",
+    "intro": "A small, focused menu bar app for one job: getting to the files on a BitLocker drive.",
+    "items": [
+      { "title": "No drivers or macFUSE", "text": "No kernel extensions and no third-party file system layers. Unbit uses the disk image support already built into macOS." },
+      { "title": "Decrypts on demand", "text": "Only the parts macOS actually reads are decrypted, as they're read. No waiting for a full copy of the drive." },
+      { "title": "Detects drives automatically", "text": "Plug in a drive and it appears in Unbit right away. Unplug it and Unbit tidies up on its own." },
+      { "title": "Safe eject", "text": "One click closes the drive and ejects it, so you know when it's safe to unplug. Quitting closes an open drive first." },
+      { "title": "Remembers drives, if you want", "text": "Tick \"Remember this drive\" and the code is stored encrypted in your macOS keychain, never anywhere else." },
+      { "title": "Updates itself, notarized by Apple", "text": "Signed with Developer ID and notarized by Apple. New versions arrive through signed automatic updates." }
+    ],
+    "languagesTitle": "Available in 11 languages",
+    "languagesText": "English, Danish, Swedish, Norwegian, German, French, Spanish, Italian, Dutch, Finnish and Polish."
+  },
+  "privacy": {
+    "title": "Your drive never leaves your Mac",
+    "text": "Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere. The app has no accounts, analytics or tracking. The only thing Unbit fetches from the internet is its daily update check.",
+    "ticks": [
+      "Decrypted data stays on your Mac",
+      "Saved codes live only in your keychain",
+      "No accounts, analytics or tracking in the app"
+    ],
+    "panelLine1": "Stays on",
+    "panelLine2": "your Mac"
+  },
+  "download": {
+    "title": "Download Unbit",
+    "text": "Free to download. One app for Apple silicon and Intel Macs running macOS 13 or later.",
+    "macosSub": "Apple silicon & Intel",
+    "allTitle": "All releases",
+    "allSub": "Release notes and earlier versions"
+  },
+  "faq": {
+    "title": "FAQs",
+    "items": [
+      { "q": "Should I use the password or the recovery key?", "a": "Either one works. The password is the one chosen when BitLocker was turned on for the drive. The recovery key is the 48-digit key (8 groups of 6 digits) that Windows asked you to save at the same time, for example to a Microsoft account, a file or a printout. Pick whichever you have in the app." },
+      { "q": "Why does Unbit need Full Disk Access?", "a": "To decrypt the drive, Unbit has to read the raw, encrypted data straight from the USB device. macOS only allows that for apps with Full Disk Access. Unbit uses it to read the drive you choose and nothing else." },
+      { "q": "Can I write to the drive?", "a": "No. Unbit is read-only by design and never writes to the drive. You can open files and copy them to your Mac. To change files on the drive, use Windows." },
+      { "q": "Does it work on Apple silicon and Intel Macs?", "a": "Yes. Unbit is a universal app that runs natively on both Apple silicon and Intel Macs with macOS 13 Ventura or later." },
+      { "q": "Which drives are supported?", "a": "External drives and USB sticks encrypted with BitLocker or BitLocker To Go on Windows 7 or later, using AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys. Once unlocked, macOS reads the file system on the drive itself." },
+      { "q": "Is my password stored anywhere?", "a": "Only if you tick \"Remember this drive on this Mac\". The code is then saved encrypted in your macOS keychain after a successful unlock, and you can forget it at any time from the gear menu. It's never sent anywhere." }
+    ]
+  },
+  "cta": {
+    "title": "Open your BitLocker drive",
+    "text": "No Windows PC required.",
+    "download": "Download for macOS",
+    "whatsNew": "What's new"
+  },
+  "footer": {
+    "siteNote": "This website uses privacy-friendly, cookieless analytics.",
+    "product": "Product",
+    "resources": "Resources",
+    "releaseNotes": "Release notes",
+    "github": "GitHub",
+    "legal": "BitLocker is a trademark of Microsoft Corporation. Unbit is an independent app and is not affiliated with or endorsed by Microsoft. Mac and macOS are trademarks of Apple Inc."
+  }
+}

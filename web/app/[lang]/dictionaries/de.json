@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – BitLocker auf dem Mac öffnen | BitLocker-USB-Laufwerke unter macOS lesen",
+    "description": "Öffne BitLocker-verschlüsselte USB-Laufwerke auf deinem Mac. Unbit liest BitLocker-Laufwerke unter macOS mit deinem Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal. Kostenlos.",
+    "ogTitle": "Unbit – BitLocker-Laufwerke auf deinem Mac öffnen",
+    "ogDescription": "Lies BitLocker-verschlüsselte USB-Laufwerke unter macOS mit deinem Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal.",
+    "twitterDescription": "Lies BitLocker-verschlüsselte USB-Laufwerke unter macOS. Nur Lesen, keine Treiber, läuft lokal.",
+    "keywords": ["BitLocker auf dem Mac öffnen", "BitLocker-Reader für Mac", "BitLocker-USB-Laufwerk unter macOS lesen", "BitLocker To Go Mac", "BitLocker-Laufwerk auf dem Mac entsperren", "BitLocker-Wiederherstellungsschlüssel Mac"]
+  },
+  "nav": { "label": "Hauptnavigation", "how": "So funktioniert’s", "features": "Funktionen", "privacy": "Datenschutz", "faq": "FAQ", "releases": "Releases", "download": "Herunterladen" },
+  "language": { "label": "Sprache" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "ist da",
+    "badgeLink": "Was ist neu",
+    "h1Before": "Das ist",
+    "h1After": "Unbit",
+    "sub": "Öffne BitLocker-verschlüsselte USB-Laufwerke auf deinem Mac. Nur Lesen, ohne zusätzliche Treiber. Gib einfach das Passwort oder den Wiederherstellungsschlüssel ein.",
+    "download": "Für macOS herunterladen",
+    "how": "So funktioniert’s",
+    "metaVersion": "Version {version} · macOS {minOS} oder neuer",
+    "metaRest": "Apple Silicon & Intel · Von Apple notarisiert"
+  },
+  "mockup": {
+    "label": "Unbit in der Menüleiste",
+    "menu": ["Ablage", "Bearbeiten", "Darstellung", "Gehe zu", "Fenster"],
+    "day": "Mi.",
+    "unlockAlt": "Unbit-Fenster in der Menüleiste mit einem erkannten SanDisk-Laufwerk und einem Feld für das BitLocker-Passwort",
+    "unlockCaption": "Wähle das Laufwerk und gib dein Passwort oder deinen Wiederherstellungsschlüssel ein",
+    "openAlt": "Unbit-Fenster in der Menüleiste mit einem geöffneten Laufwerk, Leseaktivität und belegtem Speicher",
+    "openCaption": "Durchsuche es im Finder und wirf es dann sicher aus"
+  },
+  "how": {
+    "title": "So funktioniert’s",
+    "intro": "Drei Schritte vom gesperrten Laufwerk zu deinen Dateien im Finder. Die einmalige Einrichtung dauert etwa eine Minute.",
+    "steps": [
+      { "title": "In „Programme“ ziehen", "text": "Öffne das DMG und ziehe Unbit in deinen Ordner „Programme“. Die App lebt in der Menüleiste, nicht im Dock." },
+      { "title": "Festplattenvollzugriff erlauben", "text": "Eine kurze Anleitung zeigt dir, wo du ihn in den Systemeinstellungen aktivierst. Das musst du nur einmal machen." },
+      { "title": "Anschließen und entsperren", "text": "Unbit erkennt das Laufwerk automatisch. Gib das Passwort oder den Wiederherstellungsschlüssel ein, und das Laufwerk öffnet sich im Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Nur Lesen – mit Absicht",
+    "text": "Unbit bindet das entsperrte Laufwerk als schreibgeschützt in macOS ein. Es wird nie etwas zurückgeschrieben, sodass deine Dateien und die BitLocker-Konfiguration des Laufwerks genau so bleiben, wie Windows sie hinterlassen hat. Kopiere, was du brauchst, und wirf das Laufwerk dann aus.",
+    "panel": "Nur Lesen"
+  },
+  "features": {
+    "title": "Alles, was du brauchst – und nichts, was du nicht brauchst",
+    "intro": "Eine kleine, fokussierte Menüleisten-App für eine einzige Aufgabe: an die Dateien auf einem BitLocker-Laufwerk zu kommen.",
+    "items": [
+      { "title": "Keine Treiber oder macFUSE", "text": "Keine Kernel-Erweiterungen und keine Dateisystem-Schichten von Drittanbietern. Unbit nutzt die Unterstützung für Disk-Images, die bereits in macOS eingebaut ist." },
+      { "title": "Entschlüsselt bei Bedarf", "text": "Nur die Teile, die macOS tatsächlich liest, werden entschlüsselt – genau dann, wenn sie gelesen werden. Kein Warten auf eine vollständige Kopie des Laufwerks." },
+      { "title": "Erkennt Laufwerke automatisch", "text": "Schließe ein Laufwerk an, und es erscheint sofort in Unbit. Ziehst du es ab, räumt Unbit von selbst auf." },
+      { "title": "Sicher auswerfen", "text": "Ein Klick schließt das Laufwerk und wirft es aus, sodass du weißt, wann du es gefahrlos abziehen kannst. Beim Beenden wird ein geöffnetes Laufwerk zuerst geschlossen." },
+      { "title": "Merkt sich Laufwerke – wenn du willst", "text": "Aktiviere „Dieses Laufwerk merken“, und der Code wird verschlüsselt in deinem macOS-Schlüsselbund gespeichert – nirgendwo sonst." },
+      { "title": "Aktualisiert sich selbst, von Apple notarisiert", "text": "Mit Developer ID signiert und von Apple notarisiert. Neue Versionen kommen über signierte automatische Updates." }
+    ],
+    "languagesTitle": "In 11 Sprachen verfügbar",
+    "languagesText": "Englisch, Dänisch, Schwedisch, Norwegisch, Deutsch, Französisch, Spanisch, Italienisch, Niederländisch, Finnisch und Polnisch."
+  },
+  "privacy": {
+    "title": "Dein Laufwerk verlässt nie deinen Mac",
+    "text": "Die Entschlüsselung findet komplett auf deinem Mac statt. Dein Passwort, dein Wiederherstellungsschlüssel und deine Dateien werden nirgendwohin gesendet. Die App hat keine Konten, keine Analyse und kein Tracking. Das Einzige, was Unbit aus dem Internet abruft, ist die tägliche Update-Prüfung.",
+    "ticks": ["Entschlüsselte Daten bleiben auf deinem Mac", "Gespeicherte Codes liegen nur in deinem Schlüsselbund", "Keine Konten, Analyse oder Tracking in der App"],
+    "panelLine1": "Bleibt auf",
+    "panelLine2": "deinem Mac"
+  },
+  "download": {
+    "title": "Unbit herunterladen",
+    "text": "Kostenlos. Eine App für Macs mit Apple Silicon und Intel unter macOS 13 oder neuer.",
+    "macosSub": "Apple Silicon & Intel",
+    "allTitle": "Alle Releases",
+    "allSub": "Versionshinweise und frühere Versionen"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      { "q": "Soll ich das Passwort oder den Wiederherstellungsschlüssel verwenden?", "a": "Beides funktioniert. Das Passwort ist das, das du beim Aktivieren von BitLocker für das Laufwerk gewählt hast. Der Wiederherstellungsschlüssel ist der 48-stellige Schlüssel (8 Gruppen à 6 Ziffern), den Windows dich gleichzeitig zu sichern gebeten hat, zum Beispiel in einem Microsoft-Konto, in einer Datei oder als Ausdruck. Wähle in der App einfach das, was du hast." },
+      { "q": "Warum braucht Unbit den Festplattenvollzugriff?", "a": "Um das Laufwerk zu entschlüsseln, muss Unbit die rohen, verschlüsselten Daten direkt vom USB-Gerät lesen. macOS erlaubt das nur Apps mit Festplattenvollzugriff. Unbit nutzt ihn, um das von dir gewählte Laufwerk zu lesen – und sonst nichts." },
+      { "q": "Kann ich auf das Laufwerk schreiben?", "a": "Nein. Unbit ist absichtlich schreibgeschützt und schreibt nie auf das Laufwerk. Du kannst Dateien öffnen und auf deinen Mac kopieren. Um Dateien auf dem Laufwerk zu ändern, verwende Windows." },
+      { "q": "Läuft es auf Macs mit Apple Silicon und Intel?", "a": "Ja. Unbit ist eine Universal-App, die nativ auf Apple Silicon und Intel läuft, mit macOS 13 Ventura oder neuer." },
+      { "q": "Welche Laufwerke werden unterstützt?", "a": "Externe Laufwerke und USB-Sticks, die unter Windows 7 oder neuer mit BitLocker oder BitLocker To Go verschlüsselt wurden, mit AES-CBC (mit oder ohne Elephant-Diffuser) oder AES-XTS und 128- oder 256-Bit-Schlüsseln. Nach dem Entsperren liest macOS das Dateisystem auf dem Laufwerk selbst." },
+      { "q": "Wird mein Passwort irgendwo gespeichert?", "a": "Nur wenn du „Dieses Laufwerk auf diesem Mac merken“ aktivierst. Der Code wird dann nach erfolgreichem Entsperren verschlüsselt in deinem macOS-Schlüsselbund gesichert, und du kannst ihn jederzeit über das Zahnrad-Menü vergessen. Er wird nie irgendwohin gesendet." }
+    ]
+  },
+  "cta": { "title": "Öffne dein BitLocker-Laufwerk", "text": "Kein Windows-PC nötig.", "download": "Für macOS herunterladen", "whatsNew": "Was ist neu" },
+  "footer": {
+    "siteNote": "Diese Website verwendet datenschutzfreundliche Analysen ohne Cookies.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "releaseNotes": "Versionshinweise",
+    "github": "GitHub",
+    "legal": "BitLocker ist eine Marke der Microsoft Corporation. Unbit ist eine unabhängige App und steht in keiner Verbindung zu Microsoft und wird von Microsoft weder unterstützt noch empfohlen. Mac und macOS sind Marken von Apple Inc."
+  }
+}

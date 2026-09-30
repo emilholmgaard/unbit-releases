@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Apri BitLocker su Mac | Leggi le unità USB BitLocker su macOS",
+    "description": "Apri le unità USB cifrate con BitLocker sul tuo Mac. Unbit legge le unità BitLocker su macOS con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale. Gratis.",
+    "ogTitle": "Unbit – Apri le unità BitLocker sul tuo Mac",
+    "ogDescription": "Leggi le unità USB cifrate con BitLocker su macOS con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale.",
+    "twitterDescription": "Leggi le unità USB cifrate con BitLocker su macOS. Sola lettura, nessun driver, funziona in locale.",
+    "keywords": ["aprire BitLocker su Mac", "lettore BitLocker per Mac", "leggere unità USB BitLocker macOS", "BitLocker To Go Mac", "sbloccare unità BitLocker Mac", "chiave di ripristino BitLocker Mac"]
+  },
+  "nav": { "label": "Principale", "how": "Come funziona", "features": "Funzioni", "privacy": "Privacy", "faq": "FAQ", "releases": "Versioni", "download": "Scarica" },
+  "language": { "label": "Lingua" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "è arrivato",
+    "badgeLink": "Novità",
+    "h1Before": "Scopri",
+    "h1After": "Unbit",
+    "sub": "Apri le unità USB cifrate con BitLocker sul tuo Mac. Sola lettura, senza driver aggiuntivi. Basta inserire la password o la chiave di ripristino.",
+    "download": "Scarica per macOS",
+    "how": "Come funziona",
+    "metaVersion": "Versione {version} · macOS {minOS} o successivo",
+    "metaRest": "Apple silicon e Intel · Notarizzata da Apple"
+  },
+  "mockup": {
+    "label": "Unbit nella barra dei menu",
+    "menu": ["File", "Modifica", "Vista", "Vai", "Finestra"],
+    "day": "mer",
+    "unlockAlt": "Finestra di Unbit nella barra dei menu con un’unità SanDisk rilevata e un campo per la password BitLocker",
+    "unlockCaption": "Scegli l’unità e inserisci la password o la chiave di ripristino",
+    "openAlt": "Finestra di Unbit nella barra dei menu con un’unità aperta, l’attività di lettura e lo spazio utilizzato",
+    "openCaption": "Sfogliala nel Finder, poi espellila in sicurezza"
+  },
+  "how": {
+    "title": "Come funziona",
+    "intro": "Tre passaggi da un’unità bloccata ai tuoi file nel Finder. La configurazione iniziale richiede circa un minuto.",
+    "steps": [
+      { "title": "Trascina in Applicazioni", "text": "Apri il DMG e trascina Unbit nella cartella Applicazioni. Vive nella barra dei menu, non nel Dock." },
+      { "title": "Concedi l’Accesso completo al disco", "text": "Una breve guida ti mostra dove attivarlo in Impostazioni di Sistema. Lo fai una volta sola." },
+      { "title": "Collega e sblocca", "text": "Unbit rileva l’unità automaticamente. Inserisci la password o la chiave di ripristino e l’unità si apre nel Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Sola lettura, per scelta",
+    "text": "Unbit collega l’unità sbloccata a macOS in sola lettura. Non viene mai riscritto nulla, quindi i tuoi file e la configurazione BitLocker dell’unità restano esattamente come li ha lasciati Windows. Copia ciò che ti serve, poi espelli.",
+    "panel": "Sola lettura"
+  },
+  "features": {
+    "title": "Tutto ciò che serve, niente di superfluo",
+    "intro": "Una piccola app per la barra dei menu, pensata per un solo compito: accedere ai file di un’unità BitLocker.",
+    "items": [
+      { "title": "Nessun driver né macFUSE", "text": "Nessuna estensione del kernel e nessun livello di file system di terze parti. Unbit usa il supporto per le immagini disco già integrato in macOS." },
+      { "title": "Decifra su richiesta", "text": "Vengono decifrate solo le parti che macOS legge davvero, nel momento in cui le legge. Nessuna attesa per una copia completa dell’unità." },
+      { "title": "Rileva le unità automaticamente", "text": "Collega un’unità e compare subito in Unbit. Scollegala e Unbit mette in ordine da solo." },
+      { "title": "Espulsione sicura", "text": "Un clic chiude l’unità e la espelle, così sai quando puoi scollegarla senza rischi. Uscendo dall’app, un’unità aperta viene prima chiusa." },
+      { "title": "Ricorda le unità, se vuoi", "text": "Seleziona “Ricorda questa unità” e il codice viene salvato cifrato nel portachiavi di macOS, e da nessun’altra parte." },
+      { "title": "Si aggiorna da sola, notarizzata da Apple", "text": "Firmata con Developer ID e notarizzata da Apple. Le nuove versioni arrivano tramite aggiornamenti automatici firmati." }
+    ],
+    "languagesTitle": "Disponibile in 11 lingue",
+    "languagesText": "Inglese, danese, svedese, norvegese, tedesco, francese, spagnolo, italiano, olandese, finlandese e polacco."
+  },
+  "privacy": {
+    "title": "La tua unità non lascia mai il tuo Mac",
+    "text": "La decifratura avviene interamente sul tuo Mac. La tua password, la chiave di ripristino e i tuoi file non vengono mai inviati da nessuna parte. L’app non ha account, analisi né tracciamento. L’unica cosa che Unbit scarica da internet è il controllo giornaliero degli aggiornamenti.",
+    "ticks": ["I dati decifrati restano sul tuo Mac", "I codici salvati risiedono solo nel tuo portachiavi", "Nessun account, analisi o tracciamento nell’app"],
+    "panelLine1": "Resta sul",
+    "panelLine2": "tuo Mac"
+  },
+  "download": {
+    "title": "Scarica Unbit",
+    "text": "Download gratuito. Un’unica app per Mac Apple silicon e Intel con macOS 13 o successivo.",
+    "macosSub": "Apple silicon e Intel",
+    "allTitle": "Tutte le versioni",
+    "allSub": "Note di rilascio e versioni precedenti"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Devo usare la password o la chiave di ripristino?", "a": "Vanno bene entrambe. La password è quella scelta quando BitLocker è stato attivato sull’unità. La chiave di ripristino è la chiave di 48 cifre (8 gruppi di 6 cifre) che Windows ti ha chiesto di salvare nello stesso momento, ad esempio in un account Microsoft, in un file o su carta. Scegli nell’app quella che hai." },
+      { "q": "Perché Unbit ha bisogno dell’Accesso completo al disco?", "a": "Per decifrare l’unità, Unbit deve leggere i dati grezzi e cifrati direttamente dal dispositivo USB. macOS lo consente solo alle app con Accesso completo al disco. Unbit lo usa per leggere l’unità che scegli e nient’altro." },
+      { "q": "Posso scrivere sull’unità?", "a": "No. Unbit è in sola lettura per scelta e non scrive mai sull’unità. Puoi aprire i file e copiarli sul tuo Mac. Per modificare i file sull’unità, usa Windows." },
+      { "q": "Funziona sui Mac Apple silicon e Intel?", "a": "Sì. Unbit è un’app universale che funziona in modo nativo sia su Apple silicon sia su Intel con macOS 13 Ventura o successivo." },
+      { "q": "Quali unità sono supportate?", "a": "Unità esterne e chiavette USB cifrate con BitLocker o BitLocker To Go su Windows 7 o successivo, con AES-CBC (con o senza diffusore Elephant) o AES-XTS, con chiavi a 128 o 256 bit. Una volta sbloccata, macOS legge da sé il file system dell’unità." },
+      { "q": "La mia password viene salvata da qualche parte?", "a": "Solo se selezioni “Ricorda questa unità su questo Mac”. Il codice viene allora salvato cifrato nel portachiavi di macOS dopo uno sblocco riuscito e puoi dimenticarlo in qualsiasi momento dal menu a forma di ingranaggio. Non viene mai inviato da nessuna parte." }
+    ]
+  },
+  "cta": { "title": "Apri la tua unità BitLocker", "text": "Non serve un PC Windows.", "download": "Scarica per macOS", "whatsNew": "Novità" },
+  "footer": {
+    "siteNote": "Questo sito usa statistiche rispettose della privacy, senza cookie.",
+    "product": "Prodotto",
+    "resources": "Risorse",
+    "releaseNotes": "Note di rilascio",
+    "github": "GitHub",
+    "legal": "BitLocker è un marchio di Microsoft Corporation. Unbit è un’app indipendente e non è affiliata a Microsoft né approvata da Microsoft. Mac e macOS sono marchi di Apple Inc."
+  }
+}

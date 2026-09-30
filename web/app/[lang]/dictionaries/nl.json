@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – BitLocker openen op Mac | BitLocker-USB-schijven lezen op macOS",
+    "description": "Open met BitLocker versleutelde USB-schijven op je Mac. Unbit leest BitLocker-schijven op macOS met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal. Gratis.",
+    "ogTitle": "Unbit – Open BitLocker-schijven op je Mac",
+    "ogDescription": "Lees met BitLocker versleutelde USB-schijven op macOS met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal.",
+    "twitterDescription": "Lees met BitLocker versleutelde USB-schijven op macOS. Alleen-lezen, geen drivers, draait lokaal.",
+    "keywords": ["BitLocker openen op Mac", "BitLocker-lezer voor Mac", "BitLocker-USB-schijf lezen macOS", "BitLocker To Go Mac", "BitLocker-schijf ontgrendelen Mac", "BitLocker-herstelsleutel Mac"]
+  },
+  "nav": { "label": "Hoofdmenu", "how": "Hoe het werkt", "features": "Functies", "privacy": "Privacy", "faq": "FAQ", "releases": "Releases", "download": "Download" },
+  "language": { "label": "Taal" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "is er",
+    "badgeLink": "Wat is er nieuw",
+    "h1Before": "Maak kennis met",
+    "h1After": "Unbit",
+    "sub": "Open met BitLocker versleutelde USB-schijven op je Mac. Alleen-lezen en zonder extra drivers. Voer gewoon het wachtwoord of de herstelsleutel in.",
+    "download": "Download voor macOS",
+    "how": "Hoe het werkt",
+    "metaVersion": "Versie {version} · macOS {minOS} of nieuwer",
+    "metaRest": "Apple silicon en Intel · Genotariseerd door Apple"
+  },
+  "mockup": {
+    "label": "Unbit in de menubalk",
+    "menu": ["Archief", "Wijzig", "Weergave", "Ga", "Venster"],
+    "day": "wo",
+    "unlockAlt": "Unbit-venster in de menubalk met een gedetecteerde SanDisk-schijf en een veld voor het BitLocker-wachtwoord",
+    "unlockCaption": "Kies de schijf en voer je wachtwoord of herstelsleutel in",
+    "openAlt": "Unbit-venster in de menubalk met een geopende schijf, leesactiviteit en gebruikte opslagruimte",
+    "openCaption": "Blader erdoorheen in de Finder en werp de schijf daarna veilig uit"
+  },
+  "how": {
+    "title": "Hoe het werkt",
+    "intro": "Drie stappen van een vergrendelde schijf naar je bestanden in de Finder. De eenmalige configuratie duurt ongeveer een minuut.",
+    "steps": [
+      { "title": "Sleep naar Apps", "text": "Open de DMG en sleep Unbit naar je map Apps. De app woont in de menubalk, niet in het Dock." },
+      { "title": "Geef Volledige schijftoegang", "text": "Een korte gids laat zien waar je het inschakelt in Systeeminstellingen. Dit doe je maar één keer." },
+      { "title": "Sluit aan en ontgrendel", "text": "Unbit herkent de schijf automatisch. Voer het wachtwoord of de herstelsleutel in en de schijf opent in de Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Alleen-lezen, by design",
+    "text": "Unbit koppelt de ontgrendelde schijf als alleen-lezen aan macOS. Er wordt nooit iets teruggeschreven, dus je bestanden en de BitLocker-configuratie van de schijf blijven precies zoals Windows ze achterliet. Kopieer wat je nodig hebt en werp de schijf uit.",
+    "panel": "Alleen-lezen"
+  },
+  "features": {
+    "title": "Alles wat je nodig hebt, niets wat je niet nodig hebt",
+    "intro": "Een kleine, gerichte menubalk-app voor één taak: bij de bestanden op een BitLocker-schijf komen.",
+    "items": [
+      { "title": "Geen drivers of macFUSE", "text": "Geen kernel-extensies en geen bestandssysteemlagen van derden. Unbit gebruikt de ondersteuning voor schijfkopieën die al in macOS zit." },
+      { "title": "Ontsleutelt op aanvraag", "text": "Alleen de delen die macOS echt leest worden ontsleuteld, op het moment dat ze gelezen worden. Je hoeft niet te wachten op een volledige kopie van de schijf." },
+      { "title": "Herkent schijven automatisch", "text": "Sluit een schijf aan en hij verschijnt meteen in Unbit. Koppel hem los en Unbit ruimt zelf op." },
+      { "title": "Veilig uitwerpen", "text": "Eén klik sluit de schijf en werpt hem uit, zodat je weet wanneer je hem veilig kunt loskoppelen. Bij het afsluiten wordt een geopende schijf eerst gesloten." },
+      { "title": "Onthoudt schijven, als je dat wilt", "text": "Vink “Onthoud deze schijf” aan en de code wordt versleuteld opgeslagen in je macOS-sleutelhanger, nergens anders." },
+      { "title": "Werkt zichzelf bij, genotariseerd door Apple", "text": "Ondertekend met Developer ID en genotariseerd door Apple. Nieuwe versies komen binnen via ondertekende automatische updates." }
+    ],
+    "languagesTitle": "Beschikbaar in 11 talen",
+    "languagesText": "Engels, Deens, Zweeds, Noors, Duits, Frans, Spaans, Italiaans, Nederlands, Fins en Pools."
+  },
+  "privacy": {
+    "title": "Je schijf verlaat je Mac nooit",
+    "text": "Het ontsleutelen gebeurt volledig op je Mac. Je wachtwoord, herstelsleutel en bestanden worden nergens naartoe gestuurd. De app heeft geen accounts, analyses of tracking. Het enige wat Unbit van internet haalt, is de dagelijkse controle op updates.",
+    "ticks": ["Ontsleutelde gegevens blijven op je Mac", "Opgeslagen codes staan alleen in je sleutelhanger", "Geen accounts, analyses of tracking in de app"],
+    "panelLine1": "Blijft op",
+    "panelLine2": "je Mac"
+  },
+  "download": {
+    "title": "Download Unbit",
+    "text": "Gratis te downloaden. Eén app voor Macs met Apple silicon en Intel met macOS 13 of nieuwer.",
+    "macosSub": "Apple silicon en Intel",
+    "allTitle": "Alle releases",
+    "allSub": "Release-opmerkingen en eerdere versies"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      { "q": "Moet ik het wachtwoord of de herstelsleutel gebruiken?", "a": "Allebei werken. Het wachtwoord is het wachtwoord dat je koos toen BitLocker voor de schijf werd ingeschakeld. De herstelsleutel is de sleutel van 48 cijfers (8 groepen van 6 cijfers) die Windows je vroeg op te slaan, bijvoorbeeld in een Microsoft-account, een bestand of een afdruk. Kies in de app degene die je hebt." },
+      { "q": "Waarom heeft Unbit Volledige schijftoegang nodig?", "a": "Om de schijf te ontsleutelen moet Unbit de ruwe, versleutelde gegevens rechtstreeks van het USB-apparaat lezen. macOS staat dat alleen toe voor apps met Volledige schijftoegang. Unbit gebruikt het om de schijf te lezen die jij kiest, en niets anders." },
+      { "q": "Kan ik naar de schijf schrijven?", "a": "Nee. Unbit is bewust alleen-lezen en schrijft nooit naar de schijf. Je kunt bestanden openen en naar je Mac kopiëren. Gebruik Windows om bestanden op de schijf te wijzigen." },
+      { "q": "Werkt het op Macs met Apple silicon en Intel?", "a": "Ja. Unbit is een universele app die native draait op zowel Apple silicon als Intel met macOS 13 Ventura of nieuwer." },
+      { "q": "Welke schijven worden ondersteund?", "a": "Externe schijven en USB-sticks die onder Windows 7 of nieuwer zijn versleuteld met BitLocker of BitLocker To Go, met AES-CBC (met of zonder Elephant-diffuser) of AES-XTS en sleutels van 128 of 256 bits. Na het ontgrendelen leest macOS zelf het bestandssysteem op de schijf." },
+      { "q": "Wordt mijn wachtwoord ergens opgeslagen?", "a": "Alleen als je “Onthoud deze schijf op deze Mac” aanvinkt. De code wordt dan na een geslaagde ontgrendeling versleuteld opgeslagen in je macOS-sleutelhanger en je kunt hem op elk moment vergeten via het tandwielmenu. Hij wordt nooit ergens naartoe gestuurd." }
+    ]
+  },
+  "cta": { "title": "Open je BitLocker-schijf", "text": "Geen Windows-pc nodig.", "download": "Download voor macOS", "whatsNew": "Wat is er nieuw" },
+  "footer": {
+    "siteNote": "Deze website gebruikt privacyvriendelijke analyses zonder cookies.",
+    "product": "Product",
+    "resources": "Bronnen",
+    "releaseNotes": "Release-opmerkingen",
+    "github": "GitHub",
+    "legal": "BitLocker is een handelsmerk van Microsoft Corporation. Unbit is een onafhankelijke app en is niet gelieerd aan of goedgekeurd door Microsoft. Mac en macOS zijn handelsmerken van Apple Inc."
+  }
+}

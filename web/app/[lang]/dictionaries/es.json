@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Abre BitLocker en Mac | Lee unidades USB con BitLocker en macOS",
+    "description": "Abre unidades USB cifradas con BitLocker en tu Mac. Unbit lee unidades BitLocker en macOS con tu contraseña o clave de recuperación. Solo lectura, sin controladores, funciona en local. Gratis.",
+    "ogTitle": "Unbit – Abre unidades BitLocker en tu Mac",
+    "ogDescription": "Lee unidades USB cifradas con BitLocker en macOS con tu contraseña o clave de recuperación. Solo lectura, sin controladores, funciona en local.",
+    "twitterDescription": "Lee unidades USB cifradas con BitLocker en macOS. Solo lectura, sin controladores, funciona en local.",
+    "keywords": ["abrir BitLocker en Mac", "lector de BitLocker para Mac", "leer unidad USB BitLocker macOS", "BitLocker To Go Mac", "desbloquear unidad BitLocker Mac", "clave de recuperación BitLocker Mac"]
+  },
+  "nav": { "label": "Principal", "how": "Cómo funciona", "features": "Funciones", "privacy": "Privacidad", "faq": "Preguntas", "releases": "Versiones", "download": "Descargar" },
+  "language": { "label": "Idioma" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "ya está aquí",
+    "badgeLink": "Novedades",
+    "h1Before": "Conoce",
+    "h1After": "Unbit",
+    "sub": "Abre unidades USB cifradas con BitLocker en tu Mac. Solo lectura y sin controladores adicionales. Solo tienes que introducir la contraseña o la clave de recuperación.",
+    "download": "Descargar para macOS",
+    "how": "Cómo funciona",
+    "metaVersion": "Versión {version} · macOS {minOS} o posterior",
+    "metaRest": "Apple silicon e Intel · Notarizada por Apple"
+  },
+  "mockup": {
+    "label": "Unbit en la barra de menús",
+    "menu": ["Archivo", "Edición", "Visualización", "Ir", "Ventana"],
+    "day": "mié",
+    "unlockAlt": "Ventana de Unbit en la barra de menús con una unidad SanDisk detectada y un campo para la contraseña de BitLocker",
+    "unlockCaption": "Elige la unidad e introduce tu contraseña o clave de recuperación",
+    "openAlt": "Ventana de Unbit en la barra de menús con una unidad abierta, actividad de lectura y espacio usado",
+    "openCaption": "Explórala en el Finder y expúlsala de forma segura"
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "intro": "Tres pasos para pasar de una unidad bloqueada a tus archivos en el Finder. La configuración inicial lleva aproximadamente un minuto.",
+    "steps": [
+      { "title": "Arrastra a Aplicaciones", "text": "Abre el DMG y arrastra Unbit a la carpeta Aplicaciones. Vive en la barra de menús, no en el Dock." },
+      { "title": "Concede Acceso total al disco", "text": "Una breve guía te muestra dónde activarlo en Ajustes del Sistema. Solo tienes que hacerlo una vez." },
+      { "title": "Conecta y desbloquea", "text": "Unbit detecta la unidad automáticamente. Introduce la contraseña o la clave de recuperación y la unidad se abre en el Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Solo lectura, por diseño",
+    "text": "Unbit monta la unidad desbloqueada en macOS como solo lectura. Nunca se escribe nada, así que tus archivos y la configuración de BitLocker de la unidad quedan exactamente como los dejó Windows. Copia lo que necesites y expulsa la unidad.",
+    "panel": "Solo lectura"
+  },
+  "features": {
+    "title": "Todo lo que necesitas, nada que no necesites",
+    "intro": "Una app de barra de menús pequeña y centrada en una sola tarea: acceder a los archivos de una unidad BitLocker.",
+    "items": [
+      { "title": "Sin controladores ni macFUSE", "text": "Sin extensiones del kernel ni capas de sistema de archivos de terceros. Unbit usa la compatibilidad con imágenes de disco que ya incluye macOS." },
+      { "title": "Descifra bajo demanda", "text": "Solo se descifran las partes que macOS lee realmente, a medida que las lee. Sin esperar a una copia completa de la unidad." },
+      { "title": "Detecta las unidades automáticamente", "text": "Conecta una unidad y aparece enseguida en Unbit. Desconéctala y Unbit lo deja todo en orden por sí solo." },
+      { "title": "Expulsión segura", "text": "Un clic cierra la unidad y la expulsa, para que sepas cuándo puedes desconectarla sin riesgo. Al salir de la app, primero se cierra la unidad abierta." },
+      { "title": "Recuerda las unidades, si quieres", "text": "Activa “Recordar esta unidad” y el código se guarda cifrado en el llavero de macOS, y en ningún otro sitio." },
+      { "title": "Se actualiza solo, notarizada por Apple", "text": "Firmada con Developer ID y notarizada por Apple. Las nuevas versiones llegan mediante actualizaciones automáticas firmadas." }
+    ],
+    "languagesTitle": "Disponible en 11 idiomas",
+    "languagesText": "Inglés, danés, sueco, noruego, alemán, francés, español, italiano, neerlandés, finés y polaco."
+  },
+  "privacy": {
+    "title": "Tu unidad nunca sale de tu Mac",
+    "text": "El descifrado se realiza por completo en tu Mac. Tu contraseña, tu clave de recuperación y tus archivos nunca se envían a ningún sitio. La app no tiene cuentas, analíticas ni seguimiento. Lo único que Unbit descarga de internet es su comprobación diaria de actualizaciones.",
+    "ticks": ["Los datos descifrados se quedan en tu Mac", "Los códigos guardados solo están en tu llavero", "Sin cuentas, analíticas ni seguimiento en la app"],
+    "panelLine1": "Se queda en",
+    "panelLine2": "tu Mac"
+  },
+  "download": {
+    "title": "Descargar Unbit",
+    "text": "Descarga gratuita. Una sola app para Mac con Apple silicon e Intel con macOS 13 o posterior.",
+    "macosSub": "Apple silicon e Intel",
+    "allTitle": "Todas las versiones",
+    "allSub": "Notas de la versión y versiones anteriores"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Debo usar la contraseña o la clave de recuperación?", "a": "Sirven las dos. La contraseña es la que elegiste al activar BitLocker en la unidad. La clave de recuperación es la clave de 48 dígitos (8 grupos de 6 dígitos) que Windows te pidió guardar en ese momento, por ejemplo en una cuenta de Microsoft, en un archivo o impresa. Elige en la app la que tengas." },
+      { "q": "¿Por qué necesita Unbit Acceso total al disco?", "a": "Para descifrar la unidad, Unbit tiene que leer los datos cifrados sin procesar directamente del dispositivo USB. macOS solo lo permite a las apps con Acceso total al disco. Unbit lo usa para leer la unidad que eliges y nada más." },
+      { "q": "¿Puedo escribir en la unidad?", "a": "No. Unbit es de solo lectura por diseño y nunca escribe en la unidad. Puedes abrir archivos y copiarlos a tu Mac. Para modificar archivos de la unidad, usa Windows." },
+      { "q": "¿Funciona en Mac con Apple silicon e Intel?", "a": "Sí. Unbit es una app universal que se ejecuta de forma nativa tanto en Apple silicon como en Intel con macOS 13 Ventura o posterior." },
+      { "q": "¿Qué unidades son compatibles?", "a": "Unidades externas y memorias USB cifradas con BitLocker o BitLocker To Go en Windows 7 o posterior, con AES-CBC (con o sin difusor Elephant) o AES-XTS, con claves de 128 o 256 bits. Una vez desbloqueada, macOS lee el sistema de archivos de la unidad por sí mismo." },
+      { "q": "¿Se guarda mi contraseña en algún sitio?", "a": "Solo si activas “Recordar esta unidad en este Mac”. Entonces el código se guarda cifrado en el llavero de macOS tras un desbloqueo correcto, y puedes olvidarlo cuando quieras desde el menú de la rueda dentada. Nunca se envía a ningún sitio." }
+    ]
+  },
+  "cta": { "title": "Abre tu unidad BitLocker", "text": "No hace falta un PC con Windows.", "download": "Descargar para macOS", "whatsNew": "Novedades" },
+  "footer": {
+    "siteNote": "Este sitio web usa analíticas respetuosas con la privacidad y sin cookies.",
+    "product": "Producto",
+    "resources": "Recursos",
+    "releaseNotes": "Notas de la versión",
+    "github": "GitHub",
+    "legal": "BitLocker es una marca comercial de Microsoft Corporation. Unbit es una app independiente y no está afiliada a Microsoft ni cuenta con su aprobación. Mac y macOS son marcas comerciales de Apple Inc."
+  }
+}

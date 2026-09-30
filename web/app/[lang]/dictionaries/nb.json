@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Åpne BitLocker på Mac | Les BitLocker USB-stasjoner på macOS",
+    "description": "Åpne BitLocker-krypterte USB-stasjoner på Macen din. Unbit leser BitLocker-stasjoner på macOS med passordet eller gjenopprettingsnøkkelen din. Kun lesing, ingen drivere, kjører lokalt. Gratis.",
+    "ogTitle": "Unbit – Åpne BitLocker-stasjoner på Macen din",
+    "ogDescription": "Les BitLocker-krypterte USB-stasjoner på macOS med passordet eller gjenopprettingsnøkkelen din. Kun lesing, ingen drivere, kjører lokalt.",
+    "twitterDescription": "Les BitLocker-krypterte USB-stasjoner på macOS. Kun lesing, ingen drivere, kjører lokalt.",
+    "keywords": ["åpne BitLocker på Mac", "BitLocker-leser for Mac", "les BitLocker USB-stasjon macOS", "BitLocker To Go Mac", "lås opp BitLocker-stasjon Mac", "BitLocker gjenopprettingsnøkkel Mac"]
+  },
+  "nav": { "label": "Hovedmeny", "how": "Slik fungerer det", "features": "Funksjoner", "privacy": "Personvern", "faq": "FAQ", "releases": "Utgivelser", "download": "Last ned" },
+  "language": { "label": "Språk" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "er her",
+    "badgeLink": "Nytt",
+    "h1Before": "Møt",
+    "h1After": "Unbit",
+    "sub": "Åpne BitLocker-krypterte USB-stasjoner på Macen din. Kun lesing og uten ekstra drivere. Bare skriv inn passordet eller gjenopprettingsnøkkelen.",
+    "download": "Last ned for macOS",
+    "how": "Slik fungerer det",
+    "metaVersion": "Versjon {version} · macOS {minOS} eller nyere",
+    "metaRest": "Apple silicon og Intel · Notarisert av Apple"
+  },
+  "mockup": {
+    "label": "Unbit i menylinjen",
+    "menu": ["Arkiv", "Rediger", "Vis", "Gå", "Vindu"],
+    "day": "ons.",
+    "unlockAlt": "Unbit-vindu i menylinjen med en gjenkjent SanDisk-stasjon og et felt for BitLocker-passord",
+    "unlockCaption": "Velg stasjonen og skriv inn passordet eller gjenopprettingsnøkkelen",
+    "openAlt": "Unbit-vindu i menylinjen som viser en åpen stasjon, leseaktivitet og brukt plass",
+    "openCaption": "Bla gjennom den i Finder, og løs den deretter ut trygt"
+  },
+  "how": {
+    "title": "Slik fungerer det",
+    "intro": "Tre trinn fra en låst stasjon til filene dine i Finder. Oppsettet, som bare gjøres én gang, tar omtrent et minutt.",
+    "steps": [
+      { "title": "Dra til Programmer", "text": "Åpne DMG-filen og dra Unbit til Programmer-mappen. Appen bor i menylinjen, ikke i Dock." },
+      { "title": "Gi Full disktilgang", "text": "En kort veiledning viser deg hvor du slår det på i Systeminnstillinger. Du gjør dette bare én gang." },
+      { "title": "Koble til og lås opp", "text": "Unbit finner stasjonen automatisk. Skriv inn passordet eller gjenopprettingsnøkkelen, så åpnes stasjonen i Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Kun lesing – med vilje",
+    "text": "Unbit kobler den opplåste stasjonen til macOS som skrivebeskyttet. Ingenting skrives noen gang tilbake, så filene dine og stasjonens BitLocker-oppsett forblir nøyaktig slik Windows etterlot dem. Kopier det du trenger, og løs ut stasjonen.",
+    "panel": "Kun lesing"
+  },
+  "features": {
+    "title": "Alt du trenger, ingenting du ikke trenger",
+    "intro": "En liten, fokusert menylinje-app for én jobb: å komme til filene på en BitLocker-stasjon.",
+    "items": [
+      { "title": "Ingen drivere eller macFUSE", "text": "Ingen kjerneutvidelser og ingen filsystemlag fra tredjeparter. Unbit bruker støtten for diskavbildninger som allerede er innebygd i macOS." },
+      { "title": "Dekrypterer ved behov", "text": "Bare delene macOS faktisk leser, dekrypteres – idet de leses. Ingen venting på en full kopi av stasjonen." },
+      { "title": "Finner stasjoner automatisk", "text": "Koble til en stasjon, så dukker den opp i Unbit med en gang. Koble den fra, så rydder Unbit opp av seg selv." },
+      { "title": "Trygg utløsing", "text": "Ett klikk lukker stasjonen og løser den ut, så du vet når det er trygt å koble den fra. Når du avslutter, lukkes en åpen stasjon først." },
+      { "title": "Husker stasjoner, hvis du vil", "text": "Velg «Husk denne stasjonen», så lagres koden kryptert i macOS-nøkkelringen din – aldri andre steder." },
+      { "title": "Oppdaterer seg selv, notarisert av Apple", "text": "Signert med Developer ID og notarisert av Apple. Nye versjoner kommer som signerte automatiske oppdateringer." }
+    ],
+    "languagesTitle": "Tilgjengelig på 11 språk",
+    "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, nederlandsk, finsk og polsk."
+  },
+  "privacy": {
+    "title": "Stasjonen din forlater aldri Macen din",
+    "text": "Dekrypteringen skjer helt og holdent på Macen din. Passordet, gjenopprettingsnøkkelen og filene dine sendes aldri noe sted. Appen har ingen kontoer, analyse eller sporing. Det eneste Unbit henter fra internett, er den daglige sjekken etter oppdateringer.",
+    "ticks": ["Dekrypterte data blir på Macen din", "Lagrede koder ligger bare i nøkkelringen din", "Ingen kontoer, analyse eller sporing i appen"],
+    "panelLine1": "Blir på",
+    "panelLine2": "Macen din"
+  },
+  "download": {
+    "title": "Last ned Unbit",
+    "text": "Gratis nedlasting. Én app for Mac med Apple silicon og Intel som kjører macOS 13 eller nyere.",
+    "macosSub": "Apple silicon og Intel",
+    "allTitle": "Alle utgivelser",
+    "allSub": "Utgivelsesnotater og tidligere versjoner"
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      { "q": "Skal jeg bruke passordet eller gjenopprettingsnøkkelen?", "a": "Begge deler fungerer. Passordet er det du valgte da BitLocker ble slått på for stasjonen. Gjenopprettingsnøkkelen er nøkkelen på 48 sifre (8 grupper med 6 sifre) som Windows ba deg lagre samtidig, for eksempel på en Microsoft-konto, i en fil eller som utskrift. Velg den du har i appen." },
+      { "q": "Hvorfor trenger Unbit Full disktilgang?", "a": "For å dekryptere stasjonen må Unbit lese de rå, krypterte dataene direkte fra USB-enheten. macOS tillater det bare for apper med Full disktilgang. Unbit bruker den til å lese stasjonen du velger, og ingenting annet." },
+      { "q": "Kan jeg skrive til stasjonen?", "a": "Nei. Unbit er skrivebeskyttet med vilje og skriver aldri til stasjonen. Du kan åpne filer og kopiere dem til Macen din. Bruk Windows hvis du vil endre filer på stasjonen." },
+      { "q": "Fungerer det på Mac med Apple silicon og Intel?", "a": "Ja. Unbit er en universalapp som kjører nativt på både Apple silicon og Intel med macOS 13 Ventura eller nyere." },
+      { "q": "Hvilke stasjoner støttes?", "a": "Eksterne disker og USB-pinner kryptert med BitLocker eller BitLocker To Go på Windows 7 eller nyere, med AES-CBC (med eller uten Elephant-diffuser) eller AES-XTS og 128- eller 256-biters nøkler. Når stasjonen er låst opp, leser macOS filsystemet på den selv." },
+      { "q": "Lagres passordet mitt noe sted?", "a": "Bare hvis du velger «Husk denne stasjonen på denne Macen». Koden lagres da kryptert i macOS-nøkkelringen etter en vellykket opplåsing, og du kan glemme den når som helst fra tannhjulmenyen. Den sendes aldri noe sted." }
+    ]
+  },
+  "cta": { "title": "Åpne BitLocker-stasjonen din", "text": "Du trenger ingen Windows-PC.", "download": "Last ned for macOS", "whatsNew": "Nytt" },
+  "footer": {
+    "siteNote": "Dette nettstedet bruker personvernvennlig analyse uten informasjonskapsler.",
+    "product": "Produkt",
+    "resources": "Ressurser",
+    "releaseNotes": "Utgivelsesnotater",
+    "github": "GitHub",
+    "legal": "BitLocker er et varemerke tilhørende Microsoft Corporation. Unbit er en uavhengig app og er ikke tilknyttet eller godkjent av Microsoft. Mac og macOS er varemerker tilhørende Apple Inc."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Öppna BitLocker på Mac | Läs BitLocker-USB-enheter i macOS",
+    "description": "Öppna BitLocker-krypterade USB-enheter på din Mac. Unbit läser BitLocker-enheter i macOS med ditt lösenord eller din återställningsnyckel. Endast läsning, inga drivrutiner, körs lokalt. Gratis.",
+    "ogTitle": "Unbit – Öppna BitLocker-enheter på din Mac",
+    "ogDescription": "Läs BitLocker-krypterade USB-enheter i macOS med ditt lösenord eller din återställningsnyckel. Endast läsning, inga drivrutiner, körs lokalt.",
+    "twitterDescription": "Läs BitLocker-krypterade USB-enheter i macOS. Endast läsning, inga drivrutiner, körs lokalt.",
+    "keywords": ["öppna BitLocker på Mac", "BitLocker-läsare för Mac", "läs BitLocker USB-enhet macOS", "BitLocker To Go Mac", "lås upp BitLocker-enhet Mac", "BitLocker återställningsnyckel Mac"]
+  },
+  "nav": { "label": "Huvudmeny", "how": "Så fungerar det", "features": "Funktioner", "privacy": "Integritet", "faq": "FAQ", "releases": "Versioner", "download": "Ladda ner" },
+  "language": { "label": "Språk" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "är här",
+    "badgeLink": "Nyheter",
+    "h1Before": "Möt",
+    "h1After": "Unbit",
+    "sub": "Öppna BitLocker-krypterade USB-enheter på din Mac. Endast läsning, utan extra drivrutiner. Ange bara lösenordet eller återställningsnyckeln.",
+    "download": "Ladda ner för macOS",
+    "how": "Så fungerar det",
+    "metaVersion": "Version {version} · macOS {minOS} eller senare",
+    "metaRest": "Apple silicon och Intel · Notariserad av Apple"
+  },
+  "mockup": {
+    "label": "Unbit i menyraden",
+    "menu": ["Arkiv", "Redigera", "Visa", "Gå", "Fönster"],
+    "day": "ons",
+    "unlockAlt": "Unbit-fönster i menyraden med en identifierad SanDisk-enhet och ett fält för BitLocker-lösenord",
+    "unlockCaption": "Välj enheten och ange ditt lösenord eller din återställningsnyckel",
+    "openAlt": "Unbit-fönster i menyraden som visar en öppen enhet, läsaktivitet och använt utrymme",
+    "openCaption": "Bläddra i den i Finder och mata sedan ut den säkert"
+  },
+  "how": {
+    "title": "Så fungerar det",
+    "intro": "Tre steg från en låst enhet till dina filer i Finder. Den engångsinställning som behövs tar ungefär en minut.",
+    "steps": [
+      { "title": "Dra till Program", "text": "Öppna DMG-filen och dra Unbit till mappen Program. Appen bor i menyraden, inte i Dock." },
+      { "title": "Ge Full skivåtkomst", "text": "En kort guide visar var du slår på det i Systeminställningar. Du gör detta bara en gång." },
+      { "title": "Anslut och lås upp", "text": "Unbit hittar enheten automatiskt. Ange lösenordet eller återställningsnyckeln så öppnas enheten i Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Endast läsning – med flit",
+    "text": "Unbit ansluter den upplåsta enheten till macOS som skrivskyddad. Ingenting skrivs någonsin tillbaka, så dina filer och enhetens BitLocker-inställningar förblir precis som Windows lämnade dem. Kopiera det du behöver och mata sedan ut.",
+    "panel": "Endast läsning"
+  },
+  "features": {
+    "title": "Allt du behöver, inget du inte behöver",
+    "intro": "En liten, fokuserad menyrads-app för ett enda jobb: att komma åt filerna på en BitLocker-enhet.",
+    "items": [
+      { "title": "Inga drivrutiner eller macFUSE", "text": "Inga kärntillägg och inga filsystemlager från tredje part. Unbit använder det stöd för skivavbilder som redan finns inbyggt i macOS." },
+      { "title": "Dekrypterar vid behov", "text": "Bara de delar som macOS faktiskt läser dekrypteras, när de läses. Du slipper vänta på en fullständig kopia av enheten." },
+      { "title": "Identifierar enheter automatiskt", "text": "Anslut en enhet så visas den direkt i Unbit. Koppla från den så städar Unbit upp av sig själv." },
+      { "title": "Säker utmatning", "text": "Ett klick stänger enheten och matar ut den, så du vet när det är säkert att koppla från. När du avslutar appen stängs en öppen enhet först." },
+      { "title": "Kommer ihåg enheter, om du vill", "text": "Markera ”Kom ihåg den här enheten” så sparas koden krypterad i din macOS-nyckelring – aldrig någon annanstans." },
+      { "title": "Uppdaterar sig själv, notariserad av Apple", "text": "Signerad med Developer ID och notariserad av Apple. Nya versioner kommer via signerade automatiska uppdateringar." }
+    ],
+    "languagesTitle": "Finns på 11 språk",
+    "languagesText": "Engelska, danska, svenska, norska, tyska, franska, spanska, italienska, nederländska, finska och polska."
+  },
+  "privacy": {
+    "title": "Din enhet lämnar aldrig din Mac",
+    "text": "Dekrypteringen sker helt och hållet på din Mac. Ditt lösenord, din återställningsnyckel och dina filer skickas aldrig någonstans. Appen har inga konton, ingen analys och ingen spårning. Det enda Unbit hämtar från internet är den dagliga kontrollen efter uppdateringar.",
+    "ticks": ["Dekrypterad data stannar på din Mac", "Sparade koder finns bara i din nyckelring", "Inga konton, ingen analys eller spårning i appen"],
+    "panelLine1": "Stannar på",
+    "panelLine2": "din Mac"
+  },
+  "download": {
+    "title": "Ladda ner Unbit",
+    "text": "Gratis att ladda ner. En app för Mac med Apple silicon och Intel som kör macOS 13 eller senare.",
+    "macosSub": "Apple silicon och Intel",
+    "allTitle": "Alla versioner",
+    "allSub": "Versionsanteckningar och tidigare versioner"
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      { "q": "Ska jag använda lösenordet eller återställningsnyckeln?", "a": "Båda fungerar. Lösenordet är det du valde när BitLocker slogs på för enheten. Återställningsnyckeln är nyckeln på 48 siffror (8 grupper om 6 siffror) som Windows bad dig spara samtidigt, till exempel i ett Microsoft-konto, i en fil eller som utskrift. Välj den du har i appen." },
+      { "q": "Varför behöver Unbit Full skivåtkomst?", "a": "För att dekryptera enheten måste Unbit läsa den råa, krypterade datan direkt från USB-enheten. macOS tillåter det bara för appar med Full skivåtkomst. Unbit använder den för att läsa enheten du väljer och inget annat." },
+      { "q": "Kan jag skriva till enheten?", "a": "Nej. Unbit är skrivskyddat med flit och skriver aldrig till enheten. Du kan öppna filer och kopiera dem till din Mac. Använd Windows om du vill ändra filer på enheten." },
+      { "q": "Fungerar det på Mac med både Apple silicon och Intel?", "a": "Ja. Unbit är en universell app som körs nativt på både Apple silicon och Intel med macOS 13 Ventura eller senare." },
+      { "q": "Vilka enheter stöds?", "a": "Externa diskar och USB-minnen som krypterats med BitLocker eller BitLocker To Go i Windows 7 eller senare, med AES-CBC (med eller utan Elephant-diffuser) eller AES-XTS och 128- eller 256-bitarsnycklar. När enheten är upplåst läser macOS filsystemet på den själv." },
+      { "q": "Sparas mitt lösenord någonstans?", "a": "Bara om du markerar ”Kom ihåg den här enheten på den här datorn”. Koden sparas då krypterad i din macOS-nyckelring efter en lyckad upplåsning, och du kan glömma den när som helst från kugghjulsmenyn. Den skickas aldrig någonstans." }
+    ]
+  },
+  "cta": { "title": "Öppna din BitLocker-enhet", "text": "Ingen Windows-dator behövs.", "download": "Ladda ner för macOS", "whatsNew": "Nyheter" },
+  "footer": {
+    "siteNote": "Den här webbplatsen använder integritetsvänlig analys utan cookies.",
+    "product": "Produkt",
+    "resources": "Resurser",
+    "releaseNotes": "Versionsanteckningar",
+    "github": "GitHub",
+    "legal": "BitLocker är ett varumärke som tillhör Microsoft Corporation. Unbit är en oberoende app och är inte knuten till eller godkänd av Microsoft. Mac och macOS är varumärken som tillhör Apple Inc."
+  }
+}

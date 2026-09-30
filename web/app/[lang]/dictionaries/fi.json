@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Avaa BitLocker Macilla | Lue BitLocker-USB-asemia macOS:ssa",
+    "description": "Avaa BitLocker-salatut USB-asemat Macillasi. Unbit lukee BitLocker-asemia macOS:ssa salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti. Ilmainen.",
+    "ogTitle": "Unbit – Avaa BitLocker-asemat Macillasi",
+    "ogDescription": "Lue BitLocker-salattuja USB-asemia macOS:ssa salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti.",
+    "twitterDescription": "Lue BitLocker-salattuja USB-asemia macOS:ssa. Vain luku, ei ajureita, toimii paikallisesti.",
+    "keywords": ["avaa BitLocker Macilla", "BitLocker-lukija Macille", "lue BitLocker USB-asema macOS", "BitLocker To Go Mac", "avaa BitLocker-aseman lukitus Mac", "BitLockerin palautusavain Mac"]
+  },
+  "nav": { "label": "Päävalikko", "how": "Näin se toimii", "features": "Ominaisuudet", "privacy": "Tietosuoja", "faq": "UKK", "releases": "Julkaisut", "download": "Lataa" },
+  "language": { "label": "Kieli" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "on täällä",
+    "badgeLink": "Mitä uutta",
+    "h1Before": "Tapaa",
+    "h1After": "Unbit",
+    "sub": "Avaa BitLocker-salatut USB-asemat Macillasi. Vain luku, ilman ylimääräisiä ajureita. Syötä vain salasana tai palautusavain.",
+    "download": "Lataa macOS:lle",
+    "how": "Näin se toimii",
+    "metaVersion": "Versio {version} · macOS {minOS} tai uudempi",
+    "metaRest": "Apple silicon ja Intel · Applen notarisoima"
+  },
+  "mockup": {
+    "label": "Unbit valikkopalkissa",
+    "menu": ["Arkisto", "Muokkaa", "Tarkastele", "Siirry", "Ikkuna"],
+    "day": "ke",
+    "unlockAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy tunnistettu SanDisk-asema ja BitLocker-salasanakenttä",
+    "unlockCaption": "Valitse asema ja syötä salasana tai palautusavain",
+    "openAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy avattu asema, lukutoiminta ja käytetty tila",
+    "openCaption": "Selaa sitä Finderissa ja poista se sitten turvallisesti"
+  },
+  "how": {
+    "title": "Näin se toimii",
+    "intro": "Kolme vaihetta lukitusta asemasta tiedostoihisi Finderissa. Kertaluonteinen käyttöönotto vie noin minuutin.",
+    "steps": [
+      { "title": "Vedä Ohjelmat-kansioon", "text": "Avaa DMG ja vedä Unbit Ohjelmat-kansioon. Se asuu valikkopalkissa, ei Dockissa." },
+      { "title": "Anna täysi levyn käyttöoikeus", "text": "Lyhyt ohje näyttää, mistä sen kytketään päälle Järjestelmäasetuksissa. Se tehdään vain kerran." },
+      { "title": "Liitä ja avaa lukitus", "text": "Unbit tunnistaa aseman automaattisesti. Syötä salasana tai palautusavain, ja asema avautuu Finderissa." }
+    ]
+  },
+  "readOnly": {
+    "title": "Vain luku – tarkoituksella",
+    "text": "Unbit liittää avatun aseman macOS:ään vain luku -tilassa. Mitään ei kirjoiteta takaisin, joten tiedostosi ja aseman BitLocker-asetukset pysyvät täsmälleen sellaisina kuin Windows ne jätti. Kopioi tarvitsemasi ja poista asema.",
+    "panel": "Vain luku"
+  },
+  "features": {
+    "title": "Kaikki tarvittava, ei mitään ylimääräistä",
+    "intro": "Pieni, keskittynyt valikkopalkkiappi yhteen tehtävään: pääsyyn BitLocker-aseman tiedostoihin.",
+    "items": [
+      { "title": "Ei ajureita eikä macFUSEa", "text": "Ei kernel-laajennuksia eikä kolmannen osapuolen tiedostojärjestelmäkerroksia. Unbit käyttää macOS:n valmista levykuvien tukea." },
+      { "title": "Purkaa salauksen tarpeen mukaan", "text": "Vain ne osat, joita macOS todella lukee, puretaan niitä luettaessa. Ei tarvitse odottaa koko aseman kopiointia." },
+      { "title": "Tunnistaa asemat automaattisesti", "text": "Liitä asema, ja se ilmestyy heti Unbitiin. Irrota se, ja Unbit siivoaa itse jälkensä." },
+      { "title": "Turvallinen poisto", "text": "Yksi napsautus sulkee aseman ja poistaa sen, joten tiedät milloin sen voi irrottaa turvallisesti. Lopetettaessa avoin asema suljetaan ensin." },
+      { "title": "Muistaa asemat, jos haluat", "text": "Valitse “Muista tämä asema”, niin koodi tallennetaan salattuna macOS:n avainnippuun – ei minnekään muualle." },
+      { "title": "Päivittyy itse, Applen notarisoima", "text": "Allekirjoitettu Developer ID:llä ja Applen notarisoima. Uudet versiot tulevat allekirjoitettuina automaattisina päivityksinä." }
+    ],
+    "languagesTitle": "Saatavilla 11 kielellä",
+    "languagesText": "englanti, tanska, ruotsi, norja, saksa, ranska, espanja, italia, hollanti, suomi ja puola."
+  },
+  "privacy": {
+    "title": "Asemasi ei koskaan poistu Macistasi",
+    "text": "Salauksen purku tapahtuu kokonaan Macillasi. Salasanaasi, palautusavaintasi tai tiedostojasi ei lähetetä minnekään. Apissa ei ole tilejä, analytiikkaa eikä seurantaa. Ainoa asia, jonka Unbit hakee internetistä, on päivittäinen päivitystarkistus.",
+    "ticks": ["Purettu data pysyy Macillasi", "Tallennetut koodit ovat vain avainnipussasi", "Ei tilejä, analytiikkaa tai seurantaa apissa"],
+    "panelLine1": "Pysyy",
+    "panelLine2": "Macillasi"
+  },
+  "download": {
+    "title": "Lataa Unbit",
+    "text": "Ilmainen ladata. Yksi appi Apple silicon- ja Intel-Maceille, joissa on macOS 13 tai uudempi.",
+    "macosSub": "Apple silicon ja Intel",
+    "allTitle": "Kaikki julkaisut",
+    "allSub": "Julkaisutiedot ja aiemmat versiot"
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      { "q": "Pitäisikö käyttää salasanaa vai palautusavainta?", "a": "Kumpi tahansa käy. Salasana on se, jonka valitsit, kun BitLocker otettiin käyttöön asemalla. Palautusavain on 48-numeroinen avain (8 ryhmää, joissa 6 numeroa), jonka Windows pyysi tallentamaan samalla, esimerkiksi Microsoft-tilille, tiedostoon tai tulosteeksi. Valitse apissa se, joka sinulla on." },
+      { "q": "Miksi Unbit tarvitsee täyden levyn käyttöoikeuden?", "a": "Salauksen purkamiseksi Unbitin on luettava raaka, salattu data suoraan USB-laitteelta. macOS sallii sen vain apeille, joilla on täysi levyn käyttöoikeus. Unbit käyttää sitä vain valitsemasi aseman lukemiseen, ei muuhun." },
+      { "q": "Voinko kirjoittaa asemalle?", "a": "Et. Unbit on tarkoituksella vain luku -tilassa eikä koskaan kirjoita asemalle. Voit avata tiedostoja ja kopioida ne Macillesi. Jos haluat muokata aseman tiedostoja, käytä Windowsia." },
+      { "q": "Toimiiko se Apple silicon- ja Intel-Macilla?", "a": "Kyllä. Unbit on universaali appi, joka toimii natiivisti sekä Apple siliconilla että Intelillä, kun käytössä on macOS 13 Ventura tai uudempi." },
+      { "q": "Mitä asemia tuetaan?", "a": "Ulkoiset asemat ja USB-tikut, jotka on salattu BitLockerilla tai BitLocker To Gollla Windows 7:ssä tai uudemmassa käyttäen AES-CBC:tä (Elephant-diffuserilla tai ilman) tai AES-XTS:ää 128- tai 256-bittisillä avaimilla. Kun lukitus on avattu, macOS lukee aseman tiedostojärjestelmän itse." },
+      { "q": "Tallennetaanko salasanani minnekään?", "a": "Vain jos valitset “Muista tämä asema tässä Macissa”. Koodi tallennetaan silloin salattuna macOS:n avainnippuun onnistuneen avauksen jälkeen, ja voit unohtaa sen milloin tahansa ratasvalikosta. Sitä ei koskaan lähetetä minnekään." }
+    ]
+  },
+  "cta": { "title": "Avaa BitLocker-asemasi", "text": "Windows-tietokonetta ei tarvita.", "download": "Lataa macOS:lle", "whatsNew": "Mitä uutta" },
+  "footer": {
+    "siteNote": "Tämä verkkosivusto käyttää tietosuojaystävällistä, evästeetöntä analytiikkaa.",
+    "product": "Tuote",
+    "resources": "Resurssit",
+    "releaseNotes": "Julkaisutiedot",
+    "github": "GitHub",
+    "legal": "BitLocker on Microsoft Corporationin tavaramerkki. Unbit on riippumaton appi, jolla ei ole yhteyttä Microsoftiin eikä Microsoft ole hyväksynyt sitä. Mac ja macOS ovat Apple Inc:n tavaramerkkejä."
+  }
+}

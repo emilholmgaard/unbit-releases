@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Unbit – Ouvrir BitLocker sur Mac | Lire les disques USB BitLocker sous macOS",
+    "description": "Ouvrez les disques USB chiffrés avec BitLocker sur votre Mac. Unbit lit les disques BitLocker sous macOS avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local. Gratuit.",
+    "ogTitle": "Unbit – Ouvrez les disques BitLocker sur votre Mac",
+    "ogDescription": "Lisez les disques USB chiffrés avec BitLocker sous macOS avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local.",
+    "twitterDescription": "Lisez les disques USB chiffrés avec BitLocker sous macOS. Lecture seule, sans pilote, fonctionne en local.",
+    "keywords": ["ouvrir BitLocker sur Mac", "lecteur BitLocker pour Mac", "lire un disque USB BitLocker macOS", "BitLocker To Go Mac", "déverrouiller un disque BitLocker Mac", "clé de récupération BitLocker Mac"]
+  },
+  "nav": { "label": "Principal", "how": "Fonctionnement", "features": "Fonctionnalités", "privacy": "Confidentialité", "faq": "FAQ", "releases": "Versions", "download": "Télécharger" },
+  "language": { "label": "Langue" },
+  "hero": {
+    "badgeHighlight": "Unbit {version}",
+    "badgeRest": "est disponible",
+    "badgeLink": "Nouveautés",
+    "h1Before": "Découvrez",
+    "h1After": "Unbit",
+    "sub": "Ouvrez les disques USB chiffrés avec BitLocker sur votre Mac. Lecture seule, sans pilote supplémentaire. Il suffit de saisir le mot de passe ou la clé de récupération.",
+    "download": "Télécharger pour macOS",
+    "how": "Fonctionnement",
+    "metaVersion": "Version {version} · macOS {minOS} ou ultérieur",
+    "metaRest": "Apple silicon et Intel · Notarisée par Apple"
+  },
+  "mockup": {
+    "label": "Unbit dans la barre des menus",
+    "menu": ["Fichier", "Édition", "Présentation", "Aller", "Fenêtre"],
+    "day": "mer.",
+    "unlockAlt": "Fenêtre Unbit dans la barre des menus avec un disque SanDisk détecté et un champ de mot de passe BitLocker",
+    "unlockCaption": "Choisissez le disque et saisissez votre mot de passe ou votre clé de récupération",
+    "openAlt": "Fenêtre Unbit dans la barre des menus affichant un disque ouvert, l’activité de lecture et l’espace utilisé",
+    "openCaption": "Parcourez-le dans le Finder, puis éjectez-le en toute sécurité"
+  },
+  "how": {
+    "title": "Fonctionnement",
+    "intro": "Trois étapes pour passer d’un disque verrouillé à vos fichiers dans le Finder. La configuration initiale prend environ une minute.",
+    "steps": [
+      { "title": "Glissez dans Applications", "text": "Ouvrez le DMG et glissez Unbit dans votre dossier Applications. L’app vit dans la barre des menus, pas dans le Dock." },
+      { "title": "Accordez l’Accès complet au disque", "text": "Un court guide vous montre où l’activer dans Réglages Système. Vous ne le faites qu’une seule fois." },
+      { "title": "Branchez et déverrouillez", "text": "Unbit repère automatiquement le disque. Saisissez le mot de passe ou la clé de récupération, et le disque s’ouvre dans le Finder." }
+    ]
+  },
+  "readOnly": {
+    "title": "Lecture seule, par conception",
+    "text": "Unbit monte le disque déverrouillé dans macOS en lecture seule. Rien n’est jamais réécrit : vos fichiers et la configuration BitLocker du disque restent exactement tels que Windows les a laissés. Copiez ce dont vous avez besoin, puis éjectez.",
+    "panel": "Lecture seule"
+  },
+  "features": {
+    "title": "Tout ce qu’il vous faut, rien de superflu",
+    "intro": "Une petite app de barre des menus, centrée sur une seule tâche : accéder aux fichiers d’un disque BitLocker.",
+    "items": [
+      { "title": "Sans pilote ni macFUSE", "text": "Pas d’extensions du noyau, pas de couches de système de fichiers tierces. Unbit utilise la prise en charge des images disque déjà intégrée à macOS." },
+      { "title": "Déchiffre à la demande", "text": "Seules les parties que macOS lit réellement sont déchiffrées, au moment de la lecture. Inutile d’attendre une copie complète du disque." },
+      { "title": "Détecte les disques automatiquement", "text": "Branchez un disque et il apparaît aussitôt dans Unbit. Débranchez-le et Unbit fait le ménage tout seul." },
+      { "title": "Éjection sécurisée", "text": "Un clic ferme le disque et l’éjecte, pour savoir quand on peut le débrancher sans risque. Quitter l’app ferme d’abord un disque ouvert." },
+      { "title": "Mémorise les disques, si vous le souhaitez", "text": "Cochez « Mémoriser ce disque » et le code est stocké chiffré dans votre trousseau macOS, nulle part ailleurs." },
+      { "title": "Se met à jour seule, notarisée par Apple", "text": "Signée avec un Developer ID et notarisée par Apple. Les nouvelles versions arrivent via des mises à jour automatiques signées." }
+    ],
+    "languagesTitle": "Disponible en 11 langues",
+    "languagesText": "Anglais, danois, suédois, norvégien, allemand, français, espagnol, italien, néerlandais, finnois et polonais."
+  },
+  "privacy": {
+    "title": "Votre disque ne quitte jamais votre Mac",
+    "text": "Le déchiffrement se fait entièrement sur votre Mac. Votre mot de passe, votre clé de récupération et vos fichiers ne sont jamais envoyés où que ce soit. L’app n’a ni compte, ni outil d’analyse, ni suivi. La seule chose qu’Unbit récupère sur internet est sa vérification quotidienne des mises à jour.",
+    "ticks": ["Les données déchiffrées restent sur votre Mac", "Les codes enregistrés ne vivent que dans votre trousseau", "Ni compte, ni analyse, ni suivi dans l’app"],
+    "panelLine1": "Reste sur",
+    "panelLine2": "votre Mac"
+  },
+  "download": {
+    "title": "Télécharger Unbit",
+    "text": "Téléchargement gratuit. Une seule app pour les Mac Apple silicon et Intel sous macOS 13 ou ultérieur.",
+    "macosSub": "Apple silicon et Intel",
+    "allTitle": "Toutes les versions",
+    "allSub": "Notes de version et versions antérieures"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      { "q": "Dois-je utiliser le mot de passe ou la clé de récupération ?", "a": "Les deux fonctionnent. Le mot de passe est celui choisi lors de l’activation de BitLocker sur le disque. La clé de récupération est la clé de 48 chiffres (8 groupes de 6 chiffres) que Windows vous a demandé d’enregistrer à ce moment-là, par exemple dans un compte Microsoft, un fichier ou une impression. Choisissez dans l’app celle que vous avez." },
+      { "q": "Pourquoi Unbit a-t-il besoin de l’Accès complet au disque ?", "a": "Pour déchiffrer le disque, Unbit doit lire les données brutes chiffrées directement sur le périphérique USB. macOS ne l’autorise qu’aux apps disposant de l’Accès complet au disque. Unbit l’utilise pour lire le disque que vous choisissez, et rien d’autre." },
+      { "q": "Puis-je écrire sur le disque ?", "a": "Non. Unbit est en lecture seule par conception et n’écrit jamais sur le disque. Vous pouvez ouvrir des fichiers et les copier sur votre Mac. Pour modifier des fichiers sur le disque, utilisez Windows." },
+      { "q": "Fonctionne-t-il sur les Mac Apple silicon et Intel ?", "a": "Oui. Unbit est une app universelle qui s’exécute nativement sur les Mac Apple silicon comme Intel, sous macOS 13 Ventura ou ultérieur." },
+      { "q": "Quels disques sont pris en charge ?", "a": "Les disques externes et clés USB chiffrés avec BitLocker ou BitLocker To Go sous Windows 7 ou ultérieur, avec AES-CBC (avec ou sans diffuseur Elephant) ou AES-XTS, en clés de 128 ou 256 bits. Une fois déverrouillé, macOS lit lui-même le système de fichiers du disque." },
+      { "q": "Mon mot de passe est-il enregistré quelque part ?", "a": "Seulement si vous cochez « Mémoriser ce disque sur ce Mac ». Le code est alors enregistré chiffré dans votre trousseau macOS après un déverrouillage réussi, et vous pouvez l’oublier à tout moment depuis le menu en forme de roue dentée. Il n’est jamais envoyé où que ce soit." }
+    ]
+  },
+  "cta": { "title": "Ouvrez votre disque BitLocker", "text": "Aucun PC Windows requis.", "download": "Télécharger pour macOS", "whatsNew": "Nouveautés" },
+  "footer": {
+    "siteNote": "Ce site utilise des statistiques respectueuses de la vie privée, sans cookies.",
+    "product": "Produit",
+    "resources": "Ressources",
+    "releaseNotes": "Notes de version",
+    "github": "GitHub",
+    "legal": "BitLocker est une marque de Microsoft Corporation. Unbit est une app indépendante, sans affiliation avec Microsoft ni approbation de sa part. Mac et macOS sont des marques d’Apple Inc."
+  }
+}
