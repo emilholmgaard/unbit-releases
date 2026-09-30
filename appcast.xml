@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.1</title>
+      <pubDate>Wed, 30 Sep 2026 21:47:26 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[Retter fejlen 'Hjælperpakken indeholder et uventet fil-link' ved opsætning af læseadgang, og viser en tydelig besked, hvis appen køres direkte fra diskbilledet.]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.1/Unbit-1.0.1.dmg" type="application/octet-stream" sparkle:edSignature="WM+D6ZGPNj8l1PuXccwb5NHFPoIUOHPsRay/NBPZpK4MbYC84PMe41a2LDkV/MB5PN+vUAvH8RoFQqWZ7OwbBA==" length="3077197" />
+    </item>
+    <item>
       <title>Version 1.0.0</title>
       <pubDate>Wed, 30 Sep 2026 21:39:06 +0000</pubDate>
       <sparkle:version>1</sparkle:version>
