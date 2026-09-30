@@ -111,7 +111,7 @@ h1 {
 .inline-icon {
   width: 1.05em;
   height: 1.05em;
-  filter: drop-shadow(0 10px 30px rgba(41, 151, 255, 0.25));
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
 }
 
 .sub {
@@ -133,11 +133,8 @@ h1 {
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid var(--line);
-  background:
-    radial-gradient(700px 380px at 20% 0%, rgba(41, 98, 255, 0.35), transparent 70%),
-    radial-gradient(600px 400px at 90% 100%, rgba(120, 60, 220, 0.3), transparent 70%),
-    linear-gradient(160deg, #0d1426, #07080d 60%, #0b0716);
-  box-shadow: 0 40px 120px -40px rgba(41, 98, 255, 0.35);
+  background: linear-gradient(180deg, #161618, #0c0c0d);
+  box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.9);
 }
 
 .menubar {
