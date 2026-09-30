@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unbit – Åbn BitLocker-stik på din Mac</title>
+  <meta name="description" content="Unbit åbner BitLocker-krypterede USB-stik på din Mac – skrivebeskyttet, uden ekstra installationer.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0a0f18">
+  <meta property="og:title" content="Unbit">
+  <meta property="og:description" content="Åbn BitLocker-krypterede USB-stik på din Mac.">
+  <meta property="og:image" content="icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img class="icon" src="icon.png" width="160" height="160" alt="Unbit-appikon: en hængelås formet som et U på et drev">
+      <h1>Unbit</h1>
+      <p class="tagline">Åbn BitLocker-krypterede USB-stik på din Mac.</p>
+      <a class="download" href="https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download til Mac
+      </a>
+      <p class="meta"><span id="version">Version 1.0.0</span> · macOS 13 eller nyere · Apple silicon &amp; Intel · Notariseret af Apple</p>
+    </section>
+
+    <section class="steps" aria-labelledby="kom-i-gang">
+      <h2 id="kom-i-gang">Sådan kommer du i gang</h2>
+      <ol>
+        <li><span class="num" aria-hidden="true">1</span><div><strong>Download og træk til Programmer</strong><p>Åbn DMG-filen, og træk Unbit over i mappen Programmer.</p></div></li>
+        <li><span class="num" aria-hidden="true">2</span><div><strong>Giv Fuld diskadgang</strong><p>Appen guider dig – det skal kun gøres én gang.</p></div></li>
+        <li><span class="num" aria-hidden="true">3</span><div><strong>Sæt stikket i</strong><p>Klik på USB-ikonet i menulinjen, og indtast koden eller recovery-nøglen.</p></div></li>
+      </ol>
+      <p class="note">
+        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        Kun læseadgang – intet skrives til stikket. Opdaterer automatisk.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Emil Holmgaard</footer>
+
+  <script>
+    // Viser nyeste version fra GitHub (den statiske tekst bruges, hvis det ikke lykkes).
+    fetch("https://api.github.com/repos/emilholmgaard/unbit-releases/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && typeof d.tag_name === "string") {
+          document.getElementById("version").textContent = "Version " + d.tag_name.replace(/^v/, "");
+        }
+      })
+      .catch(function () {});
+  </script>
+</body>
+</html>
