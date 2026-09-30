@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unbit – Åbn BitLocker-stik på din Mac</title>
-  <meta name="description" content="Unbit åbner BitLocker-krypterede USB-stik på din Mac – skrivebeskyttet, uden ekstra installationer.">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#0a0f18">
-  <meta property="og:title" content="Unbit">
-  <meta property="og:description" content="Åbn BitLocker-krypterede USB-stik på din Mac.">
-  <meta property="og:image" content="icon.png">
+  <title>Unbit – Open BitLocker drives on your Mac</title>
+  <meta name="description" content="Unbit opens BitLocker-encrypted USB drives on your Mac. Read-only, no extra drivers, notarized by Apple.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Unbit – Open BitLocker drives on your Mac">
+  <meta property="og:description" content="Read-only access to BitLocker-encrypted USB drives. No extra drivers.">
+  <meta property="og:image" content="https://emilholmgaard.github.io/unbit-releases/icon.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
@@ -17,40 +18,62 @@
 <body>
   <main>
     <section class="hero">
-      <img class="icon" src="icon.png" width="160" height="160" alt="Unbit-appikon: en hængelås formet som et U på et drev">
-      <h1>Unbit</h1>
-      <p class="tagline">Åbn BitLocker-krypterede USB-stik på din Mac.</p>
+      <img class="icon" src="icon.png" width="128" height="128" alt="Unbit app icon">
+      <p class="eyebrow">Unbit for macOS</p>
+      <h1>Open BitLocker drives<br>on your Mac.</h1>
+      <p class="sub">Plug in an encrypted USB drive, enter the password or recovery key, and browse your files. Read-only. No extra drivers.</p>
       <a class="download" href="https://github.com/emilholmgaard/unbit-releases/releases/latest/download/Unbit.dmg">
-        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-        Download til Mac
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+        Download for Mac
       </a>
-      <p class="meta"><span id="version">Version 1.0.0</span> · macOS 13 eller nyere · Apple silicon &amp; Intel · Notariseret af Apple</p>
+      <p class="meta" id="meta">Version 1.0.1 · macOS 13 or later · Apple silicon &amp; Intel</p>
     </section>
 
-    <section class="steps" aria-labelledby="kom-i-gang">
-      <h2 id="kom-i-gang">Sådan kommer du i gang</h2>
+    <section class="features" aria-label="Features">
+      <div class="feature">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <h2>Read-only by design</h2>
+        <p>Nothing is ever written to your drive, so your data stays exactly as it was.</p>
+      </div>
+      <div class="feature">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><path d="M8 14h3"/></svg>
+        <h2>No extra drivers</h2>
+        <p>No kernel extensions and no third-party file systems. It's a single notarized app.</p>
+      </div>
+      <div class="feature">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 15"/><path d="M4 20v-5h5"/></svg>
+        <h2>Lives in your menu bar</h2>
+        <p>One click away when you need it. Updates install automatically.</p>
+      </div>
+    </section>
+
+    <section class="install" aria-labelledby="install-title">
+      <h2 id="install-title">Install in a minute</h2>
       <ol>
-        <li><span class="num" aria-hidden="true">1</span><div><strong>Download og træk til Programmer</strong><p>Åbn DMG-filen, og træk Unbit over i mappen Programmer.</p></div></li>
-        <li><span class="num" aria-hidden="true">2</span><div><strong>Giv Fuld diskadgang</strong><p>Appen guider dig – det skal kun gøres én gang.</p></div></li>
-        <li><span class="num" aria-hidden="true">3</span><div><strong>Sæt stikket i</strong><p>Klik på USB-ikonet i menulinjen, og indtast koden eller recovery-nøglen.</p></div></li>
+        <li><span aria-hidden="true">1</span><div><strong>Drag to Applications</strong><p>Open the DMG and drag Unbit into your Applications folder.</p></div></li>
+        <li><span aria-hidden="true">2</span><div><strong>Grant Full Disk Access</strong><p>Unbit walks you through it. You only do this once.</p></div></li>
+        <li><span aria-hidden="true">3</span><div><strong>Plug in your drive</strong><p>Click the menu bar icon and enter your password or recovery key.</p></div></li>
       </ol>
-      <p class="note">
-        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-        Kun læseadgang – intet skrives til stikket. Opdaterer automatisk.
-      </p>
     </section>
   </main>
 
-  <footer>© 2026 Emil Holmgaard</footer>
+  <footer>© 2026 Emil Holmgaard · BitLocker is a trademark of Microsoft Corporation. Unbit is not affiliated with Microsoft.</footer>
 
   <script>
-    // Viser nyeste version fra GitHub (den statiske tekst bruges, hvis det ikke lykkes).
-    fetch("https://api.github.com/repos/emilholmgaard/unbit-releases/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (d) {
-        if (d && typeof d.tag_name === "string") {
-          document.getElementById("version").textContent = "Version " + d.tag_name.replace(/^v/, "");
-        }
+    // Read the latest version from the Sparkle feed. The static text is kept if this fails.
+    fetch("appcast.xml", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+      .then(function (text) {
+        var doc = new DOMParser().parseFromString(text, "application/xml");
+        var ns = "http://www.andymatuschak.org/xml-namespaces/sparkle";
+        var item = doc.getElementsByTagName("item")[0];
+        if (!item) return;
+        var version = item.getElementsByTagNameNS(ns, "shortVersionString")[0];
+        var minOS = item.getElementsByTagNameNS(ns, "minimumSystemVersion")[0];
+        if (!version) return;
+        var major = minOS ? minOS.textContent.trim().split(".")[0] : "13";
+        document.getElementById("meta").textContent =
+          "Version " + version.textContent.trim() + " · macOS " + major + " or later · Apple silicon & Intel";
       })
       .catch(function () {});
   </script>
