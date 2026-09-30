@@ -246,10 +246,9 @@ h2 {
   display: grid;
   place-items: center;
   color: #fff;
-  background: radial-gradient(260px 260px at 60% 50%, rgba(41, 98, 255, 0.28), transparent 70%);
+  background: radial-gradient(260px 260px at 60% 50%, rgba(255, 255, 255, 0.04), transparent 70%);
 }
 .spot-art svg { width: min(220px, 60%); height: auto; opacity: 0.95; }
-.privacy .spot-art { background: radial-gradient(260px 260px at 60% 50%, rgba(120, 60, 220, 0.28), transparent 70%); }
 .ticks { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; font-size: 15px; color: var(--soft); }
 .ticks li { display: flex; align-items: center; gap: 10px; }
 .ticks li::before {
@@ -326,7 +325,7 @@ h2 {
   transform: translateX(-50%);
   width: 112px;
   height: 112px;
-  filter: drop-shadow(0 10px 40px rgba(41, 151, 255, 0.35));
+  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.6));
 }
 
 /* Footer */
