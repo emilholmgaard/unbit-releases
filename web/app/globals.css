@@ -517,6 +517,3 @@ p, li, summary { text-wrap: pretty; }
 .lang-menu a:hover, .lang-menu a:focus-visible { background: rgba(255, 255, 255, 0.08); color: var(--text); }
 .lang-menu a[aria-current="true"] { color: var(--text); font-weight: 600; }
 @media (max-width: 520px) { .lang-name { display: none; } .lang-btn { padding: 0 10px; } }
-
-/* Unbit app icon in the macOS download row */
-.dl .dl-icon { width: 44px; height: 44px; border-radius: 10px; flex: none; }
