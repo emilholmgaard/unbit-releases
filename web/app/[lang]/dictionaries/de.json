@@ -90,6 +90,250 @@
     "resources": "Ressourcen",
     "releaseNotes": "Versionshinweise",
     "github": "GitHub",
+    "alternatives": "Alternativen",
     "legal": "BitLocker ist eine Marke der Microsoft Corporation. Unbit ist eine unabhängige App und steht in keiner Verbindung zu Microsoft und wird von Microsoft weder unterstützt noch empfohlen. Mac und macOS sind Marken von Apple Inc."
+  },
+  "alternatives": {
+    "index": {
+      "metaTitle": "BitLocker-für-Mac-Alternativen – Unbit vs. iBoysoft, Hasleo, UUByte und mehr",
+      "metaDescription": "Auf der Suche nach einer Alternative für BitLocker-Tools für den Mac? Faire, belegte Vergleiche von Unbit mit iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere, UUByte BitLocker Geeker, anylinuxfs und Parallels Desktop.",
+      "ogTitle": "Unbit-Alternativen – BitLocker-Tools für den Mac im Vergleich",
+      "h1": "BitLocker-für-Mac-Alternativen",
+      "sub": "Sie suchen einen anderen Weg, BitLocker-Laufwerke auf dem Mac zu öffnen? Hier finden Sie faire, belegte Vergleiche von Unbit – kostenlos, schreibgeschützt, ohne Treiber – mit den Tools, nach denen am häufigsten gesucht wird.",
+      "cardTitle": "{name}-Alternative",
+      "cardCta": "Zum Vergleich"
+    },
+    "page": {
+      "metaTitle": "{name}-Alternative für den Mac – kostenloser BitLocker-Reader | Unbit",
+      "metaDescription": "Sie suchen eine {name}-Alternative? Unbit öffnet BitLocker-USB-Laufwerke auf Ihrem Mac kostenlos: schreibgeschützt, ohne Treiber, lokal. Mit fairem Vergleich nebeneinander.",
+      "ogTitle": "{name}-Alternative für den Mac – Unbit",
+      "h1": "{name}-Alternative für den Mac",
+      "sub": "Sie müssen nur ein BitLocker-Laufwerk öffnen? Unbit ist kostenlos, schreibgeschützt, braucht keine Treiber und läuft komplett auf Ihrem Mac.",
+      "back": "Alle Alternativen",
+      "lastChecked": "Zuletzt geprüft am {date}",
+      "compareLink": "Direkt vergleichen",
+      "tableTitle": "{name} vs. Unbit",
+      "feature": "Merkmal",
+      "pickTitle": "Wer sollte was wählen?",
+      "pickThem": "Wählen Sie {name}, wenn Sie …",
+      "pickUnbit": "Wählen Sie Unbit, wenn Sie …",
+      "faqTitle": "Häufige Fragen",
+      "faqGeneric": {
+        "q": "Ist Unbit eine gute {name}-Alternative?",
+        "a": "Wenn Sie ein BitLocker-Laufwerk nur auf dem Mac öffnen und Dateien davon kopieren möchten: ja. Unbit ist kostenlos, schreibgeschützt, braucht keine Treiber und läuft lokal. Wenn Sie auf das Laufwerk schreiben oder BitLocker-Einstellungen verwalten müssen, passt {name} möglicherweise besser."
+      },
+      "sourcesTitle": "Quellen",
+      "sourcesText": "Angaben zu {name} stammen von den unten genannten eigenen Seiten und der Dokumentation des Anbieters.",
+      "disclaimer": "Zuletzt geprüft am {date}. Produktdetails, Preise und Funktionen können sich ändern. Bitte prüfen Sie sie vor Ihrer Entscheidung beim Anbieter. Alle Produktnamen sind Marken ihrer jeweiligen Inhaber. Unbit ist eine unabhängige App und steht in keiner Verbindung zu {name} oder dessen Herstellern und wird von diesen nicht empfohlen. Diese Seite dient nur der Information.",
+      "ctaTitle": "BitLocker-Laufwerk kostenlos öffnen",
+      "ctaText": "Keine Lizenz, keine Treiber, kein Windows-PC nötig."
+    },
+    "rows": {
+      "price": {
+        "label": "Preis",
+        "unbit": "Kostenlos"
+      },
+      "trial": {
+        "label": "Kostenlose Testversion",
+        "unbit": "Nicht nötig – die komplette App ist kostenlos"
+      },
+      "write": {
+        "label": "Schreibzugriff",
+        "unbit": "Nein. Bewusst schreibgeschützt: Dateien öffnen und auf den Mac kopieren"
+      },
+      "drivers": {
+        "label": "Treiber und Systemzugriff",
+        "unbit": "Keine Kernel-Erweiterung, kein macFUSE. Nutzt die in macOS eingebaute Disk-Image-Unterstützung. Benötigt Vollzugriff auf Volumes"
+      },
+      "silicon": {
+        "label": "Apple Silicon",
+        "unbit": "Ja – Universal-App für Apple Silicon und Intel"
+      },
+      "macos": {
+        "label": "macOS-Versionen",
+        "unbit": "macOS {minOS} oder neuer"
+      },
+      "unlock": {
+        "label": "Entsperren mit",
+        "unbit": "Passwort oder 48-stelligem Wiederherstellungsschlüssel"
+      },
+      "privacy": {
+        "label": "Datenschutz und Aktivierung",
+        "unbit": "Die Entschlüsselung läuft auf Ihrem Mac. Keine Konten, Analysen oder Tracking. Nur die tägliche Update-Prüfung geht online"
+      },
+      "extras": {
+        "label": "Extras",
+        "unbit": "Menüleisten-App mit automatischer Laufwerkserkennung, sicherem Auswerfen und optionalem Merken im Schlüsselbund. Verschlüsselt keine Laufwerke und ändert keine BitLocker-Einstellungen"
+      }
+    },
+    "competitors": {
+      "iboysoft": {
+        "tagline": "Kommerzielle App mit Lese-/Schreibzugriff und BitLocker-Verschlüsselung.",
+        "intro": "iBoysoft BitLocker for Mac ist eine kostenpflichtige App, die BitLocker-Laufwerke unter macOS entsperrt und auch beschreiben kann. Unbit erledigt eine engere Aufgabe – Laufwerk öffnen und Dateien kopieren – kostenlos und ohne Treiber.",
+        "cells": {
+          "price": "Kostenpflichtig: 39,95 US-$ monatlich, 79,95 US-$ jährlich (beide automatisch verlängert) oder 159,95 US-$ einmalig mit lebenslangen Upgrades. Pro Mac, zzgl. MwSt.",
+          "trial": "Ja, aber die Testversion kann Dateien nur durchsuchen und in der Vorschau anzeigen. Das Einbinden im Finder erfordert die Vollversion",
+          "write": "Ja – Lesen und Schreiben, einschließlich Bearbeiten, Umbenennen und Löschen von Dateien",
+          "drivers": "Der Finder-Modus (Volume Mounter) benötigt eine Systemerweiterung. Auf Apple Silicon beschreibt der Hersteller den Wechsel zu „Reduzierte Sicherheit“ im Recovery-Modus. Ein File-Manager-Modus funktioniert ohne",
+          "silicon": "Ja – M1 bis M5 und Intel (mit aktivierter Systemerweiterung)",
+          "macos": "macOS 10.13 High Sierra und neuer",
+          "unlock": "Passwort oder 48-stelliger Wiederherstellungsschlüssel",
+          "privacy": "Die Aktivierung erfordert laut Kauf-FAQ des Herstellers einen Internetzugang",
+          "extras": "Kann Laufwerke auch mit BitLocker verschlüsseln und unterstützt automatisches Entsperren über den Schlüsselbund. NTFS, FAT32 und exFAT"
+        },
+        "themPick": [
+          "Dateien auf einem BitLocker-Laufwerk von Ihrem Mac aus bearbeiten, hinzufügen oder löschen müssen",
+          "externe Laufwerke unter macOS mit BitLocker verschlüsseln möchten",
+          "mit einer kostenpflichtigen Lizenz und einmaliger Einrichtung der Systemerweiterung gut leben können"
+        ],
+        "unbitPick": [
+          "ein Laufwerk nur öffnen und Ihre Dateien kopieren möchten",
+          "unter Apple Silicon keine Systemerweiterungen aktivieren und die Startsicherheit nicht senken möchten",
+          "eine kostenlose App ohne Lizenzschlüssel und ohne Einschränkungen der Testversion wünschen"
+        ],
+        "faq": [
+          {
+            "q": "Gibt es eine kostenlose Version von iBoysoft BitLocker for Mac?",
+            "a": "iBoysoft bietet eine Testversion, die Dateien auf dem Laufwerk durchsuchen und in der Vorschau anzeigen kann. Zum Einbinden im Finder ist eine kostenpflichtige Lizenz nötig. Unbit ist kostenlos und öffnet das Laufwerk schreibgeschützt im Finder."
+          },
+          {
+            "q": "Braucht iBoysoft BitLocker for Mac unter Apple Silicon „Reduzierte Sicherheit“?",
+            "a": "Für den Finder-Modus müssen laut Hersteller Systemerweiterungen aktiviert werden, was unter Apple Silicon die Auswahl von „Reduzierte Sicherheit“ im Recovery-Modus einschließt. Der File-Manager-Modus funktioniert ohne Systemerweiterung. Unbit nutzt keine Kernel-Erweiterung, Ihre Startsicherheit bleibt also unverändert."
+          }
+        ]
+      },
+      "hasleo": {
+        "tagline": "Günstige kommerzielle App zum Lesen, Schreiben und Verschlüsseln.",
+        "intro": "Hasleo BitLocker Anywhere for Mac ist ein kostenpflichtiges All-in-one-Tool, das Laufwerke lesend/schreibend oder schreibgeschützt einbinden sowie ver- und entschlüsseln kann. Unbit ist die schlankere Wahl, wenn Sie nur Ihre Dateien lesen möchten.",
+        "cells": {
+          "price": "Kostenpflichtig: 19,98 US-$ (als reduziert von 39,95 US-$ angegeben) für eine Professional-Lizenz für einen Mac, zzgl. MwSt. Kostenlose lebenslange Upgrades",
+          "trial": "Es gibt eine kostenlose Test-/Gratisversion, die ein Lizenzschlüssel in die Vollversion verwandelt. Die Einschränkungen konnten wir nicht verifizieren",
+          "write": "Ja – bindet Laufwerke lesend/schreibend oder schreibgeschützt ein",
+          "drivers": "Unter Apple Silicon beschreibt das Support-Forum des Herstellers, für die Installation „Reduzierte Sicherheit“ zu aktivieren und Kernel-Erweiterungen zuzulassen. Vollzugriff auf Volumes ist ebenfalls erforderlich",
+          "silicon": "Ja – Intel und Apple Silicon (M1 bis M4 angegeben)",
+          "macos": "macOS 10.14 Mojave bis macOS 26 Tahoe",
+          "unlock": "Passwort oder Wiederherstellungsschlüssel",
+          "extras": "Verschlüsselt und entschlüsselt Laufwerke, ändert das Passwort, exportiert Wiederherstellungs- und Startschlüssel. NTFS, FAT und exFAT. Kommandozeile nur in einer separaten Edition"
+        },
+        "themPick": [
+          "von Ihrem Mac aus auf ein BitLocker-Laufwerk schreiben müssen",
+          "Laufwerke unter macOS verschlüsseln, entschlüsseln oder deren Passwort ändern möchten",
+          "mit einer kostenpflichtigen Lizenz und einer aufwendigeren Einrichtung unter Apple Silicon gut leben können"
+        ],
+        "unbitPick": [
+          "nur Ihre Dateien lesen und auf den Mac kopieren möchten",
+          "Kernel-Erweiterungen und „Reduzierte Sicherheit“ vermeiden möchten",
+          "eine kostenlose App bevorzugen, bei der nichts zu kaufen oder zu aktivieren ist"
+        ],
+        "faq": [
+          {
+            "q": "Kann Hasleo BitLocker Anywhere for Mac auf Laufwerke schreiben?",
+            "a": "Ja. Laut Hersteller kann es BitLocker-Laufwerke lesend/schreibend oder schreibgeschützt einbinden. Unbit bindet Laufwerke immer schreibgeschützt ein."
+          },
+          {
+            "q": "Ist Hasleo BitLocker Anywhere for Mac kostenlos?",
+            "a": "Nein. Der Hersteller verkauft eine kostenpflichtige Professional-Lizenz für einen Mac und nennt eine Test-/Gratisversion, die ein Lizenzschlüssel freischaltet. Unbit ist kostenlos."
+          }
+        ]
+      },
+      "uubyte": {
+        "tagline": "Kostenpflichtiger Reader, der nach dem Entsperren Schreibzugriff freischalten kann.",
+        "intro": "UUByte BitLocker Geeker ist eine kostenpflichtige App zum Entsperren von BitLocker-Laufwerken auf dem Mac, optional mit Schreibzugriff. Unbit ist eine kostenlose, schreibgeschützte Alternative ohne die Schritte zur Kernel-Erweiterung.",
+        "cells": {
+          "price": "Kostenpflichtig: 29,95 US-$ für einen 1-Jahres-Plan, 39,95 US-$ lebenslang für einen Mac oder 59,95 US-$ lebenslang für 8 Macs. 30 Tage Geld-zurück-Garantie angegeben",
+          "write": "Ja – nach dem Entsperren können Sie Dateien ansehen und kopieren, Schreibzugriff wird mit der Schaltfläche „Enable Write“ aktiviert",
+          "drivers": "Die Apple-Silicon-Anleitung des Herstellers verlangt Vollzugriff auf Volumes, das Zulassen der Verwaltung von Kernel-Erweiterungen, das Aktualisieren der Systemerweiterung und einen Neustart",
+          "silicon": "Ja – der Hersteller bietet eine Anleitung für Macs mit M1, M2, M3 und M4",
+          "macos": "macOS Sierra bis Tahoe laut Kaufseite",
+          "unlock": "Passwort oder Wiederherstellungsschlüssel",
+          "extras": "Automatisches Entsperren über den Schlüsselbund. NTFS, FAT32 und exFAT"
+        },
+        "themPick": [
+          "die Möglichkeit wünschen, von Ihrem Mac aus auf ein BitLocker-Laufwerk zu schreiben",
+          "mit einer kostenpflichtigen Lizenz gut leben können",
+          "die Schritte zur Kernel-Erweiterung unter Apple Silicon problemlos befolgen"
+        ],
+        "unbitPick": [
+          "Dateien nur lesen und vom Laufwerk kopieren müssen",
+          "Kernel-Erweiterungen und Neustarts vermeiden möchten",
+          "eine kostenlose App ohne Lizenzschlüssel bevorzugen"
+        ],
+        "faq": [
+          {
+            "q": "Ist UUByte BitLocker Geeker schreibgeschützt?",
+            "a": "Nicht unbedingt. Laut Hersteller können Sie nach dem Entsperren Dateien ansehen und kopieren, Schreibzugriff wird mit der Schaltfläche „Enable Write“ aktiviert. Unbit ist immer schreibgeschützt."
+          },
+          {
+            "q": "Braucht UUByte BitLocker Geeker unter Apple Silicon Kernel-Erweiterungen?",
+            "a": "Die Apple-Silicon-Anleitung des Herstellers umfasst das Zulassen der Verwaltung von Kernel-Erweiterungen und das Aktualisieren der Systemerweiterung. Unbit nutzt weder eine Kernel-Erweiterung noch macFUSE."
+          }
+        ]
+      },
+      "anylinuxfs": {
+        "tagline": "Kostenloses Open-Source-Kommandozeilentool mit Lese-/Schreibzugriff.",
+        "intro": "anylinuxfs ist ein kostenloses Open-Source-Kommandozeilentool, das von Linux unterstützte Dateisysteme – darunter BitLocker-Laufwerke – auf Macs mit Apple Silicon einbindet. Unbit ist eine sofort nutzbare Mac-App für dieselbe Entsperr-Aufgabe, ohne Terminal und ohne virtuelle Maschine.",
+        "cells": {
+          "price": "Kostenlos und Open Source",
+          "write": "Ja – standardmäßig Lesen/Schreiben, schreibgeschütztes Einbinden ist wählbar",
+          "drivers": "Keine Kernel-Erweiterungen und keine Absenkung der Systemsicherheit. Es startet eine schlanke virtuelle Maschine und gibt das Laufwerk per NFS frei",
+          "silicon": "Nur Apple Silicon. Intel-Macs werden nicht unterstützt",
+          "unlock": "BitLocker-Volumes mit NTFS oder FAT32. Das Projekt beschreibt die Verwendung des Wiederherstellungsschlüssels als Passphrase",
+          "privacy": "Läuft lokal. Das Laufwerk wird standardmäßig nur für Ihren eigenen Mac (localhost) freigegeben",
+          "extras": "Kommandozeilentool, Installation mit Homebrew. Das Laufwerk erscheint in macOS als Netzwerklaufwerk. Unterstützt außerdem ext4, btrfs, LUKS, ZFS und mehr. Bekanntes Problem: Microsoft Word kann Dateien auf einem eingebundenen Laufwerk nicht direkt bearbeiten"
+        },
+        "themPick": [
+          "mit Terminal und Homebrew vertraut sind",
+          "kostenlosen Lese-/Schreibzugriff auf ein BitLocker-Laufwerk brauchen",
+          "auch mit Linux-Dateisystemen wie ext4, btrfs oder LUKS arbeiten"
+        ],
+        "unbitPick": [
+          "eine normale Mac-App statt eines Kommandozeilentools möchten",
+          "einen Intel-Mac nutzen oder dieselbe App auf Intel und Apple Silicon wollen",
+          "ein schreibgeschütztes Einbinden möchten, damit nichts auf das Laufwerk geschrieben werden kann"
+        ],
+        "faq": [
+          {
+            "q": "Funktioniert anylinuxfs auf Intel-Macs?",
+            "a": "Nein. Das Projekt gibt an, dass nur Macs mit Apple Silicon unterstützt werden. Unbit ist eine Universal-App, die auf Apple Silicon und Intel läuft."
+          },
+          {
+            "q": "Ist anylinuxfs eine App mit grafischer Oberfläche?",
+            "a": "anylinuxfs selbst ist ein Kommandozeilenprogramm. Die README verweist auf eine separate grafische Oberfläche. Unbit ist eine Menüleisten-App, die das Laufwerk erkennt und nach Passwort oder Wiederherstellungsschlüssel fragt."
+          }
+        ]
+      },
+      "parallels": {
+        "tagline": "Windows in einer virtuellen Maschine ausführen und das Laufwerk dort entsperren.",
+        "intro": "Parallels Desktop ist eine Virtualisierungs-App. Viele nutzen eine virtuelle Windows-Maschine, um ein BitLocker-Laufwerk zu entsperren, da Windows BitLocker nativ unterstützt. Das funktioniert, ist aber ein deutlich größerer Aufwand als mit Unbit.",
+        "cells": {
+          "price": "Kostenpflichtig: Jahresabonnement oder, für die Standard-Edition, Einmalkauf. Eine Windows-Lizenz ist nicht enthalten",
+          "write": "Wird von Windows in der virtuellen Maschine erledigt und verhält sich wie auf einem Windows-PC",
+          "drivers": "Kein BitLocker-Treiber unter macOS. Sie verbinden das USB-Laufwerk mit der virtuellen Windows-Maschine, wo es auf dem Mac nicht mehr sichtbar ist",
+          "silicon": "Ja – macOS Big Sur oder neuer auf Apple Silicon, macOS Catalina oder neuer auf Intel",
+          "unlock": "Passwort oder Wiederherstellungsschlüssel, eingegeben in Windows",
+          "extras": "Eine vollständige virtuelle Windows-Maschine, die auch Windows-Apps ausführt. Erfordert eine Windows-Installation und -Lizenz sowie Speicherplatz und Arbeitsspeicher für die virtuelle Maschine"
+        },
+        "themPick": [
+          "bereits Windows in Parallels Desktop betreiben",
+          "das volle Windows-Verhalten für das Laufwerk wollen, einschließlich Schreiben",
+          "auch Windows-Apps auf Ihrem Mac brauchen"
+        ],
+        "unbitPick": [
+          "nur ein Laufwerk öffnen möchten, ohne Windows zu installieren",
+          "keine Windows-Lizenz kaufen und keine virtuelle Maschine betreiben möchten",
+          "möchten, dass das Laufwerk wie jede andere Festplatte im Finder erscheint"
+        ],
+        "faq": [
+          {
+            "q": "Kann Parallels Desktop BitLocker-Laufwerke auf dem Mac öffnen?",
+            "a": "Ja, indirekt. Sie verbinden das USB-Laufwerk mit einer virtuellen Windows-Maschine und entsperren es mit der BitLocker-Unterstützung von Windows. Das ist ein allgemeiner Virtualisierungs-Workflow und keine dedizierte BitLocker-Funktion."
+          },
+          {
+            "q": "Brauche ich eine Windows-Lizenz, um Parallels Desktop zu nutzen?",
+            "a": "Laut Parallels ist eine Windows-Lizenz nicht enthalten, und Sie benötigen eine, um Windows zu aktivieren. Unbit braucht überhaupt kein Windows."
+          }
+        ]
+      }
+    }
   }
 }

@@ -90,6 +90,250 @@
     "resources": "Resurssit",
     "releaseNotes": "Julkaisutiedot",
     "github": "GitHub",
+    "alternatives": "Vaihtoehdot",
     "legal": "BitLocker on Microsoft Corporationin tavaramerkki. Unbit on riippumaton appi, jolla ei ole yhteyttä Microsoftiin eikä Microsoft ole hyväksynyt sitä. Mac ja macOS ovat Apple Inc:n tavaramerkkejä."
+  },
+  "alternatives": {
+    "index": {
+      "metaTitle": "BitLocker Macille -vaihtoehdot – Unbit vs. iBoysoft, Hasleo, UUByte ja muut",
+      "metaDescription": "Etsitkö vaihtoehtoa Macin BitLocker-työkaluille? Reiluja, lähteisiin perustuvia vertailuja: Unbit vs. iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere, UUByte BitLocker Geeker, anylinuxfs ja Parallels Desktop.",
+      "ogTitle": "Unbitin vaihtoehdot – vertaile Macin BitLocker-työkaluja",
+      "h1": "BitLocker Macille -vaihtoehdot",
+      "sub": "Etsitkö toista tapaa avata BitLocker-levyjä Macilla? Tässä reiluja, lähteisiin perustuvia vertailuja: Unbit – ilmainen, vain luku, ei ajureita – ja eniten haetut työkalut.",
+      "cardTitle": "{name}-vaihtoehto",
+      "cardCta": "Katso vertailu"
+    },
+    "page": {
+      "metaTitle": "{name}-vaihtoehto Macille – ilmainen BitLocker-lukija | Unbit",
+      "metaDescription": "Etsitkö {name}-vaihtoehtoa? Unbit avaa BitLocker-USB-levyt Macillasi ilmaiseksi: vain luku, ei ajureita, paikallisesti. Katso reilu vertailu rinnakkain.",
+      "ogTitle": "{name}-vaihtoehto Macille – Unbit",
+      "h1": "{name}-vaihtoehto Macille",
+      "sub": "Tarvitsetko vain BitLocker-levyn avaamiseen? Unbit on ilmainen, vain luku, ei tarvitse ajureita ja toimii kokonaan Macillasi.",
+      "back": "Kaikki vaihtoehdot",
+      "lastChecked": "Tarkistettu viimeksi {date}",
+      "compareLink": "Vertaile rinnakkain",
+      "tableTitle": "{name} vs. Unbit",
+      "feature": "Ominaisuus",
+      "pickTitle": "Kuka valitsee minkä",
+      "pickThem": "Valitse {name}, jos …",
+      "pickUnbit": "Valitse Unbit, jos …",
+      "faqTitle": "Usein kysyttyä",
+      "faqGeneric": {
+        "q": "Onko Unbit hyvä {name}-vaihtoehto?",
+        "a": "Jos haluat vain avata BitLocker-levyn Macilla ja kopioida sieltä tiedostoja, kyllä: Unbit on ilmainen, vain luku, ei tarvitse ajureita ja toimii paikallisesti. Jos tarvitset levylle kirjoittamista tai BitLocker-asetusten hallintaa, {name} voi sopia paremmin."
+      },
+      "sourcesTitle": "Lähteet",
+      "sourcesText": "Tiedot tuotteesta {name} perustuvat valmistajan omiin sivuihin ja dokumentaatioon alla.",
+      "disclaimer": "Tarkistettu viimeksi {date}. Tuotetiedot, hinnat ja ominaisuudet voivat muuttua, joten tarkista ne valmistajalta ennen päätöstä. Kaikki tuotenimet ovat omistajiensa tavaramerkkejä. Unbit on riippumaton sovellus, eikä se ole sidoksissa tuotteeseen {name} tai sen tekijöihin eivätkä he ole sitä hyväksyneet. Sivu on vain tiedoksi.",
+      "ctaTitle": "Avaa BitLocker-levysi ilmaiseksi",
+      "ctaText": "Ei lisenssiä, ei ajureita, ei Windows-konetta."
+    },
+    "rows": {
+      "price": {
+        "label": "Hinta",
+        "unbit": "Ilmainen"
+      },
+      "trial": {
+        "label": "Ilmainen kokeiluversio",
+        "unbit": "Ei tarvita – koko sovellus on ilmainen"
+      },
+      "write": {
+        "label": "Kirjoitus",
+        "unbit": "Ei. Vain luku tarkoituksella: avaa tiedostoja ja kopioi ne Macillesi"
+      },
+      "drivers": {
+        "label": "Ajurit ja järjestelmäoikeudet",
+        "unbit": "Ei ydinlaajennusta eikä macFUSEa. Käyttää macOS:n omaa levykuvatukea. Vaatii täyden levyn käyttöoikeuden"
+      },
+      "silicon": {
+        "label": "Apple silicon",
+        "unbit": "Kyllä – universaali sovellus Apple siliconille ja Intelille"
+      },
+      "macos": {
+        "label": "macOS-versiot",
+        "unbit": "macOS {minOS} tai uudempi"
+      },
+      "unlock": {
+        "label": "Avaus",
+        "unbit": "Salasana tai 48-numeroinen palautusavain"
+      },
+      "privacy": {
+        "label": "Yksityisyys ja aktivointi",
+        "unbit": "Salauksen purku tapahtuu Macillasi. Ei tilejä, analytiikkaa eikä seurantaa. Verkkoon menee vain päivittäinen päivitystarkistus"
+      },
+      "extras": {
+        "label": "Lisäominaisuudet",
+        "unbit": "Valikkopalkkisovellus, jossa automaattinen levyn tunnistus, turvallinen poistaminen ja valinnainen muistaminen avainnipussa. Ei salaa levyjä eikä muuta BitLocker-asetuksia"
+      }
+    },
+    "competitors": {
+      "iboysoft": {
+        "tagline": "Kaupallinen sovellus luku- ja kirjoitusoikeuksilla sekä BitLocker-salauksella.",
+        "intro": "iBoysoft BitLocker for Mac on maksullinen sovellus, joka avaa BitLocker-levyt macOS:ssä ja pystyy myös kirjoittamaan niille. Unbit hoitaa suppeamman tehtävän – levyn avaamisen ja tiedostojen kopioinnin – ilmaiseksi ja ilman ajureita.",
+        "cells": {
+          "price": "Maksullinen: 39,95 USD kuukaudessa, 79,95 USD vuodessa (molemmat uusiutuvat automaattisesti) tai 159,95 USD kertamaksuna elinikäisillä päivityksillä. Macia kohden, ilman alv:tä",
+          "trial": "Kyllä, mutta kokeiluversiolla voi vain selata ja esikatsella tiedostoja. Levyn liittäminen Finderiin vaatii maksullisen version",
+          "write": "Kyllä – luku ja kirjoitus, mukaan lukien tiedostojen muokkaus, uudelleennimeäminen ja poisto",
+          "drivers": "Finder-tila (Volume Mounter) tarvitsee järjestelmälaajennuksen. Apple siliconilla valmistaja ohjeistaa vaihtamaan Recoveryssä Vähennettyyn suojaukseen. File Manager -tila toimii ilman",
+          "silicon": "Kyllä – M1–M5 ja Intel (järjestelmälaajennus käytössä)",
+          "macos": "macOS 10.13 High Sierra ja uudemmat",
+          "unlock": "Salasana tai 48-numeroinen palautusavain",
+          "privacy": "Aktivointi vaatii internetyhteyden valmistajan ostoksia koskevien UKK:n mukaan",
+          "extras": "Voi myös salata levyjä BitLockerilla ja tukee automaattista avausta avainnipun kautta. NTFS, FAT32 ja exFAT"
+        },
+        "themPick": [
+          "tarvitset tiedostojen muokkausta, lisäämistä tai poistamista BitLocker-levyllä Macilta",
+          "haluat salata ulkoisia levyjä BitLockerilla macOS:ssä",
+          "maksullinen lisenssi ja kertaluonteinen järjestelmälaajennuksen käyttöönotto sopivat sinulle"
+        ],
+        "unbitPick": [
+          "haluat vain avata levyn ja kopioida tiedostosi sieltä",
+          "et halua ottaa käyttöön järjestelmälaajennuksia tai heikentää käynnistysturvallisuutta Apple siliconilla",
+          "haluat ilmaisen sovelluksen ilman lisenssiavainta tai kokeiluversion rajoituksia"
+        ],
+        "faq": [
+          {
+            "q": "Onko iBoysoft BitLocker for Macista ilmaista versiota?",
+            "a": "iBoysoft tarjoaa kokeiluversion, jolla voi selata ja esikatsella levyn tiedostoja, mutta levyn liittäminen Finderiin vaatii maksullisen lisenssin. Unbit on ilmainen ja avaa levyn Finderissa vain luku -tilassa."
+          },
+          {
+            "q": "Vaatiiko iBoysoft BitLocker for Mac Vähennetyn suojauksen Apple siliconilla?",
+            "a": "Finder-liitostilaa varten valmistaja kertoo, että järjestelmälaajennukset on otettava käyttöön, mikä Apple siliconilla tarkoittaa Vähennetyn suojauksen valitsemista Recoveryssä. File Manager -tila toimii ilman järjestelmälaajennusta. Unbit ei käytä ydinlaajennusta, joten käynnistysturvallisuutesi ei muutu."
+          }
+        ]
+      },
+      "hasleo": {
+        "tagline": "Edullinen kaupallinen sovellus, joka lukee, kirjoittaa ja salaa.",
+        "intro": "Hasleo BitLocker Anywhere for Mac on maksullinen kaikki yhdessä -työkalu, joka voi liittää levyjä luku- ja kirjoitustilassa tai vain luku -tilassa sekä salata ja purkaa niiden salauksen. Unbit on kevyempi valinta, kun haluat vain lukea tiedostosi.",
+        "cells": {
+          "price": "Maksullinen: 19,98 USD (ilmoitettu alennetuksi hinnasta 39,95 USD) Professional-lisenssistä yhdelle Macille, ilman alv:tä. Ilmaiset elinikäiset päivitykset",
+          "trial": "Ilmainen kokeiluversio on olemassa, ja lisenssiavain muuttaa sen täysversioksi. Emme pystyneet varmistamaan sen rajoituksia",
+          "write": "Kyllä – liittää levyt luku- ja kirjoitustilassa tai vain luku -tilassa",
+          "drivers": "Apple siliconilla valmistajan tukifoorumi kuvaa Vähennetyn suojauksen käyttöönottoa ja ydinlaajennusten sallimista asennusta varten. Myös täyden levyn käyttöoikeus vaaditaan",
+          "silicon": "Kyllä – Intel ja Apple silicon (M1–M4 mainittu)",
+          "macos": "macOS 10.14 Mojavesta macOS 26 Tahoeen",
+          "unlock": "Salasana tai palautusavain",
+          "extras": "Salaa ja purkaa levyjä, vaihtaa salasanan, vie palautusavaimen ja käynnistysavaimen. NTFS, FAT ja exFAT. Komentorivi vain erillisessä versiossa"
+        },
+        "themPick": [
+          "tarvitset kirjoitusta BitLocker-levylle Macilta",
+          "haluat salata, purkaa tai vaihtaa levyjen salasanan macOS:ssä",
+          "maksullinen lisenssi ja monimutkaisempi asennus Apple siliconilla sopivat sinulle"
+        ],
+        "unbitPick": [
+          "haluat vain lukea tiedostosi ja kopioida ne Macillesi",
+          "haluat välttää ydinlaajennukset ja Vähennetyn suojauksen",
+          "haluat ilmaisen sovelluksen, jossa ei ole mitään ostettavaa tai aktivoitavaa"
+        ],
+        "faq": [
+          {
+            "q": "Voiko Hasleo BitLocker Anywhere for Mac kirjoittaa levyille?",
+            "a": "Kyllä. Valmistajan mukaan se voi liittää BitLocker-levyt luku- ja kirjoitustilassa tai vain luku -tilassa. Unbit liittää levyt aina vain luku -tilassa."
+          },
+          {
+            "q": "Onko Hasleo BitLocker Anywhere for Mac ilmainen?",
+            "a": "Ei. Valmistaja myy maksullista Professional-lisenssiä yhdelle Macille ja mainitsee ilmaisen kokeiluversion, jonka lisenssiavain avaa. Unbit on ilmainen."
+          }
+        ]
+      },
+      "uubyte": {
+        "tagline": "Maksullinen lukija, joka voi ottaa kirjoituksen käyttöön avauksen jälkeen.",
+        "intro": "UUByte BitLocker Geeker on maksullinen sovellus BitLocker-levyjen avaamiseen Macilla, valinnaisella kirjoitusoikeudella. Unbit on ilmainen, vain luku -vaihtoehto, joka välttää ydinlaajennuksen vaiheet.",
+        "cells": {
+          "price": "Maksullinen: 29,95 USD 1 vuoden suunnitelmasta, 39,95 USD elinikäisestä lisenssistä yhdelle Macille tai 59,95 USD elinikäisestä lisenssistä 8 Macille. 30 päivän rahat takaisin -takuu mainittu",
+          "write": "Kyllä – avauksen jälkeen voit katsella ja kopioida tiedostoja, ja kirjoitus otetaan käyttöön Enable Write -painikkeella",
+          "drivers": "Valmistajan Apple silicon -ohje pyytää antamaan täyden levyn käyttöoikeuden, sallimaan ydinlaajennusten hallinnan, päivittämään järjestelmälaajennuksen ja käynnistämään uudelleen",
+          "silicon": "Kyllä – valmistajalla on ohje M1-, M2-, M3- ja M4-Maceille",
+          "macos": "macOS Sierrasta Tahoeen ostosivun mukaan",
+          "unlock": "Salasana tai palautusavain",
+          "extras": "Automaattinen avaus avainnipun kautta. NTFS, FAT32 ja exFAT"
+        },
+        "themPick": [
+          "haluat mahdollisuuden kirjoittaa BitLocker-levylle Macilta",
+          "maksullinen lisenssi sopii sinulle",
+          "ydinlaajennuksen vaiheet Apple siliconilla eivät ole sinulle ongelma"
+        ],
+        "unbitPick": [
+          "tarvitset vain tiedostojen lukemista ja kopiointia levyltä",
+          "haluat välttää ydinlaajennukset ja uudelleenkäynnistykset",
+          "haluat ilmaisen sovelluksen ilman lisenssiavainta"
+        ],
+        "faq": [
+          {
+            "q": "Onko UUByte BitLocker Geeker vain luku -tilassa?",
+            "a": "Ei välttämättä. Valmistaja kertoo, että avauksen jälkeen voit katsella ja kopioida tiedostoja ja että kirjoitus otetaan käyttöön Enable Write -painikkeella. Unbit on aina vain luku -tilassa."
+          },
+          {
+            "q": "Vaatiiko UUByte BitLocker Geeker ydinlaajennuksia Apple siliconilla?",
+            "a": "Valmistajan Apple silicon -ohjeeseen kuuluu ydinlaajennusten hallinnan salliminen ja järjestelmälaajennuksen päivittäminen. Unbit ei käytä ydinlaajennusta eikä macFUSEa."
+          }
+        ]
+      },
+      "anylinuxfs": {
+        "tagline": "Ilmainen avoimen lähdekoodin komentorivityökalu luku- ja kirjoitustuella.",
+        "intro": "anylinuxfs on ilmainen avoimen lähdekoodin komentorivityökalu, joka liittää Linuxin tukemia tiedostojärjestelmiä Apple silicon -Maceilla, myös BitLocker-levyjä. Unbit on käyttövalmis Mac-sovellus samaan avaustehtävään ilman Terminalia ja ilman virtuaalikonetta.",
+        "cells": {
+          "price": "Ilmainen ja avoimen lähdekoodin",
+          "write": "Kyllä – oletuksena luku ja kirjoitus, vain luku -liitoksen voi valita",
+          "drivers": "Ei ydinlaajennuksia eikä järjestelmän turvallisuuden heikentämistä. Käynnistää kevyen virtuaalikoneen ja jakaa levyn NFS:n kautta",
+          "silicon": "Vain Apple silicon. Intel-Maceja ei tueta",
+          "unlock": "BitLocker-taltiot, joissa NTFS tai FAT32. Projekti kuvaa palautusavaimen käyttöä salalauseena",
+          "privacy": "Toimii paikallisesti. Oletuksena levy jaetaan vain omalle Macillesi (localhost)",
+          "extras": "Komentorivityökalu, joka asennetaan Homebrew’lla. Levy näkyy macOS:ssä verkkolevynä. Tukee myös ext4:ää, btrfs:ää, LUKSia, ZFS:ää ja muita. Tunnettu ongelma: Microsoft Word ei voi muokata tiedostoja suoraan liitetyllä levyllä"
+        },
+        "themPick": [
+          "hallitset Terminalin ja Homebrew’n",
+          "tarvitset ilmaista luku- ja kirjoitusoikeutta BitLocker-levyyn",
+          "käytät myös Linux-tiedostojärjestelmiä, kuten ext4, btrfs tai LUKS"
+        ],
+        "unbitPick": [
+          "haluat tavallisen Mac-sovelluksen komentorivityökalun sijaan",
+          "käytät Intel-Macia tai haluat saman sovelluksen sekä Intelille että Apple siliconille",
+          "haluat vain luku -liitoksen, jotta levylle ei voi kirjoittaa mitään"
+        ],
+        "faq": [
+          {
+            "q": "Toimiiko anylinuxfs Intel-Maceilla?",
+            "a": "Ei. Projekti ilmoittaa, että vain Apple silicon -Macit ovat tuettuja. Unbit on universaali sovellus, joka toimii Apple siliconilla ja Intelillä."
+          },
+          {
+            "q": "Onko anylinuxfs graafinen sovellus?",
+            "a": "anylinuxfs itsessään on komentorivityökalu. Sen README viittaa erilliseen graafiseen käyttöliittymään. Unbit on valikkopalkkisovellus, joka tunnistaa levyn ja kysyy salasanaa tai palautusavainta."
+          }
+        ]
+      },
+      "parallels": {
+        "tagline": "Aja Windowsia virtuaalikoneessa ja avaa levy siellä.",
+        "intro": "Parallels Desktop on virtualisointisovellus. Monet käyttävät Windows-virtuaalikonetta BitLocker-levyn avaamiseen, koska Windows tukee BitLockeria natiivisti. Se toimii, mutta kokonaisuus on paljon raskaampi kuin Unbitilla.",
+        "cells": {
+          "price": "Maksullinen: vuositilaus tai Standard-versiossa kertaosto. Windows-lisenssi ei sisälly hintaan",
+          "write": "Windows hoitaa virtuaalikoneessa, joten toiminta on kuin Windows-koneella",
+          "drivers": "Ei BitLocker-ajuria macOS:ssä. Liität USB-levyn Windows-virtuaalikoneeseen, jolloin se ei enää näy Macissa",
+          "silicon": "Kyllä – macOS Big Sur tai uudempi Apple siliconilla, macOS Catalina tai uudempi Intelillä",
+          "unlock": "Salasana tai palautusavain, syötetään Windowsissa",
+          "extras": "Täysi Windows-virtuaalikone, joka ajaa myös Windows-sovelluksia. Vaatii Windows-asennuksen ja -lisenssin sekä levytilaa ja muistia virtuaalikoneelle"
+        },
+        "themPick": [
+          "ajat jo Windowsia Parallels Desktopissa",
+          "haluat täyden Windows-toiminnan levylle, kirjoitus mukaan lukien",
+          "tarvitset myös Windows-sovelluksia Macillasi"
+        ],
+        "unbitPick": [
+          "haluat vain avata yhden levyn asentamatta Windowsia",
+          "et halua ostaa Windows-lisenssiä tai ajaa virtuaalikonetta",
+          "haluat levyn näkyvän Finderissa kuten minkä tahansa muun levyn"
+        ],
+        "faq": [
+          {
+            "q": "Voiko Parallels Desktop avata BitLocker-levyjä Macilla?",
+            "a": "Kyllä, välillisesti. Liität USB-levyn Windows-virtuaalikoneeseen ja avaat sen Windowsin omalla BitLocker-tuella. Se on yleinen virtualisointitapa, ei erillinen BitLocker-ominaisuus."
+          },
+          {
+            "q": "Tarvitsenko Windows-lisenssin Parallels Desktopin käyttöön?",
+            "a": "Parallelsin mukaan Windows-lisenssi ei sisälly hintaan ja sellainen tarvitaan Windowsin aktivointiin. Unbit ei tarvitse Windowsia lainkaan."
+          }
+        ]
+      }
+    }
   }
 }

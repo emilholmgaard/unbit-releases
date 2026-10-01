@@ -90,6 +90,250 @@
     "resources": "Ressourcer",
     "releaseNotes": "Udgivelsesnoter",
     "github": "GitHub",
+    "alternatives": "Alternativer",
     "legal": "BitLocker er et varemærke tilhørende Microsoft Corporation. Unbit er en uafhængig app og er ikke tilknyttet eller godkendt af Microsoft. Mac og macOS er varemærker tilhørende Apple Inc."
+  },
+  "alternatives": {
+    "index": {
+      "metaTitle": "BitLocker til Mac-alternativer – Unbit vs iBoysoft, Hasleo, UUByte m.fl.",
+      "metaDescription": "Leder du efter et alternativ til BitLocker-programmer til Mac? Fair sammenligning med kilder af Unbit og iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere, UUByte BitLocker Geeker, anylinuxfs og Parallels Desktop.",
+      "ogTitle": "Unbit-alternativer – sammenlign BitLocker-værktøjer til Mac",
+      "h1": "BitLocker til Mac-alternativer",
+      "sub": "Leder du efter en anden måde at åbne BitLocker-drev på din Mac? Her er fair sammenligninger med kilder af Unbit – gratis, skrivebeskyttet og uden drivere – og de værktøjer, folk søger efter mest.",
+      "cardTitle": "{name}-alternativ",
+      "cardCta": "Se sammenligningen"
+    },
+    "page": {
+      "metaTitle": "{name}-alternativ til Mac – gratis BitLocker-læser | Unbit",
+      "metaDescription": "Leder du efter et {name}-alternativ? Unbit åbner BitLocker-USB-drev på din Mac gratis: skrivebeskyttet, uden drivere og lokalt. Se en fair sammenligning side om side.",
+      "ogTitle": "{name}-alternativ til Mac – Unbit",
+      "h1": "{name}-alternativ til Mac",
+      "sub": "Skal du bare åbne et BitLocker-drev? Unbit er gratis, skrivebeskyttet, kræver ingen drivere og kører helt lokalt på din Mac.",
+      "back": "Alle alternativer",
+      "lastChecked": "Senest kontrolleret {date}",
+      "compareLink": "Sammenlign side om side",
+      "tableTitle": "{name} vs Unbit",
+      "feature": "Funktion",
+      "pickTitle": "Hvem skal vælge hvad",
+      "pickThem": "Vælg {name}, hvis du …",
+      "pickUnbit": "Vælg Unbit, hvis du …",
+      "faqTitle": "Ofte stillede spørgsmål",
+      "faqGeneric": {
+        "q": "Er Unbit et godt {name}-alternativ?",
+        "a": "Hvis du bare skal åbne et BitLocker-drev på din Mac og kopiere filer fra det, ja: Unbit er gratis, skrivebeskyttet, kræver ingen drivere og kører lokalt. Hvis du skal skrive til drevet eller styre BitLocker-indstillinger, kan {name} passe bedre."
+      },
+      "sourcesTitle": "Kilder",
+      "sourcesText": "Oplysninger om {name} stammer fra producentens egne sider og dokumentation nedenfor.",
+      "disclaimer": "Senest kontrolleret den {date}. Produktoplysninger, priser og funktioner kan ændre sig, så tjek dem hos producenten, før du beslutter dig. Alle produktnavne er varemærker tilhørende deres respektive ejere. Unbit er en uafhængig app og er ikke tilknyttet eller godkendt af {name} eller dets udviklere. Siden er kun til information.",
+      "ctaTitle": "Åbn dit BitLocker-drev gratis",
+      "ctaText": "Ingen licens, ingen drivere, ingen Windows-pc nødvendig."
+    },
+    "rows": {
+      "price": {
+        "label": "Pris",
+        "unbit": "Gratis"
+      },
+      "trial": {
+        "label": "Gratis prøveversion",
+        "unbit": "Ikke nødvendig – hele appen er gratis"
+      },
+      "write": {
+        "label": "Skrivning",
+        "unbit": "Nej. Skrivebeskyttet af design: åbn filer og kopiér dem til din Mac"
+      },
+      "drivers": {
+        "label": "Drivere og systemadgang",
+        "unbit": "Ingen kernel extension eller macFUSE. Bruger det diskbilledsupport, der allerede er i macOS. Kræver adgang til hele disken"
+      },
+      "silicon": {
+        "label": "Apple silicon",
+        "unbit": "Ja – universel app til Apple silicon og Intel"
+      },
+      "macos": {
+        "label": "macOS-versioner",
+        "unbit": "macOS {minOS} eller nyere"
+      },
+      "unlock": {
+        "label": "Lås op med",
+        "unbit": "Adgangskode eller 48-cifret gendannelsesnøgle"
+      },
+      "privacy": {
+        "label": "Privatliv og aktivering",
+        "unbit": "Dekrypteringen sker på din Mac. Ingen konti, analyse eller sporing. Kun et dagligt opdateringstjek går online"
+      },
+      "extras": {
+        "label": "Ekstra",
+        "unbit": "Menulinje-app med automatisk drevgenkendelse, sikker udskubning og valgfri hukommelse i nøglering. Krypterer ikke drev og ændrer ikke BitLocker-indstillinger"
+      }
+    },
+    "competitors": {
+      "iboysoft": {
+        "tagline": "Kommerciel app med læse- og skriveadgang samt BitLocker-kryptering.",
+        "intro": "iBoysoft BitLocker for Mac er en betalt app, der låser BitLocker-drev op på macOS og også kan skrive til dem. Unbit klarer en smallere opgave – at åbne et drev og kopiere filer fra det – gratis og uden drivere.",
+        "cells": {
+          "price": "Betalt: 39,95 USD pr. måned, 79,95 USD pr. år (begge med automatisk fornyelse) eller 159,95 USD engangsbetaling med livstidsopgraderinger. Pr. Mac, ekskl. moms",
+          "trial": "Ja, men prøveversionen kan kun gennemse og få vist filer. For at montere drevet i Finder skal du bruge den betalte version",
+          "write": "Ja – læsning og skrivning, inkl. redigering, omdøbning og sletning af filer",
+          "drivers": "Finder-tilstanden (Volume Mounter) kræver en system extension. På Apple silicon beskriver producenten, at man skal skifte til Reduced Security i Recovery. En File Manager-tilstand virker uden",
+          "silicon": "Ja – M1 til M5 og Intel (med system extension aktiveret)",
+          "macos": "macOS 10.13 High Sierra og nyere",
+          "unlock": "Adgangskode eller 48-cifret gendannelsesnøgle",
+          "privacy": "Aktivering kræver internetadgang ifølge producentens FAQ om køb",
+          "extras": "Kan også kryptere drev med BitLocker og understøtter automatisk oplåsning via nøglering. NTFS, FAT32 og exFAT"
+        },
+        "themPick": [
+          "skal redigere, tilføje eller slette filer på et BitLocker-drev fra din Mac",
+          "vil kryptere eksterne drev med BitLocker på macOS",
+          "er fint tilfreds med en betalt licens og en engangsopsætning af system extension"
+        ],
+        "unbitPick": [
+          "bare skal åbne et drev og kopiere dine filer fra det",
+          "helst vil undgå at aktivere system extensions eller sænke startsikkerheden på Apple silicon",
+          "vil have en gratis app uden licensnøgle eller begrænsninger i prøveversion"
+        ],
+        "faq": [
+          {
+            "q": "Findes der en gratis version af iBoysoft BitLocker for Mac?",
+            "a": "iBoysoft tilbyder en prøveversion, der kan gennemse og vise filer på drevet, men for at montere det i Finder kræves en betalt licens. Unbit er gratis og åbner drevet i Finder, skrivebeskyttet."
+          },
+          {
+            "q": "Kræver iBoysoft BitLocker for Mac Reduced Security på Apple silicon?",
+            "a": "Til Finder-tilstanden oplyser producenten, at system extensions skal aktiveres, hvilket på Apple silicon indebærer at vælge Reduced Security i Recovery. File Manager-tilstanden virker uden system extension. Unbit bruger ingen kernel extension, så din startsikkerhed forbliver uændret."
+          }
+        ]
+      },
+      "hasleo": {
+        "tagline": "Billig kommerciel app, der læser, skriver og krypterer.",
+        "intro": "Hasleo BitLocker Anywhere for Mac er et betalt alt-i-ét-værktøj, der kan montere drev med læse/skrive- eller skrivebeskyttet adgang og også kryptere og dekryptere dem. Unbit er det lettere valg, når du bare vil læse dine filer.",
+        "cells": {
+          "price": "Betalt: 19,98 USD (angivet som nedsat fra 39,95 USD) for en Professional-licens til én Mac, ekskl. moms. Gratis livstidsopgraderinger",
+          "trial": "Der findes en gratis/prøveversion, som en licensnøgle gør til den fulde version. Vi kunne ikke bekræfte begrænsningerne",
+          "write": "Ja – monterer drev med læse/skrive- eller skrivebeskyttet adgang",
+          "drivers": "På Apple silicon beskriver producentens supportforum, at man skal aktivere Reduced Security og tillade kernel extensions for at installere den. Adgang til hele disken kræves også",
+          "silicon": "Ja – Intel og Apple silicon (M1 til M4 er angivet)",
+          "macos": "macOS 10.14 Mojave til macOS 26 Tahoe",
+          "unlock": "Adgangskode eller gendannelsesnøgle",
+          "extras": "Krypterer og dekrypterer drev, skifter adgangskode, eksporterer gendannelsesnøgle og startnøgle. NTFS, FAT og exFAT. Kommandolinje kun i en separat udgave"
+        },
+        "themPick": [
+          "skal skrive til et BitLocker-drev fra din Mac",
+          "vil kryptere, dekryptere eller skifte adgangskode på drev i macOS",
+          "er fint tilfreds med en betalt licens og en mere omstændelig opsætning på Apple silicon"
+        ],
+        "unbitPick": [
+          "bare vil læse dine filer og kopiere dem til din Mac",
+          "vil undgå kernel extensions og Reduced Security",
+          "foretrækker en gratis app, hvor der intet er at købe eller aktivere"
+        ],
+        "faq": [
+          {
+            "q": "Kan Hasleo BitLocker Anywhere for Mac skrive til drev?",
+            "a": "Ja. Ifølge producenten kan den montere BitLocker-drev med læse/skrive- eller skrivebeskyttet adgang. Unbit monterer altid drev skrivebeskyttet."
+          },
+          {
+            "q": "Er Hasleo BitLocker Anywhere for Mac gratis?",
+            "a": "Nej. Producenten sælger en betalt Professional-licens til én Mac og angiver en gratis/prøveversion, som en licensnøgle låser op. Unbit er gratis."
+          }
+        ]
+      },
+      "uubyte": {
+        "tagline": "Betalt læser, der kan aktivere skriveadgang efter oplåsning.",
+        "intro": "UUByte BitLocker Geeker er en betalt app til at låse BitLocker-drev op på en Mac, med valgfri skriveadgang. Unbit er et gratis, skrivebeskyttet alternativ, der undgår trinene med kernel extension.",
+        "cells": {
+          "price": "Betalt: 29,95 USD for en 1-årsplan, 39,95 USD livstid til én Mac eller 59,95 USD livstid til 8 Mac'er. 30 dages pengene-tilbage-garanti angivet",
+          "write": "Ja – efter oplåsning kan du se og kopiere filer, og skriveadgang slås til med en Enable Write-knap",
+          "drivers": "Producentens guide til Apple silicon beder dig give adgang til hele disken, tillade administration af kernel extensions, opdatere system extension og genstarte",
+          "silicon": "Ja – producenten har en guide til M1-, M2-, M3- og M4-Mac'er",
+          "macos": "macOS Sierra til og med Tahoe ifølge købssiden",
+          "unlock": "Adgangskode eller gendannelsesnøgle",
+          "extras": "Automatisk oplåsning via nøglering. NTFS, FAT32 og exFAT"
+        },
+        "themPick": [
+          "vil have mulighed for at skrive til et BitLocker-drev fra din Mac",
+          "er fint tilfreds med en betalt licens",
+          "er fortrolig med trinene til kernel extension på Apple silicon"
+        ],
+        "unbitPick": [
+          "kun skal læse filer og kopiere dem fra drevet",
+          "vil slippe for kernel extensions og genstarter",
+          "foretrækker en gratis app uden licensnøgle"
+        ],
+        "faq": [
+          {
+            "q": "Er UUByte BitLocker Geeker skrivebeskyttet?",
+            "a": "Ikke nødvendigvis. Producenten oplyser, at du efter oplåsning kan se og kopiere filer, og at skriveadgang slås til med en Enable Write-knap. Unbit er altid skrivebeskyttet."
+          },
+          {
+            "q": "Kræver UUByte BitLocker Geeker kernel extensions på Apple silicon?",
+            "a": "Producentens guide til Apple silicon omfatter at tillade administration af kernel extensions og opdatere system extension. Unbit bruger hverken kernel extension eller macFUSE."
+          }
+        ]
+      },
+      "anylinuxfs": {
+        "tagline": "Gratis open source-værktøj til kommandolinjen med læse/skrive-understøttelse.",
+        "intro": "anylinuxfs er et gratis open source-værktøj til kommandolinjen, der monterer filsystemer, som Linux understøtter, på Mac'er med Apple silicon – også BitLocker-drev. Unbit er en brugsklar Mac-app til samme oplåsningsopgave, uden Terminal og uden virtuel maskine.",
+        "cells": {
+          "price": "Gratis og open source",
+          "write": "Ja – læse/skrive som standard, skrivebeskyttet montering kan vælges",
+          "drivers": "Ingen kernel extensions og ingen sænkning af systemsikkerheden. Kører en let virtuel maskine og deler drevet via NFS",
+          "silicon": "Kun Apple silicon. Intel-Mac'er understøttes ikke",
+          "unlock": "BitLocker-volumener med NTFS eller FAT32. Projektet beskriver brug af gendannelsesnøglen som adgangsfrase",
+          "privacy": "Kører lokalt. Drevet deles som standard kun til din egen Mac (localhost)",
+          "extras": "Kommandolinjeværktøj, der installeres med Homebrew. Drevet vises i macOS som et netværksdrev. Understøtter også ext4, btrfs, LUKS, ZFS m.fl. Kendt problem: Microsoft Word kan ikke redigere filer direkte på et monteret drev"
+        },
+        "themPick": [
+          "er fortrolig med Terminal og Homebrew",
+          "skal have gratis læse/skrive-adgang til et BitLocker-drev",
+          "også arbejder med Linux-filsystemer som ext4, btrfs eller LUKS"
+        ],
+        "unbitPick": [
+          "vil have en almindelig Mac-app i stedet for et kommandolinjeværktøj",
+          "bruger en Intel-Mac eller vil have samme app på både Intel og Apple silicon",
+          "vil have en skrivebeskyttet montering, så intet kan blive skrevet til drevet"
+        ],
+        "faq": [
+          {
+            "q": "Virker anylinuxfs på Intel-Mac'er?",
+            "a": "Nej. Projektet oplyser, at kun Mac'er med Apple silicon understøttes. Unbit er en universel app, der kører på både Apple silicon og Intel."
+          },
+          {
+            "q": "Er anylinuxfs en app med grafisk brugerflade?",
+            "a": "anylinuxfs er selv et kommandolinjeværktøj. Dets README peger på en separat grafisk brugerflade. Unbit er en menulinje-app, der finder drevet og beder om adgangskode eller gendannelsesnøgle."
+          }
+        ]
+      },
+      "parallels": {
+        "tagline": "Kør Windows i en virtuel maskine og lås drevet op dér.",
+        "intro": "Parallels Desktop er et virtualiseringsprogram. Mange bruger en virtuel Windows-maskine til at låse et BitLocker-drev op, fordi Windows understøtter BitLocker indbygget. Det virker, men er en markant større opsætning end Unbit.",
+        "cells": {
+          "price": "Betalt: årligt abonnement eller engangskøb af Standard-udgaven. Windows-licens er ikke inkluderet",
+          "write": "Håndteres af Windows i den virtuelle maskine, så det opfører sig som på en Windows-pc",
+          "drivers": "Ingen BitLocker-driver i macOS. Du forbinder USB-drevet til den virtuelle Windows-maskine, hvor det ikke længere kan ses på Mac'en",
+          "silicon": "Ja – macOS Big Sur eller nyere på Apple silicon, macOS Catalina eller nyere på Intel",
+          "unlock": "Adgangskode eller gendannelsesnøgle, indtastet i Windows",
+          "extras": "En komplet virtuel Windows-maskine, der også kører Windows-programmer. Kræver en Windows-installation og -licens samt diskplads og hukommelse til den virtuelle maskine"
+        },
+        "themPick": [
+          "allerede kører Windows i Parallels Desktop",
+          "vil have fuld Windows-adfærd for drevet, også skrivning",
+          "også har brug for Windows-programmer på din Mac"
+        ],
+        "unbitPick": [
+          "bare vil åbne ét drev uden at installere Windows",
+          "ikke vil købe en Windows-licens eller køre en virtuel maskine",
+          "vil have drevet til at dukke op i Finder som enhver anden disk"
+        ],
+        "faq": [
+          {
+            "q": "Kan Parallels Desktop åbne BitLocker-drev på en Mac?",
+            "a": "Ja, indirekte. Du forbinder USB-drevet til en virtuel Windows-maskine og låser det op med Windows' egen BitLocker-understøttelse. Det er en generel virtualiseringsmetode og ikke en dedikeret BitLocker-funktion."
+          },
+          {
+            "q": "Skal jeg have en Windows-licens for at bruge Parallels Desktop?",
+            "a": "Ifølge Parallels er en Windows-licens ikke inkluderet, og du skal bruge en for at aktivere Windows. Unbit kræver slet ikke Windows."
+          }
+        ]
+      }
+    }
   }
 }

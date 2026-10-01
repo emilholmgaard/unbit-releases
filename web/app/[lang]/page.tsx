@@ -261,6 +261,7 @@ export default async function Home() {
             <div>
               <h2>{t.footer.resources}</h2>
               <a href="#faq">{t.nav.faq}</a>
+              <a href={`/${locale}/alternatives`}>{t.footer.alternatives}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases/releases">{t.footer.releaseNotes}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
             </div>

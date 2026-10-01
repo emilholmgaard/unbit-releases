@@ -114,6 +114,250 @@
     "resources": "Resources",
     "releaseNotes": "Release notes",
     "github": "GitHub",
+    "alternatives": "Alternatives",
     "legal": "BitLocker is a trademark of Microsoft Corporation. Unbit is an independent app and is not affiliated with or endorsed by Microsoft. Mac and macOS are trademarks of Apple Inc."
+  },
+  "alternatives": {
+    "index": {
+      "metaTitle": "BitLocker for Mac alternatives – Unbit vs iBoysoft, Hasleo, UUByte and more",
+      "metaDescription": "Looking for a BitLocker for Mac alternative? Fair, sourced comparisons of Unbit with iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere, UUByte BitLocker Geeker, anylinuxfs and Parallels Desktop.",
+      "ogTitle": "Unbit alternatives – compare BitLocker for Mac tools",
+      "h1": "BitLocker for Mac alternatives",
+      "sub": "Looking for another way to open BitLocker drives on your Mac? Here are fair, sourced comparisons of Unbit – free, read-only, no drivers – with the tools people search for most.",
+      "cardTitle": "{name} alternative",
+      "cardCta": "See the comparison"
+    },
+    "page": {
+      "metaTitle": "{name} alternative for Mac – free BitLocker reader | Unbit",
+      "metaDescription": "Looking for a {name} alternative? Unbit opens BitLocker USB drives on your Mac for free: read-only, no drivers, runs locally. See a fair side-by-side comparison.",
+      "ogTitle": "{name} alternative for Mac – Unbit",
+      "h1": "{name} alternative for Mac",
+      "sub": "Only need to open a BitLocker drive? Unbit is free, read-only, needs no drivers and runs entirely on your Mac.",
+      "back": "All alternatives",
+      "lastChecked": "Last checked {date}",
+      "compareLink": "Compare side by side",
+      "tableTitle": "{name} vs Unbit",
+      "feature": "Feature",
+      "pickTitle": "Who should pick what",
+      "pickThem": "Choose {name} if you…",
+      "pickUnbit": "Choose Unbit if you…",
+      "faqTitle": "FAQs",
+      "faqGeneric": {
+        "q": "Is Unbit a good {name} alternative?",
+        "a": "If you only need to open a BitLocker drive on your Mac and copy files off it, yes: Unbit is free, read-only, needs no drivers and runs locally. If you need to write to the drive or manage BitLocker settings, {name} may be the better fit."
+      },
+      "sourcesTitle": "Sources",
+      "sourcesText": "Facts about {name} come from its own pages and documentation below.",
+      "disclaimer": "Last checked on {date}. Product details, prices and features may change, so please verify them with the vendor before you decide. All product names are trademarks of their respective owners. Unbit is an independent app and is not affiliated with or endorsed by {name} or its makers. This page is for information only.",
+      "ctaTitle": "Open your BitLocker drive for free",
+      "ctaText": "No licence, no drivers, no Windows PC required."
+    },
+    "rows": {
+      "price": {
+        "label": "Price",
+        "unbit": "Free"
+      },
+      "trial": {
+        "label": "Free trial",
+        "unbit": "Not needed – the full app is free"
+      },
+      "write": {
+        "label": "Write support",
+        "unbit": "No. Read-only by design: open files and copy them to your Mac"
+      },
+      "drivers": {
+        "label": "Drivers and system access",
+        "unbit": "No kernel extension or macFUSE. Uses disk image support built into macOS. Needs Full Disk Access"
+      },
+      "silicon": {
+        "label": "Apple silicon",
+        "unbit": "Yes – universal app for Apple silicon and Intel"
+      },
+      "macos": {
+        "label": "macOS versions",
+        "unbit": "macOS {minOS} or later"
+      },
+      "unlock": {
+        "label": "Unlock with",
+        "unbit": "Password or 48-digit recovery key"
+      },
+      "privacy": {
+        "label": "Privacy and activation",
+        "unbit": "Decryption happens on your Mac. No accounts, analytics or tracking. Only a daily update check goes online"
+      },
+      "extras": {
+        "label": "Extras",
+        "unbit": "Menu bar app with automatic drive detection, safe eject and optional keychain memory. Does not encrypt drives or change BitLocker settings"
+      }
+    },
+    "competitors": {
+      "iboysoft": {
+        "tagline": "Commercial app with read-write access and BitLocker encryption.",
+        "intro": "iBoysoft BitLocker for Mac is a paid app that unlocks BitLocker drives on macOS and can also write to them. Unbit covers a narrower job – opening a drive and copying files off it – for free and without drivers.",
+        "cells": {
+          "price": "Paid: US$39.95 monthly, US$79.95 yearly (both auto-renewing) or US$159.95 one-time with lifetime upgrades. Per Mac, excl. VAT",
+          "trial": "Yes, but the trial can only browse and preview files. Mounting the drive in Finder needs the paid version",
+          "write": "Yes – read and write, including editing, renaming and deleting files",
+          "drivers": "The Finder (Volume Mounter) mode needs a system extension. On Apple silicon the vendor documents switching to Reduced Security in Recovery. A File Manager mode works without it",
+          "silicon": "Yes – M1 to M5 and Intel (with the system extension enabled)",
+          "macos": "macOS 10.13 High Sierra and later",
+          "unlock": "Password or 48-digit recovery key",
+          "privacy": "Activation requires internet access, according to the vendor's purchase FAQ",
+          "extras": "Can also encrypt drives with BitLocker, supports keychain auto-unlock. NTFS, FAT32 and exFAT"
+        },
+        "themPick": [
+          "need to edit, add or delete files on a BitLocker drive from your Mac",
+          "want to encrypt external drives with BitLocker on macOS",
+          "are fine with a paid licence and a one-time system extension setup"
+        ],
+        "unbitPick": [
+          "only need to open a drive and copy your files off it",
+          "prefer not to enable system extensions or lower startup security on Apple silicon",
+          "want a free app with no licence key or trial limits"
+        ],
+        "faq": [
+          {
+            "q": "Is there a free version of iBoysoft BitLocker for Mac?",
+            "a": "iBoysoft offers a trial that can browse and preview files on the drive, but mounting it in Finder needs a paid licence. Unbit is free and opens the drive in Finder, read-only."
+          },
+          {
+            "q": "Does iBoysoft BitLocker for Mac need Reduced Security on Apple silicon?",
+            "a": "For its Finder-mounting mode, the vendor says system extensions must be enabled, which on Apple silicon includes selecting Reduced Security in Recovery. Its File Manager mode works without a system extension. Unbit uses no kernel extension, so your startup security stays unchanged."
+          }
+        ]
+      },
+      "hasleo": {
+        "tagline": "Low-cost commercial app that reads, writes and encrypts.",
+        "intro": "Hasleo BitLocker Anywhere for Mac is a paid all-in-one tool that can mount drives read-write or read-only, and also encrypt and decrypt them. Unbit is the lighter option when you just want to read your files.",
+        "cells": {
+          "price": "Paid: US$19.98 (listed as reduced from US$39.95) for a one-Mac Professional licence, excl. VAT. Free lifetime upgrades",
+          "trial": "A free/trial version exists that a licence key turns into the full version. We could not verify its limits",
+          "write": "Yes – mounts drives read-write or read-only",
+          "drivers": "On Apple silicon the vendor's support forum describes enabling Reduced Security and allowing kernel extensions to install it. Full Disk Access is also required",
+          "silicon": "Yes – Intel and Apple silicon (M1 to M4 listed)",
+          "macos": "macOS 10.14 Mojave to macOS 26 Tahoe",
+          "unlock": "Password or recovery key",
+          "extras": "Encrypts and decrypts drives, changes the password, exports the recovery key and startup key. NTFS, FAT and exFAT. Command line only in a separate edition"
+        },
+        "themPick": [
+          "need to write to a BitLocker drive from your Mac",
+          "want to encrypt, decrypt or change the password of drives on macOS",
+          "are fine with a paid licence and a more involved setup on Apple silicon"
+        ],
+        "unbitPick": [
+          "just want to read your files and copy them to your Mac",
+          "want to avoid kernel extensions and Reduced Security",
+          "prefer a free app with nothing to buy or activate"
+        ],
+        "faq": [
+          {
+            "q": "Can Hasleo BitLocker Anywhere for Mac write to drives?",
+            "a": "Yes. According to the vendor it can mount BitLocker drives read-write or read-only. Unbit only ever mounts drives read-only."
+          },
+          {
+            "q": "Is Hasleo BitLocker Anywhere for Mac free?",
+            "a": "No. The vendor sells a paid Professional licence for one Mac and lists a free/trial version that a licence key unlocks. Unbit is free."
+          }
+        ]
+      },
+      "uubyte": {
+        "tagline": "Paid reader that can enable write access after unlocking.",
+        "intro": "UUByte BitLocker Geeker is a paid app for unlocking BitLocker drives on a Mac, with optional write access. Unbit is a free, read-only alternative that avoids the kernel extension steps.",
+        "cells": {
+          "price": "Paid: US$29.95 for a 1-year plan, US$39.95 lifetime for one Mac or US$59.95 lifetime for 8 Macs. 30-day money-back guarantee listed",
+          "write": "Yes – after unlocking you can view and copy files, and write access is switched on with an Enable Write button",
+          "drivers": "The vendor's Apple silicon guide asks you to grant Full Disk Access, allow user management of kernel extensions, update the system extension and restart",
+          "silicon": "Yes – the vendor has a guide for M1, M2, M3 and M4 Macs",
+          "macos": "macOS Sierra up to Tahoe, according to the purchase page",
+          "unlock": "Password or recovery key",
+          "extras": "Keychain auto-unlock. NTFS, FAT32 and exFAT"
+        },
+        "themPick": [
+          "want the option to write to a BitLocker drive from your Mac",
+          "are fine with a paid licence",
+          "are comfortable following the kernel extension steps for Apple silicon"
+        ],
+        "unbitPick": [
+          "only need to read files and copy them off the drive",
+          "want to skip kernel extensions and restarts",
+          "prefer a free app with no licence key"
+        ],
+        "faq": [
+          {
+            "q": "Is UUByte BitLocker Geeker read-only?",
+            "a": "Not necessarily. The vendor says that after unlocking you can view and copy files, and that write access is enabled with an Enable Write button. Unbit is always read-only."
+          },
+          {
+            "q": "Does UUByte BitLocker Geeker need kernel extensions on Apple silicon?",
+            "a": "The vendor's Apple silicon guide includes allowing user management of kernel extensions and updating the system extension. Unbit uses no kernel extension or macFUSE."
+          }
+        ]
+      },
+      "anylinuxfs": {
+        "tagline": "Free open-source command-line tool with read-write support.",
+        "intro": "anylinuxfs is a free, open-source command-line tool that mounts Linux-supported file systems on Apple silicon Macs, including BitLocker drives. Unbit is a ready-to-use Mac app for the same unlocking job, with no Terminal and no virtual machine.",
+        "cells": {
+          "price": "Free and open source",
+          "write": "Yes – read-write by default, read-only mounting can be selected",
+          "drivers": "No kernel extensions and no lowering of system security. It runs a lightweight virtual machine and shares the drive over NFS",
+          "silicon": "Apple silicon only. Intel Macs are not supported",
+          "unlock": "BitLocker volumes with NTFS or FAT32. The project documents using the recovery key as the passphrase",
+          "privacy": "Runs locally. The drive is shared only to your own Mac (localhost) by default",
+          "extras": "Command-line tool installed with Homebrew. The drive appears to macOS as a network drive. Also supports ext4, btrfs, LUKS, ZFS and more. Known issue: Microsoft Word cannot edit files directly on a mounted drive"
+        },
+        "themPick": [
+          "are comfortable with Terminal and Homebrew",
+          "need free read-write access to a BitLocker drive",
+          "also work with Linux file systems such as ext4, btrfs or LUKS"
+        ],
+        "unbitPick": [
+          "want a normal Mac app instead of a command-line tool",
+          "use an Intel Mac or need the same app on both Intel and Apple silicon",
+          "want a read-only mount so nothing can be written to the drive"
+        ],
+        "faq": [
+          {
+            "q": "Does anylinuxfs work on Intel Macs?",
+            "a": "No. The project states that only Apple silicon Macs are supported. Unbit is a universal app that runs on Apple silicon and Intel Macs."
+          },
+          {
+            "q": "Is anylinuxfs a graphical app?",
+            "a": "anylinuxfs itself is a command-line utility. Its README points to a separate graphical front end. Unbit is a menu bar app that detects the drive and asks for the password or recovery key."
+          }
+        ]
+      },
+      "parallels": {
+        "tagline": "Run Windows in a virtual machine and unlock the drive there.",
+        "intro": "Parallels Desktop is a virtualization app. Many people use a Windows virtual machine to unlock a BitLocker drive, because Windows supports BitLocker natively. It works, but it is a much bigger setup than Unbit.",
+        "cells": {
+          "price": "Paid: annual subscription, or a one-time purchase for the Standard edition. A Windows licence is not included",
+          "write": "Handled by Windows inside the virtual machine, so it behaves like on a Windows PC",
+          "drivers": "No BitLocker driver on macOS. You connect the USB drive to the Windows virtual machine, where it is no longer visible on the Mac",
+          "silicon": "Yes – macOS Big Sur or later on Apple silicon, macOS Catalina or later on Intel",
+          "unlock": "Password or recovery key, entered in Windows",
+          "extras": "A full Windows virtual machine that also runs Windows apps. Needs a Windows installation and licence, plus disk space and memory for the virtual machine"
+        },
+        "themPick": [
+          "already run Windows in Parallels Desktop",
+          "want full Windows behaviour for the drive, including writing",
+          "also need Windows apps on your Mac"
+        ],
+        "unbitPick": [
+          "just want to open one drive without installing Windows",
+          "do not want to buy a Windows licence or run a virtual machine",
+          "want the drive to show up in Finder like any other disk"
+        ],
+        "faq": [
+          {
+            "q": "Can Parallels Desktop open BitLocker drives on a Mac?",
+            "a": "Yes, indirectly. You connect the USB drive to a Windows virtual machine and unlock it with Windows' own BitLocker support. It is a general virtualization workflow rather than a dedicated BitLocker feature."
+          },
+          {
+            "q": "Do I need a Windows licence to use Parallels Desktop?",
+            "a": "According to Parallels, a Windows licence is not included and you need one to activate Windows. Unbit needs no Windows at all."
+          }
+        ]
+      }
+    }
   }
 }

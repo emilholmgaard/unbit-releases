@@ -90,6 +90,250 @@
     "resources": "Zasoby",
     "releaseNotes": "Informacje o wydaniach",
     "github": "GitHub",
+    "alternatives": "Alternatywy",
     "legal": "BitLocker jest znakiem towarowym firmy Microsoft Corporation. Unbit jest niezależną aplikacją i nie jest powiązany z firmą Microsoft ani przez nią zatwierdzony. Mac i macOS są znakami towarowymi firmy Apple Inc."
+  },
+  "alternatives": {
+    "index": {
+      "metaTitle": "Alternatywy dla BitLocker na Maca – Unbit kontra iBoysoft, Hasleo, UUByte i inne",
+      "metaDescription": "Szukasz alternatywy dla narzędzi BitLocker na Maca? Uczciwe, udokumentowane porównania Unbit z iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere, UUByte BitLocker Geeker, anylinuxfs i Parallels Desktop.",
+      "ogTitle": "Alternatywy dla Unbit – porównaj narzędzia BitLocker na Maca",
+      "h1": "Alternatywy dla BitLocker na Maca",
+      "sub": "Szukasz innego sposobu na otwieranie dysków BitLocker na Macu? Oto uczciwe, udokumentowane porównania Unbit – darmowego, tylko do odczytu, bez sterowników – z najczęściej wyszukiwanymi narzędziami.",
+      "cardTitle": "Alternatywa dla {name}",
+      "cardCta": "Zobacz porównanie"
+    },
+    "page": {
+      "metaTitle": "Alternatywa dla {name} na Maca – darmowy czytnik BitLocker | Unbit",
+      "metaDescription": "Szukasz alternatywy dla {name}? Unbit za darmo otwiera pendrive’y z BitLockerem na Macu: tylko do odczytu, bez sterowników, lokalnie. Zobacz uczciwe porównanie obok siebie.",
+      "ogTitle": "Alternatywa dla {name} na Maca – Unbit",
+      "h1": "Alternatywa dla {name} na Maca",
+      "sub": "Chcesz tylko otworzyć dysk BitLocker? Unbit jest darmowy, działa tylko do odczytu, nie wymaga sterowników i działa w całości na Twoim Macu.",
+      "back": "Wszystkie alternatywy",
+      "lastChecked": "Ostatnio sprawdzono: {date}",
+      "compareLink": "Porównaj obok siebie",
+      "tableTitle": "{name} a Unbit",
+      "feature": "Cecha",
+      "pickTitle": "Kto powinien wybrać co",
+      "pickThem": "Wybierz {name}, jeśli…",
+      "pickUnbit": "Wybierz Unbit, jeśli…",
+      "faqTitle": "Najczęstsze pytania",
+      "faqGeneric": {
+        "q": "Czy Unbit to dobra alternatywa dla {name}?",
+        "a": "Jeśli chcesz tylko otworzyć dysk BitLocker na Macu i skopiować z niego pliki – tak: Unbit jest darmowy, działa tylko do odczytu, nie wymaga sterowników i działa lokalnie. Jeśli musisz zapisywać na dysku lub zarządzać ustawieniami BitLockera, lepszym wyborem może być {name}."
+      },
+      "sourcesTitle": "Źródła",
+      "sourcesText": "Informacje o {name} pochodzą z oficjalnych stron i dokumentacji producenta, wymienionych poniżej.",
+      "disclaimer": "Ostatnio sprawdzono {date}. Szczegóły produktów, ceny i funkcje mogą się zmienić, dlatego przed decyzją zweryfikuj je u producenta. Wszystkie nazwy produktów są znakami towarowymi ich właścicieli. Unbit to niezależna aplikacja, niepowiązana z {name} ani jego twórcami i przez nich niepolecana. Ta strona ma charakter wyłącznie informacyjny.",
+      "ctaTitle": "Otwórz dysk BitLocker za darmo",
+      "ctaText": "Bez licencji, bez sterowników, bez komputera z Windows."
+    },
+    "rows": {
+      "price": {
+        "label": "Cena",
+        "unbit": "Za darmo"
+      },
+      "trial": {
+        "label": "Darmowa wersja próbna",
+        "unbit": "Niepotrzebna – cała aplikacja jest darmowa"
+      },
+      "write": {
+        "label": "Zapis",
+        "unbit": "Nie. Tylko do odczytu z założenia: otwieraj pliki i kopiuj je na Maca"
+      },
+      "drivers": {
+        "label": "Sterowniki i dostęp do systemu",
+        "unbit": "Bez rozszerzenia jądra i macFUSE. Korzysta z obsługi obrazów dysków wbudowanej w macOS. Wymaga Pełnego dostępu do dysku"
+      },
+      "silicon": {
+        "label": "Apple silicon",
+        "unbit": "Tak – aplikacja uniwersalna dla Apple silicon i Intel"
+      },
+      "macos": {
+        "label": "Wersje macOS",
+        "unbit": "macOS {minOS} lub nowszy"
+      },
+      "unlock": {
+        "label": "Odblokowanie",
+        "unbit": "Hasłem lub 48-cyfrowym kluczem odzyskiwania"
+      },
+      "privacy": {
+        "label": "Prywatność i aktywacja",
+        "unbit": "Odszyfrowanie odbywa się na Twoim Macu. Bez kont, analityki i śledzenia. Online trafia tylko codzienne sprawdzanie aktualizacji"
+      },
+      "extras": {
+        "label": "Dodatki",
+        "unbit": "Aplikacja na pasku menu z automatycznym wykrywaniem dysków, bezpiecznym wysuwaniem i opcjonalnym zapamiętywaniem w pęku kluczy. Nie szyfruje dysków i nie zmienia ustawień BitLockera"
+      }
+    },
+    "competitors": {
+      "iboysoft": {
+        "tagline": "Komercyjna aplikacja z odczytem i zapisem oraz szyfrowaniem BitLocker.",
+        "intro": "iBoysoft BitLocker for Mac to płatna aplikacja, która odblokowuje dyski BitLocker w macOS i potrafi też na nie zapisywać. Unbit robi węższą rzecz – otwiera dysk i pozwala skopiować z niego pliki – za darmo i bez sterowników.",
+        "cells": {
+          "price": "Płatna: 39,95 USD miesięcznie, 79,95 USD rocznie (obie z automatycznym odnowieniem) lub 159,95 USD jednorazowo z dożywotnimi aktualizacjami. Za jednego Maca, bez VAT",
+          "trial": "Tak, ale wersja próbna pozwala tylko przeglądać i podglądać pliki. Zamontowanie dysku w Finderze wymaga wersji płatnej",
+          "write": "Tak – odczyt i zapis, w tym edycja, zmiana nazw i usuwanie plików",
+          "drivers": "Tryb Findera (Volume Mounter) wymaga rozszerzenia systemowego. Na Apple silicon producent opisuje przełączenie na Obniżone zabezpieczenia w trybie odzyskiwania. Tryb File Manager działa bez niego",
+          "silicon": "Tak – od M1 do M5 oraz Intel (po włączeniu rozszerzenia systemowego)",
+          "macos": "macOS 10.13 High Sierra i nowszy",
+          "unlock": "Hasłem lub 48-cyfrowym kluczem odzyskiwania",
+          "privacy": "Aktywacja wymaga dostępu do internetu, według FAQ zakupowego producenta",
+          "extras": "Potrafi też szyfrować dyski BitLockerem i obsługuje automatyczne odblokowanie przez pęk kluczy. NTFS, FAT32 i exFAT"
+        },
+        "themPick": [
+          "musisz edytować, dodawać lub usuwać pliki na dysku BitLocker z poziomu Maca",
+          "chcesz szyfrować dyski zewnętrzne BitLockerem w macOS",
+          "nie przeszkadza Ci płatna licencja i jednorazowa konfiguracja rozszerzenia systemowego"
+        ],
+        "unbitPick": [
+          "chcesz tylko otworzyć dysk i skopiować z niego swoje pliki",
+          "wolisz nie włączać rozszerzeń systemowych ani nie obniżać zabezpieczeń rozruchu na Apple silicon",
+          "chcesz darmową aplikację bez klucza licencyjnego i limitów wersji próbnej"
+        ],
+        "faq": [
+          {
+            "q": "Czy jest darmowa wersja iBoysoft BitLocker for Mac?",
+            "a": "iBoysoft oferuje wersję próbną, która pozwala przeglądać i podglądać pliki na dysku, ale zamontowanie go w Finderze wymaga płatnej licencji. Unbit jest darmowy i otwiera dysk w Finderze, tylko do odczytu."
+          },
+          {
+            "q": "Czy iBoysoft BitLocker for Mac wymaga Obniżonych zabezpieczeń na Apple silicon?",
+            "a": "W trybie montowania w Finderze producent wskazuje, że trzeba włączyć rozszerzenia systemowe, co na Apple silicon obejmuje wybranie Obniżonych zabezpieczeń w trybie odzyskiwania. Tryb File Manager działa bez rozszerzenia systemowego. Unbit nie używa rozszerzenia jądra, więc zabezpieczenia rozruchu pozostają bez zmian."
+          }
+        ]
+      },
+      "hasleo": {
+        "tagline": "Tania komercyjna aplikacja, która odczytuje, zapisuje i szyfruje.",
+        "intro": "Hasleo BitLocker Anywhere for Mac to płatne narzędzie typu wszystko w jednym, które może montować dyski z odczytem i zapisem lub tylko do odczytu, a także je szyfrować i odszyfrowywać. Unbit to lżejszy wybór, gdy chcesz tylko odczytać swoje pliki.",
+        "cells": {
+          "price": "Płatna: 19,98 USD (podana jako obniżona z 39,95 USD) za licencję Professional na jednego Maca, bez VAT. Darmowe dożywotnie aktualizacje",
+          "trial": "Istnieje darmowa wersja próbna, którą klucz licencyjny zamienia w pełną wersję. Nie udało nam się zweryfikować jej ograniczeń",
+          "write": "Tak – montuje dyski z odczytem i zapisem lub tylko do odczytu",
+          "drivers": "Na Apple silicon forum wsparcia producenta opisuje włączenie Obniżonych zabezpieczeń i zezwolenie na rozszerzenia jądra, aby ją zainstalować. Wymagany jest też Pełny dostęp do dysku",
+          "silicon": "Tak – Intel i Apple silicon (podane M1 do M4)",
+          "macos": "Od macOS 10.14 Mojave do macOS 26 Tahoe",
+          "unlock": "Hasło lub klucz odzyskiwania",
+          "extras": "Szyfruje i odszyfrowuje dyski, zmienia hasło, eksportuje klucz odzyskiwania i klucz startowy. NTFS, FAT i exFAT. Wiersz poleceń tylko w osobnej edycji"
+        },
+        "themPick": [
+          "musisz zapisywać na dysku BitLocker z poziomu Maca",
+          "chcesz szyfrować, odszyfrowywać lub zmieniać hasło dysków w macOS",
+          "nie przeszkadza Ci płatna licencja i bardziej złożona konfiguracja na Apple silicon"
+        ],
+        "unbitPick": [
+          "chcesz tylko odczytać swoje pliki i skopiować je na Maca",
+          "chcesz uniknąć rozszerzeń jądra i Obniżonych zabezpieczeń",
+          "wolisz darmową aplikację, w której nic nie trzeba kupować ani aktywować"
+        ],
+        "faq": [
+          {
+            "q": "Czy Hasleo BitLocker Anywhere for Mac może zapisywać na dyskach?",
+            "a": "Tak. Według producenta potrafi montować dyski BitLocker z odczytem i zapisem lub tylko do odczytu. Unbit zawsze montuje dyski tylko do odczytu."
+          },
+          {
+            "q": "Czy Hasleo BitLocker Anywhere for Mac jest darmowy?",
+            "a": "Nie. Producent sprzedaje płatną licencję Professional na jednego Maca i podaje darmową wersję próbną, którą odblokowuje klucz licencyjny. Unbit jest darmowy."
+          }
+        ]
+      },
+      "uubyte": {
+        "tagline": "Płatny czytnik, który po odblokowaniu może włączyć zapis.",
+        "intro": "UUByte BitLocker Geeker to płatna aplikacja do odblokowywania dysków BitLocker na Macu, z opcjonalnym zapisem. Unbit to darmowa alternatywa tylko do odczytu, która omija kroki związane z rozszerzeniem jądra.",
+        "cells": {
+          "price": "Płatna: 29,95 USD za plan roczny, 39,95 USD dożywotnio na jednego Maca lub 59,95 USD dożywotnio na 8 Maców. Podana 30-dniowa gwarancja zwrotu pieniędzy",
+          "write": "Tak – po odblokowaniu można przeglądać i kopiować pliki, a zapis włącza się przyciskiem Enable Write",
+          "drivers": "Instrukcja producenta dla Apple silicon każe nadać Pełny dostęp do dysku, zezwolić na zarządzanie rozszerzeniami jądra, zaktualizować rozszerzenie systemowe i uruchomić ponownie komputer",
+          "silicon": "Tak – producent ma instrukcję dla Maców z M1, M2, M3 i M4",
+          "macos": "Od macOS Sierra do Tahoe, według strony zakupu",
+          "unlock": "Hasło lub klucz odzyskiwania",
+          "extras": "Automatyczne odblokowanie przez pęk kluczy. NTFS, FAT32 i exFAT"
+        },
+        "themPick": [
+          "chcesz mieć możliwość zapisu na dysku BitLocker z poziomu Maca",
+          "nie przeszkadza Ci płatna licencja",
+          "swobodnie wykonujesz kroki związane z rozszerzeniem jądra na Apple silicon"
+        ],
+        "unbitPick": [
+          "chcesz tylko odczytać pliki i skopiować je z dysku",
+          "chcesz pominąć rozszerzenia jądra i ponowne uruchomienia",
+          "wolisz darmową aplikację bez klucza licencyjnego"
+        ],
+        "faq": [
+          {
+            "q": "Czy UUByte BitLocker Geeker działa tylko do odczytu?",
+            "a": "Niekoniecznie. Producent podaje, że po odblokowaniu można przeglądać i kopiować pliki, a zapis włącza się przyciskiem Enable Write. Unbit zawsze działa tylko do odczytu."
+          },
+          {
+            "q": "Czy UUByte BitLocker Geeker wymaga rozszerzeń jądra na Apple silicon?",
+            "a": "Instrukcja producenta dla Apple silicon obejmuje zezwolenie na zarządzanie rozszerzeniami jądra i aktualizację rozszerzenia systemowego. Unbit nie używa rozszerzenia jądra ani macFUSE."
+          }
+        ]
+      },
+      "anylinuxfs": {
+        "tagline": "Darmowe narzędzie wiersza poleceń o otwartym kodzie, z odczytem i zapisem.",
+        "intro": "anylinuxfs to darmowe narzędzie wiersza poleceń o otwartym kodzie, które montuje na Macach z Apple silicon systemy plików obsługiwane przez Linuksa, w tym dyski BitLocker. Unbit to gotowa aplikacja na Maca do tego samego zadania odblokowania, bez Terminala i bez maszyny wirtualnej.",
+        "cells": {
+          "price": "Za darmo i na otwartym kodzie",
+          "write": "Tak – domyślnie odczyt i zapis, można wybrać montowanie tylko do odczytu",
+          "drivers": "Bez rozszerzeń jądra i bez obniżania bezpieczeństwa systemu. Uruchamia lekką maszynę wirtualną i udostępnia dysk przez NFS",
+          "silicon": "Tylko Apple silicon. Maki z Intelem nie są obsługiwane",
+          "unlock": "Woluminy BitLocker z NTFS lub FAT32. Projekt opisuje użycie klucza odzyskiwania jako hasła",
+          "privacy": "Działa lokalnie. Domyślnie dysk jest udostępniany tylko Twojemu Macowi (localhost)",
+          "extras": "Narzędzie wiersza poleceń instalowane przez Homebrew. Dysk widoczny jest w macOS jako dysk sieciowy. Obsługuje też ext4, btrfs, LUKS, ZFS i inne. Znany problem: Microsoft Word nie może edytować plików bezpośrednio na zamontowanym dysku"
+        },
+        "themPick": [
+          "swobodnie posługujesz się Terminalem i Homebrew",
+          "potrzebujesz darmowego odczytu i zapisu na dysku BitLocker",
+          "pracujesz też z linuksowymi systemami plików, takimi jak ext4, btrfs czy LUKS"
+        ],
+        "unbitPick": [
+          "chcesz zwykłej aplikacji na Maca zamiast narzędzia wiersza poleceń",
+          "używasz Maca z Intelem lub chcesz tej samej aplikacji na Intelu i Apple silicon",
+          "chcesz montowania tylko do odczytu, aby nic nie dało się zapisać na dysku"
+        ],
+        "faq": [
+          {
+            "q": "Czy anylinuxfs działa na Macach z Intelem?",
+            "a": "Nie. Projekt podaje, że obsługiwane są tylko Maki z Apple silicon. Unbit to aplikacja uniwersalna, która działa na Apple silicon i Intelu."
+          },
+          {
+            "q": "Czy anylinuxfs ma interfejs graficzny?",
+            "a": "anylinuxfs to samo w sobie narzędzie wiersza poleceń. Jego README wskazuje osobny interfejs graficzny. Unbit to aplikacja na pasku menu, która wykrywa dysk i prosi o hasło lub klucz odzyskiwania."
+          }
+        ]
+      },
+      "parallels": {
+        "tagline": "Uruchom Windows w maszynie wirtualnej i odblokuj dysk tam.",
+        "intro": "Parallels Desktop to aplikacja do wirtualizacji. Wiele osób używa maszyny wirtualnej z Windows do odblokowania dysku BitLocker, bo Windows obsługuje BitLockera natywnie. To działa, ale jest znacznie większym przedsięwzięciem niż Unbit.",
+        "cells": {
+          "price": "Płatna: subskrypcja roczna lub, w edycji Standard, zakup jednorazowy. Licencja Windows nie jest w cenie",
+          "write": "Obsługiwane przez Windows w maszynie wirtualnej, więc działa jak na komputerze z Windows",
+          "drivers": "Brak sterownika BitLocker w macOS. Pendrive podłączasz do maszyny wirtualnej z Windows, gdzie przestaje być widoczny na Macu",
+          "silicon": "Tak – macOS Big Sur lub nowszy na Apple silicon, macOS Catalina lub nowszy na Intelu",
+          "unlock": "Hasło lub klucz odzyskiwania, wpisywane w Windows",
+          "extras": "Pełna maszyna wirtualna z Windows, która uruchamia także aplikacje Windows. Wymaga instalacji i licencji Windows oraz miejsca na dysku i pamięci dla maszyny wirtualnej"
+        },
+        "themPick": [
+          "już uruchamiasz Windows w Parallels Desktop",
+          "chcesz pełnego zachowania Windows dla dysku, w tym zapisu",
+          "potrzebujesz też aplikacji Windows na Macu"
+        ],
+        "unbitPick": [
+          "chcesz po prostu otworzyć jeden dysk bez instalowania Windows",
+          "nie chcesz kupować licencji Windows ani uruchamiać maszyny wirtualnej",
+          "chcesz, aby dysk pojawiał się w Finderze jak każdy inny"
+        ],
+        "faq": [
+          {
+            "q": "Czy Parallels Desktop może otwierać dyski BitLocker na Macu?",
+            "a": "Tak, pośrednio. Podłączasz pendrive’a do maszyny wirtualnej z Windows i odblokowujesz go natywną obsługą BitLockera w Windows. To ogólny sposób oparty na wirtualizacji, a nie dedykowana funkcja BitLocker."
+          },
+          {
+            "q": "Czy potrzebuję licencji Windows, aby używać Parallels Desktop?",
+            "a": "Według Parallels licencja Windows nie jest w cenie i potrzebujesz jej do aktywacji Windows. Unbit w ogóle nie potrzebuje Windows."
+          }
+        ]
+      }
+    }
   }
 }
