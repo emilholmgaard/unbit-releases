@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.6</title>
+      <pubDate>Thu, 01 Oct 2026 13:23:47 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[Unbit 1.0.6 husker nu, hvordan du sidst låste hvert stik op, og vælger automatisk det sidst åbnede stik, når flere er tilsluttet. Menulinjeikonet er nu en simpel lås, der viser åben eller lukket, og vinduet er ryddet op: drevet står øverst, tandhjulet med Afslut sidder i kortet med forbrug, og Kun læseadgang lyser svagt op under læsning. Du kan opdatere stiklisten manuelt med en genvej, Finder er nu standardhandlingen, og der er genveje til at skubbe ud og annullere. Unbit advarer om Caps Lock, skjuler viste koder, når du forlader appen, kan indsætte en gendannelsesnøgle med kontrol, og håndterer frakoblede stik og mislykkede scanninger mere robust.]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.6/Unbit-1.0.6.dmg" type="application/octet-stream" sparkle:edSignature="yU5j828QmybPpfR3vyDuYFq0aGZ4RUCGFOgN2bDhUrmodXFztxky68DUX6Y/20/16SHmvLLDOVJ/csOin2oCBw==" length="4481472" />
+    </item>
+    <item>
       <title>Version 1.0.5</title>
       <pubDate>Thu, 01 Oct 2026 04:39:35 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
