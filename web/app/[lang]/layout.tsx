@@ -25,8 +25,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description: dict.meta.description,
     applicationName: SITE_NAME,
     keywords: dict.meta.keywords,
-    authors: [{ name: "Emil Holmgaard" }],
-    creator: "Emil Holmgaard",
+    authors: [{ name: "Unbit" }],
+    creator: "Unbit",
     alternates: {
       canonical: path,
       // hreflang alternates for every locale, plus x-default pointing to English.

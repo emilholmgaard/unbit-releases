@@ -33,7 +33,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
     <footer className="footer">
       <div className="foot-brand">
         <a className="brand" href={`/${locale}`}><Image src="/icon.png" width={24} height={24} alt="" />Unbit</a>
-        <p>© 2026 Emil Holmgaard</p>
+        <p>© 2026 Unbit</p>
         <p className="site-note">{t.footer.siteNote}</p>
       </div>
       <div className="foot-cols">

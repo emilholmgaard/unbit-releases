@@ -78,7 +78,7 @@ export default async function AlternativePage({ params }: PageProps<"/[lang]/alt
       downloadUrl: DOWNLOAD_URL,
       isAccessibleForFree: true,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      author: { "@type": "Person", name: "Emil Holmgaard" },
+      author: { "@type": "Organization", name: "Unbit" },
     },
     {
       "@context": "https://schema.org",
