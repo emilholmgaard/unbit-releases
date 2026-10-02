@@ -7,6 +7,8 @@ import { languages, locales, type Locale } from "@/lib/i18n";
 /** Swap the leading locale segment, so the visitor stays on the equivalent page (e.g. /da/foo -> /de/foo). */
 function hrefFor(pathname: string, target: Locale) {
   const rest = pathname.split("/").slice(2).join("/");
+  // The lawyers page only exists in Danish (advokater) and English (lawyers); other languages go to the home page.
+  if (rest === "advokater" || rest === "lawyers") return target === "da" ? "/da/advokater" : target === "en" ? "/en/lawyers" : `/${target}`;
   return `/${target}${rest ? `/${rest}` : ""}`;
 }
 

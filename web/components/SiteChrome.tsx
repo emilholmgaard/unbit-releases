@@ -5,6 +5,8 @@ import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "@/lib/site";
 import { alternativesPath } from "@/lib/competitors";
 import { bestPath, guidePath } from "@/lib/guides";
+import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
+import { hasLawyersPage, lawyersPath } from "@/lib/lawyers";
 
 const RELEASES = "https://github.com/emilholmgaard/unbit-releases/releases";
 
@@ -51,6 +53,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={guidePath(locale)}>{t.footer.guides}</a>
           <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
           <a href={alternativesPath(locale)}>{t.footer.alternatives}</a>
+          {hasLawyersPage(locale) && <a href={lawyersPath(locale)}>{LAWYERS_CONTENT[locale].footerLabel}</a>}
           <a href={`${RELEASES}`}>{t.footer.releaseNotes}</a>
           <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
         </div>

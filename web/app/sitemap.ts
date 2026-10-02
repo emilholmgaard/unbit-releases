@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { alternativesPath, competitors } from "@/lib/competitors";
 import { BEST_MODIFIED, GUIDES, GUIDES_MODIFIED, bestPath, guidePath } from "@/lib/guides";
 import { locales } from "@/lib/i18n";
+import { LAWYERS_LOCALES, LAWYERS_MODIFIED, lawyersPath } from "@/lib/lawyers";
 import { SITE_URL, latestRelease } from "@/lib/site";
 
 export const revalidate = 600;
@@ -67,9 +68,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     alternates: { languages: bestLangs },
   }));
 
+  // Lawyers page: Danish (/da/advokater) and English (/en/lawyers) only, with hreflang to each other.
+  const lawyersLangs = {
+    ...Object.fromEntries(LAWYERS_LOCALES.map((l) => [l, `${SITE_URL}${lawyersPath(l)}`])),
+    "x-default": `${SITE_URL}${lawyersPath("en")}`,
+  };
+  const lawyers = LAWYERS_LOCALES.map((locale) => ({
+    url: `${SITE_URL}${lawyersPath(locale)}`,
+    lastModified: new Date(LAWYERS_MODIFIED) > built ? new Date(LAWYERS_MODIFIED) : built,
+    changeFrequency: "monthly" as const,
+    priority: locale === "da" ? 0.8 : 0.7,
+    alternates: { languages: lawyersLangs },
+  }));
+
   return [
     ...home,
     ...best,
+    ...lawyers,
     ...alternatives(),
     ...competitors.flatMap((c) => alternatives(c.slug)),
     ...guides(),

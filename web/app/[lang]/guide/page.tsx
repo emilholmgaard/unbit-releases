@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { GUIDES, bestPath, guidePath } from "@/lib/guides";
 import { languages, locales } from "@/lib/i18n";
+import { hasLawyersPage, lawyersPath } from "@/lib/lawyers";
+import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import { getDictionary, hasLocale } from "../dictionaries";
 import { getGuideContent } from "./content";
@@ -84,6 +86,13 @@ export default async function GuideIndex() {
             <p>{t.guides.bestText}</p>
             <span className="alt-more">{t.guides.bestCta} <span aria-hidden="true">→</span></span>
           </a>
+          {hasLawyersPage(locale) && (
+            <a className="card alt-card best-callout" href={lawyersPath(locale)}>
+              <h2>{LAWYERS_CONTENT[locale].indexCard.title}</h2>
+              <p>{LAWYERS_CONTENT[locale].indexCard.text}</p>
+              <span className="alt-more">{LAWYERS_CONTENT[locale].indexCard.cta} <span aria-hidden="true">→</span></span>
+            </a>
+          )}
         </section>
       </main>
       <SiteFooter locale={locale} t={t} />

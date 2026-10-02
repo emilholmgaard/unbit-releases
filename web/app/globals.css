@@ -632,3 +632,15 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
   .best-type { display: inline; margin-left: 8px; }
 }
 @media (max-width: 860px) { .guide { padding-top: 32px; } .guide-related .alt-list { grid-template-columns: 1fr; } }
+
+/* Lawyers page (/da/advokater, /en/lawyers) */
+.lawyers-disclaimer { border-color: rgba(255, 255, 255, 0.22); color: var(--soft); }
+.lawyers-disclaimer strong { color: var(--text); font-weight: 600; }
+.lawyers-actions { margin-top: 28px; justify-content: flex-start; }
+.guide-section > h2 { scroll-margin-top: 90px; }
+.checklist { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 10px; }
+.checklist li { position: relative; padding: 12px 16px 12px 46px; border: 1px solid var(--line); border-radius: 12px; background: #0b0b0c; font-size: 16px !important; line-height: 1.6 !important; }
+.checklist li::before { content: ""; position: absolute; left: 16px; top: 16px; width: 16px; height: 16px; border: 1.5px solid var(--muted); border-radius: 4px; }
+.note-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.note-actions button { font: inherit; cursor: pointer; border: 0; }
+.note-text { margin: 16px 0 0; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: #0b0b0c; color: var(--soft); font: 13px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 560px; overflow: auto; }
