@@ -25,16 +25,20 @@ function getLocale(request: NextRequest): string {
 }
 
 export function proxy(request: NextRequest) {
-  // Check if there is any supported locale in the pathname
+  // Paths that already carry a supported locale are served as-is.
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some((locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
   if (pathnameHasLocale) return;
 
-  // Redirect if there is no locale
+  // No locale in the path: serve the best-matching locale's page under the SAME URL (internal rewrite, status 200)
+  // instead of redirecting. `/` therefore answers 200 for users and crawlers alike (no 307 hop); crawlers send no
+  // Accept-Language and get English. The served page's <link rel="canonical"> points at its own /<locale> URL, and
+  // `Vary: Accept-Language` tells caches that the response depends on that header.
+  // e.g. incoming request is /  ->  renders /da  (or /products -> /da/products, which 404s if it does not exist)
   const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
-  // e.g. incoming request is /  ->  /da  (or /products -> /da/products)
-  const response = NextResponse.redirect(request.nextUrl);
+  const url = request.nextUrl.clone();
+  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+  const response = NextResponse.rewrite(url);
   response.headers.set("Vary", "Accept-Language");
   return response;
 }
