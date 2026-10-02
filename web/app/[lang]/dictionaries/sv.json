@@ -99,6 +99,11 @@
       { "q": "Sparas mitt lösenord någonstans?", "a": "Bara om du markerar ”Kom ihåg den här enheten på den här datorn”. Koden sparas då krypterad i din macOS-nyckelring efter en lyckad upplåsning, och du kan glömma den när som helst från kugghjulsmenyn. Den skickas aldrig någonstans." }
     ]
   },
+  "guides": {
+    "title": "Guider: BitLocker på Mac",
+    "intro": "Korta, praktiska guider för att öppna, förstå och använda BitLocker-enheter på en Mac.",
+    "cta": "Alla guider"
+  },
   "cta": { "title": "Öppna din BitLocker-enhet", "text": "Ingen Windows-dator behövs.", "download": "Ladda ner för macOS", "whatsNew": "Nyheter" },
   "footer": {
     "siteNote": "Den här webbplatsen använder integritetsvänlig analys utan cookies.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Versionsanteckningar",
     "github": "GitHub",
     "alternatives": "Alternativ",
+    "guides": "Guider",
     "legal": "BitLocker är ett varumärke som tillhör Microsoft Corporation. Unbit är en oberoende app och är inte knuten till eller godkänd av Microsoft. Mac och macOS är varumärken som tillhör Apple Inc."
   },
   "alternatives": {

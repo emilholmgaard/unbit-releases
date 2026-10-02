@@ -99,6 +99,11 @@
       { "q": "Mon mot de passe est-il enregistré quelque part ?", "a": "Seulement si vous cochez « Mémoriser ce disque sur ce Mac ». Le code est alors enregistré chiffré dans votre trousseau macOS après un déverrouillage réussi, et vous pouvez l’oublier à tout moment depuis le menu en forme de roue dentée. Il n’est jamais envoyé où que ce soit." }
     ]
   },
+  "guides": {
+    "title": "Guides : BitLocker sur Mac",
+    "intro": "Des guides courts et pratiques pour ouvrir, comprendre et utiliser les disques BitLocker sur un Mac.",
+    "cta": "Tous les guides"
+  },
   "cta": { "title": "Ouvrez votre disque BitLocker", "text": "Aucun PC Windows requis.", "download": "Télécharger pour macOS", "whatsNew": "Nouveautés" },
   "footer": {
     "siteNote": "Ce site utilise des statistiques respectueuses de la vie privée, sans cookies.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Notes de version",
     "github": "GitHub",
     "alternatives": "Alternatives",
+    "guides": "Guides",
     "legal": "BitLocker est une marque de Microsoft Corporation. Unbit est une app indépendante, sans affiliation avec Microsoft ni approbation de sa part. Mac et macOS sont des marques d’Apple Inc."
   },
   "alternatives": {

@@ -119,6 +119,11 @@
       { "q": "Is my password stored anywhere?", "a": "Only if you tick \"Remember this drive on this Mac\". The code is then saved encrypted in your macOS keychain after a successful unlock, and you can forget it at any time from the gear menu. It's never sent anywhere." }
     ]
   },
+  "guides": {
+    "title": "Guides: BitLocker on Mac",
+    "intro": "Short, practical guides on opening, understanding and using BitLocker drives on a Mac.",
+    "cta": "All guides"
+  },
   "cta": {
     "title": "Open your BitLocker drive",
     "text": "No Windows PC required.",
@@ -132,6 +137,7 @@
     "releaseNotes": "Release notes",
     "github": "GitHub",
     "alternatives": "Alternatives",
+    "guides": "Guides",
     "legal": "BitLocker is a trademark of Microsoft Corporation. Unbit is an independent app and is not affiliated with or endorsed by Microsoft. Mac and macOS are trademarks of Apple Inc."
   },
   "alternatives": {

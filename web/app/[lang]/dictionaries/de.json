@@ -99,6 +99,11 @@
       { "q": "Wird mein Passwort irgendwo gespeichert?", "a": "Nur wenn du „Dieses Laufwerk auf diesem Mac merken“ aktivierst. Der Code wird dann nach erfolgreichem Entsperren verschlüsselt in deinem macOS-Schlüsselbund gesichert, und du kannst ihn jederzeit über das Zahnrad-Menü vergessen. Er wird nie irgendwohin gesendet." }
     ]
   },
+  "guides": {
+    "title": "Ratgeber: BitLocker auf dem Mac",
+    "intro": "Kurze, praktische Ratgeber zum Öffnen, Verstehen und Nutzen von BitLocker-Laufwerken auf dem Mac.",
+    "cta": "Alle Ratgeber"
+  },
   "cta": { "title": "Öffne dein BitLocker-Laufwerk", "text": "Kein Windows-PC nötig.", "download": "Für macOS herunterladen", "whatsNew": "Was ist neu" },
   "footer": {
     "siteNote": "Diese Website verwendet datenschutzfreundliche Analysen ohne Cookies.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Versionshinweise",
     "github": "GitHub",
     "alternatives": "Alternativen",
+    "guides": "Ratgeber",
     "legal": "BitLocker ist eine Marke der Microsoft Corporation. Unbit ist eine unabhängige App und steht in keiner Verbindung zu Microsoft und wird von Microsoft weder unterstützt noch empfohlen. Mac und macOS sind Marken von Apple Inc."
   },
   "alternatives": {

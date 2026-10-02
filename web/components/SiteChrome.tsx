@@ -4,6 +4,7 @@ import type { Dictionary } from "@/app/[lang]/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "@/lib/site";
 import { alternativesPath } from "@/lib/competitors";
+import { guidePath } from "@/lib/guides";
 
 const RELEASES = "https://github.com/emilholmgaard/unbit-releases/releases";
 
@@ -27,7 +28,7 @@ export function SiteHeader({ locale, t }: { locale: Locale; t: Dictionary }) {
   );
 }
 
-/** Same footer as the home page, including the link to the alternatives index. */
+/** Same footer as the home page, including links to the guides and alternatives indexes. */
 export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
   return (
     <footer className="footer">
@@ -43,10 +44,12 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={`/${locale}#how`}>{t.nav.how}</a>
           <a href={`/${locale}#features`}>{t.nav.features}</a>
           <a href={`/${locale}#privacy`}>{t.nav.privacy}</a>
+          <a href={`/${locale}#screens`}>{t.screens.title}</a>
         </div>
         <div>
           <h2>{t.footer.resources}</h2>
           <a href={`/${locale}#faq`}>{t.nav.faq}</a>
+          <a href={guidePath(locale)}>{t.footer.guides}</a>
           <a href={alternativesPath(locale)}>{t.footer.alternatives}</a>
           <a href={`${RELEASES}`}>{t.footer.releaseNotes}</a>
           <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>

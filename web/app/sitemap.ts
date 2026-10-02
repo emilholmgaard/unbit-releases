@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { alternativesPath, competitors } from "@/lib/competitors";
+import { GUIDES, GUIDES_MODIFIED, guidePath } from "@/lib/guides";
 import { locales } from "@/lib/i18n";
 import { SITE_URL, latestRelease } from "@/lib/site";
 
@@ -38,5 +39,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
   };
 
-  return [...home, ...alternatives(), ...competitors.flatMap((c) => alternatives(c.slug))];
+  // Guides index and one article per guide, each with hreflang alternates across locales.
+  const guides = (slug?: string) => {
+    const langs = {
+      ...Object.fromEntries(locales.map((l) => [l, `${SITE_URL}${guidePath(l, slug)}`])),
+      "x-default": `${SITE_URL}${guidePath("en", slug)}`,
+    };
+    return locales.map((locale) => ({
+      url: `${SITE_URL}${guidePath(locale, slug)}`,
+      lastModified: new Date(GUIDES_MODIFIED) > built ? new Date(GUIDES_MODIFIED) : built,
+      changeFrequency: "monthly" as const,
+      priority: slug ? (locale === "en" ? 0.8 : 0.7) : locale === "en" ? 0.7 : 0.6,
+      alternates: { languages: langs },
+    }));
+  };
+
+  return [
+    ...home,
+    ...alternatives(),
+    ...competitors.flatMap((c) => alternatives(c.slug)),
+    ...guides(),
+    ...GUIDES.flatMap((g) => guides(g.slug)),
+  ];
 }

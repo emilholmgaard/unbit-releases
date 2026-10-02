@@ -99,6 +99,11 @@
       { "q": "La mia password viene salvata da qualche parte?", "a": "Solo se selezioni “Ricorda questa unità su questo Mac”. Il codice viene allora salvato cifrato nel portachiavi di macOS dopo uno sblocco riuscito e puoi dimenticarlo in qualsiasi momento dal menu a forma di ingranaggio. Non viene mai inviato da nessuna parte." }
     ]
   },
+  "guides": {
+    "title": "Guide: BitLocker su Mac",
+    "intro": "Guide brevi e pratiche per aprire, capire e usare le unità BitLocker su un Mac.",
+    "cta": "Tutte le guide"
+  },
   "cta": { "title": "Apri la tua unità BitLocker", "text": "Non serve un PC Windows.", "download": "Scarica per macOS", "whatsNew": "Novità" },
   "footer": {
     "siteNote": "Questo sito usa statistiche rispettose della privacy, senza cookie.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Note di rilascio",
     "github": "GitHub",
     "alternatives": "Alternative",
+    "guides": "Guide",
     "legal": "BitLocker è un marchio di Microsoft Corporation. Unbit è un’app indipendente e non è affiliata a Microsoft né approvata da Microsoft. Mac e macOS sono marchi di Apple Inc."
   },
   "alternatives": {

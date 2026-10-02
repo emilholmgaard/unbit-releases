@@ -99,6 +99,11 @@
       { "q": "Wordt mijn wachtwoord ergens opgeslagen?", "a": "Alleen als je “Onthoud deze schijf op deze Mac” aanvinkt. De code wordt dan na een geslaagde ontgrendeling versleuteld opgeslagen in je macOS-sleutelhanger en je kunt hem op elk moment vergeten via het tandwielmenu. Hij wordt nooit ergens naartoe gestuurd." }
     ]
   },
+  "guides": {
+    "title": "Handleidingen: BitLocker op de Mac",
+    "intro": "Korte, praktische handleidingen om BitLocker-schijven op een Mac te openen, te begrijpen en te gebruiken.",
+    "cta": "Alle handleidingen"
+  },
   "cta": { "title": "Open je BitLocker-schijf", "text": "Geen Windows-pc nodig.", "download": "Download voor macOS", "whatsNew": "Wat is er nieuw" },
   "footer": {
     "siteNote": "Deze website gebruikt privacyvriendelijke analyses zonder cookies.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Release-opmerkingen",
     "github": "GitHub",
     "alternatives": "Alternatieven",
+    "guides": "Handleidingen",
     "legal": "BitLocker is een handelsmerk van Microsoft Corporation. Unbit is een onafhankelijke app en is niet gelieerd aan of goedgekeurd door Microsoft. Mac en macOS zijn handelsmerken van Apple Inc."
   },
   "alternatives": {

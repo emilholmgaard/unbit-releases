@@ -592,3 +592,42 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
   .demo { max-width: 320px; margin: 0 auto; }
 }
 @media (max-width: 520px) { .state { grid-template-columns: 1fr; } .state img { max-width: 220px; } }
+
+/* Help guides */
+.guide-card { display: flex; flex-direction: column; gap: 10px; padding: 28px; transition: background 0.15s, border-color 0.15s; }
+.guide-card:hover { background: #1b1b1e; border-color: rgba(255, 255, 255, 0.16); }
+.guide-card h3 { font-size: 19px; line-height: 1.25; letter-spacing: -0.02em; }
+.guide-card p { flex: 1; }
+.guide-list .alt-card h2 { font-size: 21px; }
+.guide { max-width: 720px; margin: 0 auto; padding: 56px 0 0; }
+.crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: var(--muted); }
+.crumbs a:hover { color: var(--text); }
+.guide-head h1 {
+  display: block; margin: 20px 0 0; text-align: left;
+  font-size: clamp(32px, 5.2vw, 52px); letter-spacing: -0.035em; line-height: 1.1;
+}
+.guide-meta { margin: 14px 0 0; font-size: 13px; color: #7c7c80; }
+.guide-lead { margin: 24px 0 0; font-size: 19px; line-height: 1.6; color: var(--soft); }
+.guide-section { margin-top: 56px; }
+.guide-section h2, .guide-faq h2, .guide-related h2 { font-size: clamp(24px, 3vw, 30px); letter-spacing: -0.025em; }
+.guide-section p, .guide-section li { font-size: 17px; line-height: 1.7; color: var(--soft); }
+.guide-section p { margin: 16px 0 0; }
+.guide-section strong { color: var(--text); font-weight: 500; }
+.guide a:not(.card):not(.pill) { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255, 255, 255, 0.35); }
+.guide a:not(.card):not(.pill):hover { text-decoration-color: currentColor; color: var(--text); }
+.guide-steps, .guide-bullets { margin: 16px 0 0; padding-left: 24px; }
+.guide-steps li, .guide-bullets li { margin-top: 12px; padding-left: 4px; }
+.guide-steps li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
+.guide-shots { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 32px; }
+.guide-shots figure { margin: 0; width: 300px; max-width: 100%; }
+.guide-shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.12); }
+.guide-shots figcaption { margin-top: 12px; font-size: 13px; color: var(--muted); text-align: center; }
+.guide .faq.guide-faq { display: block; max-width: none; margin: 72px 0 0; }
+.guide-faq h2 { margin-bottom: 20px; padding-top: 0; }
+.guide .guide-faq details p { max-width: none; }
+.guide-related { margin-top: 72px; }
+.guide-related h2 { margin-bottom: 20px; }
+.guide-related .alt-list { margin-top: 0; grid-template-columns: 1fr 1fr; max-width: none; }
+.guide-related .alt-card { padding: 24px; }
+.guide + .cta { margin-top: 96px; }
+@media (max-width: 860px) { .guide { padding-top: 32px; } .guide-related .alt-list { grid-template-columns: 1fr; } }

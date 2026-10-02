@@ -99,6 +99,11 @@
       { "q": "Bliver min adgangskode gemt nogen steder?", "a": "Kun hvis du sætter kryds ved “Husk dette drev på denne Mac”. Koden bliver så gemt krypteret i din macOS-nøglering efter en vellykket oplåsning, og du kan glemme den igen når som helst fra tandhjulsmenuen. Den bliver aldrig sendt nogen steder hen." }
     ]
   },
+  "guides": {
+    "title": "Guides: BitLocker på Mac",
+    "intro": "Korte, praktiske guides til at åbne, forstå og bruge BitLocker-drev på en Mac.",
+    "cta": "Alle guides"
+  },
   "cta": { "title": "Åbn dit BitLocker-drev", "text": "Du behøver ikke en Windows-pc.", "download": "Download til macOS", "whatsNew": "Hvad er nyt" },
   "footer": {
     "siteNote": "Dette websted bruger privatlivsvenlig analyse uden cookies.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Udgivelsesnoter",
     "github": "GitHub",
     "alternatives": "Alternativer",
+    "guides": "Guides",
     "legal": "BitLocker er et varemærke tilhørende Microsoft Corporation. Unbit er en uafhængig app og er ikke tilknyttet eller godkendt af Microsoft. Mac og macOS er varemærker tilhørende Apple Inc."
   },
   "alternatives": {

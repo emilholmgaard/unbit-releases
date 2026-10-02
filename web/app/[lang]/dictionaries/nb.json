@@ -99,6 +99,11 @@
       { "q": "Lagres passordet mitt noe sted?", "a": "Bare hvis du velger «Husk denne stasjonen på denne Macen». Koden lagres da kryptert i macOS-nøkkelringen etter en vellykket opplåsing, og du kan glemme den når som helst fra tannhjulmenyen. Den sendes aldri noe sted." }
     ]
   },
+  "guides": {
+    "title": "Guider: BitLocker på Mac",
+    "intro": "Korte, praktiske guider for å åpne, forstå og bruke BitLocker-stasjoner på en Mac.",
+    "cta": "Alle guider"
+  },
   "cta": { "title": "Åpne BitLocker-stasjonen din", "text": "Du trenger ingen Windows-PC.", "download": "Last ned for macOS", "whatsNew": "Nytt" },
   "footer": {
     "siteNote": "Dette nettstedet bruker personvernvennlig analyse uten informasjonskapsler.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Utgivelsesnotater",
     "github": "GitHub",
     "alternatives": "Alternativer",
+    "guides": "Guider",
     "legal": "BitLocker er et varemerke tilhørende Microsoft Corporation. Unbit er en uavhengig app og er ikke tilknyttet eller godkjent av Microsoft. Mac og macOS er varemerker tilhørende Apple Inc."
   },
   "alternatives": {

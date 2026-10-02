@@ -99,6 +99,11 @@
       { "q": "Czy moje hasło jest gdzieś zapisywane?", "a": "Tylko jeśli zaznaczysz „Zapamiętaj ten dysk na tym Macu”. Kod jest wtedy zapisywany w postaci zaszyfrowanej w pęku kluczy macOS po udanym odblokowaniu, a możesz go w każdej chwili usunąć z menu koła zębatego. Nigdy nie jest nigdzie wysyłany." }
     ]
   },
+  "guides": {
+    "title": "Poradniki: BitLocker na Macu",
+    "intro": "Krótkie, praktyczne poradniki o otwieraniu, rozumieniu i używaniu dysków BitLocker na Macu.",
+    "cta": "Wszystkie poradniki"
+  },
   "cta": { "title": "Otwórz swój dysk BitLocker", "text": "Nie potrzebujesz komputera z Windows.", "download": "Pobierz dla macOS", "whatsNew": "Co nowego" },
   "footer": {
     "siteNote": "Ta strona korzysta z analityki przyjaznej prywatności, bez plików cookie.",
@@ -107,6 +112,7 @@
     "releaseNotes": "Informacje o wydaniach",
     "github": "GitHub",
     "alternatives": "Alternatywy",
+    "guides": "Poradniki",
     "legal": "BitLocker jest znakiem towarowym firmy Microsoft Corporation. Unbit jest niezależną aplikacją i nie jest powiązany z firmą Microsoft ani przez nią zatwierdzony. Mac i macOS są znakami towarowymi firmy Apple Inc."
   },
   "alternatives": {

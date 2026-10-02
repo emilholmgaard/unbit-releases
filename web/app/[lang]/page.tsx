@@ -2,9 +2,11 @@ import Image from "next/image";
 import { lang } from "next/root-params";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import LazyVideo from "@/components/LazyVideo";
+import { GUIDES, guidePath } from "@/lib/guides";
 import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
+import { getGuideContent } from "./guide/content";
 
 export const revalidate = 600;
 
@@ -12,6 +14,7 @@ export default async function Home() {
   const locale = await lang();
   if (!hasLocale(locale)) notFound();
   const t = await getDictionary();
+  const guides = await getGuideContent();
   const FAQ = t.faq.items;
   const { version, minOS, date } = await latestRelease();
   const v = (text: string) => text.replace("{version}", version).replace("{minOS}", minOS);
@@ -221,6 +224,23 @@ export default async function Home() {
             <div className="grad-panel orange" aria-hidden="true"><span>{t.privacy.panelLine1}<br />{t.privacy.panelLine2}</span></div>
           </section>
 
+          {/* Help guides (internal links for readers and search engines) */}
+          <section className="section guides" id="guides" aria-labelledby="guides-title">
+            <div className="section-head">
+              <h2 id="guides-title">{t.guides.title}</h2>
+              <p>{t.guides.intro}</p>
+            </div>
+            <div className="grid three">
+              {GUIDES.map((g) => (
+                <a key={g.slug} className="card guide-card" href={guidePath(locale, g.slug)}>
+                  <h3>{guides.articles[g.key].h1}</h3>
+                  <p>{guides.articles[g.key].summary}</p>
+                  <span className="alt-more">{t.guides.cta} <span aria-hidden="true">→</span></span>
+                </a>
+              ))}
+            </div>
+          </section>
+
           {/* Download */}
           <section className="download-row" aria-labelledby="dl-title">
             <div>
@@ -287,6 +307,7 @@ export default async function Home() {
             <div>
               <h2>{t.footer.resources}</h2>
               <a href="#faq">{t.nav.faq}</a>
+              <a href={guidePath(locale)}>{t.footer.guides}</a>
               <a href={`/${locale}/alternatives`}>{t.footer.alternatives}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases/releases">{t.footer.releaseNotes}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
