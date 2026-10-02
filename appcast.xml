@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.8</title>
+      <pubDate>Fri, 02 Oct 2026 07:51:13 +0000</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[Unbit 1.0.8 åbner nu kendte drev automatisk, hvis du slår det til i tandhjulsmenuen, viser en besked, når et drev er åbent eller ikke kunne åbnes, og har en indstilling til at starte ved login. Fejlbeskederne er blevet tydeligere og fortæller præcis, hvad der er galt, og hvad du kan gøre. Appen åbner drev hurtigere, og alt tekst står nu inde i kortene. Beskrivelserne siger nu eksterne drev, så USB-stik, SSD og HDD er med. Drevlisten håndterer nu fejlbehæftede svar og forældede scanninger mere robust.]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.8/Unbit-1.0.8.dmg" type="application/octet-stream" sparkle:edSignature="Dv9nHcubbCQsPHoKozSQyoGIsSLp6pof8HthjnR6Gfb4TzYyB+hceU8hOvV4q3a/THO8WEPGX3mnQjtyWjZyBA==" length="4573267" />
+    </item>
+    <item>
       <title>Version 1.0.7</title>
       <pubDate>Thu, 01 Oct 2026 13:58:33 +0000</pubDate>
       <sparkle:version>8</sparkle:version>
