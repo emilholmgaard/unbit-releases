@@ -30,6 +30,22 @@
     "openAlt": "Finestra di Unbit nella barra dei menu con un’unità aperta, l’attività di lettura e lo spazio utilizzato",
     "openCaption": "Sfogliala nel Finder, poi espellila in sicurezza"
   },
+  "screens": {
+    "title": "Unbit in azione",
+    "intro": "L’app vera, dall’unità bloccata ai tuoi file nel Finder. Sono screenshot di Unbit stesso.",
+    "videoLabel": "Breve anteprima in loop: la finestra di sblocco di Unbit passa a quella dell’unità aperta",
+    "videoCaption": "Un breve loop realizzato con i due screenshot di questa pagina.",
+    "states": [
+      {
+        "title": "Unità rilevata, bloccata",
+        "text": "Collega l’unità e comparirà in Unità. Inserisci la password di BitLocker e scegli Apri unità."
+      },
+      {
+        "title": "Aperta, sola lettura",
+        "text": "L’unità si apre nel Finder in sola lettura. Unbit mostra l’attività di lettura e lo spazio usato, e Espelli la chiude quando hai finito."
+      }
+    ]
+  },
   "how": {
     "title": "Come funziona",
     "intro": "Tre passaggi da un’unità bloccata ai tuoi file nel Finder. La configurazione iniziale richiede circa un minuto.",

@@ -30,6 +30,22 @@
     "openAlt": "Unbit-Fenster in der Menüleiste mit einem geöffneten Laufwerk, Leseaktivität und belegtem Speicher",
     "openCaption": "Durchsuche es im Finder und wirf es dann sicher aus"
   },
+  "screens": {
+    "title": "Unbit in der Praxis",
+    "intro": "Die echte App – vom gesperrten Laufwerk bis zu deinen Dateien im Finder. Das sind Screenshots von Unbit selbst.",
+    "videoLabel": "Kurze Endlosvorschau: Das Entsperr-Fenster von Unbit wechselt zum Fenster mit dem geöffneten Laufwerk",
+    "videoCaption": "Eine kurze Schleife aus den beiden Screenshots auf dieser Seite.",
+    "states": [
+      {
+        "title": "Laufwerk erkannt, gesperrt",
+        "text": "Schließe das Laufwerk an, und es erscheint unter „Laufwerke“. Gib das BitLocker-Passwort ein und wähle „Laufwerk öffnen“."
+      },
+      {
+        "title": "Geöffnet, nur Lesen",
+        "text": "Das Laufwerk öffnet sich im Finder schreibgeschützt. Unbit zeigt Leseaktivität und belegten Speicher an, und „Sicher auswerfen“ schließt es, wenn du fertig bist."
+      }
+    ]
+  },
   "how": {
     "title": "So funktioniert’s",
     "intro": "Drei Schritte vom gesperrten Laufwerk zu deinen Dateien im Finder. Die einmalige Einrichtung dauert etwa eine Minute.",

@@ -30,6 +30,22 @@
     "openAlt": "Unbit-vindu i menylinjen som viser en åpen stasjon, leseaktivitet og brukt plass",
     "openCaption": "Bla gjennom den i Finder, og løs den deretter ut trygt"
   },
+  "screens": {
+    "title": "Se Unbit i bruk",
+    "intro": "Den ekte appen – fra en låst stasjon til filene dine i Finder. Dette er skjermbilder av selve Unbit.",
+    "videoLabel": "Kort forhåndsvisning i løkke: Unbits opplåsingsvindu skifter til vinduet med den åpne stasjonen",
+    "videoCaption": "En kort løkke laget av de to skjermbildene på denne siden.",
+    "states": [
+      {
+        "title": "Stasjon funnet, låst",
+        "text": "Koble til stasjonen, så vises den under Stasjoner. Skriv inn BitLocker-passordet og velg Åpne stasjon."
+      },
+      {
+        "title": "Åpen, kun lesing",
+        "text": "Stasjonen åpnes i Finder skrivebeskyttet. Unbit viser leseaktivitet og brukt plass, og Løs ut trygt lukker den når du er ferdig."
+      }
+    ]
+  },
   "how": {
     "title": "Slik fungerer det",
     "intro": "Tre trinn fra en låst stasjon til filene dine i Finder. Oppsettet, som bare gjøres én gang, tar omtrent et minutt.",

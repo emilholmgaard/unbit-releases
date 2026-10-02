@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { lang } from "next/root-params";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import LazyVideo from "@/components/LazyVideo";
 import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
@@ -132,6 +133,30 @@ export default async function Home() {
             </div>
           </section>
 
+          {/* See Unbit in use: real screenshots plus a short muted loop built from them */}
+          <section className="section screens" id="screens" aria-labelledby="screens-title">
+            <div className="section-head">
+              <h2 id="screens-title">{t.screens.title}</h2>
+              <p>{t.screens.intro}</p>
+            </div>
+            <div className="screens-grid">
+              <figure className="demo">
+                <LazyVideo mp4="/unbit-demo.mp4" webm="/unbit-demo.webm" poster="/unbit-demo-poster.webp" width={480} height={808} label={t.screens.videoLabel} />
+                <figcaption>{t.screens.videoCaption}</figcaption>
+              </figure>
+              <div className="screens-states">
+                <article className="card state">
+                  <Image src="/shot-unlock.png" width={320} height={538} sizes="(max-width: 860px) 70vw, 280px" loading="lazy" alt={t.mockup.unlockAlt} />
+                  <div><span className="num">1</span><h3>{t.screens.states[0].title}</h3><p>{t.screens.states[0].text}</p></div>
+                </article>
+                <article className="card state">
+                  <Image src="/shot-open.png" width={320} height={431} sizes="(max-width: 860px) 70vw, 280px" loading="lazy" alt={t.mockup.openAlt} />
+                  <div><span className="num">2</span><h3>{t.screens.states[1].title}</h3><p>{t.screens.states[1].text}</p></div>
+                </article>
+              </div>
+            </div>
+          </section>
+
           {/* Feature spotlight */}
           <section className="spotlight" aria-labelledby="spot-title">
             <div className="spot-text">
@@ -257,6 +282,7 @@ export default async function Home() {
               <a href="#how">{t.nav.how}</a>
               <a href="#features">{t.nav.features}</a>
               <a href="#privacy">{t.nav.privacy}</a>
+              <a href="#screens">{t.screens.title}</a>
             </div>
             <div>
               <h2>{t.footer.resources}</h2>

@@ -30,6 +30,22 @@
     "openAlt": "Ventana de Unbit en la barra de menús con una unidad abierta, actividad de lectura y espacio usado",
     "openCaption": "Explórala en el Finder y expúlsala de forma segura"
   },
+  "screens": {
+    "title": "Mira Unbit en acción",
+    "intro": "La app real, desde una unidad bloqueada hasta tus archivos en el Finder. Son capturas de pantalla de Unbit.",
+    "videoLabel": "Vista previa breve en bucle: la ventana de desbloqueo de Unbit pasa a la ventana de la unidad abierta",
+    "videoCaption": "Un bucle corto hecho con las dos capturas de esta página.",
+    "states": [
+      {
+        "title": "Unidad detectada y bloqueada",
+        "text": "Conecta la unidad y aparecerá en Unidades. Introduce la contraseña de BitLocker y elige Abrir unidad."
+      },
+      {
+        "title": "Abierta, solo lectura",
+        "text": "La unidad se abre en el Finder en modo de solo lectura. Unbit muestra la actividad de lectura y el espacio usado, y Expulsar la cierra cuando termines."
+      }
+    ]
+  },
   "how": {
     "title": "Cómo funciona",
     "intro": "Tres pasos para pasar de una unidad bloqueada a tus archivos en el Finder. La configuración inicial lleva aproximadamente un minuto.",

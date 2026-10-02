@@ -46,6 +46,22 @@
     "openAlt": "Unbit menu bar window showing an open drive, read activity and storage used",
     "openCaption": "Browse it in Finder, then eject it safely"
   },
+  "screens": {
+    "title": "See Unbit in use",
+    "intro": "The real app, from a locked drive to your files in Finder. These are screenshots of Unbit itself.",
+    "videoLabel": "Short looping preview: Unbit's unlock window changes into the open-drive window",
+    "videoCaption": "A short loop built from the two screenshots on this page.",
+    "states": [
+      {
+        "title": "Drive detected, locked",
+        "text": "Plug in the drive and it shows up under Drives. Enter the BitLocker password and choose Open Drive."
+      },
+      {
+        "title": "Open, read-only",
+        "text": "The drive opens in Finder as read-only. Unbit shows read activity and used space, and Eject Safely closes it when you're done."
+      }
+    ]
+  },
   "how": {
     "title": "How it works",
     "intro": "Three steps from a locked drive to your files in Finder. The one-time setup takes about a minute.",
