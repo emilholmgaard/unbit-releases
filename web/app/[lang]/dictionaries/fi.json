@@ -30,22 +30,6 @@
     "openAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy avattu asema, lukutoiminta ja käytetty tila",
     "openCaption": "Selaa sitä Finderissa ja poista se sitten turvallisesti"
   },
-  "screens": {
-    "title": "Unbit käytössä",
-    "intro": "Oikea sovellus – lukitusta asemasta tiedostoihisi Finderissa. Nämä ovat kuvakaappauksia itse Unbitista.",
-    "videoLabel": "Lyhyt toistuva esikatselu: Unbitin avausikkuna vaihtuu avatun aseman ikkunaan",
-    "videoCaption": "Lyhyt silmukka, joka on tehty sivun kahdesta kuvakaappauksesta.",
-    "states": [
-      {
-        "title": "Asema tunnistettu, lukittu",
-        "text": "Liitä asema, niin se ilmestyy Asemat-kohtaan. Kirjoita BitLocker-salasana ja valitse Avaa asema."
-      },
-      {
-        "title": "Avattu, vain luku",
-        "text": "Asema avautuu Finderissa vain luku -tilassa. Unbit näyttää lukutoiminnan ja käytetyn tilan, ja Poista turvallisesti sulkee aseman, kun olet valmis."
-      }
-    ]
-  },
   "how": {
     "title": "Näin se toimii",
     "intro": "Kolme vaihetta lukitusta asemasta tiedostoihisi Finderissa. Kertaluonteinen käyttöönotto vie noin minuutin.",

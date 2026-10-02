@@ -30,22 +30,6 @@
     "openAlt": "Unbit-fönster i menyraden som visar en öppen enhet, läsaktivitet och använt utrymme",
     "openCaption": "Bläddra i den i Finder och mata sedan ut den säkert"
   },
-  "screens": {
-    "title": "Se Unbit i användning",
-    "intro": "Den riktiga appen – från en låst enhet till dina filer i Finder. Det här är skärmbilder av själva Unbit.",
-    "videoLabel": "Kort förhandsvisning i loop: Unbits upplåsningsfönster byts mot fönstret med den öppna enheten",
-    "videoCaption": "En kort loop gjord av de två skärmbilderna på sidan.",
-    "states": [
-      {
-        "title": "Enhet hittad, låst",
-        "text": "Anslut enheten så dyker den upp under Enheter. Ange BitLocker-lösenordet och välj Öppna enhet."
-      },
-      {
-        "title": "Öppen, endast läsning",
-        "text": "Enheten öppnas i Finder skrivskyddad. Unbit visar läsaktivitet och använt utrymme, och Mata ut säkert stänger den när du är klar."
-      }
-    ]
-  },
   "how": {
     "title": "Så fungerar det",
     "intro": "Tre steg från en låst enhet till dina filer i Finder. Den engångsinställning som behövs tar ungefär en minut.",

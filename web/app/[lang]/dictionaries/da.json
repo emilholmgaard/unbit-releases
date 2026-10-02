@@ -30,22 +30,6 @@
     "openAlt": "Unbit-vindue i menulinjen, der viser et åbent drev, læseaktivitet og brugt plads",
     "openCaption": "Gennemse det i Finder, og skub det derefter sikkert ud"
   },
-  "screens": {
-    "title": "Se Unbit i brug",
-    "intro": "Den rigtige app – fra et låst drev til dine filer i Finder. Det er skærmbilleder af selve Unbit.",
-    "videoLabel": "Kort gentaget forhåndsvisning: Unbits oplåsningsvindue skifter til vinduet med det åbne drev",
-    "videoCaption": "Et kort loop lavet af de to skærmbilleder på siden.",
-    "states": [
-      {
-        "title": "Drev fundet, låst",
-        "text": "Sæt drevet i, så dukker det op under Drev. Indtast BitLocker-adgangskoden, og vælg Åbn drev."
-      },
-      {
-        "title": "Åbent, kun læsning",
-        "text": "Drevet åbner i Finder skrivebeskyttet. Unbit viser læseaktivitet og brugt plads, og Luk sikkert lukker det, når du er færdig."
-      }
-    ]
-  },
   "how": {
     "title": "Sådan virker det",
     "intro": "Tre trin fra et låst drev til dine filer i Finder. Den engangsopsætning tager omkring et minut.",

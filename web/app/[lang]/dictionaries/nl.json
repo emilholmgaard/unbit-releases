@@ -30,22 +30,6 @@
     "openAlt": "Unbit-venster in de menubalk met een geopende schijf, leesactiviteit en gebruikte opslagruimte",
     "openCaption": "Blader erdoorheen in de Finder en werp de schijf daarna veilig uit"
   },
-  "screens": {
-    "title": "Unbit in actie",
-    "intro": "De echte app – van een vergrendelde schijf naar je bestanden in de Finder. Dit zijn schermafbeeldingen van Unbit zelf.",
-    "videoLabel": "Korte voorvertoning in een lus: het ontgrendelvenster van Unbit verandert in het venster met de geopende schijf",
-    "videoCaption": "Een korte lus gemaakt van de twee schermafbeeldingen op deze pagina.",
-    "states": [
-      {
-        "title": "Schijf herkend, vergrendeld",
-        "text": "Sluit de schijf aan en hij verschijnt onder Schijven. Voer het BitLocker-wachtwoord in en kies Open schijf."
-      },
-      {
-        "title": "Geopend, alleen-lezen",
-        "text": "De schijf opent in de Finder als alleen-lezen. Unbit toont de leesactiviteit en de gebruikte ruimte, en Veilig uitwerpen sluit hem af als je klaar bent."
-      }
-    ]
-  },
   "how": {
     "title": "Hoe het werkt",
     "intro": "Drie stappen van een vergrendelde schijf naar je bestanden in de Finder. De eenmalige configuratie duurt ongeveer een minuut.",

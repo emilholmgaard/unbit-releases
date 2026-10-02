@@ -30,22 +30,6 @@
     "openAlt": "Fenêtre Unbit dans la barre des menus affichant un disque ouvert, l’activité de lecture et l’espace utilisé",
     "openCaption": "Parcourez-le dans le Finder, puis éjectez-le en toute sécurité"
   },
-  "screens": {
-    "title": "Unbit en action",
-    "intro": "La vraie app, du disque verrouillé à vos fichiers dans le Finder. Ce sont des captures d’écran d’Unbit lui-même.",
-    "videoLabel": "Aperçu rapide en boucle : la fenêtre de déverrouillage d’Unbit laisse place à celle du disque ouvert",
-    "videoCaption": "Une courte boucle réalisée à partir des deux captures d’écran de cette page.",
-    "states": [
-      {
-        "title": "Disque détecté, verrouillé",
-        "text": "Branchez le disque : il apparaît sous Disques. Saisissez le mot de passe BitLocker, puis choisissez Ouvrir le disque."
-      },
-      {
-        "title": "Ouvert, en lecture seule",
-        "text": "Le disque s’ouvre dans le Finder en lecture seule. Unbit affiche l’activité de lecture et l’espace utilisé, et Éjecter le ferme quand vous avez terminé."
-      }
-    ]
-  },
   "how": {
     "title": "Fonctionnement",
     "intro": "Trois étapes pour passer d’un disque verrouillé à vos fichiers dans le Finder. La configuration initiale prend environ une minute.",

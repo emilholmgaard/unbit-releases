@@ -30,22 +30,6 @@
     "openAlt": "Okno Unbit na pasku menu pokazujące otwarty dysk, aktywność odczytu i zajęte miejsce",
     "openCaption": "Przeglądaj go w Finderze, a potem bezpiecznie wysuń"
   },
-  "screens": {
-    "title": "Unbit w akcji",
-    "intro": "Prawdziwa aplikacja – od zablokowanego dysku do plików w Finderze. To zrzuty ekranu samego Unbita.",
-    "videoLabel": "Krótki podgląd w pętli: okno odblokowania Unbita zmienia się w okno otwartego dysku",
-    "videoCaption": "Krótka pętla złożona z dwóch zrzutów ekranu z tej strony.",
-    "states": [
-      {
-        "title": "Dysk wykryty, zablokowany",
-        "text": "Podłącz dysk, a pojawi się w sekcji Dyski. Wpisz hasło BitLockera i wybierz Otwórz dysk."
-      },
-      {
-        "title": "Otwarty, tylko do odczytu",
-        "text": "Dysk otwiera się w Finderze tylko do odczytu. Unbit pokazuje aktywność odczytu i zajęte miejsce, a Bezpiecznie wysuń zamyka dysk, gdy skończysz."
-      }
-    ]
-  },
   "how": {
     "title": "Jak to działa",
     "intro": "Trzy kroki od zablokowanego dysku do plików w Finderze. Jednorazowa konfiguracja zajmuje około minuty.",

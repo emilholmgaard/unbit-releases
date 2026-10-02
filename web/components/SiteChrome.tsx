@@ -44,7 +44,6 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={`/${locale}#how`}>{t.nav.how}</a>
           <a href={`/${locale}#features`}>{t.nav.features}</a>
           <a href={`/${locale}#privacy`}>{t.nav.privacy}</a>
-          <a href={`/${locale}#screens`}>{t.screens.title}</a>
         </div>
         <div>
           <h2>{t.footer.resources}</h2>

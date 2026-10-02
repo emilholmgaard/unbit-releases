@@ -572,27 +572,6 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
   .alt-table .us { background: transparent; }
 }
 
-/* See Unbit in use (screenshots + short loop) */
-.screens-grid { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 32px; align-items: start; }
-.demo { margin: 0; }
-.demo-video {
-  display: block; width: 100%; height: auto; aspect-ratio: 480 / 808; background: #0c0c0d;
-  border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.85);
-}
-.demo figcaption { margin-top: 12px; font-size: 13px; color: var(--muted); text-align: center; }
-.screens-states { display: grid; gap: 16px; }
-.state { display: grid; grid-template-columns: minmax(0, 200px) 1fr; gap: 28px; align-items: center; padding: 24px; }
-.state img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.12); }
-.state .num {
-  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
-  background: #fff; color: #000; font-size: 14px; font-weight: 600; margin-bottom: 16px;
-}
-@media (max-width: 860px) {
-  .screens-grid { grid-template-columns: 1fr; }
-  .demo { max-width: 320px; margin: 0 auto; }
-}
-@media (max-width: 520px) { .state { grid-template-columns: 1fr; } .state img { max-width: 220px; } }
-
 /* Help guides */
 .guide-card { display: flex; flex-direction: column; gap: 10px; padding: 28px; transition: background 0.15s, border-color 0.15s; }
 .guide-card:hover { background: #1b1b1e; border-color: rgba(255, 255, 255, 0.16); }
