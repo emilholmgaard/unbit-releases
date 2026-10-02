@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker sur Mac : guides et tutoriels | Unbit",
+    "indexMetaDescription": "Guides pratiques sur les disques BitLocker sur Mac : comment en ouvrir un, l’accès en lecture seule est-il sûr, et comment fonctionnent clés USB, SSD et disques durs.",
+    "indexH1": "BitLocker sur Mac : les guides",
+    "indexSub": "Des réponses courtes et pratiques pour toute personne qui a branché un disque chiffré avec BitLocker sur un Mac sans réussir à l’ouvrir.",
+    "readMore": "Lire le guide",
+    "guides": "Guides",
+    "breadcrumb": "Fil d’Ariane",
+    "updated": "Mis à jour le {date}",
+    "faqTitle": "Questions fréquentes",
+    "relatedTitle": "Autres guides",
+    "ctaTitle": "Ouvrez votre disque BitLocker",
+    "ctaText": "Gratuit, en lecture seule et sans PC Windows.",
+    "allGuides": "Tous les guides"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "Ouvrir un disque BitLocker sur Mac – guide pas à pas",
+      "metaDescription": "Ouvrez une clé USB, un SSD ou un disque dur chiffré avec BitLocker sur votre Mac, en lecture seule. Guide pas à pas avec Unbit et solutions aux problèmes courants.",
+      "h1": "Comment ouvrir un disque BitLocker sur un Mac",
+      "summary": "Pourquoi le Finder ne lit pas un disque BitLocker, et comment l’ouvrir en lecture seule en quelques minutes.",
+      "lead": "Un disque chiffré avec BitLocker se branche sans problème sur un Mac, mais macOS ne prend pas BitLocker en charge, donc le Finder ne peut pas l’ouvrir. En bref : installez un lecteur BitLocker comme [Unbit](home), branchez le disque, saisissez son mot de passe et ouvrez-le en lecture seule dans le Finder. Ce guide détaille chaque étape.",
+      "sections": [
+        {
+          "title": "Qu’est-ce que BitLocker ?",
+          "intro": [
+            "BitLocker est le chiffrement de disque de Microsoft pour Windows. Il brouille tout le contenu d’un disque pour qu’il soit illisible sans le mot de passe (ou une clé de récupération). Sur les disques externes, Windows l’appelle BitLocker To Go : vous l’activez sous Windows, vous choisissez un mot de passe, et Windows vous demande d’enregistrer une clé de récupération à 48 chiffres.",
+            "Un disque protégé de cette façon affiche une icône de cadenas dans l’Explorateur de fichiers de Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Pourquoi un Mac ne peut pas l’ouvrir seul",
+          "intro": [
+            "macOS dispose de son propre chiffrement, FileVault, et lit les formats courants comme exFAT, FAT32 et NTFS. En revanche, il ne comprend pas le chiffrement BitLocker : le disque ne peut donc pas être monté. Selon votre version de macOS, un message peut indiquer que le disque n’est pas lisible par cet ordinateur, ou le disque peut ne pas apparaître du tout dans le Finder.",
+            "**Ne choisissez jamais Initialiser ou Effacer dans ce message** : cela supprimerait tout le contenu du disque.",
+            "Vous avez deux options : utiliser Windows (un PC ou une machine virtuelle Windows) ou une app capable de lire BitLocker sur le Mac. [Unbit](home) est une app gratuite de la barre des menus qui fait cela : elle déchiffre le disque sur votre Mac et l’attache à macOS en lecture seule, si bien qu’il apparaît dans le Finder comme n’importe quel autre disque. Si vous comparez d’autres outils, consultez l’aperçu des [alternatives](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ouvrir le disque avec Unbit, pas à pas",
+          "intro": [],
+          "steps": [
+            "Téléchargez Unbit et faites-le glisser dans votre dossier Applications. Il nécessite macOS 13 ou version ultérieure et fonctionne sur les Mac Apple silicon comme sur les Mac Intel.",
+            "Ouvrez Unbit. Il vit dans la barre des menus, pas dans le Dock. La première fois, un court guide vous montre où activer l’**Accès complet au disque** dans Réglages Système ; Unbit en a besoin pour lire le disque chiffré.",
+            "Branchez le disque. Unbit le détecte automatiquement et l’affiche sous **Disques**. Si vous avez plusieurs disques externes, sélectionnez celui qui est chiffré avec BitLocker. Si le disque comporte plusieurs partitions, choisissez la partition chiffrée.",
+            "Saisissez le mot de passe BitLocker – celui choisi lors de l’activation de BitLocker sur le disque – et choisissez **Ouvrir le disque**. macOS peut vous demander le mot de passe de votre Mac pour approuver l’accès en lecture au disque. **Configurer l’accès en lecture** dans Unbit le fait une seule fois, pour qu’on ne vous le demande pas à chaque fois.",
+            "Quand Unbit indique que le disque est ouvert, choisissez **Afficher dans le Finder**. Le disque est monté en lecture seule : vous pouvez le parcourir, ouvrir des fichiers et les copier sur votre Mac.",
+            "Quand vous avez terminé, choisissez **Éjecter** dans Unbit avant de débrancher le disque."
+          ],
+          "bullets": [],
+          "outro": [
+            "Cochez **Mémoriser ce disque sur ce Mac** si vous voulez qu’Unbit conserve le mot de passe, chiffré, dans le trousseau macOS, pour que le disque s’ouvre la fois suivante sans saisie. C’est facultatif, et vous pouvez faire oublier le mot de passe enregistré à tout moment."
+          ]
+        },
+        {
+          "title": "Lecture seule : copiez les fichiers, ne les modifiez pas sur place",
+          "intro": [
+            "Unbit n’écrit jamais sur le disque. Vous pouvez ouvrir des fichiers et les copier sur votre Mac, mais pas enregistrer de modifications sur le disque, supprimer des fichiers ni en ajouter. Pour modifier un fichier, copiez-le d’abord sur votre Mac. Pour changer le contenu du disque, utilisez Windows.",
+            "Vous vous demandez si c’est un avantage ? Lisez [BitLocker sur Mac : est-ce sûr ?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dépannage",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Le disque n’apparaît pas dans Unbit.** Débranchez-le et rebranchez-le, puis actualisez la liste des disques (⌘R). Vérifiez qu’il s’agit d’un disque externe – les disques internes ne sont pas pris en charge – et essayez un autre câble ou un autre port.",
+            "**Le mot de passe est refusé.** Vérifiez les fautes de frappe et le verrouillage des majuscules ; les espaces comptent. Si le disque a aussi une clé de récupération, vous pouvez la saisir à la place dans l’onglet Clé de récupération (48 chiffres, en 8 groupes de 6).",
+            "**macOS refuse l’accès au disque.** Unbit a besoin de l’Accès complet au disque. Ouvrez Réglages Système › Confidentialité et sécurité › Accès complet au disque, activez Unbit et réessayez.",
+            "**Windows est en train de chiffrer ou de déchiffrer le disque.** Laissez d’abord Windows terminer, puis réessayez.",
+            "**Déverrouillé, mais macOS ne reconnaît pas le système de fichiers.** Après le déverrouillage, le système de fichiers à l’intérieur doit être exFAT, FAT32 ou NTFS. Sinon, vérifiez le disque sur un PC Windows.",
+            "**Les informations BitLocker du disque sont endommagées.** Vérifiez le disque sur un PC Windows, par exemple avec chkdsk ou repair-bde, puis réessayez.",
+            "**Le disque est en cours d’utilisation quand vous l’éjectez.** Fermez tous les fichiers et fenêtres du disque, puis réessayez."
+          ],
+          "outro": [
+            "Les disques chiffrés avec une version de BitLocker antérieure à celle de Windows 7, ou avec une méthode qu’Unbit ne prend pas en charge, ne peuvent pas être ouverts. Unbit vous le signale ; utilisez alors un PC Windows."
+          ]
+        },
+        {
+          "title": "Si vous n’avez pas le mot de passe",
+          "intro": [
+            "BitLocker ne se contourne pas : c’est tout l’intérêt du chiffrement. Cherchez la clé de récupération à 48 chiffres que Windows vous a demandé d’enregistrer à l’activation de BitLocker. Elle peut se trouver dans le compte Microsoft utilisé sur le PC qui a chiffré le disque, dans un fichier ou une impression que vous avez conservés, ou auprès de votre administrateur informatique s’il s’agit d’un disque professionnel.",
+            "Si vous avez la clé de récupération, saisissez-la dans l’onglet Clé de récupération d’Unbit à la place du mot de passe."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Un Mac peut-il ouvrir un disque BitLocker sans logiciel supplémentaire ?",
+          "a": "Non. macOS ne prend pas BitLocker en charge. Il faut une app de lecture comme [Unbit](home), ou bien un PC ou une machine virtuelle Windows."
+        },
+        {
+          "q": "Unbit est-il gratuit ?",
+          "a": "Oui, Unbit se télécharge gratuitement. C’est une app de la barre des menus pour macOS 13 ou version ultérieure, sur Mac Apple silicon et Intel."
+        },
+        {
+          "q": "Puis-je copier des fichiers d’un disque BitLocker vers mon Mac ?",
+          "a": "Oui. Une fois le disque ouvert dans le Finder, vous pouvez le parcourir et copier des fichiers sur votre Mac comme d’habitude."
+        },
+        {
+          "q": "Puis-je modifier ou supprimer des fichiers du disque depuis mon Mac ?",
+          "a": "Pas avec Unbit, qui est en lecture seule par conception. Copiez les fichiers sur votre Mac pour travailler dessus, ou utilisez Windows pour modifier le disque lui-même."
+        },
+        {
+          "q": "Ai-je besoin d’un PC Windows ?",
+          "a": "Non. Tout se passe sur votre Mac. Votre mot de passe et vos fichiers ne sont envoyés nulle part."
+        },
+        {
+          "q": "Cela fonctionne-t-il avec les clés USB, les SSD et les disques durs ?",
+          "a": "Oui, avec les disques externes de tous ces types. Voir [Ouvrir un SSD, un disque dur ou une clé USB BitLocker sur Mac](drives) pour les détails."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "BitLocker sur Mac est-il sûr ? La lecture seule expliquée",
+      "metaDescription": "Est-il sûr d’ouvrir un disque BitLocker sur un Mac ? Ce que signifie la lecture seule et ce qu’Unbit fait de votre mot de passe et de vos fichiers.",
+      "h1": "BitLocker sur Mac : est-ce sûr ? La lecture seule expliquée",
+      "summary": "Ce que signifie la lecture seule, ce qu’Unbit fait de votre mot de passe et de vos données, et comment protéger vos fichiers.",
+      "lead": "Réponse courte : oui. Quand un disque est ouvert en lecture seule, votre Mac ne peut rien y modifier. Ce guide explique ce que cela signifie concrètement, ce qu’Unbit fait de votre mot de passe et de vos fichiers, et quelques bonnes habitudes pour protéger vos données.",
+      "sections": [
+        {
+          "title": "Ce que signifie « lecture seule »",
+          "intro": [
+            "Quand un disque est monté en lecture seule, macOS peut en lire les fichiers, mais toute tentative d’écrire, de renommer ou de supprimer quelque chose est refusée. Unbit attache le disque déverrouillé à macOS en lecture seule : rien n’est réécrit, ni dans vos fichiers, ni dans la configuration BitLocker du disque. Le disque reste exactement tel que Windows l’a laissé.",
+            "Concrètement, vous ne pouvez rien supprimer ni écraser par erreur, et comme rien n’est écrit, un débranchement inattendu ne peut pas laisser de modifications à moitié écrites sur le disque."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Pourquoi la lecture seule est le choix le plus sûr",
+          "intro": [
+            "C’est quand on écrit sur un disque formaté et chiffré par un autre système d’exploitation que les problèmes surviennent le plus souvent, surtout avec des outils qui ne viennent pas de Microsoft. La plupart des gens qui branchent un disque BitLocker sur un Mac veulent simplement récupérer leurs fichiers, et la lecture suffit pour cela. La lecture seule écarte toute une catégorie de risques.",
+            "Si vous devez modifier des fichiers du disque, copiez-les sur votre Mac, modifiez-les là-bas et mettez à jour le disque depuis Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ce qu’Unbit fait de votre mot de passe et de vos fichiers",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Le déchiffrement se fait entièrement sur votre Mac. Votre mot de passe, votre clé de récupération et vos fichiers ne sont envoyés nulle part.",
+            "L’app n’a ni compte, ni outil d’analyse, ni suivi. La seule chose qu’elle récupère sur Internet est sa vérification quotidienne des mises à jour.",
+            "Votre mot de passe n’est enregistré que si vous cochez « Mémoriser ce disque sur ce Mac ». Il est alors conservé, chiffré, dans votre trousseau macOS, et vous pouvez l’oublier à tout moment.",
+            "Pas d’extension de noyau, pas de macFUSE. Unbit utilise la prise en charge des images disque déjà intégrée à macOS.",
+            "Seules les parties du disque que macOS lit réellement sont déchiffrées, au fur et à mesure de leur lecture.",
+            "Unbit est signé avec un Developer ID et notarisé par Apple, et les mises à jour arrivent sous forme de mises à jour automatiques signées."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Pourquoi Unbit demande l’Accès complet au disque et le mot de passe de votre Mac",
+          "intro": [
+            "Pour déchiffrer un disque, Unbit doit lire les données brutes chiffrées directement sur le disque externe. macOS ne l’autorise qu’aux apps disposant de l’Accès complet au disque, et Unbit l’utilise pour le disque que vous choisissez.",
+            "La lecture de données brutes nécessite aussi un petit assistant de lecture, que vous approuvez une seule fois avec le mot de passe de votre Mac (**Configurer l’accès en lecture**). Ce sont deux autorisations ponctuelles courantes sous macOS, et vous pouvez supprimer l’assistant depuis le menu en forme d’engrenage d’Unbit."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Bonnes habitudes pour protéger vos fichiers",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Utilisez **Éjecter** avant de débrancher le disque. Si le disque est débranché malgré tout, Unbit le ferme automatiquement, mais éjecter d’abord reste toujours préférable. Quitter Unbit ferme aussi d’abord un disque ouvert.",
+            "Copiez l’essentiel sur votre Mac et gardez une seconde sauvegarde. La lecture seule protège le disque de votre Mac, pas d’une panne du disque lui-même.",
+            "Conservez le mot de passe et la clé de récupération à 48 chiffres en lieu sûr. Sans l’un des deux, personne ne peut ouvrir le disque.",
+            "Si macOS vous propose un jour d’initialiser ou d’effacer le disque, ne choisissez ni l’un ni l’autre.",
+            "Téléchargez Unbit uniquement depuis son site officiel ou sa page de versions GitHub."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Ce que la lecture seule ne fait pas",
+          "intro": [
+            "L’accès en lecture seule ne répare pas un disque endommagé, ne récupère pas les fichiers supprimés et ne vous dit pas si un disque est sur le point de lâcher. Si vous voyez des erreurs de lecture, copiez ce que vous pouvez et vérifiez le disque sur un PC Windows.",
+            "Unbit est une app indépendante, non affiliée à Microsoft ni à Apple, et non approuvée par eux."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Prêt à essayer ? Suivez [Comment ouvrir un disque BitLocker sur un Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit peut-il endommager mon disque BitLocker ?",
+          "a": "Unbit n’écrit jamais sur le disque ; il ne peut donc modifier ni vos fichiers ni les réglages BitLocker du disque. Comme pour tout support de stockage, un disque physiquement défaillant peut toutefois tomber en panne."
+        },
+        {
+          "q": "Mon mot de passe est-il envoyé quelque part ?",
+          "a": "Non. Le déchiffrement se fait sur votre Mac, et votre mot de passe, votre clé de récupération et vos fichiers ne sont envoyés nulle part. L’app n’utilise le réseau que pour sa vérification quotidienne des mises à jour."
+        },
+        {
+          "q": "Unbit crée-t-il une copie déchiffrée de mon disque ?",
+          "a": "Non. Unbit déchiffre à la demande : seules les parties lues par macOS sont déchiffrées, au fur et à mesure, au lieu de commencer par une copie complète du disque."
+        },
+        {
+          "q": "Dois-je réduire les réglages de sécurité de mon Mac ?",
+          "a": "Non. Unbit n’utilise ni extension de noyau ni macFUSE ; il n’y a donc rien à activer en mode de récupération. Il lui faut l’Accès complet au disque et l’approbation ponctuelle de son assistant de lecture."
+        },
+        {
+          "q": "Peut-on débrancher le disque sans l’éjecter ?",
+          "a": "Éjecter reste le mieux. Si le disque est débranché, Unbit le ferme automatiquement, et comme il est en lecture seule, rien n’est laissé à moitié écrit."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Ouvrir une clé USB, un SSD ou un HDD BitLocker sur Mac",
+      "metaDescription": "Quels disques externes BitLocker s’ouvrent sur un Mac ? Clés USB, SSD portables et disques durs, partitions, chiffrement pris en charge et ce qui ne fonctionne pas.",
+      "h1": "Ouvrir un SSD, un disque dur ou une clé USB BitLocker sur Mac",
+      "summary": "Clés USB, SSD portables et disques durs externes : ce qui est pris en charge et les points d’attention.",
+      "lead": "Unbit ouvre en lecture seule les disques externes chiffrés avec BitLocker de tous types – clés USB, SSD portables et disques durs externes – sur votre Mac. Les étapes sont les mêmes pour tous ; ce guide présente les différences et ce qui n’est pas pris en charge. Pour la marche à suivre complète, voir [Comment ouvrir un disque BitLocker sur un Mac](open).",
+      "sections": [
+        {
+          "title": "Ce qui compte comme disque pris en charge",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Un disque **externe** chiffré avec BitLocker ou BitLocker To Go sous Windows 7 ou version ultérieure.",
+            "Un chiffrement AES-CBC (avec ou sans diffuseur Elephant) ou AES-XTS, avec des clés de 128 ou 256 bits.",
+            "Un système de fichiers exFAT, FAT32 ou NTFS à l’intérieur du volume chiffré. Une fois le disque déverrouillé, macOS lit lui-même le système de fichiers.",
+            "Un mot de passe – ou, si le disque en possède une, sa clé de récupération à 48 chiffres."
+          ],
+          "outro": [
+            "Vous ne savez pas si un disque utilise BitLocker ? Dans l’Explorateur de fichiers de Windows, un disque chiffré affiche une icône de cadenas."
+          ]
+        },
+        {
+          "title": "Clés USB",
+          "intro": [
+            "Les clés USB sont le cas le plus courant de BitLocker To Go : une clé chiffrée sur un PC Windows, puis remise à quelqu’un qui a un Mac. Branchez-la, et Unbit la liste sous Disques. Sélectionnez-la, saisissez le mot de passe et choisissez Ouvrir le disque.",
+            "Si la clé n’est pas reconnue, essayez un port directement sur le Mac plutôt qu’un hub."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "SSD portables et externes",
+          "intro": [
+            "Un SSD externe chiffré avec BitLocker s’ouvre de la même façon. Unbit déchiffre à la demande, au fur et à mesure que macOS lit, donc vous n’attendez pas une copie complète du disque avant de le parcourir. Pendant la copie, Unbit affiche l’activité de lecture en direct et la quantité de données lues pendant la session."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Disques durs externes (HDD)",
+          "intro": [
+            "Les disques durs à plateaux fonctionnent aussi. Quelques conseils pratiques :"
+          ],
+          "steps": [],
+          "bullets": [
+            "Laissez au disque un instant pour démarrer avant qu’il n’apparaisse dans la liste, et utilisez le câble d’origine.",
+            "Les disques alimentés par USB ont besoin de suffisamment d’énergie. Branchez-les directement sur le Mac plutôt que sur un hub sans alimentation propre.",
+            "Ne déplacez pas le disque pendant la lecture. S’il cesse de répondre ou est débranché, Unbit le ferme automatiquement et vous le signale."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Disques avec plusieurs partitions",
+          "intro": [
+            "Si un disque externe comporte plusieurs partitions, Unbit les liste séparément. Choisissez celle qui est chiffrée avec BitLocker. Si vous choisissez une partition non chiffrée, Unbit vous le signale ; une partition non chiffrée s’ouvre dans le Finder sans logiciel supplémentaire."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ce qui ne fonctionne pas",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Les disques internes.** Unbit ne prend en charge que les disques externes.",
+            "**Les disques que Windows est encore en train de chiffrer ou de déchiffrer.** Laissez d’abord Windows terminer.",
+            "**Les méthodes de chiffrement qu’Unbit ne prend pas en charge**, et les versions de BitLocker antérieures à Windows 7. Unbit vous le signale ; ouvrez alors ce disque sur un PC Windows.",
+            "**L’écriture.** Unbit est en lecture seule : vous ne pouvez ni ajouter, ni modifier, ni supprimer de fichiers sur le disque."
+          ],
+          "outro": [
+            "Un disque retiré d’un PC et placé dans un boîtier ou une station d’accueil USB apparaît normalement sur un Mac comme un disque externe. Voir aussi [BitLocker sur Mac : est-ce sûr ?](safe) pour comprendre ce que signifie la lecture seule."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit fonctionne-t-il avec les clés USB BitLocker To Go ?",
+          "a": "Oui. BitLocker To Go est la façon dont Windows chiffre les disques amovibles comme les clés USB, et Unbit les ouvre en lecture seule sur un Mac."
+        },
+        {
+          "q": "La marque de mon SSD ou de mon disque dur a-t-elle de l’importance ?",
+          "a": "Unbit travaille au niveau de BitLocker : ce qui compte, c’est la façon dont le disque a été chiffré et le fait qu’il soit externe, pas la marque."
+        },
+        {
+          "q": "Puis-je ouvrir le disque interne d’un autre ordinateur ?",
+          "a": "Non. Les disques internes ne sont pas pris en charge. Les disques connectés comme disques externes – par exemple via un boîtier USB – sont le cas d’usage pour lequel Unbit est conçu."
+        },
+        {
+          "q": "Quels systèmes de fichiers fonctionnent dans le disque chiffré ?",
+          "a": "exFAT, FAT32 et NTFS. Une fois le disque déverrouillé, macOS lit lui-même le système de fichiers. S’il ne le reconnaît pas, vérifiez le disque sur un PC Windows."
+        },
+        {
+          "q": "Pourrai-je encore utiliser le disque sous Windows ensuite ?",
+          "a": "Oui. Unbit ne fait que lire le disque et ne le modifie jamais ; il reste donc exactement tel que Windows l’a laissé."
+        }
+      ]
+    }
+  }
+}

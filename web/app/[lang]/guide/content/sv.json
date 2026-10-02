@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker på Mac: guider och instruktioner | Unbit",
+    "indexMetaDescription": "Praktiska guider om BitLocker-enheter på Mac: så öppnar du en, om skrivskyddad åtkomst är säker och hur USB-minnen, SSD-diskar och hårddiskar fungerar.",
+    "indexH1": "BitLocker på Mac: guider",
+    "indexSub": "Korta, praktiska svar till dig som har kopplat in en BitLocker-krypterad enhet till en Mac och inte får upp den.",
+    "readMore": "Läs guiden",
+    "guides": "Guider",
+    "breadcrumb": "Sökväg",
+    "updated": "Uppdaterad {date}",
+    "faqTitle": "Vanliga frågor",
+    "relatedTitle": "Fler guider",
+    "ctaTitle": "Öppna din BitLocker-enhet",
+    "ctaText": "Gratis, endast läsning och ingen Windows-dator behövs.",
+    "allGuides": "Alla guider"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "Så öppnar du en BitLocker-enhet på Mac – steg för steg",
+      "metaDescription": "Öppna ett BitLocker-krypterat USB-minne, en SSD eller HDD på din Mac, skrivskyddat. Steg-för-steg-guide med Unbit och lösningar på de vanligaste problemen.",
+      "h1": "Så öppnar du en BitLocker-enhet på en Mac",
+      "summary": "Varför Finder inte kan läsa en BitLocker-enhet och hur du öppnar den skrivskyddat på några minuter.",
+      "lead": "En enhet krypterad med BitLocker går att koppla in till en Mac, men macOS har inget inbyggt stöd för BitLocker, så Finder kan inte öppna den. Kort sagt: installera en BitLocker-läsare som [Unbit](home), koppla in enheten, ange lösenordet och öppna den skrivskyddat i Finder. Här går vi igenom varje steg.",
+      "sections": [
+        {
+          "title": "Vad BitLocker är",
+          "intro": [
+            "BitLocker är Microsofts enhetskryptering för Windows. Den gör allt på en enhet oläsligt utan lösenordet (eller en återställningsnyckel). På externa enheter heter funktionen BitLocker To Go: du slår på den i Windows, väljer ett lösenord och Windows ber dig spara en återställningsnyckel på 48 siffror.",
+            "En enhet som skyddats på det här sättet visas med en hänglåsikon i Utforskaren i Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Varför en Mac inte kan öppna den själv",
+          "intro": [
+            "macOS har sin egen kryptering, FileVault, och läser vanliga format som exFAT, FAT32 och NTFS. BitLockers kryptering förstår den däremot inte, så enheten kan inte monteras. Beroende på macOS-version kan du få ett meddelande om att disken inte kan läsas av datorn – eller så dyker enheten inte upp i Finder alls.",
+            "**Välj aldrig Initiera eller Radera i det meddelandet** – då raderas allt på enheten.",
+            "Du har två möjligheter: använd Windows (en dator eller en virtuell Windows-maskin) eller en app som kan läsa BitLocker på Macen. [Unbit](home) är en gratis menyradsapp som gör det senare: den dekrypterar enheten på din Mac och kopplar in den i macOS som skrivskyddad, så att den visas i Finder som vilken annan enhet som helst. Om du jämför andra verktyg kan du titta på översikten över [alternativ](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Öppna enheten med Unbit, steg för steg",
+          "intro": [],
+          "steps": [
+            "Ladda ner Unbit och dra appen till mappen Program. Den kräver macOS 13 eller senare och fungerar på både Mac med Apple silicon och Intel.",
+            "Öppna Unbit. Appen bor i menyraden, inte i Dock. Första gången visar en kort guide var du slår på **Full skivåtkomst** i Systeminställningar – det behöver Unbit för att kunna läsa den krypterade enheten.",
+            "Koppla in enheten. Unbit hittar den automatiskt och visar den under **Enheter**. Har du flera externa enheter väljer du den med BitLocker. Har enheten mer än en partition väljer du den krypterade partitionen.",
+            "Ange BitLocker-lösenordet – det du valde när BitLocker slogs på för enheten – och välj **Öppna enhet**. macOS kan be om ditt Mac-lösenord för att godkänna läsåtkomst till enheten. **Ställ in läsåtkomst** i Unbit gör det en gång, så att du slipper bli tillfrågad varje gång.",
+            "När Unbit säger att enheten är öppen väljer du **Visa i Finder**. Enheten är monterad skrivskyddad, så du kan bläddra i den, öppna filer och kopiera dem till din Mac.",
+            "När du är klar väljer du **Mata ut säkert** i Unbit innan du kopplar ur enheten."
+          ],
+          "bullets": [],
+          "outro": [
+            "Bocka i **Kom ihåg den här enheten på den här datorn** om du vill att Unbit ska spara lösenordet krypterat i macOS nyckelring, så att enheten öppnas utan att du skriver något nästa gång. Det är valfritt, och du kan när som helst låta appen glömma det sparade lösenordet."
+          ]
+        },
+        {
+          "title": "Endast läsning: kopiera filerna, redigera dem inte på enheten",
+          "intro": [
+            "Unbit skriver aldrig till enheten. Du kan öppna filer och kopiera dem till din Mac, men du kan inte spara ändringar tillbaka på enheten, ta bort filer eller lägga till nya. Vill du redigera en fil kopierar du först över den till din Mac. Behöver du ändra något på själva enheten använder du Windows.",
+            "Undrar du om det är en fördel? Läs [Är BitLocker på Mac säkert?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Felsökning",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Enheten dyker inte upp i Unbit.** Koppla ur den och in igen och uppdatera sedan enhetslistan (⌘R). Kontrollera att det är en extern enhet – interna diskar stöds inte – och prova en annan kabel eller port.",
+            "**Lösenordet nekas.** Kontrollera stavfel och Caps Lock; mellanslag räknas. Har enheten också en återställningsnyckel kan du ange den i stället under fliken Återställningsnyckel (48 siffror i 8 grupper om 6).",
+            "**macOS nekar åtkomst till enheten.** Unbit behöver Full skivåtkomst. Öppna Systeminställningar › Integritet och säkerhet › Full skivåtkomst, slå på Unbit och försök igen.",
+            "**Windows håller på att kryptera eller dekryptera enheten.** Låt Windows bli klart först och försök sedan igen.",
+            "**Upplåst, men macOS känner inte igen filsystemet.** Efter upplåsningen ska filsystemet inuti vara exFAT, FAT32 eller NTFS. Om det inte är det bör du kontrollera enheten på en Windows-dator.",
+            "**BitLocker-informationen på enheten är skadad.** Kontrollera enheten på en Windows-dator, till exempel med chkdsk eller repair-bde, och försök igen.",
+            "**Enheten används när du matar ut den.** Stäng alla filer och fönster från enheten och försök igen."
+          ],
+          "outro": [
+            "Enheter som krypterats med en äldre BitLocker-version än den i Windows 7, eller med en metod som Unbit inte stöder, går inte att öppna. Unbit säger till om det – använd en Windows-dator för dem."
+          ]
+        },
+        {
+          "title": "Om du inte har lösenordet",
+          "intro": [
+            "BitLocker går inte att kringgå – det är hela poängen med kryptering. Leta efter återställningsnyckeln på 48 siffror som Windows bad dig spara när BitLocker slogs på. Den kan finnas i Microsoft-kontot som användes på datorn som krypterade enheten, i en fil eller på en utskrift du sparat, eller hos din it-administratör om det är en jobbenhet.",
+            "Har du återställningsnyckeln anger du den under fliken Återställningsnyckel i Unbit i stället för lösenordet."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan en Mac öppna en BitLocker-enhet utan extra programvara?",
+          "a": "Nej. macOS har inget inbyggt stöd för BitLocker. Du behöver en läsarapp som [Unbit](home), eller en Windows-dator eller virtuell maskin."
+        },
+        {
+          "q": "Är Unbit gratis?",
+          "a": "Ja, Unbit är gratis att ladda ner. Det är en menyradsapp för macOS 13 eller senare, på både Mac med Apple silicon och Intel."
+        },
+        {
+          "q": "Kan jag kopiera filer från en BitLocker-enhet till min Mac?",
+          "a": "Ja. När enheten är öppen i Finder kan du bläddra i den och kopiera filer till din Mac som vanligt."
+        },
+        {
+          "q": "Kan jag redigera eller ta bort filer på enheten från min Mac?",
+          "a": "Inte med Unbit, som med flit är skrivskyddat. Kopiera filerna till din Mac för att arbeta med dem, eller använd Windows för att ändra själva enheten."
+        },
+        {
+          "q": "Behöver jag en Windows-dator?",
+          "a": "Nej. Allt sker på din Mac. Ditt lösenord och dina filer skickas aldrig någonstans."
+        },
+        {
+          "q": "Fungerar det med USB-minnen, SSD-diskar och hårddiskar?",
+          "a": "Ja, med externa enheter av alla de slagen. Se [Öppna en BitLocker-SSD, -HDD eller -USB-minne på Mac](drives) för detaljerna."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "Är BitLocker på Mac säkert? Endast läsning förklarat",
+      "metaDescription": "Är det säkert att öppna en BitLocker-enhet på en Mac? Vad skrivskyddad åtkomst betyder, vad Unbit gör med ditt lösenord och dina filer och hur du matar ut säkert.",
+      "h1": "BitLocker på Mac: är det säkert? Endast läsning förklarat",
+      "summary": "Vad skrivskyddad åtkomst betyder, vad Unbit gör med ditt lösenord och dina data och hur du håller dina filer säkra.",
+      "lead": "Kort svar: ja. När en enhet öppnas skrivskyddad kan din Mac inte ändra något på den. Här förklarar vi vad det betyder i praktiken, vad Unbit gör med ditt lösenord och dina filer och vilka vanor som skyddar dina data.",
+      "sections": [
+        {
+          "title": "Vad ”endast läsning” betyder",
+          "intro": [
+            "När en enhet är monterad skrivskyddad kan macOS läsa filer från den, men varje försök att skriva, byta namn på eller ta bort något nekas. Unbit kopplar in den upplåsta enheten i macOS som skrivskyddad, så ingenting skrivs tillbaka – varken till dina filer eller till enhetens BitLocker-inställningar. Enheten förblir exakt som Windows lämnade den.",
+            "I praktiken kan du inte ta bort eller skriva över något av misstag, och eftersom ingenting skrivs kan en oväntad urkoppling inte lämna halvfärdiga ändringar på enheten."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Varför skrivskyddat är det säkrare valet",
+          "intro": [
+            "Det är när man skriver till en enhet som formaterats och krypterats av ett annat operativsystem som det oftast går fel – särskilt med verktyg som inte kommer från Microsoft. De flesta som kopplar in en BitLocker-enhet till en Mac vill bara åt sina filer, och då räcker det att läsa. Skrivskyddat tar bort en hel kategori av risker.",
+            "Behöver du ändra filer på enheten kopierar du dem till din Mac, redigerar dem där och uppdaterar enheten från Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vad Unbit gör med ditt lösenord och dina filer",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Dekrypteringen sker helt på din Mac. Ditt lösenord, din återställningsnyckel och dina filer skickas aldrig någonstans.",
+            "Appen har inga konton, ingen analys och ingen spårning. Det enda den hämtar från internet är den dagliga kontrollen efter uppdateringar.",
+            "Ditt lösenord sparas bara om du bockar i ”Kom ihåg den här enheten på den här datorn”. Det sparas då krypterat i din macOS-nyckelring, och du kan glömma det igen när som helst.",
+            "Inga kärntillägg och ingen macFUSE. Unbit använder det stöd för diskavbildningar som redan finns inbyggt i macOS.",
+            "Bara de delar av enheten som macOS faktiskt läser dekrypteras – i takt med att de läses.",
+            "Unbit är signerat med Developer ID och notariserat av Apple, och uppdateringarna kommer som signerade automatiska uppdateringar."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Varför Unbit ber om Full skivåtkomst och ditt Mac-lösenord",
+          "intro": [
+            "För att dekryptera en enhet måste Unbit läsa den råa, krypterade datan direkt från den externa enheten. macOS tillåter det bara för appar med Full skivåtkomst, och Unbit använder den för enheten du väljer.",
+            "Att läsa rå enhetsdata kräver också en liten läshjälpare, som du godkänner en gång med ditt Mac-lösenord (**Ställ in läsåtkomst**). Båda är vanliga engångstillstånd i macOS, och du kan ta bort hjälparen igen från kugghjulsmenyn i Unbit."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vanor som skyddar dina filer",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Använd **Mata ut säkert** innan du kopplar ur enheten. Kopplas den ur ändå stänger Unbit den automatiskt, men det är alltid bäst att mata ut den först. När du avslutar Unbit stängs en öppen enhet också först.",
+            "Kopiera allt viktigt till din Mac och ha en andra säkerhetskopia. Skrivskyddat skyddar enheten från din Mac – inte mot att själva enheten går sönder.",
+            "Förvara lösenordet och återställningsnyckeln på 48 siffror på ett säkert ställe. Utan en av dem kan ingen öppna enheten.",
+            "Om macOS någon gång erbjuder dig att initiera eller radera enheten ska du inte välja något av alternativen.",
+            "Ladda bara ner Unbit från den officiella webbplatsen eller dess GitHub-sida med utgåvor."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Vad skrivskyddat inte gör",
+          "intro": [
+            "Skrivskyddad åtkomst reparerar inte en skadad enhet, återställer inte borttagna filer och talar inte om ifall en enhet är på väg att gå sönder. Ser du läsfel kopierar du det du kan och kontrollerar enheten på en Windows-dator.",
+            "Unbit är en oberoende app och är inte knuten till eller godkänd av Microsoft eller Apple."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Redo att testa? Följ [Så öppnar du en BitLocker-enhet på en Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan Unbit skada min BitLocker-enhet?",
+          "a": "Unbit skriver aldrig till enheten, så det kan inte ändra dina filer eller enhetens BitLocker-inställningar. Som med alla lagringsenheter kan en enhet som håller på att gå sönder fysiskt ändå gå sönder."
+        },
+        {
+          "q": "Skickas mitt lösenord någonstans?",
+          "a": "Nej. Dekrypteringen sker på din Mac, och ditt lösenord, din återställningsnyckel och dina filer skickas aldrig någonstans. Appen använder bara nätverket för den dagliga kontrollen efter uppdateringar."
+        },
+        {
+          "q": "Gör Unbit en dekrypterad kopia av min enhet?",
+          "a": "Nej. Unbit dekrypterar vid behov: bara de delar som macOS läser dekrypteras, i takt med att de läses, i stället för att först göra en full kopia av enheten."
+        },
+        {
+          "q": "Måste jag sänka säkerhetsinställningarna på min Mac?",
+          "a": "Nej. Unbit använder inget kärntillägg och ingen macFUSE, så det finns inget att slå på i Återställning. Appen behöver Full skivåtkomst och ett engångsgodkännande av läshjälparen."
+        },
+        {
+          "q": "Går det bra att koppla ur enheten utan att mata ut den?",
+          "a": "Mata ut säkert är bäst. Kopplas enheten ur stänger Unbit den automatiskt, och eftersom den är skrivskyddad blir ingenting halvskrivet."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Öppna ett BitLocker-USB-minne, en SSD eller HDD på Mac",
+      "metaDescription": "Vilka externa BitLocker-enheter går att öppna på en Mac? USB-minnen, bärbara SSD-diskar och hårddiskar, partitioner, stödd kryptering och vad som inte fungerar.",
+      "h1": "Öppna en BitLocker-SSD, -HDD eller -USB-minne på Mac",
+      "summary": "USB-minnen, bärbara SSD-diskar och externa hårddiskar: vad som stöds och vad du bör tänka på.",
+      "lead": "Unbit öppnar BitLocker-krypterade externa enheter av alla slag – USB-minnen, bärbara SSD-diskar och externa hårddiskar – skrivskyddat på din Mac. Stegen är desamma för alla; här går vi igenom skillnaderna och vad som inte stöds. Hela genomgången hittar du i [Så öppnar du en BitLocker-enhet på en Mac](open).",
+      "sections": [
+        {
+          "title": "Vad som räknas som en enhet som stöds",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "En **extern** enhet krypterad med BitLocker eller BitLocker To Go i Windows 7 eller senare.",
+            "Kryptering med AES-CBC (med eller utan Elephant-diffuser) eller AES-XTS, med 128- eller 256-bitars nycklar.",
+            "Filsystemet exFAT, FAT32 eller NTFS inuti den krypterade volymen. När enheten är upplåst läser macOS filsystemet själv.",
+            "Ett lösenord – eller, om enheten har en, dess återställningsnyckel på 48 siffror."
+          ],
+          "outro": [
+            "Osäker på om en enhet använder BitLocker? I Utforskaren i Windows visas en krypterad enhet med en hänglåsikon."
+          ]
+        },
+        {
+          "title": "USB-minnen",
+          "intro": [
+            "USB-minnen är det vanligaste BitLocker To Go-fallet: ett minne som krypterats på en Windows-dator och sedan lämnats till någon med en Mac. Koppla in det så visar Unbit det under Enheter. Välj det, ange lösenordet och välj Öppna enhet.",
+            "Om minnet inte känns igen kan du prova en port direkt på Macen i stället för en hubb."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Bärbara och externa SSD-diskar",
+          "intro": [
+            "En BitLocker-krypterad extern SSD öppnas på samma sätt. Unbit dekrypterar vid behov, i takt med att macOS läser, så du behöver inte vänta på en full kopia av enheten innan du kan bläddra. Medan du kopierar visar Unbit läsaktiviteten live och hur mycket data som lästs under sessionen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Externa hårddiskar (HDD)",
+          "intro": [
+            "Hårddiskar med snurrande skivor fungerar också. Några praktiska tips:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Ge disken en stund att snurra upp innan den dyker upp i listan, och använd originalkabeln.",
+            "Enheter som får ström via USB behöver tillräckligt med ström. Koppla dem direkt till Macen i stället för via en hubb utan egen strömförsörjning.",
+            "Flytta inte enheten medan den läses. Om den slutar svara eller kopplas ur stänger Unbit den automatiskt och meddelar dig."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Enheter med flera partitioner",
+          "intro": [
+            "Om en extern enhet har mer än en partition visar Unbit dem var för sig. Välj den som är BitLocker-krypterad. Väljer du en partition som inte är krypterad säger Unbit till om det; en okrypterad partition öppnas i Finder utan extra programvara."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vad som inte fungerar",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Interna diskar.** Unbit stöder bara externa enheter.",
+            "**Enheter som Windows fortfarande krypterar eller dekrypterar.** Låt Windows bli klart först.",
+            "**Krypteringsmetoder som Unbit inte stöder** och BitLocker-versioner äldre än Windows 7. Unbit säger till när det gäller; öppna en sådan enhet på en Windows-dator.",
+            "**Skrivning.** Unbit är skrivskyddat, så du kan inte lägga till, ändra eller ta bort filer på enheten."
+          ],
+          "outro": [
+            "En disk som tagits ut ur en dator och satts i ett USB-hölje eller en dockningsstation visas vanligtvis på en Mac som en extern enhet. Se även [Är BitLocker på Mac säkert?](safe) för vad skrivskyddat betyder."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Fungerar Unbit med BitLocker To Go-USB-minnen?",
+          "a": "Ja. BitLocker To Go är sättet Windows krypterar flyttbara enheter som USB-minnen på, och Unbit öppnar dem skrivskyddat på en Mac."
+        },
+        {
+          "q": "Spelar det någon roll vilket märke min SSD eller hårddisk har?",
+          "a": "Unbit arbetar på BitLocker-nivå, så det som spelar roll är hur enheten krypterats och att den är extern – inte märket."
+        },
+        {
+          "q": "Kan jag öppna den interna disken i en annan dator?",
+          "a": "Nej. Interna diskar stöds inte. Enheter som är anslutna som externa – till exempel via ett USB-hölje – är det användningsfall Unbit är gjort för."
+        },
+        {
+          "q": "Vilka filsystem fungerar inuti den krypterade enheten?",
+          "a": "exFAT, FAT32 och NTFS. När enheten är upplåst läser macOS filsystemet själv. Känner den inte igen det bör du kontrollera enheten på en Windows-dator."
+        },
+        {
+          "q": "Kan jag fortfarande använda enheten i Windows efteråt?",
+          "a": "Ja. Unbit läser bara enheten och ändrar den aldrig, så den förblir exakt som Windows lämnade den."
+        }
+      ]
+    }
+  }
+}

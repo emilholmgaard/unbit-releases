@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker su Mac: guide e tutorial | Unbit",
+    "indexMetaDescription": "Guide pratiche sulle unità BitLocker su Mac: come aprirne una, se l’accesso in sola lettura è sicuro e come funzionano chiavette USB, SSD e hard disk.",
+    "indexH1": "BitLocker su Mac: le guide",
+    "indexSub": "Risposte brevi e pratiche per chi ha collegato a un Mac un’unità cifrata con BitLocker e non riesce ad aprirla.",
+    "readMore": "Leggi la guida",
+    "guides": "Guide",
+    "breadcrumb": "Percorso di navigazione",
+    "updated": "Aggiornato il {date}",
+    "faqTitle": "Domande frequenti",
+    "relatedTitle": "Altre guide",
+    "ctaTitle": "Apri la tua unità BitLocker",
+    "ctaText": "Gratis, in sola lettura e senza bisogno di un PC Windows.",
+    "allGuides": "Tutte le guide"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "Come aprire un’unità BitLocker su Mac – guida passo passo",
+      "metaDescription": "Apri una chiavetta USB, un SSD o un HDD cifrato con BitLocker sul tuo Mac, in sola lettura. Guida passo passo con Unbit e soluzioni ai problemi più comuni.",
+      "h1": "Come aprire un’unità BitLocker su un Mac",
+      "summary": "Perché il Finder non legge un’unità BitLocker e come aprirla in sola lettura in pochi minuti.",
+      "lead": "Un’unità cifrata con BitLocker si può collegare a un Mac, ma macOS non supporta BitLocker di serie, quindi il Finder non riesce ad aprirla. In breve: installa un lettore BitLocker come [Unbit](home), collega l’unità, inserisci la password e aprila in sola lettura nel Finder. In questa guida vediamo ogni passaggio.",
+      "sections": [
+        {
+          "title": "Che cos’è BitLocker",
+          "intro": [
+            "BitLocker è la cifratura delle unità di Microsoft per Windows. Rende illeggibile tutto il contenuto di un’unità senza la password (o una chiave di ripristino). Sulle unità esterne Windows la chiama BitLocker To Go: la attivi in Windows, scegli una password e Windows ti chiede di salvare una chiave di ripristino di 48 cifre.",
+            "Un’unità protetta in questo modo mostra un’icona a forma di lucchetto in Esplora file di Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Perché un Mac non riesce ad aprirla da solo",
+          "intro": [
+            "macOS ha una propria cifratura, FileVault, e legge formati comuni come exFAT, FAT32 e NTFS. Non capisce però la cifratura di BitLocker, quindi l’unità non può essere montata. A seconda della versione di macOS, può comparire un avviso che il disco non è leggibile dal computer, oppure l’unità può non apparire affatto nel Finder.",
+            "**Non scegliere mai Inizializza o Cancella in quell’avviso**: cancellerebbe tutto ciò che si trova sull’unità.",
+            "Hai due strade: usare Windows (un PC o una macchina virtuale Windows) oppure un’app che legga BitLocker sul Mac. [Unbit](home) è un’app gratuita per la barra dei menu che fa la seconda cosa: decifra l’unità sul tuo Mac e la collega a macOS in sola lettura, così compare nel Finder come qualsiasi altra unità. Se stai confrontando altri strumenti, dai un’occhiata alla panoramica delle [alternative](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Aprire l’unità con Unbit, passo dopo passo",
+          "intro": [],
+          "steps": [
+            "Scarica Unbit e trascinalo nella cartella Applicazioni. Richiede macOS 13 o successivo e funziona sia sui Mac con Apple silicon sia su quelli Intel.",
+            "Apri Unbit. Vive nella barra dei menu, non nel Dock. La prima volta una breve guida ti mostra dove attivare l’**Accesso completo al disco** in Impostazioni di Sistema: serve a Unbit per leggere l’unità cifrata.",
+            "Collega l’unità. Unbit la rileva automaticamente e la elenca sotto **Unità**. Se hai più unità esterne, seleziona quella con BitLocker. Se l’unità ha più di una partizione, scegli quella cifrata.",
+            "Inserisci la password di BitLocker – quella scelta quando BitLocker è stato attivato sull’unità – e scegli **Apri unità**. macOS potrebbe chiederti la password del tuo Mac per approvare l’accesso in lettura all’unità. **Configura accesso in lettura** in Unbit lo fa una volta sola, così non ti viene chiesto ogni volta.",
+            "Quando Unbit indica che l’unità è aperta, scegli **Mostra nel Finder**. L’unità è montata in sola lettura: puoi sfogliarla, aprire i file e copiarli sul tuo Mac.",
+            "Quando hai finito, scegli **Espelli** in Unbit prima di scollegare l’unità."
+          ],
+          "bullets": [],
+          "outro": [
+            "Spunta **Ricorda questa unità su questo Mac** se vuoi che Unbit salvi la password, cifrata, nel portachiavi di macOS, così la volta successiva l’unità si apre senza doverla digitare. È facoltativo e puoi far dimenticare la password salvata in qualsiasi momento."
+          ]
+        },
+        {
+          "title": "Sola lettura: copia i file, non modificarli sull’unità",
+          "intro": [
+            "Unbit non scrive mai sull’unità. Puoi aprire i file e copiarli sul tuo Mac, ma non puoi salvare modifiche sull’unità, eliminare file o aggiungerne di nuovi. Per modificare un file, copialo prima sul tuo Mac. Per cambiare ciò che è memorizzato sull’unità, usa Windows.",
+            "Ti chiedi se sia un vantaggio? Leggi [BitLocker su Mac è sicuro?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Risoluzione dei problemi",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**L’unità non compare in Unbit.** Scollegala e ricollegala, poi aggiorna l’elenco delle unità (⌘R). Verifica che sia un’unità esterna – i dischi interni non sono supportati – e prova un altro cavo o un’altra porta.",
+            "**La password viene rifiutata.** Controlla gli errori di battitura e il blocco maiuscole; anche gli spazi contano. Se l’unità ha anche una chiave di ripristino, puoi inserirla al suo posto nella scheda Chiave di ripristino (48 cifre, in 8 gruppi da 6).",
+            "**macOS nega l’accesso all’unità.** Unbit ha bisogno dell’Accesso completo al disco. Apri Impostazioni di Sistema › Privacy e sicurezza › Accesso completo al disco, attiva Unbit e riprova.",
+            "**Windows sta cifrando o decifrando l’unità.** Lascia che Windows finisca prima, poi riprova.",
+            "**Sbloccata, ma macOS non riconosce il file system.** Dopo lo sblocco, il file system all’interno dovrebbe essere exFAT, FAT32 o NTFS. In caso contrario, controlla l’unità su un PC Windows.",
+            "**Le informazioni BitLocker sull’unità sono danneggiate.** Controlla l’unità su un PC Windows, per esempio con chkdsk o repair-bde, e riprova.",
+            "**L’unità è in uso quando la espelli.** Chiudi tutti i file e le finestre dell’unità e riprova."
+          ],
+          "outro": [
+            "Le unità cifrate con una versione di BitLocker precedente a quella di Windows 7, o con un metodo che Unbit non supporta, non si possono aprire. Unbit te lo segnala; per quelle usa un PC Windows."
+          ]
+        },
+        {
+          "title": "Se non hai la password",
+          "intro": [
+            "BitLocker non si può aggirare: è proprio questo lo scopo della cifratura. Cerca la chiave di ripristino di 48 cifre che Windows ti ha chiesto di salvare quando BitLocker è stato attivato. Può trovarsi nell’account Microsoft usato sul PC che ha cifrato l’unità, in un file o in una stampa che hai conservato, oppure presso l’amministratore IT se si tratta di un’unità aziendale.",
+            "Se hai la chiave di ripristino, inseriscila nella scheda Chiave di ripristino di Unbit al posto della password."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Un Mac può aprire un’unità BitLocker senza software aggiuntivo?",
+          "a": "No. macOS non supporta BitLocker di serie. Serve un’app lettore come [Unbit](home), oppure un PC o una macchina virtuale Windows."
+        },
+        {
+          "q": "Unbit è gratuito?",
+          "a": "Sì, Unbit si scarica gratuitamente. È un’app per la barra dei menu per macOS 13 o successivo, su Mac con Apple silicon e Intel."
+        },
+        {
+          "q": "Posso copiare file da un’unità BitLocker al mio Mac?",
+          "a": "Sì. Quando l’unità è aperta nel Finder puoi sfogliarla e copiare i file sul tuo Mac come al solito."
+        },
+        {
+          "q": "Posso modificare o eliminare i file sull’unità dal mio Mac?",
+          "a": "Non con Unbit, che è in sola lettura per scelta. Copia i file sul tuo Mac per lavorarci, oppure usa Windows per modificare l’unità stessa."
+        },
+        {
+          "q": "Mi serve un PC Windows?",
+          "a": "No. Tutto avviene sul tuo Mac. La tua password e i tuoi file non vengono inviati da nessuna parte."
+        },
+        {
+          "q": "Funziona con chiavette USB, SSD e hard disk?",
+          "a": "Sì, con unità esterne di tutti questi tipi. Trovi i dettagli in [Aprire un SSD, un HDD o una chiavetta USB con BitLocker su Mac](drives)."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "BitLocker su Mac è sicuro? La sola lettura spiegata",
+      "metaDescription": "È sicuro aprire un’unità BitLocker su un Mac? Cosa significa l’accesso in sola lettura, cosa fa Unbit con la tua password e i tuoi file e come espellere in sicurezza.",
+      "h1": "BitLocker su Mac: è sicuro? La sola lettura spiegata",
+      "summary": "Cosa significa l’accesso in sola lettura, cosa fa Unbit con la tua password e i tuoi dati e come tenere al sicuro i file.",
+      "lead": "Risposta breve: sì. Quando un’unità viene aperta in sola lettura, il tuo Mac non può modificare nulla al suo interno. Questa guida spiega cosa significa in pratica, cosa fa Unbit con la tua password e i tuoi file e quali abitudini proteggono i tuoi dati.",
+      "sections": [
+        {
+          "title": "Cosa significa “sola lettura”",
+          "intro": [
+            "Quando un’unità è montata in sola lettura, macOS può leggerne i file, ma ogni tentativo di scrivere, rinominare o eliminare qualcosa viene rifiutato. Unbit collega a macOS l’unità sbloccata in sola lettura, quindi non viene scritto nulla – né nei tuoi file né nelle impostazioni BitLocker dell’unità. L’unità resta esattamente come l’ha lasciata Windows.",
+            "In pratica non puoi eliminare o sovrascrivere nulla per errore e, poiché non si scrive nulla, uno scollegamento improvviso non può lasciare modifiche a metà sull’unità."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Perché la sola lettura è la scelta più sicura",
+          "intro": [
+            "I problemi nascono soprattutto quando si scrive su un’unità formattata e cifrata da un altro sistema operativo, specialmente con strumenti non realizzati da Microsoft. La maggior parte di chi collega un’unità BitLocker a un Mac vuole solo i propri file, e per quello basta leggere. La sola lettura elimina un’intera categoria di rischi.",
+            "Se devi modificare i file sull’unità, copiali sul tuo Mac, modificali lì e aggiorna l’unità da Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Cosa fa Unbit con la tua password e i tuoi file",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "La decifratura avviene interamente sul tuo Mac. La tua password, la chiave di ripristino e i tuoi file non vengono inviati da nessuna parte.",
+            "L’app non ha account, analisi o tracciamento. L’unica cosa che scarica da internet è il controllo giornaliero degli aggiornamenti.",
+            "La tua password viene salvata solo se spunti “Ricorda questa unità su questo Mac”. In quel caso viene conservata, cifrata, nel portachiavi di macOS e puoi farla dimenticare in qualsiasi momento.",
+            "Nessuna estensione del kernel e nessun macFUSE. Unbit usa il supporto per le immagini disco già integrato in macOS.",
+            "Vengono decifrate solo le parti dell’unità che macOS legge davvero, man mano che vengono lette.",
+            "Unbit è firmato con Developer ID e notarizzato da Apple, e gli aggiornamenti arrivano come aggiornamenti automatici firmati."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Perché Unbit chiede l’Accesso completo al disco e la password del Mac",
+          "intro": [
+            "Per decifrare un’unità, Unbit deve leggere i dati grezzi e cifrati direttamente dall’unità esterna. macOS lo consente solo alle app con Accesso completo al disco, e Unbit lo usa per l’unità che scegli.",
+            "Leggere dati grezzi richiede anche un piccolo assistente di lettura, che approvi una volta sola con la password del Mac (**Configura accesso in lettura**). Sono entrambe autorizzazioni una tantum standard di macOS e puoi rimuovere l’assistente dal menu a ingranaggio di Unbit."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Abitudini che proteggono i tuoi file",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Usa **Espelli** prima di scollegare l’unità. Se viene scollegata comunque, Unbit la chiude automaticamente, ma espellerla prima è sempre meglio. Anche uscendo da Unbit, un’unità aperta viene chiusa prima.",
+            "Copia sul tuo Mac ciò che conta e tieni un secondo backup. La sola lettura protegge l’unità dal tuo Mac, non dal guasto dell’unità stessa.",
+            "Conserva la password e la chiave di ripristino di 48 cifre in un posto sicuro. Senza una delle due nessuno può aprire l’unità.",
+            "Se macOS ti propone di inizializzare o cancellare l’unità, non scegliere nessuna delle due opzioni.",
+            "Scarica Unbit solo dal sito ufficiale o dalla pagina delle versioni su GitHub."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Cosa non fa la sola lettura",
+          "intro": [
+            "L’accesso in sola lettura non ripara un’unità danneggiata, non recupera file eliminati e non ti dice se un’unità sta per guastarsi. Se vedi errori di lettura, copia ciò che puoi e controlla l’unità su un PC Windows.",
+            "Unbit è un’app indipendente e non è affiliata né approvata da Microsoft o Apple."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Pronto a provare? Segui [Come aprire un’unità BitLocker su un Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit può danneggiare la mia unità BitLocker?",
+          "a": "Unbit non scrive mai sull’unità, quindi non può modificare i tuoi file né le impostazioni BitLocker. Come qualsiasi dispositivo di archiviazione, però, un’unità che si sta guastando fisicamente può comunque rompersi."
+        },
+        {
+          "q": "La mia password viene inviata da qualche parte?",
+          "a": "No. La decifratura avviene sul tuo Mac e la tua password, la chiave di ripristino e i tuoi file non vengono inviati da nessuna parte. L’app usa la rete solo per il controllo giornaliero degli aggiornamenti."
+        },
+        {
+          "q": "Unbit crea una copia decifrata della mia unità?",
+          "a": "No. Unbit decifra su richiesta: vengono decifrate solo le parti che macOS legge, man mano che vengono lette, invece di creare prima una copia completa dell’unità."
+        },
+        {
+          "q": "Devo abbassare le impostazioni di sicurezza del Mac?",
+          "a": "No. Unbit non usa estensioni del kernel né macFUSE, quindi non c’è nulla da attivare in Recovery. Servono l’Accesso completo al disco e l’approvazione una tantum del suo assistente di lettura."
+        },
+        {
+          "q": "Posso scollegare l’unità senza espellerla?",
+          "a": "Espelli è la scelta migliore. Se l’unità viene scollegata, Unbit la chiude automaticamente e, essendo in sola lettura, non resta nulla scritto a metà."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Aprire una chiavetta USB, un SSD o un HDD BitLocker su Mac",
+      "metaDescription": "Quali unità esterne BitLocker si aprono su un Mac? Chiavette USB, SSD portatili e hard disk, partizioni, cifratura supportata e cosa non funziona.",
+      "h1": "Aprire un SSD, un HDD o una chiavetta USB con BitLocker su Mac",
+      "summary": "Chiavette USB, SSD portatili e hard disk esterni: cosa è supportato e a cosa fare attenzione.",
+      "lead": "Unbit apre in sola lettura sul tuo Mac unità esterne cifrate con BitLocker di ogni tipo: chiavette USB, SSD portatili e hard disk esterni. I passaggi sono gli stessi per tutte; questa guida spiega le differenze e cosa non è supportato. Per la procedura completa, vedi [Come aprire un’unità BitLocker su un Mac](open).",
+      "sections": [
+        {
+          "title": "Cosa si intende per unità supportata",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Un’unità **esterna** cifrata con BitLocker o BitLocker To Go su Windows 7 o successivo.",
+            "Cifratura con AES-CBC (con o senza diffusore Elephant) o AES-XTS, con chiavi a 128 o 256 bit.",
+            "Un file system exFAT, FAT32 o NTFS all’interno del volume cifrato. Una volta sbloccata l’unità, macOS legge il file system da solo.",
+            "Una password oppure, se l’unità ne ha una, la sua chiave di ripristino di 48 cifre."
+          ],
+          "outro": [
+            "Non sei sicuro che un’unità usi BitLocker? In Esplora file di Windows un’unità cifrata mostra un’icona a forma di lucchetto."
+          ]
+        },
+        {
+          "title": "Chiavette USB",
+          "intro": [
+            "Le chiavette USB sono il caso più comune di BitLocker To Go: una chiavetta cifrata su un PC Windows e poi data a chi ha un Mac. Collegala e Unbit la elenca sotto Unità. Selezionala, inserisci la password e scegli Apri unità.",
+            "Se la chiavetta non viene riconosciuta, prova una porta direttamente sul Mac invece di un hub."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "SSD portatili ed esterni",
+          "intro": [
+            "Un SSD esterno cifrato con BitLocker si apre allo stesso modo. Unbit decifra su richiesta, man mano che macOS legge, quindi non devi aspettare una copia completa dell’unità prima di sfogliarla. Mentre copi, Unbit mostra l’attività di lettura in tempo reale e quanti dati sono stati letti nella sessione."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Hard disk esterni (HDD)",
+          "intro": [
+            "Funzionano anche gli hard disk meccanici. Alcuni consigli pratici:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Dai al disco un momento per avviarsi prima che compaia nell’elenco e usa il cavo originale.",
+            "Le unità alimentate via USB hanno bisogno di energia sufficiente. Collegale direttamente al Mac invece che tramite un hub non alimentato.",
+            "Non spostare l’unità mentre viene letta. Se smette di rispondere o viene scollegata, Unbit la chiude automaticamente e te lo segnala."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Unità con più partizioni",
+          "intro": [
+            "Se un’unità esterna ha più di una partizione, Unbit le elenca separatamente. Scegli quella cifrata con BitLocker. Se scegli una partizione non cifrata, Unbit te lo segnala; una partizione non cifrata si apre nel Finder senza software aggiuntivo."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Cosa non funziona",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Dischi interni.** Unbit supporta solo unità esterne.",
+            "**Unità che Windows sta ancora cifrando o decifrando.** Lascia che Windows finisca prima.",
+            "**Metodi di cifratura che Unbit non supporta** e versioni di BitLocker precedenti a Windows 7. Unbit ti avvisa quando succede; apri quell’unità su un PC Windows.",
+            "**Scrittura.** Unbit è in sola lettura, quindi non puoi aggiungere, modificare o eliminare file sull’unità."
+          ],
+          "outro": [
+            "Un’unità estratta da un PC e inserita in un box o in una dock USB di solito compare sul Mac come unità esterna. Vedi anche [BitLocker su Mac è sicuro?](safe) per capire cosa significa la sola lettura."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit funziona con le chiavette USB BitLocker To Go?",
+          "a": "Sì. BitLocker To Go è il modo in cui Windows cifra le unità rimovibili come le chiavette USB, e Unbit le apre in sola lettura su un Mac."
+        },
+        {
+          "q": "La marca dell’SSD o dell’hard disk fa differenza?",
+          "a": "Unbit lavora a livello di BitLocker, quindi conta come è stata cifrata l’unità e che sia esterna, non la marca."
+        },
+        {
+          "q": "Posso aprire l’unità interna di un altro computer?",
+          "a": "No. I dischi interni non sono supportati. Le unità collegate come esterne – per esempio tramite un box USB – sono il caso per cui Unbit è pensato."
+        },
+        {
+          "q": "Quali file system funzionano all’interno dell’unità cifrata?",
+          "a": "exFAT, FAT32 e NTFS. Una volta sbloccata l’unità, macOS legge il file system da solo. Se non lo riconosce, controlla l’unità su un PC Windows."
+        },
+        {
+          "q": "Potrò usare ancora l’unità su Windows dopo?",
+          "a": "Sì. Unbit si limita a leggere l’unità e non la modifica mai, quindi resta esattamente come l’ha lasciata Windows."
+        }
+      ]
+    }
+  }
+}

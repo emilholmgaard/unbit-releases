@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker on Mac: Guides and How-Tos | Unbit",
+    "indexMetaDescription": "Practical guides for BitLocker drives on a Mac: how to open one, whether read-only access is safe, and how USB sticks, SSDs and hard drives work.",
+    "indexH1": "BitLocker on Mac: guides",
+    "indexSub": "Short, practical answers for anyone who plugged a BitLocker-encrypted drive into a Mac and can’t open it.",
+    "readMore": "Read the guide",
+    "guides": "Guides",
+    "breadcrumb": "Breadcrumb",
+    "updated": "Updated {date}",
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "More guides",
+    "ctaTitle": "Open your BitLocker drive",
+    "ctaText": "Free, read-only and no Windows PC required.",
+    "allGuides": "All guides"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "How to Open a BitLocker Drive on Mac – Step-by-Step Guide",
+      "metaDescription": "Open a BitLocker-encrypted USB stick, SSD or HDD on your Mac, read-only. Step-by-step guide with Unbit, plus fixes for the most common problems.",
+      "h1": "How to open a BitLocker drive on a Mac",
+      "summary": "Why Finder can’t read a BitLocker drive, and how to open it read-only in a few minutes.",
+      "lead": "A drive encrypted with BitLocker can be plugged into a Mac, but macOS has no built-in BitLocker support, so Finder can’t open it. The short version: install a BitLocker reader such as [Unbit](home), plug in the drive, enter its password and open it read-only in Finder. This guide walks through each step.",
+      "sections": [
+        {
+          "title": "What BitLocker is",
+          "intro": [
+            "BitLocker is Microsoft’s drive encryption for Windows. It scrambles everything on a drive so that it can’t be read without the password (or a recovery key). On external drives Windows calls it BitLocker To Go: you switch it on in Windows, choose a password, and Windows asks you to save a 48-digit recovery key.",
+            "A drive protected this way shows a padlock icon in Windows File Explorer."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Why a Mac can’t open it on its own",
+          "intro": [
+            "macOS has its own encryption, FileVault, and it reads common formats such as exFAT, FAT32 and NTFS. It doesn’t understand BitLocker’s encryption, though, so the drive can’t be mounted. Depending on your macOS version you may see a message that the disk isn’t readable by this computer, or the drive may not show up in Finder at all.",
+            "**Never choose Initialize or Erase in that message** – it would wipe everything on the drive.",
+            "You have two options: use Windows (a PC or a Windows virtual machine), or use an app that reads BitLocker on the Mac. [Unbit](home) is a free menu bar app that does the second: it decrypts the drive on your Mac and attaches it to macOS as read-only, so it appears in Finder like any other drive. If you’re weighing other tools, see the [alternatives](alternatives) overview."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Open the drive with Unbit, step by step",
+          "intro": [],
+          "steps": [
+            "Download Unbit and drag it into your Applications folder. It needs macOS 13 or later and runs on both Apple silicon and Intel Macs.",
+            "Open Unbit. It lives in the menu bar, not in the Dock. The first time, a short guide shows where to switch on **Full Disk Access** in System Settings, which Unbit needs to read the encrypted drive.",
+            "Plug in the drive. Unbit detects it automatically and lists it under **Drives**. If you have several external drives, select the BitLocker one. If the drive has more than one partition, choose the encrypted partition.",
+            "Enter the BitLocker password – the one chosen when BitLocker was turned on for the drive – and choose **Open Drive**. macOS may ask for your Mac password to approve read access to the drive; **Set Up Read Access** in Unbit does this once, so you aren’t asked every time.",
+            "When Unbit says the drive is open, choose **Show in Finder**. The drive is mounted read-only, so you can browse it, open files and copy them to your Mac.",
+            "When you’re done, choose **Eject Safely** in Unbit before unplugging the drive."
+          ],
+          "bullets": [],
+          "outro": [
+            "Tick **Remember this drive on this Mac** if you want Unbit to store the password, encrypted, in your macOS keychain so the drive opens next time without typing it. It’s optional, and you can forget the saved password at any time."
+          ]
+        },
+        {
+          "title": "Read-only: copy files off, don’t edit in place",
+          "intro": [
+            "Unbit never writes to the drive. You can open files and copy them to your Mac, but you can’t save changes back to the drive, delete files or add new ones. To edit a file, copy it to your Mac first. To change what’s stored on the drive, use Windows.",
+            "Wondering whether that’s a good thing? Read [Is BitLocker on Mac safe?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Troubleshooting",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**The drive doesn’t appear in Unbit.** Unplug it and plug it in again, then refresh the drive list (⌘R). Make sure it’s an external drive – internal disks aren’t supported – and try another cable or port.",
+            "**“Wrong password”.** Check for typos and Caps Lock; spaces count. If the drive also has a recovery key, you can enter it on the Recovery Key tab instead (48 digits, in 8 groups of 6).",
+            "**“macOS denied access to the drive”.** Unbit needs Full Disk Access. Open System Settings › Privacy & Security › Full Disk Access, switch Unbit on and try again.",
+            "**The drive is being encrypted or decrypted by Windows.** Let Windows finish first, then try again.",
+            "**Unlocked, but macOS doesn’t recognize the file system.** After unlocking, the file system inside should be exFAT, FAT32 or NTFS. If it isn’t, check the drive on a Windows PC.",
+            "**“The BitLocker information on this drive is damaged”.** Check the drive on a Windows PC, for example with chkdsk or repair-bde, and try again.",
+            "**The drive is in use when you eject it.** Close all files and windows from the drive and try again."
+          ],
+          "outro": [
+            "Drives encrypted with an older BitLocker version than the one in Windows 7, or with a method Unbit doesn’t support, can’t be opened. Unbit tells you so; use a Windows PC for those."
+          ]
+        },
+        {
+          "title": "If you don’t have the password",
+          "intro": [
+            "BitLocker can’t be bypassed – that is the point of encryption. Look for the 48-digit recovery key Windows asked you to save when BitLocker was turned on. It may be in the Microsoft account used on the PC that encrypted the drive, in a file or printout you saved, or with your IT administrator if it’s a work drive.",
+            "If you have the recovery key, enter it on Unbit’s Recovery Key tab instead of the password."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can a Mac open a BitLocker drive without extra software?",
+          "a": "No. macOS has no built-in BitLocker support. You need a reader app such as [Unbit](home), or a Windows PC or virtual machine."
+        },
+        {
+          "q": "Is Unbit free?",
+          "a": "Yes, Unbit is free to download. It’s a menu bar app for macOS 13 or later, on Apple silicon and Intel Macs."
+        },
+        {
+          "q": "Can I copy files from a BitLocker drive to my Mac?",
+          "a": "Yes. Once the drive is open in Finder you can browse it and copy files to your Mac the usual way."
+        },
+        {
+          "q": "Can I edit or delete files on the drive from my Mac?",
+          "a": "Not with Unbit, which is read-only by design. Copy the files to your Mac to work on them, or use Windows to change the drive itself."
+        },
+        {
+          "q": "Do I need a Windows PC?",
+          "a": "No. Everything happens on your Mac. Your password and files are never sent anywhere."
+        },
+        {
+          "q": "Does this work for USB sticks, SSDs and hard drives?",
+          "a": "Yes, for external drives of any of those kinds. See [Open a BitLocker SSD, HDD or USB stick on Mac](drives) for the details."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "Is BitLocker on Mac Safe? Read-Only Access Explained",
+      "metaDescription": "Is it safe to open a BitLocker drive on a Mac? What read-only access means, what Unbit does with your password and files, and how to eject safely.",
+      "h1": "BitLocker on Mac: is it safe? Read-only explained",
+      "summary": "What read-only access means, what Unbit does with your password and data, and how to keep your files safe.",
+      "lead": "Short answer: yes. When a drive is opened read-only, your Mac can’t change anything on it. This guide explains what that means in practice, what Unbit does with your password and files, and a few habits that keep your data safe.",
+      "sections": [
+        {
+          "title": "What “read-only” means",
+          "intro": [
+            "When a drive is mounted read-only, macOS can read files from it, but every attempt to write, rename or delete something is refused. Unbit attaches the unlocked drive to macOS as read-only, so nothing is written back – not to your files, and not to the drive’s BitLocker setup. The drive stays exactly as Windows left it.",
+            "In practice that means you can’t delete or overwrite anything by accident, and because nothing is being written, an unexpected unplug can’t leave half-written changes on the drive."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Why read-only is the safer choice",
+          "intro": [
+            "Writing to a drive that was formatted and encrypted by another operating system is where things tend to go wrong, especially with tools that aren’t made by Microsoft. Most people who plug a BitLocker drive into a Mac only want their files, and reading is enough for that. Read-only removes a whole category of risk.",
+            "If you need to change files on the drive, copy them to your Mac, edit them there, and update the drive from Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "What Unbit does with your password and files",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere.",
+            "The app has no accounts, analytics or tracking. The only thing it fetches from the internet is its daily update check.",
+            "Your password is stored only if you tick “Remember this drive on this Mac”. It is then saved encrypted in your macOS keychain, and you can forget it at any time.",
+            "No kernel extensions and no macFUSE. Unbit uses the disk image support already built into macOS.",
+            "Only the parts of the drive macOS actually reads are decrypted, as they’re read.",
+            "Unbit is signed with Developer ID and notarized by Apple, and updates arrive through signed automatic updates."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Why Unbit asks for Full Disk Access and your Mac password",
+          "intro": [
+            "To decrypt a drive, Unbit has to read the raw, encrypted data straight from the external drive. macOS only allows that for apps with Full Disk Access, and Unbit uses it for the drive you choose.",
+            "Reading raw drive data also needs a small read helper, which you approve once with your Mac password (**Set Up Read Access**). Both are standard one-time macOS permissions, and you can remove the helper again from Unbit’s gear menu."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Habits that keep your files safe",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Use **Eject Safely** before you unplug the drive. If the drive is unplugged anyway, Unbit closes it automatically, but ejecting first is always better. Quitting Unbit closes an open drive first as well.",
+            "Copy anything important to your Mac, and keep a second backup. Read-only protects the drive from your Mac; it doesn’t protect against the drive itself failing.",
+            "Keep the password and the 48-digit recovery key somewhere safe. Without one of them nobody can open the drive.",
+            "If macOS ever offers to initialize or erase the drive, choose neither.",
+            "Download Unbit only from its official website or its GitHub releases page."
+          ],
+          "outro": []
+        },
+        {
+          "title": "What read-only doesn’t do",
+          "intro": [
+            "Read-only access doesn’t repair a damaged drive, recover deleted files or tell you whether a drive is about to fail. If you see read errors, copy what you can and check the drive on a Windows PC.",
+            "Unbit is an independent app and isn’t affiliated with or endorsed by Microsoft or Apple."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Ready to try it? Follow [How to open a BitLocker drive on a Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can Unbit damage my BitLocker drive?",
+          "a": "Unbit never writes to the drive, so it can’t change your files or the drive’s BitLocker settings. As with any storage device, a drive that is physically failing can still fail."
+        },
+        {
+          "q": "Is my password sent anywhere?",
+          "a": "No. Decryption happens on your Mac, and your password, recovery key and files are never sent anywhere. The app’s only network use is its daily update check."
+        },
+        {
+          "q": "Does Unbit make a decrypted copy of my drive?",
+          "a": "No. Unbit decrypts on demand: only the parts macOS reads are decrypted, as they’re read, instead of first making a full copy of the drive."
+        },
+        {
+          "q": "Do I have to lower my Mac’s security settings?",
+          "a": "No. Unbit uses no kernel extension and no macFUSE, so there’s nothing to enable in Recovery. It needs Full Disk Access and a one-time approval of its read helper."
+        },
+        {
+          "q": "Is it OK to unplug the drive without ejecting it?",
+          "a": "Eject Safely is best. If the drive is unplugged, Unbit closes it automatically, and because it’s read-only nothing is left half-written."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Open a BitLocker USB Stick, SSD or HDD on Mac",
+      "metaDescription": "Which BitLocker external drives open on a Mac? USB sticks, portable SSDs and hard drives, partitions, supported encryption and what doesn’t work.",
+      "h1": "Open a BitLocker SSD, HDD or USB stick on Mac",
+      "summary": "USB sticks, portable SSDs and external hard drives: what’s supported and what to watch for.",
+      "lead": "Unbit opens BitLocker-encrypted external drives of any kind – USB sticks, portable SSDs and external hard drives – read-only on your Mac. The steps are the same for all of them; this guide covers what differs and what isn’t supported. For the full walkthrough, see [How to open a BitLocker drive on a Mac](open).",
+      "sections": [
+        {
+          "title": "What counts as a supported drive",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "An **external** drive encrypted with BitLocker or BitLocker To Go on Windows 7 or later.",
+            "Encryption with AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys.",
+            "A file system of exFAT, FAT32 or NTFS inside the encrypted volume. Once the drive is unlocked, macOS reads the file system itself.",
+            "A password – or, if the drive has one, its 48-digit recovery key."
+          ],
+          "outro": [
+            "Not sure whether a drive uses BitLocker? In Windows File Explorer an encrypted drive shows a padlock icon."
+          ]
+        },
+        {
+          "title": "USB sticks",
+          "intro": [
+            "USB sticks are the most common BitLocker To Go case: a stick encrypted on a Windows PC and then handed to someone with a Mac. Plug it in, and Unbit lists it under Drives. Select it, enter the password and choose Open Drive.",
+            "If the stick isn’t recognized, try a port directly on the Mac instead of a hub."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Portable and external SSDs",
+          "intro": [
+            "A BitLocker-encrypted external SSD opens the same way. Unbit decrypts on demand, as macOS reads, so you don’t wait for a full copy of the drive before browsing. While you copy, Unbit shows live read activity and how much data has been read this session."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "External hard drives (HDD)",
+          "intro": [
+            "Spinning hard drives work too. A few practical tips:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Give the drive a moment to spin up before it appears in the list, and use the original cable.",
+            "Bus-powered drives need enough power. Connect them directly to the Mac rather than through an unpowered hub.",
+            "Don’t move the drive while it’s being read. If it stops responding or is unplugged, Unbit closes it automatically and tells you."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Drives with several partitions",
+          "intro": [
+            "If an external drive has more than one partition, Unbit lists them separately. Choose the one that is BitLocker-encrypted. If you pick a partition that isn’t encrypted, Unbit tells you so; an unencrypted partition opens in Finder without any extra software."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "What doesn’t work",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Internal disks.** Unbit supports external drives only.",
+            "**Drives that Windows is still encrypting or decrypting.** Let Windows finish first.",
+            "**Encryption methods Unbit doesn’t support**, and BitLocker versions older than Windows 7. Unbit tells you when that is the case; open such a drive on a Windows PC.",
+            "**Writing.** Unbit is read-only, so you can’t add, change or delete files on the drive."
+          ],
+          "outro": [
+            "A drive taken out of a PC and put into a USB enclosure or dock normally shows up on a Mac as an external drive. See also [Is BitLocker on Mac safe?](safe) for what read-only means."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does Unbit work with BitLocker To Go USB sticks?",
+          "a": "Yes. BitLocker To Go is how Windows encrypts removable drives such as USB sticks, and Unbit opens them read-only on a Mac."
+        },
+        {
+          "q": "Does it matter which brand of SSD or hard drive I have?",
+          "a": "Unbit works at the BitLocker level, so what matters is how the drive was encrypted and that it’s an external drive – not the brand."
+        },
+        {
+          "q": "Can I open the internal drive of another computer?",
+          "a": "No. Internal disks aren’t supported. Drives connected as external drives – for example through a USB enclosure – are the use case Unbit is made for."
+        },
+        {
+          "q": "Which file systems work inside the encrypted drive?",
+          "a": "exFAT, FAT32 and NTFS. After the drive is unlocked, macOS reads the file system itself. If it doesn’t recognize it, check the drive on a Windows PC."
+        },
+        {
+          "q": "Can I still use the drive on Windows afterwards?",
+          "a": "Yes. Unbit only reads the drive and never changes it, so it stays exactly as Windows left it."
+        }
+      ]
+    }
+  }
+}

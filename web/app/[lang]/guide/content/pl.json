@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker na Macu: poradniki i instrukcje | Unbit",
+    "indexMetaDescription": "Praktyczne poradniki o dyskach BitLocker na Macu: jak otworzyć taki dysk, czy dostęp tylko do odczytu jest bezpieczny i jak działają pendrive’y, dyski SSD i HDD.",
+    "indexH1": "BitLocker na Macu: poradniki",
+    "indexSub": "Krótkie, praktyczne odpowiedzi dla każdego, kto podłączył do Maca dysk zaszyfrowany BitLockerem i nie może go otworzyć.",
+    "readMore": "Czytaj poradnik",
+    "guides": "Poradniki",
+    "breadcrumb": "Ścieżka nawigacji",
+    "updated": "Zaktualizowano: {date}",
+    "faqTitle": "Najczęstsze pytania",
+    "relatedTitle": "Więcej poradników",
+    "ctaTitle": "Otwórz swój dysk BitLocker",
+    "ctaText": "Za darmo, tylko do odczytu i bez komputera z Windowsem.",
+    "allGuides": "Wszystkie poradniki"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "Jak otworzyć dysk BitLocker na Macu – instrukcja krok po kroku",
+      "metaDescription": "Otwórz zaszyfrowany BitLockerem pendrive, dysk SSD lub HDD na Macu, tylko do odczytu. Instrukcja krok po kroku z Unbitem i rozwiązania najczęstszych problemów.",
+      "h1": "Jak otworzyć dysk BitLocker na Macu",
+      "summary": "Dlaczego Finder nie odczyta dysku BitLocker i jak w kilka minut otworzyć go tylko do odczytu.",
+      "lead": "Dysk zaszyfrowany BitLockerem można podłączyć do Maca, ale macOS nie obsługuje BitLockera, więc Finder nie potrafi go otworzyć. W skrócie: zainstaluj czytnik BitLockera, np. [Unbit](home), podłącz dysk, wpisz hasło i otwórz dysk w Finderze tylko do odczytu. W tym poradniku przechodzimy przez każdy krok.",
+      "sections": [
+        {
+          "title": "Czym jest BitLocker",
+          "intro": [
+            "BitLocker to szyfrowanie dysków Microsoftu dla Windowsa. Zamienia całą zawartość dysku w nieczytelne dane, które bez hasła (lub klucza odzyskiwania) są bezużyteczne. Na dyskach zewnętrznych funkcja nazywa się BitLocker To Go: włączasz ją w Windowsie, wybierasz hasło, a Windows prosi o zapisanie 48-cyfrowego klucza odzyskiwania.",
+            "Tak zabezpieczony dysk ma w Eksploratorze plików Windowsa ikonę kłódki."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dlaczego Mac nie otworzy go sam",
+          "intro": [
+            "macOS ma własne szyfrowanie, FileVault, i odczytuje popularne formaty, takie jak exFAT, FAT32 i NTFS. Szyfrowania BitLockera jednak nie rozumie, więc dysku nie da się zamontować. W zależności od wersji macOS możesz zobaczyć komunikat, że komputer nie może odczytać dysku, albo dysk w ogóle nie pojawi się w Finderze.",
+            "**Nigdy nie wybieraj w tym komunikacie opcji Inicjuj ani Wymaż** – spowodowałoby to skasowanie wszystkiego na dysku.",
+            "Masz dwie możliwości: użyć Windowsa (komputera albo maszyny wirtualnej z Windowsem) lub aplikacji, która czyta BitLockera na Macu. [Unbit](home) to darmowa aplikacja w pasku menu, która robi to drugie: odszyfrowuje dysk na Twoim Macu i podłącza go do macOS tylko do odczytu, dzięki czemu pojawia się w Finderze jak każdy inny dysk. Jeśli porównujesz inne narzędzia, zajrzyj do przeglądu [alternatyw](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Otwieranie dysku w Unbicie krok po kroku",
+          "intro": [],
+          "steps": [
+            "Pobierz Unbit i przeciągnij go do folderu Programy. Wymaga macOS 13 lub nowszego i działa na Macach z Apple silicon oraz Intel.",
+            "Otwórz Unbit. Mieszka w pasku menu, a nie w Docku. Przy pierwszym uruchomieniu krótki przewodnik pokaże, gdzie w Ustawieniach systemowych włączyć **Pełny dostęp do dysku** – Unbit potrzebuje go do odczytu zaszyfrowanego dysku.",
+            "Podłącz dysk. Unbit wykryje go automatycznie i wyświetli w sekcji **Dyski**. Jeśli masz kilka dysków zewnętrznych, wybierz ten z BitLockerem. Jeśli dysk ma więcej niż jedną partycję, wybierz zaszyfrowaną.",
+            "Wpisz hasło BitLockera – to, które ustawiono po włączeniu BitLockera na dysku – i wybierz **Otwórz dysk**. macOS może poprosić o hasło do Maca, aby zatwierdzić dostęp do odczytu dysku. **Skonfiguruj dostęp do odczytu** w Unbicie robi to jednorazowo, żeby nie pytało za każdym razem.",
+            "Gdy Unbit poinformuje, że dysk jest otwarty, wybierz **Pokaż w Finderze**. Dysk jest zamontowany tylko do odczytu, więc możesz go przeglądać, otwierać pliki i kopiować je na Maca.",
+            "Gdy skończysz, wybierz w Unbicie **Wysuń bezpiecznie**, zanim odłączysz dysk."
+          ],
+          "bullets": [],
+          "outro": [
+            "Zaznacz **Zapamiętaj ten dysk na tym Macu**, jeśli chcesz, aby Unbit zapisał hasło w zaszyfrowanej postaci w pęku kluczy macOS i następnym razem otworzył dysk bez wpisywania. To opcjonalne, a zapisane hasło możesz usunąć w dowolnej chwili."
+          ]
+        },
+        {
+          "title": "Tylko do odczytu: kopiuj pliki, nie edytuj ich na dysku",
+          "intro": [
+            "Unbit nigdy nie zapisuje niczego na dysku. Możesz otwierać pliki i kopiować je na Maca, ale nie możesz zapisywać zmian z powrotem na dysku, usuwać plików ani dodawać nowych. Aby edytować plik, najpierw skopiuj go na Maca. Aby zmienić zawartość dysku, użyj Windowsa.",
+            "Zastanawiasz się, czy to dobrze? Przeczytaj [Czy BitLocker na Macu jest bezpieczny?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Rozwiązywanie problemów",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Dysk nie pojawia się w Unbicie.** Odłącz go i podłącz ponownie, a potem odśwież listę dysków (⌘R). Upewnij się, że to dysk zewnętrzny – dyski wewnętrzne nie są obsługiwane – i spróbuj innego kabla lub portu.",
+            "**Hasło jest odrzucane.** Sprawdź literówki i Caps Lock; spacje też się liczą. Jeśli dysk ma także klucz odzyskiwania, możesz wpisać go zamiast hasła na karcie Klucz odzyskiwania (48 cyfr w 8 grupach po 6).",
+            "**macOS odmawia dostępu do dysku.** Unbit potrzebuje Pełnego dostępu do dysku. Otwórz Ustawienia systemowe › Prywatność i ochrona › Pełny dostęp do dysku, włącz Unbit i spróbuj ponownie.",
+            "**Windows właśnie szyfruje lub odszyfrowuje dysk.** Poczekaj, aż Windows skończy, i spróbuj ponownie.",
+            "**Dysk odblokowany, ale macOS nie rozpoznaje systemu plików.** Po odblokowaniu system plików w środku powinien być exFAT, FAT32 lub NTFS. Jeśli nie jest, sprawdź dysk na komputerze z Windowsem.",
+            "**Informacje BitLockera na dysku są uszkodzone.** Sprawdź dysk na komputerze z Windowsem, na przykład poleceniem chkdsk lub repair-bde, i spróbuj ponownie.",
+            "**Dysk jest w użyciu podczas wysuwania.** Zamknij wszystkie pliki i okna z dysku i spróbuj ponownie."
+          ],
+          "outro": [
+            "Dysków zaszyfrowanych starszą wersją BitLockera niż ta z Windowsa 7 lub metodą, której Unbit nie obsługuje, nie da się otworzyć. Unbit da Ci o tym znać; do takich dysków użyj komputera z Windowsem."
+          ]
+        },
+        {
+          "title": "Jeśli nie masz hasła",
+          "intro": [
+            "BitLockera nie da się obejść – na tym polega szyfrowanie. Poszukaj 48-cyfrowego klucza odzyskiwania, który Windows poprosił o zapisanie po włączeniu BitLockera. Może znajdować się na koncie Microsoft używanym na komputerze, który zaszyfrował dysk, w zapisanym pliku lub na wydruku, albo u administratora IT, jeśli to dysk służbowy.",
+            "Jeśli masz klucz odzyskiwania, wpisz go na karcie Klucz odzyskiwania w Unbicie zamiast hasła."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy Mac może otworzyć dysk BitLocker bez dodatkowego oprogramowania?",
+          "a": "Nie. macOS nie obsługuje BitLockera. Potrzebujesz aplikacji-czytnika, takiej jak [Unbit](home), albo komputera lub maszyny wirtualnej z Windowsem."
+        },
+        {
+          "q": "Czy Unbit jest darmowy?",
+          "a": "Tak, Unbit można pobrać za darmo. To aplikacja w pasku menu dla macOS 13 lub nowszego, na Macach z Apple silicon i Intel."
+        },
+        {
+          "q": "Czy mogę kopiować pliki z dysku BitLocker na Maca?",
+          "a": "Tak. Gdy dysk jest otwarty w Finderze, możesz go przeglądać i kopiować pliki na Maca w zwykły sposób."
+        },
+        {
+          "q": "Czy mogę edytować lub usuwać pliki na dysku z poziomu Maca?",
+          "a": "Nie w Unbicie, który z założenia działa tylko do odczytu. Skopiuj pliki na Maca, aby na nich pracować, albo użyj Windowsa, aby zmienić sam dysk."
+        },
+        {
+          "q": "Czy potrzebuję komputera z Windowsem?",
+          "a": "Nie. Wszystko dzieje się na Twoim Macu. Twoje hasło i pliki nigdzie nie są wysyłane."
+        },
+        {
+          "q": "Czy to działa z pendrive’ami, dyskami SSD i HDD?",
+          "a": "Tak, z dyskami zewnętrznymi wszystkich tych rodzajów. Szczegóły znajdziesz w poradniku [Jak otworzyć pendrive, dysk SSD lub HDD z BitLockerem na Macu](drives)."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "Czy BitLocker na Macu jest bezpieczny? Tryb tylko do odczytu",
+      "metaDescription": "Czy otwieranie dysku BitLocker na Macu jest bezpieczne? Co oznacza dostęp tylko do odczytu, co Unbit robi z Twoim hasłem i plikami oraz jak bezpiecznie wysunąć dysk.",
+      "h1": "BitLocker na Macu: czy to bezpieczne? Tryb tylko do odczytu",
+      "summary": "Co oznacza dostęp tylko do odczytu, co Unbit robi z Twoim hasłem i danymi oraz jak zadbać o bezpieczeństwo plików.",
+      "lead": "Krótka odpowiedź: tak. Gdy dysk jest otwarty tylko do odczytu, Mac nie może niczego na nim zmienić. W tym poradniku wyjaśniamy, co to oznacza w praktyce, co Unbit robi z Twoim hasłem i plikami oraz jakie nawyki chronią Twoje dane.",
+      "sections": [
+        {
+          "title": "Co oznacza „tylko do odczytu”",
+          "intro": [
+            "Gdy dysk jest zamontowany tylko do odczytu, macOS może czytać z niego pliki, ale każda próba zapisu, zmiany nazwy lub usunięcia zostaje odrzucona. Unbit podłącza odblokowany dysk do macOS tylko do odczytu, więc nic nie jest zapisywane z powrotem – ani w Twoich plikach, ani w ustawieniach BitLockera na dysku. Dysk pozostaje dokładnie taki, jak zostawił go Windows.",
+            "W praktyce nie możesz niczego usunąć ani nadpisać przez pomyłkę, a ponieważ nic nie jest zapisywane, nagłe odłączenie nie zostawi na dysku niedokończonych zmian."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dlaczego tryb tylko do odczytu jest bezpieczniejszy",
+          "intro": [
+            "Najczęściej problemy zaczynają się przy zapisie na dysk sformatowany i zaszyfrowany przez inny system operacyjny – zwłaszcza za pomocą narzędzi, które nie pochodzą od Microsoftu. Większość osób podłączających dysk BitLocker do Maca chce po prostu odzyskać swoje pliki, a do tego wystarczy odczyt. Tryb tylko do odczytu eliminuje całą kategorię ryzyka.",
+            "Jeśli musisz zmienić pliki na dysku, skopiuj je na Maca, edytuj tam, a dysk zaktualizuj z poziomu Windowsa."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Co Unbit robi z Twoim hasłem i plikami",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Odszyfrowywanie odbywa się w całości na Twoim Macu. Twoje hasło, klucz odzyskiwania i pliki nigdzie nie są wysyłane.",
+            "Aplikacja nie ma kont, analityki ani śledzenia. Jedyne, co pobiera z internetu, to codzienne sprawdzanie aktualizacji.",
+            "Twoje hasło jest zapisywane tylko wtedy, gdy zaznaczysz „Zapamiętaj ten dysk na tym Macu”. Trafia wtedy w zaszyfrowanej postaci do pęku kluczy macOS i możesz je usunąć w dowolnej chwili.",
+            "Bez rozszerzeń jądra i bez macFUSE. Unbit korzysta z obsługi obrazów dysków wbudowanej w macOS.",
+            "Odszyfrowywane są tylko te fragmenty dysku, które macOS faktycznie odczytuje – w miarę ich odczytywania.",
+            "Unbit jest podpisany certyfikatem Developer ID i notaryzowany przez Apple, a aktualizacje docierają jako podpisane aktualizacje automatyczne."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Dlaczego Unbit prosi o Pełny dostęp do dysku i hasło do Maca",
+          "intro": [
+            "Aby odszyfrować dysk, Unbit musi odczytać surowe, zaszyfrowane dane prosto z dysku zewnętrznego. macOS pozwala na to tylko aplikacjom z Pełnym dostępem do dysku, a Unbit używa go do wybranego przez Ciebie dysku.",
+            "Odczyt surowych danych wymaga też małego pomocnika odczytu, którego zatwierdzasz jednorazowo hasłem do Maca (**Skonfiguruj dostęp do odczytu**). Oba to zwykłe jednorazowe uprawnienia macOS, a pomocnika możesz ponownie usunąć z menu z kołem zębatym w Unbicie."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Nawyki, które chronią Twoje pliki",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Użyj **Wysuń bezpiecznie**, zanim odłączysz dysk. Jeśli dysk zostanie mimo to odłączony, Unbit zamknie go automatycznie, ale wcześniejsze wysunięcie jest zawsze lepsze. Zamknięcie Unbita również najpierw zamyka otwarty dysk.",
+            "Skopiuj ważne rzeczy na Maca i miej drugą kopię zapasową. Tryb tylko do odczytu chroni dysk przed zmianami z poziomu Maca, ale nie przed awarią samego dysku.",
+            "Przechowuj hasło i 48-cyfrowy klucz odzyskiwania w bezpiecznym miejscu. Bez jednego z nich nikt nie otworzy dysku.",
+            "Jeśli macOS kiedykolwiek zaproponuje zainicjowanie lub wymazanie dysku, nie wybieraj żadnej z tych opcji.",
+            "Pobieraj Unbit wyłącznie z oficjalnej strony lub ze strony wydań na GitHubie."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Czego tryb tylko do odczytu nie robi",
+          "intro": [
+            "Dostęp tylko do odczytu nie naprawia uszkodzonego dysku, nie odzyskuje usuniętych plików i nie powie Ci, czy dysk zaraz się zepsuje. Jeśli widzisz błędy odczytu, skopiuj, co się da, i sprawdź dysk na komputerze z Windowsem.",
+            "Unbit to niezależna aplikacja, niepowiązana z Microsoftem ani Apple i przez nie niezatwierdzona."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Gotowy, by spróbować? Skorzystaj z poradnika [Jak otworzyć dysk BitLocker na Macu](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy Unbit może uszkodzić mój dysk BitLocker?",
+          "a": "Unbit nigdy nie zapisuje niczego na dysku, więc nie może zmienić Twoich plików ani ustawień BitLockera. Jak każde nośniki danych, dysk fizycznie uszkodzony może jednak nadal zawieść."
+        },
+        {
+          "q": "Czy moje hasło jest gdzieś wysyłane?",
+          "a": "Nie. Odszyfrowywanie odbywa się na Twoim Macu, a hasło, klucz odzyskiwania i pliki nigdzie nie są wysyłane. Aplikacja korzysta z sieci tylko do codziennego sprawdzania aktualizacji."
+        },
+        {
+          "q": "Czy Unbit tworzy odszyfrowaną kopię mojego dysku?",
+          "a": "Nie. Unbit odszyfrowuje na żądanie: odszyfrowywane są tylko te fragmenty, które macOS odczytuje, w miarę odczytu, zamiast najpierw tworzyć pełną kopię dysku."
+        },
+        {
+          "q": "Czy muszę obniżać ustawienia zabezpieczeń Maca?",
+          "a": "Nie. Unbit nie używa rozszerzenia jądra ani macFUSE, więc nie trzeba niczego włączać w trybie odzyskiwania. Potrzebuje Pełnego dostępu do dysku i jednorazowego zatwierdzenia pomocnika odczytu."
+        },
+        {
+          "q": "Czy można odłączyć dysk bez wysuwania?",
+          "a": "Najlepiej użyć opcji Wysuń bezpiecznie. Jeśli dysk zostanie odłączony, Unbit zamknie go automatycznie, a ponieważ działa tylko do odczytu, nic nie zostaje niedokończone."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Jak otworzyć pendrive, dysk SSD lub HDD z BitLockerem na Macu",
+      "metaDescription": "Które zewnętrzne dyski z BitLockerem otworzysz na Macu? Pendrive’y, przenośne dyski SSD i HDD, partycje, obsługiwane szyfrowanie i to, co nie działa.",
+      "h1": "Jak otworzyć dysk SSD, HDD lub pendrive z BitLockerem na Macu",
+      "summary": "Pendrive’y, przenośne dyski SSD i zewnętrzne dyski twarde: co jest obsługiwane i na co zwrócić uwagę.",
+      "lead": "Unbit otwiera na Macu tylko do odczytu zaszyfrowane BitLockerem dyski zewnętrzne każdego rodzaju – pendrive’y, przenośne dyski SSD i zewnętrzne dyski twarde. Kroki są takie same dla wszystkich; ten poradnik opisuje różnice i to, co nie jest obsługiwane. Pełną instrukcję znajdziesz w poradniku [Jak otworzyć dysk BitLocker na Macu](open).",
+      "sections": [
+        {
+          "title": "Jaki dysk jest obsługiwany",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Zewnętrzny** dysk zaszyfrowany BitLockerem lub BitLocker To Go w Windowsie 7 lub nowszym.",
+            "Szyfrowanie AES-CBC (z dyfuzorem Elephant lub bez) albo AES-XTS, z kluczami 128- lub 256-bitowymi.",
+            "System plików exFAT, FAT32 lub NTFS wewnątrz zaszyfrowanego woluminu. Po odblokowaniu dysku macOS odczytuje system plików samodzielnie.",
+            "Hasło – lub, jeśli dysk go ma, 48-cyfrowy klucz odzyskiwania."
+          ],
+          "outro": [
+            "Nie masz pewności, czy dysk używa BitLockera? W Eksploratorze plików Windowsa zaszyfrowany dysk ma ikonę kłódki."
+          ]
+        },
+        {
+          "title": "Pendrive’y",
+          "intro": [
+            "Pendrive’y to najczęstszy przypadek BitLockera To Go: pendrive zaszyfrowany na komputerze z Windowsem, a potem przekazany komuś, kto ma Maca. Podłącz go, a Unbit wyświetli go w sekcji Dyski. Wybierz go, wpisz hasło i wybierz Otwórz dysk.",
+            "Jeśli pendrive nie zostanie rozpoznany, spróbuj portu bezpośrednio w Macu zamiast huba."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Przenośne i zewnętrzne dyski SSD",
+          "intro": [
+            "Zewnętrzny dysk SSD zaszyfrowany BitLockerem otwiera się tak samo. Unbit odszyfrowuje na żądanie, w miarę jak macOS czyta dane, więc nie musisz czekać na pełną kopię dysku, zanim zaczniesz go przeglądać. Podczas kopiowania Unbit pokazuje na żywo aktywność odczytu i ilość danych odczytanych w tej sesji."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Zewnętrzne dyski twarde (HDD)",
+          "intro": [
+            "Dyski talerzowe też działają. Kilka praktycznych wskazówek:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Daj dyskowi chwilę na rozkręcenie, zanim pojawi się na liście, i używaj oryginalnego kabla.",
+            "Dyski zasilane przez USB potrzebują wystarczającej ilości prądu. Podłączaj je bezpośrednio do Maca, a nie przez hub bez własnego zasilania.",
+            "Nie przenoś dysku w trakcie odczytu. Jeśli przestanie odpowiadać lub zostanie odłączony, Unbit zamknie go automatycznie i da Ci znać."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Dyski z kilkoma partycjami",
+          "intro": [
+            "Jeśli dysk zewnętrzny ma więcej niż jedną partycję, Unbit wyświetla je osobno. Wybierz tę zaszyfrowaną BitLockerem. Jeśli wybierzesz partycję, która nie jest zaszyfrowana, Unbit da Ci o tym znać; niezaszyfrowana partycja otwiera się w Finderze bez dodatkowego oprogramowania."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Co nie działa",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Dyski wewnętrzne.** Unbit obsługuje tylko dyski zewnętrzne.",
+            "**Dyski, które Windows jeszcze szyfruje lub odszyfrowuje.** Poczekaj, aż Windows skończy.",
+            "**Metody szyfrowania, których Unbit nie obsługuje**, oraz wersje BitLockera starsze niż Windows 7. Unbit poinformuje Cię o tym; taki dysk otwórz na komputerze z Windowsem.",
+            "**Zapis.** Unbit działa tylko do odczytu, więc nie możesz dodawać, zmieniać ani usuwać plików na dysku."
+          ],
+          "outro": [
+            "Dysk wyjęty z komputera i włożony do obudowy USB lub stacji dokującej zwykle widać na Macu jako dysk zewnętrzny. Zobacz też [Czy BitLocker na Macu jest bezpieczny?](safe), aby dowiedzieć się, co oznacza tryb tylko do odczytu."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy Unbit działa z pendrive’ami BitLocker To Go?",
+          "a": "Tak. BitLocker To Go to sposób, w jaki Windows szyfruje dyski wymienne, takie jak pendrive’y, a Unbit otwiera je na Macu tylko do odczytu."
+        },
+        {
+          "q": "Czy ma znaczenie, jakiej marki jest mój dysk SSD lub HDD?",
+          "a": "Unbit działa na poziomie BitLockera, więc liczy się to, jak dysk został zaszyfrowany i że jest zewnętrzny – a nie marka."
+        },
+        {
+          "q": "Czy mogę otworzyć dysk wewnętrzny innego komputera?",
+          "a": "Nie. Dyski wewnętrzne nie są obsługiwane. Dyski podłączone jako zewnętrzne – na przykład przez obudowę USB – to przypadek, do którego Unbit został stworzony."
+        },
+        {
+          "q": "Jakie systemy plików działają wewnątrz zaszyfrowanego dysku?",
+          "a": "exFAT, FAT32 i NTFS. Po odblokowaniu dysku macOS odczytuje system plików samodzielnie. Jeśli go nie rozpozna, sprawdź dysk na komputerze z Windowsem."
+        },
+        {
+          "q": "Czy po wszystkim nadal mogę używać dysku w Windowsie?",
+          "a": "Tak. Unbit tylko odczytuje dysk i nigdy go nie zmienia, więc pozostaje dokładnie taki, jak zostawił go Windows."
+        }
+      ]
+    }
+  }
+}

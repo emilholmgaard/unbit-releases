@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker auf dem Mac: Ratgeber und Anleitungen | Unbit",
+    "indexMetaDescription": "Praktische Ratgeber zu BitLocker-Laufwerken auf dem Mac: So öffnest du eines, ob der schreibgeschützte Zugriff sicher ist und wie USB-Sticks, SSDs und Festplatten funktionieren.",
+    "indexH1": "BitLocker auf dem Mac: Ratgeber",
+    "indexSub": "Kurze, praktische Antworten für alle, die ein BitLocker-verschlüsseltes Laufwerk an einen Mac angeschlossen haben und es nicht öffnen können.",
+    "readMore": "Ratgeber lesen",
+    "guides": "Ratgeber",
+    "breadcrumb": "Brotkrumennavigation",
+    "updated": "Aktualisiert am {date}",
+    "faqTitle": "Häufig gestellte Fragen",
+    "relatedTitle": "Weitere Ratgeber",
+    "ctaTitle": "Öffne dein BitLocker-Laufwerk",
+    "ctaText": "Kostenlos, nur Lesen und ganz ohne Windows-PC.",
+    "allGuides": "Alle Ratgeber"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "BitLocker-Laufwerk auf dem Mac öffnen – Schritt für Schritt",
+      "metaDescription": "Öffne einen BitLocker-verschlüsselten USB-Stick, eine SSD oder HDD auf deinem Mac, nur lesend. Anleitung mit Unbit und Lösungen für die häufigsten Probleme.",
+      "h1": "So öffnest du ein BitLocker-Laufwerk auf dem Mac",
+      "summary": "Warum der Finder ein BitLocker-Laufwerk nicht lesen kann und wie du es in wenigen Minuten schreibgeschützt öffnest.",
+      "lead": "Ein mit BitLocker verschlüsseltes Laufwerk lässt sich zwar an einen Mac anschließen, aber macOS unterstützt BitLocker nicht von Haus aus – der Finder kann es deshalb nicht öffnen. Kurz gesagt: Installiere ein BitLocker-Leseprogramm wie [Unbit](home), schließe das Laufwerk an, gib das Passwort ein und öffne es schreibgeschützt im Finder. In dieser Anleitung gehen wir jeden Schritt durch.",
+      "sections": [
+        {
+          "title": "Was BitLocker ist",
+          "intro": [
+            "BitLocker ist die Laufwerksverschlüsselung von Microsoft für Windows. Sie verschlüsselt alles auf einem Laufwerk, sodass es ohne Passwort (oder Wiederherstellungsschlüssel) nicht lesbar ist. Bei externen Laufwerken heißt die Funktion BitLocker To Go: Du schaltest sie unter Windows ein, wählst ein Passwort, und Windows fordert dich auf, einen 48-stelligen Wiederherstellungsschlüssel zu speichern.",
+            "Ein so geschütztes Laufwerk zeigt im Windows-Explorer ein Schloss-Symbol."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Warum ein Mac es nicht von selbst öffnen kann",
+          "intro": [
+            "macOS hat mit FileVault eine eigene Verschlüsselung und liest gängige Formate wie exFAT, FAT32 und NTFS. Die BitLocker-Verschlüsselung versteht es aber nicht, deshalb lässt sich das Laufwerk nicht einbinden. Je nach macOS-Version erscheint eine Meldung, dass der Datenträger vom Computer nicht gelesen werden kann – oder das Laufwerk taucht im Finder gar nicht erst auf.",
+            "**Wähle in dieser Meldung niemals „Initialisieren“ oder „Löschen“** – damit würde alles auf dem Laufwerk gelöscht.",
+            "Du hast zwei Möglichkeiten: Windows verwenden (einen PC oder eine virtuelle Windows-Maschine) oder eine App, die BitLocker auf dem Mac lesen kann. [Unbit](home) ist eine kostenlose Menüleisten-App, die Letzteres übernimmt: Sie entschlüsselt das Laufwerk auf deinem Mac und bindet es schreibgeschützt in macOS ein, sodass es im Finder wie jedes andere Laufwerk erscheint. Wenn du andere Tools vergleichen möchtest, findest du eine Übersicht unter [Alternativen](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Laufwerk mit Unbit öffnen, Schritt für Schritt",
+          "intro": [],
+          "steps": [
+            "Lade Unbit herunter und ziehe die App in den Ordner „Programme“. Sie benötigt macOS 13 oder neuer und läuft auf Macs mit Apple Silicon und mit Intel.",
+            "Öffne Unbit. Die App lebt in der Menüleiste, nicht im Dock. Beim ersten Start zeigt eine kurze Anleitung, wo du in den Systemeinstellungen den **Festplattenvollzugriff** aktivierst – den braucht Unbit, um das verschlüsselte Laufwerk zu lesen.",
+            "Schließe das Laufwerk an. Unbit erkennt es automatisch und listet es unter **Laufwerke** auf. Hast du mehrere externe Laufwerke, wähle das mit BitLocker aus. Hat das Laufwerk mehrere Partitionen, wähle die verschlüsselte Partition.",
+            "Gib das BitLocker-Passwort ein – das, das du beim Einschalten von BitLocker für das Laufwerk gewählt hast – und wähle **Laufwerk öffnen**. macOS fragt eventuell nach deinem Mac-Passwort, um den Lesezugriff auf das Laufwerk zu genehmigen. Mit **Lesezugriff einrichten** in Unbit erledigst du das einmalig, sodass du nicht jedes Mal gefragt wirst.",
+            "Sobald Unbit meldet, dass das Laufwerk geöffnet ist, wähle **Im Finder zeigen**. Das Laufwerk ist schreibgeschützt eingebunden: Du kannst es durchsuchen, Dateien öffnen und auf deinen Mac kopieren.",
+            "Wenn du fertig bist, wähle in Unbit **Sicher auswerfen**, bevor du das Laufwerk abziehst."
+          ],
+          "bullets": [],
+          "outro": [
+            "Aktiviere **Dieses Laufwerk auf diesem Mac merken**, wenn Unbit das Passwort verschlüsselt in deinem macOS-Schlüsselbund speichern soll, damit sich das Laufwerk beim nächsten Mal ohne Eingabe öffnet. Das ist optional, und du kannst das gespeicherte Passwort jederzeit vergessen lassen."
+          ]
+        },
+        {
+          "title": "Nur Lesen: Dateien kopieren, nicht direkt bearbeiten",
+          "intro": [
+            "Unbit schreibt nie auf das Laufwerk. Du kannst Dateien öffnen und auf deinen Mac kopieren, aber keine Änderungen zurückspeichern, keine Dateien löschen und keine neuen hinzufügen. Willst du eine Datei bearbeiten, kopiere sie zuerst auf deinen Mac. Um den Inhalt des Laufwerks zu ändern, nutze Windows.",
+            "Du fragst dich, ob das ein Vorteil ist? Lies [Ist BitLocker auf dem Mac sicher?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Fehlerbehebung",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Das Laufwerk erscheint nicht in Unbit.** Ziehe es ab, schließe es wieder an und aktualisiere dann die Laufwerksliste (⌘R). Prüfe, ob es ein externes Laufwerk ist – interne Datenträger werden nicht unterstützt – und probiere ein anderes Kabel oder einen anderen Anschluss.",
+            "**Das Passwort wird abgelehnt.** Prüfe auf Tippfehler und die Feststelltaste; auch Leerzeichen zählen. Hat das Laufwerk zusätzlich einen Wiederherstellungsschlüssel, kannst du stattdessen diesen auf dem Tab „Wiederherstellungsschlüssel“ eingeben (48 Ziffern in 8 Gruppen zu je 6).",
+            "**macOS verweigert den Zugriff auf das Laufwerk.** Unbit braucht den Festplattenvollzugriff. Öffne Systemeinstellungen › Datenschutz & Sicherheit › Festplattenvollzugriff, aktiviere Unbit und versuche es erneut.",
+            "**Windows verschlüsselt oder entschlüsselt das Laufwerk gerade.** Lass Windows zuerst fertig werden und versuche es dann erneut.",
+            "**Entsperrt, aber macOS erkennt das Dateisystem nicht.** Nach dem Entsperren sollte das Dateisystem darin exFAT, FAT32 oder NTFS sein. Wenn nicht, prüfe das Laufwerk an einem Windows-PC.",
+            "**Die BitLocker-Informationen auf dem Laufwerk sind beschädigt.** Prüfe das Laufwerk an einem Windows-PC, zum Beispiel mit chkdsk oder repair-bde, und versuche es dann erneut.",
+            "**Das Laufwerk ist beim Auswerfen noch in Benutzung.** Schließe alle Dateien und Fenster vom Laufwerk und versuche es erneut."
+          ],
+          "outro": [
+            "Laufwerke, die mit einer älteren BitLocker-Version als der in Windows 7 oder mit einem von Unbit nicht unterstützten Verfahren verschlüsselt wurden, lassen sich nicht öffnen. Unbit weist dich darauf hin – nutze dafür einen Windows-PC."
+          ]
+        },
+        {
+          "title": "Wenn du das Passwort nicht hast",
+          "intro": [
+            "BitLocker lässt sich nicht umgehen – genau dafür ist Verschlüsselung da. Suche nach dem 48-stelligen Wiederherstellungsschlüssel, den Windows dir beim Einschalten von BitLocker zum Speichern angezeigt hat. Er kann im Microsoft-Konto liegen, das auf dem PC verwendet wurde, der das Laufwerk verschlüsselt hat, in einer Datei oder auf einem Ausdruck, den du gespeichert hast, oder bei deinem IT-Administrator, falls es ein Firmenlaufwerk ist.",
+            "Wenn du den Wiederherstellungsschlüssel hast, gib ihn in Unbit auf dem Tab „Wiederherstellungsschlüssel“ statt des Passworts ein."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kann ein Mac ein BitLocker-Laufwerk ohne zusätzliche Software öffnen?",
+          "a": "Nein. macOS unterstützt BitLocker nicht von Haus aus. Du brauchst eine Lese-App wie [Unbit](home) oder einen Windows-PC bzw. eine virtuelle Maschine."
+        },
+        {
+          "q": "Ist Unbit kostenlos?",
+          "a": "Ja, Unbit lässt sich kostenlos herunterladen. Es ist eine Menüleisten-App für macOS 13 oder neuer, für Macs mit Apple Silicon und mit Intel."
+        },
+        {
+          "q": "Kann ich Dateien von einem BitLocker-Laufwerk auf meinen Mac kopieren?",
+          "a": "Ja. Sobald das Laufwerk im Finder geöffnet ist, kannst du es durchsuchen und Dateien wie gewohnt auf deinen Mac kopieren."
+        },
+        {
+          "q": "Kann ich Dateien auf dem Laufwerk von meinem Mac aus bearbeiten oder löschen?",
+          "a": "Nicht mit Unbit, das bewusst nur lesend arbeitet. Kopiere die Dateien auf deinen Mac, um sie zu bearbeiten, oder nutze Windows, um das Laufwerk selbst zu ändern."
+        },
+        {
+          "q": "Brauche ich einen Windows-PC?",
+          "a": "Nein. Alles passiert auf deinem Mac. Dein Passwort und deine Dateien werden nirgendwohin gesendet."
+        },
+        {
+          "q": "Funktioniert das mit USB-Sticks, SSDs und Festplatten?",
+          "a": "Ja, mit externen Laufwerken all dieser Arten. Details findest du unter [BitLocker-SSD, -HDD oder -USB-Stick auf dem Mac öffnen](drives)."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "Ist BitLocker auf dem Mac sicher? Nur-Lesen erklärt",
+      "metaDescription": "Ist es sicher, ein BitLocker-Laufwerk auf dem Mac zu öffnen? Was schreibgeschützter Zugriff bedeutet, was Unbit mit Passwort und Dateien macht und wie du sicher auswirfst.",
+      "h1": "BitLocker auf dem Mac: ist das sicher? Nur Lesen erklärt",
+      "summary": "Was schreibgeschützter Zugriff bedeutet, was Unbit mit deinem Passwort und deinen Daten macht und wie deine Dateien sicher bleiben.",
+      "lead": "Kurze Antwort: Ja. Wird ein Laufwerk schreibgeschützt geöffnet, kann dein Mac nichts darauf verändern. Hier erfährst du, was das in der Praxis bedeutet, was Unbit mit deinem Passwort und deinen Dateien macht und welche Gewohnheiten deine Daten schützen.",
+      "sections": [
+        {
+          "title": "Was „Nur Lesen“ bedeutet",
+          "intro": [
+            "Ist ein Laufwerk schreibgeschützt eingebunden, kann macOS Dateien davon lesen, aber jeder Versuch, etwas zu schreiben, umzubenennen oder zu löschen, wird abgelehnt. Unbit bindet das entsperrte Laufwerk schreibgeschützt in macOS ein, sodass nichts zurückgeschrieben wird – weder in deine Dateien noch in die BitLocker-Einstellungen des Laufwerks. Das Laufwerk bleibt genau so, wie Windows es hinterlassen hat.",
+            "In der Praxis heißt das: Du kannst nichts versehentlich löschen oder überschreiben, und weil nichts geschrieben wird, kann ein plötzliches Abziehen keine halb geschriebenen Änderungen auf dem Laufwerk hinterlassen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Warum Nur Lesen die sicherere Wahl ist",
+          "intro": [
+            "Schreibzugriffe auf ein Laufwerk, das von einem anderen Betriebssystem formatiert und verschlüsselt wurde, sind die häufigste Fehlerquelle – besonders bei Tools, die nicht von Microsoft stammen. Die meisten, die ein BitLocker-Laufwerk an einen Mac anschließen, wollen nur ihre Dateien, und dafür reicht Lesen. Nur Lesen schließt eine ganze Kategorie von Risiken aus.",
+            "Musst du Dateien auf dem Laufwerk ändern, kopiere sie auf deinen Mac, bearbeite sie dort und aktualisiere das Laufwerk unter Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Was Unbit mit deinem Passwort und deinen Dateien macht",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Die Entschlüsselung geschieht komplett auf deinem Mac. Dein Passwort, dein Wiederherstellungsschlüssel und deine Dateien werden nirgendwohin gesendet.",
+            "Die App hat keine Konten, keine Analyse und kein Tracking. Das Einzige, was sie aus dem Internet abruft, ist die tägliche Update-Prüfung.",
+            "Dein Passwort wird nur gespeichert, wenn du „Dieses Laufwerk auf diesem Mac merken“ aktivierst. Es liegt dann verschlüsselt in deinem macOS-Schlüsselbund, und du kannst es jederzeit vergessen lassen.",
+            "Keine Kernel-Erweiterungen und kein macFUSE. Unbit nutzt die in macOS bereits eingebaute Unterstützung für Disk-Images.",
+            "Nur die Teile des Laufwerks, die macOS tatsächlich liest, werden entschlüsselt – und zwar erst beim Lesen.",
+            "Unbit ist mit Developer ID signiert und von Apple notarisiert; Updates kommen als signierte automatische Updates."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Warum Unbit Festplattenvollzugriff und dein Mac-Passwort verlangt",
+          "intro": [
+            "Um ein Laufwerk zu entschlüsseln, muss Unbit die rohen, verschlüsselten Daten direkt vom externen Laufwerk lesen. macOS erlaubt das nur Apps mit Festplattenvollzugriff, und Unbit nutzt ihn für das Laufwerk, das du auswählst.",
+            "Das Lesen roher Laufwerksdaten erfordert außerdem ein kleines Lese-Hilfsprogramm, das du einmalig mit deinem Mac-Passwort genehmigst (**Lesezugriff einrichten**). Beides sind übliche einmalige macOS-Berechtigungen, und das Hilfsprogramm lässt sich im Zahnradmenü von Unbit wieder entfernen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Gewohnheiten, die deine Dateien schützen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Nutze **Sicher auswerfen**, bevor du das Laufwerk abziehst. Wird es trotzdem abgezogen, schließt Unbit es automatisch – vorher auszuwerfen ist aber immer besser. Auch beim Beenden von Unbit wird ein geöffnetes Laufwerk zuerst geschlossen.",
+            "Kopiere Wichtiges auf deinen Mac und lege ein zweites Backup an. Nur Lesen schützt das Laufwerk vor deinem Mac – nicht davor, dass das Laufwerk selbst ausfällt.",
+            "Bewahre Passwort und 48-stelligen Wiederherstellungsschlüssel sicher auf. Ohne eines von beiden kann niemand das Laufwerk öffnen.",
+            "Falls macOS dir jemals anbietet, das Laufwerk zu initialisieren oder zu löschen, wähle keins von beiden.",
+            "Lade Unbit nur von der offiziellen Website oder der GitHub-Seite mit den Releases herunter."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Was Nur Lesen nicht leistet",
+          "intro": [
+            "Schreibgeschützter Zugriff repariert kein beschädigtes Laufwerk, stellt keine gelöschten Dateien wieder her und sagt dir nicht, ob ein Laufwerk bald ausfällt. Siehst du Lesefehler, kopiere, was du kannst, und prüfe das Laufwerk an einem Windows-PC.",
+            "Unbit ist eine unabhängige App und steht in keiner Verbindung zu Microsoft oder Apple und wird auch nicht von ihnen empfohlen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Bereit zum Ausprobieren? Folge der Anleitung [So öffnest du ein BitLocker-Laufwerk auf dem Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kann Unbit mein BitLocker-Laufwerk beschädigen?",
+          "a": "Unbit schreibt nie auf das Laufwerk und kann deshalb weder deine Dateien noch die BitLocker-Einstellungen verändern. Wie jedes Speichermedium kann ein Laufwerk, das körperlich defekt ist, aber trotzdem ausfallen."
+        },
+        {
+          "q": "Wird mein Passwort irgendwohin gesendet?",
+          "a": "Nein. Die Entschlüsselung geschieht auf deinem Mac, und Passwort, Wiederherstellungsschlüssel und Dateien werden nirgendwohin gesendet. Die App nutzt das Netz nur für die tägliche Update-Prüfung."
+        },
+        {
+          "q": "Erstellt Unbit eine entschlüsselte Kopie meines Laufwerks?",
+          "a": "Nein. Unbit entschlüsselt bei Bedarf: Nur die Teile, die macOS liest, werden beim Lesen entschlüsselt – statt zuerst eine vollständige Kopie des Laufwerks anzulegen."
+        },
+        {
+          "q": "Muss ich die Sicherheitseinstellungen meines Macs herabsetzen?",
+          "a": "Nein. Unbit verwendet keine Kernel-Erweiterung und kein macFUSE, daher musst du im Wiederherstellungsmodus nichts aktivieren. Nötig sind der Festplattenvollzugriff und die einmalige Genehmigung des Lese-Hilfsprogramms."
+        },
+        {
+          "q": "Ist es okay, das Laufwerk ohne Auswerfen abzuziehen?",
+          "a": "Sicher auswerfen ist am besten. Wird das Laufwerk abgezogen, schließt Unbit es automatisch, und da nur gelesen wird, bleibt nichts halb geschrieben zurück."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "BitLocker-USB-Stick, -SSD oder -HDD auf dem Mac öffnen",
+      "metaDescription": "Welche externen BitLocker-Laufwerke öffnen sich auf dem Mac? USB-Sticks, portable SSDs, Festplatten, Partitionen und was nicht funktioniert.",
+      "h1": "BitLocker-SSD, -HDD oder -USB-Stick auf dem Mac öffnen",
+      "summary": "USB-Sticks, portable SSDs und externe Festplatten: Was unterstützt wird und worauf du achten solltest.",
+      "lead": "Unbit öffnet BitLocker-verschlüsselte externe Laufwerke jeder Art – USB-Sticks, portable SSDs und externe Festplatten – schreibgeschützt auf deinem Mac. Die Schritte sind für alle gleich; hier geht es um die Unterschiede und darum, was nicht unterstützt wird. Die komplette Anleitung findest du unter [So öffnest du ein BitLocker-Laufwerk auf dem Mac](open).",
+      "sections": [
+        {
+          "title": "Was als unterstütztes Laufwerk gilt",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Ein **externes** Laufwerk, das unter Windows 7 oder neuer mit BitLocker oder BitLocker To Go verschlüsselt wurde.",
+            "Verschlüsselung mit AES-CBC (mit oder ohne Elephant-Diffuser) oder AES-XTS, mit 128- oder 256-Bit-Schlüsseln.",
+            "Ein Dateisystem aus exFAT, FAT32 oder NTFS im verschlüsselten Volume. Nach dem Entsperren liest macOS das Dateisystem selbst.",
+            "Ein Passwort – oder, falls das Laufwerk einen hat, der 48-stellige Wiederherstellungsschlüssel."
+          ],
+          "outro": [
+            "Du weißt nicht, ob ein Laufwerk BitLocker nutzt? Im Windows-Explorer zeigt ein verschlüsseltes Laufwerk ein Schloss-Symbol."
+          ]
+        },
+        {
+          "title": "USB-Sticks",
+          "intro": [
+            "USB-Sticks sind der häufigste BitLocker-To-Go-Fall: ein Stick, der an einem Windows-PC verschlüsselt und dann an jemanden mit einem Mac weitergegeben wurde. Schließe ihn an, und Unbit listet ihn unter Laufwerke auf. Wähle ihn aus, gib das Passwort ein und wähle „Laufwerk öffnen“.",
+            "Wird der Stick nicht erkannt, probiere einen Anschluss direkt am Mac statt an einem Hub."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Portable und externe SSDs",
+          "intro": [
+            "Eine BitLocker-verschlüsselte externe SSD öffnest du genauso. Unbit entschlüsselt bei Bedarf, sobald macOS liest, du musst also nicht auf eine vollständige Kopie des Laufwerks warten, bevor du darin stöberst. Beim Kopieren zeigt Unbit live die Leseaktivität und wie viele Daten in dieser Sitzung gelesen wurden."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Externe Festplatten (HDD)",
+          "intro": [
+            "Auch drehende Festplatten funktionieren. Ein paar praktische Tipps:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Gib dem Laufwerk einen Moment zum Hochfahren, bevor es in der Liste erscheint, und verwende das Originalkabel.",
+            "Über USB versorgte Laufwerke brauchen genug Strom. Schließe sie direkt am Mac an statt über einen Hub ohne eigene Stromversorgung.",
+            "Bewege das Laufwerk nicht, während gelesen wird. Reagiert es nicht mehr oder wird es abgezogen, schließt Unbit es automatisch und informiert dich."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Laufwerke mit mehreren Partitionen",
+          "intro": [
+            "Hat ein externes Laufwerk mehr als eine Partition, listet Unbit sie einzeln auf. Wähle die BitLocker-verschlüsselte. Wählst du eine unverschlüsselte Partition, weist Unbit dich darauf hin; eine unverschlüsselte Partition öffnet sich im Finder ohne zusätzliche Software."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Was nicht funktioniert",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Interne Datenträger.** Unbit unterstützt nur externe Laufwerke.",
+            "**Laufwerke, die Windows gerade noch ver- oder entschlüsselt.** Lass Windows zuerst fertig werden.",
+            "**Verschlüsselungsverfahren, die Unbit nicht unterstützt,** und BitLocker-Versionen vor Windows 7. Unbit meldet dir das; öffne ein solches Laufwerk an einem Windows-PC.",
+            "**Schreiben.** Unbit arbeitet nur lesend, du kannst also keine Dateien auf dem Laufwerk hinzufügen, ändern oder löschen."
+          ],
+          "outro": [
+            "Ein aus einem PC ausgebautes Laufwerk in einem USB-Gehäuse oder einer Dockingstation erscheint am Mac normalerweise als externes Laufwerk. Was „Nur Lesen“ bedeutet, erfährst du unter [Ist BitLocker auf dem Mac sicher?](safe)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Funktioniert Unbit mit BitLocker-To-Go-USB-Sticks?",
+          "a": "Ja. Mit BitLocker To Go verschlüsselt Windows Wechseldatenträger wie USB-Sticks, und Unbit öffnet sie auf dem Mac schreibgeschützt."
+        },
+        {
+          "q": "Spielt die Marke meiner SSD oder Festplatte eine Rolle?",
+          "a": "Unbit arbeitet auf BitLocker-Ebene. Entscheidend ist, wie das Laufwerk verschlüsselt wurde und dass es ein externes Laufwerk ist – nicht die Marke."
+        },
+        {
+          "q": "Kann ich das interne Laufwerk eines anderen Computers öffnen?",
+          "a": "Nein. Interne Datenträger werden nicht unterstützt. Laufwerke, die als externe Laufwerke angeschlossen sind – zum Beispiel über ein USB-Gehäuse –, sind der Anwendungsfall, für den Unbit gemacht ist."
+        },
+        {
+          "q": "Welche Dateisysteme funktionieren im verschlüsselten Laufwerk?",
+          "a": "exFAT, FAT32 und NTFS. Nach dem Entsperren liest macOS das Dateisystem selbst. Wird es nicht erkannt, prüfe das Laufwerk an einem Windows-PC."
+        },
+        {
+          "q": "Kann ich das Laufwerk danach weiter unter Windows verwenden?",
+          "a": "Ja. Unbit liest das Laufwerk nur und verändert es nie, es bleibt also genau so, wie Windows es hinterlassen hat."
+        }
+      ]
+    }
+  }
+}

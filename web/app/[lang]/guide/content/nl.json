@@ -1,0 +1,328 @@
+{
+  "ui": {
+    "indexMetaTitle": "BitLocker op de Mac: handleidingen en tips | Unbit",
+    "indexMetaDescription": "Praktische handleidingen over BitLocker-schijven op de Mac: hoe je er een opent, of alleen-lezen toegang veilig is en hoe usb-sticks, ssd’s en harde schijven werken.",
+    "indexH1": "BitLocker op de Mac: handleidingen",
+    "indexSub": "Korte, praktische antwoorden voor iedereen die een met BitLocker versleutelde schijf op een Mac heeft aangesloten en die niet open krijgt.",
+    "readMore": "Lees de handleiding",
+    "guides": "Handleidingen",
+    "breadcrumb": "Kruimelpad",
+    "updated": "Bijgewerkt op {date}",
+    "faqTitle": "Veelgestelde vragen",
+    "relatedTitle": "Meer handleidingen",
+    "ctaTitle": "Open je BitLocker-schijf",
+    "ctaText": "Gratis, alleen-lezen en zonder Windows-pc.",
+    "allGuides": "Alle handleidingen"
+  },
+  "articles": {
+    "open": {
+      "metaTitle": "BitLocker-schijf openen op de Mac – stap voor stap",
+      "metaDescription": "Open een met BitLocker versleutelde usb-stick, ssd of hdd op je Mac, alleen-lezen. Stap-voor-stap-handleiding met Unbit en oplossingen voor de meest voorkomende problemen.",
+      "h1": "Zo open je een BitLocker-schijf op een Mac",
+      "summary": "Waarom de Finder een BitLocker-schijf niet kan lezen en hoe je hem in een paar minuten alleen-lezen opent.",
+      "lead": "Een met BitLocker versleutelde schijf kun je prima op een Mac aansluiten, maar macOS ondersteunt BitLocker niet standaard, dus de Finder kan hem niet openen. In het kort: installeer een BitLocker-lezer zoals [Unbit](home), sluit de schijf aan, voer het wachtwoord in en open hem alleen-lezen in de Finder. In deze handleiding lopen we elke stap door.",
+      "sections": [
+        {
+          "title": "Wat BitLocker is",
+          "intro": [
+            "BitLocker is de schijfversleuteling van Microsoft voor Windows. Alles op een schijf wordt onleesbaar gemaakt zonder het wachtwoord (of een herstelsleutel). Op externe schijven heet de functie BitLocker To Go: je zet hem aan in Windows, kiest een wachtwoord en Windows vraagt je een herstelsleutel van 48 cijfers op te slaan.",
+            "Een schijf die zo is beveiligd, toont in Windows Verkenner een slotje."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Waarom een Mac hem niet zelf kan openen",
+          "intro": [
+            "macOS heeft een eigen versleuteling, FileVault, en leest gangbare formaten zoals exFAT, FAT32 en NTFS. De versleuteling van BitLocker begrijpt het echter niet, dus de schijf kan niet worden gemount. Afhankelijk van je macOS-versie zie je misschien een melding dat de schijf niet leesbaar is voor deze computer, of de schijf verschijnt helemaal niet in de Finder.",
+            "**Kies in die melding nooit Initialiseer of Wis** – daarmee wis je alles op de schijf.",
+            "Je hebt twee opties: Windows gebruiken (een pc of een virtuele Windows-machine) of een app die BitLocker op de Mac kan lezen. [Unbit](home) is een gratis menubalk-app die dat laatste doet: hij ontsleutelt de schijf op je Mac en koppelt hem alleen-lezen aan macOS, zodat hij in de Finder verschijnt zoals elke andere schijf. Vergelijk je liever andere tools, bekijk dan het overzicht met [alternatieven](alternatives)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "De schijf openen met Unbit, stap voor stap",
+          "intro": [],
+          "steps": [
+            "Download Unbit en sleep de app naar je map Programma’s. Hij vereist macOS 13 of nieuwer en draait op Macs met Apple silicon én met Intel.",
+            "Open Unbit. De app woont in de menubalk, niet in het Dock. De eerste keer laat een korte gids zien waar je in Systeeminstellingen **Volledige schijftoegang** aanzet; Unbit heeft dat nodig om de versleutelde schijf te lezen.",
+            "Sluit de schijf aan. Unbit herkent hem automatisch en toont hem onder **Schijven**. Heb je meerdere externe schijven, selecteer dan die met BitLocker. Heeft de schijf meer dan één partitie, kies dan de versleutelde partitie.",
+            "Voer het BitLocker-wachtwoord in – dat je koos toen BitLocker op de schijf werd aangezet – en kies **Open schijf**. macOS kan om het wachtwoord van je Mac vragen om leestoegang tot de schijf goed te keuren. **Stel leestoegang in** in Unbit regelt dat één keer, zodat het niet elke keer gevraagd wordt.",
+            "Zodra Unbit meldt dat de schijf open is, kies je **Toon in Finder**. De schijf is alleen-lezen gemount, dus je kunt hem doorbladeren, bestanden openen en naar je Mac kopiëren.",
+            "Als je klaar bent, kies je in Unbit **Werp veilig uit** voordat je de schijf loskoppelt."
+          ],
+          "bullets": [],
+          "outro": [
+            "Vink **Onthoud deze schijf op deze Mac** aan als Unbit het wachtwoord versleuteld in je macOS-sleutelhanger mag bewaren, zodat de schijf de volgende keer opent zonder typen. Dit is optioneel en je kunt het bewaarde wachtwoord op elk moment laten vergeten."
+          ]
+        },
+        {
+          "title": "Alleen-lezen: kopieer bestanden eraf, bewerk ze niet op de schijf",
+          "intro": [
+            "Unbit schrijft nooit naar de schijf. Je kunt bestanden openen en naar je Mac kopiëren, maar je kunt geen wijzigingen terug op de schijf opslaan, bestanden verwijderen of nieuwe toevoegen. Wil je een bestand bewerken, kopieer het dan eerst naar je Mac. Wil je wijzigen wat er op de schijf staat, gebruik dan Windows.",
+            "Vraag je je af of dat een voordeel is? Lees [Is BitLocker op de Mac veilig?](safe)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Problemen oplossen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**De schijf verschijnt niet in Unbit.** Koppel hem los en weer aan en ververs daarna de schijvenlijst (⌘R). Controleer of het een externe schijf is – interne schijven worden niet ondersteund – en probeer een andere kabel of poort.",
+            "**Het wachtwoord wordt geweigerd.** Controleer op typefouten en Caps Lock; spaties tellen mee. Heeft de schijf ook een herstelsleutel, dan kun je die in plaats daarvan invoeren op het tabblad Herstelsleutel (48 cijfers, in 8 groepen van 6).",
+            "**macOS weigert toegang tot de schijf.** Unbit heeft Volledige schijftoegang nodig. Open Systeeminstellingen › Privacy en beveiliging › Volledige schijftoegang, zet Unbit aan en probeer het opnieuw.",
+            "**Windows is de schijf op dit moment aan het versleutelen of ontsleutelen.** Laat Windows eerst klaar zijn en probeer het daarna opnieuw.",
+            "**Ontgrendeld, maar macOS herkent het bestandssysteem niet.** Na het ontgrendelen moet het bestandssysteem erin exFAT, FAT32 of NTFS zijn. Is dat niet zo, controleer de schijf dan op een Windows-pc.",
+            "**De BitLocker-gegevens op de schijf zijn beschadigd.** Controleer de schijf op een Windows-pc, bijvoorbeeld met chkdsk of repair-bde, en probeer het opnieuw.",
+            "**De schijf is nog in gebruik als je hem uitwerpt.** Sluit alle bestanden en vensters van de schijf en probeer het opnieuw."
+          ],
+          "outro": [
+            "Schijven die zijn versleuteld met een oudere BitLocker-versie dan die van Windows 7, of met een methode die Unbit niet ondersteunt, kunnen niet worden geopend. Unbit laat dat weten; gebruik daarvoor een Windows-pc."
+          ]
+        },
+        {
+          "title": "Als je het wachtwoord niet hebt",
+          "intro": [
+            "BitLocker kun je niet omzeilen – dat is nu juist het doel van versleuteling. Zoek naar de herstelsleutel van 48 cijfers die Windows je vroeg op te slaan toen BitLocker werd aangezet. Die kan staan in het Microsoft-account dat is gebruikt op de pc die de schijf heeft versleuteld, in een bestand of op een afdruk die je hebt bewaard, of bij je IT-beheerder als het een werkschijf is.",
+            "Heb je de herstelsleutel, voer die dan in op het tabblad Herstelsleutel van Unbit in plaats van het wachtwoord."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan een Mac een BitLocker-schijf openen zonder extra software?",
+          "a": "Nee. macOS ondersteunt BitLocker niet standaard. Je hebt een lezer-app nodig zoals [Unbit](home), of een Windows-pc of virtuele machine."
+        },
+        {
+          "q": "Is Unbit gratis?",
+          "a": "Ja, Unbit is gratis te downloaden. Het is een menubalk-app voor macOS 13 of nieuwer, op Macs met Apple silicon en Intel."
+        },
+        {
+          "q": "Kan ik bestanden van een BitLocker-schijf naar mijn Mac kopiëren?",
+          "a": "Ja. Zodra de schijf in de Finder openstaat, kun je hem doorbladeren en bestanden op de gebruikelijke manier naar je Mac kopiëren."
+        },
+        {
+          "q": "Kan ik vanaf mijn Mac bestanden op de schijf bewerken of verwijderen?",
+          "a": "Niet met Unbit, dat bewust alleen-lezen is. Kopieer de bestanden naar je Mac om ermee te werken, of gebruik Windows om de schijf zelf te wijzigen."
+        },
+        {
+          "q": "Heb ik een Windows-pc nodig?",
+          "a": "Nee. Alles gebeurt op je Mac. Je wachtwoord en bestanden worden nergens naartoe gestuurd."
+        },
+        {
+          "q": "Werkt dit met usb-sticks, ssd’s en harde schijven?",
+          "a": "Ja, met externe schijven van al deze soorten. Zie [Een BitLocker-ssd, -hdd of -usb-stick openen op de Mac](drives) voor de details."
+        }
+      ]
+    },
+    "safe": {
+      "metaTitle": "Is BitLocker op de Mac veilig? Alleen-lezen uitgelegd",
+      "metaDescription": "Is het veilig om een BitLocker-schijf op een Mac te openen? Wat alleen-lezen toegang betekent, wat Unbit met je wachtwoord en bestanden doet en hoe je veilig uitwerpt.",
+      "h1": "BitLocker op de Mac: is het veilig? Alleen-lezen uitgelegd",
+      "summary": "Wat alleen-lezen toegang betekent, wat Unbit met je wachtwoord en gegevens doet en hoe je je bestanden veilig houdt.",
+      "lead": "Kort antwoord: ja. Als een schijf alleen-lezen wordt geopend, kan je Mac er niets aan veranderen. In deze handleiding lees je wat dat in de praktijk betekent, wat Unbit met je wachtwoord en bestanden doet en welke gewoonten je gegevens beschermen.",
+      "sections": [
+        {
+          "title": "Wat “alleen-lezen” betekent",
+          "intro": [
+            "Als een schijf alleen-lezen is gemount, kan macOS er bestanden van lezen, maar wordt elke poging om iets te schrijven, te hernoemen of te verwijderen geweigerd. Unbit koppelt de ontgrendelde schijf alleen-lezen aan macOS, dus er wordt niets teruggeschreven – niet naar je bestanden en niet naar de BitLocker-instellingen van de schijf. De schijf blijft precies zoals Windows hem achterliet.",
+            "In de praktijk kun je dus niets per ongeluk verwijderen of overschrijven, en omdat er niets wordt geschreven, kan een onverwacht losgekoppelde schijf geen half geschreven wijzigingen overhouden."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Waarom alleen-lezen de veiligste keuze is",
+          "intro": [
+            "Schrijven naar een schijf die door een ander besturingssysteem is geformatteerd en versleuteld, is waar het meestal misgaat – vooral met tools die niet van Microsoft zijn. De meeste mensen die een BitLocker-schijf op een Mac aansluiten, willen alleen hun bestanden, en daarvoor is lezen genoeg. Alleen-lezen neemt een hele categorie risico’s weg.",
+            "Moet je bestanden op de schijf wijzigen, kopieer ze dan naar je Mac, bewerk ze daar en werk de schijf bij vanuit Windows."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Wat Unbit met je wachtwoord en bestanden doet",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Het ontsleutelen gebeurt volledig op je Mac. Je wachtwoord, herstelsleutel en bestanden worden nergens naartoe gestuurd.",
+            "De app heeft geen accounts, analyse of tracking. Het enige wat hij van internet ophaalt, is de dagelijkse controle op updates.",
+            "Je wachtwoord wordt alleen bewaard als je “Onthoud deze schijf op deze Mac” aanvinkt. Het staat dan versleuteld in je macOS-sleutelhanger en je kunt het op elk moment laten vergeten.",
+            "Geen kernel-extensies en geen macFUSE. Unbit gebruikt de ondersteuning voor schijfkopieën die al in macOS zit.",
+            "Alleen de delen van de schijf die macOS echt leest, worden ontsleuteld – op het moment dat ze gelezen worden.",
+            "Unbit is ondertekend met een Developer ID en genotariseerd door Apple, en updates komen binnen als ondertekende automatische updates."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Waarom Unbit om Volledige schijftoegang en het wachtwoord van je Mac vraagt",
+          "intro": [
+            "Om een schijf te ontsleutelen moet Unbit de ruwe, versleutelde gegevens rechtstreeks van de externe schijf lezen. macOS staat dat alleen toe voor apps met Volledige schijftoegang, en Unbit gebruikt het voor de schijf die je kiest.",
+            "Voor het lezen van ruwe schijfgegevens is ook een kleine leeshulp nodig, die je één keer goedkeurt met het wachtwoord van je Mac (**Stel leestoegang in**). Beide zijn gangbare eenmalige macOS-toestemmingen en de leeshulp kun je weer verwijderen via het tandwielmenu van Unbit."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Gewoonten die je bestanden beschermen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Gebruik **Werp veilig uit** voordat je de schijf loskoppelt. Wordt de schijf toch losgekoppeld, dan sluit Unbit hem automatisch, maar eerst uitwerpen is altijd beter. Ook als je Unbit afsluit, wordt een open schijf eerst gesloten.",
+            "Kopieer belangrijke bestanden naar je Mac en bewaar een tweede back-up. Alleen-lezen beschermt de schijf tegen je Mac, niet tegen het kapotgaan van de schijf zelf.",
+            "Bewaar het wachtwoord en de herstelsleutel van 48 cijfers op een veilige plek. Zonder een van beide kan niemand de schijf openen.",
+            "Als macOS ooit aanbiedt de schijf te initialiseren of te wissen, kies dan geen van beide.",
+            "Download Unbit alleen van de officiële website of de GitHub-pagina met releases."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Wat alleen-lezen niet doet",
+          "intro": [
+            "Alleen-lezen toegang repareert geen beschadigde schijf, herstelt geen verwijderde bestanden en zegt niet of een schijf op het punt staat te falen. Zie je leesfouten, kopieer dan wat je kunt en controleer de schijf op een Windows-pc.",
+            "Unbit is een onafhankelijke app en is niet gelieerd aan of goedgekeurd door Microsoft of Apple."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": [
+            "Klaar om het te proberen? Volg [Zo open je een BitLocker-schijf op een Mac](open)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan Unbit mijn BitLocker-schijf beschadigen?",
+          "a": "Unbit schrijft nooit naar de schijf, dus het kan je bestanden of de BitLocker-instellingen niet veranderen. Zoals bij elk opslagmedium kan een schijf die fysiek defect raakt natuurlijk wel gewoon uitvallen."
+        },
+        {
+          "q": "Wordt mijn wachtwoord ergens naartoe gestuurd?",
+          "a": "Nee. Het ontsleutelen gebeurt op je Mac en je wachtwoord, herstelsleutel en bestanden worden nergens naartoe gestuurd. De app gebruikt het netwerk alleen voor de dagelijkse controle op updates."
+        },
+        {
+          "q": "Maakt Unbit een ontsleutelde kopie van mijn schijf?",
+          "a": "Nee. Unbit ontsleutelt op aanvraag: alleen de delen die macOS leest, worden ontsleuteld – terwijl ze gelezen worden – in plaats van eerst een volledige kopie van de schijf te maken."
+        },
+        {
+          "q": "Moet ik de beveiligingsinstellingen van mijn Mac verlagen?",
+          "a": "Nee. Unbit gebruikt geen kernel-extensie en geen macFUSE, dus je hoeft niets in te schakelen in Herstel. Het heeft Volledige schijftoegang nodig en een eenmalige goedkeuring van de leeshulp."
+        },
+        {
+          "q": "Is het oké om de schijf los te koppelen zonder hem uit te werpen?",
+          "a": "Veilig uitwerpen is het beste. Wordt de schijf losgekoppeld, dan sluit Unbit hem automatisch, en omdat hij alleen-lezen is, blijft er niets half geschreven achter."
+        }
+      ]
+    },
+    "drives": {
+      "metaTitle": "Een BitLocker-usb-stick, -ssd of -hdd openen op de Mac",
+      "metaDescription": "Welke externe BitLocker-schijven kun je op een Mac openen? Usb-sticks, draagbare ssd’s en harde schijven, partities, ondersteunde versleuteling en wat niet werkt.",
+      "h1": "Een BitLocker-ssd, -hdd of -usb-stick openen op de Mac",
+      "summary": "Usb-sticks, draagbare ssd’s en externe harde schijven: wat wordt ondersteund en waar je op moet letten.",
+      "lead": "Unbit opent met BitLocker versleutelde externe schijven van elk type – usb-sticks, draagbare ssd’s en externe harde schijven – alleen-lezen op je Mac. De stappen zijn voor alle schijven hetzelfde; in deze handleiding lees je wat verschilt en wat niet wordt ondersteund. Voor de volledige uitleg, zie [Zo open je een BitLocker-schijf op een Mac](open).",
+      "sections": [
+        {
+          "title": "Wat telt als ondersteunde schijf",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Een **externe** schijf, versleuteld met BitLocker of BitLocker To Go op Windows 7 of nieuwer.",
+            "Versleuteling met AES-CBC (met of zonder Elephant-diffuser) of AES-XTS, met sleutels van 128 of 256 bit.",
+            "Een bestandssysteem van exFAT, FAT32 of NTFS in het versleutelde volume. Zodra de schijf is ontgrendeld, leest macOS het bestandssysteem zelf.",
+            "Een wachtwoord – of, als de schijf er een heeft, de herstelsleutel van 48 cijfers."
+          ],
+          "outro": [
+            "Weet je niet zeker of een schijf BitLocker gebruikt? In Windows Verkenner toont een versleutelde schijf een slotje."
+          ]
+        },
+        {
+          "title": "Usb-sticks",
+          "intro": [
+            "Usb-sticks zijn het meest voorkomende BitLocker To Go-geval: een stick die op een Windows-pc is versleuteld en daarna is doorgegeven aan iemand met een Mac. Steek hem erin en Unbit toont hem onder Schijven. Selecteer hem, voer het wachtwoord in en kies Open schijf.",
+            "Wordt de stick niet herkend, probeer dan een poort rechtstreeks op de Mac in plaats van een hub."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Draagbare en externe ssd’s",
+          "intro": [
+            "Een met BitLocker versleutelde externe ssd open je op dezelfde manier. Unbit ontsleutelt op aanvraag, terwijl macOS leest, dus je hoeft niet te wachten op een volledige kopie van de schijf voordat je kunt bladeren. Tijdens het kopiëren toont Unbit live de leesactiviteit en hoeveel gegevens er in deze sessie zijn gelezen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Externe harde schijven (hdd)",
+          "intro": [
+            "Ook draaiende harde schijven werken. Een paar praktische tips:"
+          ],
+          "steps": [],
+          "bullets": [
+            "Geef de schijf even de tijd om op te starten voordat hij in de lijst verschijnt, en gebruik de originele kabel.",
+            "Schijven die hun stroom via usb krijgen, hebben genoeg vermogen nodig. Sluit ze rechtstreeks aan op de Mac in plaats van via een hub zonder eigen voeding.",
+            "Verplaats de schijf niet terwijl hij wordt gelezen. Reageert hij niet meer of wordt hij losgekoppeld, dan sluit Unbit hem automatisch en laat het je weten."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Schijven met meerdere partities",
+          "intro": [
+            "Heeft een externe schijf meer dan één partitie, dan toont Unbit ze apart. Kies de partitie die met BitLocker is versleuteld. Kies je een partitie die niet is versleuteld, dan laat Unbit dat weten; een onversleutelde partitie opent in de Finder zonder extra software."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Wat niet werkt",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Interne schijven.** Unbit ondersteunt alleen externe schijven.",
+            "**Schijven die Windows nog aan het versleutelen of ontsleutelen is.** Laat Windows eerst klaar zijn.",
+            "**Versleutelingsmethoden die Unbit niet ondersteunt**, en BitLocker-versies ouder dan Windows 7. Unbit laat het weten als dat zo is; open zo’n schijf op een Windows-pc.",
+            "**Schrijven.** Unbit is alleen-lezen, dus je kunt geen bestanden op de schijf toevoegen, wijzigen of verwijderen."
+          ],
+          "outro": [
+            "Een schijf die uit een pc is gehaald en in een usb-behuizing of dockingstation is geplaatst, verschijnt op een Mac normaal gesproken als externe schijf. Zie ook [Is BitLocker op de Mac veilig?](safe) voor wat alleen-lezen betekent."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Werkt Unbit met BitLocker To Go-usb-sticks?",
+          "a": "Ja. BitLocker To Go is de manier waarop Windows verwisselbare schijven zoals usb-sticks versleutelt, en Unbit opent ze alleen-lezen op een Mac."
+        },
+        {
+          "q": "Maakt het uit welk merk ssd of harde schijf ik heb?",
+          "a": "Unbit werkt op BitLocker-niveau, dus het gaat erom hoe de schijf is versleuteld en dat het een externe schijf is – niet om het merk."
+        },
+        {
+          "q": "Kan ik de interne schijf van een andere computer openen?",
+          "a": "Nee. Interne schijven worden niet ondersteund. Schijven die als externe schijf zijn aangesloten – bijvoorbeeld via een usb-behuizing – zijn het gebruik waarvoor Unbit is gemaakt."
+        },
+        {
+          "q": "Welke bestandssystemen werken in de versleutelde schijf?",
+          "a": "exFAT, FAT32 en NTFS. Zodra de schijf is ontgrendeld, leest macOS het bestandssysteem zelf. Herkent het dat niet, controleer de schijf dan op een Windows-pc."
+        },
+        {
+          "q": "Kan ik de schijf daarna nog op Windows gebruiken?",
+          "a": "Ja. Unbit leest de schijf alleen en verandert hem nooit, dus hij blijft precies zoals Windows hem achterliet."
+        }
+      ]
+    }
+  }
+}
