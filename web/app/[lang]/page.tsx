@@ -1,11 +1,10 @@
 import Image from "next/image";
 import { lang } from "next/root-params";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { GUIDES, bestPath, guidePath } from "@/lib/guides";
-import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, TEAM_ID, latestRelease, releaseChecksum, releasePageUrl } from "@/lib/site";
+import { bestPath, guidePath } from "@/lib/guides";
+import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
-import { getGuideContent } from "./guide/content";
 
 export const revalidate = 600;
 
@@ -13,10 +12,8 @@ export default async function Home() {
   const locale = await lang();
   if (!hasLocale(locale)) notFound();
   const t = await getDictionary();
-  const guides = await getGuideContent();
   const FAQ = t.faq.items;
   const { version, minOS, date } = await latestRelease();
-  const checksum = await releaseChecksum(version);
   const v = (text: string) => text.replace("{version}", version).replace("{minOS}", minOS);
   const jsonLd = [
     {
@@ -200,28 +197,6 @@ export default async function Home() {
             <div className="grad-panel orange" aria-hidden="true"><span>{t.privacy.panelLine1}<br />{t.privacy.panelLine2}</span></div>
           </section>
 
-          {/* Help guides (internal links for readers and search engines) */}
-          <section className="section guides" id="guides" aria-labelledby="guides-title">
-            <div className="section-head">
-              <h2 id="guides-title">{t.guides.title}</h2>
-              <p>{t.guides.intro}</p>
-            </div>
-            <div className="grid three">
-              {GUIDES.map((g) => (
-                <a key={g.slug} className="card guide-card" href={guidePath(locale, g.slug)}>
-                  <h3>{guides.articles[g.key].h1}</h3>
-                  <p>{guides.articles[g.key].summary}</p>
-                  <span className="alt-more">{t.guides.cta} <span aria-hidden="true">→</span></span>
-                </a>
-              ))}
-            </div>
-            <a className="card guide-card best-callout" href={bestPath(locale)}>
-              <h3>{t.guides.bestTitle}</h3>
-              <p>{t.guides.bestText}</p>
-              <span className="alt-more">{t.guides.bestCta} <span aria-hidden="true">→</span></span>
-            </a>
-          </section>
-
           {/* Download */}
           <section className="download-row" aria-labelledby="dl-title">
             <div>
@@ -239,43 +214,6 @@ export default async function Home() {
                 <span><strong>{t.download.allTitle}</strong><small>{t.download.allSub}</small></span>
                 <svg className="end" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
               </a>
-            </div>
-          </section>
-
-          {/* Verify download */}
-          <section className="verify" id="verify" aria-labelledby="verify-title">
-            <div className="section-head">
-              <h2 id="verify-title">{t.verify.title}</h2>
-              <p>{t.verify.text}</p>
-            </div>
-            <div className="card verify-card">
-              <p className="verify-label">{t.verify.checksumLabel.replace("{version}", version)}</p>
-              {checksum ? (
-                <code className="verify-hash">{checksum}</code>
-              ) : (
-                <p className="verify-missing">
-                  {t.verify.checksumMissing} <a href={releasePageUrl(version)}>{t.verify.releasePage} <span aria-hidden="true">→</span></a>
-                </p>
-              )}
-            </div>
-            <div className="verify-steps">
-              <div className="card verify-card">
-                <h3><span className="verify-n">1</span>{t.verify.stepHash}</h3>
-                <p>{t.verify.stepHashText}</p>
-                <pre className="verify-cmd"><code>shasum -a 256 ~/Downloads/Unbit.dmg</code></pre>
-              </div>
-              <div className="card verify-card">
-                <h3><span className="verify-n">2</span>{t.verify.stepSign}</h3>
-                <p>{t.verify.stepSignText.replace("{teamId}", TEAM_ID)}</p>
-                <pre className="verify-cmd"><code>{`codesign --verify --deep --strict --verbose=2 /Applications/Unbit.app
-spctl -a -vv /Applications/Unbit.app
-codesign -dv /Applications/Unbit.app 2>&1 | grep TeamIdentifier`}</code></pre>
-              </div>
-              <div className="card verify-card">
-                <h3><span className="verify-n">3</span>{t.verify.stepNotarized}</h3>
-                <p>{t.verify.stepNotarizedText}</p>
-                <pre className="verify-cmd"><code>xcrun stapler validate ~/Downloads/Unbit.dmg</code></pre>
-              </div>
             </div>
           </section>
 
