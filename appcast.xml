@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.10</title>
+      <pubDate>Fri, 02 Oct 2026 12:53:37 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Opdater-knappens ikon drejer ikke længere rundt; knappen giver stadig tryk-feedback, og «Søger…» vises i et kort øjeblik.</li><li>Nye farvetemaer: vælg mellem Standard, Ocean, Forest, Sunset, Berry, Violet og Graphite under tandhjulet. Valget huskes.</li><li>Gemt-kode-markeringer og egne drevnavne vises i flere handlinger.</li></ul>]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.10/Unbit-1.0.10.dmg" type="application/octet-stream" sparkle:edSignature="3p+smONtmxwGY8xUc8ijnvrBV61meFiHD3xMgwsVWOSbHuj//FGACKBhYL9XrM3wGWNjtsZYZZIx+IlfN4u6Cg==" length="5370563" />
+    </item>
+    <item>
       <title>Version 1.0.9</title>
       <pubDate>Fri, 02 Oct 2026 12:21:31 +0000</pubDate>
       <sparkle:version>11</sparkle:version>
