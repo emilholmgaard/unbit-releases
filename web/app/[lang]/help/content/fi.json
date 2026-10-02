@@ -124,6 +124,10 @@
       "title": "BitLocker-tiedot ovat vioittuneet",
       "meaning": "Aseman BitLocker-tiedot ovat vioittuneet tai puutteelliset. Tarkista asema Windows-tietokoneella (esimerkiksi chkdsk- tai repair-bde-työkalulla) ja yritä uudelleen."
     },
+    "suspicious-metadata": {
+      "title": "BitLocker-tiedot vaikuttavat ristiriitaisilta",
+      "meaning": "Aseman BitLocker-tiedot ovat ristiriidassa keskenään, esimerkiksi kopiot eroavat toisistaan tai tarkistussumma ei täsmää. Unbit pysähtyi varmuuden vuoksi eikä muuttanut mitään. Jos et odottanut tätä, älä luota asemaan: tarkista se Windows-tietokoneella (chkdsk tai repair-bde) ja kopioi tiedostosi sieltä."
+    },
     "conversion-in-progress": {
       "title": "Windows salaa tai purkaa vielä aseman salausta",
       "meaning": "Windows salaa tai purkaa aseman salausta parhaillaan. Anna Windowsin valmistua ensin ja yritä sitten uudelleen."

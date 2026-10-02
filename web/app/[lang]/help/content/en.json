@@ -124,6 +124,10 @@
       "title": "The BitLocker information is damaged",
       "meaning": "The BitLocker information on this drive is damaged or incomplete. Check the drive on a Windows PC (for example with chkdsk or repair-bde) and try again."
     },
+    "suspicious-metadata": {
+      "title": "The BitLocker information looks inconsistent",
+      "meaning": "The BitLocker information on this drive contradicts itself, for example the copies disagree or a checksum fails. Unbit stopped to be safe and changed nothing. If you didn’t expect this, don’t trust the drive: check it on a Windows PC (chkdsk or repair-bde) and copy your files from there."
+    },
     "conversion-in-progress": {
       "title": "Windows is still encrypting or decrypting the drive",
       "meaning": "The drive is being encrypted or decrypted by Windows right now. Let Windows finish first, then try again."

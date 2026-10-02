@@ -124,6 +124,10 @@
       "title": "Die BitLocker-Informationen sind beschädigt",
       "meaning": "Die BitLocker-Informationen auf diesem Laufwerk sind beschädigt oder unvollständig. Prüfe das Laufwerk auf einem Windows-PC (z. B. mit chkdsk oder repair-bde) und versuche es erneut."
     },
+    "suspicious-metadata": {
+      "title": "Die BitLocker-Informationen wirken widersprüchlich",
+      "meaning": "Die BitLocker-Informationen auf diesem Laufwerk widersprechen sich, etwa weil Kopien voneinander abweichen oder eine Prüfsumme fehlschlägt. Unbit hat sicherheitshalber angehalten und nichts verändert. Falls Sie das nicht erwartet haben, vertrauen Sie dem Laufwerk nicht: Prüfen Sie es an einem Windows-PC (chkdsk oder repair-bde) und kopieren Sie Ihre Dateien von dort."
+    },
     "conversion-in-progress": {
       "title": "Windows ver- oder entschlüsselt das Laufwerk noch",
       "meaning": "Windows verschlüsselt oder entschlüsselt das Laufwerk gerade. Lass Windows zuerst fertig werden und versuche es dann erneut."

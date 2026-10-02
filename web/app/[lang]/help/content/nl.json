@@ -124,6 +124,10 @@
       "title": "De BitLocker-gegevens zijn beschadigd",
       "meaning": "De BitLocker-gegevens op deze schijf zijn beschadigd of onvolledig. Controleer de schijf op een Windows-pc (bijvoorbeeld met chkdsk of repair-bde) en probeer het opnieuw."
     },
+    "suspicious-metadata": {
+      "title": "De BitLocker-gegevens lijken inconsistent",
+      "meaning": "De BitLocker-gegevens op deze schijf spreken elkaar tegen, bijvoorbeeld doordat kopieën verschillen of een controlesom mislukt. Unbit is voor de veiligheid gestopt en heeft niets gewijzigd. Als je dit niet verwachtte, vertrouw de schijf dan niet: controleer hem op een Windows-pc (chkdsk of repair-bde) en kopieer je bestanden vanaf daar."
+    },
     "conversion-in-progress": {
       "title": "Windows is de schijf nog aan het versleutelen of ontsleutelen",
       "meaning": "Windows is de schijf op dit moment aan het versleutelen of ontsleutelen. Laat Windows eerst klaar worden en probeer het dan opnieuw."

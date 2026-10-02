@@ -21,6 +21,7 @@ export const HELP_REASONS = [
   { slug: "unsupported-version", category: "unsupported" },
   { slug: "unsupported-encryption", category: "unsupported" },
   { slug: "damaged-metadata", category: "damaged" },
+  { slug: "suspicious-metadata", category: "damaged" },
   { slug: "conversion-in-progress", category: "damaged" },
   { slug: "damaged-key", category: "damaged" },
   { slug: "drive-removed", category: "connection" },

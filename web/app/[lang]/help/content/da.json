@@ -124,6 +124,10 @@
       "title": "BitLocker-oplysningerne er beskadigede",
       "meaning": "BitLocker-oplysningerne på drevet er beskadigede eller ufuldstændige. Kontrollér drevet på en Windows-pc (f.eks. med chkdsk eller repair-bde), og prøv igen."
     },
+    "suspicious-metadata": {
+      "title": "BitLocker-oplysningerne ser inkonsistente ud",
+      "meaning": "BitLocker-oplysningerne på drevet modsiger sig selv, f.eks. er kopierne uenige, eller en kontrolsum fejler. Unbit stoppede for en sikkerheds skyld og ændrede intet. Hvis du ikke forventede det, så stol ikke på drevet: tjek det på en Windows-pc (chkdsk eller repair-bde), og kopiér dine filer derfra."
+    },
     "conversion-in-progress": {
       "title": "Windows er stadig i gang med at kryptere eller dekryptere drevet",
       "meaning": "Windows er lige nu i gang med at kryptere eller dekryptere drevet. Lad Windows blive færdig, og prøv så igen."

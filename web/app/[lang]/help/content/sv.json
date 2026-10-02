@@ -124,6 +124,10 @@
       "title": "BitLocker-informationen är skadad",
       "meaning": "BitLocker-informationen på den här enheten är skadad eller ofullständig. Kontrollera enheten på en Windows-dator (till exempel med chkdsk eller repair-bde) och försök igen."
     },
+    "suspicious-metadata": {
+      "title": "BitLocker-informationen verkar inkonsekvent",
+      "meaning": "BitLocker-informationen på enheten motsäger sig själv, till exempel stämmer kopiorna inte överens eller en kontrollsumma misslyckas. Unbit stannade av säkerhetsskäl och ändrade ingenting. Om du inte väntade dig detta, lita inte på enheten: kontrollera den på en Windows-dator (chkdsk eller repair-bde) och kopiera dina filer därifrån."
+    },
     "conversion-in-progress": {
       "title": "Windows krypterar eller avkrypterar fortfarande enheten",
       "meaning": "Windows krypterar eller dekrypterar enheten just nu. Låt Windows bli klart först och försök sedan igen."

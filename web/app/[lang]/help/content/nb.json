@@ -124,6 +124,10 @@
       "title": "BitLocker-informasjonen er skadet",
       "meaning": "BitLocker-informasjonen på denne stasjonen er skadet eller ufullstendig. Kontroller stasjonen på en Windows-PC (for eksempel med chkdsk eller repair-bde), og prøv igjen."
     },
+    "suspicious-metadata": {
+      "title": "BitLocker-informasjonen ser inkonsistent ut",
+      "meaning": "BitLocker-informasjonen på stasjonen motsier seg selv, for eksempel er kopiene uenige eller en sjekksum feiler. Unbit stoppet for sikkerhets skyld og endret ingenting. Hvis du ikke forventet dette, ikke stol på stasjonen: sjekk den på en Windows-PC (chkdsk eller repair-bde) og kopier filene dine derfra."
+    },
     "conversion-in-progress": {
       "title": "Windows krypterer eller dekrypterer fortsatt stasjonen",
       "meaning": "Windows krypterer eller dekrypterer stasjonen akkurat nå. La Windows bli ferdig først, og prøv så igjen."

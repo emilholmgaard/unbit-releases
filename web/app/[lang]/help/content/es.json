@@ -124,6 +124,10 @@
       "title": "La información de BitLocker está dañada",
       "meaning": "La información de BitLocker de esta unidad está dañada o incompleta. Comprueba la unidad en un PC con Windows (por ejemplo, con chkdsk o repair-bde) e inténtalo de nuevo."
     },
+    "suspicious-metadata": {
+      "title": "La información de BitLocker parece incoherente",
+      "meaning": "La información de BitLocker de esta unidad se contradice, por ejemplo porque las copias no coinciden o falla una suma de comprobación. Unbit se detuvo por seguridad y no cambió nada. Si no lo esperabas, no confíes en la unidad: revísala en un PC con Windows (chkdsk o repair-bde) y copia tus archivos desde allí."
+    },
     "conversion-in-progress": {
       "title": "Windows aún está cifrando o descifrando la unidad",
       "meaning": "Windows está cifrando o descifrando la unidad en este momento. Deja que Windows termine y vuelve a intentarlo."

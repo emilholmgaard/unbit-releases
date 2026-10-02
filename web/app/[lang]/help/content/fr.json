@@ -124,6 +124,10 @@
       "title": "Les informations BitLocker sont endommagées",
       "meaning": "Les informations BitLocker de ce disque sont endommagées ou incomplètes. Vérifiez le disque sur un PC Windows (par exemple avec chkdsk ou repair-bde), puis réessayez."
     },
+    "suspicious-metadata": {
+      "title": "Les informations BitLocker semblent incohérentes",
+      "meaning": "Les informations BitLocker de ce disque se contredisent, par exemple les copies diffèrent ou une somme de contrôle échoue. Par précaution, Unbit s’est arrêté sans rien modifier. Si vous ne vous y attendiez pas, ne faites pas confiance au disque : vérifiez-le sur un PC Windows (chkdsk ou repair-bde) et copiez-y vos fichiers."
+    },
     "conversion-in-progress": {
       "title": "Windows est encore en train de chiffrer ou déchiffrer le disque",
       "meaning": "Windows est en train de chiffrer ou de déchiffrer le disque. Laissez d’abord Windows terminer, puis réessayez."

@@ -124,6 +124,10 @@
       "title": "Informacje BitLockera są uszkodzone",
       "meaning": "Informacje BitLocker na tym dysku są uszkodzone lub niekompletne. Sprawdź dysk na komputerze z Windows (na przykład za pomocą chkdsk lub repair-bde) i spróbuj ponownie."
     },
+    "suspicious-metadata": {
+      "title": "Informacje BitLocker wyglądają na niespójne",
+      "meaning": "Informacje BitLocker na tym dysku są ze sobą sprzeczne, na przykład kopie się różnią lub suma kontrolna jest niepoprawna. Unbit zatrzymał się ze względów bezpieczeństwa i nic nie zmienił. Jeśli nie spodziewałeś się tego, nie ufaj dyskowi: sprawdź go na komputerze z Windows (chkdsk lub repair-bde) i skopiuj stamtąd pliki."
+    },
     "conversion-in-progress": {
       "title": "Windows nadal szyfruje lub odszyfrowuje dysk",
       "meaning": "System Windows właśnie szyfruje lub odszyfrowuje ten dysk. Poczekaj, aż Windows skończy, i spróbuj ponownie."
