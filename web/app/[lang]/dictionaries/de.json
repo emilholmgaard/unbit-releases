@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – BitLocker auf dem Mac öffnen | BitLocker-USB-Laufwerke unter macOS lesen",
-    "description": "Öffne BitLocker-verschlüsselte USB-Laufwerke auf deinem Mac. Unbit liest BitLocker-Laufwerke unter macOS mit deinem Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal. Kostenlos.",
+    "title": "Unbit – BitLocker auf dem Mac öffnen | Externe BitLocker-Laufwerke (USB, SSD, HDD) unter macOS lesen",
+    "description": "Öffne BitLocker-verschlüsselte externe Laufwerke (USB-Sticks, SSDs und HDDs) auf deinem Mac mit Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal. Kostenlos. Interne Datenträger werden nicht unterstützt.",
     "ogTitle": "Unbit – BitLocker-Laufwerke auf deinem Mac öffnen",
-    "ogDescription": "Lies BitLocker-verschlüsselte USB-Laufwerke unter macOS mit deinem Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal.",
-    "twitterDescription": "Lies BitLocker-verschlüsselte USB-Laufwerke unter macOS. Nur Lesen, keine Treiber, läuft lokal.",
-    "keywords": ["BitLocker auf dem Mac öffnen", "BitLocker-Reader für Mac", "BitLocker-USB-Laufwerk unter macOS lesen", "BitLocker To Go Mac", "BitLocker-Laufwerk auf dem Mac entsperren", "BitLocker-Wiederherstellungsschlüssel Mac"]
+    "ogDescription": "Lies BitLocker-verschlüsselte externe Laufwerke (USB-Sticks, SSDs und HDDs) unter macOS mit deinem Passwort oder Wiederherstellungsschlüssel. Nur Lesen, keine Treiber, läuft lokal.",
+    "twitterDescription": "Lies BitLocker-verschlüsselte externe Laufwerke (USB, SSD, HDD) unter macOS. Nur Lesen, keine Treiber, läuft lokal.",
+    "keywords": ["BitLocker auf dem Mac öffnen", "BitLocker-Reader für Mac", "BitLocker-USB-Laufwerk unter macOS lesen", "BitLocker To Go Mac", "BitLocker-Laufwerk auf dem Mac entsperren", "BitLocker-Wiederherstellungsschlüssel Mac", "BitLocker externe SSD HDD Mac"]
   },
   "nav": { "label": "Hauptnavigation", "how": "So funktioniert’s", "features": "Funktionen", "privacy": "Datenschutz", "faq": "FAQ", "releases": "Releases", "download": "Herunterladen" },
   "language": { "label": "Sprache" },
@@ -15,7 +15,7 @@
     "badgeLink": "Was ist neu",
     "h1Before": "Das ist",
     "h1After": "Unbit",
-    "sub": "Öffne BitLocker-verschlüsselte USB-Laufwerke auf deinem Mac. Nur Lesen, ohne zusätzliche Treiber. Gib einfach das Passwort oder den Wiederherstellungsschlüssel ein.",
+    "sub": "Öffne BitLocker-verschlüsselte externe Laufwerke – USB-Sticks, SSDs und HDDs – auf deinem Mac. Nur Lesen, ohne zusätzliche Treiber. Gib einfach das Passwort oder den Wiederherstellungsschlüssel ein. Interne Datenträger werden nicht unterstützt.",
     "download": "Für macOS herunterladen",
     "how": "So funktioniert’s",
     "metaVersion": "Version {version} · macOS {minOS} oder neuer",
@@ -76,10 +76,10 @@
     "title": "Häufige Fragen",
     "items": [
       { "q": "Soll ich das Passwort oder den Wiederherstellungsschlüssel verwenden?", "a": "Beides funktioniert. Das Passwort ist das, das du beim Aktivieren von BitLocker für das Laufwerk gewählt hast. Der Wiederherstellungsschlüssel ist der 48-stellige Schlüssel (8 Gruppen à 6 Ziffern), den Windows dich gleichzeitig zu sichern gebeten hat, zum Beispiel in einem Microsoft-Konto, in einer Datei oder als Ausdruck. Wähle in der App einfach das, was du hast." },
-      { "q": "Warum braucht Unbit den Festplattenvollzugriff?", "a": "Um das Laufwerk zu entschlüsseln, muss Unbit die rohen, verschlüsselten Daten direkt vom USB-Gerät lesen. macOS erlaubt das nur Apps mit Festplattenvollzugriff. Unbit nutzt ihn, um das von dir gewählte Laufwerk zu lesen – und sonst nichts." },
+      { "q": "Warum braucht Unbit den Festplattenvollzugriff?", "a": "Um das Laufwerk zu entschlüsseln, muss Unbit die rohen, verschlüsselten Daten direkt vom externen Laufwerk lesen. macOS erlaubt das nur Apps mit Festplattenvollzugriff. Unbit nutzt ihn, um das von dir gewählte Laufwerk zu lesen – und sonst nichts." },
       { "q": "Kann ich auf das Laufwerk schreiben?", "a": "Nein. Unbit ist absichtlich schreibgeschützt und schreibt nie auf das Laufwerk. Du kannst Dateien öffnen und auf deinen Mac kopieren. Um Dateien auf dem Laufwerk zu ändern, verwende Windows." },
       { "q": "Läuft es auf Macs mit Apple Silicon und Intel?", "a": "Ja. Unbit ist eine Universal-App, die nativ auf Apple Silicon und Intel läuft, mit macOS 13 Ventura oder neuer." },
-      { "q": "Welche Laufwerke werden unterstützt?", "a": "Externe Laufwerke und USB-Sticks, die unter Windows 7 oder neuer mit BitLocker oder BitLocker To Go verschlüsselt wurden, mit AES-CBC (mit oder ohne Elephant-Diffuser) oder AES-XTS und 128- oder 256-Bit-Schlüsseln. Nach dem Entsperren liest macOS das Dateisystem auf dem Laufwerk selbst." },
+      { "q": "Welche Laufwerke werden unterstützt?", "a": "Externe Laufwerke – USB-Sticks, externe SSDs und HDDs –, die unter Windows 7 oder neuer mit BitLocker oder BitLocker To Go verschlüsselt wurden, mit AES-CBC (mit oder ohne Elephant-Diffuser) oder AES-XTS und 128- oder 256-Bit-Schlüsseln. Nach dem Entsperren liest macOS das Dateisystem auf dem Laufwerk selbst. Interne Datenträger werden nicht unterstützt." },
       { "q": "Wird mein Passwort irgendwo gespeichert?", "a": "Nur wenn du „Dieses Laufwerk auf diesem Mac merken“ aktivierst. Der Code wird dann nach erfolgreichem Entsperren verschlüsselt in deinem macOS-Schlüsselbund gesichert, und du kannst ihn jederzeit über das Zahnrad-Menü vergessen. Er wird nie irgendwohin gesendet." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "{name}-Alternative für den Mac – kostenloser BitLocker-Reader | Unbit",
-      "metaDescription": "Sie suchen eine {name}-Alternative? Unbit öffnet BitLocker-USB-Laufwerke auf Ihrem Mac kostenlos: schreibgeschützt, ohne Treiber, lokal. Mit fairem Vergleich nebeneinander.",
+      "metaDescription": "Sie suchen eine {name}-Alternative? Unbit öffnet BitLocker-verschlüsselte externe Laufwerke (USB-Sticks, SSDs, HDDs) auf Ihrem Mac kostenlos: schreibgeschützt, ohne Treiber, lokal. Mit fairem Vergleich nebeneinander.",
       "ogTitle": "{name}-Alternative für den Mac – Unbit",
       "h1": "{name}-Alternative für den Mac",
       "sub": "Sie müssen nur ein BitLocker-Laufwerk öffnen? Unbit ist kostenlos, schreibgeschützt, braucht keine Treiber und läuft komplett auf Ihrem Mac.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Kostenpflichtig: Jahresabonnement oder, für die Standard-Edition, Einmalkauf. Eine Windows-Lizenz ist nicht enthalten",
           "write": "Wird von Windows in der virtuellen Maschine erledigt und verhält sich wie auf einem Windows-PC",
-          "drivers": "Kein BitLocker-Treiber unter macOS. Sie verbinden das USB-Laufwerk mit der virtuellen Windows-Maschine, wo es auf dem Mac nicht mehr sichtbar ist",
+          "drivers": "Kein BitLocker-Treiber unter macOS. Sie verbinden das externe Laufwerk (USB) mit der virtuellen Windows-Maschine, wo es auf dem Mac nicht mehr sichtbar ist",
           "silicon": "Ja – macOS Big Sur oder neuer auf Apple Silicon, macOS Catalina oder neuer auf Intel",
           "unlock": "Passwort oder Wiederherstellungsschlüssel, eingegeben in Windows",
           "extras": "Eine vollständige virtuelle Windows-Maschine, die auch Windows-Apps ausführt. Erfordert eine Windows-Installation und -Lizenz sowie Speicherplatz und Arbeitsspeicher für die virtuelle Maschine"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Kann Parallels Desktop BitLocker-Laufwerke auf dem Mac öffnen?",
-            "a": "Ja, indirekt. Sie verbinden das USB-Laufwerk mit einer virtuellen Windows-Maschine und entsperren es mit der BitLocker-Unterstützung von Windows. Das ist ein allgemeiner Virtualisierungs-Workflow und keine dedizierte BitLocker-Funktion."
+            "a": "Ja, indirekt. Sie verbinden das externe Laufwerk (zum Beispiel einen USB-Stick) mit einer virtuellen Windows-Maschine und entsperren es mit der BitLocker-Unterstützung von Windows. Das ist ein allgemeiner Virtualisierungs-Workflow und keine dedizierte BitLocker-Funktion."
           },
           {
             "q": "Brauche ich eine Windows-Lizenz, um Parallels Desktop zu nutzen?",

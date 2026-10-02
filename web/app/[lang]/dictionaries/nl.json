@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – BitLocker openen op Mac | BitLocker-USB-schijven lezen op macOS",
-    "description": "Open met BitLocker versleutelde USB-schijven op je Mac. Unbit leest BitLocker-schijven op macOS met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal. Gratis.",
+    "title": "Unbit – BitLocker openen op Mac | Externe BitLocker-schijven (USB, SSD, HDD) lezen op macOS",
+    "description": "Open met BitLocker versleutelde externe schijven (USB-sticks, SSD’s en HDD’s) op je Mac met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal. Gratis. Interne schijven worden niet ondersteund.",
     "ogTitle": "Unbit – Open BitLocker-schijven op je Mac",
-    "ogDescription": "Lees met BitLocker versleutelde USB-schijven op macOS met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal.",
-    "twitterDescription": "Lees met BitLocker versleutelde USB-schijven op macOS. Alleen-lezen, geen drivers, draait lokaal.",
-    "keywords": ["BitLocker openen op Mac", "BitLocker-lezer voor Mac", "BitLocker-USB-schijf lezen macOS", "BitLocker To Go Mac", "BitLocker-schijf ontgrendelen Mac", "BitLocker-herstelsleutel Mac"]
+    "ogDescription": "Lees met BitLocker versleutelde externe schijven (USB-sticks, SSD’s en HDD’s) op macOS met je wachtwoord of herstelsleutel. Alleen-lezen, geen drivers, draait lokaal.",
+    "twitterDescription": "Lees met BitLocker versleutelde externe schijven (USB, SSD, HDD) op macOS. Alleen-lezen, geen drivers, draait lokaal.",
+    "keywords": ["BitLocker openen op Mac", "BitLocker-lezer voor Mac", "BitLocker-USB-schijf lezen macOS", "BitLocker To Go Mac", "BitLocker-schijf ontgrendelen Mac", "BitLocker-herstelsleutel Mac", "BitLocker externe schijf SSD HDD Mac"]
   },
   "nav": { "label": "Hoofdmenu", "how": "Hoe het werkt", "features": "Functies", "privacy": "Privacy", "faq": "FAQ", "releases": "Releases", "download": "Download" },
   "language": { "label": "Taal" },
@@ -15,7 +15,7 @@
     "badgeLink": "Wat is er nieuw",
     "h1Before": "Maak kennis met",
     "h1After": "Unbit",
-    "sub": "Open met BitLocker versleutelde USB-schijven op je Mac. Alleen-lezen en zonder extra drivers. Voer gewoon het wachtwoord of de herstelsleutel in.",
+    "sub": "Open met BitLocker versleutelde externe schijven – USB-sticks, SSD’s en HDD’s – op je Mac. Alleen-lezen en zonder extra drivers. Voer gewoon het wachtwoord of de herstelsleutel in. Interne schijven worden niet ondersteund.",
     "download": "Download voor macOS",
     "how": "Hoe het werkt",
     "metaVersion": "Versie {version} · macOS {minOS} of nieuwer",
@@ -76,10 +76,10 @@
     "title": "Veelgestelde vragen",
     "items": [
       { "q": "Moet ik het wachtwoord of de herstelsleutel gebruiken?", "a": "Allebei werken. Het wachtwoord is het wachtwoord dat je koos toen BitLocker voor de schijf werd ingeschakeld. De herstelsleutel is de sleutel van 48 cijfers (8 groepen van 6 cijfers) die Windows je vroeg op te slaan, bijvoorbeeld in een Microsoft-account, een bestand of een afdruk. Kies in de app degene die je hebt." },
-      { "q": "Waarom heeft Unbit Volledige schijftoegang nodig?", "a": "Om de schijf te ontsleutelen moet Unbit de ruwe, versleutelde gegevens rechtstreeks van het USB-apparaat lezen. macOS staat dat alleen toe voor apps met Volledige schijftoegang. Unbit gebruikt het om de schijf te lezen die jij kiest, en niets anders." },
+      { "q": "Waarom heeft Unbit Volledige schijftoegang nodig?", "a": "Om de schijf te ontsleutelen moet Unbit de ruwe, versleutelde gegevens rechtstreeks van de externe schijf lezen. macOS staat dat alleen toe voor apps met Volledige schijftoegang. Unbit gebruikt het om de schijf te lezen die jij kiest, en niets anders." },
       { "q": "Kan ik naar de schijf schrijven?", "a": "Nee. Unbit is bewust alleen-lezen en schrijft nooit naar de schijf. Je kunt bestanden openen en naar je Mac kopiëren. Gebruik Windows om bestanden op de schijf te wijzigen." },
       { "q": "Werkt het op Macs met Apple silicon en Intel?", "a": "Ja. Unbit is een universele app die native draait op zowel Apple silicon als Intel met macOS 13 Ventura of nieuwer." },
-      { "q": "Welke schijven worden ondersteund?", "a": "Externe schijven en USB-sticks die onder Windows 7 of nieuwer zijn versleuteld met BitLocker of BitLocker To Go, met AES-CBC (met of zonder Elephant-diffuser) of AES-XTS en sleutels van 128 of 256 bits. Na het ontgrendelen leest macOS zelf het bestandssysteem op de schijf." },
+      { "q": "Welke schijven worden ondersteund?", "a": "Externe schijven – USB-sticks en externe SSD’s en HDD’s – die onder Windows 7 of nieuwer zijn versleuteld met BitLocker of BitLocker To Go, met AES-CBC (met of zonder Elephant-diffuser) of AES-XTS en sleutels van 128 of 256 bits. Na het ontgrendelen leest macOS zelf het bestandssysteem op de schijf. Interne schijven worden niet ondersteund." },
       { "q": "Wordt mijn wachtwoord ergens opgeslagen?", "a": "Alleen als je “Onthoud deze schijf op deze Mac” aanvinkt. De code wordt dan na een geslaagde ontgrendeling versleuteld opgeslagen in je macOS-sleutelhanger en je kunt hem op elk moment vergeten via het tandwielmenu. Hij wordt nooit ergens naartoe gestuurd." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "{name}-alternatief voor Mac – gratis BitLocker-lezer | Unbit",
-      "metaDescription": "Op zoek naar een {name}-alternatief? Unbit opent BitLocker-USB-schijven op je Mac gratis: alleen-lezen, zonder drivers, lokaal. Bekijk een eerlijke vergelijking naast elkaar.",
+      "metaDescription": "Op zoek naar een {name}-alternatief? Unbit opent met BitLocker versleutelde externe schijven (USB-sticks, SSD’s, HDD’s) op je Mac gratis: alleen-lezen, zonder drivers, lokaal. Bekijk een eerlijke vergelijking naast elkaar.",
       "ogTitle": "{name}-alternatief voor Mac – Unbit",
       "h1": "{name}-alternatief voor Mac",
       "sub": "Wil je alleen een BitLocker-schijf openen? Unbit is gratis, alleen-lezen, heeft geen drivers nodig en draait volledig op je Mac.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Betaald: jaarabonnement of, voor de Standard-editie, eenmalige aankoop. Een Windows-licentie is niet inbegrepen",
           "write": "Wordt afgehandeld door Windows in de virtuele machine, dus het gedraagt zich als op een Windows-pc",
-          "drivers": "Geen BitLocker-driver op macOS. Je verbindt de USB-schijf met de virtuele Windows-machine, waar hij niet meer zichtbaar is op de Mac",
+          "drivers": "Geen BitLocker-driver op macOS. Je verbindt de externe schijf (USB) met de virtuele Windows-machine, waar hij niet meer zichtbaar is op de Mac",
           "silicon": "Ja – macOS Big Sur of nieuwer op Apple silicon, macOS Catalina of nieuwer op Intel",
           "unlock": "Wachtwoord of herstelsleutel, ingevoerd in Windows",
           "extras": "Een complete virtuele Windows-machine die ook Windows-apps draait. Vereist een Windows-installatie en -licentie, plus schijfruimte en geheugen voor de virtuele machine"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Kan Parallels Desktop BitLocker-schijven op een Mac openen?",
-            "a": "Ja, indirect. Je verbindt de USB-schijf met een virtuele Windows-machine en ontgrendelt hem met de eigen BitLocker-ondersteuning van Windows. Het is een algemene virtualisatiemethode, geen speciale BitLocker-functie."
+            "a": "Ja, indirect. Je verbindt de externe schijf (bijvoorbeeld een USB-stick) met een virtuele Windows-machine en ontgrendelt hem met de eigen BitLocker-ondersteuning van Windows. Het is een algemene virtualisatiemethode, geen speciale BitLocker-functie."
           },
           {
             "q": "Heb ik een Windows-licentie nodig om Parallels Desktop te gebruiken?",

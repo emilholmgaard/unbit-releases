@@ -2,9 +2,9 @@
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://unbit.app").replace(/\/+$/, "");
 
 export const SITE_NAME = "Unbit";
-export const TITLE = "Unbit – Open BitLocker on Mac | Read BitLocker USB drives on macOS";
+export const TITLE = "Unbit – Open BitLocker on Mac | Read BitLocker external drives (USB, SSD, HDD) on macOS";
 export const DESCRIPTION =
-  "Open BitLocker-encrypted USB drives on your Mac. Unbit reads BitLocker drives on macOS with your password or recovery key. Read-only, no drivers, runs locally. Free.";
+  "Open BitLocker-encrypted external drives (USB sticks, SSDs and HDDs) on your Mac with your password or recovery key. Read-only, no drivers, runs locally. Free. Internal disks aren't supported.";
 
 export const RELEASES_URL = "https://github.com/emilholmgaard/unbit-releases/releases";
 export const DOWNLOAD_URL = `${RELEASES_URL}/latest/download/Unbit.dmg`;

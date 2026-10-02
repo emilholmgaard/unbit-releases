@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – Åbn BitLocker på Mac | Læs BitLocker USB-stik på macOS",
-    "description": "Åbn BitLocker-krypterede USB-stik på din Mac. Unbit læser BitLocker-stik på macOS med din adgangskode eller recovery-key. Kun læsning, ingen drivere, kører lokalt. Gratis.",
-    "ogTitle": "Unbit – Åbn BitLocker-stik på din Mac",
-    "ogDescription": "Læs BitLocker-krypterede USB-stik på macOS med din adgangskode eller recovery-key. Kun læsning, ingen drivere, kører lokalt.",
-    "twitterDescription": "Læs BitLocker-krypterede USB-stik på macOS. Kun læsning, ingen drivere, kører lokalt.",
-    "keywords": ["åbn BitLocker på Mac", "BitLocker-læser til Mac", "læs BitLocker USB-stik macOS", "BitLocker To Go Mac", "lås BitLocker-stik op Mac", "BitLocker recovery-key Mac"]
+    "title": "Unbit – Åbn BitLocker på Mac | Læs BitLocker eksterne drev (USB, SSD, HDD) på macOS",
+    "description": "Åbn BitLocker-krypterede eksterne drev (USB-stik, SSD og HDD) på din Mac med din adgangskode eller recovery-key. Kun læsning, ingen drivere, kører lokalt. Gratis. Interne diske understøttes ikke.",
+    "ogTitle": "Unbit – Åbn BitLocker-drev på din Mac",
+    "ogDescription": "Læs BitLocker-krypterede eksterne drev (USB-stik, SSD og HDD) på macOS med din adgangskode eller recovery-key. Kun læsning, ingen drivere, kører lokalt.",
+    "twitterDescription": "Læs BitLocker-krypterede eksterne drev (USB, SSD, HDD) på macOS. Kun læsning, ingen drivere, kører lokalt.",
+    "keywords": ["åbn BitLocker på Mac", "BitLocker-læser til Mac", "læs BitLocker USB-stik macOS", "BitLocker To Go Mac", "lås BitLocker-drev op Mac", "BitLocker recovery-key Mac", "BitLocker eksternt drev SSD HDD Mac"]
   },
   "nav": { "label": "Hovedmenu", "how": "Sådan virker det", "features": "Funktioner", "privacy": "Privatliv", "faq": "FAQ", "releases": "Udgivelser", "download": "Download" },
   "language": { "label": "Sprog" },
@@ -15,7 +15,7 @@
     "badgeLink": "Hvad er nyt",
     "h1Before": "Mød",
     "h1After": "Unbit",
-    "sub": "Åbn BitLocker-krypterede USB-stik på din Mac. Kun læsning og uden ekstra drivere. Du skal bare indtaste adgangskoden eller recovery-key.",
+    "sub": "Åbn BitLocker-krypterede eksterne drev – USB-stik, SSD og HDD – på din Mac. Kun læsning og uden ekstra drivere. Du skal bare indtaste adgangskoden eller recovery-key. Interne diske understøttes ikke.",
     "download": "Download til macOS",
     "how": "Sådan virker det",
     "metaVersion": "Version {version} · macOS {minOS} eller nyere",
@@ -25,41 +25,41 @@
     "label": "Unbit i menulinjen",
     "menu": ["Arkiv", "Rediger", "Vis", "Gå", "Vindue"],
     "day": "ons.",
-    "unlockAlt": "Unbit-vindue i menulinjen med et registreret SanDisk-stik og et felt til BitLocker-adgangskode",
-    "unlockCaption": "Vælg stikket, og indtast din adgangskode eller recovery-key",
-    "openAlt": "Unbit-vindue i menulinjen, der viser et åbent stik, læseaktivitet og brugt plads",
+    "unlockAlt": "Unbit-vindue i menulinjen med et registreret SanDisk-drev og et felt til BitLocker-adgangskode",
+    "unlockCaption": "Vælg drevet, og indtast din adgangskode eller recovery-key",
+    "openAlt": "Unbit-vindue i menulinjen, der viser et åbent drev, læseaktivitet og brugt plads",
     "openCaption": "Gennemse det i Finder, og skub det derefter sikkert ud"
   },
   "how": {
     "title": "Sådan virker det",
-    "intro": "Tre trin fra et låst stik til dine filer i Finder. Den engangsopsætning tager omkring et minut.",
+    "intro": "Tre trin fra et låst drev til dine filer i Finder. Den engangsopsætning tager omkring et minut.",
     "steps": [
       { "title": "Træk til Programmer", "text": "Åbn DMG-filen, og træk Unbit ind i mappen Programmer. Appen bor i menulinjen, ikke i Dock." },
       { "title": "Giv Fuld diskadgang", "text": "En kort guide viser dig, hvor du slår det til i Systemindstillinger. Det skal du kun gøre én gang." },
-      { "title": "Sæt stikket i, og lås op", "text": "Unbit finder automatisk stikket. Indtast adgangskoden eller recovery-key, og stikket åbner i Finder." }
+      { "title": "Sæt drevet i, og lås op", "text": "Unbit finder automatisk drevet. Indtast adgangskoden eller recovery-key, og drevet åbner i Finder." }
     ]
   },
   "readOnly": {
     "title": "Kun læsning – med vilje",
-    "text": "Unbit tilkobler det oplåste stik til macOS som skrivebeskyttet. Der bliver aldrig skrevet noget tilbage, så dine filer og stikkets BitLocker-opsætning forbliver præcis, som Windows efterlod dem. Kopiér det, du skal bruge, og skub stikket ud.",
+    "text": "Unbit tilkobler det oplåste drev til macOS som skrivebeskyttet. Der bliver aldrig skrevet noget tilbage, så dine filer og drevets BitLocker-opsætning forbliver præcis, som Windows efterlod dem. Kopiér det, du skal bruge, og skub drevet ud.",
     "panel": "Kun læsning"
   },
   "features": {
     "title": "Alt, hvad du har brug for – og ikke mere",
-    "intro": "En lille, fokuseret menulinje-app til ét formål: at komme til filerne på et BitLocker-stik.",
+    "intro": "En lille, fokuseret menulinje-app til ét formål: at komme til filerne på et BitLocker-drev.",
     "items": [
       { "title": "Ingen drivere eller macFUSE", "text": "Ingen kernel-udvidelser og ingen filsystemlag fra tredjepart. Unbit bruger den understøttelse af diskbilleder, der allerede er indbygget i macOS." },
-      { "title": "Dekrypterer efter behov", "text": "Kun de dele, macOS faktisk læser, bliver dekrypteret, mens de læses. Du skal ikke vente på en fuld kopi af stikket." },
-      { "title": "Finder stik automatisk", "text": "Sæt et stik i, og det dukker straks op i Unbit. Tag det ud, og Unbit rydder selv op." },
-      { "title": "Sikker udskubning", "text": "Ét klik lukker stikket og skubber det ud, så du ved, hvornår det er sikkert at tage det ud. Når du afslutter appen, lukkes et åbent stik først." },
-      { "title": "Husker stik, hvis du vil", "text": "Sæt kryds ved “Husk dette stik”, og koden gemmes krypteret i din macOS-nøglering – aldrig andre steder." },
+      { "title": "Dekrypterer efter behov", "text": "Kun de dele, macOS faktisk læser, bliver dekrypteret, mens de læses. Du skal ikke vente på en fuld kopi af drevet." },
+      { "title": "Finder drev automatisk", "text": "Sæt et drev i, og det dukker straks op i Unbit. Tag det ud, og Unbit rydder selv op." },
+      { "title": "Sikker udskubning", "text": "Ét klik lukker drevet og skubber det ud, så du ved, hvornår det er sikkert at tage det ud. Når du afslutter appen, lukkes et åbent drev først." },
+      { "title": "Husker drev, hvis du vil", "text": "Sæt kryds ved “Husk dette drev”, og koden gemmes krypteret i din macOS-nøglering – aldrig andre steder." },
       { "title": "Opdaterer sig selv, notariseret af Apple", "text": "Signeret med Developer ID og notariseret af Apple. Nye versioner kommer via signerede, automatiske opdateringer." }
     ],
     "languagesTitle": "Fås på 11 sprog",
     "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, hollandsk, finsk og polsk."
   },
   "privacy": {
-    "title": "Dit stik forlader aldrig din Mac",
+    "title": "Dit drev forlader aldrig din Mac",
     "text": "Dekrypteringen sker helt og holdent på din Mac. Din adgangskode, recovery-key og dine filer bliver aldrig sendt nogen steder hen. Appen har ingen konti, analyse eller sporing. Det eneste, Unbit henter fra internettet, er den daglige søgning efter opdateringer.",
     "ticks": ["Dekrypterede data bliver på din Mac", "Gemte koder ligger kun i din nøglering", "Ingen konti, analyse eller sporing i appen"],
     "panelLine1": "Bliver på",
@@ -75,15 +75,15 @@
   "faq": {
     "title": "Ofte stillede spørgsmål",
     "items": [
-      { "q": "Skal jeg bruge adgangskoden eller recovery-key?", "a": "Begge dele virker. Adgangskoden er den, du valgte, da BitLocker blev slået til på stikket. Recovery-key er nøglen på 48 cifre (8 grupper á 6 cifre), som Windows bad dig om at gemme på samme tid, for eksempel på en Microsoft-konto, i en fil eller på en udskrift. Vælg den, du har, i appen." },
-      { "q": "Hvorfor skal Unbit have Fuld diskadgang?", "a": "For at dekryptere stikket skal Unbit læse de rå, krypterede data direkte fra USB-enheden. Det tillader macOS kun for apps med Fuld diskadgang. Unbit bruger den til at læse det stik, du vælger, og intet andet." },
-      { "q": "Kan jeg skrive til stikket?", "a": "Nej. Unbit er skrivebeskyttet med vilje og skriver aldrig til stikket. Du kan åbne filer og kopiere dem til din Mac. Brug Windows, hvis du vil ændre filer på stikket." },
+      { "q": "Skal jeg bruge adgangskoden eller recovery-key?", "a": "Begge dele virker. Adgangskoden er den, du valgte, da BitLocker blev slået til på drevet. Recovery-key er nøglen på 48 cifre (8 grupper á 6 cifre), som Windows bad dig om at gemme på samme tid, for eksempel på en Microsoft-konto, i en fil eller på en udskrift. Vælg den, du har, i appen." },
+      { "q": "Hvorfor skal Unbit have Fuld diskadgang?", "a": "For at dekryptere drevet skal Unbit læse de rå, krypterede data direkte fra det eksterne drev. Det tillader macOS kun for apps med Fuld diskadgang. Unbit bruger den til at læse det drev, du vælger, og intet andet." },
+      { "q": "Kan jeg skrive til drevet?", "a": "Nej. Unbit er skrivebeskyttet med vilje og skriver aldrig til drevet. Du kan åbne filer og kopiere dem til din Mac. Brug Windows, hvis du vil ændre filer på drevet." },
       { "q": "Virker det på Mac med både Apple silicon og Intel?", "a": "Ja. Unbit er en universal-app, der kører nativt på både Apple silicon og Intel med macOS 13 Ventura eller nyere." },
-      { "q": "Hvilke stik understøttes?", "a": "Eksterne drev og USB-stik krypteret med BitLocker eller BitLocker To Go på Windows 7 eller nyere med AES-CBC (med eller uden Elephant-diffuser) eller AES-XTS og 128- eller 256-bit nøgler. Når stikket er låst op, læser macOS selv filsystemet på det." },
-      { "q": "Bliver min adgangskode gemt nogen steder?", "a": "Kun hvis du sætter kryds ved “Husk dette stik på denne Mac”. Koden bliver så gemt krypteret i din macOS-nøglering efter en vellykket oplåsning, og du kan glemme den igen når som helst fra tandhjulsmenuen. Den bliver aldrig sendt nogen steder hen." }
+      { "q": "Hvilke drev understøttes?", "a": "Eksterne drev krypteret med BitLocker eller BitLocker To Go på Windows 7 eller nyere – USB-stik, eksterne SSD’er og HDD’er – med AES-CBC (med eller uden Elephant-diffuser) eller AES-XTS og 128- eller 256-bit nøgler. Når drevet er låst op, læser macOS selv filsystemet på det. Interne diske understøttes ikke." },
+      { "q": "Bliver min adgangskode gemt nogen steder?", "a": "Kun hvis du sætter kryds ved “Husk dette drev på denne Mac”. Koden bliver så gemt krypteret i din macOS-nøglering efter en vellykket oplåsning, og du kan glemme den igen når som helst fra tandhjulsmenuen. Den bliver aldrig sendt nogen steder hen." }
     ]
   },
-  "cta": { "title": "Åbn dit BitLocker-stik", "text": "Du behøver ikke en Windows-pc.", "download": "Download til macOS", "whatsNew": "Hvad er nyt" },
+  "cta": { "title": "Åbn dit BitLocker-drev", "text": "Du behøver ikke en Windows-pc.", "download": "Download til macOS", "whatsNew": "Hvad er nyt" },
   "footer": {
     "siteNote": "Dette websted bruger privatlivsvenlig analyse uden cookies.",
     "product": "Produkt",
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "{name}-alternativ til Mac – gratis BitLocker-læser | Unbit",
-      "metaDescription": "Leder du efter et {name}-alternativ? Unbit åbner BitLocker-USB-drev på din Mac gratis: skrivebeskyttet, uden drivere og lokalt. Se en fair sammenligning side om side.",
+      "metaDescription": "Leder du efter et {name}-alternativ? Unbit åbner BitLocker-krypterede eksterne drev (USB-stik, SSD, HDD) på din Mac gratis: skrivebeskyttet, uden drivere og lokalt. Se en fair sammenligning side om side.",
       "ogTitle": "{name}-alternativ til Mac – Unbit",
       "h1": "{name}-alternativ til Mac",
       "sub": "Skal du bare åbne et BitLocker-drev? Unbit er gratis, skrivebeskyttet, kræver ingen drivere og kører helt lokalt på din Mac.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Betalt: årligt abonnement eller engangskøb af Standard-udgaven. Windows-licens er ikke inkluderet",
           "write": "Håndteres af Windows i den virtuelle maskine, så det opfører sig som på en Windows-pc",
-          "drivers": "Ingen BitLocker-driver i macOS. Du forbinder USB-drevet til den virtuelle Windows-maskine, hvor det ikke længere kan ses på Mac'en",
+          "drivers": "Ingen BitLocker-driver i macOS. Du forbinder det eksterne drev (USB) til den virtuelle Windows-maskine, hvor det ikke længere kan ses på Mac'en",
           "silicon": "Ja – macOS Big Sur eller nyere på Apple silicon, macOS Catalina eller nyere på Intel",
           "unlock": "Adgangskode eller gendannelsesnøgle, indtastet i Windows",
           "extras": "En komplet virtuel Windows-maskine, der også kører Windows-programmer. Kræver en Windows-installation og -licens samt diskplads og hukommelse til den virtuelle maskine"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Kan Parallels Desktop åbne BitLocker-drev på en Mac?",
-            "a": "Ja, indirekte. Du forbinder USB-drevet til en virtuel Windows-maskine og låser det op med Windows' egen BitLocker-understøttelse. Det er en generel virtualiseringsmetode og ikke en dedikeret BitLocker-funktion."
+            "a": "Ja, indirekte. Du forbinder det eksterne drev (for eksempel et USB-stik) til en virtuel Windows-maskine og låser det op med Windows' egen BitLocker-understøttelse. Det er en generel virtualiseringsmetode og ikke en dedikeret BitLocker-funktion."
           },
           {
             "q": "Skal jeg have en Windows-licens for at bruge Parallels Desktop?",

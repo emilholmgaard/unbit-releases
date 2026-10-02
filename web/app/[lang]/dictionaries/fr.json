@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – Ouvrir BitLocker sur Mac | Lire les disques USB BitLocker sous macOS",
-    "description": "Ouvrez les disques USB chiffrés avec BitLocker sur votre Mac. Unbit lit les disques BitLocker sous macOS avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local. Gratuit.",
+    "title": "Unbit – Ouvrir BitLocker sur Mac | Lire les disques externes BitLocker (USB, SSD, HDD) sous macOS",
+    "description": "Ouvrez les disques externes chiffrés avec BitLocker (clés USB, SSD et disques durs) sur votre Mac avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local. Gratuit. Les disques internes ne sont pas pris en charge.",
     "ogTitle": "Unbit – Ouvrez les disques BitLocker sur votre Mac",
-    "ogDescription": "Lisez les disques USB chiffrés avec BitLocker sous macOS avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local.",
-    "twitterDescription": "Lisez les disques USB chiffrés avec BitLocker sous macOS. Lecture seule, sans pilote, fonctionne en local.",
-    "keywords": ["ouvrir BitLocker sur Mac", "lecteur BitLocker pour Mac", "lire un disque USB BitLocker macOS", "BitLocker To Go Mac", "déverrouiller un disque BitLocker Mac", "clé de récupération BitLocker Mac"]
+    "ogDescription": "Lisez les disques externes chiffrés avec BitLocker (clés USB, SSD et disques durs) sous macOS avec votre mot de passe ou votre clé de récupération. Lecture seule, sans pilote, fonctionne en local.",
+    "twitterDescription": "Lisez les disques externes chiffrés avec BitLocker (USB, SSD, HDD) sous macOS. Lecture seule, sans pilote, fonctionne en local.",
+    "keywords": ["ouvrir BitLocker sur Mac", "lecteur BitLocker pour Mac", "lire un disque USB BitLocker macOS", "BitLocker To Go Mac", "déverrouiller un disque BitLocker Mac", "clé de récupération BitLocker Mac", "BitLocker disque externe SSD HDD Mac"]
   },
   "nav": { "label": "Principal", "how": "Fonctionnement", "features": "Fonctionnalités", "privacy": "Confidentialité", "faq": "FAQ", "releases": "Versions", "download": "Télécharger" },
   "language": { "label": "Langue" },
@@ -15,7 +15,7 @@
     "badgeLink": "Nouveautés",
     "h1Before": "Découvrez",
     "h1After": "Unbit",
-    "sub": "Ouvrez les disques USB chiffrés avec BitLocker sur votre Mac. Lecture seule, sans pilote supplémentaire. Il suffit de saisir le mot de passe ou la clé de récupération.",
+    "sub": "Ouvrez les disques externes chiffrés avec BitLocker – clés USB, SSD et disques durs – sur votre Mac. Lecture seule, sans pilote supplémentaire. Il suffit de saisir le mot de passe ou la clé de récupération. Les disques internes ne sont pas pris en charge.",
     "download": "Télécharger pour macOS",
     "how": "Fonctionnement",
     "metaVersion": "Version {version} · macOS {minOS} ou ultérieur",
@@ -76,10 +76,10 @@
     "title": "Questions fréquentes",
     "items": [
       { "q": "Dois-je utiliser le mot de passe ou la clé de récupération ?", "a": "Les deux fonctionnent. Le mot de passe est celui choisi lors de l’activation de BitLocker sur le disque. La clé de récupération est la clé de 48 chiffres (8 groupes de 6 chiffres) que Windows vous a demandé d’enregistrer à ce moment-là, par exemple dans un compte Microsoft, un fichier ou une impression. Choisissez dans l’app celle que vous avez." },
-      { "q": "Pourquoi Unbit a-t-il besoin de l’Accès complet au disque ?", "a": "Pour déchiffrer le disque, Unbit doit lire les données brutes chiffrées directement sur le périphérique USB. macOS ne l’autorise qu’aux apps disposant de l’Accès complet au disque. Unbit l’utilise pour lire le disque que vous choisissez, et rien d’autre." },
+      { "q": "Pourquoi Unbit a-t-il besoin de l’Accès complet au disque ?", "a": "Pour déchiffrer le disque, Unbit doit lire les données brutes chiffrées directement sur le disque externe. macOS ne l’autorise qu’aux apps disposant de l’Accès complet au disque. Unbit l’utilise pour lire le disque que vous choisissez, et rien d’autre." },
       { "q": "Puis-je écrire sur le disque ?", "a": "Non. Unbit est en lecture seule par conception et n’écrit jamais sur le disque. Vous pouvez ouvrir des fichiers et les copier sur votre Mac. Pour modifier des fichiers sur le disque, utilisez Windows." },
       { "q": "Fonctionne-t-il sur les Mac Apple silicon et Intel ?", "a": "Oui. Unbit est une app universelle qui s’exécute nativement sur les Mac Apple silicon comme Intel, sous macOS 13 Ventura ou ultérieur." },
-      { "q": "Quels disques sont pris en charge ?", "a": "Les disques externes et clés USB chiffrés avec BitLocker ou BitLocker To Go sous Windows 7 ou ultérieur, avec AES-CBC (avec ou sans diffuseur Elephant) ou AES-XTS, en clés de 128 ou 256 bits. Une fois déverrouillé, macOS lit lui-même le système de fichiers du disque." },
+      { "q": "Quels disques sont pris en charge ?", "a": "Les disques externes – clés USB, SSD et disques durs externes – chiffrés avec BitLocker ou BitLocker To Go sous Windows 7 ou ultérieur, avec AES-CBC (avec ou sans diffuseur Elephant) ou AES-XTS, en clés de 128 ou 256 bits. Une fois déverrouillé, macOS lit lui-même le système de fichiers du disque. Les disques internes ne sont pas pris en charge." },
       { "q": "Mon mot de passe est-il enregistré quelque part ?", "a": "Seulement si vous cochez « Mémoriser ce disque sur ce Mac ». Le code est alors enregistré chiffré dans votre trousseau macOS après un déverrouillage réussi, et vous pouvez l’oublier à tout moment depuis le menu en forme de roue dentée. Il n’est jamais envoyé où que ce soit." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "Alternative à {name} pour Mac – lecteur BitLocker gratuit | Unbit",
-      "metaDescription": "Vous cherchez une alternative à {name} ? Unbit ouvre gratuitement les clés USB BitLocker sur votre Mac : lecture seule, sans pilote, en local. Découvrez un comparatif honnête côte à côte.",
+      "metaDescription": "Vous cherchez une alternative à {name} ? Unbit ouvre gratuitement les disques externes BitLocker (clés USB, SSD, disques durs) sur votre Mac : lecture seule, sans pilote, en local. Découvrez un comparatif honnête côte à côte.",
       "ogTitle": "Alternative à {name} pour Mac – Unbit",
       "h1": "Alternative à {name} pour Mac",
       "sub": "Vous avez seulement besoin d’ouvrir un disque BitLocker ? Unbit est gratuit, en lecture seule, ne nécessite aucun pilote et fonctionne entièrement sur votre Mac.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Payant : abonnement annuel ou, pour l’édition Standard, achat unique. La licence Windows n’est pas incluse",
           "write": "Géré par Windows dans la machine virtuelle, donc comme sur un PC Windows",
-          "drivers": "Aucun pilote BitLocker sous macOS. Vous connectez la clé USB à la machine virtuelle Windows, où elle n’est plus visible sur le Mac",
+          "drivers": "Aucun pilote BitLocker sous macOS. Vous connectez le disque externe (USB) à la machine virtuelle Windows, où il n’est plus visible sur le Mac",
           "silicon": "Oui – macOS Big Sur ou ultérieur sur Apple silicon, macOS Catalina ou ultérieur sur Intel",
           "unlock": "Mot de passe ou clé de récupération, saisi dans Windows",
           "extras": "Une machine virtuelle Windows complète qui exécute aussi des apps Windows. Nécessite une installation et une licence Windows, ainsi que de l’espace disque et de la mémoire pour la machine virtuelle"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Parallels Desktop peut-il ouvrir des disques BitLocker sur un Mac ?",
-            "a": "Oui, indirectement. Vous connectez la clé USB à une machine virtuelle Windows et la déverrouillez avec la prise en charge de BitLocker de Windows. C’est un flux de virtualisation générique, pas une fonction BitLocker dédiée."
+            "a": "Oui, indirectement. Vous connectez le disque externe (par exemple une clé USB) à une machine virtuelle Windows et le déverrouillez avec la prise en charge de BitLocker de Windows. C’est un flux de virtualisation générique, pas une fonction BitLocker dédiée."
           },
           {
             "q": "Ai-je besoin d’une licence Windows pour utiliser Parallels Desktop ?",

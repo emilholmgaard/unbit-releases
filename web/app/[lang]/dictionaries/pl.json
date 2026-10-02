@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – Otwieraj BitLocker na Macu | Odczytuj dyski USB z BitLockerem w macOS",
-    "description": "Otwieraj dyski USB zaszyfrowane BitLockerem na Macu. Unbit odczytuje dyski BitLocker w macOS za pomocą hasła lub klucza odzyskiwania. Tylko do odczytu, bez sterowników, działa lokalnie. Za darmo.",
+    "title": "Unbit – Otwieraj BitLocker na Macu | Odczytuj dyski zewnętrzne z BitLockerem (USB, SSD, HDD) w macOS",
+    "description": "Otwieraj dyski zewnętrzne zaszyfrowane BitLockerem (pendrive’y USB, SSD i HDD) na Macu za pomocą hasła lub klucza odzyskiwania. Tylko do odczytu, bez sterowników, działa lokalnie. Za darmo. Dyski wewnętrzne nie są obsługiwane.",
     "ogTitle": "Unbit – Otwieraj dyski BitLocker na Macu",
-    "ogDescription": "Odczytuj dyski USB zaszyfrowane BitLockerem w macOS za pomocą hasła lub klucza odzyskiwania. Tylko do odczytu, bez sterowników, działa lokalnie.",
-    "twitterDescription": "Odczytuj dyski USB zaszyfrowane BitLockerem w macOS. Tylko do odczytu, bez sterowników, działa lokalnie.",
-    "keywords": ["otwieranie BitLockera na Macu", "czytnik BitLocker dla Maca", "odczyt dysku USB BitLocker macOS", "BitLocker To Go Mac", "odblokowanie dysku BitLocker Mac", "klucz odzyskiwania BitLocker Mac"]
+    "ogDescription": "Odczytuj dyski zewnętrzne zaszyfrowane BitLockerem (pendrive’y USB, SSD i HDD) w macOS za pomocą hasła lub klucza odzyskiwania. Tylko do odczytu, bez sterowników, działa lokalnie.",
+    "twitterDescription": "Odczytuj dyski zewnętrzne zaszyfrowane BitLockerem (USB, SSD, HDD) w macOS. Tylko do odczytu, bez sterowników, działa lokalnie.",
+    "keywords": ["otwieranie BitLockera na Macu", "czytnik BitLocker dla Maca", "odczyt dysku USB BitLocker macOS", "BitLocker To Go Mac", "odblokowanie dysku BitLocker Mac", "klucz odzyskiwania BitLocker Mac", "BitLocker dysk zewnętrzny SSD HDD Mac"]
   },
   "nav": { "label": "Główna", "how": "Jak to działa", "features": "Funkcje", "privacy": "Prywatność", "faq": "FAQ", "releases": "Wydania", "download": "Pobierz" },
   "language": { "label": "Język" },
@@ -15,7 +15,7 @@
     "badgeLink": "Co nowego",
     "h1Before": "Poznaj",
     "h1After": "Unbit",
-    "sub": "Otwieraj dyski USB zaszyfrowane BitLockerem na swoim Macu. Tylko do odczytu, bez dodatkowych sterowników. Wystarczy wpisać hasło lub klucz odzyskiwania.",
+    "sub": "Otwieraj dyski zewnętrzne zaszyfrowane BitLockerem – pendrive’y USB, SSD i HDD – na swoim Macu. Tylko do odczytu, bez dodatkowych sterowników. Wystarczy wpisać hasło lub klucz odzyskiwania. Dyski wewnętrzne nie są obsługiwane.",
     "download": "Pobierz dla macOS",
     "how": "Jak to działa",
     "metaVersion": "Wersja {version} · macOS {minOS} lub nowszy",
@@ -76,10 +76,10 @@
     "title": "Najczęstsze pytania",
     "items": [
       { "q": "Użyć hasła czy klucza odzyskiwania?", "a": "Działa jedno i drugie. Hasło to to, które wybrano po włączeniu BitLockera na dysku. Klucz odzyskiwania to 48-cyfrowy klucz (8 grup po 6 cyfr), który Windows poprosił o zapisanie w tym samym czasie, na przykład na koncie Microsoft, w pliku lub na wydruku. W aplikacji wybierz to, co masz." },
-      { "q": "Dlaczego Unbit potrzebuje Pełnego dostępu do dysku?", "a": "Aby odszyfrować dysk, Unbit musi odczytać surowe, zaszyfrowane dane prosto z urządzenia USB. macOS pozwala na to tylko aplikacjom z Pełnym dostępem do dysku. Unbit używa go do odczytu wybranego przez Ciebie dysku i do niczego więcej." },
+      { "q": "Dlaczego Unbit potrzebuje Pełnego dostępu do dysku?", "a": "Aby odszyfrować dysk, Unbit musi odczytać surowe, zaszyfrowane dane prosto z dysku zewnętrznego. macOS pozwala na to tylko aplikacjom z Pełnym dostępem do dysku. Unbit używa go do odczytu wybranego przez Ciebie dysku i do niczego więcej." },
       { "q": "Czy mogę zapisywać na dysku?", "a": "Nie. Unbit jest z założenia tylko do odczytu i nigdy nie zapisuje na dysku. Możesz otwierać pliki i kopiować je na Maca. Aby zmienić pliki na dysku, użyj Windowsa." },
       { "q": "Czy działa na Macach z Apple silicon i Intel?", "a": "Tak. Unbit to aplikacja uniwersalna, działająca natywnie zarówno na Apple silicon, jak i na Intel, z macOS 13 Ventura lub nowszym." },
-      { "q": "Jakie dyski są obsługiwane?", "a": "Dyski zewnętrzne i pendrive’y zaszyfrowane BitLockerem lub BitLocker To Go w Windows 7 lub nowszym, z AES-CBC (z dyfuzorem Elephant lub bez) albo AES-XTS, z kluczami 128- lub 256-bitowymi. Po odblokowaniu macOS sam odczytuje system plików na dysku." },
+      { "q": "Jakie dyski są obsługiwane?", "a": "Dyski zewnętrzne – pendrive’y USB oraz zewnętrzne dyski SSD i HDD – zaszyfrowane BitLockerem lub BitLocker To Go w Windows 7 lub nowszym, z AES-CBC (z dyfuzorem Elephant lub bez) albo AES-XTS, z kluczami 128- lub 256-bitowymi. Po odblokowaniu macOS sam odczytuje system plików na dysku. Dyski wewnętrzne nie są obsługiwane." },
       { "q": "Czy moje hasło jest gdzieś zapisywane?", "a": "Tylko jeśli zaznaczysz „Zapamiętaj ten dysk na tym Macu”. Kod jest wtedy zapisywany w postaci zaszyfrowanej w pęku kluczy macOS po udanym odblokowaniu, a możesz go w każdej chwili usunąć z menu koła zębatego. Nigdy nie jest nigdzie wysyłany." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "Alternatywa dla {name} na Maca – darmowy czytnik BitLocker | Unbit",
-      "metaDescription": "Szukasz alternatywy dla {name}? Unbit za darmo otwiera pendrive’y z BitLockerem na Macu: tylko do odczytu, bez sterowników, lokalnie. Zobacz uczciwe porównanie obok siebie.",
+      "metaDescription": "Szukasz alternatywy dla {name}? Unbit za darmo otwiera dyski zewnętrzne z BitLockerem (pendrive’y USB, SSD, HDD) na Macu: tylko do odczytu, bez sterowników, lokalnie. Zobacz uczciwe porównanie obok siebie.",
       "ogTitle": "Alternatywa dla {name} na Maca – Unbit",
       "h1": "Alternatywa dla {name} na Maca",
       "sub": "Chcesz tylko otworzyć dysk BitLocker? Unbit jest darmowy, działa tylko do odczytu, nie wymaga sterowników i działa w całości na Twoim Macu.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Płatna: subskrypcja roczna lub, w edycji Standard, zakup jednorazowy. Licencja Windows nie jest w cenie",
           "write": "Obsługiwane przez Windows w maszynie wirtualnej, więc działa jak na komputerze z Windows",
-          "drivers": "Brak sterownika BitLocker w macOS. Pendrive podłączasz do maszyny wirtualnej z Windows, gdzie przestaje być widoczny na Macu",
+          "drivers": "Brak sterownika BitLocker w macOS. Dysk zewnętrzny (USB) podłączasz do maszyny wirtualnej z Windows, gdzie przestaje być widoczny na Macu",
           "silicon": "Tak – macOS Big Sur lub nowszy na Apple silicon, macOS Catalina lub nowszy na Intelu",
           "unlock": "Hasło lub klucz odzyskiwania, wpisywane w Windows",
           "extras": "Pełna maszyna wirtualna z Windows, która uruchamia także aplikacje Windows. Wymaga instalacji i licencji Windows oraz miejsca na dysku i pamięci dla maszyny wirtualnej"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Czy Parallels Desktop może otwierać dyski BitLocker na Macu?",
-            "a": "Tak, pośrednio. Podłączasz pendrive’a do maszyny wirtualnej z Windows i odblokowujesz go natywną obsługą BitLockera w Windows. To ogólny sposób oparty na wirtualizacji, a nie dedykowana funkcja BitLocker."
+            "a": "Tak, pośrednio. Podłączasz dysk zewnętrzny (na przykład pendrive’a USB) do maszyny wirtualnej z Windows i odblokowujesz go natywną obsługą BitLockera w Windows. To ogólny sposób oparty na wirtualizacji, a nie dedykowana funkcja BitLocker."
           },
           {
             "q": "Czy potrzebuję licencji Windows, aby używać Parallels Desktop?",

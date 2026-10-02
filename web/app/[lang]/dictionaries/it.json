@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – Apri BitLocker su Mac | Leggi le unità USB BitLocker su macOS",
-    "description": "Apri le unità USB cifrate con BitLocker sul tuo Mac. Unbit legge le unità BitLocker su macOS con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale. Gratis.",
+    "title": "Unbit – Apri BitLocker su Mac | Leggi le unità esterne BitLocker (USB, SSD, HDD) su macOS",
+    "description": "Apri le unità esterne cifrate con BitLocker (chiavette USB, SSD e HDD) sul tuo Mac con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale. Gratis. I dischi interni non sono supportati.",
     "ogTitle": "Unbit – Apri le unità BitLocker sul tuo Mac",
-    "ogDescription": "Leggi le unità USB cifrate con BitLocker su macOS con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale.",
-    "twitterDescription": "Leggi le unità USB cifrate con BitLocker su macOS. Sola lettura, nessun driver, funziona in locale.",
-    "keywords": ["aprire BitLocker su Mac", "lettore BitLocker per Mac", "leggere unità USB BitLocker macOS", "BitLocker To Go Mac", "sbloccare unità BitLocker Mac", "chiave di ripristino BitLocker Mac"]
+    "ogDescription": "Leggi le unità esterne cifrate con BitLocker (chiavette USB, SSD e HDD) su macOS con la tua password o chiave di ripristino. Sola lettura, nessun driver, funziona in locale.",
+    "twitterDescription": "Leggi le unità esterne cifrate con BitLocker (USB, SSD, HDD) su macOS. Sola lettura, nessun driver, funziona in locale.",
+    "keywords": ["aprire BitLocker su Mac", "lettore BitLocker per Mac", "leggere unità USB BitLocker macOS", "BitLocker To Go Mac", "sbloccare unità BitLocker Mac", "chiave di ripristino BitLocker Mac", "BitLocker unità esterna SSD HDD Mac"]
   },
   "nav": { "label": "Principale", "how": "Come funziona", "features": "Funzioni", "privacy": "Privacy", "faq": "FAQ", "releases": "Versioni", "download": "Scarica" },
   "language": { "label": "Lingua" },
@@ -15,7 +15,7 @@
     "badgeLink": "Novità",
     "h1Before": "Scopri",
     "h1After": "Unbit",
-    "sub": "Apri le unità USB cifrate con BitLocker sul tuo Mac. Sola lettura, senza driver aggiuntivi. Basta inserire la password o la chiave di ripristino.",
+    "sub": "Apri le unità esterne cifrate con BitLocker – chiavette USB, SSD e HDD – sul tuo Mac. Sola lettura, senza driver aggiuntivi. Basta inserire la password o la chiave di ripristino. I dischi interni non sono supportati.",
     "download": "Scarica per macOS",
     "how": "Come funziona",
     "metaVersion": "Versione {version} · macOS {minOS} o successivo",
@@ -76,10 +76,10 @@
     "title": "Domande frequenti",
     "items": [
       { "q": "Devo usare la password o la chiave di ripristino?", "a": "Vanno bene entrambe. La password è quella scelta quando BitLocker è stato attivato sull’unità. La chiave di ripristino è la chiave di 48 cifre (8 gruppi di 6 cifre) che Windows ti ha chiesto di salvare nello stesso momento, ad esempio in un account Microsoft, in un file o su carta. Scegli nell’app quella che hai." },
-      { "q": "Perché Unbit ha bisogno dell’Accesso completo al disco?", "a": "Per decifrare l’unità, Unbit deve leggere i dati grezzi e cifrati direttamente dal dispositivo USB. macOS lo consente solo alle app con Accesso completo al disco. Unbit lo usa per leggere l’unità che scegli e nient’altro." },
+      { "q": "Perché Unbit ha bisogno dell’Accesso completo al disco?", "a": "Per decifrare l’unità, Unbit deve leggere i dati grezzi e cifrati direttamente dall’unità esterna. macOS lo consente solo alle app con Accesso completo al disco. Unbit lo usa per leggere l’unità che scegli e nient’altro." },
       { "q": "Posso scrivere sull’unità?", "a": "No. Unbit è in sola lettura per scelta e non scrive mai sull’unità. Puoi aprire i file e copiarli sul tuo Mac. Per modificare i file sull’unità, usa Windows." },
       { "q": "Funziona sui Mac Apple silicon e Intel?", "a": "Sì. Unbit è un’app universale che funziona in modo nativo sia su Apple silicon sia su Intel con macOS 13 Ventura o successivo." },
-      { "q": "Quali unità sono supportate?", "a": "Unità esterne e chiavette USB cifrate con BitLocker o BitLocker To Go su Windows 7 o successivo, con AES-CBC (con o senza diffusore Elephant) o AES-XTS, con chiavi a 128 o 256 bit. Una volta sbloccata, macOS legge da sé il file system dell’unità." },
+      { "q": "Quali unità sono supportate?", "a": "Unità esterne – chiavette USB, SSD e HDD esterni – cifrate con BitLocker o BitLocker To Go su Windows 7 o successivo, con AES-CBC (con o senza diffusore Elephant) o AES-XTS, con chiavi a 128 o 256 bit. Una volta sbloccata, macOS legge da sé il file system dell’unità. I dischi interni non sono supportati." },
       { "q": "La mia password viene salvata da qualche parte?", "a": "Solo se selezioni “Ricorda questa unità su questo Mac”. Il codice viene allora salvato cifrato nel portachiavi di macOS dopo uno sblocco riuscito e puoi dimenticarlo in qualsiasi momento dal menu a forma di ingranaggio. Non viene mai inviato da nessuna parte." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "Alternativa a {name} per Mac – lettore BitLocker gratuito | Unbit",
-      "metaDescription": "Cerchi un’alternativa a {name}? Unbit apre gratis le unità USB BitLocker sul tuo Mac: sola lettura, nessun driver, in locale. Guarda un confronto corretto fianco a fianco.",
+      "metaDescription": "Cerchi un’alternativa a {name}? Unbit apre gratis le unità esterne BitLocker (chiavette USB, SSD, HDD) sul tuo Mac: sola lettura, nessun driver, in locale. Guarda un confronto corretto fianco a fianco.",
       "ogTitle": "Alternativa a {name} per Mac – Unbit",
       "h1": "Alternativa a {name} per Mac",
       "sub": "Devi solo aprire un’unità BitLocker? Unbit è gratis, in sola lettura, non richiede driver e funziona interamente sul tuo Mac.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "A pagamento: abbonamento annuale oppure, per l’edizione Standard, acquisto una tantum. La licenza di Windows non è inclusa",
           "write": "Gestita da Windows nella macchina virtuale, quindi come su un PC Windows",
-          "drivers": "Nessun driver BitLocker su macOS. Colleghi l’unità USB alla macchina virtuale Windows, dove non è più visibile sul Mac",
+          "drivers": "Nessun driver BitLocker su macOS. Colleghi l’unità esterna (USB) alla macchina virtuale Windows, dove non è più visibile sul Mac",
           "silicon": "Sì – macOS Big Sur o successivo su Apple silicon, macOS Catalina o successivo su Intel",
           "unlock": "Password o chiave di ripristino, inserita in Windows",
           "extras": "Una macchina virtuale Windows completa che esegue anche app Windows. Richiede un’installazione e una licenza di Windows, oltre a spazio su disco e memoria per la macchina virtuale"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Parallels Desktop può aprire unità BitLocker su un Mac?",
-            "a": "Sì, indirettamente. Colleghi l’unità USB a una macchina virtuale Windows e la sblocchi con il supporto BitLocker di Windows. È un flusso di virtualizzazione generico, non una funzione BitLocker dedicata."
+            "a": "Sì, indirettamente. Colleghi l’unità esterna (ad esempio una chiavetta USB) a una macchina virtuale Windows e la sblocchi con il supporto BitLocker di Windows. È un flusso di virtualizzazione generico, non una funzione BitLocker dedicata."
           },
           {
             "q": "Mi serve una licenza di Windows per usare Parallels Desktop?",

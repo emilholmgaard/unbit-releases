@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Unbit – Avaa BitLocker Macilla | Lue BitLocker-USB-asemia macOS:ssa",
-    "description": "Avaa BitLocker-salatut USB-asemat Macillasi. Unbit lukee BitLocker-asemia macOS:ssa salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti. Ilmainen.",
+    "title": "Unbit – Avaa BitLocker Macilla | Lue ulkoisia BitLocker-asemia (USB, SSD, HDD) macOS:ssa",
+    "description": "Avaa BitLocker-salatut ulkoiset asemat (USB-tikut, SSD- ja HDD-levyt) Macillasi salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti. Ilmainen. Sisäisiä levyjä ei tueta.",
     "ogTitle": "Unbit – Avaa BitLocker-asemat Macillasi",
-    "ogDescription": "Lue BitLocker-salattuja USB-asemia macOS:ssa salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti.",
-    "twitterDescription": "Lue BitLocker-salattuja USB-asemia macOS:ssa. Vain luku, ei ajureita, toimii paikallisesti.",
-    "keywords": ["avaa BitLocker Macilla", "BitLocker-lukija Macille", "lue BitLocker USB-asema macOS", "BitLocker To Go Mac", "avaa BitLocker-aseman lukitus Mac", "BitLockerin palautusavain Mac"]
+    "ogDescription": "Lue BitLocker-salattuja ulkoisia asemia (USB-tikkuja, SSD- ja HDD-levyjä) macOS:ssa salasanalla tai palautusavaimella. Vain luku, ei ajureita, toimii paikallisesti.",
+    "twitterDescription": "Lue BitLocker-salattuja ulkoisia asemia (USB, SSD, HDD) macOS:ssa. Vain luku, ei ajureita, toimii paikallisesti.",
+    "keywords": ["avaa BitLocker Macilla", "BitLocker-lukija Macille", "lue BitLocker USB-asema macOS", "BitLocker To Go Mac", "avaa BitLocker-aseman lukitus Mac", "BitLockerin palautusavain Mac", "BitLocker ulkoinen asema SSD HDD Mac"]
   },
   "nav": { "label": "Päävalikko", "how": "Näin se toimii", "features": "Ominaisuudet", "privacy": "Tietosuoja", "faq": "UKK", "releases": "Julkaisut", "download": "Lataa" },
   "language": { "label": "Kieli" },
@@ -15,7 +15,7 @@
     "badgeLink": "Mitä uutta",
     "h1Before": "Tapaa",
     "h1After": "Unbit",
-    "sub": "Avaa BitLocker-salatut USB-asemat Macillasi. Vain luku, ilman ylimääräisiä ajureita. Syötä vain salasana tai palautusavain.",
+    "sub": "Avaa BitLocker-salatut ulkoiset asemat – USB-tikut, SSD- ja HDD-levyt – Macillasi. Vain luku, ilman ylimääräisiä ajureita. Syötä vain salasana tai palautusavain. Sisäisiä levyjä ei tueta.",
     "download": "Lataa macOS:lle",
     "how": "Näin se toimii",
     "metaVersion": "Versio {version} · macOS {minOS} tai uudempi",
@@ -76,10 +76,10 @@
     "title": "Usein kysyttyä",
     "items": [
       { "q": "Pitäisikö käyttää salasanaa vai palautusavainta?", "a": "Kumpi tahansa käy. Salasana on se, jonka valitsit, kun BitLocker otettiin käyttöön asemalla. Palautusavain on 48-numeroinen avain (8 ryhmää, joissa 6 numeroa), jonka Windows pyysi tallentamaan samalla, esimerkiksi Microsoft-tilille, tiedostoon tai tulosteeksi. Valitse apissa se, joka sinulla on." },
-      { "q": "Miksi Unbit tarvitsee täyden levyn käyttöoikeuden?", "a": "Salauksen purkamiseksi Unbitin on luettava raaka, salattu data suoraan USB-laitteelta. macOS sallii sen vain apeille, joilla on täysi levyn käyttöoikeus. Unbit käyttää sitä vain valitsemasi aseman lukemiseen, ei muuhun." },
+      { "q": "Miksi Unbit tarvitsee täyden levyn käyttöoikeuden?", "a": "Salauksen purkamiseksi Unbitin on luettava raaka, salattu data suoraan ulkoiselta asemalta. macOS sallii sen vain apeille, joilla on täysi levyn käyttöoikeus. Unbit käyttää sitä vain valitsemasi aseman lukemiseen, ei muuhun." },
       { "q": "Voinko kirjoittaa asemalle?", "a": "Et. Unbit on tarkoituksella vain luku -tilassa eikä koskaan kirjoita asemalle. Voit avata tiedostoja ja kopioida ne Macillesi. Jos haluat muokata aseman tiedostoja, käytä Windowsia." },
       { "q": "Toimiiko se Apple silicon- ja Intel-Macilla?", "a": "Kyllä. Unbit on universaali appi, joka toimii natiivisti sekä Apple siliconilla että Intelillä, kun käytössä on macOS 13 Ventura tai uudempi." },
-      { "q": "Mitä asemia tuetaan?", "a": "Ulkoiset asemat ja USB-tikut, jotka on salattu BitLockerilla tai BitLocker To Gollla Windows 7:ssä tai uudemmassa käyttäen AES-CBC:tä (Elephant-diffuserilla tai ilman) tai AES-XTS:ää 128- tai 256-bittisillä avaimilla. Kun lukitus on avattu, macOS lukee aseman tiedostojärjestelmän itse." },
+      { "q": "Mitä asemia tuetaan?", "a": "Ulkoiset asemat – USB-tikut, ulkoiset SSD- ja HDD-levyt – jotka on salattu BitLockerilla tai BitLocker To Gollla Windows 7:ssä tai uudemmassa käyttäen AES-CBC:tä (Elephant-diffuserilla tai ilman) tai AES-XTS:ää 128- tai 256-bittisillä avaimilla. Kun lukitus on avattu, macOS lukee aseman tiedostojärjestelmän itse. Sisäisiä levyjä ei tueta." },
       { "q": "Tallennetaanko salasanani minnekään?", "a": "Vain jos valitset “Muista tämä asema tässä Macissa”. Koodi tallennetaan silloin salattuna macOS:n avainnippuun onnistuneen avauksen jälkeen, ja voit unohtaa sen milloin tahansa ratasvalikosta. Sitä ei koskaan lähetetä minnekään." }
     ]
   },
@@ -105,7 +105,7 @@
     },
     "page": {
       "metaTitle": "{name}-vaihtoehto Macille – ilmainen BitLocker-lukija | Unbit",
-      "metaDescription": "Etsitkö {name}-vaihtoehtoa? Unbit avaa BitLocker-USB-levyt Macillasi ilmaiseksi: vain luku, ei ajureita, paikallisesti. Katso reilu vertailu rinnakkain.",
+      "metaDescription": "Etsitkö {name}-vaihtoehtoa? Unbit avaa BitLocker-salatut ulkoiset asemat (USB-tikut, SSD, HDD) Macillasi ilmaiseksi: vain luku, ei ajureita, paikallisesti. Katso reilu vertailu rinnakkain.",
       "ogTitle": "{name}-vaihtoehto Macille – Unbit",
       "h1": "{name}-vaihtoehto Macille",
       "sub": "Tarvitsetko vain BitLocker-levyn avaamiseen? Unbit on ilmainen, vain luku, ei tarvitse ajureita ja toimii kokonaan Macillasi.",
@@ -308,7 +308,7 @@
         "cells": {
           "price": "Maksullinen: vuositilaus tai Standard-versiossa kertaosto. Windows-lisenssi ei sisälly hintaan",
           "write": "Windows hoitaa virtuaalikoneessa, joten toiminta on kuin Windows-koneella",
-          "drivers": "Ei BitLocker-ajuria macOS:ssä. Liität USB-levyn Windows-virtuaalikoneeseen, jolloin se ei enää näy Macissa",
+          "drivers": "Ei BitLocker-ajuria macOS:ssä. Liität ulkoisen aseman (USB) Windows-virtuaalikoneeseen, jolloin se ei enää näy Macissa",
           "silicon": "Kyllä – macOS Big Sur tai uudempi Apple siliconilla, macOS Catalina tai uudempi Intelillä",
           "unlock": "Salasana tai palautusavain, syötetään Windowsissa",
           "extras": "Täysi Windows-virtuaalikone, joka ajaa myös Windows-sovelluksia. Vaatii Windows-asennuksen ja -lisenssin sekä levytilaa ja muistia virtuaalikoneelle"
@@ -326,7 +326,7 @@
         "faq": [
           {
             "q": "Voiko Parallels Desktop avata BitLocker-levyjä Macilla?",
-            "a": "Kyllä, välillisesti. Liität USB-levyn Windows-virtuaalikoneeseen ja avaat sen Windowsin omalla BitLocker-tuella. Se on yleinen virtualisointitapa, ei erillinen BitLocker-ominaisuus."
+            "a": "Kyllä, välillisesti. Liität ulkoisen aseman (esimerkiksi USB-tikun) Windows-virtuaalikoneeseen ja avaat sen Windowsin omalla BitLocker-tuella. Se on yleinen virtualisointitapa, ei erillinen BitLocker-ominaisuus."
           },
           {
             "q": "Tarvitsenko Windows-lisenssin Parallels Desktopin käyttöön?",

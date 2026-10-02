@@ -1,17 +1,18 @@
 {
   "meta": {
-    "title": "Unbit – Open BitLocker on Mac | Read BitLocker USB drives on macOS",
-    "description": "Open BitLocker-encrypted USB drives on your Mac. Unbit reads BitLocker drives on macOS with your password or recovery key. Read-only, no drivers, runs locally. Free.",
+    "title": "Unbit – Open BitLocker on Mac | Read BitLocker external drives (USB, SSD, HDD) on macOS",
+    "description": "Open BitLocker-encrypted external drives (USB sticks, SSDs and HDDs) on your Mac with your password or recovery key. Read-only, no drivers, runs locally. Free. Internal disks aren't supported.",
     "ogTitle": "Unbit – Open BitLocker drives on your Mac",
-    "ogDescription": "Read BitLocker-encrypted USB drives on macOS with your password or recovery key. Read-only, no drivers, runs locally.",
-    "twitterDescription": "Read BitLocker-encrypted USB drives on macOS. Read-only, no drivers, runs locally.",
+    "ogDescription": "Read BitLocker-encrypted external drives (USB sticks, SSDs and HDDs) on macOS with your password or recovery key. Read-only, no drivers, runs locally.",
+    "twitterDescription": "Read BitLocker-encrypted external drives (USB, SSD, HDD) on macOS. Read-only, no drivers, runs locally.",
     "keywords": [
       "open BitLocker on Mac",
       "BitLocker reader for Mac",
       "read BitLocker USB drive macOS",
       "BitLocker To Go Mac",
       "unlock BitLocker drive Mac",
-      "BitLocker recovery key Mac"
+      "BitLocker recovery key Mac",
+      "BitLocker external SSD HDD Mac"
     ]
   },
   "nav": {
@@ -30,7 +31,7 @@
     "badgeLink": "What's new",
     "h1Before": "Meet",
     "h1After": "Unbit",
-    "sub": "Open BitLocker-encrypted USB drives on your Mac. Read-only, with no extra drivers. Just enter the password or recovery key.",
+    "sub": "Open BitLocker-encrypted external drives – USB sticks, SSDs and HDDs – on your Mac. Read-only, with no extra drivers. Just enter the password or recovery key. Internal disks aren't supported.",
     "download": "Download for macOS",
     "how": "How it works",
     "metaVersion": "Version {version} · macOS {minOS} or later",
@@ -95,10 +96,10 @@
     "title": "FAQs",
     "items": [
       { "q": "Should I use the password or the recovery key?", "a": "Either one works. The password is the one chosen when BitLocker was turned on for the drive. The recovery key is the 48-digit key (8 groups of 6 digits) that Windows asked you to save at the same time, for example to a Microsoft account, a file or a printout. Pick whichever you have in the app." },
-      { "q": "Why does Unbit need Full Disk Access?", "a": "To decrypt the drive, Unbit has to read the raw, encrypted data straight from the USB device. macOS only allows that for apps with Full Disk Access. Unbit uses it to read the drive you choose and nothing else." },
+      { "q": "Why does Unbit need Full Disk Access?", "a": "To decrypt the drive, Unbit has to read the raw, encrypted data straight from the external drive. macOS only allows that for apps with Full Disk Access. Unbit uses it to read the drive you choose and nothing else." },
       { "q": "Can I write to the drive?", "a": "No. Unbit is read-only by design and never writes to the drive. You can open files and copy them to your Mac. To change files on the drive, use Windows." },
       { "q": "Does it work on Apple silicon and Intel Macs?", "a": "Yes. Unbit is a universal app that runs natively on both Apple silicon and Intel Macs with macOS 13 Ventura or later." },
-      { "q": "Which drives are supported?", "a": "External drives and USB sticks encrypted with BitLocker or BitLocker To Go on Windows 7 or later, using AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys. Once unlocked, macOS reads the file system on the drive itself." },
+      { "q": "Which drives are supported?", "a": "External drives encrypted with BitLocker or BitLocker To Go on Windows 7 or later – USB sticks, external SSDs and HDDs – using AES-CBC (with or without the Elephant diffuser) or AES-XTS, with 128- or 256-bit keys. Once unlocked, macOS reads the file system on the drive itself. Internal disks aren't supported." },
       { "q": "Is my password stored anywhere?", "a": "Only if you tick \"Remember this drive on this Mac\". The code is then saved encrypted in your macOS keychain after a successful unlock, and you can forget it at any time from the gear menu. It's never sent anywhere." }
     ]
   },
@@ -129,7 +130,7 @@
     },
     "page": {
       "metaTitle": "{name} alternative for Mac – free BitLocker reader | Unbit",
-      "metaDescription": "Looking for a {name} alternative? Unbit opens BitLocker USB drives on your Mac for free: read-only, no drivers, runs locally. See a fair side-by-side comparison.",
+      "metaDescription": "Looking for a {name} alternative? Unbit opens BitLocker external drives (USB sticks, SSDs, HDDs) on your Mac for free: read-only, no drivers, runs locally. See a fair side-by-side comparison.",
       "ogTitle": "{name} alternative for Mac – Unbit",
       "h1": "{name} alternative for Mac",
       "sub": "Only need to open a BitLocker drive? Unbit is free, read-only, needs no drivers and runs entirely on your Mac.",
@@ -332,7 +333,7 @@
         "cells": {
           "price": "Paid: annual subscription, or a one-time purchase for the Standard edition. A Windows licence is not included",
           "write": "Handled by Windows inside the virtual machine, so it behaves like on a Windows PC",
-          "drivers": "No BitLocker driver on macOS. You connect the USB drive to the Windows virtual machine, where it is no longer visible on the Mac",
+          "drivers": "No BitLocker driver on macOS. You connect the external drive (USB) to the Windows virtual machine, where it is no longer visible on the Mac",
           "silicon": "Yes – macOS Big Sur or later on Apple silicon, macOS Catalina or later on Intel",
           "unlock": "Password or recovery key, entered in Windows",
           "extras": "A full Windows virtual machine that also runs Windows apps. Needs a Windows installation and licence, plus disk space and memory for the virtual machine"
@@ -350,7 +351,7 @@
         "faq": [
           {
             "q": "Can Parallels Desktop open BitLocker drives on a Mac?",
-            "a": "Yes, indirectly. You connect the USB drive to a Windows virtual machine and unlock it with Windows' own BitLocker support. It is a general virtualization workflow rather than a dedicated BitLocker feature."
+            "a": "Yes, indirectly. You connect the external drive (for example a USB stick) to a Windows virtual machine and unlock it with Windows' own BitLocker support. It is a general virtualization workflow rather than a dedicated BitLocker feature."
           },
           {
             "q": "Do I need a Windows licence to use Parallels Desktop?",
