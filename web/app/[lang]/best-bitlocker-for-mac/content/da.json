@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Bedste BitLocker til Mac (2026): ærlig sammenligning af 6 løsninger",
+    "description": "Hvilken BitLocker-løsning til Mac passer til dig? Unbit, iBoysoft, Hasleo, UUByte, anylinuxfs og en Windows-VM sammenlignet på pris, skriveadgang, Apple silicon og opsætning. Opdateret oktober 2026.",
+    "ogTitle": "Bedste BitLocker til Mac (2026) – ærlig sammenligning"
+  },
+  "ui": {
+    "updated": "Senest opdateret {date}",
+    "breadcrumb": "Brødkrumme"
+  },
+  "h1": "Bedste BitLocker til Mac i 2026",
+  "lead": "macOS kan ikke åbne BitLocker-krypterede drev på egen hånd, så du skal bruge et værktøj. Der er flere, og det bedste afhænger af ét spørgsmål: Skal du bare læse dine filer, eller også skrive til drevet? Her sammenligner vi seks måder at gøre det på og skriver afvejningerne tydeligt ud.",
+  "disclosure": "Oplysning: Vi har lavet Unbit, som er en af løsningerne nedenfor. Vi har forsøgt at være fair. Unbit er skrivebeskyttet ved design, så til nogle opgaver er en anden løsning det bedre valg, og det siger vi. Oplysninger om andre produkter kommer fra leverandørernes egne sider (der er link på hver sammenligningsside) og kan ændre sig.",
+  "quick": {
+    "title": "Det korte svar",
+    "items": [
+      "**Du skal bare læse dine filer og kopiere dem fra drevet:** [Unbit](home) – gratis, skrivebeskyttet, ingen drivere.",
+      "**Du skal skrive til BitLocker-drev fra din Mac:** en betalt app som iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere eller UUByte BitLocker Geeker – eller brug Windows.",
+      "**Du er fortrolig med Terminal på en Mac med Apple silicon:** anylinuxfs – gratis, open source, læse og skrive.",
+      "**Du kører allerede Windows i en virtuel maskine:** brug Windows’ eget BitLocker dér, fx i Parallels Desktop."
+    ]
+  },
+  "how": {
+    "title": "Sådan har vi valgt",
+    "intro": [
+      "Vi har set på de måder, folk faktisk åbner BitLocker-drev på en Mac, og beholdt dem, der har en leverandørside eller et repository, vi kunne tjekke. Vi har sammenlignet dem på det, der betyder noget, når drevet ligger foran dig:"
+    ],
+    "criteria": [
+      "**Løser det opgaven?** Åbne et krypteret eksternt drev på macOS med en adgangskode eller en recovery-key.",
+      "**Skrivebeskyttet eller læse og skrive.** Skriveadgang er nyttig, men betyder også, at værktøjet kan ændre dit drev.",
+      "**Prismodel.** Gratis, abonnement eller engangslicens.",
+      "**Apple silicon.** Om det understøtter Mac med M-chips og ikke kun Intel.",
+      "**Opsætning og systemadgang.** Om det kræver system- eller kernel extensions, sænket startsikkerhed, Terminal eller en virtuel maskine.",
+      "**Privatliv og dokumentation.** Hvor dekrypteringen sker, og hvor godt leverandøren forklarer opsætningen."
+    ],
+    "outro": [
+      "Vi har ikke målt hastighed, og vi laver ikke en nummereret rangliste, fordi det rigtige valg afhænger af din opgave. Der findes andre værktøjer; at et værktøj mangler, er ikke en dom over det. Opdager du en fejl, så tjek leverandørens side og fortæl os det."
+    ]
+  },
+  "table": {
+    "title": "Sammenligningstabel",
+    "columns": {
+      "tool": "Værktøj",
+      "price": "Prismodel",
+      "write": "Læse / skrive",
+      "silicon": "Apple silicon",
+      "setup": "Opsætning og systemadgang",
+      "unlock": "Lås op med"
+    },
+    "rows": {
+      "unbit": {
+        "type": "Mac-app i menulinjen",
+        "price": "Gratis",
+        "write": "Skrivebeskyttet ved design",
+        "silicon": "Ja – Apple silicon og Intel",
+        "setup": "Ingen kernel extension eller macFUSE. Kræver Fuld diskadgang og en engangsgodkendelse af en læsehjælper",
+        "unlock": "Adgangskode eller 48-cifret recovery-key"
+      },
+      "iboysoft": {
+        "type": "Mac-app",
+        "price": "Betalt – abonnement eller engangslicens; tjek aktuel pris. Prøveversionen kan kun gennemse og få vist filer",
+        "write": "Læse og skrive",
+        "silicon": "Ja – M-chips og Intel",
+        "setup": "Finder-tilstand kræver en systemudvidelse (Reduceret sikkerhed på Apple silicon). En File Manager-tilstand virker uden",
+        "unlock": "Adgangskode eller recovery-key"
+      },
+      "hasleo": {
+        "type": "Mac-app",
+        "price": "Betalt – engangslicens; tjek aktuel pris",
+        "write": "Læse og skrive eller kun læse – du vælger",
+        "silicon": "Ja – Intel og Apple silicon",
+        "setup": "På Apple silicon beskriver leverandøren Reduceret sikkerhed og tilladelse af kernel extensions. Kræver Fuld diskadgang",
+        "unlock": "Adgangskode eller recovery-key"
+      },
+      "uubyte": {
+        "type": "Mac-app",
+        "price": "Betalt – 1-årsplan eller livstidslicens; tjek aktuel pris",
+        "write": "Læse; skriveadgang kan slås til efter oplåsning",
+        "silicon": "Ja – leverandøren har en guide til Apple silicon",
+        "setup": "Leverandørens guide til Apple silicon omfatter Fuld diskadgang, kernel extensions, opdatering af en systemudvidelse og en genstart",
+        "unlock": "Adgangskode eller recovery-key"
+      },
+      "anylinuxfs": {
+        "type": "Terminal-værktøj, open source",
+        "price": "Gratis",
+        "write": "Læse og skrive som standard; skrivebeskyttet kan vælges",
+        "silicon": "Kun Apple silicon",
+        "setup": "Ingen kernel extension. Kører en let virtuel maskine og deler drevet via NFS. Installeres med Homebrew",
+        "unlock": "Adgangskode eller recovery-key brugt som adgangssætning"
+      },
+      "parallels": {
+        "type": "Windows i en virtuel maskine",
+        "price": "Betalt – abonnement eller engangskøb (Standard). Windows-licens medfølger ikke",
+        "write": "Det, Windows tillader, altså læse og skrive",
+        "silicon": "Ja",
+        "setup": "Ingen BitLocker-driver på macOS. USB-drevet forbindes til den virtuelle maskine og er så ikke synligt på Macen",
+        "unlock": "Adgangskode eller recovery-key, indtastet i Windows"
+      }
+    },
+    "note": "Baseret på leverandørsider tjekket den 1. oktober 2026. Priser, funktioner og systemkrav ændrer sig, så tjek hos leverandøren, før du køber. De kildebelagte detaljer for hvert produkt står på dets sammenligningsside."
+  },
+  "products": {
+    "title": "Løsningerne i detaljer",
+    "bestFor": "Bedst til:",
+    "pros": "Fordele",
+    "cons": "Afvejninger",
+    "compare": "Sammenlign {name} med Unbit",
+    "items": {
+      "unbit": {
+        "bestFor": "at læse filer fra et BitLocker-drev og kopiere dem til din Mac.",
+        "text": "Unbit er en gratis app i menulinjen. Den finder det eksterne drev, spørger efter adgangskoden eller recovery-key og monterer drevet i Finder skrivebeskyttet. Alt dekrypteres på din Mac, og appen bruger hverken kernel extension eller macFUSE. Fordi den aldrig skriver, kan den heller ikke beskadige eller ændre drevet.",
+        "pros": [
+          "Gratis uden licensnøgle eller begrænsninger i en prøveperiode",
+          "Ingen kernel extension, macFUSE eller sænket startsikkerhed",
+          "Universel app til Apple silicon og Intel",
+          "Åbner med adgangskode eller den 48-cifrede recovery-key",
+          "Kører lokalt, uden konti eller sporing"
+        ],
+        "cons": [
+          "Skrivebeskyttet ved design: Du kan ikke gemme, slette eller tilføje filer på drevet",
+          "Kan ikke kryptere drev eller ændre BitLocker-indstillinger",
+          "Kun eksterne drev, ikke interne diske",
+          "Kræver macOS {minOS} eller nyere"
+        ]
+      },
+      "iboysoft": {
+        "bestFor": "dem, der vil skrive til BitLocker-drev fra Macen eller kryptere drev på macOS.",
+        "text": "iBoysoft BitLocker for Mac er en kommerciel app med læse- og skriveadgang. Den har to tilstande: en File Manager-tilstand og en Volume Mounter-tilstand, der monterer drevet i Finder. Den kan også kryptere drev med BitLocker.",
+        "pros": [
+          "Læse- og skriveadgang",
+          "Kan også kryptere drev med BitLocker",
+          "En File Manager-tilstand, der virker uden systemudvidelse",
+          "Understøtter Mac med M-chips og Intel"
+        ],
+        "cons": [
+          "Betalt; prøveversionen kan kun gennemse og få vist filer",
+          "Finder-tilstand kræver en systemudvidelse, og på Apple silicon beskriver leverandøren Reduceret sikkerhed",
+          "Aktivering kræver internetadgang ifølge leverandøren"
+        ]
+      },
+      "hasleo": {
+        "bestFor": "dem, der vil have ét betalt værktøj til at montere, kryptere og dekryptere BitLocker-drev.",
+        "text": "Hasleo BitLocker Anywhere for Mac monterer BitLocker-drev med læse og skrive eller kun læse og kan også kryptere og dekryptere dem. Leverandøren opførte det på skrivende tidspunkt til en lavere pris end de andre betalte apps; tjek aktuel pris.",
+        "pros": [
+          "Montering med læse og skrive eller kun læse",
+          "Kan kryptere og dekryptere drev og ændre adgangskoden",
+          "Opgiver understøttelse af Intel og Apple silicon"
+        ],
+        "cons": [
+          "Betalt",
+          "På Apple silicon omfatter opsætningen Reduceret sikkerhed og kernel extensions ifølge leverandørens forum",
+          "Vi kunne ikke bekræfte begrænsningerne i den gratis prøveversion"
+        ]
+      },
+      "uubyte": {
+        "bestFor": "dem, der mest læser, men gerne vil have mulighed for at skrive efter oplåsning.",
+        "text": "UUByte BitLocker Geeker er en betalt app. Efter oplåsning kan du se og kopiere filer, og skriveadgang slås til med en knap, der hedder Enable Write, ifølge leverandøren.",
+        "pros": [
+          "Valgfri skriveadgang",
+          "Automatisk oplåsning via nøgleringen",
+          "Leverandøren dokumenterer trinene for Mac med M-chips"
+        ],
+        "cons": [
+          "Betalt",
+          "Trinene til Apple silicon omfatter kernel extensions og en genstart",
+          "Ikke skrivebeskyttet, medmindre du lader skriveadgang være slået fra"
+        ]
+      },
+      "anylinuxfs": {
+        "bestFor": "dem, der er fortrolige med Terminal og vil have en gratis løsning med læse- og skriveadgang.",
+        "text": "anylinuxfs er et gratis open source-kommandolinjeværktøj, der monterer filsystemer, Linux understøtter, herunder BitLocker-drev, på Mac med Apple silicon. Det kører en let virtuel maskine og deler drevet med din Mac via NFS.",
+        "pros": [
+          "Gratis og open source",
+          "Læse og skrive, med mulighed for at vælge skrivebeskyttet montering",
+          "Ingen kernel extension og ingen sænket systemsikkerhed",
+          "Håndterer også ext4, btrfs, LUKS og mere"
+        ],
+        "cons": [
+          "Kommandolinje og Homebrew; ikke en app, man bare klikker rundt i",
+          "Kun Apple silicon",
+          "Drevet vises som et netværksdrev, og projektet nævner kendte begrænsninger"
+        ]
+      },
+      "parallels": {
+        "bestFor": "dem, der allerede kører Windows på deres Mac.",
+        "text": "Parallels Desktop er en virtualiseringsapp, ikke et BitLocker-værktøj. Du forbinder det eksterne drev til en virtuel Windows-maskine og låser det op med Windows’ egen BitLocker-understøttelse. Det virker, men det er den største opsætning af de seks.",
+        "pros": [
+          "Fuld Windows-adfærd for drevet, også skrivning",
+          "Kører også Windows-programmer",
+          "Ingen BitLocker-driver nødvendig på macOS"
+        ],
+        "cons": [
+          "Kræver en Windows-installation og -licens samt diskplads og hukommelse",
+          "Betalt",
+          "Mens drevet er koblet til den virtuelle maskine, er det ikke synligt på Macen"
+        ]
+      }
+    }
+  },
+  "pick": {
+    "title": "Hvilken skal du vælge?",
+    "paragraphs": [
+      "Skal du bare bruge filerne – et USB-stik fra en kollega, et gammelt backupdrev, en disk fra en Windows-pc – så start med det enkleste værktøj, der kan det. [Unbit](home) er gratis, installeres som enhver anden Mac-app og lader drevet være urørt. Begrænsningen er hele pointen: Den kan ikke skrive, så der er intet at fortryde.",
+      "Skal du skrive til drevet, så vælg en løsning med læse- og skriveadgang: en af de betalte Mac-apps, anylinuxfs, hvis du kan lide Terminal, eller Windows i en virtuel maskine. Sammenlign pris, opsætning og understøttelse af Apple silicon på hvert produkts [sammenligningsside](alternatives), og tjek aktuel pris, før du køber.",
+      "Uanset hvad du vælger, så opbevar adgangskoden eller den 48-cifrede recovery-key sikkert – uden en af dem kan ingen åbne drevet. Er du ny? Start med [Sådan åbner du et BitLocker-drev på en Mac](open), eller læs [BitLocker-recovery-key på Mac](recovery), hvis du har mistet adgangskoden."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Hvad er den bedste BitLocker til Mac?",
+      "a": "Det afhænger af opgaven. Til at læse filer og kopiere dem til din Mac er et gratis, skrivebeskyttet værktøj som [Unbit](home) nok. Skal du skrive til drevet, så se på de betalte apps med læse- og skriveadgang, anylinuxfs eller Windows i en virtuel maskine."
+    },
+    {
+      "q": "Findes der en gratis BitLocker til Mac?",
+      "a": "Ja. Unbit er gratis og skrivebeskyttet, og anylinuxfs er gratis, open source og kan både læse og skrive, men køres fra Terminal på Mac med Apple silicon. De andre apps i sammenligningen er betalte."
+    },
+    {
+      "q": "Understøtter macOS BitLocker indbygget?",
+      "a": "Nej. macOS har ingen indbygget BitLocker-understøttelse. Apples egen kryptering hedder FileVault og er en anden teknologi."
+    },
+    {
+      "q": "Kan jeg skrive til et BitLocker-drev på en Mac?",
+      "a": "Ja med nogle værktøjer – de betalte apps, anylinuxfs eller Windows i en virtuel maskine. Ikke med Unbit, som er skrivebeskyttet ved design."
+    },
+    {
+      "q": "Virker de her værktøjer på Mac med Apple silicon?",
+      "a": "De fleste opgiver understøttelse af både Apple silicon og Intel; anylinuxfs understøtter kun Apple silicon. Opsætningen er meget forskellig, så tjek hver leverandørs dokumentation."
+    },
+    {
+      "q": "Er det sikkert at åbne et BitLocker-drev på en Mac?",
+      "a": "Når et drev åbnes skrivebeskyttet, kan det ikke ændres. Læs [Er BitLocker på Mac sikkert?](safe) om, hvad Unbit gør med din adgangskode og dine filer."
+    },
+    {
+      "q": "Hvor opdateret er sammenligningen?",
+      "a": "Den blev sidst opdateret i oktober 2026, og oplysningerne om konkurrenterne blev tjekket mod leverandørsider den 1. oktober 2026. Verificér altid priser og funktioner hos leverandøren."
+    }
+  ],
+  "related": "Flere guides",
+  "disclaimer": "Senest opdateret {date}. Alle produktnavne er varemærker tilhørende deres respektive ejere. Unbit er en uafhængig app og er ikke tilknyttet eller godkendt af Microsoft, Apple eller nogen af de nævnte leverandører. Siden er kun til information."
+}

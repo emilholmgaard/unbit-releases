@@ -323,6 +323,318 @@
           "a": "Oui. Unbit ne fait que lire le disque et ne le modifie jamais ; il reste donc exactement tel que Windows l’a laissé."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Ouvrir une clé USB chiffrée BitLocker sur Mac – Guide gratuit",
+      "metaDescription": "« Le disque inséré n’est pas lisible » ? Ouvrez un disque USB chiffré avec BitLocker sur votre Mac : ce qui marche, ce qui est gratuit, et un guide en 5 étapes avec Unbit.",
+      "h1": "Comment ouvrir un disque USB chiffré avec BitLocker sur Mac",
+      "summary": "« Le disque inséré n’est pas lisible » : ce que cela signifie et le moyen gratuit le plus rapide d’ouvrir le disque.",
+      "lead": "Vous branchez un disque USB sur votre Mac et macOS indique que le disque n’est pas lisible par cet ordinateur. Si le disque a été chiffré avec BitLocker sur un PC Windows, il n’est pas endommagé : macOS ne sait simplement pas le déchiffrer. Ce guide présente vos options et la façon d’ouvrir le disque en cinq minutes environ avec [Unbit](home), un lecteur BitLocker gratuit et en lecture seule.",
+      "sections": [
+        {
+          "title": "Ce que signifie vraiment le message « non lisible »",
+          "intro": [
+            "macOS affiche ce message chaque fois qu’il rencontre un disque qu’il ne reconnaît pas. Avec un disque BitLocker, vos données sont intactes : elles sont brouillées dans un format de chiffrement que Windows, et les outils compatibles BitLocker, savent lire. **Ne cliquez pas sur Initialiser ni sur Effacer** : cela supprimerait tout le contenu du disque. Cliquez plutôt sur **Ignorer**.",
+            "Avant d’installer quoi que ce soit, vérifiez trois choses : le disque est externe (clé USB, SSD ou disque dur), vous avez son mot de passe ou sa clé de récupération à 48 chiffres, et il s’ouvre encore sur un PC Windows, ce qui prouve que le disque lui-même est sain."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vos options pour l’ouvrir",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS seul :** il n’y a ni prise en charge intégrée de BitLocker ni réglage caché pour l’ajouter. FileVault est le chiffrement d’Apple et n’a aucun rapport.",
+            "**Un PC Windows ou une machine virtuelle Windows :** cela fonctionne parce que Windows intègre BitLocker, et vous pouvez lire et écrire. Il faut avoir accès à Windows, et une machine virtuelle exige une licence Windows.",
+            "**Un outil gratuit en ligne de commande comme anylinuxfs :** open source et en lecture-écriture, mais réservé aux Mac Apple silicon et utilisé depuis le Terminal.",
+            "**Une app BitLocker pour Mac :** la voie la plus rapide si vous voulez seulement vos fichiers. Plusieurs apps payantes permettent aussi d’écrire sur le disque ; [Unbit](home) est gratuite et en lecture seule. Pour une comparaison côte à côte, voir [Meilleur BitLocker pour Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Ouvrir le disque USB avec Unbit",
+          "intro": [],
+          "steps": [
+            "Téléchargez Unbit, glissez-la dans le dossier Applications et ouvrez-la. Elle vit dans la barre des menus et demande macOS 13 ou version ultérieure (Apple silicon ou Intel). Au premier lancement, elle indique où activer l’**Accès complet au disque**.",
+            "Branchez le disque USB, de préférence directement sur le Mac plutôt que via un hub. Unbit l’affiche sous **Disques** ; sélectionnez-le.",
+            "Saisissez le mot de passe BitLocker et choisissez **Ouvrir le disque**. macOS peut demander une fois le mot de passe de votre Mac pour approuver l’accès en lecture.",
+            "Choisissez **Afficher dans le Finder**. Le disque est monté en lecture seule : vous pouvez le parcourir, ouvrir des fichiers et les copier sur votre Mac.",
+            "Une fois terminé, choisissez **Éjecter** avant de débrancher la clé."
+          ],
+          "bullets": [],
+          "outro": [
+            "Besoin de captures d’écran et de plus de détails ? Lisez [Comment ouvrir un disque BitLocker sur un Mac](open)."
+          ]
+        },
+        {
+          "title": "Ce que vous pouvez faire — et pas — une fois le disque ouvert",
+          "intro": [
+            "Unbit n’écrit jamais sur le disque : vous pouvez parcourir les dossiers, afficher et ouvrir des fichiers, et les copier sur votre Mac. Vous ne pouvez pas enregistrer de modifications, supprimer des fichiers ni en ajouter. C’est un compromis délibéré : rien ne peut être modifié ni supprimé par erreur, et le disque reste exactement comme Windows l’a laissé."
+          ],
+          "steps": [],
+          "bullets": [
+            "Pour modifier un fichier, copiez-le d’abord sur votre Mac et travaillez sur la copie.",
+            "Pour changer le contenu du disque ou ses réglages BitLocker, utilisez Windows."
+          ],
+          "outro": [
+            "Pour en savoir plus sur la lecture seule : [BitLocker sur Mac, est-ce sûr ?](safe)."
+          ]
+        },
+        {
+          "title": "Si cela ne fonctionne pas",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Le disque n’apparaît pas.** Débranchez-le et rebranchez-le, utilisez un port du Mac lui-même et actualisez la liste avec ⌘R. Seuls les disques externes sont pris en charge.",
+            "**« Mot de passe incorrect ».** Vérifiez les fautes de frappe et le verrouillage des majuscules. Si vous avez la clé de récupération, utilisez-la à la place : voir [Clé de récupération BitLocker sur Mac](recovery).",
+            "**Accès refusé.** Unbit a besoin de l’Accès complet au disque : Réglages Système › Confidentialité et sécurité › Accès complet au disque.",
+            "**Le disque s’ouvre dans le Finder sans Unbit.** Il n’est alors pas chiffré avec BitLocker, ou vous avez choisi une partition non chiffrée du même disque.",
+            "**Cela échoue aussi sur un PC Windows.** Le disque est peut-être endommagé, ou encore en cours de chiffrement ou de déchiffrement. Laissez Windows terminer, puis réessayez."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si vous n’avez ni mot de passe ni clé de récupération",
+          "intro": [
+            "BitLocker ne peut pas être contourné : c’est tout l’intérêt du chiffrement. Les logiciels de récupération de données n’y parviennent pas non plus, et formater le disque ne fait qu’effacer les données. Cherchez la clé de récupération à 48 chiffres dans le compte Microsoft utilisé sur le PC qui a chiffré le disque, dans un fichier enregistré ou sur un document imprimé, ou demandez à votre administrateur informatique s’il s’agit d’un disque professionnel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi mon Mac dit-il que le disque n’est pas lisible ?",
+          "a": "Le disque est chiffré avec BitLocker, que macOS ne sait pas lire. Les données ne sont pas perdues. Cliquez sur Ignorer (jamais sur Initialiser ni Effacer) et ouvrez-le avec un lecteur BitLocker comme [Unbit](home)."
+        },
+        {
+          "q": "Puis-je ouvrir gratuitement un disque USB BitLocker sur un Mac ?",
+          "a": "Oui. Unbit est gratuite et ouvre les disques en lecture seule. anylinuxfs est un outil gratuit et open source en ligne de commande pour Apple silicon, et un PC Windows ne coûte rien de plus si vous en avez un. La plupart des autres apps pour Mac sont payantes."
+        },
+        {
+          "q": "Ouvrir le disque sur mon Mac le modifie-t-il ?",
+          "a": "Non. Unbit monte le disque en lecture seule et n’y écrit jamais : il reste exactement comme Windows l’a laissé."
+        },
+        {
+          "q": "Ai-je besoin de pilotes, d’une extension de noyau ou de macFUSE ?",
+          "a": "Pas pour Unbit. Elle utilise la prise en charge des images disque déjà intégrée à macOS et demande l’Accès complet au disque ainsi qu’une approbation unique de son assistant de lecture."
+        },
+        {
+          "q": "Cela fonctionne-t-il sur les Mac Apple silicon ?",
+          "a": "Oui. Unbit est une app universelle pour les Mac Apple silicon et Intel."
+        },
+        {
+          "q": "Pourrai-je utiliser ensuite le disque USB sous Windows ?",
+          "a": "Oui. Rien n’est modifié sur le disque : il continue de fonctionner sur votre PC Windows."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go sur Mac : ouvrir une clé USB chiffrée sous Windows",
+      "metaDescription": "Une clé USB chiffrée avec BitLocker To Go sous Windows ? Découvrez ce qu’est BitLocker To Go, pourquoi un Mac ne peut pas l’ouvrir seul et comment la lire avec Unbit.",
+      "h1": "BitLocker To Go sur Mac : ouvrir une clé USB chiffrée sous Windows",
+      "summary": "Ce qu’est BitLocker To Go et comment lire sur votre Mac une clé USB chiffrée sous Windows.",
+      "lead": "BitLocker To Go est la partie de BitLocker que Windows utilise pour les disques amovibles comme les clés USB. Quelqu’un a chiffré une clé sur un PC Windows, et vous avez maintenant besoin des fichiers sur votre Mac. macOS ne peut pas déverrouiller seul ces disques, mais [Unbit](home) peut les ouvrir en lecture seule. Voici comment fonctionne BitLocker To Go et à quoi s’attendre sur un Mac.",
+      "sections": [
+        {
+          "title": "Ce qu’est BitLocker To Go",
+          "intro": [
+            "BitLocker est le chiffrement de disque de Microsoft pour Windows. BitLocker To Go est le nom de la même protection sur les disques amovibles : clés USB et disques externes. Sous Windows, vous l’activez depuis l’Explorateur de fichiers, vous choisissez comment le disque se déverrouille — le plus souvent avec un mot de passe — et vous enregistrez une clé de récupération à 48 chiffres.",
+            "Un disque protégé affiche un cadenas dans l’Explorateur de fichiers de Windows, et Windows demande le mot de passe au branchement. Tout le contenu du disque est chiffré, pas seulement quelques dossiers."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ce qui se passe quand on le branche sur un Mac",
+          "intro": [
+            "macOS voit un disque qu’il ne peut pas lire. Il affiche en général le message indiquant que le disque n’est pas lisible par cet ordinateur, ou bien le disque n’apparaît pas du tout dans le Finder. Les fichiers sont intacts : cliquez sur **Ignorer** et ne choisissez jamais Initialiser ni Effacer.",
+            "Si la clé se déverrouille automatiquement sur votre propre PC, ce réglage ne vaut que pour ce PC. Sur un Mac, il faut toujours le mot de passe ou la clé de récupération."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ouvrir un disque BitLocker To Go avec Unbit",
+          "intro": [],
+          "steps": [
+            "Installez [Unbit](home) depuis son site et ouvrez-la depuis la barre des menus. Au premier lancement, elle indique où activer l’**Accès complet au disque**.",
+            "Branchez la clé USB. Unbit la détecte automatiquement et l’affiche sous **Disques**.",
+            "Saisissez le mot de passe choisi sous Windows, puis choisissez **Ouvrir le disque**. Si vous n’avez que la clé de récupération, utilisez-la à la place : voir [Clé de récupération BitLocker sur Mac](recovery).",
+            "Choisissez **Afficher dans le Finder** et copiez sur votre Mac les fichiers dont vous avez besoin.",
+            "Choisissez **Éjecter** avant de retirer la clé."
+          ],
+          "bullets": [],
+          "outro": [
+            "Le pas-à-pas complet, avec captures d’écran, se trouve dans [Comment ouvrir un disque BitLocker sur un Mac](open)."
+          ]
+        },
+        {
+          "title": "Échanger des fichiers entre un PC Windows et un Mac",
+          "intro": [
+            "Unbit lit les disques BitLocker To Go mais n’y écrit pas. Cela influence la façon dont vous échangez des fichiers :"
+          ],
+          "steps": [],
+          "bullets": [
+            "**De Windows vers Mac :** placez les fichiers sur la clé sous Windows, puis copiez-les sur le Mac.",
+            "**Du Mac vers Windows :** vous ne pouvez pas enregistrer sur la clé chiffrée depuis le Mac. Passez par un autre moyen, par exemple un second disque formaté en exFAT (macOS et Windows le lisent et l’écrivent tous deux) ou un partage cloud ou réseau.",
+            "**Fichiers sensibles :** un disque exFAT non chiffré est pratique mais sans protection en cas de perte ; gardez donc les données privées sur la clé BitLocker et utilisez-la en lecture seule sur le Mac."
+          ],
+          "outro": []
+        },
+        {
+          "title": "À savoir sur les clés USB",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Branchez la clé directement sur le Mac plutôt que sur un hub non alimenté, et essayez un autre port si elle n’apparaît pas.",
+            "Si la clé comporte plusieurs partitions, choisissez celle qui est chiffrée avec BitLocker.",
+            "Unbit prend en charge les disques chiffrés sous Windows 7 ou version ultérieure. Le système de fichiers interne doit être exFAT, FAT32 ou NTFS.",
+            "Une carte mémoire dans un lecteur de cartes USB apparaît normalement sur le Mac comme un disque externe : elle fonctionne donc de la même façon.",
+            "Si Windows est encore en train de chiffrer ou de déchiffrer la clé, laissez-le terminer d’abord."
+          ],
+          "outro": [
+            "Plus de détails sur les types de disques : [Ouvrir un SSD, un disque dur ou une clé USB BitLocker sur Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "BitLocker To Go est-il différent de BitLocker ?",
+          "a": "C’est la même technologie. BitLocker To Go est simplement le nom employé pour les disques amovibles comme les clés USB."
+        },
+        {
+          "q": "Un Mac peut-il ouvrir BitLocker To Go sans logiciel supplémentaire ?",
+          "a": "Non. macOS n’a pas de prise en charge intégrée de BitLocker : il faut un lecteur comme [Unbit](home) ou un PC Windows."
+        },
+        {
+          "q": "Puis-je enregistrer des fichiers sur la clé depuis mon Mac ?",
+          "a": "Pas avec Unbit, qui est en lecture seule par conception. Copiez les fichiers de la clé sur le Mac et utilisez Windows quand vous devez en ajouter ou en modifier."
+        },
+        {
+          "q": "La clé fonctionnera-t-elle toujours sous Windows ensuite ?",
+          "a": "Oui. Unbit ne fait que lire la clé et ne la modifie jamais."
+        },
+        {
+          "q": "J’ai une clé de récupération mais pas de mot de passe. Puis-je quand même l’ouvrir ?",
+          "a": "Oui. Unbit accepte la clé de récupération à 48 chiffres à la place du mot de passe. Voir [Clé de récupération BitLocker sur Mac](recovery)."
+        },
+        {
+          "q": "Unbit enregistre-t-elle mon mot de passe ?",
+          "a": "Seulement si vous cochez « Mémoriser ce disque sur ce Mac ». Il est alors stocké chiffré dans votre trousseau macOS, et vous pouvez l’oublier à tout moment."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "Clé de récupération BitLocker sur Mac : déverrouiller un disque",
+      "metaDescription": "Mot de passe BitLocker oublié ? Retrouvez votre clé de récupération à 48 chiffres et utilisez-la pour ouvrir le disque sur un Mac, en lecture seule, avec Unbit. Où chercher et que faire en cas d’échec.",
+      "h1": "Clé de récupération BitLocker sur Mac : déverrouiller un disque avec la clé à 48 chiffres",
+      "summary": "Où trouver la clé de récupération à 48 chiffres et comment l’utiliser pour ouvrir un disque BitLocker sur votre Mac.",
+      "lead": "Vous avez perdu le mot de passe BitLocker ? Si vous avez encore la clé de récupération à 48 chiffres, vous pouvez ouvrir le disque sur un Mac. [Unbit](home) accepte la clé de récupération (à partir de la version 1.0.8) à la place du mot de passe et ouvre le disque en lecture seule. Ce guide explique ce qu’est la clé, où la chercher et comment l’utiliser.",
+      "sections": [
+        {
+          "title": "Ce qu’est la clé de récupération",
+          "intro": [
+            "Lorsque BitLocker est activé, Windows crée une clé de récupération et vous invite à l’enregistrer ou à l’imprimer. Elle compte 48 chiffres, écrits en 8 groupes de 6 séparés par des tirets, par exemple 123456-123456-… et ainsi de suite.",
+            "La clé de récupération est une seconde porte d’entrée. Elle déverrouille le disque à la place du mot de passe, et chaque disque a sa propre clé."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Où la trouver",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Votre compte Microsoft.** Si vous étiez connecté avec un compte Microsoft lors du chiffrement du disque, la clé y est peut-être enregistrée. Connectez-vous au compte et cherchez les clés de récupération BitLocker.",
+            "**Un fichier ou un document imprimé.** Windows propose d’enregistrer la clé dans un fichier ou de l’imprimer lors de l’activation de BitLocker. Vérifiez vos documents, une clé USB ou un dossier de papiers imprimés.",
+            "**Votre organisation.** Pour un disque professionnel ou scolaire, la clé est souvent détenue par l’administrateur informatique.",
+            "**Plusieurs clés ?** Utilisez celle qui correspond à ce disque. Si vous en avez plusieurs, l’identifiant de clé affiché avec chacune aide à les distinguer."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Déverrouiller le disque avec la clé de récupération dans Unbit",
+          "intro": [],
+          "steps": [
+            "Assurez-vous d’avoir Unbit 1.0.8 ou version ultérieure. Ouvrez-la, branchez le disque et sélectionnez-le sous **Disques**.",
+            "Passez à l’onglet **Clé de récupération** (choisissez **Utiliser la clé de récupération**).",
+            "Copiez votre clé, puis choisissez **Coller la clé de récupération**, ou saisissez les 48 chiffres. Les espaces et les tirets ne posent pas de problème, et Unbit compte les chiffres pour vous.",
+            "Choisissez **Ouvrir le disque**. macOS peut demander une fois le mot de passe de votre Mac pour approuver l’accès en lecture.",
+            "Choisissez **Afficher dans le Finder**, copiez vos fichiers, puis **Éjecter** une fois terminé."
+          ],
+          "bullets": [],
+          "outro": [
+            "Cochez **Mémoriser ce disque sur ce Mac** si vous voulez qu’Unbit conserve la clé chiffrée dans votre trousseau macOS, afin que le disque s’ouvre sans la ressaisir."
+          ]
+        },
+        {
+          "title": "Ce que fait — et ne fait pas — la clé de récupération",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Elle ouvre le disque en lecture seule, exactement comme le mot de passe.",
+            "Elle ne réinitialise ni ne modifie le mot de passe BitLocker, ne supprime pas BitLocker et ne répare pas le disque. Unbit n’écrit jamais sur le disque : ces tâches relèvent de Windows.",
+            "Elle ne fonctionne que pour le disque auquel elle appartient."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si la clé est refusée",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Vérifiez les 48 chiffres, en 8 groupes de 6. Unbit signale un groupe qui ne peut pas être correct.",
+            "N’utilisez que des chiffres, des espaces et des tirets. Le texte copié contient parfois des caractères en trop ou des sauts de ligne.",
+            "Assurez-vous qu’il s’agit bien de la clé de ce disque, et non de celle d’un autre disque ou d’un autre PC.",
+            "Une clé de récupération peut être remplacée sous Windows. Si le disque a été rechiffré ou si sa clé a été régénérée, essayez la plus récente.",
+            "Si Unbit indique que le disque n’a pas de clé de récupération, utilisez le mot de passe."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si vous ne retrouvez pas la clé",
+          "intro": [
+            "BitLocker est conçu pour que personne ne puisse le contourner. Sans le mot de passe ni la clé de récupération, les données ne peuvent pas être récupérées — ni par Unbit, ni par un logiciel de récupération de données, ni par personne. Ne formatez pas le disque en espérant le réparer : cela efface les données.",
+            "Continuez à chercher aux endroits indiqués plus haut et interrogez la personne qui a configuré le disque. Une fois dedans, conservez la clé en lieu sûr. Les étapes générales figurent dans [Comment ouvrir un disque BitLocker sur un Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit prend-elle en charge la clé de récupération BitLocker ?",
+          "a": "Oui, à partir de la version 1.0.8. Saisissez-la dans l’onglet Clé de récupération à la place du mot de passe."
+        },
+        {
+          "q": "Je n’ai que l’identifiant de la clé. Est-ce suffisant ?",
+          "a": "Non. L’identifiant sert seulement à repérer une clé. Il vous faut les 48 chiffres complets."
+        },
+        {
+          "q": "Puis-je utiliser la clé de récupération pour définir un nouveau mot de passe depuis mon Mac ?",
+          "a": "Non. Unbit est en lecture seule et ne peut pas modifier les réglages BitLocker. Utilisez Windows pour définir un nouveau mot de passe."
+        },
+        {
+          "q": "Ma clé de récupération est-elle envoyée quelque part ?",
+          "a": "Non. Le déchiffrement se fait sur votre Mac et la clé n’est envoyée nulle part."
+        },
+        {
+          "q": "Où trouver la clé d’un disque professionnel ?",
+          "a": "Demandez à votre administrateur informatique. Les organisations conservent souvent les clés de récupération de façon centralisée."
+        },
+        {
+          "q": "Puis-je utiliser la clé de récupération même si je me souviens du mot de passe ?",
+          "a": "Oui. L’un comme l’autre ouvre le disque."
+        }
+      ]
     }
   }
 }

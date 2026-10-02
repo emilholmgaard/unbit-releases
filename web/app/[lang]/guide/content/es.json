@@ -323,6 +323,318 @@
           "a": "Sí. Unbit solo lee la unidad y nunca la modifica, así que queda exactamente como la dejó Windows."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Abrir una unidad USB cifrada con BitLocker en Mac – Guía gratis",
+      "metaDescription": "¿Te sale «El disco que has insertado no es legible»? Abre una unidad USB cifrada con BitLocker en tu Mac: qué funciona, qué es gratis y una guía de 5 pasos con Unbit.",
+      "h1": "Cómo abrir una unidad USB cifrada con BitLocker en Mac",
+      "summary": "«El disco que has insertado no es legible»: qué significa y la forma gratuita más rápida de abrir la unidad.",
+      "lead": "Conectas una unidad USB a tu Mac y macOS dice que el disco no es legible para este ordenador. Si la unidad se cifró con BitLocker en un PC con Windows, no está dañada: macOS simplemente no puede descifrarla. Esta guía te muestra tus opciones y cómo abrir la unidad en unos cinco minutos con [Unbit](home), un lector de BitLocker gratuito y de solo lectura.",
+      "sections": [
+        {
+          "title": "Qué significa realmente el aviso de que el disco no es legible",
+          "intro": [
+            "macOS muestra ese aviso siempre que encuentra un disco que no reconoce. En una unidad con BitLocker tus datos están bien: están codificados en un formato de cifrado que Windows y las herramientas compatibles con BitLocker sí pueden leer. **No hagas clic en Inicializar ni en Borrar**: eliminaría todo lo que hay en la unidad. Haz clic en **Ignorar**.",
+            "Antes de instalar nada, comprueba tres cosas: que sea una unidad externa (memoria USB, SSD o disco duro), que tengas su contraseña o su clave de recuperación de 48 dígitos, y que todavía se abra en un PC con Windows, lo que indica que la unidad en sí está sana."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Tus opciones para abrirla",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS por sí solo:** no tiene compatibilidad integrada con BitLocker ni un ajuste oculto que la añada. FileVault es el cifrado de Apple y no tiene relación.",
+            "**Un PC con Windows o una máquina virtual de Windows:** funciona porque Windows incluye BitLocker, y puedes leer y escribir. Necesitas acceso a Windows, y una máquina virtual requiere una licencia de Windows.",
+            "**Una herramienta gratuita de línea de comandos como anylinuxfs:** código abierto y con lectura y escritura, pero solo para Mac con Apple silicon y se usa desde Terminal.",
+            "**Una app de BitLocker para Mac:** la vía más rápida si solo quieres tus archivos. Varias apps de pago también permiten escribir en la unidad; [Unbit](home) es gratuita y de solo lectura. Para compararlas lado a lado, consulta [Mejor BitLocker para Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Abrir la unidad USB con Unbit",
+          "intro": [],
+          "steps": [
+            "Descarga Unbit, arrástrala a la carpeta Aplicaciones y ábrela. Vive en la barra de menús y necesita macOS 13 o posterior (Apple silicon o Intel). La primera vez te muestra dónde activar el **Acceso total al disco**.",
+            "Conecta la unidad USB, mejor directamente al Mac que a través de un hub. Unbit la muestra en **Unidades**; selecciónala.",
+            "Introduce la contraseña de BitLocker y elige **Abrir unidad**. Es posible que macOS te pida una vez la contraseña de tu Mac para aprobar el acceso de lectura.",
+            "Elige **Mostrar en el Finder**. La unidad se monta en solo lectura, así que puedes explorarla, abrir archivos y copiarlos a tu Mac.",
+            "Cuando termines, elige **Expulsar** antes de desconectar la memoria."
+          ],
+          "bullets": [],
+          "outro": [
+            "¿Quieres capturas de pantalla y más detalles? Lee [Cómo abrir una unidad BitLocker en un Mac](open)."
+          ]
+        },
+        {
+          "title": "Qué puedes y qué no puedes hacer con la unidad abierta",
+          "intro": [
+            "Unbit nunca escribe en la unidad, así que puedes explorar carpetas, previsualizar y abrir archivos, y copiarlos a tu Mac. No puedes guardar cambios en ella, borrar archivos ni añadir otros nuevos. Es una renuncia deliberada: nada puede modificarse ni borrarse por accidente, y la unidad queda exactamente como la dejó Windows."
+          ],
+          "steps": [],
+          "bullets": [
+            "Para editar un archivo, cópialo primero a tu Mac y trabaja con la copia.",
+            "Para cambiar lo que hay guardado en la unidad, o sus ajustes de BitLocker, usa Windows."
+          ],
+          "outro": [
+            "Más sobre lo que significa solo lectura: [¿Es seguro BitLocker en Mac?](safe)."
+          ]
+        },
+        {
+          "title": "Si no funciona",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**La unidad no aparece.** Desconéctala y vuelve a conectarla, usa un puerto del propio Mac y actualiza la lista con ⌘R. Solo se admiten unidades externas.",
+            "**«Contraseña incorrecta».** Revisa errores de escritura y el bloqueo de mayúsculas. Si tienes la clave de recuperación, úsala en su lugar: consulta [Clave de recuperación de BitLocker en Mac](recovery).",
+            "**Acceso denegado.** Unbit necesita el Acceso total al disco: Ajustes del Sistema › Privacidad y seguridad › Acceso total al disco.",
+            "**La unidad se abre en el Finder sin Unbit.** Entonces no está cifrada con BitLocker, o has elegido una partición sin cifrar de la misma unidad.",
+            "**También falla en un PC con Windows.** La unidad puede estar dañada o estar cifrándose o descifrándose todavía. Deja que Windows termine e inténtalo de nuevo."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si no tienes ni la contraseña ni la clave de recuperación",
+          "intro": [
+            "BitLocker no se puede eludir: ese es el objetivo del cifrado. El software de recuperación de datos tampoco puede saltárselo, y formatear la unidad solo borra los datos. Busca la clave de recuperación de 48 dígitos en la cuenta de Microsoft usada en el PC que cifró la unidad, en un archivo guardado o en un papel impreso; si es una unidad de trabajo, pregunta a tu administrador de TI."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué mi Mac dice que el disco no es legible?",
+          "a": "La unidad está cifrada con BitLocker, que macOS no puede leer. Los datos no se han perdido. Haz clic en Ignorar (nunca en Inicializar ni en Borrar) y ábrela con un lector de BitLocker como [Unbit](home)."
+        },
+        {
+          "q": "¿Puedo abrir gratis una unidad USB con BitLocker en un Mac?",
+          "a": "Sí. Unbit es gratuita y abre las unidades en solo lectura. anylinuxfs es una herramienta gratuita de código abierto y de línea de comandos para Apple silicon, y un PC con Windows tampoco cuesta nada extra si ya lo tienes. La mayoría de las demás apps para Mac son de pago."
+        },
+        {
+          "q": "¿Abrir la unidad en mi Mac la modifica?",
+          "a": "No. Unbit monta la unidad en solo lectura y nunca escribe en ella, así que queda exactamente como la dejó Windows."
+        },
+        {
+          "q": "¿Necesito controladores, una extensión de kernel o macFUSE?",
+          "a": "No para Unbit. Usa la compatibilidad con imágenes de disco que ya incluye macOS y necesita el Acceso total al disco y una aprobación única de su ayudante de lectura."
+        },
+        {
+          "q": "¿Funciona en Mac con Apple silicon?",
+          "a": "Sí. Unbit es una app universal para Mac con Apple silicon e Intel."
+        },
+        {
+          "q": "¿Puedo seguir usando la unidad USB en Windows después?",
+          "a": "Sí. No se cambia nada en la unidad, así que sigue funcionando en tu PC con Windows."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go en Mac: abre una memoria USB cifrada con Windows",
+      "metaDescription": "¿Una memoria USB cifrada con BitLocker To Go en Windows? Qué es BitLocker To Go, por qué un Mac no puede abrirla por sí solo y cómo leerla con Unbit.",
+      "h1": "BitLocker To Go en Mac: abre una memoria USB cifrada con Windows",
+      "summary": "Qué es BitLocker To Go y cómo leer en tu Mac una memoria USB cifrada con Windows.",
+      "lead": "BitLocker To Go es la parte de BitLocker que Windows usa para las unidades extraíbles, como las memorias USB. Alguien cifró una memoria en un PC con Windows y ahora necesitas los archivos en tu Mac. macOS no puede desbloquear estas unidades por sí solo, pero [Unbit](home) puede abrirlas en solo lectura. Así funciona BitLocker To Go y esto es lo que puedes esperar en un Mac.",
+      "sections": [
+        {
+          "title": "Qué es BitLocker To Go",
+          "intro": [
+            "BitLocker es el cifrado de unidades de Microsoft para Windows. BitLocker To Go es el nombre de esa misma protección en unidades extraíbles: memorias USB y unidades externas. En Windows lo activas desde el Explorador de archivos, eliges cómo se desbloquea la unidad (normalmente con una contraseña) y guardas una clave de recuperación de 48 dígitos.",
+            "Una unidad protegida muestra un candado en el Explorador de archivos de Windows, y Windows pide la contraseña al conectarla. Todo lo que hay en la unidad está cifrado, no solo unas pocas carpetas."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Qué pasa al conectarla a un Mac",
+          "intro": [
+            "macOS ve un disco que no puede leer. Suele mostrar el aviso de que el disco no es legible para este ordenador, o la unidad ni siquiera aparece en el Finder. Los archivos están intactos: haz clic en **Ignorar** y no elijas nunca Inicializar ni Borrar.",
+            "Si la memoria se desbloquea automáticamente en tu propio PC, ese ajuste solo vale para ese PC. En un Mac sigues necesitando la contraseña o la clave de recuperación."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Abrir una unidad BitLocker To Go con Unbit",
+          "intro": [],
+          "steps": [
+            "Instala [Unbit](home) desde su sitio web y ábrela desde la barra de menús. La primera vez te muestra dónde activar el **Acceso total al disco**.",
+            "Conecta la memoria USB. Unbit la encuentra automáticamente y la muestra en **Unidades**.",
+            "Introduce la contraseña que elegiste en Windows y elige **Abrir unidad**. Si solo tienes la clave de recuperación, úsala en su lugar: consulta [Clave de recuperación de BitLocker en Mac](recovery).",
+            "Elige **Mostrar en el Finder** y copia a tu Mac los archivos que necesites.",
+            "Elige **Expulsar** antes de sacar la memoria."
+          ],
+          "bullets": [],
+          "outro": [
+            "El paso a paso completo, con capturas, está en [Cómo abrir una unidad BitLocker en un Mac](open)."
+          ]
+        },
+        {
+          "title": "Mover archivos entre un PC con Windows y un Mac",
+          "intro": [
+            "Unbit lee las unidades BitLocker To Go, pero no escribe en ellas. Eso condiciona cómo compartes archivos:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**De Windows a Mac:** pon los archivos en la memoria desde Windows y cópialos después en el Mac.",
+            "**De Mac a Windows:** no puedes guardar en la memoria cifrada desde el Mac. Usa otra vía, como una segunda unidad formateada en exFAT (macOS y Windows la leen y escriben) o una carpeta en la nube o en red.",
+            "**Archivos sensibles:** una unidad exFAT sin cifrar es cómoda, pero queda desprotegida si se pierde, así que deja los datos privados en la memoria con BitLocker y úsala en solo lectura en el Mac."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Cosas que conviene saber sobre las memorias USB",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Conecta la memoria directamente al Mac y no a un hub sin alimentación, y prueba con otro puerto si no aparece.",
+            "Si la memoria tiene varias particiones, elige la que está cifrada con BitLocker.",
+            "Unbit admite unidades cifradas en Windows 7 o posterior. El sistema de archivos interior debería ser exFAT, FAT32 o NTFS.",
+            "Una tarjeta de memoria en un lector USB suele aparecer en el Mac como una unidad externa, así que funciona igual.",
+            "Si Windows aún está cifrando o descifrando la memoria, deja que termine primero."
+          ],
+          "outro": [
+            "Más sobre tipos de unidad: [Abrir un SSD, HDD o memoria USB con BitLocker en Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿BitLocker To Go es distinto de BitLocker?",
+          "a": "Es la misma tecnología. BitLocker To Go es simplemente el nombre que recibe en unidades extraíbles como las memorias USB."
+        },
+        {
+          "q": "¿Puede un Mac abrir BitLocker To Go sin software adicional?",
+          "a": "No. macOS no tiene compatibilidad integrada con BitLocker, así que necesitas un lector como [Unbit](home) o un PC con Windows."
+        },
+        {
+          "q": "¿Puedo guardar archivos en la memoria desde mi Mac?",
+          "a": "No con Unbit, que es de solo lectura por diseño. Copia los archivos de la memoria al Mac y usa Windows cuando necesites añadir o cambiar archivos en ella."
+        },
+        {
+          "q": "¿Seguirá funcionando la memoria en Windows después?",
+          "a": "Sí. Unbit solo lee la memoria y nunca la modifica."
+        },
+        {
+          "q": "Tengo una clave de recuperación pero no la contraseña. ¿Puedo abrirla igualmente?",
+          "a": "Sí. Unbit acepta la clave de recuperación de 48 dígitos en lugar de la contraseña. Consulta [Clave de recuperación de BitLocker en Mac](recovery)."
+        },
+        {
+          "q": "¿Guarda Unbit mi contraseña?",
+          "a": "Solo si marcas «Recordar esta unidad en este Mac». Entonces se guarda cifrada en el llavero de macOS y puedes olvidarla en cualquier momento."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "Clave de recuperación de BitLocker en Mac: desbloquea una unidad",
+      "metaDescription": "¿Has olvidado la contraseña de BitLocker? Encuentra tu clave de recuperación de 48 dígitos y úsala para abrir la unidad en un Mac, en solo lectura, con Unbit. Dónde buscar y qué hacer si falla.",
+      "h1": "Clave de recuperación de BitLocker en Mac: desbloquea una unidad con la clave de 48 dígitos",
+      "summary": "Dónde encontrar la clave de recuperación de 48 dígitos y cómo usarla para abrir una unidad BitLocker en tu Mac.",
+      "lead": "¿Has perdido la contraseña de BitLocker? Si todavía tienes la clave de recuperación de 48 dígitos, puedes abrir la unidad en un Mac. [Unbit](home) acepta la clave de recuperación (desde la versión 1.0.8) en lugar de la contraseña y abre la unidad en solo lectura. Esta guía explica qué es la clave, dónde buscarla y cómo usarla.",
+      "sections": [
+        {
+          "title": "Qué es la clave de recuperación",
+          "intro": [
+            "Cuando se activa BitLocker, Windows crea una clave de recuperación y te pide que la guardes o la imprimas. Tiene 48 dígitos, escritos en 8 grupos de 6 separados por guiones, por ejemplo 123456-123456-… y así sucesivamente.",
+            "La clave de recuperación es una segunda forma de entrar. Desbloquea la unidad en lugar de la contraseña, y cada unidad tiene su propia clave."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dónde encontrarla",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Tu cuenta de Microsoft.** Si habías iniciado sesión con una cuenta de Microsoft cuando se cifró la unidad, la clave puede estar guardada ahí. Inicia sesión en la cuenta y busca las claves de recuperación de BitLocker.",
+            "**Un archivo o una copia impresa.** Windows ofrece guardar la clave en un archivo o imprimirla al activar BitLocker. Revisa tus documentos, una memoria USB o una carpeta con papeles impresos.",
+            "**Tu organización.** En una unidad de trabajo o de estudios, la clave suele estar en manos del administrador de TI.",
+            "**¿Hay varias claves?** Usa la que corresponde a esta unidad. Si tienes varias, el identificador de clave que se muestra con cada una te ayuda a distinguirlas."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Desbloquear la unidad con la clave de recuperación en Unbit",
+          "intro": [],
+          "steps": [
+            "Asegúrate de tener Unbit 1.0.8 o posterior. Ábrela, conecta la unidad y selecciónala en **Unidades**.",
+            "Cambia a la pestaña **Clave de recuperación** (elige **Usar clave de recuperación**).",
+            "Copia tu clave y elige **Pegar clave de recuperación**, o escribe los 48 dígitos. Los espacios y los guiones no importan, y Unbit cuenta los dígitos por ti.",
+            "Elige **Abrir unidad**. Es posible que macOS te pida una vez la contraseña de tu Mac para aprobar el acceso de lectura.",
+            "Elige **Mostrar en el Finder**, copia tus archivos y usa **Expulsar** cuando termines."
+          ],
+          "bullets": [],
+          "outro": [
+            "Marca **Recordar esta unidad en este Mac** si quieres que Unbit guarde la clave cifrada en el llavero de macOS, para que la unidad se abra sin volver a escribirla."
+          ]
+        },
+        {
+          "title": "Qué hace y qué no hace la clave de recuperación",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Abre la unidad en solo lectura, igual que la contraseña.",
+            "No restablece ni cambia la contraseña de BitLocker, no quita BitLocker ni repara la unidad. Unbit nunca escribe en la unidad, así que esas tareas corresponden a Windows.",
+            "Solo sirve para la unidad a la que pertenece."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si se rechaza la clave",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Revisa los 48 dígitos, en 8 grupos de 6. Unbit señala un grupo que no puede ser correcto.",
+            "Usa solo dígitos, espacios y guiones. El texto copiado a veces trae caracteres extra o saltos de línea.",
+            "Comprueba que es la clave de esta unidad y no la de otra unidad u otro PC.",
+            "Una clave de recuperación puede sustituirse en Windows. Si la unidad se volvió a cifrar o se regeneró su clave, prueba con la más reciente.",
+            "Si Unbit indica que la unidad no tiene clave de recuperación, usa la contraseña."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Si no encuentras la clave",
+          "intro": [
+            "BitLocker está diseñado para que nadie pueda eludirlo. Sin la contraseña o la clave de recuperación, los datos no se pueden recuperar: ni con Unbit, ni con software de recuperación de datos, ni nadie. No formatees la unidad con la esperanza de arreglarla: eso borra los datos.",
+            "Sigue buscando en los lugares indicados arriba y pregunta a quien configuró la unidad. Cuando consigas entrar, guarda la clave en un lugar seguro. Los pasos generales están en [Cómo abrir una unidad BitLocker en un Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Admite Unbit la clave de recuperación de BitLocker?",
+          "a": "Sí, desde la versión 1.0.8. Introdúcela en la pestaña Clave de recuperación en lugar de la contraseña."
+        },
+        {
+          "q": "Solo tengo el identificador de la clave. ¿Basta?",
+          "a": "No. El identificador solo sirve para reconocer una clave. Necesitas los 48 dígitos completos."
+        },
+        {
+          "q": "¿Puedo usar la clave de recuperación para poner una contraseña nueva desde mi Mac?",
+          "a": "No. Unbit es de solo lectura y no puede cambiar los ajustes de BitLocker. Usa Windows si necesitas establecer una contraseña nueva."
+        },
+        {
+          "q": "¿Se envía mi clave de recuperación a algún sitio?",
+          "a": "No. El descifrado ocurre en tu Mac y la clave no se envía a ninguna parte."
+        },
+        {
+          "q": "¿Dónde encuentro la clave de una unidad de trabajo?",
+          "a": "Pregunta a tu administrador de TI. Las organizaciones suelen guardar las claves de recuperación de forma centralizada."
+        },
+        {
+          "q": "¿Puedo usar la clave de recuperación aunque recuerde la contraseña?",
+          "a": "Sí. Cualquiera de las dos abre la unidad."
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Beste BitLocker for Mac (2026): ærlig sammenligning av 6 alternativer",
+    "description": "Hvilket BitLocker-alternativ for Mac passer deg? Unbit, iBoysoft, Hasleo, UUByte, anylinuxfs og en Windows-VM sammenlignet på pris, skrivetilgang, Apple silicon og oppsett. Oppdatert oktober 2026.",
+    "ogTitle": "Beste BitLocker for Mac (2026) – ærlig sammenligning"
+  },
+  "ui": {
+    "updated": "Sist oppdatert {date}",
+    "breadcrumb": "Brødsmulesti"
+  },
+  "h1": "Beste BitLocker for Mac i 2026",
+  "lead": "macOS kan ikke åpne BitLocker-krypterte stasjoner på egen hånd, så du trenger et verktøy. Det finnes flere, og det beste avhenger av ett spørsmål: Trenger du bare å lese filene dine, eller også å skrive til stasjonen? Denne oversikten sammenligner seks måter å gjøre det på og sier tydelig fra om avveiningene.",
+  "disclosure": "Åpenhet: Vi lager Unbit, som er ett av alternativene under. Vi har prøvd å være rettferdige. Unbit er skrivebeskyttet fra grunnen av, så for noen oppgaver er et annet alternativ det beste valget, og det sier vi fra om. Opplysninger om andre produkter kommer fra produsentenes egne sider (lenket fra hver sammenligningsside) og kan endre seg.",
+  "quick": {
+    "title": "Det korte svaret",
+    "items": [
+      "**Du trenger bare å lese filene dine og kopiere dem fra stasjonen:** [Unbit](home) – gratis, skrivebeskyttet, ingen drivere.",
+      "**Du må skrive til BitLocker-stasjoner fra Macen:** en betalt app som iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere eller UUByte BitLocker Geeker – eller bruk Windows.",
+      "**Du er fortrolig med Terminal på en Mac med Apple silicon:** anylinuxfs – gratis, åpen kildekode, lese og skrive.",
+      "**Du kjører allerede Windows i en virtuell maskin:** bruk Windows’ eget BitLocker der, for eksempel i Parallels Desktop."
+    ]
+  },
+  "how": {
+    "title": "Slik har vi valgt",
+    "intro": [
+      "Vi har sett på hvordan folk faktisk åpner BitLocker-stasjoner på en Mac, og beholdt dem som har en produsentside eller et repositorium vi kunne sjekke. Vi har sammenlignet dem på det som betyr noe når stasjonen ligger foran deg:"
+    ],
+    "criteria": [
+      "**Gjør det jobben?** Åpne en kryptert ekstern stasjon i macOS med et passord eller en gjenopprettingsnøkkel.",
+      "**Skrivebeskyttet eller lese og skrive.** Skrivetilgang er nyttig, men betyr også at verktøyet kan endre stasjonen din.",
+      "**Prismodell.** Gratis, abonnement eller engangslisens.",
+      "**Apple silicon.** Om det støtter Mac med M-brikker og ikke bare Intel.",
+      "**Oppsett og systemtilgang.** Om det krever system- eller kjerneutvidelser, redusert oppstartssikkerhet, Terminal eller en virtuell maskin.",
+      "**Personvern og dokumentasjon.** Hvor dekrypteringen skjer, og hvor godt produsenten forklarer oppsettet."
+    ],
+    "outro": [
+      "Vi har ikke målt hastighet, og vi lager ingen nummerert rangering, fordi det riktige valget avhenger av oppgaven din. Det finnes andre verktøy; at ett mangler, er ingen dom over det. Oppdager du en feil, sjekk produsentens side og si fra til oss."
+    ]
+  },
+  "table": {
+    "title": "Sammenligningstabell",
+    "columns": {
+      "tool": "Verktøy",
+      "price": "Prismodell",
+      "write": "Lese / skrive",
+      "silicon": "Apple silicon",
+      "setup": "Oppsett og systemtilgang",
+      "unlock": "Låses opp med"
+    },
+    "rows": {
+      "unbit": {
+        "type": "Mac-app i menylinjen",
+        "price": "Gratis",
+        "write": "Skrivebeskyttet fra grunnen av",
+        "silicon": "Ja – Apple silicon og Intel",
+        "setup": "Ingen kjerneutvidelse eller macFUSE. Trenger Full disktilgang og en engangsgodkjenning av en lesehjelper",
+        "unlock": "Passord eller 48-sifret gjenopprettingsnøkkel"
+      },
+      "iboysoft": {
+        "type": "Mac-app",
+        "price": "Betalt – abonnement eller engangslisens; sjekk gjeldende pris. Prøveversjonen kan bare bla i og forhåndsvise filer",
+        "write": "Lese og skrive",
+        "silicon": "Ja – M-brikker og Intel",
+        "setup": "Finder-modus krever en systemutvidelse (Redusert sikkerhet på Apple silicon). En File Manager-modus fungerer uten",
+        "unlock": "Passord eller gjenopprettingsnøkkel"
+      },
+      "hasleo": {
+        "type": "Mac-app",
+        "price": "Betalt – engangslisens; sjekk gjeldende pris",
+        "write": "Lese og skrive eller bare lese, etter ditt valg",
+        "silicon": "Ja – Intel og Apple silicon",
+        "setup": "På Apple silicon beskriver produsenten Redusert sikkerhet og at kjerneutvidelser må tillates. Trenger Full disktilgang",
+        "unlock": "Passord eller gjenopprettingsnøkkel"
+      },
+      "uubyte": {
+        "type": "Mac-app",
+        "price": "Betalt – 1-årsplan eller livstidslisens; sjekk gjeldende pris",
+        "write": "Lese; skrivetilgang kan slås på etter opplåsing",
+        "silicon": "Ja – produsenten har en veiledning for Apple silicon",
+        "setup": "Produsentens veiledning for Apple silicon omfatter Full disktilgang, kjerneutvidelser, oppdatering av en systemutvidelse og omstart",
+        "unlock": "Passord eller gjenopprettingsnøkkel"
+      },
+      "anylinuxfs": {
+        "type": "Terminal-verktøy, åpen kildekode",
+        "price": "Gratis",
+        "write": "Lese og skrive som standard; skrivebeskyttet kan velges",
+        "silicon": "Bare Apple silicon",
+        "setup": "Ingen kjerneutvidelse. Kjører en lett virtuell maskin og deler stasjonen via NFS. Installeres med Homebrew",
+        "unlock": "Passord, eller gjenopprettingsnøkkelen brukt som passfrase"
+      },
+      "parallels": {
+        "type": "Windows i en virtuell maskin",
+        "price": "Betalt – abonnement eller engangskjøp (Standard). Windows-lisens følger ikke med",
+        "write": "Det Windows tillater, altså lese og skrive",
+        "silicon": "Ja",
+        "setup": "Ingen BitLocker-driver i macOS. USB-stasjonen kobles til den virtuelle maskinen og er da ikke synlig på Macen",
+        "unlock": "Passord eller gjenopprettingsnøkkel, skrevet inn i Windows"
+      }
+    },
+    "note": "Basert på produsentsider sjekket 1. oktober 2026. Priser, funksjoner og systemkrav endrer seg, så sjekk hos produsenten før du kjøper. De kildebelagte detaljene for hvert produkt står på sammenligningssiden for det."
+  },
+  "products": {
+    "title": "Alternativene i detalj",
+    "bestFor": "Best for:",
+    "pros": "Fordeler",
+    "cons": "Avveininger",
+    "compare": "Sammenlign {name} med Unbit",
+    "items": {
+      "unbit": {
+        "bestFor": "å lese filer fra en BitLocker-stasjon og kopiere dem til Macen din.",
+        "text": "Unbit er en gratis app i menylinjen. Den finner den eksterne stasjonen, ber om passordet eller gjenopprettingsnøkkelen og monterer stasjonen i Finder skrivebeskyttet. Alt dekrypteres på Macen din, og appen bruker verken kjerneutvidelse eller macFUSE. Siden den aldri skriver, kan den heller ikke skade eller endre stasjonen.",
+        "pros": [
+          "Gratis, uten lisensnøkkel eller prøvebegrensninger",
+          "Ingen kjerneutvidelse, macFUSE eller redusert oppstartssikkerhet",
+          "Universell app for Apple silicon og Intel",
+          "Åpner med passord eller den 48-sifrede gjenopprettingsnøkkelen",
+          "Kjører lokalt, uten kontoer eller sporing"
+        ],
+        "cons": [
+          "Skrivebeskyttet fra grunnen av: Du kan ikke lagre, slette eller legge til filer på stasjonen",
+          "Kan ikke kryptere stasjoner eller endre BitLocker-innstillinger",
+          "Bare eksterne stasjoner, ikke interne disker",
+          "Krever macOS {minOS} eller nyere"
+        ]
+      },
+      "iboysoft": {
+        "bestFor": "dem som vil skrive til BitLocker-stasjoner fra Macen eller kryptere stasjoner i macOS.",
+        "text": "iBoysoft BitLocker for Mac er en kommersiell app med lese- og skrivetilgang. Den har to moduser: en File Manager-modus og en Volume Mounter-modus som monterer stasjonen i Finder. Den kan også kryptere stasjoner med BitLocker.",
+        "pros": [
+          "Lese- og skrivetilgang",
+          "Kan også kryptere stasjoner med BitLocker",
+          "En File Manager-modus som fungerer uten systemutvidelse",
+          "Støtter Mac med M-brikker og Intel"
+        ],
+        "cons": [
+          "Betalt; prøveversjonen kan bare bla i og forhåndsvise filer",
+          "Finder-modus krever en systemutvidelse, og på Apple silicon dokumenterer produsenten Redusert sikkerhet",
+          "Aktivering krever internettilgang, ifølge produsenten"
+        ]
+      },
+      "hasleo": {
+        "bestFor": "dem som vil ha ett betalt verktøy for å montere, kryptere og dekryptere BitLocker-stasjoner.",
+        "text": "Hasleo BitLocker Anywhere for Mac monterer BitLocker-stasjoner med lese og skrive eller bare lese, og kan også kryptere og dekryptere dem. Produsenten oppgir den til en lavere pris enn de andre betalte appene da dette ble skrevet; sjekk gjeldende pris.",
+        "pros": [
+          "Montering med lese og skrive eller bare lese",
+          "Kan kryptere og dekryptere stasjoner og endre passordet",
+          "Oppgir støtte for Intel og Apple silicon"
+        ],
+        "cons": [
+          "Betalt",
+          "På Apple silicon omfatter oppsettet Redusert sikkerhet og kjerneutvidelser, ifølge produsentens forum",
+          "Vi kunne ikke bekrefte begrensningene i den gratis prøveversjonen"
+        ]
+      },
+      "uubyte": {
+        "bestFor": "dem som stort sett leser, men vil kunne skrive etter opplåsing.",
+        "text": "UUByte BitLocker Geeker er en betalt app. Etter opplåsing kan du se og kopiere filer, og skrivetilgang slås på med en knapp som heter Enable Write, ifølge produsenten.",
+        "pros": [
+          "Valgfri skrivetilgang",
+          "Automatisk opplåsing via nøkkelringen",
+          "Produsenten dokumenterer trinnene for Mac med M-brikker"
+        ],
+        "cons": [
+          "Betalt",
+          "Trinnene for Apple silicon omfatter kjerneutvidelser og en omstart",
+          "Ikke skrivebeskyttet med mindre du lar skrivetilgangen være av"
+        ]
+      },
+      "anylinuxfs": {
+        "bestFor": "dem som er fortrolige med Terminal og vil ha et gratis alternativ med lese- og skrivetilgang.",
+        "text": "anylinuxfs er et gratis kommandolinjeverktøy med åpen kildekode som monterer filsystemer Linux støtter, inkludert BitLocker-stasjoner, på Mac med Apple silicon. Det kjører en lett virtuell maskin og deler stasjonen med Macen din via NFS.",
+        "pros": [
+          "Gratis og åpen kildekode",
+          "Lese og skrive, med skrivebeskyttet montering som valg",
+          "Ingen kjerneutvidelse og ingen svekket systemsikkerhet",
+          "Håndterer også ext4, btrfs, LUKS og mer"
+        ],
+        "cons": [
+          "Kommandolinje og Homebrew; ikke en app man klikker seg gjennom",
+          "Bare Apple silicon",
+          "Stasjonen vises som en nettverksstasjon, og prosjektet oppgir kjente begrensninger"
+        ]
+      },
+      "parallels": {
+        "bestFor": "dem som allerede kjører Windows på Macen.",
+        "text": "Parallels Desktop er en virtualiseringsapp, ikke et BitLocker-verktøy. Du kobler den eksterne stasjonen til en virtuell Windows-maskin og låser den opp med Windows’ egen BitLocker-støtte. Det funker, men er det største oppsettet av de seks.",
+        "pros": [
+          "Full Windows-oppførsel for stasjonen, også skriving",
+          "Kjører også Windows-programmer",
+          "Ingen BitLocker-driver trengs i macOS"
+        ],
+        "cons": [
+          "Krever en Windows-installasjon og -lisens, pluss diskplass og minne",
+          "Betalt",
+          "Mens stasjonen er koblet til den virtuelle maskinen, er den ikke synlig på Macen"
+        ]
+      }
+    }
+  },
+  "pick": {
+    "title": "Hvilket bør du velge?",
+    "paragraphs": [
+      "Trenger du bare filene – en USB-pinne fra en kollega, en gammel sikkerhetskopistasjon, en disk fra en Windows-PC – så start med det enkleste verktøyet som klarer det. [Unbit](home) er gratis, installeres som enhver Mac-app og lar stasjonen være urørt. Begrensningen er hele poenget: Den kan ikke skrive, så det er ingenting å angre.",
+      "Må du skrive til stasjonen, velger du et alternativ med lese- og skrivetilgang: en av de betalte Mac-appene, anylinuxfs hvis du liker Terminal, eller Windows i en virtuell maskin. Sammenlign pris, oppsett og støtte for Apple silicon på hvert produkts [sammenligningsside](alternatives), og sjekk gjeldende pris før du kjøper.",
+      "Uansett hva du velger: Oppbevar passordet eller den 48-sifrede gjenopprettingsnøkkelen trygt – uten en av dem kan ingen åpne stasjonen. Ny på dette? Start med [Slik åpner du en BitLocker-stasjon på en Mac](open), eller les [BitLocker-gjenopprettingsnøkkel på Mac](recovery) hvis du har mistet passordet."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Hva er den beste BitLocker-løsningen for Mac?",
+      "a": "Det avhenger av oppgaven. For å lese filer og kopiere dem til Macen er et gratis, skrivebeskyttet verktøy som [Unbit](home) nok. Må du skrive til stasjonen, se på de betalte appene med lese- og skrivetilgang, anylinuxfs eller Windows i en virtuell maskin."
+    },
+    {
+      "q": "Finnes det en gratis BitLocker for Mac?",
+      "a": "Ja. Unbit er gratis og skrivebeskyttet, og anylinuxfs er gratis, har åpen kildekode og kan lese og skrive, men kjøres fra Terminal på Mac med Apple silicon. De andre appene i denne sammenligningen er betalte."
+    },
+    {
+      "q": "Støtter macOS BitLocker innebygd?",
+      "a": "Nei. macOS har ingen innebygd BitLocker-støtte. Apples egen kryptering heter FileVault og er en annen teknologi."
+    },
+    {
+      "q": "Kan jeg skrive til en BitLocker-stasjon på en Mac?",
+      "a": "Ja med noen verktøy – de betalte appene, anylinuxfs eller Windows i en virtuell maskin. Ikke med Unbit, som er skrivebeskyttet fra grunnen av."
+    },
+    {
+      "q": "Fungerer disse verktøyene på Mac med Apple silicon?",
+      "a": "De fleste oppgir støtte for både Apple silicon og Intel; anylinuxfs støtter bare Apple silicon. Oppsettet varierer mye, så sjekk dokumentasjonen til hver produsent."
+    },
+    {
+      "q": "Er det trygt å åpne en BitLocker-stasjon på en Mac?",
+      "a": "En stasjon som åpnes skrivebeskyttet, kan ikke endres. Se [Er BitLocker på Mac trygt?](safe) for hva Unbit gjør med passordet og filene dine."
+    },
+    {
+      "q": "Hvor oppdatert er denne sammenligningen?",
+      "a": "Den ble sist oppdatert i oktober 2026, og opplysningene om konkurrentene ble kontrollert mot produsentsider 1. oktober 2026. Bekreft alltid priser og funksjoner hos produsenten."
+    }
+  ],
+  "related": "Flere guider",
+  "disclaimer": "Sist oppdatert {date}. Alle produktnavn er varemerker som tilhører sine respektive eiere. Unbit er en uavhengig app og er ikke tilknyttet eller godkjent av Microsoft, Apple eller noen av produsentene som er nevnt. Denne siden er kun til informasjon."
+}

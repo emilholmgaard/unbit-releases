@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Beste BitLocker voor Mac (2026): eerlijke vergelijking van 6 opties",
+    "description": "Welke BitLocker-optie voor Mac past bij jou? Unbit, iBoysoft, Hasleo, UUByte, anylinuxfs en een Windows-vm vergeleken op prijs, schrijfondersteuning, Apple silicon en installatie. Bijgewerkt in oktober 2026.",
+    "ogTitle": "Beste BitLocker voor Mac (2026) – eerlijke vergelijking"
+  },
+  "ui": {
+    "updated": "Laatst bijgewerkt op {date}",
+    "breadcrumb": "Kruimelpad"
+  },
+  "h1": "Beste BitLocker voor Mac in 2026",
+  "lead": "macOS kan BitLocker-versleutelde schijven niet zelf openen, dus je hebt een hulpmiddel nodig. Er zijn er meerdere, en het beste hangt af van één vraag: wil je alleen je bestanden lezen, of ook naar de schijf schrijven? Dit overzicht vergelijkt zes manieren, met de afwegingen helder erbij.",
+  "disclosure": "Transparantie: wij maken Unbit, een van de opties hieronder. We hebben geprobeerd eerlijk te blijven. Unbit is standaard alleen-lezen, dus voor sommige taken is een andere optie de betere keuze, en dat zeggen we erbij. Gegevens over andere producten komen van de eigen pagina’s van de fabrikanten (gelinkt vanaf elke vergelijkingspagina) en kunnen veranderen.",
+  "quick": {
+    "title": "Het korte antwoord",
+    "items": [
+      "**Je wilt alleen je bestanden lezen en van de schijf kopiëren:** [Unbit](home) – gratis, alleen-lezen, geen stuurprogramma’s.",
+      "**Je moet vanaf je Mac naar BitLocker-schijven schrijven:** een betaalde app zoals iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere of UUByte BitLocker Geeker – of gebruik Windows.",
+      "**Je werkt prettig met Terminal op een Mac met Apple silicon:** anylinuxfs – gratis, open source, lezen en schrijven.",
+      "**Je draait al Windows in een virtuele machine:** gebruik daar het eigen BitLocker van Windows, bijvoorbeeld in Parallels Desktop."
+    ]
+  },
+  "how": {
+    "title": "Hoe we hebben gekozen",
+    "intro": [
+      "We hebben gekeken naar de manieren waarop mensen echt BitLocker-schijven op een Mac openen en de opties gehouden waarvoor we een pagina van de fabrikant of een repository konden controleren. We vergeleken ze op wat telt als de schijf voor je neus ligt:"
+    ],
+    "criteria": [
+      "**Doet het de klus?** Een versleutelde externe schijf onder macOS openen met een wachtwoord of herstelsleutel.",
+      "**Alleen-lezen of lezen en schrijven.** Schrijven is handig, maar betekent ook dat het hulpmiddel je schijf kan wijzigen.",
+      "**Prijsmodel.** Gratis, abonnement of eenmalige licentie.",
+      "**Apple silicon.** Of Macs met M-chips worden ondersteund, niet alleen Intel.",
+      "**Installatie en systeemtoegang.** Of er systeem- of kernelextensies, verlaagde opstartbeveiliging, Terminal of een virtuele machine nodig zijn.",
+      "**Privacy en documentatie.** Waar het ontsleutelen gebeurt en hoe goed de fabrikant de installatie uitlegt."
+    ],
+    "outro": [
+      "We hebben geen snelheidstests gedaan en geven geen genummerde ranglijst, omdat de juiste keuze van je taak afhangt. Er bestaan meer hulpmiddelen; dat er een ontbreekt is geen oordeel. Zie je een fout, check dan de pagina van de fabrikant en laat het ons weten."
+    ]
+  },
+  "table": {
+    "title": "Vergelijkingstabel",
+    "columns": {
+      "tool": "Hulpmiddel",
+      "price": "Prijsmodel",
+      "write": "Lezen / schrijven",
+      "silicon": "Apple silicon",
+      "setup": "Installatie en systeemtoegang",
+      "unlock": "Ontgrendelen met"
+    },
+    "rows": {
+      "unbit": {
+        "type": "Mac-app in de menubalk",
+        "price": "Gratis",
+        "write": "Standaard alleen-lezen",
+        "silicon": "Ja – Apple silicon en Intel",
+        "setup": "Geen kernelextensie of macFUSE. Heeft Volledige schijftoegang en een eenmalige goedkeuring van een leeshulp nodig",
+        "unlock": "Wachtwoord of herstelsleutel van 48 cijfers"
+      },
+      "iboysoft": {
+        "type": "Mac-app",
+        "price": "Betaald – abonnement of eenmalige licentie; check de actuele prijs. De proefversie kan alleen bladeren en voorvertonen",
+        "write": "Lezen en schrijven",
+        "silicon": "Ja – M-chips en Intel",
+        "setup": "Finder-modus vereist een systeemextensie (Verminderde beveiliging op Apple silicon). Een File Manager-modus werkt zonder",
+        "unlock": "Wachtwoord of herstelsleutel"
+      },
+      "hasleo": {
+        "type": "Mac-app",
+        "price": "Betaald – eenmalige licentie; check de actuele prijs",
+        "write": "Lezen en schrijven of alleen lezen, naar keuze",
+        "silicon": "Ja – Intel en Apple silicon",
+        "setup": "Op Apple silicon beschrijft de fabrikant Verminderde beveiliging en het toestaan van kernelextensies. Heeft Volledige schijftoegang nodig",
+        "unlock": "Wachtwoord of herstelsleutel"
+      },
+      "uubyte": {
+        "type": "Mac-app",
+        "price": "Betaald – abonnement van 1 jaar of levenslange licentie; check de actuele prijs",
+        "write": "Lezen; schrijven kan na het ontgrendelen worden ingeschakeld",
+        "silicon": "Ja – de fabrikant heeft een handleiding voor Apple silicon",
+        "setup": "De Apple silicon-handleiding van de fabrikant behandelt Volledige schijftoegang, kernelextensies, het bijwerken van een systeemextensie en een herstart",
+        "unlock": "Wachtwoord of herstelsleutel"
+      },
+      "anylinuxfs": {
+        "type": "Terminal-programma, open source",
+        "price": "Gratis",
+        "write": "Standaard lezen en schrijven; alleen-lezen is te kiezen",
+        "silicon": "Alleen Apple silicon",
+        "setup": "Geen kernelextensie. Draait een lichte virtuele machine en deelt de schijf via NFS. Installatie met Homebrew",
+        "unlock": "Wachtwoord, of de herstelsleutel als wachtwoordzin"
+      },
+      "parallels": {
+        "type": "Windows in een virtuele machine",
+        "price": "Betaald – abonnement of eenmalige aankoop (Standard). Windows-licentie niet inbegrepen",
+        "write": "Wat Windows toestaat, dus lezen en schrijven",
+        "silicon": "Ja",
+        "setup": "Geen BitLocker-stuurprogramma in macOS. De USB-schijf wordt aan de virtuele machine gekoppeld en is dan niet zichtbaar op de Mac",
+        "unlock": "Wachtwoord of herstelsleutel, ingevoerd in Windows"
+      }
+    },
+    "note": "Gebaseerd op pagina’s van fabrikanten die op 1 oktober 2026 zijn bekeken. Prijzen, functies en systeemvereisten veranderen, dus check bij de fabrikant voordat je koopt. De onderbouwde details per product staan op de vergelijkingspagina ervan."
+  },
+  "products": {
+    "title": "De opties in detail",
+    "bestFor": "Het best voor:",
+    "pros": "Voordelen",
+    "cons": "Afwegingen",
+    "compare": "Vergelijk {name} met Unbit",
+    "items": {
+      "unbit": {
+        "bestFor": "bestanden van een BitLocker-schijf lezen en naar je Mac kopiëren.",
+        "text": "Unbit is een gratis menubalk-app. Hij herkent de externe schijf, vraagt om het wachtwoord of de herstelsleutel en mount de schijf in Finder alleen-lezen. Alles wordt op je Mac ontsleuteld en er is geen kernelextensie of macFUSE nodig. Omdat hij nooit schrijft, kan hij de schijf ook niet beschadigen of wijzigen.",
+        "pros": [
+          "Gratis, zonder licentiesleutel of proefbeperkingen",
+          "Geen kernelextensie, macFUSE of verlaagde opstartbeveiliging",
+          "Universele app voor Apple silicon en Intel",
+          "Opent met een wachtwoord of de herstelsleutel van 48 cijfers",
+          "Draait lokaal, zonder accounts of tracking"
+        ],
+        "cons": [
+          "Standaard alleen-lezen: je kunt geen bestanden op de schijf opslaan, verwijderen of toevoegen",
+          "Kan geen schijven versleutelen of BitLocker-instellingen wijzigen",
+          "Alleen externe schijven, geen interne schijven",
+          "Vereist macOS {minOS} of nieuwer"
+        ]
+      },
+      "iboysoft": {
+        "bestFor": "wie vanaf de Mac naar BitLocker-schijven wil schrijven of schijven onder macOS wil versleutelen.",
+        "text": "iBoysoft BitLocker for Mac is een commerciële app met lees- en schrijftoegang. Hij heeft twee modi: een File Manager-modus en een Volume Mounter-modus die de schijf in Finder mount. Hij kan schijven ook met BitLocker versleutelen.",
+        "pros": [
+          "Lees- en schrijftoegang",
+          "Kan schijven ook met BitLocker versleutelen",
+          "Een File Manager-modus die zonder systeemextensie werkt",
+          "Ondersteunt Macs met M-chips en Intel"
+        ],
+        "cons": [
+          "Betaald; de proefversie kan alleen bestanden doorbladeren en voorvertonen",
+          "Finder-modus vereist een systeemextensie en op Apple silicon documenteert de fabrikant Verminderde beveiliging",
+          "Activeren vereist internettoegang, volgens de fabrikant"
+        ]
+      },
+      "hasleo": {
+        "bestFor": "wie één betaald hulpmiddel wil om BitLocker-schijven te mounten, te versleutelen en te ontsleutelen.",
+        "text": "Hasleo BitLocker Anywhere for Mac mount BitLocker-schijven met lezen en schrijven of alleen lezen en kan ze ook versleutelen en ontsleutelen. De fabrikant vermeldt het ten tijde van schrijven tegen een lagere prijs dan de andere betaalde apps; check de actuele prijs.",
+        "pros": [
+          "Mounten met lezen en schrijven of alleen lezen",
+          "Kan schijven versleutelen en ontsleutelen en het wachtwoord wijzigen",
+          "Vermeldt ondersteuning voor Intel en Apple silicon"
+        ],
+        "cons": [
+          "Betaald",
+          "Op Apple silicon omvat de installatie Verminderde beveiliging en kernelextensies, volgens het forum van de fabrikant",
+          "We konden de beperkingen van de gratis proefversie niet verifiëren"
+        ]
+      },
+      "uubyte": {
+        "bestFor": "wie vooral leest maar na het ontgrendelen ook wil kunnen schrijven.",
+        "text": "UUByte BitLocker Geeker is een betaalde app. Na het ontgrendelen kun je bestanden bekijken en kopiëren, en schrijftoegang schakel je volgens de fabrikant in met een knop Enable Write.",
+        "pros": [
+          "Optionele schrijftoegang",
+          "Automatisch ontgrendelen via de sleutelhanger",
+          "De fabrikant documenteert de stappen voor Macs met M-chips"
+        ],
+        "cons": [
+          "Betaald",
+          "De stappen voor Apple silicon omvatten kernelextensies en een herstart",
+          "Niet alleen-lezen, tenzij je schrijftoegang uit laat"
+        ]
+      },
+      "anylinuxfs": {
+        "bestFor": "wie zich thuisvoelt in Terminal en een gratis optie met lezen en schrijven wil.",
+        "text": "anylinuxfs is een gratis open-source opdrachtregelprogramma dat door Linux ondersteunde bestandssystemen, waaronder BitLocker-schijven, mount op Macs met Apple silicon. Het draait een lichte virtuele machine en deelt de schijf via NFS met je Mac.",
+        "pros": [
+          "Gratis en open source",
+          "Lezen en schrijven, met alleen-lezen mounten als keuze",
+          "Geen kernelextensie en geen verlaagde systeembeveiliging",
+          "Werkt ook met ext4, btrfs, LUKS en meer"
+        ],
+        "cons": [
+          "Opdrachtregel en Homebrew; geen app waarin je alles aanklikt",
+          "Alleen Apple silicon",
+          "De schijf verschijnt als netwerkschijf en het project noemt bekende beperkingen"
+        ]
+      },
+      "parallels": {
+        "bestFor": "wie op zijn Mac al Windows draait.",
+        "text": "Parallels Desktop is een virtualisatie-app, geen BitLocker-hulpmiddel. Je koppelt de externe schijf aan een virtuele Windows-machine en ontgrendelt hem met de eigen BitLocker-ondersteuning van Windows. Het werkt, maar het is de grootste opzet van de zes.",
+        "pros": [
+          "Volledig Windows-gedrag voor de schijf, ook schrijven",
+          "Draait ook Windows-programma’s",
+          "Geen BitLocker-stuurprogramma nodig in macOS"
+        ],
+        "cons": [
+          "Vereist een Windows-installatie en -licentie, plus schijfruimte en geheugen",
+          "Betaald",
+          "Zolang de schijf aan de virtuele machine gekoppeld is, is hij niet zichtbaar op de Mac"
+        ]
+      }
+    }
+  },
+  "pick": {
+    "title": "Welke kies je?",
+    "paragraphs": [
+      "Heb je alleen de bestanden nodig – een USB-stick van een collega, een oude back-upschijf, een schijf uit een Windows-pc – begin dan met het eenvoudigste hulpmiddel dat dat kan. [Unbit](home) is gratis, installeert als elke Mac-app en laat de schijf onaangeroerd. De beperking is juist het punt: hij kan niet schrijven, dus er valt niets ongedaan te maken.",
+      "Moet je naar de schijf schrijven, kies dan een optie met lees- en schrijftoegang: een van de betaalde Mac-apps, anylinuxfs als je van Terminal houdt, of Windows in een virtuele machine. Vergelijk prijs, installatie en ondersteuning voor Apple silicon op de [vergelijkingspagina](alternatives) van elk product en check de actuele prijs voordat je koopt.",
+      "Wat je ook kiest, bewaar het wachtwoord of de herstelsleutel van 48 cijfers veilig – zonder een van beide kan niemand de schijf openen. Nieuw hierin? Begin met [Zo open je een BitLocker-schijf op een Mac](open), of lees [BitLocker-herstelsleutel op Mac](recovery) als je het wachtwoord kwijt bent."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Wat is de beste BitLocker voor Mac?",
+      "a": "Dat hangt van de taak af. Om bestanden te lezen en naar je Mac te kopiëren volstaat een gratis, alleen-lezen hulpmiddel zoals [Unbit](home). Moet je naar de schijf schrijven, kijk dan naar de betaalde apps met lezen en schrijven, anylinuxfs of Windows in een virtuele machine."
+    },
+    {
+      "q": "Bestaat er een gratis BitLocker voor Mac?",
+      "a": "Ja. Unbit is gratis en alleen-lezen, en anylinuxfs is gratis, open source en kan lezen en schrijven, maar draait vanuit Terminal op Macs met Apple silicon. De andere apps in deze vergelijking zijn betaald."
+    },
+    {
+      "q": "Ondersteunt macOS BitLocker standaard?",
+      "a": "Nee. macOS heeft geen ingebouwde BitLocker-ondersteuning. De eigen versleuteling heet FileVault en is een andere technologie."
+    },
+    {
+      "q": "Kan ik vanaf een Mac naar een BitLocker-schijf schrijven?",
+      "a": "Ja, met sommige hulpmiddelen – de betaalde apps, anylinuxfs of Windows in een virtuele machine. Niet met Unbit, dat standaard alleen-lezen is."
+    },
+    {
+      "q": "Werken deze hulpmiddelen op Macs met Apple silicon?",
+      "a": "De meeste vermelden ondersteuning voor zowel Apple silicon als Intel; anylinuxfs ondersteunt alleen Apple silicon. De installatie verschilt sterk, dus bekijk de documentatie van elke fabrikant."
+    },
+    {
+      "q": "Is het veilig om een BitLocker-schijf op een Mac te openen?",
+      "a": "Een schijf die alleen-lezen is geopend, kan niet worden gewijzigd. Zie [Is BitLocker op Mac veilig?](safe) voor wat Unbit met je wachtwoord en bestanden doet."
+    },
+    {
+      "q": "Hoe actueel is deze vergelijking?",
+      "a": "Hij is voor het laatst bijgewerkt in oktober 2026 en de gegevens over de concurrenten zijn op 1 oktober 2026 gecontroleerd aan de hand van pagina’s van de fabrikanten. Verifieer prijzen en functies altijd bij de fabrikant."
+    }
+  ],
+  "related": "Meer handleidingen",
+  "disclaimer": "Laatst bijgewerkt op {date}. Alle productnamen zijn handelsmerken van hun respectieve eigenaren. Unbit is een onafhankelijke app en is niet verbonden aan of goedgekeurd door Microsoft, Apple of een van de genoemde fabrikanten. Deze pagina is alleen bedoeld ter informatie."
+}

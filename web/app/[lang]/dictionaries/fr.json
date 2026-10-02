@@ -86,7 +86,10 @@
   "guides": {
     "title": "Guides : BitLocker sur Mac",
     "intro": "Des guides courts et pratiques pour ouvrir, comprendre et utiliser les disques BitLocker sur un Mac.",
-    "cta": "Tous les guides"
+    "cta": "Tous les guides",
+    "bestTitle": "Meilleur BitLocker pour Mac (2026)",
+    "bestText": "Un tour d’horizon honnête des façons d’ouvrir des disques BitLocker sur un Mac : prix, lecture seule ou lecture-écriture, Apple silicon et installation.",
+    "bestCta": "Lire le comparatif"
   },
   "cta": { "title": "Ouvrez votre disque BitLocker", "text": "Aucun PC Windows requis.", "download": "Télécharger pour macOS", "whatsNew": "Nouveautés" },
   "footer": {

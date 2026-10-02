@@ -323,6 +323,318 @@
           "a": "Ja. Unbit leser bare stasjonen og endrer den aldri, så den forblir akkurat slik Windows etterlot den."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Åpne en BitLocker-kryptert USB-stasjon på Mac – gratis guide",
+      "metaDescription": "Står det «Disken du satte inn, kunne ikke leses»? Åpne en BitLocker-kryptert USB-stasjon på Macen din: hva som funker, hva som er gratis, og en guide i 5 trinn med Unbit.",
+      "h1": "Slik åpner du en BitLocker-kryptert USB-stasjon på Mac",
+      "summary": "«Disken du satte inn, kunne ikke leses»: hva det betyr, og den raskeste gratis måten å åpne stasjonen på.",
+      "lead": "Du kobler en USB-stasjon til Macen, og macOS sier at disken ikke kunne leses av denne datamaskinen. Hvis stasjonen ble kryptert med BitLocker på en Windows-PC, er den ikke ødelagt – macOS kan bare ikke dekryptere den. Denne guiden viser hvilke muligheter du har, og hvordan du åpner stasjonen på rundt fem minutter med [Unbit](home), en gratis BitLocker-leser som bare leser.",
+      "sections": [
+        {
+          "title": "Hva meldingen om at disken ikke kunne leses, egentlig betyr",
+          "intro": [
+            "macOS viser meldingen hver gang den møter en disk den ikke kjenner igjen. Med en BitLocker-stasjon er dataene dine i orden: De er kodet i et krypteringsformat som Windows og verktøy med BitLocker-støtte kan lese. **Ikke klikk på Initialiser eller Slett** – det ville slettet alt på stasjonen. Klikk heller på **Ignorer**.",
+            "Sjekk tre ting før du installerer noe: Stasjonen er ekstern (USB-pinne, SSD eller harddisk), du har passordet eller den 48-sifrede gjenopprettingsnøkkelen, og den lar seg fortsatt åpne på en Windows-PC – da vet du at selve stasjonen er frisk."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Mulighetene dine for å åpne den",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS alene:** Det finnes ingen innebygd BitLocker-støtte og ingen skjult innstilling som legger den til. FileVault er Apples egen kryptering og har ikke noe med BitLocker å gjøre.",
+            "**En Windows-PC eller en virtuell Windows-maskin:** Dette funker fordi Windows har BitLocker innebygd, og du kan både lese og skrive. Du trenger tilgang til Windows, og en virtuell maskin krever en Windows-lisens.",
+            "**Et gratis kommandolinjeverktøy som anylinuxfs:** Åpen kildekode og med lese- og skrivetilgang, men bare for Mac med Apple silicon og brukt fra Terminal.",
+            "**En BitLocker-app for Mac:** Den raskeste veien hvis du bare vil ha filene dine. Flere betalte apper lar deg også skrive til stasjonen; [Unbit](home) er gratis og skrivebeskyttet. For en side-ved-side-sammenligning, se [Beste BitLocker for Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Åpne USB-stasjonen med Unbit",
+          "intro": [],
+          "steps": [
+            "Last ned Unbit, dra den til Programmer-mappen og åpne den. Appen bor i menylinjen og krever macOS 13 eller nyere (Apple silicon eller Intel). Første gang viser den hvor du slår på **Full disktilgang**.",
+            "Koble til USB-stasjonen, helst rett i Macen i stedet for via en hub. Unbit viser den under **Stasjoner**; velg den.",
+            "Skriv inn BitLocker-passordet og velg **Åpne stasjon**. macOS kan be om Mac-passordet ditt én gang for å godkjenne lesetilgang.",
+            "Velg **Vis i Finder**. Stasjonen er montert skrivebeskyttet, så du kan bla gjennom den, åpne filer og kopiere dem til Macen din.",
+            "Når du er ferdig, velger du **Løs ut trygt** før du trekker ut pinnen."
+          ],
+          "bullets": [],
+          "outro": [
+            "Vil du ha skjermbilder og flere detaljer? Les [Slik åpner du en BitLocker-stasjon på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Hva du kan og ikke kan gjøre når stasjonen er åpen",
+          "intro": [
+            "Unbit skriver aldri til stasjonen, så du kan bla gjennom mapper, forhåndsvise og åpne filer og kopiere dem til Macen. Du kan ikke lagre endringer tilbake, slette filer eller legge til nye. Det er et bevisst valg: Ingenting kan endres eller slettes ved en feil, og stasjonen er akkurat slik Windows etterlot den."
+          ],
+          "steps": [],
+          "bullets": [
+            "Skal du redigere en fil, kopierer du den først til Macen og jobber med kopien.",
+            "Skal du endre det som ligger på stasjonen, eller BitLocker-innstillingene, bruker du Windows."
+          ],
+          "outro": [
+            "Mer om hva skrivebeskyttet betyr: [Er BitLocker på Mac trygt?](safe)."
+          ]
+        },
+        {
+          "title": "Hvis det ikke funker",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Stasjonen vises ikke.** Koble den fra og til igjen, bruk en port på selve Macen og oppdater listen med ⌘R. Bare eksterne stasjoner støttes.",
+            "**«Feil passord».** Sjekk for skrivefeil og Caps Lock. Har du gjenopprettingsnøkkelen, kan du bruke den i stedet – se [BitLocker-gjenopprettingsnøkkel på Mac](recovery).",
+            "**Tilgang nektet.** Unbit trenger Full disktilgang: Systeminnstillinger › Personvern og sikkerhet › Full disktilgang.",
+            "**Stasjonen åpnes i Finder uten Unbit.** Da er den ikke BitLocker-kryptert, eller du har valgt en ukryptert partisjon på samme stasjon.",
+            "**Det feiler også på en Windows-PC.** Stasjonen kan være skadet, eller den kan fortsatt holde på å krypteres eller dekrypteres. La Windows bli ferdig og prøv igjen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis du verken har passord eller gjenopprettingsnøkkel",
+          "intro": [
+            "BitLocker kan ikke omgås – det er hele poenget med kryptering. Datagjenopprettingsprogrammer kommer heller ikke utenom, og å formatere stasjonen sletter bare dataene. Se etter den 48-sifrede gjenopprettingsnøkkelen i Microsoft-kontoen som ble brukt på PC-en som krypterte stasjonen, i en lagret fil eller på en utskrift – eller spør IT-administratoren din hvis det er en jobbstasjon."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hvorfor sier Macen min at disken ikke kunne leses?",
+          "a": "Stasjonen er kryptert med BitLocker, som macOS ikke kan lese. Dataene er ikke tapt. Klikk på Ignorer (aldri Initialiser eller Slett) og åpne den med en BitLocker-leser som [Unbit](home)."
+        },
+        {
+          "q": "Kan jeg åpne en BitLocker-USB-stasjon på en Mac gratis?",
+          "a": "Ja. Unbit er gratis og åpner stasjoner skrivebeskyttet. anylinuxfs er et gratis kommandolinjeverktøy med åpen kildekode for Apple silicon, og en Windows-PC koster heller ikke noe ekstra hvis du har en. De fleste andre Mac-appene er betalte."
+        },
+        {
+          "q": "Endrer det stasjonen at jeg åpner den på Macen?",
+          "a": "Nei. Unbit monterer stasjonen skrivebeskyttet og skriver aldri til den, så den er akkurat slik Windows etterlot den."
+        },
+        {
+          "q": "Trenger jeg drivere, en kjerneutvidelse eller macFUSE?",
+          "a": "Ikke for Unbit. Appen bruker diskbildestøtten som allerede er innebygd i macOS, og trenger Full disktilgang og en engangsgodkjenning av lesehjelperen sin."
+        },
+        {
+          "q": "Funker det på Mac med Apple silicon?",
+          "a": "Ja. Unbit er en universell app for Mac med Apple silicon og Intel."
+        },
+        {
+          "q": "Kan jeg bruke USB-stasjonen på Windows etterpå?",
+          "a": "Ja. Ingenting på stasjonen endres, så den fungerer fortsatt på Windows-PC-en din."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go på Mac: åpne en Windows-kryptert USB-pinne",
+      "metaDescription": "En USB-pinne kryptert med BitLocker To Go i Windows? Se hva BitLocker To Go er, hvorfor en Mac ikke kan åpne den alene, og hvordan du leser den med Unbit.",
+      "h1": "BitLocker To Go på Mac: åpne en Windows-kryptert USB-pinne",
+      "summary": "Hva BitLocker To Go er, og hvordan du leser en Windows-kryptert USB-pinne på Macen din.",
+      "lead": "BitLocker To Go er den delen av BitLocker som Windows bruker til flyttbare stasjoner som USB-pinner. Noen har kryptert en pinne på en Windows-PC, og nå trenger du filene på Macen din. macOS kan ikke låse opp slike stasjoner alene, men [Unbit](home) kan åpne dem skrivebeskyttet. Her er hvordan BitLocker To Go fungerer, og hva du kan vente deg på en Mac.",
+      "sections": [
+        {
+          "title": "Hva BitLocker To Go er",
+          "intro": [
+            "BitLocker er Microsofts stasjonskryptering for Windows. BitLocker To Go er navnet på den samme beskyttelsen på flyttbare stasjoner: USB-pinner og eksterne stasjoner. I Windows slår du det på fra Filutforsker, velger hvordan stasjonen skal låses opp – vanligvis med et passord – og lagrer en 48-sifret gjenopprettingsnøkkel.",
+            "En beskyttet stasjon har en hengelås i Windows Filutforsker, og Windows ber om passordet når du kobler den til. Alt på stasjonen er kryptert, ikke bare noen få mapper."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Hva som skjer når du kobler den til en Mac",
+          "intro": [
+            "macOS ser en disk den ikke kan lese. Vanligvis vises meldingen om at disken ikke kunne leses av denne datamaskinen, eller så dukker ikke stasjonen opp i Finder i det hele tatt. Filene er intakte: Klikk på **Ignorer**, og velg aldri Initialiser eller Slett.",
+            "Hvis pinnen låses opp automatisk på din egen PC, gjelder den innstillingen bare den PC-en. På en Mac trenger du fortsatt passordet eller gjenopprettingsnøkkelen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Åpne en BitLocker To Go-stasjon med Unbit",
+          "intro": [],
+          "steps": [
+            "Installer [Unbit](home) fra nettsiden og åpne den fra menylinjen. Første gang viser appen hvor du slår på **Full disktilgang**.",
+            "Koble til USB-pinnen. Unbit finner den automatisk og viser den under **Stasjoner**.",
+            "Skriv inn passordet du valgte i Windows, og velg **Åpne stasjon**. Har du bare gjenopprettingsnøkkelen, bruker du den i stedet – se [BitLocker-gjenopprettingsnøkkel på Mac](recovery).",
+            "Velg **Vis i Finder** og kopier filene du trenger til Macen.",
+            "Velg **Løs ut trygt** før du trekker ut pinnen."
+          ],
+          "bullets": [],
+          "outro": [
+            "Den fullstendige gjennomgangen med skjermbilder finner du i [Slik åpner du en BitLocker-stasjon på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Flytte filer mellom en Windows-PC og en Mac",
+          "intro": [
+            "Unbit leser BitLocker To Go-stasjoner, men skriver ikke til dem. Det påvirker hvordan du deler filer:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windows til Mac:** Legg filene på pinnen i Windows og kopier dem deretter over på Macen.",
+            "**Mac til Windows:** Du kan ikke lagre på den krypterte pinnen fra Macen. Bruk en annen vei, for eksempel en ekstra stasjon formatert som exFAT (macOS og Windows kan begge lese og skrive den) eller en sky- eller nettverksmappe.",
+            "**Sensitive filer:** En ukryptert exFAT-stasjon er praktisk, men uten beskyttelse hvis den blir borte. Behold private data på BitLocker-pinnen og bruk den skrivebeskyttet på Macen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Greit å vite om USB-pinner",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Koble pinnen rett til Macen i stedet for til en hub uten strøm, og prøv en annen port hvis den ikke vises.",
+            "Har pinnen flere partisjoner, velger du den som er BitLocker-kryptert.",
+            "Unbit støtter stasjoner kryptert i Windows 7 eller nyere. Filsystemet inni bør være exFAT, FAT32 eller NTFS.",
+            "Et minnekort i en USB-kortleser vises vanligvis som en ekstern stasjon på Macen, så det fungerer på samme måte.",
+            "Hvis Windows fortsatt krypterer eller dekrypterer pinnen, lar du det bli ferdig først."
+          ],
+          "outro": [
+            "Mer om stasjonstyper: [Åpne en BitLocker-SSD, -HDD eller -USB-pinne på Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Er BitLocker To Go noe annet enn BitLocker?",
+          "a": "Det er den samme teknologien. BitLocker To Go er bare navnet når den brukes på flyttbare stasjoner som USB-pinner."
+        },
+        {
+          "q": "Kan en Mac åpne BitLocker To Go uten ekstra programvare?",
+          "a": "Nei. macOS har ingen innebygd BitLocker-støtte, så du trenger en leser som [Unbit](home) eller en Windows-PC."
+        },
+        {
+          "q": "Kan jeg lagre filer på pinnen fra Macen?",
+          "a": "Ikke med Unbit, som er skrivebeskyttet fra grunnen av. Kopier filer fra pinnen på Macen, og bruk Windows når du må legge til eller endre filer på den."
+        },
+        {
+          "q": "Fungerer pinnen fortsatt på Windows etterpå?",
+          "a": "Ja. Unbit leser bare pinnen og endrer den aldri."
+        },
+        {
+          "q": "Jeg har en gjenopprettingsnøkkel, men ikke passordet. Kan jeg likevel åpne den?",
+          "a": "Ja. Unbit godtar den 48-sifrede gjenopprettingsnøkkelen i stedet for passordet. Se [BitLocker-gjenopprettingsnøkkel på Mac](recovery)."
+        },
+        {
+          "q": "Lagrer Unbit passordet mitt?",
+          "a": "Bare hvis du huker av for «Husk denne stasjonen på denne Macen». Da lagres det kryptert i nøkkelringen i macOS, og du kan glemme det igjen når som helst."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker-gjenopprettingsnøkkel på Mac: lås opp en stasjon",
+      "metaDescription": "Glemt BitLocker-passordet? Finn den 48-sifrede gjenopprettingsnøkkelen og bruk den til å åpne stasjonen på en Mac, skrivebeskyttet, med Unbit. Hvor du leter, og hva du gjør hvis den avvises.",
+      "h1": "BitLocker-gjenopprettingsnøkkel på Mac: lås opp en stasjon med den 48-sifrede nøkkelen",
+      "summary": "Hvor du finner den 48-sifrede gjenopprettingsnøkkelen, og hvordan du bruker den til å åpne en BitLocker-stasjon på Macen din.",
+      "lead": "Mistet BitLocker-passordet? Hvis du fortsatt har den 48-sifrede gjenopprettingsnøkkelen, kan du åpne stasjonen på en Mac. [Unbit](home) godtar gjenopprettingsnøkkelen (fra versjon 1.0.8) i stedet for passordet og åpner stasjonen skrivebeskyttet. Denne guiden forklarer hva nøkkelen er, hvor du kan lete etter den og hvordan du bruker den.",
+      "sections": [
+        {
+          "title": "Hva gjenopprettingsnøkkelen er",
+          "intro": [
+            "Når BitLocker slås på, lager Windows en gjenopprettingsnøkkel og ber deg lagre eller skrive den ut. Den er 48 sifre lang, skrevet som 8 grupper à 6 sifre atskilt med bindestreker, for eksempel 123456-123456-… og så videre.",
+            "Gjenopprettingsnøkkelen er en ekstra inngang. Den låser opp stasjonen i stedet for passordet, og hver stasjon har sin egen nøkkel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Hvor du finner den",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Microsoft-kontoen din.** Var du logget inn med en Microsoft-konto da stasjonen ble kryptert, kan nøkkelen være lagret der. Logg inn på kontoen og se etter BitLocker-gjenopprettingsnøkler.",
+            "**En fil eller en utskrift.** Windows tilbyr å lagre nøkkelen i en fil eller skrive den ut når du slår på BitLocker. Sjekk dokumentene dine, en USB-pinne eller en mappe med utskrifter.",
+            "**Organisasjonen din.** For en jobb- eller skolestasjon ligger nøkkelen ofte hos IT-administratoren.",
+            "**Flere nøkler?** Bruk den som hører til denne stasjonen. Har du flere, hjelper nøkkel-ID-en som vises sammen med hver nøkkel, deg å skille dem."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Lås opp stasjonen med gjenopprettingsnøkkelen i Unbit",
+          "intro": [],
+          "steps": [
+            "Sørg for at du har Unbit 1.0.8 eller nyere. Åpne appen, koble til stasjonen og velg den under **Stasjoner**.",
+            "Bytt til fanen **Gjenopprettingsnøkkel** (velg **Bruk gjenopprettingsnøkkel**).",
+            "Kopier nøkkelen din og velg **Lim inn gjenopprettingsnøkkel**, eller skriv inn de 48 sifrene. Mellomrom og bindestreker går fint, og Unbit teller sifrene for deg.",
+            "Velg **Åpne stasjon**. macOS kan be om Mac-passordet ditt én gang for å godkjenne lesetilgang.",
+            "Velg **Vis i Finder**, kopier filene dine og bruk **Løs ut trygt** når du er ferdig."
+          ],
+          "bullets": [],
+          "outro": [
+            "Huk av for **Husk denne stasjonen på denne Macen** hvis Unbit skal lagre nøkkelen kryptert i nøkkelringen i macOS, så stasjonen åpnes uten at du må skrive den inn igjen."
+          ]
+        },
+        {
+          "title": "Hva gjenopprettingsnøkkelen gjør, og hva den ikke gjør",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Den åpner stasjonen skrivebeskyttet, akkurat som passordet.",
+            "Den tilbakestiller eller endrer ikke BitLocker-passordet, fjerner ikke BitLocker og reparerer ikke stasjonen. Unbit skriver aldri til stasjonen, så de oppgavene hører til i Windows.",
+            "Den fungerer bare for stasjonen den tilhører."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis nøkkelen avvises",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Sjekk alle 48 sifrene, i 8 grupper à 6. Unbit peker ut en gruppe som ikke kan stemme.",
+            "Bruk bare sifre, mellomrom og bindestreker. Kopiert tekst har av og til ekstra tegn eller linjeskift.",
+            "Pass på at det er nøkkelen til denne stasjonen, og ikke til en annen stasjon eller PC.",
+            "En gjenopprettingsnøkkel kan byttes ut i Windows. Hvis stasjonen er kryptert på nytt eller nøkkelen er laget på nytt, prøv den nyeste nøkkelen.",
+            "Sier Unbit at stasjonen ikke har noen gjenopprettingsnøkkel, bruker du passordet i stedet."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis du ikke finner nøkkelen",
+          "intro": [
+            "BitLocker er bygd slik at ingen kan komme utenom. Uten passordet eller gjenopprettingsnøkkelen kan ikke dataene gjenopprettes – ikke av Unbit, ikke av datagjenopprettingsprogrammer, ikke av noen. Ikke formater stasjonen i håp om å fikse den: Da slettes dataene.",
+            "Fortsett å lete på stedene som er nevnt ovenfor, og spør den som satte opp stasjonen. Når du er inne, oppbevarer du nøkkelen et trygt sted. De generelle trinnene står i [Slik åpner du en BitLocker-stasjon på en Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Støtter Unbit BitLocker-gjenopprettingsnøkkelen?",
+          "a": "Ja, fra versjon 1.0.8. Skriv den inn under fanen Gjenopprettingsnøkkel i stedet for passordet."
+        },
+        {
+          "q": "Jeg har bare nøkkel-ID-en. Er det nok?",
+          "a": "Nei. Nøkkel-ID-en identifiserer bare en nøkkel. Du trenger alle 48 sifrene."
+        },
+        {
+          "q": "Kan jeg bruke gjenopprettingsnøkkelen til å sette et nytt passord fra Macen?",
+          "a": "Nei. Unbit er skrivebeskyttet og kan ikke endre BitLocker-innstillinger. Bruk Windows hvis du må sette et nytt passord."
+        },
+        {
+          "q": "Blir gjenopprettingsnøkkelen min sendt noe sted?",
+          "a": "Nei. Dekrypteringen skjer på Macen din, og nøkkelen sendes aldri noe sted."
+        },
+        {
+          "q": "Hvor finner jeg nøkkelen til en jobbstasjon?",
+          "a": "Spør IT-administratoren din. Organisasjoner lagrer ofte gjenopprettingsnøkler sentralt."
+        },
+        {
+          "q": "Kan jeg bruke gjenopprettingsnøkkelen selv om jeg husker passordet?",
+          "a": "Ja. Begge deler åpner stasjonen."
+        }
+      ]
     }
   }
 }

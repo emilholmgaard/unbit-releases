@@ -323,6 +323,318 @@
           "a": "Yes. Unbit only reads the drive and never changes it, so it stays exactly as Windows left it."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Open a BitLocker-Encrypted USB Drive on Mac – Free Guide",
+      "metaDescription": "Got “The disk you inserted was not readable”? Open a BitLocker-encrypted USB drive on your Mac: what works, what’s free, and a 5-step guide with Unbit.",
+      "h1": "How to open a BitLocker-encrypted USB drive on Mac",
+      "summary": "“The disk you inserted was not readable”: what it means and the quickest free way to open the drive.",
+      "lead": "You plug a USB drive into your Mac and macOS says “The disk you inserted was not readable by this computer.” If the drive was encrypted with BitLocker on a Windows PC, it isn’t damaged – macOS simply can’t decrypt it. This guide shows your options and how to open the drive in about five minutes with [Unbit](home), a free, read-only BitLocker reader.",
+      "sections": [
+        {
+          "title": "What the “not readable” message really means",
+          "intro": [
+            "macOS shows that message whenever it meets a disk it doesn’t recognize. For a BitLocker drive your data is fine: it is scrambled in an encryption format that Windows, and tools that understand BitLocker, can read. **Don’t click Initialize or Erase** – that would delete everything on the drive. Click **Ignore** instead.",
+            "Before you install anything, check three things: the drive is an external one (USB stick, SSD or hard drive), you have its password or its 48-digit recovery key, and it still opens on a Windows PC – that tells you the drive itself is healthy."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Your options for opening it",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS on its own:** there is no built-in BitLocker support and no hidden setting that adds it. FileVault is Apple’s own encryption and is unrelated.",
+            "**A Windows PC or a Windows virtual machine:** this works because Windows has BitLocker built in, and you can read and write. You need access to Windows, and a virtual machine needs a Windows licence.",
+            "**A free command-line tool such as anylinuxfs:** open source and read-write, but for Apple silicon Macs only and used from Terminal.",
+            "**A BitLocker app for Mac:** the quickest route if you only want your files. Several paid apps also let you write to the drive; [Unbit](home) is free and read-only. For a side-by-side look, see [Best BitLocker for Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Open the USB drive with Unbit",
+          "intro": [],
+          "steps": [
+            "Download Unbit, drag it into your Applications folder and open it. It lives in the menu bar and needs macOS 13 or later (Apple silicon or Intel). On first launch it shows where to switch on **Full Disk Access**.",
+            "Plug in the USB drive, ideally straight into the Mac rather than through a hub. Unbit lists it under **Drives**; select it.",
+            "Enter the BitLocker password and choose **Open Drive**. macOS may ask for your Mac password once to approve read access.",
+            "Choose **Show in Finder**. The drive is mounted read-only, so you can browse it, open files and copy them to your Mac.",
+            "When you’re done, choose **Eject Safely** before unplugging the stick."
+          ],
+          "bullets": [],
+          "outro": [
+            "Want screenshots and more detail? See [How to open a BitLocker drive on a Mac](open)."
+          ]
+        },
+        {
+          "title": "What you can and can’t do once it’s open",
+          "intro": [
+            "Unbit never writes to the drive, so you can browse folders, preview and open files, and copy them to your Mac. You can’t save changes back, delete files or add new ones. That is a deliberate trade-off: nothing can be changed or deleted by accident, and the drive stays exactly as Windows left it."
+          ],
+          "steps": [],
+          "bullets": [
+            "To edit a file, copy it to your Mac first and work on the copy.",
+            "To change what’s stored on the drive, or to change its BitLocker settings, use Windows."
+          ],
+          "outro": [
+            "More on what read-only means: [Is BitLocker on Mac safe?](safe)."
+          ]
+        },
+        {
+          "title": "If it doesn’t work",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**The drive isn’t listed.** Unplug it and plug it in again, use a port on the Mac itself, and refresh the list with ⌘R. Only external drives are supported.",
+            "**“Wrong password”.** Check for typos and Caps Lock. If you have the recovery key, use that instead – see [BitLocker recovery key on Mac](recovery).",
+            "**Access denied.** Unbit needs Full Disk Access: System Settings › Privacy & Security › Full Disk Access.",
+            "**The drive opens in Finder without Unbit.** Then it isn’t BitLocker-encrypted, or you picked an unencrypted partition on the same drive.",
+            "**It also fails on a Windows PC.** The drive may be damaged or still being encrypted or decrypted. Let Windows finish, then try again."
+          ],
+          "outro": []
+        },
+        {
+          "title": "If you have neither password nor recovery key",
+          "intro": [
+            "BitLocker can’t be bypassed – that is the point of encryption. Data recovery software can’t get around it either, and formatting the drive only erases it. Look for the 48-digit recovery key in the Microsoft account used on the PC that encrypted the drive, in a saved file or printout, or ask your IT administrator for a work drive."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my Mac say the disk is not readable?",
+          "a": "The drive is encrypted with BitLocker, which macOS can’t read. The data isn’t lost. Click Ignore (never Initialize or Erase) and open it with a BitLocker reader such as [Unbit](home)."
+        },
+        {
+          "q": "Can I open a BitLocker USB drive on a Mac for free?",
+          "a": "Yes. Unbit is free and opens drives read-only. anylinuxfs is a free open-source command-line tool for Apple silicon, and a Windows PC is also free if you have one. Most other Mac apps are paid."
+        },
+        {
+          "q": "Will opening the drive on my Mac change it?",
+          "a": "No. Unbit mounts the drive read-only and never writes to it, so it stays exactly as Windows left it."
+        },
+        {
+          "q": "Do I need drivers, a kernel extension or macFUSE?",
+          "a": "Not for Unbit. It uses the disk image support built into macOS and needs Full Disk Access and a one-time approval of its read helper."
+        },
+        {
+          "q": "Does it work on Apple silicon Macs?",
+          "a": "Yes. Unbit is a universal app for Apple silicon and Intel Macs."
+        },
+        {
+          "q": "Can I use the USB drive on Windows afterwards?",
+          "a": "Yes. Nothing on the drive is changed, so it keeps working on your Windows PC."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go on Mac: Open a Windows-Encrypted USB Drive",
+      "metaDescription": "A USB stick encrypted with BitLocker To Go on Windows? Learn what BitLocker To Go is, why a Mac can’t open it by itself, and how to read it with Unbit.",
+      "h1": "BitLocker To Go on Mac: open a Windows-encrypted USB flash drive",
+      "summary": "What BitLocker To Go is and how to read a Windows-encrypted USB stick on your Mac.",
+      "lead": "BitLocker To Go is the part of BitLocker that Windows uses for removable drives such as USB flash drives. Someone encrypted a stick on a Windows PC, and now you need the files on your Mac. macOS can’t unlock these drives by itself, but [Unbit](home) can open them read-only. Here is how BitLocker To Go works and what to expect on a Mac.",
+      "sections": [
+        {
+          "title": "What BitLocker To Go is",
+          "intro": [
+            "BitLocker is Microsoft’s drive encryption for Windows. BitLocker To Go is the name for the same protection on removable drives: USB flash drives and external drives. In Windows you switch it on from File Explorer, choose how the drive unlocks – usually a password – and save a 48-digit recovery key.",
+            "A protected drive shows a padlock in Windows File Explorer, and Windows asks for the password when you plug it in. Everything on the drive is encrypted, not just a few folders."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "What happens when you plug it into a Mac",
+          "intro": [
+            "macOS sees a disk it can’t read. It usually shows “The disk you inserted was not readable by this computer”, or the drive doesn’t appear in Finder at all. The files are intact: click **Ignore**, and never choose Initialize or Erase.",
+            "If the stick unlocks automatically on your own PC, that setting only applies to that PC. On a Mac you still need the password or the recovery key."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Open a BitLocker To Go drive with Unbit",
+          "intro": [],
+          "steps": [
+            "Install [Unbit](home) from its website and open it from the menu bar. The first launch shows where to enable **Full Disk Access**.",
+            "Plug in the USB stick. Unbit finds it automatically and lists it under **Drives**.",
+            "Enter the password you chose in Windows, then choose **Open Drive**. If you only have the recovery key, use that instead – see [BitLocker recovery key on Mac](recovery).",
+            "Choose **Show in Finder** and copy the files you need to your Mac.",
+            "Choose **Eject Safely** before you pull the stick out."
+          ],
+          "bullets": [],
+          "outro": [
+            "The full walkthrough, with screenshots, is in [How to open a BitLocker drive on a Mac](open)."
+          ]
+        },
+        {
+          "title": "Moving files between a Windows PC and a Mac",
+          "intro": [
+            "Unbit reads BitLocker To Go drives; it doesn’t write to them. That affects how you share files:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windows to Mac:** put the files on the stick in Windows, then copy them off on the Mac.",
+            "**Mac to Windows:** you can’t save onto the encrypted stick from the Mac. Use another route, such as a second drive formatted as exFAT (macOS and Windows both read and write it) or a cloud or network share.",
+            "**Sensitive files:** an unencrypted exFAT drive is convenient but unprotected if it’s lost, so keep private data on the BitLocker stick and use it read-only on the Mac."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Things to know about USB sticks",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Plug the stick straight into the Mac rather than into an unpowered hub, and try another port if it isn’t listed.",
+            "If the stick has several partitions, choose the one that is BitLocker-encrypted.",
+            "Unbit supports drives encrypted on Windows 7 or later. The file system inside should be exFAT, FAT32 or NTFS.",
+            "A memory card in a USB card reader normally appears to the Mac as an external drive, so it works the same way.",
+            "If Windows is still encrypting or decrypting the stick, let it finish first."
+          ],
+          "outro": [
+            "More on drive types: [Open a BitLocker SSD, HDD or USB stick on Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is BitLocker To Go different from BitLocker?",
+          "a": "It is the same technology. BitLocker To Go is simply the name used for removable drives such as USB sticks."
+        },
+        {
+          "q": "Can a Mac open BitLocker To Go without extra software?",
+          "a": "No. macOS has no built-in BitLocker support, so you need a reader such as [Unbit](home) or a Windows PC."
+        },
+        {
+          "q": "Can I save files onto the stick from my Mac?",
+          "a": "Not with Unbit, which is read-only by design. Copy files off the stick on the Mac and use Windows when you need to add or change files on it."
+        },
+        {
+          "q": "Will the stick still work on Windows afterwards?",
+          "a": "Yes. Unbit only reads the stick and never changes it."
+        },
+        {
+          "q": "I have a recovery key but no password. Can I still open it?",
+          "a": "Yes. Unbit accepts the 48-digit recovery key instead of the password. See [BitLocker recovery key on Mac](recovery)."
+        },
+        {
+          "q": "Does Unbit store my password?",
+          "a": "Only if you tick “Remember this drive on this Mac”. It is then stored encrypted in your macOS keychain, and you can forget it at any time."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker Recovery Key on Mac: Unlock a Drive (48 Digits)",
+      "metaDescription": "Forgot your BitLocker password? Find your 48-digit recovery key and use it to open the drive on a Mac, read-only, with Unbit. Where to look and what to do if it fails.",
+      "h1": "BitLocker recovery key on Mac: unlock a drive with the 48-digit key",
+      "summary": "Where to find the 48-digit recovery key and how to use it to open a BitLocker drive on your Mac.",
+      "lead": "Lost the BitLocker password? If you still have the 48-digit recovery key, you can open the drive on a Mac. [Unbit](home) accepts the recovery key (from version 1.0.8) instead of the password and opens the drive read-only. This guide explains what the key is, where to look for it and how to use it.",
+      "sections": [
+        {
+          "title": "What the recovery key is",
+          "intro": [
+            "When BitLocker is switched on, Windows creates a recovery key and asks you to save or print it. It is 48 digits long, written as 8 groups of 6 digits separated by hyphens, for example 123456-123456-… and so on.",
+            "The recovery key is a second way in. It unlocks the drive in place of the password, and every drive has its own key."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Where to find it",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Your Microsoft account.** If you were signed in with a Microsoft account when the drive was encrypted, the key may be saved there. Sign in to the account and look for BitLocker recovery keys.",
+            "**A file or printout.** Windows offers to save the key to a file or print it when you turn BitLocker on. Check your documents, a USB stick or a folder with printed papers.",
+            "**Your organization.** For a work or school drive, the key is often held by the IT administrator.",
+            "**More than one key?** Use the one that belongs to this drive. If you have several, the key ID shown with each key helps you tell them apart."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Unlock the drive with the recovery key in Unbit",
+          "intro": [],
+          "steps": [
+            "Make sure you have Unbit 1.0.8 or later. Open it, plug in the drive and select it under **Drives**.",
+            "Switch to the **Recovery Key** tab (choose **Use Recovery Key**).",
+            "Copy your key, then choose **Paste Recovery Key**, or type the 48 digits. Spaces and hyphens are fine, and Unbit counts the digits for you.",
+            "Choose **Open Drive**. macOS may ask for your Mac password once to approve read access.",
+            "Choose **Show in Finder**, copy your files, and use **Eject Safely** when you’re done."
+          ],
+          "bullets": [],
+          "outro": [
+            "Tick **Remember this drive on this Mac** if you want Unbit to keep the key encrypted in your macOS keychain, so the drive opens without typing it again."
+          ]
+        },
+        {
+          "title": "What the recovery key does and doesn’t do",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "It opens the drive read-only, just like the password does.",
+            "It doesn’t reset or change the BitLocker password, remove BitLocker or repair the drive. Unbit never writes to the drive, so those jobs belong to Windows.",
+            "It works only for the drive it belongs to."
+          ],
+          "outro": []
+        },
+        {
+          "title": "If the key is rejected",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Check all 48 digits, in 8 groups of 6. Unbit points out a group that can’t be right.",
+            "Use only digits, spaces and hyphens. Copied text sometimes carries extra characters or line breaks.",
+            "Make sure it is the key for this drive, not for another drive or PC.",
+            "A recovery key can be replaced in Windows. If the drive was re-encrypted or its key regenerated, try the most recent key.",
+            "If Unbit says the drive has no recovery key, use the password instead."
+          ],
+          "outro": []
+        },
+        {
+          "title": "If you can’t find the key",
+          "intro": [
+            "BitLocker is designed so that nobody can get around it. Without the password or the recovery key the data can’t be recovered – not by Unbit, not by data recovery software, not by anyone. Don’t format the drive in the hope of fixing it: that erases the data.",
+            "Keep looking in the places above, and ask whoever set up the drive. Once you’re in, store the key somewhere safe. For the general steps, see [How to open a BitLocker drive on a Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does Unbit support the BitLocker recovery key?",
+          "a": "Yes, from version 1.0.8. Enter it on the Recovery Key tab instead of the password."
+        },
+        {
+          "q": "I only have the key ID. Is that enough?",
+          "a": "No. The key ID only identifies a key. You need the full 48 digits."
+        },
+        {
+          "q": "Can I use the recovery key to set a new password from my Mac?",
+          "a": "No. Unbit is read-only, so it can’t change BitLocker settings. Use Windows if you need to set a new password."
+        },
+        {
+          "q": "Is my recovery key sent anywhere?",
+          "a": "No. Decryption happens on your Mac, and the key is never sent anywhere."
+        },
+        {
+          "q": "Where do I find the key for a work drive?",
+          "a": "Ask your IT administrator. Organizations often store recovery keys centrally."
+        },
+        {
+          "q": "Can I use the recovery key even if I remember the password?",
+          "a": "Yes. Either one opens the drive."
+        }
+      ]
     }
   }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { lang } from "next/root-params";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { GUIDES, guidePath } from "@/lib/guides";
+import { GUIDES, bestPath, guidePath } from "@/lib/guides";
 import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
@@ -214,6 +214,11 @@ export default async function Home() {
                 </a>
               ))}
             </div>
+            <a className="card guide-card best-callout" href={bestPath(locale)}>
+              <h3>{t.guides.bestTitle}</h3>
+              <p>{t.guides.bestText}</p>
+              <span className="alt-more">{t.guides.bestCta} <span aria-hidden="true">→</span></span>
+            </a>
           </section>
 
           {/* Download */}
@@ -282,6 +287,7 @@ export default async function Home() {
               <h2>{t.footer.resources}</h2>
               <a href="#faq">{t.nav.faq}</a>
               <a href={guidePath(locale)}>{t.footer.guides}</a>
+              <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
               <a href={`/${locale}/alternatives`}>{t.footer.alternatives}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases/releases">{t.footer.releaseNotes}</a>
               <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>

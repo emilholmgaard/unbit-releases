@@ -106,7 +106,10 @@
   "guides": {
     "title": "Guides: BitLocker on Mac",
     "intro": "Short, practical guides on opening, understanding and using BitLocker drives on a Mac.",
-    "cta": "All guides"
+    "cta": "All guides",
+    "bestTitle": "Best BitLocker for Mac (2026)",
+    "bestText": "An honest roundup of ways to open BitLocker drives on a Mac: price, read-only or read-write, Apple silicon and setup.",
+    "bestCta": "Read the comparison"
   },
   "cta": {
     "title": "Open your BitLocker drive",

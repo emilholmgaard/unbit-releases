@@ -86,7 +86,10 @@
   "guides": {
     "title": "Guider: BitLocker på Mac",
     "intro": "Korte, praktiske guider for å åpne, forstå og bruke BitLocker-stasjoner på en Mac.",
-    "cta": "Alle guider"
+    "cta": "Alle guider",
+    "bestTitle": "Beste BitLocker for Mac (2026)",
+    "bestText": "En ærlig oversikt over måter å åpne BitLocker-stasjoner på en Mac: pris, skrivebeskyttet eller lese/skrive, Apple silicon og oppsett.",
+    "bestCta": "Les sammenligningen"
   },
   "cta": { "title": "Åpne BitLocker-stasjonen din", "text": "Du trenger ingen Windows-PC.", "download": "Last ned for macOS", "whatsNew": "Nytt" },
   "footer": {

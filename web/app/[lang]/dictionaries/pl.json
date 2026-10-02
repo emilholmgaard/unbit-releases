@@ -86,7 +86,10 @@
   "guides": {
     "title": "Poradniki: BitLocker na Macu",
     "intro": "Krótkie, praktyczne poradniki o otwieraniu, rozumieniu i używaniu dysków BitLocker na Macu.",
-    "cta": "Wszystkie poradniki"
+    "cta": "Wszystkie poradniki",
+    "bestTitle": "Najlepszy BitLocker dla Maca (2026)",
+    "bestText": "Uczciwe zestawienie sposobów otwierania dysków BitLocker na Macu: cena, tylko do odczytu czy odczyt i zapis, Apple silicon i konfiguracja.",
+    "bestCta": "Przeczytaj porównanie"
   },
   "cta": { "title": "Otwórz swój dysk BitLocker", "text": "Nie potrzebujesz komputera z Windows.", "download": "Pobierz dla macOS", "whatsNew": "Co nowego" },
   "footer": {

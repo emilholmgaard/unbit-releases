@@ -1,15 +1,16 @@
 import type { ReactNode } from "react";
 import type { Locale } from "@/lib/i18n";
 import { alternativesPath } from "@/lib/competitors";
-import { GUIDES, guidePath } from "@/lib/guides";
+import { GUIDES, bestPath, guidePath } from "@/lib/guides";
 import { DOWNLOAD_URL } from "@/lib/site";
 
-/** Resolves a link target used in guide copy: a guide key (open, safe, drives), `home`, `alternatives` or `download`. */
+/** Resolves a link target used in guide copy: a guide key (open, safe, drives, usb, togo, recovery), `home`, `alternatives`, `best` or `download`. */
 export function linkTarget(locale: Locale, target: string): string {
   const guide = GUIDES.find((g) => g.key === target);
   if (guide) return guidePath(locale, guide.slug);
   if (target === "home") return `/${locale}`;
   if (target === "alternatives") return alternativesPath(locale);
+  if (target === "best") return bestPath(locale);
   if (target === "download") return DOWNLOAD_URL;
   throw new Error(`Unknown guide link target: ${target}`);
 }

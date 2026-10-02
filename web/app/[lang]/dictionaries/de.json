@@ -86,7 +86,10 @@
   "guides": {
     "title": "Ratgeber: BitLocker auf dem Mac",
     "intro": "Kurze, praktische Ratgeber zum Öffnen, Verstehen und Nutzen von BitLocker-Laufwerken auf dem Mac.",
-    "cta": "Alle Ratgeber"
+    "cta": "Alle Ratgeber",
+    "bestTitle": "Beste BitLocker-Lösung für Mac (2026)",
+    "bestText": "Ein ehrlicher Überblick über die Möglichkeiten, BitLocker-Laufwerke auf dem Mac zu öffnen: Preis, schreibgeschützt oder Lesen/Schreiben, Apple Silicon und Einrichtung.",
+    "bestCta": "Vergleich lesen"
   },
   "cta": { "title": "Öffne dein BitLocker-Laufwerk", "text": "Kein Windows-PC nötig.", "download": "Für macOS herunterladen", "whatsNew": "Was ist neu" },
   "footer": {

@@ -86,7 +86,10 @@
   "guides": {
     "title": "Guides: BitLocker på Mac",
     "intro": "Korte, praktiske guides til at åbne, forstå og bruge BitLocker-drev på en Mac.",
-    "cta": "Alle guides"
+    "cta": "Alle guides",
+    "bestTitle": "Bedste BitLocker til Mac (2026)",
+    "bestText": "En ærlig oversigt over måder at åbne BitLocker-drev på en Mac: pris, skrivebeskyttet eller læse/skrive, Apple silicon og opsætning.",
+    "bestCta": "Læs sammenligningen"
   },
   "cta": { "title": "Åbn dit BitLocker-drev", "text": "Du behøver ikke en Windows-pc.", "download": "Download til macOS", "whatsNew": "Hvad er nyt" },
   "footer": {

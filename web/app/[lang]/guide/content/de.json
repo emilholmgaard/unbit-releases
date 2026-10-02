@@ -323,6 +323,318 @@
           "a": "Ja. Unbit liest das Laufwerk nur und verändert es nie, es bleibt also genau so, wie Windows es hinterlassen hat."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "BitLocker-verschlüsseltes USB-Laufwerk am Mac öffnen – Anleitung",
+      "metaDescription": "„Die eingelegte Disk ist nicht lesbar“? So öffnest du ein BitLocker-verschlüsseltes USB-Laufwerk am Mac: was geht, was kostenlos ist, und eine Anleitung in 5 Schritten mit Unbit.",
+      "h1": "So öffnest du ein BitLocker-verschlüsseltes USB-Laufwerk am Mac",
+      "summary": "„Die eingelegte Disk ist nicht lesbar“: was das bedeutet und der schnellste kostenlose Weg, das Laufwerk zu öffnen.",
+      "lead": "Du steckst ein USB-Laufwerk an deinen Mac, und macOS meldet, die Disk sei von diesem Computer nicht lesbar. Wurde das Laufwerk unter Windows mit BitLocker verschlüsselt, ist es nicht defekt – macOS kann es nur nicht entschlüsseln. Hier siehst du deine Möglichkeiten und wie du das Laufwerk in etwa fünf Minuten mit [Unbit](home) öffnest, einem kostenlosen, schreibgeschützten BitLocker-Reader.",
+      "sections": [
+        {
+          "title": "Was die Meldung „nicht lesbar“ wirklich bedeutet",
+          "intro": [
+            "macOS zeigt diese Meldung immer, wenn es eine Disk nicht erkennt. Bei einem BitLocker-Laufwerk sind deine Daten in Ordnung: Sie sind in einem Verschlüsselungsformat abgelegt, das Windows und Werkzeuge mit BitLocker-Unterstützung lesen können. **Klicke nicht auf Initialisieren oder Löschen** – damit würde alles auf dem Laufwerk gelöscht. Klicke stattdessen auf **Ignorieren**.",
+            "Prüfe vor der Installation drei Dinge: Es handelt sich um ein externes Laufwerk (USB-Stick, SSD oder Festplatte), du hast sein Passwort oder seinen 48-stelligen Wiederherstellungsschlüssel, und es lässt sich noch an einem Windows-PC öffnen – dann weißt du, dass das Laufwerk selbst in Ordnung ist."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Deine Möglichkeiten, es zu öffnen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS allein:** Es gibt keine integrierte BitLocker-Unterstützung und auch keine versteckte Einstellung dafür. FileVault ist Apples eigene Verschlüsselung und hat damit nichts zu tun.",
+            "**Ein Windows-PC oder eine virtuelle Windows-Maschine:** Das funktioniert, weil Windows BitLocker eingebaut hat, und du kannst lesen und schreiben. Du brauchst Zugang zu Windows, und eine virtuelle Maschine braucht eine Windows-Lizenz.",
+            "**Ein kostenloses Kommandozeilenwerkzeug wie anylinuxfs:** Open Source und mit Lese- und Schreibzugriff, aber nur für Macs mit Apple Silicon und über das Terminal.",
+            "**Eine BitLocker-App für den Mac:** der schnellste Weg, wenn du nur deine Dateien willst. Mehrere kostenpflichtige Apps können auch auf das Laufwerk schreiben; [Unbit](home) ist kostenlos und schreibgeschützt. Einen direkten Vergleich findest du unter [Beste BitLocker-Lösung für Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Das USB-Laufwerk mit Unbit öffnen",
+          "intro": [],
+          "steps": [
+            "Lade Unbit herunter, ziehe es in den Ordner „Programme“ und öffne es. Die App lebt in der Menüleiste und braucht macOS 13 oder neuer (Apple Silicon oder Intel). Beim ersten Start zeigt sie, wo du den **Festplattenvollzugriff** aktivierst.",
+            "Schließe das USB-Laufwerk an, am besten direkt am Mac statt über einen Hub. Unbit listet es unter **Laufwerke** auf; wähle es aus.",
+            "Gib das BitLocker-Passwort ein und wähle **Laufwerk öffnen**. macOS fragt eventuell einmal nach deinem Mac-Passwort, um den Lesezugriff zu genehmigen.",
+            "Wähle **Im Finder zeigen**. Das Laufwerk ist schreibgeschützt eingebunden: Du kannst es durchsuchen, Dateien öffnen und auf deinen Mac kopieren.",
+            "Wähle am Ende **Sicher auswerfen**, bevor du den Stick abziehst."
+          ],
+          "bullets": [],
+          "outro": [
+            "Du möchtest Screenshots und mehr Details? Lies [So öffnest du ein BitLocker-Laufwerk am Mac](open)."
+          ]
+        },
+        {
+          "title": "Was du tun kannst – und was nicht –, wenn es geöffnet ist",
+          "intro": [
+            "Unbit schreibt nie auf das Laufwerk. Du kannst Ordner durchsuchen, Dateien ansehen und öffnen und sie auf deinen Mac kopieren. Änderungen zurückspeichern, Dateien löschen oder neue hinzufügen kannst du nicht. Das ist eine bewusste Abwägung: Nichts lässt sich versehentlich ändern oder löschen, und das Laufwerk bleibt genau so, wie Windows es hinterlassen hat."
+          ],
+          "steps": [],
+          "bullets": [
+            "Willst du eine Datei bearbeiten, kopiere sie zuerst auf deinen Mac und arbeite mit der Kopie.",
+            "Willst du ändern, was auf dem Laufwerk liegt, oder seine BitLocker-Einstellungen anpassen, nutze Windows."
+          ],
+          "outro": [
+            "Mehr dazu, was „schreibgeschützt“ bedeutet: [Ist BitLocker am Mac sicher?](safe)."
+          ]
+        },
+        {
+          "title": "Wenn es nicht klappt",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Das Laufwerk wird nicht aufgelistet.** Ziehe es ab, schließe es wieder an, nutze einen Anschluss direkt am Mac und aktualisiere die Liste mit ⌘R. Unterstützt werden nur externe Laufwerke.",
+            "**„Falsches Passwort“.** Prüfe auf Tippfehler und die Feststelltaste. Hast du den Wiederherstellungsschlüssel, nutze ihn stattdessen – siehe [BitLocker-Wiederherstellungsschlüssel am Mac](recovery).",
+            "**Zugriff verweigert.** Unbit braucht den Festplattenvollzugriff: Systemeinstellungen › Datenschutz & Sicherheit › Festplattenvollzugriff.",
+            "**Das Laufwerk öffnet sich im Finder auch ohne Unbit.** Dann ist es nicht mit BitLocker verschlüsselt, oder du hast eine unverschlüsselte Partition desselben Laufwerks gewählt.",
+            "**Auch an einem Windows-PC klappt es nicht.** Das Laufwerk ist eventuell beschädigt oder wird gerade ver- oder entschlüsselt. Lass Windows fertig werden und versuche es erneut."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Wenn du weder Passwort noch Wiederherstellungsschlüssel hast",
+          "intro": [
+            "BitLocker lässt sich nicht umgehen – das ist der Sinn von Verschlüsselung. Auch Datenrettungssoftware kommt nicht daran vorbei, und das Formatieren des Laufwerks löscht die Daten nur. Suche den 48-stelligen Wiederherstellungsschlüssel im Microsoft-Konto, das auf dem verschlüsselnden PC verwendet wurde, in einer gespeicherten Datei oder einem Ausdruck – oder frage bei einem Firmenlaufwerk deinen IT-Administrator."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum meldet mein Mac, die Disk sei nicht lesbar?",
+          "a": "Das Laufwerk ist mit BitLocker verschlüsselt, was macOS nicht lesen kann. Die Daten sind nicht verloren. Klicke auf Ignorieren (nie auf Initialisieren oder Löschen) und öffne es mit einem BitLocker-Reader wie [Unbit](home)."
+        },
+        {
+          "q": "Kann ich ein BitLocker-USB-Laufwerk am Mac kostenlos öffnen?",
+          "a": "Ja. Unbit ist kostenlos und öffnet Laufwerke schreibgeschützt. anylinuxfs ist ein kostenloses Open-Source-Kommandozeilenwerkzeug für Apple Silicon, und ein Windows-PC kostet auch nichts extra, wenn du einen hast. Die meisten anderen Mac-Apps sind kostenpflichtig."
+        },
+        {
+          "q": "Verändert das Öffnen am Mac das Laufwerk?",
+          "a": "Nein. Unbit bindet das Laufwerk schreibgeschützt ein und schreibt nie darauf. Es bleibt genau so, wie Windows es hinterlassen hat."
+        },
+        {
+          "q": "Brauche ich Treiber, eine Kernel-Erweiterung oder macFUSE?",
+          "a": "Für Unbit nicht. Die App nutzt die in macOS eingebaute Unterstützung für Disk-Images und braucht den Festplattenvollzugriff sowie eine einmalige Freigabe ihres Lesehelfers."
+        },
+        {
+          "q": "Funktioniert es auf Macs mit Apple Silicon?",
+          "a": "Ja. Unbit ist eine Universal-App für Macs mit Apple Silicon und Intel."
+        },
+        {
+          "q": "Kann ich das USB-Laufwerk danach weiter unter Windows nutzen?",
+          "a": "Ja. Auf dem Laufwerk wird nichts verändert, es funktioniert also weiter an deinem Windows-PC."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go am Mac: Windows-verschlüsselten USB-Stick öffnen",
+      "metaDescription": "USB-Stick mit BitLocker To Go unter Windows verschlüsselt? Was BitLocker To Go ist, warum ein Mac ihn nicht allein öffnen kann und wie du ihn mit Unbit liest.",
+      "h1": "BitLocker To Go am Mac: einen unter Windows verschlüsselten USB-Stick öffnen",
+      "summary": "Was BitLocker To Go ist und wie du einen unter Windows verschlüsselten USB-Stick an deinem Mac liest.",
+      "lead": "BitLocker To Go ist der Teil von BitLocker, den Windows für Wechseldatenträger wie USB-Sticks verwendet. Jemand hat einen Stick an einem Windows-PC verschlüsselt, und du brauchst die Dateien jetzt auf deinem Mac. macOS kann diese Laufwerke nicht allein entsperren, aber [Unbit](home) öffnet sie schreibgeschützt. Hier steht, wie BitLocker To Go funktioniert und was dich am Mac erwartet.",
+      "sections": [
+        {
+          "title": "Was BitLocker To Go ist",
+          "intro": [
+            "BitLocker ist Microsofts Laufwerksverschlüsselung für Windows. BitLocker To Go heißt derselbe Schutz auf Wechseldatenträgern: USB-Sticks und externen Laufwerken. In Windows schaltest du ihn im Explorer ein, legst fest, wie das Laufwerk entsperrt wird – meist per Passwort – und speicherst einen 48-stelligen Wiederherstellungsschlüssel.",
+            "Ein geschütztes Laufwerk zeigt im Windows-Explorer ein Vorhängeschloss, und Windows fragt beim Anstecken nach dem Passwort. Alles auf dem Laufwerk ist verschlüsselt, nicht nur ein paar Ordner."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Was passiert, wenn du ihn an einen Mac steckst",
+          "intro": [
+            "macOS sieht eine Disk, die es nicht lesen kann. Meist erscheint die Meldung, die Disk sei von diesem Computer nicht lesbar, oder das Laufwerk taucht im Finder gar nicht auf. Die Dateien sind unversehrt: Klicke auf **Ignorieren** und wähle niemals Initialisieren oder Löschen.",
+            "Wird der Stick an deinem eigenen PC automatisch entsperrt, gilt diese Einstellung nur für diesen PC. Am Mac brauchst du weiterhin das Passwort oder den Wiederherstellungsschlüssel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Ein BitLocker-To-Go-Laufwerk mit Unbit öffnen",
+          "intro": [],
+          "steps": [
+            "Installiere [Unbit](home) von der Website und öffne es über die Menüleiste. Beim ersten Start zeigt die App, wo du den **Festplattenvollzugriff** aktivierst.",
+            "Stecke den USB-Stick an. Unbit findet ihn automatisch und listet ihn unter **Laufwerke** auf.",
+            "Gib das Passwort ein, das du in Windows gewählt hast, und wähle **Laufwerk öffnen**. Hast du nur den Wiederherstellungsschlüssel, nutze stattdessen ihn – siehe [BitLocker-Wiederherstellungsschlüssel am Mac](recovery).",
+            "Wähle **Im Finder zeigen** und kopiere die benötigten Dateien auf deinen Mac.",
+            "Wähle **Sicher auswerfen**, bevor du den Stick abziehst."
+          ],
+          "bullets": [],
+          "outro": [
+            "Die komplette Anleitung mit Screenshots findest du unter [So öffnest du ein BitLocker-Laufwerk am Mac](open)."
+          ]
+        },
+        {
+          "title": "Dateien zwischen Windows-PC und Mac austauschen",
+          "intro": [
+            "Unbit liest BitLocker-To-Go-Laufwerke, schreibt aber nicht darauf. Das beeinflusst, wie du Dateien austauschst:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windows zum Mac:** Lege die Dateien unter Windows auf den Stick und kopiere sie dann am Mac herunter.",
+            "**Mac zu Windows:** Auf den verschlüsselten Stick kannst du vom Mac aus nicht speichern. Nutze einen anderen Weg, etwa ein zweites, mit exFAT formatiertes Laufwerk (macOS und Windows lesen und schreiben es beide) oder eine Cloud- bzw. Netzwerkfreigabe.",
+            "**Sensible Dateien:** Ein unverschlüsseltes exFAT-Laufwerk ist bequem, aber bei Verlust ungeschützt. Lass private Daten deshalb auf dem BitLocker-Stick und nutze ihn am Mac nur zum Lesen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Gut zu wissen bei USB-Sticks",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Stecke den Stick direkt an den Mac statt an einen Hub ohne eigene Stromversorgung und probiere einen anderen Anschluss, wenn er nicht aufgelistet wird.",
+            "Hat der Stick mehrere Partitionen, wähle die mit BitLocker-Verschlüsselung.",
+            "Unbit unterstützt Laufwerke, die unter Windows 7 oder neuer verschlüsselt wurden. Das Dateisystem darin sollte exFAT, FAT32 oder NTFS sein.",
+            "Eine Speicherkarte in einem USB-Kartenleser erscheint am Mac normalerweise als externes Laufwerk und funktioniert genauso.",
+            "Verschlüsselt oder entschlüsselt Windows den Stick gerade noch, lass es zuerst fertig werden."
+          ],
+          "outro": [
+            "Mehr zu Laufwerkstypen: [BitLocker-SSD, -HDD oder -USB-Stick am Mac öffnen](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist BitLocker To Go etwas anderes als BitLocker?",
+          "a": "Es ist dieselbe Technik. BitLocker To Go ist einfach der Name für den Einsatz auf Wechseldatenträgern wie USB-Sticks."
+        },
+        {
+          "q": "Kann ein Mac BitLocker To Go ohne Zusatzsoftware öffnen?",
+          "a": "Nein. macOS hat keine integrierte BitLocker-Unterstützung, du brauchst also einen Reader wie [Unbit](home) oder einen Windows-PC."
+        },
+        {
+          "q": "Kann ich vom Mac aus Dateien auf den Stick speichern?",
+          "a": "Nicht mit Unbit, das von Haus aus schreibgeschützt ist. Kopiere Dateien am Mac vom Stick herunter und nutze Windows, wenn du Dateien hinzufügen oder ändern musst."
+        },
+        {
+          "q": "Funktioniert der Stick danach weiter unter Windows?",
+          "a": "Ja. Unbit liest den Stick nur und verändert ihn nie."
+        },
+        {
+          "q": "Ich habe einen Wiederherstellungsschlüssel, aber kein Passwort. Kann ich ihn trotzdem öffnen?",
+          "a": "Ja. Unbit akzeptiert statt des Passworts den 48-stelligen Wiederherstellungsschlüssel. Siehe [BitLocker-Wiederherstellungsschlüssel am Mac](recovery)."
+        },
+        {
+          "q": "Speichert Unbit mein Passwort?",
+          "a": "Nur wenn du „Dieses Laufwerk auf diesem Mac merken“ ankreuzt. Es wird dann verschlüsselt in deinem macOS-Schlüsselbund abgelegt, und du kannst es jederzeit wieder vergessen lassen."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker-Wiederherstellungsschlüssel am Mac: Laufwerk entsperren",
+      "metaDescription": "BitLocker-Passwort vergessen? So findest du deinen 48-stelligen Wiederherstellungsschlüssel und öffnest damit das Laufwerk am Mac schreibgeschützt mit Unbit. Wo du suchst und was bei Fehlern hilft.",
+      "h1": "BitLocker-Wiederherstellungsschlüssel am Mac: Laufwerk mit dem 48-stelligen Schlüssel entsperren",
+      "summary": "Wo du den 48-stelligen Wiederherstellungsschlüssel findest und wie du damit ein BitLocker-Laufwerk an deinem Mac öffnest.",
+      "lead": "BitLocker-Passwort verloren? Hast du noch den 48-stelligen Wiederherstellungsschlüssel, kannst du das Laufwerk an einem Mac öffnen. [Unbit](home) akzeptiert den Wiederherstellungsschlüssel (ab Version 1.0.8) statt des Passworts und öffnet das Laufwerk schreibgeschützt. Hier erfährst du, was der Schlüssel ist, wo du ihn suchst und wie du ihn verwendest.",
+      "sections": [
+        {
+          "title": "Was der Wiederherstellungsschlüssel ist",
+          "intro": [
+            "Wenn BitLocker eingeschaltet wird, erstellt Windows einen Wiederherstellungsschlüssel und bittet dich, ihn zu speichern oder auszudrucken. Er ist 48 Ziffern lang, geschrieben als 8 Gruppen zu je 6 Ziffern, getrennt durch Bindestriche, etwa 123456-123456-… und so weiter.",
+            "Der Wiederherstellungsschlüssel ist ein zweiter Zugang. Er entsperrt das Laufwerk anstelle des Passworts, und jedes Laufwerk hat seinen eigenen Schlüssel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Wo du ihn findest",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Dein Microsoft-Konto.** Warst du beim Verschlüsseln mit einem Microsoft-Konto angemeldet, ist der Schlüssel unter Umständen dort gespeichert. Melde dich im Konto an und suche nach BitLocker-Wiederherstellungsschlüsseln.",
+            "**Eine Datei oder ein Ausdruck.** Windows bietet beim Einschalten von BitLocker an, den Schlüssel in einer Datei zu speichern oder zu drucken. Sieh in deinen Dokumenten, auf einem USB-Stick oder in einer Mappe mit Ausdrucken nach.",
+            "**Deine Organisation.** Bei einem Firmen- oder Schullaufwerk liegt der Schlüssel oft beim IT-Administrator.",
+            "**Mehrere Schlüssel?** Nimm den, der zu diesem Laufwerk gehört. Hast du mehrere, hilft die zu jedem Schlüssel angezeigte Schlüssel-ID bei der Zuordnung."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Das Laufwerk in Unbit mit dem Wiederherstellungsschlüssel entsperren",
+          "intro": [],
+          "steps": [
+            "Stelle sicher, dass du Unbit 1.0.8 oder neuer hast. Öffne die App, schließe das Laufwerk an und wähle es unter **Laufwerke** aus.",
+            "Wechsle zum Tab **Wiederherstellungsschlüssel** (wähle **Wiederherstellungsschlüssel verwenden**).",
+            "Kopiere deinen Schlüssel und wähle **Wiederherstellungsschlüssel einfügen** – oder tippe die 48 Ziffern ein. Leerzeichen und Bindestriche sind in Ordnung, und Unbit zählt die Ziffern für dich.",
+            "Wähle **Laufwerk öffnen**. macOS fragt eventuell einmal nach deinem Mac-Passwort, um den Lesezugriff zu genehmigen.",
+            "Wähle **Im Finder zeigen**, kopiere deine Dateien und nutze zum Schluss **Sicher auswerfen**."
+          ],
+          "bullets": [],
+          "outro": [
+            "Kreuze **Dieses Laufwerk auf diesem Mac merken** an, wenn Unbit den Schlüssel verschlüsselt in deinem macOS-Schlüsselbund aufbewahren soll, damit sich das Laufwerk ohne erneutes Eintippen öffnet."
+          ]
+        },
+        {
+          "title": "Was der Wiederherstellungsschlüssel kann – und was nicht",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Er öffnet das Laufwerk schreibgeschützt, genau wie das Passwort.",
+            "Er setzt das BitLocker-Passwort nicht zurück, ändert es nicht, entfernt BitLocker nicht und repariert das Laufwerk nicht. Unbit schreibt nie auf das Laufwerk, diese Aufgaben gehören also zu Windows.",
+            "Er funktioniert nur für das Laufwerk, zu dem er gehört."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Wenn der Schlüssel abgelehnt wird",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Prüfe alle 48 Ziffern in 8 Gruppen zu je 6. Unbit weist auf eine Gruppe hin, die nicht stimmen kann.",
+            "Verwende nur Ziffern, Leerzeichen und Bindestriche. Kopierter Text enthält manchmal zusätzliche Zeichen oder Zeilenumbrüche.",
+            "Vergewissere dich, dass es der Schlüssel für dieses Laufwerk ist und nicht für ein anderes Laufwerk oder einen anderen PC.",
+            "Ein Wiederherstellungsschlüssel kann in Windows ersetzt werden. Wurde das Laufwerk neu verschlüsselt oder der Schlüssel neu erzeugt, probiere den neuesten Schlüssel.",
+            "Meldet Unbit, dass das Laufwerk keinen Wiederherstellungsschlüssel hat, nutze stattdessen das Passwort."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Wenn du den Schlüssel nicht findest",
+          "intro": [
+            "BitLocker ist so gebaut, dass niemand daran vorbeikommt. Ohne Passwort oder Wiederherstellungsschlüssel lassen sich die Daten nicht wiederherstellen – nicht mit Unbit, nicht mit Datenrettungssoftware, von niemandem. Formatiere das Laufwerk nicht in der Hoffnung, es zu reparieren: Dabei werden die Daten gelöscht.",
+            "Suche weiter an den oben genannten Orten und frage die Person, die das Laufwerk eingerichtet hat. Sobald du drin bist, bewahre den Schlüssel an einem sicheren Ort auf. Die allgemeinen Schritte stehen in [So öffnest du ein BitLocker-Laufwerk am Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unterstützt Unbit den BitLocker-Wiederherstellungsschlüssel?",
+          "a": "Ja, ab Version 1.0.8. Gib ihn statt des Passworts auf dem Tab „Wiederherstellungsschlüssel“ ein."
+        },
+        {
+          "q": "Ich habe nur die Schlüssel-ID. Reicht das?",
+          "a": "Nein. Die Schlüssel-ID kennzeichnet nur einen Schlüssel. Du brauchst alle 48 Ziffern."
+        },
+        {
+          "q": "Kann ich mit dem Wiederherstellungsschlüssel am Mac ein neues Passwort festlegen?",
+          "a": "Nein. Unbit ist schreibgeschützt und kann keine BitLocker-Einstellungen ändern. Nutze Windows, wenn du ein neues Passwort setzen willst."
+        },
+        {
+          "q": "Wird mein Wiederherstellungsschlüssel irgendwohin gesendet?",
+          "a": "Nein. Die Entschlüsselung findet auf deinem Mac statt, und der Schlüssel wird nirgendwohin gesendet."
+        },
+        {
+          "q": "Wo finde ich den Schlüssel für ein Firmenlaufwerk?",
+          "a": "Frage deinen IT-Administrator. Organisationen speichern Wiederherstellungsschlüssel oft zentral."
+        },
+        {
+          "q": "Kann ich den Wiederherstellungsschlüssel auch nutzen, wenn ich das Passwort noch weiß?",
+          "a": "Ja. Beides öffnet das Laufwerk."
+        }
+      ]
     }
   }
 }

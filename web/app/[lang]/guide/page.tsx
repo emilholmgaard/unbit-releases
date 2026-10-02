@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { lang } from "next/root-params";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-import { GUIDES, guidePath } from "@/lib/guides";
+import { GUIDES, bestPath, guidePath } from "@/lib/guides";
 import { languages, locales } from "@/lib/i18n";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import { getDictionary, hasLocale } from "../dictionaries";
@@ -79,6 +79,11 @@ export default async function GuideIndex() {
               <span className="alt-more">{ui.readMore} <span aria-hidden="true">→</span></span>
             </a>
           ))}
+          <a className="card alt-card best-callout" href={bestPath(locale)}>
+            <h2>{t.guides.bestTitle}</h2>
+            <p>{t.guides.bestText}</p>
+            <span className="alt-more">{t.guides.bestCta} <span aria-hidden="true">→</span></span>
+          </a>
         </section>
       </main>
       <SiteFooter locale={locale} t={t} />

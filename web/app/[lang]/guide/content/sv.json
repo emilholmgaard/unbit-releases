@@ -323,6 +323,318 @@
           "a": "Ja. Unbit läser bara enheten och ändrar den aldrig, så den förblir exakt som Windows lämnade den."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Öppna en BitLocker-krypterad USB-enhet på Mac – gratis guide",
+      "metaDescription": "Får du «Disken du satte i kunde inte läsas»? Öppna en BitLocker-krypterad USB-enhet på din Mac: vad som funkar, vad som är gratis och en guide i 5 steg med Unbit.",
+      "h1": "Så öppnar du en BitLocker-krypterad USB-enhet på Mac",
+      "summary": "«Disken kunde inte läsas»: vad det betyder och det snabbaste gratissättet att öppna enheten.",
+      "lead": "Du kopplar in en USB-enhet i din Mac och macOS säger att disken inte kan läsas av den här datorn. Om enheten krypterades med BitLocker på en Windows-dator är den inte trasig – macOS kan bara inte dekryptera den. Den här guiden visar dina alternativ och hur du öppnar enheten på ungefär fem minuter med [Unbit](home), en gratis BitLocker-läsare som bara läser.",
+      "sections": [
+        {
+          "title": "Vad meddelandet om att disken inte kan läsas egentligen betyder",
+          "intro": [
+            "macOS visar meddelandet varje gång den stöter på en disk som den inte känner igen. Med en BitLocker-enhet är dina data hela: de ligger i ett krypteringsformat som Windows och verktyg med BitLocker-stöd kan läsa. **Klicka inte på Initiera eller Radera** – det skulle ta bort allt på enheten. Klicka på **Ignorera** i stället.",
+            "Kontrollera tre saker innan du installerar något: enheten är extern (USB-minne, SSD eller hårddisk), du har lösenordet eller den 48-siffriga återställningsnyckeln, och den går fortfarande att öppna på en Windows-dator – då vet du att själva enheten är hel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dina alternativ för att öppna den",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Enbart macOS:** Det finns inget inbyggt BitLocker-stöd och ingen dold inställning som lägger till det. FileVault är Apples egen kryptering och har inget med BitLocker att göra.",
+            "**En Windows-dator eller en virtuell Windows-maskin:** Det funkar eftersom Windows har BitLocker inbyggt, och du kan både läsa och skriva. Du behöver tillgång till Windows, och en virtuell maskin kräver en Windows-licens.",
+            "**Ett gratis kommandoradsverktyg som anylinuxfs:** Öppen källkod och med läs- och skrivåtkomst, men bara för Mac med Apple silicon och används från Terminal.",
+            "**En BitLocker-app för Mac:** Den snabbaste vägen om du bara vill åt dina filer. Flera betalda appar låter dig också skriva till enheten; [Unbit](home) är gratis och skrivskyddad. För en jämförelse sida vid sida, se [Bästa BitLocker för Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Öppna USB-enheten med Unbit",
+          "intro": [],
+          "steps": [
+            "Ladda ner Unbit, dra den till mappen Program och öppna den. Appen bor i menyraden och kräver macOS 13 eller senare (Apple silicon eller Intel). Första gången visar den var du slår på **Full skivåtkomst**.",
+            "Koppla in USB-enheten, helst direkt i Macen i stället för via en hubb. Unbit visar den under **Enheter**; välj den.",
+            "Ange BitLocker-lösenordet och välj **Öppna enhet**. macOS kan be om ditt Mac-lösenord en gång för att godkänna läsåtkomst.",
+            "Välj **Visa i Finder**. Enheten är monterad skrivskyddad, så du kan bläddra i den, öppna filer och kopiera dem till din Mac.",
+            "När du är klar väljer du **Mata ut säkert** innan du drar ur minnet."
+          ],
+          "bullets": [],
+          "outro": [
+            "Vill du ha skärmbilder och fler detaljer? Läs [Så öppnar du en BitLocker-enhet på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Vad du kan och inte kan göra när enheten är öppen",
+          "intro": [
+            "Unbit skriver aldrig till enheten, så du kan bläddra bland mappar, förhandsgranska och öppna filer och kopiera dem till din Mac. Du kan inte spara ändringar tillbaka, ta bort filer eller lägga till nya. Det är ett medvetet val: ingenting kan ändras eller raderas av misstag, och enheten är precis som Windows lämnade den."
+          ],
+          "steps": [],
+          "bullets": [
+            "Vill du redigera en fil kopierar du den först till din Mac och arbetar med kopian.",
+            "Vill du ändra vad som finns på enheten, eller dess BitLocker-inställningar, använder du Windows."
+          ],
+          "outro": [
+            "Mer om vad skrivskyddad betyder: [Är BitLocker på Mac säkert?](safe)."
+          ]
+        },
+        {
+          "title": "Om det inte funkar",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Enheten visas inte.** Dra ur den och sätt i den igen, använd en port på själva Macen och uppdatera listan med ⌘R. Bara externa enheter stöds.",
+            "**«Fel lösenord».** Kontrollera stavfel och Caps Lock. Har du återställningsnyckeln kan du använda den i stället – se [BitLocker-återställningsnyckel på Mac](recovery).",
+            "**Åtkomst nekad.** Unbit behöver Full skivåtkomst: Systeminställningar › Integritet och säkerhet › Full skivåtkomst.",
+            "**Enheten öppnas i Finder utan Unbit.** Då är den inte BitLocker-krypterad, eller så har du valt en okrypterad partition på samma enhet.",
+            "**Det misslyckas även på en Windows-dator.** Enheten kan vara skadad eller fortfarande hålla på att krypteras eller dekrypteras. Låt Windows bli klart och försök igen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Om du varken har lösenord eller återställningsnyckel",
+          "intro": [
+            "BitLocker går inte att kringgå – det är hela poängen med kryptering. Dataåterställningsprogram kommer inte förbi det heller, och att formatera enheten raderar bara data. Leta efter den 48-siffriga återställningsnyckeln i det Microsoft-konto som användes på datorn som krypterade enheten, i en sparad fil eller på ett utskrivet papper – eller fråga din it-administratör om det är en jobbenhet."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Varför säger min Mac att disken inte kan läsas?",
+          "a": "Enheten är krypterad med BitLocker, som macOS inte kan läsa. Data är inte förlorade. Klicka på Ignorera (aldrig Initiera eller Radera) och öppna den med en BitLocker-läsare som [Unbit](home)."
+        },
+        {
+          "q": "Kan jag öppna en BitLocker-USB-enhet på en Mac gratis?",
+          "a": "Ja. Unbit är gratis och öppnar enheter skrivskyddat. anylinuxfs är ett gratis kommandoradsverktyg med öppen källkod för Apple silicon, och en Windows-dator kostar inget extra om du har en. De flesta andra Mac-appar är betalda."
+        },
+        {
+          "q": "Ändras enheten när jag öppnar den på min Mac?",
+          "a": "Nej. Unbit monterar enheten skrivskyddad och skriver aldrig till den, så den är precis som Windows lämnade den."
+        },
+        {
+          "q": "Behöver jag drivrutiner, ett kärntillägg eller macFUSE?",
+          "a": "Inte för Unbit. Appen använder det stöd för skivavbildningar som redan finns i macOS och behöver Full skivåtkomst och ett engångsgodkännande av sin läshjälp."
+        },
+        {
+          "q": "Funkar det på Mac med Apple silicon?",
+          "a": "Ja. Unbit är en universell app för Mac med Apple silicon och Intel."
+        },
+        {
+          "q": "Kan jag använda USB-enheten på Windows efteråt?",
+          "a": "Ja. Ingenting på enheten ändras, så den fungerar fortfarande på din Windows-dator."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go på Mac: öppna ett Windows-krypterat USB-minne",
+      "metaDescription": "Ett USB-minne krypterat med BitLocker To Go i Windows? Se vad BitLocker To Go är, varför en Mac inte kan öppna det själv och hur du läser det med Unbit.",
+      "h1": "BitLocker To Go på Mac: öppna ett Windows-krypterat USB-minne",
+      "summary": "Vad BitLocker To Go är och hur du läser ett Windows-krypterat USB-minne på din Mac.",
+      "lead": "BitLocker To Go är den del av BitLocker som Windows använder för flyttbara enheter som USB-minnen. Någon har krypterat ett minne på en Windows-dator, och nu behöver du filerna på din Mac. macOS kan inte låsa upp sådana enheter själv, men [Unbit](home) kan öppna dem skrivskyddat. Så här fungerar BitLocker To Go och det här kan du förvänta dig på en Mac.",
+      "sections": [
+        {
+          "title": "Vad BitLocker To Go är",
+          "intro": [
+            "BitLocker är Microsofts enhetskryptering för Windows. BitLocker To Go är namnet på samma skydd på flyttbara enheter: USB-minnen och externa enheter. I Windows slår du på det från Utforskaren, väljer hur enheten ska låsas upp – oftast med ett lösenord – och sparar en 48-siffrig återställningsnyckel.",
+            "En skyddad enhet visar ett hänglås i Utforskaren i Windows, och Windows ber om lösenordet när du kopplar in den. Allt på enheten är krypterat, inte bara några få mappar."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vad som händer när du kopplar in det i en Mac",
+          "intro": [
+            "macOS ser en disk som den inte kan läsa. Oftast visas meddelandet att disken inte kan läsas av den här datorn, eller så dyker enheten inte upp i Finder alls. Filerna är intakta: klicka på **Ignorera** och välj aldrig Initiera eller Radera.",
+            "Om minnet låses upp automatiskt på din egen dator gäller den inställningen bara den datorn. På en Mac behöver du fortfarande lösenordet eller återställningsnyckeln."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Öppna en BitLocker To Go-enhet med Unbit",
+          "intro": [],
+          "steps": [
+            "Installera [Unbit](home) från webbplatsen och öppna den från menyraden. Första gången visar appen var du slår på **Full skivåtkomst**.",
+            "Koppla in USB-minnet. Unbit hittar det automatiskt och visar det under **Enheter**.",
+            "Ange lösenordet du valde i Windows och välj **Öppna enhet**. Har du bara återställningsnyckeln använder du den i stället – se [BitLocker-återställningsnyckel på Mac](recovery).",
+            "Välj **Visa i Finder** och kopiera de filer du behöver till din Mac.",
+            "Välj **Mata ut säkert** innan du drar ur minnet."
+          ],
+          "bullets": [],
+          "outro": [
+            "Hela genomgången med skärmbilder finns i [Så öppnar du en BitLocker-enhet på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Flytta filer mellan en Windows-dator och en Mac",
+          "intro": [
+            "Unbit läser BitLocker To Go-enheter men skriver inte till dem. Det påverkar hur du delar filer:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windows till Mac:** lägg filerna på minnet i Windows och kopiera sedan över dem på Macen.",
+            "**Mac till Windows:** du kan inte spara på det krypterade minnet från Macen. Använd en annan väg, till exempel en andra enhet formaterad som exFAT (macOS och Windows kan båda läsa och skriva den) eller en moln- eller nätverksmapp.",
+            "**Känsliga filer:** en okrypterad exFAT-enhet är bekväm men oskyddad om den tappas bort, så behåll privata data på BitLocker-minnet och använd det skrivskyddat på Macen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Bra att veta om USB-minnen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Koppla minnet direkt till Macen i stället för till en hubb utan egen ström, och prova en annan port om det inte visas.",
+            "Har minnet flera partitioner väljer du den som är BitLocker-krypterad.",
+            "Unbit stöder enheter krypterade i Windows 7 eller senare. Filsystemet inuti bör vara exFAT, FAT32 eller NTFS.",
+            "Ett minneskort i en USB-kortläsare visas vanligtvis som en extern enhet på Macen, så det fungerar på samma sätt.",
+            "Om Windows fortfarande krypterar eller dekrypterar minnet, låt det bli klart först."
+          ],
+          "outro": [
+            "Mer om enhetstyper: [Öppna en BitLocker-SSD, -hårddisk eller -USB-minne på Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Skiljer sig BitLocker To Go från BitLocker?",
+          "a": "Det är samma teknik. BitLocker To Go är bara namnet när den används på flyttbara enheter som USB-minnen."
+        },
+        {
+          "q": "Kan en Mac öppna BitLocker To Go utan extra programvara?",
+          "a": "Nej. macOS har inget inbyggt BitLocker-stöd, så du behöver en läsare som [Unbit](home) eller en Windows-dator."
+        },
+        {
+          "q": "Kan jag spara filer på minnet från min Mac?",
+          "a": "Inte med Unbit, som är skrivskyddat från grunden. Kopiera filer från minnet på Macen och använd Windows när du behöver lägga till eller ändra filer på det."
+        },
+        {
+          "q": "Fungerar minnet fortfarande på Windows efteråt?",
+          "a": "Ja. Unbit läser bara minnet och ändrar det aldrig."
+        },
+        {
+          "q": "Jag har en återställningsnyckel men inget lösenord. Kan jag ändå öppna det?",
+          "a": "Ja. Unbit accepterar den 48-siffriga återställningsnyckeln i stället för lösenordet. Se [BitLocker-återställningsnyckel på Mac](recovery)."
+        },
+        {
+          "q": "Sparar Unbit mitt lösenord?",
+          "a": "Bara om du kryssar i «Kom ihåg den här enheten på den här datorn». Då lagras det krypterat i din macOS-nyckelring, och du kan glömma det igen när som helst."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker-återställningsnyckel på Mac: lås upp en enhet",
+      "metaDescription": "Glömt BitLocker-lösenordet? Hitta din 48-siffriga återställningsnyckel och använd den för att öppna enheten på en Mac, skrivskyddat, med Unbit. Var du letar och vad du gör om den nekas.",
+      "h1": "BitLocker-återställningsnyckel på Mac: lås upp en enhet med den 48-siffriga nyckeln",
+      "summary": "Var du hittar den 48-siffriga återställningsnyckeln och hur du använder den för att öppna en BitLocker-enhet på din Mac.",
+      "lead": "Har du tappat bort BitLocker-lösenordet? Om du fortfarande har den 48-siffriga återställningsnyckeln kan du öppna enheten på en Mac. [Unbit](home) accepterar återställningsnyckeln (från version 1.0.8) i stället för lösenordet och öppnar enheten skrivskyddat. Den här guiden förklarar vad nyckeln är, var du letar efter den och hur du använder den.",
+      "sections": [
+        {
+          "title": "Vad återställningsnyckeln är",
+          "intro": [
+            "När BitLocker slås på skapar Windows en återställningsnyckel och ber dig spara eller skriva ut den. Den är 48 siffror lång, skriven som 8 grupper om 6 siffror åtskilda av bindestreck, till exempel 123456-123456-… och så vidare.",
+            "Återställningsnyckeln är en andra ingång. Den låser upp enheten i stället för lösenordet, och varje enhet har sin egen nyckel."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Var du hittar den",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Ditt Microsoft-konto.** Om du var inloggad med ett Microsoft-konto när enheten krypterades kan nyckeln vara sparad där. Logga in på kontot och leta efter BitLocker-återställningsnycklar.",
+            "**En fil eller ett utskrivet papper.** Windows erbjuder att spara nyckeln i en fil eller skriva ut den när du slår på BitLocker. Titta bland dina dokument, på ett USB-minne eller i en pärm med utskrifter.",
+            "**Din organisation.** För en jobb- eller skolenhet har ofta it-administratören nyckeln.",
+            "**Flera nycklar?** Använd den som hör till den här enheten. Har du flera hjälper nyckel-ID:t som visas vid varje nyckel dig att skilja dem åt."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Lås upp enheten med återställningsnyckeln i Unbit",
+          "intro": [],
+          "steps": [
+            "Se till att du har Unbit 1.0.8 eller senare. Öppna appen, koppla in enheten och välj den under **Enheter**.",
+            "Växla till fliken **Återställningsnyckel** (välj **Använd återställningsnyckel**).",
+            "Kopiera din nyckel och välj **Klistra in återställningsnyckel**, eller skriv de 48 siffrorna. Mellanslag och bindestreck går bra, och Unbit räknar siffrorna åt dig.",
+            "Välj **Öppna enhet**. macOS kan be om ditt Mac-lösenord en gång för att godkänna läsåtkomst.",
+            "Välj **Visa i Finder**, kopiera dina filer och använd **Mata ut säkert** när du är klar."
+          ],
+          "bullets": [],
+          "outro": [
+            "Kryssa i **Kom ihåg den här enheten på den här datorn** om Unbit ska spara nyckeln krypterad i din macOS-nyckelring, så att enheten öppnas utan att du skriver den igen."
+          ]
+        },
+        {
+          "title": "Vad återställningsnyckeln gör och inte gör",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Den öppnar enheten skrivskyddat, precis som lösenordet.",
+            "Den återställer eller ändrar inte BitLocker-lösenordet, tar inte bort BitLocker och reparerar inte enheten. Unbit skriver aldrig till enheten, så de uppgifterna hör hemma i Windows.",
+            "Den fungerar bara för den enhet den tillhör."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Om nyckeln nekas",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Kontrollera alla 48 siffror, i 8 grupper om 6. Unbit pekar ut en grupp som inte kan stämma.",
+            "Använd bara siffror, mellanslag och bindestreck. Kopierad text innehåller ibland extra tecken eller radbrytningar.",
+            "Kontrollera att det är nyckeln till den här enheten och inte till en annan enhet eller dator.",
+            "En återställningsnyckel kan bytas ut i Windows. Om enheten har krypterats om eller nyckeln skapats på nytt, prova den senaste nyckeln.",
+            "Om Unbit säger att enheten inte har någon återställningsnyckel använder du lösenordet i stället."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Om du inte hittar nyckeln",
+          "intro": [
+            "BitLocker är byggt så att ingen kan ta sig förbi det. Utan lösenordet eller återställningsnyckeln går data inte att återskapa – inte med Unbit, inte med dataåterställningsprogram, inte av någon. Formatera inte enheten i hopp om att laga den: då raderas data.",
+            "Fortsätt leta på platserna ovan och fråga den som konfigurerade enheten. När du väl är inne, förvara nyckeln på ett säkert ställe. De allmänna stegen finns i [Så öppnar du en BitLocker-enhet på en Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Stöder Unbit BitLocker-återställningsnyckeln?",
+          "a": "Ja, från version 1.0.8. Ange den under fliken Återställningsnyckel i stället för lösenordet."
+        },
+        {
+          "q": "Jag har bara nyckel-ID:t. Räcker det?",
+          "a": "Nej. Nyckel-ID:t identifierar bara en nyckel. Du behöver alla 48 siffror."
+        },
+        {
+          "q": "Kan jag använda återställningsnyckeln för att sätta ett nytt lösenord från min Mac?",
+          "a": "Nej. Unbit är skrivskyddat och kan inte ändra BitLocker-inställningar. Använd Windows om du behöver sätta ett nytt lösenord."
+        },
+        {
+          "q": "Skickas min återställningsnyckel någonstans?",
+          "a": "Nej. Dekrypteringen sker på din Mac, och nyckeln skickas aldrig någonstans."
+        },
+        {
+          "q": "Var hittar jag nyckeln till en jobbenhet?",
+          "a": "Fråga din it-administratör. Organisationer lagrar ofta återställningsnycklar centralt."
+        },
+        {
+          "q": "Kan jag använda återställningsnyckeln även om jag minns lösenordet?",
+          "a": "Ja. Båda öppnar enheten."
+        }
+      ]
     }
   }
 }

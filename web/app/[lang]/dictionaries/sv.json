@@ -86,7 +86,10 @@
   "guides": {
     "title": "Guider: BitLocker på Mac",
     "intro": "Korta, praktiska guider för att öppna, förstå och använda BitLocker-enheter på en Mac.",
-    "cta": "Alla guider"
+    "cta": "Alla guider",
+    "bestTitle": "Bästa BitLocker för Mac (2026)",
+    "bestText": "En ärlig översikt över sätten att öppna BitLocker-enheter på en Mac: pris, skrivskyddad eller läs/skriv, Apple silicon och inställning.",
+    "bestCta": "Läs jämförelsen"
   },
   "cta": { "title": "Öppna din BitLocker-enhet", "text": "Ingen Windows-dator behövs.", "download": "Ladda ner för macOS", "whatsNew": "Nyheter" },
   "footer": {

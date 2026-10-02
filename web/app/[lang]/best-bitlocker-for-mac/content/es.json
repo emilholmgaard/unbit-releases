@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Mejor BitLocker para Mac (2026): comparativa honesta de 6 opciones",
+    "description": "¿Qué opción de BitLocker para Mac te conviene? Unbit, iBoysoft, Hasleo, UUByte, anylinuxfs y una máquina virtual de Windows, comparados en precio, escritura, Apple silicon y configuración. Actualizado en octubre de 2026.",
+    "ogTitle": "Mejor BitLocker para Mac (2026) – comparativa honesta"
+  },
+  "ui": {
+    "updated": "Última actualización: {date}",
+    "breadcrumb": "Ruta de navegación"
+  },
+  "h1": "Mejor BitLocker para Mac en 2026",
+  "lead": "macOS no puede abrir por sí solo las unidades cifradas con BitLocker, así que necesitas una herramienta. Hay varias, y la mejor depende de una sola pregunta: ¿solo necesitas leer tus archivos o también escribir en la unidad? Esta comparativa recoge seis formas de hacerlo y explica con claridad lo que se gana y se pierde con cada una.",
+  "disclosure": "Transparencia: nosotros creamos Unbit, una de las opciones de abajo. Hemos intentado ser justos. Unbit es de solo lectura por diseño, así que para algunas tareas otra opción es mejor, y lo decimos. Los datos de otros productos proceden de las páginas de sus propios fabricantes (enlazadas en cada página de comparación) y pueden cambiar.",
+  "quick": {
+    "title": "La respuesta corta",
+    "items": [
+      "**Solo necesitas leer tus archivos y copiarlos de la unidad:** [Unbit](home), gratuita, de solo lectura y sin controladores.",
+      "**Necesitas escribir en unidades BitLocker desde tu Mac:** una app de pago como iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere o UUByte BitLocker Geeker, o bien Windows.",
+      "**Te manejas con Terminal en un Mac con Apple silicon:** anylinuxfs, gratuita, de código abierto y con lectura y escritura.",
+      "**Ya usas Windows en una máquina virtual:** emplea allí el BitLocker del propio Windows, por ejemplo en Parallels Desktop."
+    ]
+  },
+  "how": {
+    "title": "Cómo hemos elegido",
+    "intro": [
+      "Hemos revisado las formas en que la gente abre de verdad unidades BitLocker en un Mac y nos hemos quedado con las que tienen una página del fabricante o un repositorio que pudimos comprobar. Las comparamos según lo que importa cuando tienes la unidad delante:"
+    ],
+    "criteria": [
+      "**¿Cumple su función?** Abrir en macOS una unidad externa cifrada con una contraseña o una clave de recuperación.",
+      "**Solo lectura o lectura y escritura.** Escribir es útil, pero también significa que la herramienta puede modificar tu unidad.",
+      "**Modelo de precio.** Gratuito, suscripción o licencia única.",
+      "**Apple silicon.** Si admite Mac con chips M y no solo Intel.",
+      "**Configuración y acceso al sistema.** Si necesita extensiones del sistema o del kernel, seguridad de arranque reducida, Terminal o una máquina virtual.",
+      "**Privacidad y documentación.** Dónde se realiza el descifrado y lo bien que el fabricante explica la configuración."
+    ],
+    "outro": [
+      "No hicimos pruebas de velocidad y no damos una clasificación numerada, porque la elección correcta depende de tu tarea. Existen otras herramientas; que falte una no es un juicio sobre ella. Si ves algún error, consulta la página del fabricante y avísanos."
+    ]
+  },
+  "table": {
+    "title": "Tabla comparativa",
+    "columns": {
+      "tool": "Herramienta",
+      "price": "Modelo de precio",
+      "write": "Lectura / escritura",
+      "silicon": "Apple silicon",
+      "setup": "Configuración y acceso al sistema",
+      "unlock": "Se desbloquea con"
+    },
+    "rows": {
+      "unbit": {
+        "type": "App de barra de menús para Mac",
+        "price": "Gratuita",
+        "write": "Solo lectura por diseño",
+        "silicon": "Sí: Apple silicon e Intel",
+        "setup": "Sin extensión de kernel ni macFUSE. Necesita Acceso total al disco y una aprobación única de un ayudante de lectura",
+        "unlock": "Contraseña o clave de recuperación de 48 dígitos"
+      },
+      "iboysoft": {
+        "type": "App para Mac",
+        "price": "De pago: suscripción o licencia única; consulta el precio actual. La prueba solo permite explorar y previsualizar",
+        "write": "Lectura y escritura",
+        "silicon": "Sí: chips M e Intel",
+        "setup": "El modo Finder necesita una extensión del sistema (Seguridad reducida en Apple silicon). Un modo File Manager funciona sin ella",
+        "unlock": "Contraseña o clave de recuperación"
+      },
+      "hasleo": {
+        "type": "App para Mac",
+        "price": "De pago: licencia única; consulta el precio actual",
+        "write": "Lectura y escritura o solo lectura, a tu elección",
+        "silicon": "Sí: Intel y Apple silicon",
+        "setup": "En Apple silicon, el fabricante describe la Seguridad reducida y permitir extensiones de kernel. Necesita Acceso total al disco",
+        "unlock": "Contraseña o clave de recuperación"
+      },
+      "uubyte": {
+        "type": "App para Mac",
+        "price": "De pago: plan de 1 año o licencia vitalicia; consulta el precio actual",
+        "write": "Lectura; la escritura puede activarse tras desbloquear",
+        "silicon": "Sí: el fabricante tiene una guía para Apple silicon",
+        "setup": "La guía de Apple silicon del fabricante incluye Acceso total al disco, extensiones de kernel, actualizar una extensión del sistema y reiniciar",
+        "unlock": "Contraseña o clave de recuperación"
+      },
+      "anylinuxfs": {
+        "type": "Herramienta de Terminal, código abierto",
+        "price": "Gratuita",
+        "write": "Lectura y escritura por defecto; se puede elegir solo lectura",
+        "silicon": "Solo Apple silicon",
+        "setup": "Sin extensión de kernel. Ejecuta una máquina virtual ligera y comparte la unidad por NFS. Se instala con Homebrew",
+        "unlock": "Contraseña o clave de recuperación usada como frase de contraseña"
+      },
+      "parallels": {
+        "type": "Windows en una máquina virtual",
+        "price": "De pago: suscripción o compra única (Standard). La licencia de Windows no está incluida",
+        "write": "Lo que permita Windows, es decir, lectura y escritura",
+        "silicon": "Sí",
+        "setup": "Sin controlador de BitLocker en macOS. La unidad USB se conecta a la máquina virtual y deja de verse en el Mac",
+        "unlock": "Contraseña o clave de recuperación, introducida en Windows"
+      }
+    },
+    "note": "Basado en páginas de fabricantes consultadas el 1 de octubre de 2026. Los precios, funciones y requisitos del sistema cambian, así que consulta al fabricante antes de comprar. El detalle con fuentes de cada producto está en su página de comparación."
+  },
+  "products": {
+    "title": "Las opciones en detalle",
+    "bestFor": "Ideal para:",
+    "pros": "Ventajas",
+    "cons": "Contrapartidas",
+    "compare": "Comparar {name} con Unbit",
+    "items": {
+      "unbit": {
+        "bestFor": "leer archivos de una unidad BitLocker y copiarlos a tu Mac.",
+        "text": "Unbit es una app gratuita de barra de menús. Detecta la unidad externa, pide la contraseña o la clave de recuperación y monta la unidad en el Finder en solo lectura. Todo se descifra en tu Mac y no usa extensión de kernel ni macFUSE. Como nunca escribe, tampoco puede dañar ni modificar la unidad.",
+        "pros": [
+          "Gratuita, sin clave de licencia ni límites de prueba",
+          "Sin extensión de kernel, macFUSE ni seguridad de arranque reducida",
+          "App universal para Apple silicon e Intel",
+          "Se abre con contraseña o con la clave de recuperación de 48 dígitos",
+          "Funciona en local, sin cuentas ni seguimiento"
+        ],
+        "cons": [
+          "Solo lectura por diseño: no puedes guardar, borrar ni añadir archivos en la unidad",
+          "No puede cifrar unidades ni cambiar ajustes de BitLocker",
+          "Solo unidades externas, no discos internos",
+          "Requiere macOS {minOS} o posterior"
+        ]
+      },
+      "iboysoft": {
+        "bestFor": "quien quiera escribir en unidades BitLocker desde el Mac o cifrar unidades en macOS.",
+        "text": "iBoysoft BitLocker for Mac es una app comercial con acceso de lectura y escritura. Tiene dos modos: un modo File Manager y un modo Volume Mounter que monta la unidad en el Finder. También puede cifrar unidades con BitLocker.",
+        "pros": [
+          "Acceso de lectura y escritura",
+          "También puede cifrar unidades con BitLocker",
+          "Un modo File Manager que funciona sin extensión del sistema",
+          "Admite Mac con chips M e Intel"
+        ],
+        "cons": [
+          "De pago; la prueba solo explora y previsualiza archivos",
+          "El modo Finder necesita una extensión del sistema y, en Apple silicon, el fabricante documenta la Seguridad reducida",
+          "La activación requiere acceso a internet, según el fabricante"
+        ]
+      },
+      "hasleo": {
+        "bestFor": "quien quiera una sola herramienta de pago para montar, cifrar y descifrar unidades BitLocker.",
+        "text": "Hasleo BitLocker Anywhere for Mac monta unidades BitLocker con lectura y escritura o solo lectura, y también puede cifrarlas y descifrarlas. En el momento de escribir esto, el fabricante lo anuncia a un precio inferior al de las otras apps de pago; consulta el precio actual.",
+        "pros": [
+          "Montaje con lectura y escritura o solo lectura",
+          "Puede cifrar y descifrar unidades y cambiar la contraseña",
+          "Indica compatibilidad con Intel y Apple silicon"
+        ],
+        "cons": [
+          "De pago",
+          "En Apple silicon, la configuración implica Seguridad reducida y extensiones de kernel, según el foro del fabricante",
+          "No pudimos verificar los límites de su versión gratuita o de prueba"
+        ]
+      },
+      "uubyte": {
+        "bestFor": "quien casi siempre lee pero quiere poder escribir después de desbloquear.",
+        "text": "UUByte BitLocker Geeker es una app de pago. Tras desbloquear puedes ver y copiar archivos, y el fabricante indica que la escritura se activa con un botón Enable Write.",
+        "pros": [
+          "Escritura opcional",
+          "Desbloqueo automático con el llavero",
+          "El fabricante documenta los pasos para Mac con chips M"
+        ],
+        "cons": [
+          "De pago",
+          "Los pasos para Apple silicon incluyen extensiones de kernel y un reinicio",
+          "No es de solo lectura salvo que dejes la escritura desactivada"
+        ]
+      },
+      "anylinuxfs": {
+        "bestFor": "quien se maneja con Terminal y quiere una opción gratuita con lectura y escritura.",
+        "text": "anylinuxfs es una herramienta gratuita de código abierto y de línea de comandos que monta sistemas de archivos compatibles con Linux, incluidas unidades BitLocker, en Mac con Apple silicon. Ejecuta una máquina virtual ligera y comparte la unidad con tu Mac por NFS.",
+        "pros": [
+          "Gratuita y de código abierto",
+          "Lectura y escritura, con montaje de solo lectura seleccionable",
+          "Sin extensión de kernel ni reducción de la seguridad del sistema",
+          "También gestiona ext4, btrfs, LUKS y más"
+        ],
+        "cons": [
+          "Línea de comandos y Homebrew; no es una app de hacer clic",
+          "Solo Apple silicon",
+          "La unidad aparece como unidad de red y el proyecto indica limitaciones conocidas"
+        ]
+      },
+      "parallels": {
+        "bestFor": "quien ya usa Windows en su Mac.",
+        "text": "Parallels Desktop es una app de virtualización, no una herramienta de BitLocker. Conectas la unidad externa a una máquina virtual de Windows y la desbloqueas con la compatibilidad con BitLocker del propio Windows. Funciona, pero es la configuración más grande de las seis.",
+        "pros": [
+          "Comportamiento completo de Windows con la unidad, incluida la escritura",
+          "También ejecuta aplicaciones de Windows",
+          "No necesita un controlador de BitLocker en macOS"
+        ],
+        "cons": [
+          "Requiere una instalación y una licencia de Windows, además de espacio en disco y memoria",
+          "De pago",
+          "Mientras está conectada a la máquina virtual, la unidad no se ve en el Mac"
+        ]
+      }
+    }
+  },
+  "pick": {
+    "title": "¿Cuál deberías elegir?",
+    "paragraphs": [
+      "Si solo necesitas los archivos (una memoria USB de un compañero, un disco de copia de seguridad antiguo, un disco de un PC con Windows), empieza por la herramienta más sencilla que lo haga. [Unbit](home) es gratuita, se instala como cualquier app de Mac y deja la unidad intacta. Su límite es el punto clave: no puede escribir, así que no hay nada que deshacer.",
+      "Si necesitas escribir en la unidad, elige una opción con lectura y escritura: una de las apps de pago para Mac, anylinuxfs si te gusta Terminal, o Windows en una máquina virtual. Compara precio, configuración y compatibilidad con Apple silicon en la [página de comparación](alternatives) de cada producto y consulta el precio actual antes de comprar.",
+      "Elijas lo que elijas, guarda a buen recaudo la contraseña o la clave de recuperación de 48 dígitos: sin una de las dos, nadie puede abrir la unidad. ¿Eres nuevo en esto? Empieza por [Cómo abrir una unidad BitLocker en un Mac](open) o lee [Clave de recuperación de BitLocker en Mac](recovery) si has perdido la contraseña."
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿Cuál es el mejor BitLocker para Mac?",
+      "a": "Depende de la tarea. Para leer archivos y copiarlos a tu Mac basta una herramienta gratuita de solo lectura como [Unbit](home). Si necesitas escribir en la unidad, mira las apps de pago con lectura y escritura, anylinuxfs o Windows en una máquina virtual."
+    },
+    {
+      "q": "¿Existe un BitLocker gratuito para Mac?",
+      "a": "Sí. Unbit es gratuita y de solo lectura, y anylinuxfs es gratuita, de código abierto y con lectura y escritura, aunque se usa desde Terminal en Mac con Apple silicon. Las demás apps de esta comparativa son de pago."
+    },
+    {
+      "q": "¿Admite macOS BitLocker de forma nativa?",
+      "a": "No. macOS no incluye compatibilidad con BitLocker. Su cifrado propio es FileVault, que es una tecnología distinta."
+    },
+    {
+      "q": "¿Puedo escribir en una unidad BitLocker desde un Mac?",
+      "a": "Sí con algunas herramientas: las apps de pago, anylinuxfs o Windows en una máquina virtual. No con Unbit, que es de solo lectura por diseño."
+    },
+    {
+      "q": "¿Funcionan estas herramientas en Mac con Apple silicon?",
+      "a": "La mayoría indica compatibilidad con Apple silicon e Intel; anylinuxfs solo admite Apple silicon. La configuración varía mucho, así que consulta la documentación de cada fabricante."
+    },
+    {
+      "q": "¿Es seguro abrir una unidad BitLocker en un Mac?",
+      "a": "Abrir una unidad en solo lectura no puede modificarla. En [¿Es seguro BitLocker en Mac?](safe) se explica qué hace Unbit con tu contraseña y tus archivos."
+    },
+    {
+      "q": "¿Cuán actual es esta comparativa?",
+      "a": "Se actualizó por última vez en octubre de 2026, y los datos de la competencia se contrastaron con las páginas de los fabricantes el 1 de octubre de 2026. Verifica siempre precios y funciones con el fabricante."
+    }
+  ],
+  "related": "Más guías",
+  "disclaimer": "Última actualización: {date}. Todos los nombres de productos son marcas registradas de sus respectivos propietarios. Unbit es una app independiente y no está afiliada ni respaldada por Microsoft, Apple ni ninguno de los fabricantes mencionados. Esta página es solo informativa."
+}

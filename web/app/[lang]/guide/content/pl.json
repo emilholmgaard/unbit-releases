@@ -323,6 +323,318 @@
           "a": "Tak. Unbit tylko odczytuje dysk i nigdy go nie zmienia, więc pozostaje dokładnie taki, jak zostawił go Windows."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Jak otworzyć dysk USB zaszyfrowany BitLockerem na Macu – poradnik",
+      "metaDescription": "Widzisz komunikat „Włożony dysk nie jest czytelny”? Otwórz dysk USB zaszyfrowany BitLockerem na Macu: co działa, co jest darmowe i poradnik w 5 krokach z Unbit.",
+      "h1": "Jak otworzyć dysk USB zaszyfrowany BitLockerem na Macu",
+      "summary": "„Włożony dysk nie jest czytelny”: co to znaczy i najszybszy darmowy sposób na otwarcie dysku.",
+      "lead": "Podłączasz dysk USB do Maca, a macOS informuje, że dysk nie jest czytelny dla tego komputera. Jeśli dysk został zaszyfrowany BitLockerem na komputerze z Windows, nie jest uszkodzony – macOS po prostu nie potrafi go odszyfrować. Ten poradnik pokazuje, jakie masz opcje i jak otworzyć dysk w około pięć minut za pomocą [Unbit](home), darmowego czytnika BitLockera tylko do odczytu.",
+      "sections": [
+        {
+          "title": "Co naprawdę oznacza komunikat „nie jest czytelny”",
+          "intro": [
+            "macOS wyświetla ten komunikat za każdym razem, gdy trafi na dysk, którego nie rozpoznaje. W przypadku dysku z BitLockerem Twoje dane są w porządku: zapisano je w formacie szyfrowania, który potrafią odczytać Windows i narzędzia obsługujące BitLockera. **Nie klikaj Inicjuj ani Wymaż** – usunęłoby to wszystko z dysku. Kliknij zamiast tego **Ignoruj**.",
+            "Zanim cokolwiek zainstalujesz, sprawdź trzy rzeczy: czy to dysk zewnętrzny (pendrive, SSD lub dysk twardy), czy masz hasło lub 48-cyfrowy klucz odzyskiwania i czy dysk nadal otwiera się na komputerze z Windows – to znaczy, że sam dysk jest sprawny."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Twoje opcje otwarcia dysku",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Sam macOS:** nie ma wbudowanej obsługi BitLockera ani ukrytego ustawienia, które by ją dodawało. FileVault to szyfrowanie Apple i nie ma z tym związku.",
+            "**Komputer z Windows lub maszyna wirtualna z Windows:** działa, bo Windows ma BitLockera wbudowanego, i możesz czytać oraz zapisywać. Potrzebujesz dostępu do Windows, a maszyna wirtualna wymaga licencji Windows.",
+            "**Darmowe narzędzie wiersza poleceń, takie jak anylinuxfs:** open source, z odczytem i zapisem, ale tylko dla Maców z Apple silicon i używane z Terminala.",
+            "**Aplikacja BitLocker na Maca:** najszybsza droga, jeśli zależy Ci tylko na plikach. Kilka płatnych aplikacji pozwala też zapisywać na dysku; [Unbit](home) jest darmowy i tylko do odczytu. Porównanie obok siebie znajdziesz w [Najlepszy BitLocker dla Maca](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Otwórz dysk USB w Unbit",
+          "intro": [],
+          "steps": [
+            "Pobierz Unbit, przeciągnij go do folderu Programy i uruchom. Aplikacja mieszka w pasku menu i wymaga macOS 13 lub nowszego (Apple silicon lub Intel). Przy pierwszym uruchomieniu pokaże, gdzie włączyć **Pełny dostęp do dysku**.",
+            "Podłącz dysk USB, najlepiej bezpośrednio do Maca, a nie przez hub. Unbit wyświetli go w sekcji **Dyski**; wybierz go.",
+            "Wpisz hasło BitLockera i wybierz **Otwórz dysk**. macOS może raz poprosić o hasło do Maca, aby zatwierdzić dostęp do odczytu.",
+            "Wybierz **Pokaż w Finderze**. Dysk jest zamontowany tylko do odczytu, więc możesz go przeglądać, otwierać pliki i kopiować je na Maca.",
+            "Gdy skończysz, wybierz **Wysuń bezpiecznie**, zanim odepniesz pendrive’a."
+          ],
+          "bullets": [],
+          "outro": [
+            "Chcesz zrzuty ekranu i więcej szczegółów? Przeczytaj [Jak otworzyć dysk BitLocker na Macu](open)."
+          ]
+        },
+        {
+          "title": "Co możesz, a czego nie możesz po otwarciu dysku",
+          "intro": [
+            "Unbit nigdy nie zapisuje na dysku, więc możesz przeglądać foldery, podglądać i otwierać pliki oraz kopiować je na Maca. Nie możesz zapisać zmian z powrotem, usuwać plików ani dodawać nowych. To świadomy kompromis: nic nie da się zmienić ani skasować przez pomyłkę, a dysk pozostaje dokładnie taki, jaki zostawił Windows."
+          ],
+          "steps": [],
+          "bullets": [
+            "Aby edytować plik, najpierw skopiuj go na Maca i pracuj na kopii.",
+            "Aby zmienić zawartość dysku lub jego ustawienia BitLockera, użyj Windows."
+          ],
+          "outro": [
+            "Więcej o tym, co oznacza tylko do odczytu: [Czy BitLocker na Macu jest bezpieczny?](safe)."
+          ]
+        },
+        {
+          "title": "Jeśli to nie działa",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Dysk się nie pojawia.** Odłącz go i podłącz ponownie, użyj portu w samym Macu i odśwież listę skrótem ⌘R. Obsługiwane są tylko dyski zewnętrzne.",
+            "**„Nieprawidłowe hasło”.** Sprawdź literówki i Caps Lock. Jeśli masz klucz odzyskiwania, użyj go zamiast hasła – zobacz [Klucz odzyskiwania BitLockera na Macu](recovery).",
+            "**Odmowa dostępu.** Unbit potrzebuje Pełnego dostępu do dysku: Ustawienia systemowe › Prywatność i ochrona › Pełny dostęp do dysku.",
+            "**Dysk otwiera się w Finderze bez Unbit.** Wtedy nie jest zaszyfrowany BitLockerem albo wybrano niezaszyfrowaną partycję tego samego dysku.",
+            "**Nie działa też na komputerze z Windows.** Dysk może być uszkodzony albo wciąż się szyfruje lub odszyfrowuje. Poczekaj, aż Windows skończy, i spróbuj ponownie."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jeśli nie masz ani hasła, ani klucza odzyskiwania",
+          "intro": [
+            "BitLockera nie da się obejść – na tym polega szyfrowanie. Nie pomogą też programy do odzyskiwania danych, a sformatowanie dysku tylko skasuje dane. Poszukaj 48-cyfrowego klucza odzyskiwania na koncie Microsoft użytym na komputerze, który zaszyfrował dysk, w zapisanym pliku lub na wydruku – albo zapytaj administratora IT, jeśli to dysk służbowy."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dlaczego Mac pokazuje, że dysk nie jest czytelny?",
+          "a": "Dysk jest zaszyfrowany BitLockerem, którego macOS nie potrafi odczytać. Dane nie przepadły. Kliknij Ignoruj (nigdy Inicjuj ani Wymaż) i otwórz dysk czytnikiem BitLockera, takim jak [Unbit](home)."
+        },
+        {
+          "q": "Czy mogę za darmo otworzyć dysk USB z BitLockerem na Macu?",
+          "a": "Tak. Unbit jest darmowy i otwiera dyski tylko do odczytu. anylinuxfs to darmowe narzędzie wiersza poleceń z otwartym kodem dla Apple silicon, a komputer z Windows też nic nie kosztuje, jeśli go masz. Większość innych aplikacji na Maca jest płatna."
+        },
+        {
+          "q": "Czy otwarcie dysku na Macu go zmienia?",
+          "a": "Nie. Unbit montuje dysk tylko do odczytu i nigdy na nim nie zapisuje, więc pozostaje dokładnie taki, jaki zostawił Windows."
+        },
+        {
+          "q": "Czy potrzebuję sterowników, rozszerzenia jądra lub macFUSE?",
+          "a": "Nie w przypadku Unbit. Aplikacja korzysta z obsługi obrazów dysków wbudowanej w macOS i potrzebuje Pełnego dostępu do dysku oraz jednorazowego zatwierdzenia pomocnika odczytu."
+        },
+        {
+          "q": "Czy działa na Macach z Apple silicon?",
+          "a": "Tak. Unbit to aplikacja uniwersalna dla Maców z Apple silicon i Intel."
+        },
+        {
+          "q": "Czy po tym mogę nadal używać dysku USB w Windows?",
+          "a": "Tak. Nic na dysku nie jest zmieniane, więc nadal działa na Twoim komputerze z Windows."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go na Macu: otwórz pendrive zaszyfrowany w Windows",
+      "metaDescription": "Pendrive zaszyfrowany BitLockerem To Go w Windows? Dowiedz się, czym jest BitLocker To Go, dlaczego Mac sam go nie otworzy i jak odczytać go w Unbit.",
+      "h1": "BitLocker To Go na Macu: otwórz pendrive zaszyfrowany w Windows",
+      "summary": "Czym jest BitLocker To Go i jak odczytać na Macu pendrive zaszyfrowany w Windows.",
+      "lead": "BitLocker To Go to ta część BitLockera, której Windows używa do dysków wymiennych, takich jak pendrive’y. Ktoś zaszyfrował pendrive’a na komputerze z Windows, a Ty potrzebujesz plików na Macu. macOS sam nie odblokuje takich dysków, ale [Unbit](home) otworzy je tylko do odczytu. Oto jak działa BitLocker To Go i czego możesz się spodziewać na Macu.",
+      "sections": [
+        {
+          "title": "Czym jest BitLocker To Go",
+          "intro": [
+            "BitLocker to szyfrowanie dysków Microsoftu dla Windows. BitLocker To Go to nazwa tej samej ochrony na dyskach wymiennych: pendrive’ach i dyskach zewnętrznych. W Windows włączasz go w Eksploratorze plików, wybierasz sposób odblokowania dysku – zwykle hasło – i zapisujesz 48-cyfrowy klucz odzyskiwania.",
+            "Chroniony dysk ma w Eksploratorze plików Windows ikonę kłódki, a Windows prosi o hasło po jego podłączeniu. Zaszyfrowane jest wszystko na dysku, a nie tylko kilka folderów."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Co się dzieje po podłączeniu do Maca",
+          "intro": [
+            "macOS widzi dysk, którego nie potrafi odczytać. Zwykle pokazuje komunikat, że dysk nie jest czytelny dla tego komputera, albo dysk w ogóle nie pojawia się w Finderze. Pliki są nienaruszone: kliknij **Ignoruj** i nigdy nie wybieraj Inicjuj ani Wymaż.",
+            "Jeśli pendrive odblokowuje się automatycznie na Twoim komputerze, to ustawienie dotyczy tylko tamtego komputera. Na Macu nadal potrzebujesz hasła lub klucza odzyskiwania."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Otwórz dysk BitLocker To Go w Unbit",
+          "intro": [],
+          "steps": [
+            "Zainstaluj [Unbit](home) ze strony internetowej i uruchom go z paska menu. Przy pierwszym uruchomieniu aplikacja pokaże, gdzie włączyć **Pełny dostęp do dysku**.",
+            "Podłącz pendrive’a. Unbit wykryje go automatycznie i wyświetli w sekcji **Dyski**.",
+            "Wpisz hasło ustawione w Windows i wybierz **Otwórz dysk**. Jeśli masz tylko klucz odzyskiwania, użyj go zamiast hasła – zobacz [Klucz odzyskiwania BitLockera na Macu](recovery).",
+            "Wybierz **Pokaż w Finderze** i skopiuj potrzebne pliki na Maca.",
+            "Wybierz **Wysuń bezpiecznie**, zanim wyjmiesz pendrive’a."
+          ],
+          "bullets": [],
+          "outro": [
+            "Pełny opis ze zrzutami ekranu znajdziesz w [Jak otworzyć dysk BitLocker na Macu](open)."
+          ]
+        },
+        {
+          "title": "Przenoszenie plików między komputerem z Windows a Makiem",
+          "intro": [
+            "Unbit czyta dyski BitLocker To Go, ale nie zapisuje na nich. Wpływa to na sposób wymiany plików:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Z Windows na Maca:** umieść pliki na pendrivie w Windows, a potem skopiuj je na Macu.",
+            "**Z Maca do Windows:** z Maca nie zapiszesz niczego na zaszyfrowanym pendrivie. Skorzystaj z innej drogi, na przykład drugiego dysku sformatowanego jako exFAT (macOS i Windows odczytują go i zapisują) albo udziału w chmurze lub sieci.",
+            "**Pliki wrażliwe:** niezaszyfrowany dysk exFAT jest wygodny, ale w razie zgubienia nie chroni danych, więc prywatne dane trzymaj na pendrivie z BitLockerem i na Macu używaj go tylko do odczytu."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Warto wiedzieć o pendrive’ach",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Podłączaj pendrive’a bezpośrednio do Maca, a nie do huba bez zasilania, a jeśli się nie pojawia, spróbuj innego portu.",
+            "Jeśli pendrive ma kilka partycji, wybierz tę zaszyfrowaną BitLockerem.",
+            "Unbit obsługuje dyski zaszyfrowane w Windows 7 lub nowszym. System plików wewnątrz powinien być exFAT, FAT32 lub NTFS.",
+            "Karta pamięci w czytniku USB zwykle pojawia się na Macu jako dysk zewnętrzny, więc działa tak samo.",
+            "Jeśli Windows wciąż szyfruje lub odszyfrowuje pendrive’a, poczekaj, aż skończy."
+          ],
+          "outro": [
+            "Więcej o typach dysków: [Otwórz SSD, HDD lub pendrive z BitLockerem na Macu](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy BitLocker To Go różni się od BitLockera?",
+          "a": "To ta sama technologia. BitLocker To Go to po prostu nazwa używana dla dysków wymiennych, takich jak pendrive’y."
+        },
+        {
+          "q": "Czy Mac otworzy BitLocker To Go bez dodatkowego oprogramowania?",
+          "a": "Nie. macOS nie ma wbudowanej obsługi BitLockera, więc potrzebujesz czytnika takiego jak [Unbit](home) albo komputera z Windows."
+        },
+        {
+          "q": "Czy mogę zapisywać pliki na pendrivie z Maca?",
+          "a": "Nie w Unbit, który jest z założenia tylko do odczytu. Skopiuj pliki z pendrive’a na Macu, a Windows użyj, gdy musisz dodać lub zmienić pliki."
+        },
+        {
+          "q": "Czy pendrive nadal będzie działać w Windows?",
+          "a": "Tak. Unbit tylko czyta pendrive’a i nigdy go nie zmienia."
+        },
+        {
+          "q": "Mam klucz odzyskiwania, ale nie mam hasła. Czy mogę otworzyć dysk?",
+          "a": "Tak. Unbit przyjmuje 48-cyfrowy klucz odzyskiwania zamiast hasła. Zobacz [Klucz odzyskiwania BitLockera na Macu](recovery)."
+        },
+        {
+          "q": "Czy Unbit zapamiętuje moje hasło?",
+          "a": "Tylko jeśli zaznaczysz „Zapamiętaj ten dysk na tym Macu”. Wtedy jest przechowywane w zaszyfrowanej postaci w pęku kluczy macOS i w każdej chwili możesz je usunąć."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "Klucz odzyskiwania BitLockera na Macu: odblokuj dysk",
+      "metaDescription": "Nie pamiętasz hasła do BitLockera? Znajdź 48-cyfrowy klucz odzyskiwania i otwórz nim dysk na Macu, tylko do odczytu, w Unbit. Gdzie szukać i co zrobić, gdy klucz zostanie odrzucony.",
+      "h1": "Klucz odzyskiwania BitLockera na Macu: odblokuj dysk 48-cyfrowym kluczem",
+      "summary": "Gdzie znaleźć 48-cyfrowy klucz odzyskiwania i jak użyć go do otwarcia dysku BitLocker na Macu.",
+      "lead": "Nie masz już hasła do BitLockera? Jeśli nadal masz 48-cyfrowy klucz odzyskiwania, możesz otworzyć dysk na Macu. [Unbit](home) przyjmuje klucz odzyskiwania (od wersji 1.0.8) zamiast hasła i otwiera dysk tylko do odczytu. Ten poradnik wyjaśnia, czym jest klucz, gdzie go szukać i jak go użyć.",
+      "sections": [
+        {
+          "title": "Czym jest klucz odzyskiwania",
+          "intro": [
+            "Gdy włączany jest BitLocker, Windows tworzy klucz odzyskiwania i prosi o jego zapisanie lub wydrukowanie. Ma 48 cyfr, zapisanych jako 8 grup po 6 cyfr rozdzielonych myślnikami, na przykład 123456-123456-… i tak dalej.",
+            "Klucz odzyskiwania to drugie wejście. Odblokowuje dysk zamiast hasła, a każdy dysk ma własny klucz."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Gdzie go znaleźć",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Twoje konto Microsoft.** Jeśli podczas szyfrowania dysku używano konta Microsoft, klucz może być tam zapisany. Zaloguj się na to konto i poszukaj kluczy odzyskiwania BitLockera.",
+            "**Plik lub wydruk.** Windows proponuje zapisanie klucza w pliku lub wydrukowanie go przy włączaniu BitLockera. Sprawdź dokumenty, pendrive’a lub teczkę z wydrukami.",
+            "**Twoja organizacja.** W przypadku dysku służbowego lub szkolnego klucz często przechowuje administrator IT.",
+            "**Kilka kluczy?** Użyj tego, który należy do tego dysku. Jeśli masz ich kilka, pomoże identyfikator klucza widoczny przy każdym z nich."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Odblokuj dysk kluczem odzyskiwania w Unbit",
+          "intro": [],
+          "steps": [
+            "Upewnij się, że masz Unbit 1.0.8 lub nowszy. Uruchom go, podłącz dysk i wybierz go w sekcji **Dyski**.",
+            "Przejdź na kartę **Klucz odzyskiwania** (wybierz **Użyj klucza odzyskiwania**).",
+            "Skopiuj klucz i wybierz **Wklej klucz odzyskiwania** albo wpisz 48 cyfr. Spacje i myślniki nie przeszkadzają, a Unbit sam liczy cyfry.",
+            "Wybierz **Otwórz dysk**. macOS może raz poprosić o hasło do Maca, aby zatwierdzić dostęp do odczytu.",
+            "Wybierz **Pokaż w Finderze**, skopiuj pliki, a na końcu użyj **Wysuń bezpiecznie**."
+          ],
+          "bullets": [],
+          "outro": [
+            "Zaznacz **Zapamiętaj ten dysk na tym Macu**, jeśli chcesz, aby Unbit przechowywał klucz w zaszyfrowanej postaci w pęku kluczy macOS i dysk otwierał się bez ponownego wpisywania."
+          ]
+        },
+        {
+          "title": "Co klucz odzyskiwania robi, a czego nie",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Otwiera dysk tylko do odczytu, tak samo jak hasło.",
+            "Nie resetuje ani nie zmienia hasła BitLockera, nie usuwa BitLockera i nie naprawia dysku. Unbit nigdy nie zapisuje na dysku, więc te zadania należą do Windows.",
+            "Działa tylko dla dysku, do którego należy."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jeśli klucz zostanie odrzucony",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Sprawdź wszystkie 48 cyfr, w 8 grupach po 6. Unbit wskaże grupę, która nie może być poprawna.",
+            "Używaj tylko cyfr, spacji i myślników. Skopiowany tekst czasem zawiera dodatkowe znaki lub podziały wierszy.",
+            "Upewnij się, że to klucz do tego dysku, a nie do innego dysku lub komputera.",
+            "Klucz odzyskiwania można w Windows wymienić. Jeśli dysk zaszyfrowano ponownie lub klucz wygenerowano na nowo, spróbuj najnowszego klucza.",
+            "Jeśli Unbit informuje, że dysk nie ma klucza odzyskiwania, użyj hasła."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jeśli nie możesz znaleźć klucza",
+          "intro": [
+            "BitLocker zaprojektowano tak, aby nikt nie mógł go obejść. Bez hasła lub klucza odzyskiwania danych nie da się odzyskać – ani w Unbit, ani programem do odzyskiwania danych, ani nikt inny. Nie formatuj dysku w nadziei na naprawę: skasuje to dane.",
+            "Szukaj dalej w miejscach wymienionych wyżej i zapytaj osobę, która konfigurowała dysk. Gdy już uzyskasz dostęp, przechowuj klucz w bezpiecznym miejscu. Ogólne kroki opisano w [Jak otworzyć dysk BitLocker na Macu](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy Unbit obsługuje klucz odzyskiwania BitLockera?",
+          "a": "Tak, od wersji 1.0.8. Wpisz go na karcie Klucz odzyskiwania zamiast hasła."
+        },
+        {
+          "q": "Mam tylko identyfikator klucza. Czy to wystarczy?",
+          "a": "Nie. Identyfikator tylko wskazuje klucz. Potrzebujesz wszystkich 48 cyfr."
+        },
+        {
+          "q": "Czy mogę użyć klucza odzyskiwania, aby ustawić nowe hasło z Maca?",
+          "a": "Nie. Unbit jest tylko do odczytu i nie zmienia ustawień BitLockera. Aby ustawić nowe hasło, użyj Windows."
+        },
+        {
+          "q": "Czy mój klucz odzyskiwania jest gdzieś wysyłany?",
+          "a": "Nie. Odszyfrowanie odbywa się na Twoim Macu, a klucz nigdzie nie jest wysyłany."
+        },
+        {
+          "q": "Gdzie znajdę klucz do dysku służbowego?",
+          "a": "Zapytaj administratora IT. Organizacje często przechowują klucze odzyskiwania centralnie."
+        },
+        {
+          "q": "Czy mogę użyć klucza odzyskiwania, nawet jeśli pamiętam hasło?",
+          "a": "Tak. Każde z nich otwiera dysk."
+        }
+      ]
     }
   }
 }

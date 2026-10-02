@@ -86,7 +86,10 @@
   "guides": {
     "title": "Handleidingen: BitLocker op de Mac",
     "intro": "Korte, praktische handleidingen om BitLocker-schijven op een Mac te openen, te begrijpen en te gebruiken.",
-    "cta": "Alle handleidingen"
+    "cta": "Alle handleidingen",
+    "bestTitle": "Beste BitLocker voor Mac (2026)",
+    "bestText": "Een eerlijk overzicht van manieren om BitLocker-schijven op een Mac te openen: prijs, alleen-lezen of lezen en schrijven, Apple silicon en installatie.",
+    "bestCta": "Lees de vergelijking"
   },
   "cta": { "title": "Open je BitLocker-schijf", "text": "Geen Windows-pc nodig.", "download": "Download voor macOS", "whatsNew": "Wat is er nieuw" },
   "footer": {

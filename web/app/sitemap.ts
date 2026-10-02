@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { alternativesPath, competitors } from "@/lib/competitors";
-import { GUIDES, GUIDES_MODIFIED, guidePath } from "@/lib/guides";
+import { BEST_MODIFIED, GUIDES, GUIDES_MODIFIED, bestPath, guidePath } from "@/lib/guides";
 import { locales } from "@/lib/i18n";
 import { SITE_URL, latestRelease } from "@/lib/site";
 
@@ -54,8 +54,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
   };
 
+  // Best BitLocker for Mac roundup, with hreflang alternates across locales.
+  const bestLangs = {
+    ...Object.fromEntries(locales.map((l) => [l, `${SITE_URL}${bestPath(l)}`])),
+    "x-default": `${SITE_URL}${bestPath("en")}`,
+  };
+  const best = locales.map((locale) => ({
+    url: `${SITE_URL}${bestPath(locale)}`,
+    lastModified: new Date(BEST_MODIFIED) > built ? new Date(BEST_MODIFIED) : built,
+    changeFrequency: "monthly" as const,
+    priority: locale === "en" ? 0.9 : 0.8,
+    alternates: { languages: bestLangs },
+  }));
+
   return [
     ...home,
+    ...best,
     ...alternatives(),
     ...competitors.flatMap((c) => alternatives(c.slug)),
     ...guides(),

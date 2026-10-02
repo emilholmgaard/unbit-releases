@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "title": "Paras BitLocker Macille (2026): rehellinen vertailu 6 vaihtoehdosta",
+    "description": "Mikä BitLocker-vaihtoehto sopii Macillesi? Unbit, iBoysoft, Hasleo, UUByte, anylinuxfs ja Windows-virtuaalikone vertailussa: hinta, kirjoitustuki, Apple silicon ja käyttöönotto. Päivitetty lokakuussa 2026.",
+    "ogTitle": "Paras BitLocker Macille (2026) – rehellinen vertailu"
+  },
+  "ui": {
+    "updated": "Päivitetty viimeksi {date}",
+    "breadcrumb": "Polku"
+  },
+  "h1": "Paras BitLocker Macille vuonna 2026",
+  "lead": "macOS ei osaa avata BitLocker-salattuja asemia itse, joten tarvitset työkalun. Niitä on useita, ja paras riippuu yhdestä kysymyksestä: tarvitsetko vain lukea tiedostosi vai myös kirjoittaa asemalle? Tämä katsaus vertailee kuutta tapaa ja kertoo kompromissit avoimesti.",
+  "disclosure": "Avoimuus: Teemme Unbitia, joka on yksi alla olevista vaihtoehdoista. Olemme yrittäneet olla reiluja. Unbit on suunnitellusti vain lukeva, joten joihinkin tehtäviin toinen vaihtoehto sopii paremmin, ja kerromme sen. Tiedot muista tuotteista ovat valmistajien omilta sivuilta (linkit kunkin vertailusivun kautta) ja voivat muuttua.",
+  "quick": {
+    "title": "Lyhyt vastaus",
+    "items": [
+      "**Tarvitset vain lukea tiedostosi ja kopioida ne asemalta:** [Unbit](home) – ilmainen, vain lukeva, ei ajureita.",
+      "**Sinun täytyy kirjoittaa BitLocker-asemille Macilta:** maksullinen sovellus, kuten iBoysoft BitLocker for Mac, Hasleo BitLocker Anywhere tai UUByte BitLocker Geeker – tai Windows.",
+      "**Terminal on sinulle tuttu Apple silicon -Macilla:** anylinuxfs – ilmainen, avoin lähdekoodi, luku ja kirjoitus.",
+      "**Käytät jo Windowsia virtuaalikoneessa:** käytä siellä Windowsin omaa BitLockeria, esimerkiksi Parallels Desktopissa."
+    ]
+  },
+  "how": {
+    "title": "Miten valitsimme",
+    "intro": [
+      "Katsoimme, miten ihmiset todella avaavat BitLocker-asemia Macilla, ja pidimme ne vaihtoehdot, joista on valmistajan sivu tai koodivarasto, jonka pystyimme tarkistamaan. Vertasimme niitä asioihin, joilla on merkitystä, kun asema on edessäsi:"
+    ],
+    "criteria": [
+      "**Hoituuko työ?** Salatun ulkoisen aseman avaaminen macOS:ssä salasanalla tai palautusavaimella.",
+      "**Vain luku vai luku ja kirjoitus.** Kirjoitus on hyödyllinen, mutta tarkoittaa myös, että työkalu voi muuttaa asemaasi.",
+      "**Hinnoittelumalli.** Ilmainen, tilaus tai kertalisenssi.",
+      "**Apple silicon.** Tukeeko se M-sirun Maceja, ei vain Inteliä.",
+      "**Käyttöönotto ja järjestelmäoikeudet.** Vaatiiko se järjestelmä- tai ydinlaajennuksia, alennettua käynnistysturvallisuutta, Terminalia tai virtuaalikoneen.",
+      "**Tietosuoja ja dokumentaatio.** Missä salauksen purku tapahtuu ja kuinka hyvin valmistaja selittää käyttöönoton."
+    ],
+    "outro": [
+      "Emme tehneet nopeustestejä emmekä anna numeroitua paremmuusjärjestystä, koska oikea valinta riippuu tehtävästäsi. Muitakin työkaluja on; yhden puuttuminen ei ole arvio siitä. Jos huomaat virheen, tarkista valmistajan sivu ja kerro meille."
+    ]
+  },
+  "table": {
+    "title": "Vertailutaulukko",
+    "columns": {
+      "tool": "Työkalu",
+      "price": "Hinnoittelumalli",
+      "write": "Luku / kirjoitus",
+      "silicon": "Apple silicon",
+      "setup": "Käyttöönotto ja järjestelmäoikeudet",
+      "unlock": "Avataan"
+    },
+    "rows": {
+      "unbit": {
+        "type": "Mac-sovellus valikkorivillä",
+        "price": "Ilmainen",
+        "write": "Suunnitellusti vain lukeva",
+        "silicon": "Kyllä – Apple silicon ja Intel",
+        "setup": "Ei ydinlaajennusta eikä macFUSEa. Tarvitsee Koko levyn käytön ja lukuapurin kertaluonteisen hyväksynnän",
+        "unlock": "Salasana tai 48-numeroinen palautusavain"
+      },
+      "iboysoft": {
+        "type": "Mac-sovellus",
+        "price": "Maksullinen – tilaus tai kertalisenssi; tarkista nykyinen hinta. Kokeiluversio voi vain selata ja esikatsella",
+        "write": "Luku ja kirjoitus",
+        "silicon": "Kyllä – M-sirut ja Intel",
+        "setup": "Finder-tila vaatii järjestelmälaajennuksen (Apple siliconilla Vähennetty suojaus). File Manager -tila toimii ilman sitä",
+        "unlock": "Salasana tai palautusavain"
+      },
+      "hasleo": {
+        "type": "Mac-sovellus",
+        "price": "Maksullinen – kertalisenssi; tarkista nykyinen hinta",
+        "write": "Luku ja kirjoitus tai vain luku, valintasi mukaan",
+        "silicon": "Kyllä – Intel ja Apple silicon",
+        "setup": "Apple siliconilla valmistaja kuvaa Vähennetyn suojauksen ja ydinlaajennusten sallimisen. Tarvitsee Koko levyn käytön",
+        "unlock": "Salasana tai palautusavain"
+      },
+      "uubyte": {
+        "type": "Mac-sovellus",
+        "price": "Maksullinen – 1 vuoden tilaus tai elinikäinen lisenssi; tarkista nykyinen hinta",
+        "write": "Luku; kirjoituksen voi ottaa käyttöön avaamisen jälkeen",
+        "silicon": "Kyllä – valmistajalla on opas Apple siliconille",
+        "setup": "Valmistajan Apple silicon -opas kattaa Koko levyn käytön, ydinlaajennukset, järjestelmälaajennuksen päivityksen ja uudelleenkäynnistyksen",
+        "unlock": "Salasana tai palautusavain"
+      },
+      "anylinuxfs": {
+        "type": "Terminal-työkalu, avoin lähdekoodi",
+        "price": "Ilmainen",
+        "write": "Oletuksena luku ja kirjoitus; vain luku on valittavissa",
+        "silicon": "Vain Apple silicon",
+        "setup": "Ei ydinlaajennusta. Ajaa kevyttä virtuaalikonetta ja jakaa aseman NFS:n kautta. Asennus Homebrew’lla",
+        "unlock": "Salasana tai palautusavain salasanalauseena"
+      },
+      "parallels": {
+        "type": "Windows virtuaalikoneessa",
+        "price": "Maksullinen – tilaus tai kertaosto (Standard). Windows-lisenssi ei sisälly",
+        "write": "Se, minkä Windows sallii, eli luku ja kirjoitus",
+        "silicon": "Kyllä",
+        "setup": "macOS:ssä ei ole BitLocker-ajuria. USB-asema liitetään virtuaalikoneeseen, ja silloin se ei näy Macilla",
+        "unlock": "Salasana tai palautusavain, syötetään Windowsissa"
+      }
+    },
+    "note": "Perustuu valmistajien sivuihin, jotka tarkistettiin 1. lokakuuta 2026. Hinnat, ominaisuudet ja järjestelmävaatimukset muuttuvat, joten tarkista ne valmistajalta ennen ostamista. Kunkin tuotteen lähteistetyt tiedot ovat sen vertailusivulla."
+  },
+  "products": {
+    "title": "Vaihtoehdot tarkemmin",
+    "bestFor": "Sopii parhaiten:",
+    "pros": "Hyödyt",
+    "cons": "Kompromissit",
+    "compare": "Vertaa {name} ja Unbit",
+    "items": {
+      "unbit": {
+        "bestFor": "tiedostojen lukemiseen BitLocker-asemalta ja kopioimiseen Macille.",
+        "text": "Unbit on ilmainen valikkorivisovellus. Se tunnistaa ulkoisen aseman, kysyy salasanaa tai palautusavainta ja liittää aseman Finderiin vain luku -tilassa. Kaikki puretaan Macillasi, eikä sovellus käytä ydinlaajennusta tai macFUSEa. Koska se ei koskaan kirjoita, se ei myöskään voi vahingoittaa tai muuttaa asemaa.",
+        "pros": [
+          "Ilmainen, ei lisenssiavainta tai kokeilurajoituksia",
+          "Ei ydinlaajennusta, macFUSEa eikä alennettua käynnistysturvallisuutta",
+          "Universaali sovellus Apple siliconille ja Intelille",
+          "Aukeaa salasanalla tai 48-numeroisella palautusavaimella",
+          "Toimii paikallisesti, ei tilejä eikä seurantaa"
+        ],
+        "cons": [
+          "Suunnitellusti vain lukeva: asemalle ei voi tallentaa, poistaa eikä lisätä tiedostoja",
+          "Ei voi salata asemia eikä muuttaa BitLocker-asetuksia",
+          "Vain ulkoiset asemat, ei sisäisiä levyjä",
+          "Vaatii macOS {minOS}:n tai uudemman"
+        ]
+      },
+      "iboysoft": {
+        "bestFor": "niille, jotka haluavat kirjoittaa BitLocker-asemille Macilta tai salata asemia macOS:ssä.",
+        "text": "iBoysoft BitLocker for Mac on kaupallinen sovellus, jossa on luku- ja kirjoitusoikeus. Siinä on kaksi tilaa: File Manager -tila ja Volume Mounter -tila, joka liittää aseman Finderiin. Se voi myös salata asemia BitLockerilla.",
+        "pros": [
+          "Luku- ja kirjoitusoikeus",
+          "Voi myös salata asemia BitLockerilla",
+          "File Manager -tila toimii ilman järjestelmälaajennusta",
+          "Tukee M-sirun ja Intel-Maceja"
+        ],
+        "cons": [
+          "Maksullinen; kokeiluversio voi vain selata ja esikatsella tiedostoja",
+          "Finder-tila vaatii järjestelmälaajennuksen, ja Apple siliconilla valmistaja dokumentoi Vähennetyn suojauksen",
+          "Aktivointi vaatii internetyhteyden valmistajan mukaan"
+        ]
+      },
+      "hasleo": {
+        "bestFor": "niille, jotka haluavat yhden maksullisen työkalun BitLocker-asemien liittämiseen, salaamiseen ja salauksen purkuun.",
+        "text": "Hasleo BitLocker Anywhere for Mac liittää BitLocker-asemat luku- ja kirjoitustilassa tai vain luku -tilassa ja voi myös salata ja purkaa niiden salauksen. Se on maksullinen, joten tarkista nykyinen hinta valmistajalta.",
+        "pros": [
+          "Liittäminen luku- ja kirjoitustilassa tai vain luku -tilassa",
+          "Voi salata ja purkaa asemia sekä vaihtaa salasanan",
+          "Ilmoittaa tukevansa Inteliä ja Apple siliconia"
+        ],
+        "cons": [
+          "Maksullinen",
+          "Apple siliconilla käyttöönotto sisältää Vähennetyn suojauksen ja ydinlaajennukset valmistajan keskustelufoorumin mukaan",
+          "Emme voineet varmistaa ilmaisen kokeiluversion rajoituksia"
+        ]
+      },
+      "uubyte": {
+        "bestFor": "niille, jotka enimmäkseen lukevat mutta haluavat mahdollisuuden kirjoittaa avaamisen jälkeen.",
+        "text": "UUByte BitLocker Geeker on maksullinen sovellus. Avaamisen jälkeen voit katsella ja kopioida tiedostoja, ja kirjoitus otetaan käyttöön Enable Write -painikkeella valmistajan mukaan.",
+        "pros": [
+          "Valinnainen kirjoitusoikeus",
+          "Automaattinen avaus avainnipun kautta",
+          "Valmistaja dokumentoi vaiheet M-sirun Maceille"
+        ],
+        "cons": [
+          "Maksullinen",
+          "Apple silicon -vaiheisiin kuuluvat ydinlaajennukset ja uudelleenkäynnistys",
+          "Ei vain lukeva, ellet jätä kirjoitusta pois päältä"
+        ]
+      },
+      "anylinuxfs": {
+        "bestFor": "niille, jotka ovat sinut Terminalin kanssa ja haluavat ilmaisen vaihtoehdon luku- ja kirjoitusoikeudella.",
+        "text": "anylinuxfs on ilmainen avoimen lähdekoodin komentorivityökalu, joka liittää Linuxin tukemia tiedostojärjestelmiä, myös BitLocker-asemia, Apple silicon -Maceille. Se ajaa kevyttä virtuaalikonetta ja jakaa aseman Macillesi NFS:n kautta.",
+        "pros": [
+          "Ilmainen ja avoin lähdekoodi",
+          "Luku ja kirjoitus, vain luku -liittäminen valittavissa",
+          "Ei ydinlaajennusta eikä järjestelmän suojauksen heikentämistä",
+          "Tukee myös ext4:ää, btrfs:ää, LUKSia ja muuta"
+        ],
+        "cons": [
+          "Komentorivi ja Homebrew; ei sovellus, jota klikkaillaan",
+          "Vain Apple silicon",
+          "Asema näkyy verkkoasemana, ja projekti kertoo tunnetuista rajoituksista"
+        ]
+      },
+      "parallels": {
+        "bestFor": "niille, jotka käyttävät jo Windowsia Macillaan.",
+        "text": "Parallels Desktop on virtualisointisovellus, ei BitLocker-työkalu. Liität ulkoisen aseman Windows-virtuaalikoneeseen ja avaat sen Windowsin omalla BitLocker-tuella. Se toimii, mutta on kuudesta suurin kokonaisuus.",
+        "pros": [
+          "Täysi Windows-toiminta asemalle, myös kirjoitus",
+          "Ajaa myös Windows-sovelluksia",
+          "macOS:ssä ei tarvita BitLocker-ajuria"
+        ],
+        "cons": [
+          "Vaatii Windows-asennuksen ja -lisenssin sekä levytilaa ja muistia",
+          "Maksullinen",
+          "Kun asema on liitetty virtuaalikoneeseen, se ei näy Macilla"
+        ]
+      }
+    }
+  },
+  "pick": {
+    "title": "Minkä valitsisit?",
+    "paragraphs": [
+      "Jos tarvitset vain tiedostot – työkaverin USB-tikun, vanhan varmuuskopioaseman, Windows-koneen levyn – aloita yksinkertaisimmasta työkalusta, joka sen hoitaa. [Unbit](home) on ilmainen, asentuu kuin mikä tahansa Mac-sovellus ja jättää aseman koskemattomaksi. Rajoitus on juuri se juttu: se ei voi kirjoittaa, joten mitään ei tarvitse perua.",
+      "Jos sinun täytyy kirjoittaa asemalle, valitse vaihtoehto, jossa on luku- ja kirjoitusoikeus: jokin maksullisista Mac-sovelluksista, anylinuxfs jos pidät Terminalista, tai Windows virtuaalikoneessa. Vertaa hintaa, käyttöönottoa ja Apple silicon -tukea kunkin tuotteen [vertailusivulla](alternatives) ja tarkista nykyinen hinta ennen ostamista.",
+      "Mitä tahansa valitsetkin, säilytä salasana tai 48-numeroinen palautusavain turvallisessa paikassa – ilman toista niistä kukaan ei voi avata asemaa. Uusi asiassa? Aloita oppaasta [Näin avaat BitLocker-aseman Macilla](open) tai lue [BitLocker-palautusavain Macilla](recovery), jos salasana on kadonnut."
+    ]
+  },
+  "faq": [
+    {
+      "q": "Mikä on paras BitLocker Macille?",
+      "a": "Se riippuu tehtävästä. Tiedostojen lukemiseen ja Macille kopioimiseen riittää ilmainen vain lukeva työkalu, kuten [Unbit](home). Jos sinun täytyy kirjoittaa asemalle, katso maksullisia sovelluksia, joissa on luku ja kirjoitus, anylinuxfs:ää tai Windowsia virtuaalikoneessa."
+    },
+    {
+      "q": "Onko olemassa ilmaista BitLockeria Macille?",
+      "a": "On. Unbit on ilmainen ja vain lukeva, ja anylinuxfs on ilmainen, avoimen lähdekoodin ja osaa lukea sekä kirjoittaa, mutta sitä käytetään Terminalista Apple silicon -Maceilla. Muut tämän vertailun sovellukset ovat maksullisia."
+    },
+    {
+      "q": "Tukeeko macOS BitLockeria sisäänrakennettuna?",
+      "a": "Ei. macOS:ssä ei ole sisäänrakennettua BitLocker-tukea. Sen oma salaus on FileVault, joka on eri tekniikka."
+    },
+    {
+      "q": "Voinko kirjoittaa BitLocker-asemalle Macilta?",
+      "a": "Voit joillakin työkaluilla – maksullisilla sovelluksilla, anylinuxfs:llä tai Windowsilla virtuaalikoneessa. Et Unbitilla, joka on suunnitellusti vain lukeva."
+    },
+    {
+      "q": "Toimivatko nämä työkalut Apple silicon -Maceilla?",
+      "a": "Useimmat ilmoittavat tukevansa sekä Apple siliconia että Inteliä; anylinuxfs tukee vain Apple siliconia. Käyttöönotto vaihtelee paljon, joten tarkista kunkin valmistajan dokumentaatio."
+    },
+    {
+      "q": "Onko BitLocker-aseman avaaminen Macilla turvallista?",
+      "a": "Vain luku -tilassa avattua asemaa ei voi muuttaa. Katso [Onko BitLocker Macilla turvallinen?](safe), mitä Unbit tekee salasanallesi ja tiedostoillesi."
+    },
+    {
+      "q": "Kuinka ajan tasalla tämä vertailu on?",
+      "a": "Se päivitettiin viimeksi lokakuussa 2026, ja kilpailijoiden tiedot tarkistettiin valmistajien sivuilta 1. lokakuuta 2026. Varmista hinnat ja ominaisuudet aina valmistajalta."
+    }
+  ],
+  "related": "Lisää oppaita",
+  "disclaimer": "Päivitetty viimeksi {date}. Kaikki tuotenimet ovat omistajiensa tavaramerkkejä. Unbit on riippumaton sovellus, eikä Microsoft, Apple tai mainitut valmistajat ole sen kumppaneita tai tue sitä. Tämä sivu on tarkoitettu vain tiedoksi."
+}

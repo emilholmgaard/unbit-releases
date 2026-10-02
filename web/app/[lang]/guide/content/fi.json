@@ -323,6 +323,318 @@
           "a": "Kyllä. Unbit vain lukee asemaa eikä muuta sitä koskaan, joten se pysyy täsmälleen sellaisena kuin Windows sen jätti."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "BitLocker-salatun USB-aseman avaaminen Macilla – ilmainen opas",
+      "metaDescription": "Näkyykö viesti «Asetettua levyä ei voi lukea»? Avaa BitLocker-salattu USB-asema Macillasi: mikä toimii, mikä on ilmaista, ja 5 vaiheen opas Unbitin kanssa.",
+      "h1": "Näin avaat BitLocker-salatun USB-aseman Macilla",
+      "summary": "«Levyä ei voi lukea»: mitä se tarkoittaa ja nopein ilmainen tapa avata asema.",
+      "lead": "Liität USB-aseman Maciin, ja macOS ilmoittaa, ettei tämä tietokone voi lukea levyä. Jos asema on salattu BitLockerilla Windows-koneella, se ei ole rikki – macOS vain ei osaa purkaa salausta. Tämä opas näyttää vaihtoehtosi ja sen, miten avaat aseman noin viidessä minuutissa [Unbitilla](home), ilmaisella BitLocker-lukijalla, joka vain lukee.",
+      "sections": [
+        {
+          "title": "Mitä viesti «ei voi lukea» oikeasti tarkoittaa",
+          "intro": [
+            "macOS näyttää viestin aina, kun se kohtaa levyn, jota se ei tunnista. BitLocker-aseman tiedot ovat kunnossa: ne on tallennettu salausmuotoon, jonka Windows ja BitLockeria ymmärtävät työkalut osaavat lukea. **Älä napsauta Alusta tai Poista** – se tyhjentäisi koko aseman. Napsauta sen sijaan **Ohita**.",
+            "Tarkista ennen minkään asentamista kolme asiaa: asema on ulkoinen (USB-tikku, SSD tai kiintolevy), sinulla on sen salasana tai 48-numeroinen palautusavain, ja se aukeaa yhä Windows-koneella – silloin tiedät, että itse asema on kunnossa."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Vaihtoehtosi aseman avaamiseen",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Pelkkä macOS:** BitLocker-tukea ei ole sisäänrakennettuna, eikä mikään piilotettu asetus lisää sitä. FileVault on Applen oma salaus, eikä sillä ole tämän kanssa mitään tekemistä.",
+            "**Windows-kone tai virtuaalinen Windows-kone:** toimii, koska Windowsissa on BitLocker sisäänrakennettuna, ja voit sekä lukea että kirjoittaa. Tarvitset pääsyn Windowsiin, ja virtuaalikone vaatii Windows-lisenssin.",
+            "**Ilmainen komentorivityökalu, kuten anylinuxfs:** avoin lähdekoodi ja luku- ja kirjoitusoikeus, mutta vain Apple silicon -Maceille ja käyttö Terminalista.",
+            "**BitLocker-sovellus Macille:** nopein tie, jos haluat vain tiedostosi. Useat maksulliset sovellukset antavat kirjoittaa asemalle; [Unbit](home) on ilmainen ja vain lukeva. Vertailun löydät sivulta [Paras BitLocker Macille](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Avaa USB-asema Unbitilla",
+          "intro": [],
+          "steps": [
+            "Lataa Unbit, vedä se Ohjelmat-kansioon ja avaa se. Sovellus asuu valikkorivillä ja vaatii macOS 13:n tai uudemman (Apple silicon tai Intel). Ensimmäisellä kerralla se näyttää, mistä otat käyttöön kohdan **Koko levyn käyttö**.",
+            "Liitä USB-asema, mieluiten suoraan Maciin eikä keskittimen kautta. Unbit listaa sen kohtaan **Asemat**; valitse se.",
+            "Kirjoita BitLocker-salasana ja valitse **Avaa asema**. macOS saattaa kysyä Macin salasanaa kerran lukuoikeuden hyväksymiseksi.",
+            "Valitse **Näytä Finderissa**. Asema on liitetty vain luku -tilassa, joten voit selata sitä, avata tiedostoja ja kopioida niitä Macillesi.",
+            "Kun olet valmis, valitse **Poista turvallisesti**, ennen kuin irrotat tikun."
+          ],
+          "bullets": [],
+          "outro": [
+            "Haluatko kuvakaappauksia ja lisätietoja? Lue [Näin avaat BitLocker-aseman Macilla](open)."
+          ]
+        },
+        {
+          "title": "Mitä voit ja et voi tehdä, kun asema on auki",
+          "intro": [
+            "Unbit ei koskaan kirjoita asemalle, joten voit selata kansioita, esikatsella ja avata tiedostoja sekä kopioida niitä Macillesi. Muutoksia ei voi tallentaa takaisin, tiedostoja ei voi poistaa eikä uusia lisätä. Se on tietoinen valinta: mitään ei voi muuttaa tai poistaa vahingossa, ja asema pysyy täsmälleen sellaisena kuin Windows sen jätti."
+          ],
+          "steps": [],
+          "bullets": [
+            "Jos haluat muokata tiedostoa, kopioi se ensin Macillesi ja työskentele kopiolla.",
+            "Jos haluat muuttaa aseman sisältöä tai sen BitLocker-asetuksia, käytä Windowsia."
+          ],
+          "outro": [
+            "Lisää siitä, mitä vain luku tarkoittaa: [Onko BitLocker Macilla turvallinen?](safe)."
+          ]
+        },
+        {
+          "title": "Jos se ei toimi",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Asema ei näy.** Irrota ja liitä uudelleen, käytä Macin omaa porttia ja päivitä lista näppäimillä ⌘R. Vain ulkoiset asemat ovat tuettuja.",
+            "**«Väärä salasana».** Tarkista kirjoitusvirheet ja Caps Lock. Jos sinulla on palautusavain, käytä sitä – katso [BitLocker-palautusavain Macilla](recovery).",
+            "**Pääsy estetty.** Unbit tarvitsee kohdan Koko levyn käyttö: Järjestelmäasetukset › Tietosuoja ja turvallisuus › Koko levyn käyttö.",
+            "**Asema aukeaa Finderissa ilman Unbitia.** Silloin se ei ole BitLocker-salattu, tai olet valinnut saman aseman salaamattoman osion.",
+            "**Se epäonnistuu myös Windows-koneella.** Asema voi olla vaurioitunut tai yhä salattavana tai purettavana. Anna Windowsin valmistua ja yritä uudelleen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jos sinulla ei ole salasanaa eikä palautusavainta",
+          "intro": [
+            "BitLockeria ei voi kiertää – se on salauksen koko pointti. Tietojenpalautusohjelmatkaan eivät pääse siitä ohi, ja aseman alustaminen vain tuhoaa tiedot. Etsi 48-numeroista palautusavainta Microsoft-tililtä, jota käytettiin asemaa salanneella koneella, tallennetusta tiedostosta tai tulosteesta – tai kysy työaseman kohdalla IT-ylläpitäjältäsi."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Miksi Mac sanoo, ettei levyä voi lukea?",
+          "a": "Asema on salattu BitLockerilla, jota macOS ei osaa lukea. Tiedot eivät ole kadonneet. Napsauta Ohita (älä koskaan Alusta tai Poista) ja avaa asema BitLocker-lukijalla, kuten [Unbitilla](home)."
+        },
+        {
+          "q": "Voinko avata BitLocker-USB-aseman Macilla ilmaiseksi?",
+          "a": "Kyllä. Unbit on ilmainen ja avaa asemat vain luku -tilassa. anylinuxfs on ilmainen avoimen lähdekoodin komentorivityökalu Apple siliconille, ja Windows-kone ei maksa mitään lisää, jos sellainen on. Useimmat muut Mac-sovellukset ovat maksullisia."
+        },
+        {
+          "q": "Muuttaako aseman avaaminen Macilla sitä?",
+          "a": "Ei. Unbit liittää aseman vain luku -tilassa eikä kirjoita siihen koskaan, joten se pysyy täsmälleen sellaisena kuin Windows sen jätti."
+        },
+        {
+          "q": "Tarvitsenko ajureita, ytimen laajennuksen tai macFUSEn?",
+          "a": "Unbitia varten et. Se käyttää macOS:ään jo sisältyvää levykuvatukea ja tarvitsee kohdan Koko levyn käyttö sekä lukuapurinsa kertaluonteisen hyväksynnän."
+        },
+        {
+          "q": "Toimiiko se Apple silicon -Maceilla?",
+          "a": "Kyllä. Unbit on universaali sovellus Apple silicon- ja Intel-Maceille."
+        },
+        {
+          "q": "Voinko käyttää USB-asemaa Windowsissa jälkeenpäin?",
+          "a": "Kyllä. Asemalla ei muuteta mitään, joten se toimii edelleen Windows-koneellasi."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go Macilla: avaa Windowsissa salattu USB-tikku",
+      "metaDescription": "USB-tikku salattu BitLocker To Go -toiminnolla Windowsissa? Lue, mikä BitLocker To Go on, miksi Mac ei avaa sitä itse ja miten luet sen Unbitilla.",
+      "h1": "BitLocker To Go Macilla: avaa Windowsissa salattu USB-tikku",
+      "summary": "Mikä BitLocker To Go on ja miten luet Windowsissa salatun USB-tikun Macillasi.",
+      "lead": "BitLocker To Go on se osa BitLockeria, jota Windows käyttää irrotettaviin asemiin, kuten USB-tikkuihin. Joku on salannut tikun Windows-koneella, ja nyt tarvitset tiedostot Macillasi. macOS ei osaa avata tällaisia asemia itse, mutta [Unbit](home) avaa ne vain luku -tilassa. Tässä kerrotaan, miten BitLocker To Go toimii ja mitä Macilla kannattaa odottaa.",
+      "sections": [
+        {
+          "title": "Mikä BitLocker To Go on",
+          "intro": [
+            "BitLocker on Microsoftin asemasalaus Windowsille. BitLocker To Go on saman suojauksen nimi irrotettavilla asemilla: USB-tikuilla ja ulkoisilla asemilla. Windowsissa otat sen käyttöön Resurssienhallinnasta, valitset, miten asema avataan – yleensä salasanalla – ja tallennat 48-numeroisen palautusavaimen.",
+            "Suojattu asema näyttää Windowsin Resurssienhallinnassa lukon, ja Windows kysyy salasanaa, kun asema liitetään. Kaikki asemalla on salattua, ei vain muutama kansio."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Mitä tapahtuu, kun liität sen Maciin",
+          "intro": [
+            "macOS näkee levyn, jota se ei osaa lukea. Yleensä näkyy viesti, ettei tämä tietokone voi lukea levyä, tai asema ei näy Finderissa lainkaan. Tiedostot ovat ehjät: napsauta **Ohita** äläkä koskaan valitse Alusta tai Poista.",
+            "Jos tikku aukeaa automaattisesti omalla koneellasi, asetus koskee vain sitä konetta. Macilla tarvitset yhä salasanan tai palautusavaimen."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Avaa BitLocker To Go -asema Unbitilla",
+          "intro": [],
+          "steps": [
+            "Asenna [Unbit](home) sen verkkosivulta ja avaa se valikkoriviltä. Ensimmäisellä kerralla sovellus näyttää, mistä otat käyttöön kohdan **Koko levyn käyttö**.",
+            "Liitä USB-tikku. Unbit löytää sen automaattisesti ja listaa sen kohtaan **Asemat**.",
+            "Kirjoita Windowsissa valitsemasi salasana ja valitse **Avaa asema**. Jos sinulla on vain palautusavain, käytä sitä – katso [BitLocker-palautusavain Macilla](recovery).",
+            "Valitse **Näytä Finderissa** ja kopioi tarvitsemasi tiedostot Macillesi.",
+            "Valitse **Poista turvallisesti**, ennen kuin vedät tikun irti."
+          ],
+          "bullets": [],
+          "outro": [
+            "Täydellinen läpikäynti kuvakaappauksineen on oppaassa [Näin avaat BitLocker-aseman Macilla](open)."
+          ]
+        },
+        {
+          "title": "Tiedostojen siirto Windows-koneen ja Macin välillä",
+          "intro": [
+            "Unbit lukee BitLocker To Go -asemia mutta ei kirjoita niille. Se vaikuttaa siihen, miten jaat tiedostoja:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windowsista Macille:** laita tiedostot tikulle Windowsissa ja kopioi ne sitten pois Macilla.",
+            "**Macilta Windowsiin:** salatulle tikulle ei voi tallentaa Macilta. Käytä toista reittiä, kuten toista exFAT-muotoiltua asemaa (macOS ja Windows lukevat ja kirjoittavat sitä molemmat) tai pilvi- tai verkkokansiota.",
+            "**Arkaluonteiset tiedostot:** salaamaton exFAT-asema on kätevä mutta suojaamaton, jos se katoaa. Pidä siksi yksityiset tiedot BitLocker-tikulla ja käytä sitä Macilla vain luku -tilassa."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hyvä tietää USB-tikuista",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Liitä tikku suoraan Maciin äläkä virrattomaan keskittimeen, ja kokeile toista porttia, jos se ei näy.",
+            "Jos tikulla on useita osioita, valitse BitLocker-salattu osio.",
+            "Unbit tukee Windows 7:ssä tai uudemmassa salattuja asemia. Sisällä olevan tiedostojärjestelmän pitäisi olla exFAT, FAT32 tai NTFS.",
+            "USB-kortinlukijassa oleva muistikortti näkyy yleensä Macilla ulkoisena asemana, joten se toimii samalla tavalla.",
+            "Jos Windows on yhä salaamassa tai purkamassa tikkua, anna sen valmistua ensin."
+          ],
+          "outro": [
+            "Lisää asematyypeistä: [BitLocker-SSD:n, -kiintolevyn tai -USB-tikun avaaminen Macilla](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Onko BitLocker To Go eri asia kuin BitLocker?",
+          "a": "Se on sama tekniikka. BitLocker To Go on vain nimi, kun sitä käytetään irrotettavilla asemilla, kuten USB-tikuilla."
+        },
+        {
+          "q": "Voiko Mac avata BitLocker To Go -aseman ilman lisäohjelmistoa?",
+          "a": "Ei. macOS:ssä ei ole sisäänrakennettua BitLocker-tukea, joten tarvitset lukijan, kuten [Unbitin](home), tai Windows-koneen."
+        },
+        {
+          "q": "Voinko tallentaa tiedostoja tikulle Macilta?",
+          "a": "Et Unbitilla, joka on suunnitellusti vain lukeva. Kopioi tiedostot tikulta Macille ja käytä Windowsia, kun tiedostoja pitää lisätä tai muuttaa."
+        },
+        {
+          "q": "Toimiiko tikku edelleen Windowsissa jälkeenpäin?",
+          "a": "Kyllä. Unbit vain lukee tikkua eikä muuta sitä koskaan."
+        },
+        {
+          "q": "Minulla on palautusavain mutta ei salasanaa. Voinko silti avata aseman?",
+          "a": "Kyllä. Unbit hyväksyy 48-numeroisen palautusavaimen salasanan sijaan. Katso [BitLocker-palautusavain Macilla](recovery)."
+        },
+        {
+          "q": "Tallentaako Unbit salasanani?",
+          "a": "Vain jos rastitat kohdan «Muista tämä asema tässä Macissa». Silloin se tallennetaan salattuna macOS:n avainnippuun, ja voit unohduttaa sen milloin tahansa."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker-palautusavain Macilla: avaa asema 48 numerolla",
+      "metaDescription": "Unohtuiko BitLocker-salasana? Etsi 48-numeroinen palautusavain ja avaa sillä asema Macilla vain luku -tilassa Unbitilla. Mistä etsiä ja mitä tehdä, jos avain hylätään.",
+      "h1": "BitLocker-palautusavain Macilla: avaa asema 48-numeroisella avaimella",
+      "summary": "Mistä löydät 48-numeroisen palautusavaimen ja miten sillä avataan BitLocker-asema Macillasi.",
+      "lead": "Onko BitLocker-salasana kadonnut? Jos sinulla on yhä 48-numeroinen palautusavain, voit avata aseman Macilla. [Unbit](home) hyväksyy palautusavaimen (versiosta 1.0.8 alkaen) salasanan sijaan ja avaa aseman vain luku -tilassa. Tämä opas kertoo, mikä avain on, mistä sitä etsitään ja miten sitä käytetään.",
+      "sections": [
+        {
+          "title": "Mikä palautusavain on",
+          "intro": [
+            "Kun BitLocker otetaan käyttöön, Windows luo palautusavaimen ja pyytää tallentamaan tai tulostamaan sen. Se on 48 numeroa pitkä, kirjoitettuna 8 ryhmänä, joissa kussakin on 6 numeroa ja ryhmien välissä viiva, esimerkiksi 123456-123456-… ja niin edelleen.",
+            "Palautusavain on toinen sisäänkäynti. Se avaa aseman salasanan sijaan, ja jokaisella asemalla on oma avaimensa."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Mistä sen löydät",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Microsoft-tilisi.** Jos olit kirjautuneena Microsoft-tilillä aseman salaamisen aikaan, avain voi olla tallennettuna sinne. Kirjaudu tilille ja etsi BitLocker-palautusavaimia.",
+            "**Tiedosto tai tuloste.** Windows tarjoaa avaimen tallentamista tiedostoon tai tulostamista, kun BitLocker otetaan käyttöön. Tarkista asiakirjasi, USB-tikku tai tulosteiden kansio.",
+            "**Organisaatiosi.** Työ- tai koulun asemalla avain on usein IT-ylläpitäjällä.",
+            "**Useita avaimia?** Käytä sitä, joka kuuluu tälle asemalle. Jos avaimia on useita, kunkin avaimen yhteydessä näkyvä avaintunnus auttaa erottamaan ne."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Avaa asema palautusavaimella Unbitissa",
+          "intro": [],
+          "steps": [
+            "Varmista, että sinulla on Unbit 1.0.8 tai uudempi. Avaa sovellus, liitä asema ja valitse se kohdasta **Asemat**.",
+            "Siirry **Palautusavain**-välilehdelle (valitse **Käytä palautusavainta**).",
+            "Kopioi avaimesi ja valitse **Liitä palautusavain**, tai kirjoita 48 numeroa. Välilyönnit ja viivat kelpaavat, ja Unbit laskee numerot puolestasi.",
+            "Valitse **Avaa asema**. macOS saattaa kysyä Macin salasanaa kerran lukuoikeuden hyväksymiseksi.",
+            "Valitse **Näytä Finderissa**, kopioi tiedostosi ja käytä lopuksi **Poista turvallisesti**."
+          ],
+          "bullets": [],
+          "outro": [
+            "Rastita **Muista tämä asema tässä Macissa**, jos haluat Unbitin säilyttävän avaimen salattuna macOS:n avainnipussa, jolloin asema aukeaa ilman uutta kirjoittamista."
+          ]
+        },
+        {
+          "title": "Mitä palautusavain tekee ja mitä ei",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Se avaa aseman vain luku -tilassa, aivan kuten salasana.",
+            "Se ei nollaa eikä vaihda BitLocker-salasanaa, ei poista BitLockeria eikä korjaa asemaa. Unbit ei koskaan kirjoita asemalle, joten nämä työt kuuluvat Windowsille.",
+            "Se toimii vain sille asemalle, jolle se kuuluu."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jos avain hylätään",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Tarkista kaikki 48 numeroa, 8 ryhmässä, joissa kussakin 6. Unbit osoittaa ryhmän, joka ei voi olla oikein.",
+            "Käytä vain numeroita, välilyöntejä ja viivoja. Kopioidussa tekstissä on joskus ylimääräisiä merkkejä tai rivinvaihtoja.",
+            "Varmista, että avain kuuluu tälle asemalle eikä toiselle asemalle tai koneelle.",
+            "Palautusavaimen voi vaihtaa Windowsissa. Jos asema on salattu uudelleen tai avain luotu uudestaan, kokeile uusinta avainta.",
+            "Jos Unbit kertoo, ettei asemalla ole palautusavainta, käytä salasanaa."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Jos et löydä avainta",
+          "intro": [
+            "BitLocker on tehty niin, ettei kukaan pääse sen ohi. Ilman salasanaa tai palautusavainta tietoja ei saa takaisin – ei Unbitilla, ei tietojenpalautusohjelmilla, ei keneltäkään. Älä alusta asemaa korjataksesi sen: se tuhoaa tiedot.",
+            "Jatka etsimistä yllä mainituista paikoista ja kysy sitä, joka otti aseman käyttöön. Kun pääset sisään, säilytä avain turvallisessa paikassa. Yleiset vaiheet löytyvät oppaasta [Näin avaat BitLocker-aseman Macilla](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Tukeeko Unbit BitLocker-palautusavainta?",
+          "a": "Kyllä, versiosta 1.0.8 alkaen. Kirjoita se Palautusavain-välilehdelle salasanan sijaan."
+        },
+        {
+          "q": "Minulla on vain avaintunnus. Riittääkö se?",
+          "a": "Ei. Avaintunnus vain yksilöi avaimen. Tarvitset kaikki 48 numeroa."
+        },
+        {
+          "q": "Voinko asettaa palautusavaimella uuden salasanan Macilta?",
+          "a": "Et. Unbit on vain lukeva eikä voi muuttaa BitLocker-asetuksia. Käytä Windowsia, jos tarvitset uuden salasanan."
+        },
+        {
+          "q": "Lähetetäänkö palautusavaimeni mihinkään?",
+          "a": "Ei. Salauksen purku tapahtuu Macillasi, eikä avainta lähetetä minnekään."
+        },
+        {
+          "q": "Mistä löydän työaseman avaimen?",
+          "a": "Kysy IT-ylläpitäjältäsi. Organisaatiot säilyttävät palautusavaimia usein keskitetysti."
+        },
+        {
+          "q": "Voinko käyttää palautusavainta, vaikka muistan salasanan?",
+          "a": "Kyllä. Kumpi tahansa avaa aseman."
+        }
+      ]
     }
   }
 }

@@ -609,4 +609,38 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
 .guide-related .alt-list { margin-top: 0; grid-template-columns: 1fr 1fr; max-width: none; }
 .guide-related .alt-card { padding: 24px; }
 .guide + .cta { margin-top: 96px; }
+
+.best-callout { margin-top: 16px; }
+.alt-list > .best-callout { grid-column: 1 / -1; margin-top: 0; }
+
+/* Best BitLocker for Mac roundup: wider column for the comparison table, readable measure for text */
+.guide.best { max-width: 1000px; }
+.best .guide-head > *, .best .guide-section > p, .best .guide-section > ul, .best .guide-section > h2, .best .best-product > p, .best .best-product > h3, .best .guide-faq, .best .alt-disclaimer { max-width: 720px; }
+.best .guide-head > .guide-meta { max-width: none; }
+.best-disclosure { margin: 20px 0 0; padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; font-size: 14px !important; line-height: 1.6; color: var(--muted); background: #0b0b0c; }
+.best-compare .alt-table-wrap { margin-top: 20px; }
+.best-table thead th { white-space: nowrap; }
+.best-table tbody th { width: 16%; }
+.best-table td { width: auto; font-size: 14px; }
+.best-type { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: #7c7c80; }
+.best-compare .alt-disclaimer { margin-top: 16px; }
+.best-product { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--line); }
+.best-product:first-of-type { border-top: 0; padding-top: 0; }
+.best-product h3 { font-size: 22px; letter-spacing: -0.02em; margin: 0; }
+.best-for { margin-top: 8px !important; }
+.best-pros { margin-top: 20px; }
+.best-pros .card { padding: 22px 24px; }
+.best-pros h4 { font-size: 15px; font-weight: 500; color: var(--text); margin: 0; }
+.best-pros .ticks { margin-top: 14px; font-size: 14px; }
+.guide-section .best-pros li { font-size: 14px; line-height: 1.5; color: var(--soft); }
+.best-pros .ticks li { align-items: flex-start; }
+.best-pros .ticks li::before { margin-top: 2px; }
+.best-pros .ticks.cons li::before {
+  background: #3a3a3d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M7 12h10'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+@media (max-width: 860px) {
+  .best-table tbody th { width: 100%; }
+  .best-table td { font-size: 15px; }
+  .best-type { display: inline; margin-left: 8px; }
+}
 @media (max-width: 860px) { .guide { padding-top: 32px; } .guide-related .alt-list { grid-template-columns: 1fr; } }

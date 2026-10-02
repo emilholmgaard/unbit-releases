@@ -323,6 +323,318 @@
           "a": "Sì. Unbit si limita a leggere l’unità e non la modifica mai, quindi resta esattamente come l’ha lasciata Windows."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Aprire un’unità USB cifrata con BitLocker su Mac – Guida gratuita",
+      "metaDescription": "Compare «Il disco inserito non è leggibile»? Apri un’unità USB cifrata con BitLocker sul tuo Mac: cosa funziona, cosa è gratis e una guida in 5 passi con Unbit.",
+      "h1": "Come aprire un’unità USB cifrata con BitLocker su Mac",
+      "summary": "«Il disco inserito non è leggibile»: cosa significa e il modo gratuito più rapido per aprire l’unità.",
+      "lead": "Colleghi un’unità USB al Mac e macOS dice che il disco non è leggibile da questo computer. Se l’unità è stata cifrata con BitLocker su un PC Windows, non è danneggiata: semplicemente macOS non sa decifrarla. Questa guida mostra le alternative e come aprire l’unità in circa cinque minuti con [Unbit](home), un lettore BitLocker gratuito e in sola lettura.",
+      "sections": [
+        {
+          "title": "Cosa significa davvero il messaggio «non leggibile»",
+          "intro": [
+            "macOS mostra quel messaggio ogni volta che incontra un disco che non riconosce. Con un’unità BitLocker i tuoi dati sono a posto: sono codificati in un formato di cifratura che Windows, e gli strumenti compatibili con BitLocker, sanno leggere. **Non fare clic su Inizializza né su Cancella**: eliminerebbe tutto ciò che è sull’unità. Fai invece clic su **Ignora**.",
+            "Prima di installare qualsiasi cosa, controlla tre aspetti: l’unità è esterna (chiavetta USB, SSD o disco rigido), hai la sua password o la chiave di ripristino di 48 cifre, e si apre ancora su un PC Windows, segno che l’unità in sé è sana."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Le tue opzioni per aprirla",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS da solo:** non ha un supporto BitLocker integrato né un’impostazione nascosta per aggiungerlo. FileVault è la cifratura di Apple e non c’entra.",
+            "**Un PC Windows o una macchina virtuale Windows:** funziona perché Windows ha BitLocker integrato, e puoi leggere e scrivere. Serve l’accesso a Windows, e una macchina virtuale richiede una licenza Windows.",
+            "**Uno strumento gratuito da riga di comando come anylinuxfs:** open source e in lettura e scrittura, ma solo per Mac con Apple silicon e da usare nel Terminale.",
+            "**Un’app BitLocker per Mac:** la via più rapida se vuoi solo i tuoi file. Diverse app a pagamento permettono anche di scrivere sull’unità; [Unbit](home) è gratuita e in sola lettura. Per un confronto diretto, vedi [Il miglior BitLocker per Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Aprire l’unità USB con Unbit",
+          "intro": [],
+          "steps": [
+            "Scarica Unbit, trascinala nella cartella Applicazioni e aprila. Vive nella barra dei menu e richiede macOS 13 o successivo (Apple silicon o Intel). Al primo avvio mostra dove attivare l’**Accesso completo al disco**.",
+            "Collega l’unità USB, meglio direttamente al Mac che tramite un hub. Unbit la elenca sotto **Unità**; selezionala.",
+            "Inserisci la password di BitLocker e scegli **Apri unità**. macOS potrebbe chiederti una volta la password del Mac per approvare l’accesso in lettura.",
+            "Scegli **Mostra nel Finder**. L’unità è montata in sola lettura: puoi sfogliarla, aprire i file e copiarli sul tuo Mac.",
+            "Quando hai finito, scegli **Espelli** prima di scollegare la chiavetta."
+          ],
+          "bullets": [],
+          "outro": [
+            "Vuoi screenshot e maggiori dettagli? Leggi [Come aprire un’unità BitLocker su un Mac](open)."
+          ]
+        },
+        {
+          "title": "Cosa puoi e non puoi fare quando l’unità è aperta",
+          "intro": [
+            "Unbit non scrive mai sull’unità: puoi sfogliare le cartelle, visualizzare e aprire i file e copiarli sul Mac. Non puoi salvare modifiche, eliminare file o aggiungerne di nuovi. È un compromesso voluto: nulla può essere cambiato o cancellato per sbaglio, e l’unità resta esattamente come l’ha lasciata Windows."
+          ],
+          "steps": [],
+          "bullets": [
+            "Per modificare un file, copialo prima sul Mac e lavora sulla copia.",
+            "Per cambiare ciò che è salvato sull’unità, o le sue impostazioni BitLocker, usa Windows."
+          ],
+          "outro": [
+            "Per saperne di più su cosa significa sola lettura: [BitLocker su Mac è sicuro?](safe)."
+          ]
+        },
+        {
+          "title": "Se non funziona",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**L’unità non compare.** Scollegala e ricollegala, usa una porta del Mac stesso e aggiorna l’elenco con ⌘R. Sono supportate solo le unità esterne.",
+            "**«Password errata».** Controlla errori di battitura e blocco maiuscole. Se hai la chiave di ripristino, usala al suo posto: vedi [Chiave di ripristino BitLocker su Mac](recovery).",
+            "**Accesso negato.** Unbit ha bisogno dell’Accesso completo al disco: Impostazioni di Sistema › Privacy e sicurezza › Accesso completo al disco.",
+            "**L’unità si apre nel Finder senza Unbit.** Allora non è cifrata con BitLocker, oppure hai scelto una partizione non cifrata della stessa unità.",
+            "**Fallisce anche su un PC Windows.** L’unità potrebbe essere danneggiata o ancora in fase di cifratura o decifratura. Lascia finire Windows e riprova."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Se non hai né la password né la chiave di ripristino",
+          "intro": [
+            "BitLocker non si può aggirare: è proprio lo scopo della cifratura. Nemmeno i programmi di recupero dati ci riescono, e formattare l’unità si limita a cancellare i dati. Cerca la chiave di ripristino di 48 cifre nell’account Microsoft usato sul PC che ha cifrato l’unità, in un file salvato o in una stampa; se è un’unità di lavoro, chiedila al tuo amministratore IT."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché il Mac dice che il disco non è leggibile?",
+          "a": "L’unità è cifrata con BitLocker, che macOS non sa leggere. I dati non sono persi. Fai clic su Ignora (mai su Inizializza o Cancella) e aprila con un lettore BitLocker come [Unbit](home)."
+        },
+        {
+          "q": "Posso aprire gratis un’unità USB BitLocker su un Mac?",
+          "a": "Sì. Unbit è gratuita e apre le unità in sola lettura. anylinuxfs è uno strumento gratuito, open source e da riga di comando per Apple silicon, e un PC Windows non costa altro, se ne hai uno. La maggior parte delle altre app per Mac è a pagamento."
+        },
+        {
+          "q": "Aprire l’unità sul mio Mac la modifica?",
+          "a": "No. Unbit monta l’unità in sola lettura e non vi scrive mai, quindi resta esattamente come l’ha lasciata Windows."
+        },
+        {
+          "q": "Servono driver, un’estensione del kernel o macFUSE?",
+          "a": "Non per Unbit. Usa il supporto alle immagini disco già integrato in macOS e richiede l’Accesso completo al disco e un’approvazione una tantum del suo helper di lettura."
+        },
+        {
+          "q": "Funziona sui Mac con Apple silicon?",
+          "a": "Sì. Unbit è un’app universale per Mac con Apple silicon e Intel."
+        },
+        {
+          "q": "Potrò usare l’unità USB su Windows dopo?",
+          "a": "Sì. Sull’unità non viene modificato nulla, quindi continua a funzionare sul tuo PC Windows."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go su Mac: aprire una chiavetta USB cifrata con Windows",
+      "metaDescription": "Una chiavetta USB cifrata con BitLocker To Go su Windows? Scopri cos’è BitLocker To Go, perché un Mac non riesce ad aprirla da solo e come leggerla con Unbit.",
+      "h1": "BitLocker To Go su Mac: aprire una chiavetta USB cifrata con Windows",
+      "summary": "Cos’è BitLocker To Go e come leggere sul Mac una chiavetta USB cifrata con Windows.",
+      "lead": "BitLocker To Go è la parte di BitLocker che Windows usa per le unità rimovibili come le chiavette USB. Qualcuno ha cifrato una chiavetta su un PC Windows e ora ti servono i file sul Mac. macOS non può sbloccare da solo queste unità, ma [Unbit](home) può aprirle in sola lettura. Ecco come funziona BitLocker To Go e cosa aspettarti su un Mac.",
+      "sections": [
+        {
+          "title": "Cos’è BitLocker To Go",
+          "intro": [
+            "BitLocker è la cifratura delle unità di Microsoft per Windows. BitLocker To Go è il nome della stessa protezione sulle unità rimovibili: chiavette USB e unità esterne. In Windows lo attivi da Esplora file, scegli come sbloccare l’unità, di solito con una password, e salvi una chiave di ripristino di 48 cifre.",
+            "Un’unità protetta mostra un lucchetto in Esplora file di Windows, e Windows chiede la password quando la colleghi. Tutto ciò che è sull’unità è cifrato, non solo alcune cartelle."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Cosa succede quando la colleghi a un Mac",
+          "intro": [
+            "macOS vede un disco che non riesce a leggere. Di solito mostra il messaggio che il disco non è leggibile da questo computer, oppure l’unità non compare affatto nel Finder. I file sono intatti: fai clic su **Ignora** e non scegliere mai Inizializza o Cancella.",
+            "Se la chiavetta si sblocca automaticamente sul tuo PC, quell’impostazione vale solo per quel PC. Su un Mac servono comunque la password o la chiave di ripristino."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Aprire un’unità BitLocker To Go con Unbit",
+          "intro": [],
+          "steps": [
+            "Installa [Unbit](home) dal suo sito e aprila dalla barra dei menu. Al primo avvio mostra dove attivare l’**Accesso completo al disco**.",
+            "Collega la chiavetta USB. Unbit la trova automaticamente e la elenca sotto **Unità**.",
+            "Inserisci la password scelta in Windows e scegli **Apri unità**. Se hai solo la chiave di ripristino, usa quella: vedi [Chiave di ripristino BitLocker su Mac](recovery).",
+            "Scegli **Mostra nel Finder** e copia sul Mac i file che ti servono.",
+            "Scegli **Espelli** prima di estrarre la chiavetta."
+          ],
+          "bullets": [],
+          "outro": [
+            "La guida completa, con screenshot, è in [Come aprire un’unità BitLocker su un Mac](open)."
+          ]
+        },
+        {
+          "title": "Spostare file tra un PC Windows e un Mac",
+          "intro": [
+            "Unbit legge le unità BitLocker To Go ma non vi scrive. Questo influisce su come condividi i file:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Da Windows a Mac:** metti i file sulla chiavetta in Windows, poi copiali sul Mac.",
+            "**Da Mac a Windows:** dal Mac non puoi salvare sulla chiavetta cifrata. Usa un’altra via, per esempio una seconda unità formattata in exFAT (macOS e Windows la leggono e la scrivono entrambi) o una cartella cloud o di rete.",
+            "**File sensibili:** un’unità exFAT non cifrata è comoda ma non protetta in caso di smarrimento, quindi tieni i dati riservati sulla chiavetta BitLocker e usala in sola lettura sul Mac."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Cose da sapere sulle chiavette USB",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Collega la chiavetta direttamente al Mac e non a un hub non alimentato, e prova un’altra porta se non compare.",
+            "Se la chiavetta ha più partizioni, scegli quella cifrata con BitLocker.",
+            "Unbit supporta unità cifrate in Windows 7 o successivo. Il file system all’interno dovrebbe essere exFAT, FAT32 o NTFS.",
+            "Una scheda di memoria in un lettore USB di norma compare sul Mac come unità esterna, quindi funziona allo stesso modo.",
+            "Se Windows sta ancora cifrando o decifrando la chiavetta, lascialo finire prima."
+          ],
+          "outro": [
+            "Altro sui tipi di unità: [Aprire un SSD, un HDD o una chiavetta USB con BitLocker su Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "BitLocker To Go è diverso da BitLocker?",
+          "a": "È la stessa tecnologia. BitLocker To Go è semplicemente il nome usato per le unità rimovibili come le chiavette USB."
+        },
+        {
+          "q": "Un Mac può aprire BitLocker To Go senza software aggiuntivo?",
+          "a": "No. macOS non ha un supporto BitLocker integrato, quindi serve un lettore come [Unbit](home) oppure un PC Windows."
+        },
+        {
+          "q": "Posso salvare file sulla chiavetta dal Mac?",
+          "a": "Non con Unbit, che è in sola lettura per scelta progettuale. Copia i file dalla chiavetta sul Mac e usa Windows quando devi aggiungerne o modificarne."
+        },
+        {
+          "q": "La chiavetta continuerà a funzionare su Windows dopo?",
+          "a": "Sì. Unbit si limita a leggere la chiavetta e non la modifica mai."
+        },
+        {
+          "q": "Ho una chiave di ripristino ma non la password. Posso aprirla lo stesso?",
+          "a": "Sì. Unbit accetta la chiave di ripristino di 48 cifre al posto della password. Vedi [Chiave di ripristino BitLocker su Mac](recovery)."
+        },
+        {
+          "q": "Unbit memorizza la mia password?",
+          "a": "Solo se selezioni «Ricorda questa unità su questo Mac». In tal caso viene salvata cifrata nel Portachiavi di macOS e puoi dimenticarla in qualsiasi momento."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "Chiave di ripristino BitLocker su Mac: sbloccare un’unità",
+      "metaDescription": "Hai dimenticato la password di BitLocker? Trova la chiave di ripristino di 48 cifre e usala per aprire l’unità su un Mac, in sola lettura, con Unbit. Dove cercare e cosa fare se non funziona.",
+      "h1": "Chiave di ripristino BitLocker su Mac: sbloccare un’unità con la chiave di 48 cifre",
+      "summary": "Dove trovare la chiave di ripristino di 48 cifre e come usarla per aprire un’unità BitLocker sul tuo Mac.",
+      "lead": "Hai perso la password di BitLocker? Se hai ancora la chiave di ripristino di 48 cifre, puoi aprire l’unità su un Mac. [Unbit](home) accetta la chiave di ripristino (dalla versione 1.0.8) al posto della password e apre l’unità in sola lettura. Questa guida spiega cos’è la chiave, dove cercarla e come usarla.",
+      "sections": [
+        {
+          "title": "Cos’è la chiave di ripristino",
+          "intro": [
+            "Quando si attiva BitLocker, Windows crea una chiave di ripristino e ti chiede di salvarla o stamparla. È lunga 48 cifre, scritte in 8 gruppi da 6 separati da trattini, per esempio 123456-123456-… e così via.",
+            "La chiave di ripristino è un secondo accesso. Sblocca l’unità al posto della password, e ogni unità ha la sua chiave."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dove trovarla",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Il tuo account Microsoft.** Se al momento della cifratura avevi effettuato l’accesso con un account Microsoft, la chiave potrebbe essere salvata lì. Accedi all’account e cerca le chiavi di ripristino BitLocker.",
+            "**Un file o una stampa.** Windows offre di salvare la chiave in un file o di stamparla quando attivi BitLocker. Controlla i tuoi documenti, una chiavetta USB o una cartella di fogli stampati.",
+            "**La tua organizzazione.** Per un’unità di lavoro o scolastica, la chiave è spesso in mano all’amministratore IT.",
+            "**Più chiavi?** Usa quella che appartiene a questa unità. Se ne hai diverse, l’ID della chiave mostrato accanto a ciascuna aiuta a distinguerle."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Sbloccare l’unità con la chiave di ripristino in Unbit",
+          "intro": [],
+          "steps": [
+            "Assicurati di avere Unbit 1.0.8 o successivo. Aprila, collega l’unità e selezionala sotto **Unità**.",
+            "Passa alla scheda **Chiave di ripristino** (scegli **Usa la chiave di ripristino**).",
+            "Copia la chiave, poi scegli **Incolla chiave di ripristino**, oppure digita le 48 cifre. Spazi e trattini vanno bene, e Unbit conta le cifre per te.",
+            "Scegli **Apri unità**. macOS potrebbe chiederti una volta la password del Mac per approvare l’accesso in lettura.",
+            "Scegli **Mostra nel Finder**, copia i tuoi file e usa **Espelli** quando hai finito."
+          ],
+          "bullets": [],
+          "outro": [
+            "Seleziona **Ricorda questa unità su questo Mac** se vuoi che Unbit conservi la chiave cifrata nel Portachiavi di macOS, così l’unità si apre senza doverla digitare di nuovo."
+          ]
+        },
+        {
+          "title": "Cosa fa e cosa non fa la chiave di ripristino",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Apre l’unità in sola lettura, esattamente come la password.",
+            "Non reimposta né cambia la password di BitLocker, non rimuove BitLocker e non ripara l’unità. Unbit non scrive mai sull’unità, quindi questi compiti spettano a Windows.",
+            "Funziona solo per l’unità a cui appartiene."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Se la chiave viene rifiutata",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Controlla tutte le 48 cifre, in 8 gruppi da 6. Unbit segnala un gruppo che non può essere corretto.",
+            "Usa solo cifre, spazi e trattini. Il testo copiato a volte contiene caratteri extra o a capo.",
+            "Verifica che sia la chiave di questa unità e non di un’altra unità o di un altro PC.",
+            "Una chiave di ripristino può essere sostituita in Windows. Se l’unità è stata cifrata di nuovo o la chiave è stata rigenerata, prova la più recente.",
+            "Se Unbit indica che l’unità non ha una chiave di ripristino, usa la password."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Se non trovi la chiave",
+          "intro": [
+            "BitLocker è progettato in modo che nessuno possa aggirarlo. Senza la password o la chiave di ripristino i dati non si possono recuperare: né con Unbit, né con software di recupero dati, né da nessun altro. Non formattare l’unità sperando di sistemarla: cancellerebbe i dati.",
+            "Continua a cercare nei posti indicati sopra e chiedi a chi ha configurato l’unità. Una volta dentro, conserva la chiave in un luogo sicuro. I passaggi generali sono in [Come aprire un’unità BitLocker su un Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Unbit supporta la chiave di ripristino BitLocker?",
+          "a": "Sì, dalla versione 1.0.8. Inseriscila nella scheda Chiave di ripristino al posto della password."
+        },
+        {
+          "q": "Ho solo l’ID della chiave. Basta?",
+          "a": "No. L’ID serve solo a identificare una chiave. Servono tutte le 48 cifre."
+        },
+        {
+          "q": "Posso usare la chiave di ripristino per impostare una nuova password dal Mac?",
+          "a": "No. Unbit è in sola lettura e non può modificare le impostazioni di BitLocker. Usa Windows se devi impostare una nuova password."
+        },
+        {
+          "q": "La mia chiave di ripristino viene inviata da qualche parte?",
+          "a": "No. La decifratura avviene sul tuo Mac e la chiave non viene inviata da nessuna parte."
+        },
+        {
+          "q": "Dove trovo la chiave di un’unità di lavoro?",
+          "a": "Chiedila al tuo amministratore IT. Le organizzazioni spesso conservano le chiavi di ripristino in modo centralizzato."
+        },
+        {
+          "q": "Posso usare la chiave di ripristino anche se ricordo la password?",
+          "a": "Sì. Entrambe aprono l’unità."
+        }
+      ]
     }
   }
 }

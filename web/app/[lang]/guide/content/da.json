@@ -323,6 +323,318 @@
           "a": "Ja. Unbit læser kun drevet og ændrer det aldrig, så det forbliver præcis, som Windows efterlod det."
         }
       ]
+    },
+    "usb": {
+      "metaTitle": "Åbn et BitLocker-krypteret USB-drev på Mac – gratis guide",
+      "metaDescription": "Står der „Disken kunne ikke læses“? Åbn et BitLocker-krypteret USB-drev på din Mac: hvad der virker, hvad der er gratis, og en guide i 5 trin med Unbit.",
+      "h1": "Sådan åbner du et BitLocker-krypteret USB-drev på Mac",
+      "summary": "„Disken kunne ikke læses“: hvad det betyder, og den hurtigste gratis måde at åbne drevet på.",
+      "lead": "Du sætter et USB-drev i din Mac, og macOS siger, at disken ikke kunne læses af denne computer. Hvis drevet er krypteret med BitLocker på en Windows-pc, er det ikke i stykker – macOS kan bare ikke dekryptere det. Her får du overblik over mulighederne og en vej til at åbne drevet på cirka fem minutter med [Unbit](home), en gratis BitLocker-læser, der kun læser.",
+      "sections": [
+        {
+          "title": "Hvad beskeden om, at disken ikke kunne læses, egentlig betyder",
+          "intro": [
+            "macOS viser beskeden, hver gang den møder en disk, den ikke genkender. Med et BitLocker-drev er dine data i orden: De er krypteret i et format, som Windows og værktøjer med BitLocker-understøttelse kan læse. **Klik ikke på Initialiser eller Slet** – det sletter alt på drevet. Klik i stedet på **Ignorer**.",
+            "Tjek tre ting, før du installerer noget: Drevet er et eksternt drev (USB-stik, SSD eller harddisk), du har dets adgangskode eller 48-cifrede recovery-key, og det kan stadig åbnes på en Windows-pc – så ved du, at selve drevet er sundt."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Dine muligheder for at åbne det",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**macOS alene:** Der er ingen indbygget BitLocker-understøttelse og ingen skjult indstilling, der tilføjer den. FileVault er Apples egen kryptering og har ikke noget med BitLocker at gøre.",
+            "**En Windows-pc eller en virtuel Windows-maskine:** Det virker, fordi Windows har BitLocker indbygget, og du kan både læse og skrive. Du skal have adgang til Windows, og en virtuel maskine kræver en Windows-licens.",
+            "**Et gratis kommandolinjeværktøj som anylinuxfs:** Open source og med læse- og skriveadgang, men kun til Mac med Apple silicon og brugt via Terminal.",
+            "**En BitLocker-app til Mac:** Den hurtigste vej, hvis du bare vil have dine filer. Flere betalte apps kan også skrive til drevet; [Unbit](home) er gratis og skrivebeskyttet. Se en side-om-side-sammenligning i [Bedste BitLocker til Mac](best)."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Åbn USB-drevet med Unbit",
+          "intro": [],
+          "steps": [
+            "Download Unbit, træk den til mappen Programmer, og åbn den. Appen bor i menulinjen og kræver macOS 13 eller nyere (Apple silicon eller Intel). Første gang viser den, hvor du slår **Fuld diskadgang** til.",
+            "Sæt USB-drevet i – helst direkte i Macen frem for via en hub. Unbit viser det under **Drev**; vælg det.",
+            "Indtast BitLocker-adgangskoden, og vælg **Åbn drev**. macOS beder måske én gang om din Mac-adgangskode for at godkende læseadgang.",
+            "Vælg **Vis i Finder**. Drevet er monteret skrivebeskyttet, så du kan gennemse det, åbne filer og kopiere dem til din Mac.",
+            "Når du er færdig, skal du vælge **Luk sikkert**, før du tager USB-drevet ud."
+          ],
+          "bullets": [],
+          "outro": [
+            "Vil du have skærmbilleder og flere detaljer? Læs [Sådan åbner du et BitLocker-drev på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Hvad du kan og ikke kan, når drevet er åbent",
+          "intro": [
+            "Unbit skriver aldrig til drevet, så du kan gennemse mapper, få vist og åbne filer og kopiere dem til din Mac. Du kan ikke gemme ændringer tilbage, slette filer eller lægge nye på. Det er et bevidst valg: Intet kan ændres eller slettes ved et uheld, og drevet er præcis, som Windows efterlod det."
+          ],
+          "steps": [],
+          "bullets": [
+            "Skal du redigere en fil, så kopiér den først til din Mac og arbejd på kopien.",
+            "Skal du ændre indholdet på drevet eller dets BitLocker-indstillinger, så brug Windows."
+          ],
+          "outro": [
+            "Læs mere om, hvad skrivebeskyttet betyder: [Er BitLocker på Mac sikkert?](safe)."
+          ]
+        },
+        {
+          "title": "Hvis det ikke virker",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Drevet vises ikke.** Tag det ud og sæt det i igen, brug en port på selve Macen, og opdatér listen med ⌘R. Kun eksterne drev understøttes.",
+            "**„Forkert adgangskode“.** Tjek for tastefejl og Caps Lock. Har du recovery-key, kan du bruge den i stedet – se [BitLocker-recovery-key på Mac](recovery).",
+            "**Adgang nægtet.** Unbit skal have Fuld diskadgang: Systemindstillinger › Anonymitet og sikkerhed › Fuld diskadgang.",
+            "**Drevet åbner i Finder uden Unbit.** Så er det ikke BitLocker-krypteret, eller du har valgt en ukrypteret partition på samme drev.",
+            "**Det fejler også på en Windows-pc.** Drevet kan være beskadiget eller stadig under kryptering eller dekryptering. Lad Windows blive færdig, og prøv igen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis du hverken har adgangskode eller recovery-key",
+          "intro": [
+            "BitLocker kan ikke omgås – det er hele meningen med kryptering. Datagendannelsesprogrammer kan heller ikke komme udenom, og hvis du formaterer drevet, sletter du bare dataene. Led efter den 48-cifrede recovery-key i den Microsoft-konto, der blev brugt på den pc, der krypterede drevet, i en gemt fil eller udskrift – eller spørg din it-administrator, hvis det er et arbejdsdrev."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hvorfor siger min Mac, at disken ikke kunne læses?",
+          "a": "Drevet er krypteret med BitLocker, som macOS ikke kan læse. Dataene er ikke tabt. Klik på Ignorer (aldrig Initialiser eller Slet), og åbn drevet med en BitLocker-læser som [Unbit](home)."
+        },
+        {
+          "q": "Kan jeg åbne et BitLocker-USB-drev på en Mac gratis?",
+          "a": "Ja. Unbit er gratis og åbner drev skrivebeskyttet. anylinuxfs er et gratis open source-kommandolinjeværktøj til Apple silicon, og en Windows-pc er også gratis, hvis du har en. De fleste andre Mac-apps er betalte."
+        },
+        {
+          "q": "Ændrer det drevet, at jeg åbner det på min Mac?",
+          "a": "Nej. Unbit monterer drevet skrivebeskyttet og skriver aldrig til det, så det er præcis, som Windows efterlod det."
+        },
+        {
+          "q": "Har jeg brug for drivere, en kernel extension eller macFUSE?",
+          "a": "Ikke til Unbit. Appen bruger den diskbilledunderstøttelse, der allerede er indbygget i macOS, og kræver Fuld diskadgang og en engangsgodkendelse af sin læsehjælper."
+        },
+        {
+          "q": "Virker det på Mac med Apple silicon?",
+          "a": "Ja. Unbit er en universel app til både Apple silicon og Intel."
+        },
+        {
+          "q": "Kan jeg bruge USB-drevet på Windows bagefter?",
+          "a": "Ja. Intet på drevet ændres, så det fungerer stadig på din Windows-pc."
+        }
+      ]
+    },
+    "togo": {
+      "metaTitle": "BitLocker To Go på Mac: åbn et Windows-krypteret USB-drev",
+      "metaDescription": "Et USB-stik krypteret med BitLocker To Go i Windows? Se, hvad BitLocker To Go er, hvorfor en Mac ikke kan åbne det alene, og hvordan du læser det med Unbit.",
+      "h1": "BitLocker To Go på Mac: åbn et Windows-krypteret USB-stik",
+      "summary": "Hvad BitLocker To Go er, og hvordan du læser et Windows-krypteret USB-stik på din Mac.",
+      "lead": "BitLocker To Go er den del af BitLocker, som Windows bruger til flytbare drev som USB-stik. Nogen har krypteret et stik på en Windows-pc, og nu skal du bruge filerne på din Mac. macOS kan ikke låse den slags drev op på egen hånd, men [Unbit](home) kan åbne dem skrivebeskyttet. Her er, hvordan BitLocker To Go fungerer, og hvad du kan forvente på en Mac.",
+      "sections": [
+        {
+          "title": "Hvad BitLocker To Go er",
+          "intro": [
+            "BitLocker er Microsofts drevkryptering til Windows. BitLocker To Go er navnet på den samme beskyttelse på flytbare drev: USB-stik og eksterne drev. I Windows slår du det til fra Filutforsker, vælger hvordan drevet låses op – oftest med en adgangskode – og gemmer en 48-cifret recovery-key.",
+            "Et beskyttet drev har en hængelås i Windows Filutforsker, og Windows beder om adgangskoden, når du sætter det i. Alt på drevet er krypteret, ikke bare nogle få mapper."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Hvad der sker, når du sætter det i en Mac",
+          "intro": [
+            "macOS ser en disk, den ikke kan læse. Den viser som regel en besked om, at disken ikke kunne læses af denne computer, eller også dukker drevet slet ikke op i Finder. Filerne er intakte: Klik på **Ignorer**, og vælg aldrig Initialiser eller Slet.",
+            "Hvis stikket låses op automatisk på din egen pc, gælder den indstilling kun for den pc. På en Mac skal du stadig bruge adgangskoden eller recovery-key."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Åbn et BitLocker To Go-drev med Unbit",
+          "intro": [],
+          "steps": [
+            "Installér [Unbit](home) fra dens hjemmeside, og åbn den fra menulinjen. Første gang viser appen, hvor du slår **Fuld diskadgang** til.",
+            "Sæt USB-stikket i. Unbit finder det automatisk og viser det under **Drev**.",
+            "Indtast den adgangskode, du valgte i Windows, og vælg **Åbn drev**. Har du kun recovery-key, så brug den i stedet – se [BitLocker-recovery-key på Mac](recovery).",
+            "Vælg **Vis i Finder**, og kopiér de filer, du skal bruge, til din Mac.",
+            "Vælg **Luk sikkert**, før du trækker stikket ud."
+          ],
+          "bullets": [],
+          "outro": [
+            "Den fulde gennemgang med skærmbilleder står i [Sådan åbner du et BitLocker-drev på en Mac](open)."
+          ]
+        },
+        {
+          "title": "Flyt filer mellem en Windows-pc og en Mac",
+          "intro": [
+            "Unbit læser BitLocker To Go-drev, men skriver ikke til dem. Det påvirker, hvordan du deler filer:"
+          ],
+          "steps": [],
+          "bullets": [
+            "**Windows til Mac:** Læg filerne på stikket i Windows, og kopiér dem derefter over på Macen.",
+            "**Mac til Windows:** Du kan ikke gemme på det krypterede stik fra Macen. Brug en anden vej, fx et ekstra drev formateret som exFAT (macOS og Windows kan begge læse og skrive det) eller en sky- eller netværksmappe.",
+            "**Følsomme filer:** Et ukrypteret exFAT-drev er praktisk, men uden beskyttelse, hvis det går tabt. Behold private data på BitLocker-stikket, og brug det skrivebeskyttet på Macen."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Godt at vide om USB-stik",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Sæt stikket direkte i Macen frem for i en hub uden strøm, og prøv en anden port, hvis det ikke vises.",
+            "Har stikket flere partitioner, så vælg den, der er BitLocker-krypteret.",
+            "Unbit understøtter drev krypteret i Windows 7 eller nyere. Filsystemet indeni bør være exFAT, FAT32 eller NTFS.",
+            "Et hukommelseskort i en USB-kortlæser vises normalt som et eksternt drev på Macen, så det fungerer på samme måde.",
+            "Hvis Windows stadig krypterer eller dekrypterer stikket, så lad det blive færdigt først."
+          ],
+          "outro": [
+            "Mere om drevtyper: [Åbn en BitLocker-SSD, -HDD eller -USB-nøgle på Mac](drives)."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Er BitLocker To Go noget andet end BitLocker?",
+          "a": "Det er den samme teknologi. BitLocker To Go er blot navnet, når den bruges på flytbare drev som USB-stik."
+        },
+        {
+          "q": "Kan en Mac åbne BitLocker To Go uden ekstra software?",
+          "a": "Nej. macOS har ingen indbygget BitLocker-understøttelse, så du skal bruge en læser som [Unbit](home) eller en Windows-pc."
+        },
+        {
+          "q": "Kan jeg gemme filer på stikket fra min Mac?",
+          "a": "Ikke med Unbit, som er skrivebeskyttet ved design. Kopiér filer fra stikket på Macen, og brug Windows, når du skal tilføje eller ændre filer på det."
+        },
+        {
+          "q": "Virker stikket stadig på Windows bagefter?",
+          "a": "Ja. Unbit læser kun stikket og ændrer det aldrig."
+        },
+        {
+          "q": "Jeg har en recovery-key, men ingen adgangskode. Kan jeg stadig åbne det?",
+          "a": "Ja. Unbit accepterer den 48-cifrede recovery-key i stedet for adgangskoden. Se [BitLocker-recovery-key på Mac](recovery)."
+        },
+        {
+          "q": "Gemmer Unbit min adgangskode?",
+          "a": "Kun hvis du sætter hak ved „Husk dette drev på denne Mac“. Så gemmes den krypteret i din macOS-nøglering, og du kan til enhver tid glemme den igen."
+        }
+      ]
+    },
+    "recovery": {
+      "metaTitle": "BitLocker-recovery-key på Mac: lås et drev op (48 cifre)",
+      "metaDescription": "Glemt din BitLocker-adgangskode? Find din 48-cifrede recovery-key, og brug den til at åbne drevet på en Mac, skrivebeskyttet, med Unbit. Hvor du leder, og hvad du gør, hvis den afvises.",
+      "h1": "BitLocker-recovery-key på Mac: lås et drev op med den 48-cifrede nøgle",
+      "summary": "Hvor du finder den 48-cifrede recovery-key, og hvordan du bruger den til at åbne et BitLocker-drev på din Mac.",
+      "lead": "Mistet BitLocker-adgangskoden? Hvis du stadig har den 48-cifrede recovery-key, kan du åbne drevet på en Mac. [Unbit](home) accepterer recovery-key (fra version 1.0.8) i stedet for adgangskoden og åbner drevet skrivebeskyttet. Her forklarer vi, hvad nøglen er, hvor du kan lede efter den, og hvordan du bruger den.",
+      "sections": [
+        {
+          "title": "Hvad recovery-key er",
+          "intro": [
+            "Når BitLocker slås til, opretter Windows en recovery-key og beder dig gemme eller udskrive den. Den er 48 cifre lang, skrevet som 8 grupper à 6 cifre adskilt af bindestreger, fx 123456-123456-… og så videre.",
+            "Recovery-key er en ekstra indgang. Den låser drevet op i stedet for adgangskoden, og hvert drev har sin egen nøgle."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        },
+        {
+          "title": "Hvor du finder den",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "**Din Microsoft-konto.** Var du logget ind med en Microsoft-konto, da drevet blev krypteret, kan nøglen være gemt dér. Log ind på kontoen, og led efter BitLocker-recovery-keys.",
+            "**En fil eller en udskrift.** Windows tilbyder at gemme nøglen i en fil eller udskrive den, når du slår BitLocker til. Tjek dine dokumenter, et USB-stik eller en mappe med udskrifter.",
+            "**Din organisation.** Ved et arbejds- eller skoledrev ligger nøglen ofte hos it-administratoren.",
+            "**Flere nøgler?** Brug den, der hører til dette drev. Har du flere, kan nøgle-id’et, der vises sammen med hver nøgle, hjælpe dig med at kende dem fra hinanden."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Lås drevet op med recovery-key i Unbit",
+          "intro": [],
+          "steps": [
+            "Sørg for, at du har Unbit 1.0.8 eller nyere. Åbn appen, sæt drevet i, og vælg det under **Drev**.",
+            "Skift til fanen **Recovery-key** (vælg **Brug gendannelsesnøgle**).",
+            "Kopiér din nøgle, og vælg **Indsæt gendannelsesnøgle** – eller skriv de 48 cifre. Mellemrum og bindestreger er fine, og Unbit tæller cifrene for dig.",
+            "Vælg **Åbn drev**. macOS beder måske én gang om din Mac-adgangskode for at godkende læseadgang.",
+            "Vælg **Vis i Finder**, kopiér dine filer, og brug **Luk sikkert**, når du er færdig."
+          ],
+          "bullets": [],
+          "outro": [
+            "Sæt hak ved **Husk dette drev på denne Mac**, hvis Unbit skal gemme nøglen krypteret i din macOS-nøglering, så drevet åbner uden at skulle indtaste den igen."
+          ]
+        },
+        {
+          "title": "Hvad recovery-key gør, og hvad den ikke gør",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Den åbner drevet skrivebeskyttet, ligesom adgangskoden gør.",
+            "Den nulstiller eller ændrer ikke BitLocker-adgangskoden, fjerner ikke BitLocker og reparerer ikke drevet. Unbit skriver aldrig til drevet, så de opgaver hører til i Windows.",
+            "Den virker kun til det drev, den hører til."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis nøglen afvises",
+          "intro": [],
+          "steps": [],
+          "bullets": [
+            "Tjek alle 48 cifre i 8 grupper à 6. Unbit peger på en gruppe, der ikke kan være rigtig.",
+            "Brug kun cifre, mellemrum og bindestreger. Kopieret tekst indeholder nogle gange ekstra tegn eller linjeskift.",
+            "Sørg for, at det er nøglen til dette drev og ikke til et andet drev eller en anden pc.",
+            "En recovery-key kan skiftes i Windows. Hvis drevet er krypteret igen, eller nøglen er genereret på ny, så prøv den nyeste nøgle.",
+            "Siger Unbit, at drevet ikke har nogen recovery-key, så brug adgangskoden i stedet."
+          ],
+          "outro": []
+        },
+        {
+          "title": "Hvis du ikke kan finde nøglen",
+          "intro": [
+            "BitLocker er bygget, så ingen kan komme uden om det. Uden adgangskode eller recovery-key kan dataene ikke gendannes – ikke af Unbit, ikke af datagendannelsesprogrammer, ikke af nogen. Formatér ikke drevet i håb om at ordne det: Så slettes dataene.",
+            "Bliv ved med at lede de steder, der er nævnt ovenfor, og spørg den, der satte drevet op. Når du er inde, så opbevar nøglen et sikkert sted. De almindelige trin finder du i [Sådan åbner du et BitLocker-drev på en Mac](open)."
+          ],
+          "steps": [],
+          "bullets": [],
+          "outro": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Understøtter Unbit BitLocker-recovery-key?",
+          "a": "Ja, fra version 1.0.8. Indtast den under fanen Recovery-key i stedet for adgangskoden."
+        },
+        {
+          "q": "Jeg har kun nøgle-id’et. Er det nok?",
+          "a": "Nej. Nøgle-id’et identificerer kun en nøgle. Du skal bruge alle 48 cifre."
+        },
+        {
+          "q": "Kan jeg bruge recovery-key til at sætte en ny adgangskode fra min Mac?",
+          "a": "Nej. Unbit er skrivebeskyttet og kan ikke ændre BitLocker-indstillinger. Brug Windows, hvis du skal sætte en ny adgangskode."
+        },
+        {
+          "q": "Bliver min recovery-key sendt nogen steder hen?",
+          "a": "Nej. Dekrypteringen sker på din Mac, og nøglen sendes aldrig nogen steder hen."
+        },
+        {
+          "q": "Hvor finder jeg nøglen til et arbejdsdrev?",
+          "a": "Spørg din it-administrator. Organisationer opbevarer ofte recovery-keys centralt."
+        },
+        {
+          "q": "Kan jeg bruge recovery-key, selv om jeg husker adgangskoden?",
+          "a": "Ja. Begge dele åbner drevet."
+        }
+      ]
     }
   }
 }

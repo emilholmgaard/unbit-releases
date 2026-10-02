@@ -4,7 +4,7 @@ import type { Dictionary } from "@/app/[lang]/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "@/lib/site";
 import { alternativesPath } from "@/lib/competitors";
-import { guidePath } from "@/lib/guides";
+import { bestPath, guidePath } from "@/lib/guides";
 
 const RELEASES = "https://github.com/emilholmgaard/unbit-releases/releases";
 
@@ -49,6 +49,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <h2>{t.footer.resources}</h2>
           <a href={`/${locale}#faq`}>{t.nav.faq}</a>
           <a href={guidePath(locale)}>{t.footer.guides}</a>
+          <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
           <a href={alternativesPath(locale)}>{t.footer.alternatives}</a>
           <a href={`${RELEASES}`}>{t.footer.releaseNotes}</a>
           <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
