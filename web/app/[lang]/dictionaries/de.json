@@ -72,6 +72,19 @@
     "allTitle": "Alle Releases",
     "allSub": "Versionshinweise und frühere Versionen"
   },
+  "verify": {
+    "title": "Download überprüfen",
+    "text": "Prüfe, dass die Datei genau die ist, die wir veröffentlicht haben, und dass sie von Apple signiert und notarisiert ist. Das dauert eine Minute im Terminal.",
+    "checksumLabel": "SHA-256 von Unbit-{version}.dmg",
+    "checksumMissing": "Die Prüfsumme für diese Version ist gerade nicht verfügbar. Du findest sie auf der Release-Seite.",
+    "releasePage": "Release-Seite",
+    "stepHash": "Prüfsumme vergleichen",
+    "stepHashText": "Führe das im Terminal aus (passe den Pfad an, falls du die Datei woanders gespeichert hast). Das Ergebnis muss mit der Prüfsumme oben übereinstimmen.",
+    "stepSign": "Signatur prüfen",
+    "stepSignText": "Nachdem du Unbit in „Programme“ verschoben hast: Der erste Befehl muss ohne Fehler enden, der zweite muss „accepted“ und „Notarized Developer ID“ melden, und die Team-ID muss {teamId} lauten.",
+    "stepNotarized": "Notarisierungsticket prüfen",
+    "stepNotarizedText": "Das Disk-Image enthält Apples Notarisierungsticket. Der Befehl muss „The validate action worked!“ melden."
+  },
   "faq": {
     "title": "Häufige Fragen",
     "items": [

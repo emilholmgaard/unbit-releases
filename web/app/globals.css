@@ -644,3 +644,18 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
 .note-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .note-actions button { font: inherit; cursor: pointer; border: 0; }
 .note-text { margin: 16px 0 0; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: #0b0b0c; color: var(--soft); font: 13px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 560px; overflow: auto; }
+
+/* Verify download */
+.verify { max-width: 900px; margin: 160px auto 0; display: grid; gap: 14px; }
+.verify .section-head { margin-bottom: 14px; }
+.verify-card { padding: 22px 24px; }
+.verify-card h3 { font-size: 17px; font-weight: 500; display: flex; align-items: center; gap: 12px; margin: 0; }
+.verify-card p { margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.verify-n { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; font-size: 13px; background: #232326; color: #fff; }
+.verify-label { margin: 0 0 10px !important; font-size: 13px !important; }
+.verify-hash { display: block; font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; user-select: all; color: #fff; }
+.verify-missing a { color: #fff; text-decoration: underline; }
+.verify-steps { display: grid; gap: 14px; }
+.verify-cmd { margin: 14px 0 0; padding: 14px 16px; border-radius: 12px; background: #0c0c0e; border: 1px solid rgba(255, 255, 255, 0.08); overflow-x: auto; }
+.verify-cmd code { font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; color: #e8e8ea; white-space: pre; }
+@media (max-width: 860px) { .verify { margin-top: 96px; } }

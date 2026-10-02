@@ -72,6 +72,19 @@
     "allTitle": "Alle udgivelser",
     "allSub": "Udgivelsesnoter og tidligere versioner"
   },
+  "verify": {
+    "title": "Kontrollér din download",
+    "text": "Tjek, at filen er præcis den, vi har udgivet, og at den er signeret og notariseret af Apple. Det tager et minut i Terminal.",
+    "checksumLabel": "SHA-256 for Unbit-{version}.dmg",
+    "checksumMissing": "Checksummen for denne version er ikke tilgængelig lige nu. Du kan finde den på udgivelsessiden.",
+    "releasePage": "Udgivelsesside",
+    "stepHash": "Sammenlign checksummen",
+    "stepHashText": "Kør dette i Terminal (ret stien, hvis du gemte filen et andet sted). Resultatet skal være identisk med checksummen ovenfor.",
+    "stepSign": "Tjek signaturen",
+    "stepSignText": "Når du har flyttet Unbit til Programmer: den første kommando skal slutte uden fejl, den anden skal sige “accepted” og “Notarized Developer ID”, og Team ID skal være {teamId}.",
+    "stepNotarized": "Tjek notariseringsbilletten",
+    "stepNotarizedText": "Diskaftrykket indeholder Apples notariseringsbillet. Kommandoen skal sige “The validate action worked!”."
+  },
   "faq": {
     "title": "Ofte stillede spørgsmål",
     "items": [

@@ -72,6 +72,19 @@
     "allTitle": "Wszystkie wydania",
     "allSub": "Informacje o wydaniach i wcześniejsze wersje"
   },
+  "verify": {
+    "title": "Zweryfikuj pobrany plik",
+    "text": "Sprawdź, czy plik jest dokładnie tym, który opublikowaliśmy, i czy jest podpisany oraz notaryzowany przez Apple. Zajmie to minutę w Terminalu.",
+    "checksumLabel": "SHA-256 pliku Unbit-{version}.dmg",
+    "checksumMissing": "Suma kontrolna tej wersji jest teraz niedostępna. Znajdziesz ją na stronie wydania.",
+    "releasePage": "Strona wydania",
+    "stepHash": "Porównaj sumę kontrolną",
+    "stepHashText": "Uruchom to w Terminalu (zmień ścieżkę, jeśli zapisano plik gdzie indziej). Wynik musi zgadzać się z sumą kontrolną powyżej.",
+    "stepSign": "Sprawdź podpis",
+    "stepSignText": "Po przeniesieniu Unbit do Programów: pierwsze polecenie musi zakończyć się bez błędów, drugie musi pokazać „accepted” i „Notarized Developer ID”, a Team ID musi mieć wartość {teamId}.",
+    "stepNotarized": "Sprawdź bilet notaryzacji",
+    "stepNotarizedText": "Obraz dysku zawiera bilet notaryzacji Apple. Polecenie musi wyświetlić „The validate action worked!”."
+  },
   "faq": {
     "title": "Najczęstsze pytania",
     "items": [

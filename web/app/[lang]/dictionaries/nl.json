@@ -72,6 +72,19 @@
     "allTitle": "Alle releases",
     "allSub": "Release-opmerkingen en eerdere versies"
   },
+  "verify": {
+    "title": "Controleer je download",
+    "text": "Controleer of het bestand precies het bestand is dat we hebben gepubliceerd en of het door Apple is ondertekend en genotariseerd. Dat kost een minuut in Terminal.",
+    "checksumLabel": "SHA-256 van Unbit-{version}.dmg",
+    "checksumMissing": "De checksum van deze versie is nu niet beschikbaar. Je vindt hem op de releasepagina.",
+    "releasePage": "Releasepagina",
+    "stepHash": "Vergelijk de checksum",
+    "stepHashText": "Voer dit uit in Terminal (pas het pad aan als je het bestand ergens anders hebt opgeslagen). Het resultaat moet overeenkomen met de checksum hierboven.",
+    "stepSign": "Controleer de handtekening",
+    "stepSignText": "Nadat je Unbit naar Programma’s hebt verplaatst: het eerste commando moet zonder fouten eindigen, het tweede moet “accepted” en “Notarized Developer ID” melden en het Team ID moet {teamId} zijn.",
+    "stepNotarized": "Controleer het notarisatieticket",
+    "stepNotarizedText": "Het schijfimage bevat het notarisatieticket van Apple. Het commando moet “The validate action worked!” melden."
+  },
   "faq": {
     "title": "Veelgestelde vragen",
     "items": [

@@ -72,6 +72,19 @@
     "allTitle": "Kaikki julkaisut",
     "allSub": "Julkaisutiedot ja aiemmat versiot"
   },
+  "verify": {
+    "title": "Tarkista lataus",
+    "text": "Varmista, että tiedosto on täsmälleen se, jonka julkaisimme, ja että Apple on allekirjoittanut ja notarisoinut sen. Se vie minuutin Terminalissa.",
+    "checksumLabel": "Tiedoston Unbit-{version}.dmg SHA-256",
+    "checksumMissing": "Tämän version tarkistussummaa ei ole juuri nyt saatavilla. Löydät sen julkaisusivulta.",
+    "releasePage": "Julkaisusivu",
+    "stepHash": "Vertaa tarkistussummaa",
+    "stepHashText": "Suorita tämä Terminalissa (muuta polkua, jos tallensit tiedoston muualle). Tuloksen on vastattava yllä olevaa tarkistussummaa.",
+    "stepSign": "Tarkista allekirjoitus",
+    "stepSignText": "Kun olet siirtänyt Unbitin Ohjelmat-kansioon: ensimmäisen komennon on päättyttävä ilman virheitä, toisen on sanottava ”accepted” ja ”Notarized Developer ID”, ja Team ID:n on oltava {teamId}.",
+    "stepNotarized": "Tarkista notarisointilippu",
+    "stepNotarizedText": "Levykuva sisältää Applen notarisointilipun. Komennon on sanottava ”The validate action worked!”."
+  },
   "faq": {
     "title": "Usein kysyttyä",
     "items": [

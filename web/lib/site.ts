@@ -34,3 +34,22 @@ export async function latestRelease(): Promise<{ version: string; minOS: string;
   }
   return FALLBACK;
 }
+
+/** Apple Team ID the app is signed with (shown on the site so people can compare `codesign` output). */
+export const TEAM_ID = "6XTQ98822R";
+
+/** Release asset written by scripts/release.sh: `<sha256>  Unbit-<version>.dmg`. */
+export const checksumUrl = (version: string) => `${RELEASES_URL}/download/v${version}/Unbit-${version}.dmg.sha256`;
+export const releasePageUrl = (version: string) => `${RELEASES_URL}/tag/v${version}`;
+
+/** SHA-256 of the release DMG, read from the release's checksum asset (cached, refreshed every 10 minutes). `undefined` if it can't be read or doesn't look like a SHA-256. */
+export async function releaseChecksum(version: string): Promise<string | undefined> {
+  try {
+    const res = await fetch(checksumUrl(version), { next: { revalidate: 600 } });
+    if (!res.ok) return undefined;
+    const hash = (await res.text()).trim().split(/\s+/)[0]?.toLowerCase();
+    return hash && /^[0-9a-f]{64}$/.test(hash) ? hash : undefined;
+  } catch {
+    return undefined;
+  }
+}

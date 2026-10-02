@@ -72,6 +72,19 @@
     "allTitle": "Toutes les versions",
     "allSub": "Notes de version et versions antérieures"
   },
+  "verify": {
+    "title": "Vérifier votre téléchargement",
+    "text": "Vérifiez que le fichier est exactement celui que nous avons publié, et qu’il est signé et notarié par Apple. Cela prend une minute dans Terminal.",
+    "checksumLabel": "SHA-256 de Unbit-{version}.dmg",
+    "checksumMissing": "La somme de contrôle de cette version n’est pas disponible pour le moment. Vous la trouverez sur la page de la version.",
+    "releasePage": "Page de la version",
+    "stepHash": "Comparer la somme de contrôle",
+    "stepHashText": "Exécutez ceci dans Terminal (adaptez le chemin si vous avez enregistré le fichier ailleurs). Le résultat doit correspondre à la somme de contrôle ci-dessus.",
+    "stepSign": "Vérifier la signature",
+    "stepSignText": "Une fois Unbit déplacé dans Applications : la première commande doit se terminer sans erreur, la deuxième doit indiquer « accepted » et « Notarized Developer ID », et le Team ID doit être {teamId}.",
+    "stepNotarized": "Vérifier le ticket de notarisation",
+    "stepNotarizedText": "L’image disque contient le ticket de notarisation d’Apple. La commande doit indiquer « The validate action worked! »."
+  },
   "faq": {
     "title": "Questions fréquentes",
     "items": [
