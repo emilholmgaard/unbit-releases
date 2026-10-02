@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Unbitin virheohje: mitä kukin ilmoitus tarkoittaa",
+    "indexMetaDescription": "Lyhyet selitykset ilmoituksiin, jotka Unbit näyttää, kun BitLocker-asema ei avaudu, sekä ohjeet mitä kokeilla.",
+    "indexH1": "Apua Unbitin ilmoituksiin",
+    "indexSub": "Mitä kukin ilmoitus tarkoittaa ja mitä sille voi tehdä.",
+    "whatItMeans": "Mitä se tarkoittaa",
+    "whatToTry": "Mitä kokeilla",
+    "stillStuckTitle": "Etkö vieläkään pääse eteenpäin?",
+    "stillStuckText": "Avaa Unbitissä hammasratasvalikko ja valitse Kopioi virheraportti, ja liitä se mukaan, kun pyydät apua. Se ei sisällä salasanoja, asemien nimiä eikä tiedostopolkuja.",
+    "guidesTitle": "Aiheeseen liittyvät oppaat",
+    "otherTitle": "Muut ilmoitukset",
+    "helpLabel": "Ohje",
+    "breadcrumb": "Polku",
+    "metaTitle": "{title} – Unbitin ohje",
+    "readMore": "Lue lisää"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Tarkista salasanasta kirjoitusvirheet ja varmista, ettei Caps Lock ole päällä.",
+        "Käytä sen sijaan 48-numeroista palautusavainta. Se on Microsoft-tilillä, jolla asema salattiin, tulosteessa tai .txt-tiedostossa, joka tallennettiin BitLockerin käyttöönotossa. Jokaisella asemalla on oma avaimensa.",
+        "Jos Unbitiin tallentamasi koodi ei enää toimi, valitse Anna uusi koodi ja kirjoita nykyinen."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Avaa Windows-tietokoneella aseman BitLocker-asetukset (napsauta asemaa hiiren kakkospainikkeella ja valitse Hallitse BitLockeria).",
+        "Lisää asemalle salasana ja tallenna palautusavain. Unbit ei voi käyttää TPM:ää, älykortteja eikä käynnistysavaintiedostoja.",
+        "Liitä asema takaisin Maciin ja avaa se uudella salasanalla tai palautusavaimella."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Valitse asemaluettelosta toinen osio. Asemalla voi olla useita osioita, ja vain yksi niistä voi olla salattu.",
+        "Jos macOS pystyy jo lukemaan osion, avaa se Finderissa – sitä ei ole salattu BitLockerilla."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Avaa asema Windows-tietokoneella ja kopioi tiedostot toiselle levylle.",
+        "Jos haluat käyttää asemaa myöhemmin Macilla, poista BitLocker käytöstä ja salaa asema uudelleen nykyisellä Windows-versiolla."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Liitä asema Windows-tietokoneeseen ja suorita chkdsk tai repair-bde palautusavaimella.",
+        "Jos Windows vielä salaa tai purkaa aseman salausta, anna sen ensin valmistua.",
+        "Älä alusta asemaa. Kopioi ensin mahdollisimman paljon toiselle levylle."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Tarkista kaapeli ja kokeile toista USB-porttia suoraan Macissa, ei hubin kautta.",
+        "Liitä asema uudelleen ja valitse Unbitissä Päivitä asemaluettelo.",
+        "Jos virhe toistuu, asema voi olla vioittumassa. Kopioi tiedostot Windows-tietokoneella, kun vielä voit."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Avaa Järjestelmäasetukset › Yksityisyys ja turvallisuus › Täysi levyn käyttöoikeus, ota Unbit käyttöön ja palaa sovellukseen.",
+        "Valitse Unbitin hammasratasvalikosta Määritä lukuoikeus… ja hyväksy kerran Macin salasanalla.",
+        "Jos asetus ei näytä tulevan voimaan, lopeta Unbit ja avaa se uudelleen."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Odota hetki ja valitse Yritä uudelleen.",
+        "Liitä asema uudelleen ja valitse sitten Unbitissä Päivitä asemaluettelo.",
+        "Jos ongelma toistuu, käynnistä Mac uudelleen ja yritä vielä kerran."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Koodi ei kelpaa",
+      "meaning": "Palautusavaimessa on oltava 48 numeroa (8 kuuden ryhmää). Tarkista, että se on kirjoitettu oikein."
+    },
+    "wrong-password": {
+      "title": "Väärä salasana",
+      "meaning": "Väärä salasana. Tarkista kirjoitusvirheet ja Caps Lock ja yritä uudelleen – tai avaa lukitus palautusavaimella."
+    },
+    "wrong-recovery-key": {
+      "title": "Väärä palautusavain",
+      "meaning": "Väärä palautusavain. Tarkista kaikki 48 numeroa – jokaisella asemalla on oma palautusavaimensa."
+    },
+    "saved-password-stale": {
+      "title": "Tallennettu salasana ei enää toimi",
+      "meaning": "Tallennettu salasana ei enää vastaa tätä asemaa. Valitse Anna uusi koodi ja kirjoita nykyinen salasana."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Tallennettu palautusavain ei enää toimi",
+      "meaning": "Tallennettu palautusavain ei enää vastaa tätä asemaa. Valitse Anna uusi koodi ja kirjoita nykyinen palautusavain."
+    },
+    "no-password-protector": {
+      "title": "Asemalla ei ole salasanaa",
+      "meaning": "Asemaa ei ole suojattu salasanalla. Käytä palautusavainta."
+    },
+    "no-recovery-protector": {
+      "title": "Asemalla ei ole palautusavainta",
+      "meaning": "Asemalla ei ole palautusavainta. Käytä salasanaa."
+    },
+    "no-supported-protector": {
+      "title": "Vain käynnistysavain, älykortti tai TPM",
+      "meaning": "Tämän aseman voi avata vain käynnistysavaintiedostolla, älykortilla tai TPM:llä, joita Unbit ei voi käyttää. Lisää asemalle salasana tai palautusavain Windows-tietokoneella (Hallitse BitLockeria) ja yritä uudelleen."
+    },
+    "not-bit-locker": {
+      "title": "Tämä ei ole BitLocker-osio",
+      "meaning": "Tämä osio ei ole BitLocker-salattu. Valitse toinen osio tai avaa asema Finderissa, jos se ei ole salattu."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS pystyy jo lukemaan tämän osion",
+      "meaning": "macOS osaa jo lukea tämän osion, joten sitä ei ole salattu BitLockerilla. Avaa se Finderissa tai valitse toinen osio."
+    },
+    "unsupported-version": {
+      "title": "BitLocker-versiota ei tueta",
+      "meaning": "Unbit avaa asemat, jotka on salattu Windows 7:llä tai uudemmalla. Tämä asema käyttää vanhempaa BitLocker-versiota (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Salausmenetelmää ei tueta",
+      "meaning": "Asema käyttää salausmenetelmää, jota Unbit ei tue. Avaa se sen sijaan Windows-tietokoneella."
+    },
+    "damaged-metadata": {
+      "title": "BitLocker-tiedot ovat vioittuneet",
+      "meaning": "Aseman BitLocker-tiedot ovat vioittuneet tai puutteelliset. Tarkista asema Windows-tietokoneella (esimerkiksi chkdsk- tai repair-bde-työkalulla) ja yritä uudelleen."
+    },
+    "conversion-in-progress": {
+      "title": "Windows salaa tai purkaa vielä aseman salausta",
+      "meaning": "Windows salaa tai purkaa aseman salausta parhaillaan. Anna Windowsin valmistua ensin ja yritä sitten uudelleen."
+    },
+    "drive-removed": {
+      "title": "Asema irrotettiin",
+      "meaning": "Asema irrotettiin. Liitä se uudelleen avataksesi sen."
+    },
+    "damaged-key": {
+      "title": "Ei käyttökelpoista taltioavainta",
+      "meaning": "Asemalla ei ole käyttökelpoista taltion avainta, joten sitä ei voi avata. Se voi olla vioittunut tai vain osittain salattu – tarkista se Windows-tietokoneella."
+    },
+    "drive-stopped-responding": {
+      "title": "Asema lakkasi vastaamasta",
+      "meaning": "Asema lakkasi vastaamasta lukemisen aikana. Tarkista kaapeli ja portti, liitä asema uudelleen ja yritä uudelleen."
+    },
+    "read-failed": {
+      "title": "Asemaa ei voitu lukea",
+      "meaning": "Asemalta ei voitu lukea. Tarkista kaapeli ja portti, liitä asema uudelleen ja yritä uudelleen."
+    },
+    "attach-timed-out": {
+      "title": "macOS kesti liian kauan aseman liittämisessä",
+      "meaning": "macOS kesti liian kauan aseman liittämisessä. Odota hetki ja yritä uudelleen. Jos ongelma toistuu, liitä asema uudelleen."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Järjestelmänvalvojan kehote vanheni",
+      "meaning": "Ylläpitäjän kehote vanheni. Yritä uudelleen ja hyväksy Macin salasanalla."
+    },
+    "helper-timed-out": {
+      "title": "Lukuapuri ei vastannut",
+      "meaning": "Lukuapuri ei vastannut. Valitse rataskuvakkeen valikosta Ota lukuoikeus käyttöön ja yritä uudelleen."
+    },
+    "timed-out": {
+      "title": "Toiminto vanheni",
+      "meaning": "Vaihe kesti odotettua kauemmin ja se keskeytettiin, joten asemalle ei tehty muutoksia."
+    },
+    "admin-access-failed": {
+      "title": "Lukuoikeutta asemaan ei saatu",
+      "meaning": "Unbit ei saanut lukuoikeutta asemaan. Yritä uudelleen ja hyväksy Macin salasanalla – tai valitse rataskuvakkeen valikosta Ota lukuoikeus käyttöön."
+    },
+    "no-access": {
+      "title": "macOS esti pääsyn asemaan",
+      "meaning": "macOS esti aseman käytön. Anna ”Unbitille” täysi levyn käyttöoikeus kohdassa Järjestelmäasetukset › Tietosuoja ja turvallisuus › Täysi levyn käyttöoikeus ja yritä uudelleen."
+    },
+    "other": {
+      "title": "Jokin meni pieleen",
+      "meaning": "Unbit kohtasi ongelman, jolle sillä ei ole omaa ilmoitusta. Asema avataan vain luku -tilassa, joten sille ei tehty muutoksia."
+    }
+  }
+}

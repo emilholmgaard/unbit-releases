@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Unbit error help: what each message means",
+    "indexMetaDescription": "Short explanations of the messages Unbit shows when a BitLocker drive won’t open, with what to try for each.",
+    "indexH1": "Help with Unbit messages",
+    "indexSub": "What each message means and what to do about it.",
+    "whatItMeans": "What it means",
+    "whatToTry": "What to try",
+    "stillStuckTitle": "Still stuck?",
+    "stillStuckText": "In Unbit, open the gear menu and choose Copy Error Report, then include it when you ask for help. It contains no passwords, drive names or file paths.",
+    "guidesTitle": "Related guides",
+    "otherTitle": "Other messages",
+    "helpLabel": "Help",
+    "breadcrumb": "Breadcrumb",
+    "metaTitle": "{title} – Unbit help",
+    "readMore": "Read more"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Check the password for typos and make sure Caps Lock is off.",
+        "Use the 48-digit recovery key instead. It’s in the Microsoft account that encrypted the drive, on a printout, or in a .txt file saved when BitLocker was turned on. Every drive has its own.",
+        "If a code you saved in Unbit stopped working, choose Enter New Code and type the current one."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "On a Windows PC, open the drive’s BitLocker settings (right-click the drive and choose Manage BitLocker).",
+        "Add a password and save a recovery key for the drive. Unbit can’t use the TPM, smart cards or startup key files.",
+        "Plug the drive into the Mac again and open it with the new password or recovery key."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Choose another partition in the drive list. A drive can have several partitions, and only one of them may be encrypted.",
+        "If macOS can already read the partition, open it in Finder – it isn’t encrypted with BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Open the drive on a Windows PC and copy its files to another disk.",
+        "To use the drive on a Mac later, turn BitLocker off and encrypt it again with a current Windows version."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Plug the drive into a Windows PC and run chkdsk, or repair-bde with the recovery key.",
+        "If Windows is still encrypting or decrypting the drive, let it finish first.",
+        "Don’t format the drive. Copy what you can to another disk first."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Check the cable and try another USB port, directly on the Mac rather than through a hub.",
+        "Plug the drive in again and choose Refresh Drive List in Unbit.",
+        "If it keeps failing, the drive may be failing. Copy its files on a Windows PC while you still can."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Open System Settings › Privacy & Security › Full Disk Access, turn on Unbit, then return to the app.",
+        "In Unbit’s gear menu choose Set Up Read Access… and approve once with your Mac password.",
+        "If the setting doesn’t seem to apply, quit Unbit and open it again."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Wait a moment and choose Try Again.",
+        "Plug the drive in again, then choose Refresh Drive List in Unbit.",
+        "If it keeps happening, restart the Mac and try once more."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "The code isn’t valid",
+      "meaning": "The recovery key must have 48 digits (8 groups of 6). Check that it's typed correctly."
+    },
+    "wrong-password": {
+      "title": "Wrong password",
+      "meaning": "Wrong password. Check for typos and Caps Lock and try again, or unlock with the recovery key instead."
+    },
+    "wrong-recovery-key": {
+      "title": "Wrong recovery key",
+      "meaning": "Wrong recovery key. Check all 48 digits – every drive has its own recovery key."
+    },
+    "saved-password-stale": {
+      "title": "The saved password no longer works",
+      "meaning": "The saved password no longer matches this drive. Choose Enter New Code and type the current password."
+    },
+    "saved-recovery-key-stale": {
+      "title": "The saved recovery key no longer works",
+      "meaning": "The saved recovery key no longer matches this drive. Choose Enter New Code and type the current recovery key."
+    },
+    "no-password-protector": {
+      "title": "The drive has no password",
+      "meaning": "The drive isn't protected with a password. Use the recovery key instead."
+    },
+    "no-recovery-protector": {
+      "title": "The drive has no recovery key",
+      "meaning": "The drive has no recovery key. Use the password instead."
+    },
+    "no-supported-protector": {
+      "title": "Only a startup key, smart card or TPM",
+      "meaning": "This drive can only be unlocked with a startup key file, a smart card or the TPM, which Unbit can't use. On a Windows PC, add a password or recovery key to the drive (Manage BitLocker), then try again."
+    },
+    "not-bit-locker": {
+      "title": "This isn’t a BitLocker partition",
+      "meaning": "This partition isn't BitLocker-encrypted. Choose another partition, or open the drive in Finder if it isn't encrypted."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS can already read this partition",
+      "meaning": "macOS can already read this partition, so it isn't BitLocker-encrypted. Open it in Finder, or choose another partition."
+    },
+    "unsupported-version": {
+      "title": "Unsupported BitLocker version",
+      "meaning": "Unbit opens drives encrypted with Windows 7 or later. This drive uses an older BitLocker version (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Unsupported encryption method",
+      "meaning": "This drive uses an encryption method Unbit doesn't support. Open it on a Windows PC instead."
+    },
+    "damaged-metadata": {
+      "title": "The BitLocker information is damaged",
+      "meaning": "The BitLocker information on this drive is damaged or incomplete. Check the drive on a Windows PC (for example with chkdsk or repair-bde) and try again."
+    },
+    "conversion-in-progress": {
+      "title": "Windows is still encrypting or decrypting the drive",
+      "meaning": "The drive is being encrypted or decrypted by Windows right now. Let Windows finish first, then try again."
+    },
+    "drive-removed": {
+      "title": "The drive was removed",
+      "meaning": "The drive was removed. Plug it in again to open it."
+    },
+    "damaged-key": {
+      "title": "No usable volume key",
+      "meaning": "This drive has no usable volume key, so it can't be opened. It may be damaged or only partly encrypted – check it on a Windows PC."
+    },
+    "drive-stopped-responding": {
+      "title": "The drive stopped responding",
+      "meaning": "The drive stopped responding while it was being read. Check the cable and port, plug the drive in again, and try again."
+    },
+    "read-failed": {
+      "title": "Couldn’t read from the drive",
+      "meaning": "Couldn't read from the drive. Check the cable and port, plug the drive in again, and try again."
+    },
+    "attach-timed-out": {
+      "title": "macOS took too long to attach the drive",
+      "meaning": "macOS took too long to attach the drive. Wait a moment and try again. If it keeps happening, plug the drive in again."
+    },
+    "admin-prompt-timed-out": {
+      "title": "The administrator prompt timed out",
+      "meaning": "The administrator prompt timed out. Try again and approve with your Mac password."
+    },
+    "helper-timed-out": {
+      "title": "The read helper didn’t respond",
+      "meaning": "The read helper didn't respond. Choose Set Up Read Access in the gear menu and try again."
+    },
+    "timed-out": {
+      "title": "An operation timed out",
+      "meaning": "A step took longer than expected and was stopped, so nothing was changed on the drive."
+    },
+    "admin-access-failed": {
+      "title": "Couldn’t get read access to the drive",
+      "meaning": "Unbit couldn't get read access to the drive. Try again and approve with your Mac password, or choose Set Up Read Access in the gear menu."
+    },
+    "no-access": {
+      "title": "macOS denied access to the drive",
+      "meaning": "macOS denied access to the drive. Give “Unbit” Full Disk Access in System Settings › Privacy & Security › Full Disk Access, and try again."
+    },
+    "other": {
+      "title": "Something went wrong",
+      "meaning": "Unbit hit a problem it has no specific message for. The drive is opened read-only, so nothing on it was changed."
+    }
+  }
+}

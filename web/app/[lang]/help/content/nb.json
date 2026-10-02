@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Hjelp med Unbit-feil: hva hver melding betyr",
+    "indexMetaDescription": "Korte forklaringer av meldingene Unbit viser når en BitLocker-stasjon ikke vil åpne, og hva du kan prøve.",
+    "indexH1": "Hjelp med meldinger i Unbit",
+    "indexSub": "Hva hver melding betyr og hva du kan gjøre.",
+    "whatItMeans": "Hva det betyr",
+    "whatToTry": "Dette kan du prøve",
+    "stillStuckTitle": "Kommer du fortsatt ikke videre?",
+    "stillStuckText": "Åpne tannhjulmenyen i Unbit og velg Kopier feilrapport, og ta den med når du ber om hjelp. Den inneholder ingen passord, stasjonsnavn eller filstier.",
+    "guidesTitle": "Relaterte guider",
+    "otherTitle": "Andre meldinger",
+    "helpLabel": "Hjelp",
+    "breadcrumb": "Brødsmulesti",
+    "metaTitle": "{title} – Hjelp til Unbit",
+    "readMore": "Les mer"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Sjekk passordet for skrivefeil, og pass på at Caps Lock er av.",
+        "Bruk heller gjenopprettingsnøkkelen med 48 sifre. Den ligger i Microsoft-kontoen som krypterte stasjonen, på en utskrift eller i en .txt-fil som ble lagret da BitLocker ble slått på. Hver stasjon har sin egen.",
+        "Hvis en kode du har lagret i Unbit ikke virker lenger, velg Skriv inn ny kode og skriv den gjeldende."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Åpne BitLocker-innstillingene for stasjonen på en Windows-PC (høyreklikk stasjonen og velg Administrer BitLocker).",
+        "Legg til et passord og lagre en gjenopprettingsnøkkel for stasjonen. Unbit kan ikke bruke TPM, smartkort eller oppstartsnøkkelfiler.",
+        "Koble stasjonen til Mac-en igjen, og åpne den med det nye passordet eller gjenopprettingsnøkkelen."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Velg en annen partisjon i stasjonslisten. En stasjon kan ha flere partisjoner, og kanskje bare én av dem er kryptert.",
+        "Hvis macOS allerede kan lese partisjonen, åpne den i Finder – den er ikke kryptert med BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Åpne stasjonen på en Windows-PC og kopier filene til en annen disk.",
+        "Hvis du senere vil bruke stasjonen på en Mac, slå av BitLocker og krypter den på nytt med en nyere Windows-versjon."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Koble stasjonen til en Windows-PC og kjør chkdsk, eller repair-bde med gjenopprettingsnøkkelen.",
+        "Hvis Windows fortsatt krypterer eller dekrypterer stasjonen, la det bli ferdig først.",
+        "Ikke formater stasjonen. Kopier først det du kan til en annen disk."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Sjekk kabelen og prøv en annen USB-port – direkte på Mac-en i stedet for via en hub.",
+        "Koble til stasjonen igjen og velg Oppdater stasjonslisten i Unbit.",
+        "Hvis det fortsetter å feile, kan stasjonen være i ferd med å gå i stykker. Kopier filene på en Windows-PC så lenge du kan."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Åpne Systeminnstillinger › Personvern og sikkerhet › Full disktilgang, slå på Unbit og gå tilbake til appen.",
+        "Velg Konfigurer lesetilgang… i tannhjulmenyen i Unbit, og godkjenn én gang med Mac-passordet.",
+        "Hvis innstillingen ikke ser ut til å virke, avslutt Unbit og åpne det på nytt."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Vent litt og velg Prøv igjen.",
+        "Koble til stasjonen igjen, og velg deretter Oppdater stasjonslisten i Unbit.",
+        "Hvis det fortsetter, start Mac-en på nytt og prøv en gang til."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Koden er ikke gyldig",
+      "meaning": "Gjenopprettingsnøkkelen må ha 48 sifre (8 grupper à 6). Kontroller at den er skrevet riktig."
+    },
+    "wrong-password": {
+      "title": "Feil passord",
+      "meaning": "Feil passord. Se etter skrivefeil og Caps Lock, og prøv igjen – eller lås opp med gjenopprettingsnøkkelen i stedet."
+    },
+    "wrong-recovery-key": {
+      "title": "Feil gjenopprettingsnøkkel",
+      "meaning": "Feil gjenopprettingsnøkkel. Kontroller alle 48 sifrene – hver stasjon har sin egen gjenopprettingsnøkkel."
+    },
+    "saved-password-stale": {
+      "title": "Det lagrede passordet virker ikke lenger",
+      "meaning": "Det lagrede passordet passer ikke lenger til denne stasjonen. Velg Skriv inn ny kode, og skriv det gjeldende passordet."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Den lagrede gjenopprettingsnøkkelen virker ikke lenger",
+      "meaning": "Den lagrede gjenopprettingsnøkkelen passer ikke lenger til denne stasjonen. Velg Skriv inn ny kode, og skriv den gjeldende nøkkelen."
+    },
+    "no-password-protector": {
+      "title": "Stasjonen har ikke passord",
+      "meaning": "Stasjonen er ikke beskyttet med passord. Bruk gjenopprettingsnøkkelen i stedet."
+    },
+    "no-recovery-protector": {
+      "title": "Stasjonen har ingen gjenopprettingsnøkkel",
+      "meaning": "Stasjonen har ingen gjenopprettingsnøkkel. Bruk passordet i stedet."
+    },
+    "no-supported-protector": {
+      "title": "Bare oppstartsnøkkel, smartkort eller TPM",
+      "meaning": "Denne stasjonen kan bare låses opp med en oppstartsnøkkelfil, et smartkort eller TPM, som Unbit ikke kan bruke. Legg til et passord eller en gjenopprettingsnøkkel på stasjonen på en Windows-PC (Administrer BitLocker), og prøv igjen."
+    },
+    "not-bit-locker": {
+      "title": "Dette er ikke en BitLocker-partisjon",
+      "meaning": "Denne partisjonen er ikke BitLocker-kryptert. Velg en annen partisjon, eller åpne stasjonen i Finder hvis den ikke er kryptert."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS kan allerede lese partisjonen",
+      "meaning": "macOS kan allerede lese denne partisjonen, så den er ikke kryptert med BitLocker. Åpne den i Finder, eller velg en annen partisjon."
+    },
+    "unsupported-version": {
+      "title": "BitLocker-versjonen støttes ikke",
+      "meaning": "Unbit åpner stasjoner som er kryptert med Windows 7 eller nyere. Denne stasjonen bruker en eldre BitLocker-versjon (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Krypteringsmetoden støttes ikke",
+      "meaning": "Denne stasjonen bruker en krypteringsmetode som Unbit ikke støtter. Åpne den på en Windows-PC i stedet."
+    },
+    "damaged-metadata": {
+      "title": "BitLocker-informasjonen er skadet",
+      "meaning": "BitLocker-informasjonen på denne stasjonen er skadet eller ufullstendig. Kontroller stasjonen på en Windows-PC (for eksempel med chkdsk eller repair-bde), og prøv igjen."
+    },
+    "conversion-in-progress": {
+      "title": "Windows krypterer eller dekrypterer fortsatt stasjonen",
+      "meaning": "Windows krypterer eller dekrypterer stasjonen akkurat nå. La Windows bli ferdig først, og prøv så igjen."
+    },
+    "drive-removed": {
+      "title": "Stasjonen ble fjernet",
+      "meaning": "Stasjonen ble fjernet. Koble den til igjen for å åpne den."
+    },
+    "damaged-key": {
+      "title": "Ingen brukbar volumnøkkel",
+      "meaning": "Denne stasjonen har ingen brukbar volumnøkkel og kan derfor ikke åpnes. Den kan være skadet eller bare delvis kryptert – sjekk den på en Windows-PC."
+    },
+    "drive-stopped-responding": {
+      "title": "Stasjonen sluttet å svare",
+      "meaning": "Stasjonen sluttet å svare under lesingen. Sjekk kabelen og porten, koble til stasjonen på nytt og prøv igjen."
+    },
+    "read-failed": {
+      "title": "Kunne ikke lese fra stasjonen",
+      "meaning": "Kunne ikke lese fra stasjonen. Sjekk kabelen og porten, koble til stasjonen på nytt og prøv igjen."
+    },
+    "attach-timed-out": {
+      "title": "macOS brukte for lang tid på å koble til stasjonen",
+      "meaning": "macOS brukte for lang tid på å koble til stasjonen. Vent et øyeblikk og prøv igjen. Skjer det igjen, kobler du stasjonen til på nytt."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Administratorforespørselen gikk ut på tid",
+      "meaning": "Administratorforespørselen ble tidsavbrutt. Prøv igjen og godkjenn med Mac-passordet ditt."
+    },
+    "helper-timed-out": {
+      "title": "Lesehjelperen svarte ikke",
+      "meaning": "Lesehjelperen svarte ikke. Velg Sett opp lesetilgang i tannhjulmenyen og prøv igjen."
+    },
+    "timed-out": {
+      "title": "En handling gikk ut på tid",
+      "meaning": "Et trinn tok lengre tid enn forventet og ble stoppet, så ingenting er endret på stasjonen."
+    },
+    "admin-access-failed": {
+      "title": "Fikk ikke lesetilgang til stasjonen",
+      "meaning": "Unbit fikk ikke lesetilgang til stasjonen. Prøv igjen og godkjenn med Mac-passordet ditt – eller velg Sett opp lesetilgang i tannhjulmenyen."
+    },
+    "no-access": {
+      "title": "macOS nektet tilgang til stasjonen",
+      "meaning": "macOS nektet tilgang til stasjonen. Gi «Unbit» Full disktilgang i Systeminnstillinger › Personvern og sikkerhet › Full disktilgang, og prøv igjen."
+    },
+    "other": {
+      "title": "Noe gikk galt",
+      "meaning": "Unbit støtte på et problem det ikke har noen egen melding for. Stasjonen åpnes skrivebeskyttet, så ingenting er endret på den."
+    }
+  }
+}

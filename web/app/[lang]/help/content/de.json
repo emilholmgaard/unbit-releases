@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Unbit-Fehlerhilfe: Was jede Meldung bedeutet",
+    "indexMetaDescription": "Kurze Erklärungen zu den Meldungen, die Unbit zeigt, wenn sich ein BitLocker-Laufwerk nicht öffnen lässt – und was du versuchen kannst.",
+    "indexH1": "Hilfe zu Meldungen in Unbit",
+    "indexSub": "Was jede Meldung bedeutet und was du dagegen tun kannst.",
+    "whatItMeans": "Was das bedeutet",
+    "whatToTry": "Das kannst du versuchen",
+    "stillStuckTitle": "Es klappt immer noch nicht?",
+    "stillStuckText": "Öffne in Unbit das Zahnradmenü, wähle „Fehlerbericht kopieren“ und füge ihn deiner Hilfeanfrage bei. Er enthält keine Passwörter, Laufwerksnamen oder Dateipfade.",
+    "guidesTitle": "Passende Anleitungen",
+    "otherTitle": "Weitere Meldungen",
+    "helpLabel": "Hilfe",
+    "breadcrumb": "Brotkrumen",
+    "metaTitle": "{title} – Unbit-Hilfe",
+    "readMore": "Mehr lesen"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Prüfe das Passwort auf Tippfehler und stelle sicher, dass die Feststelltaste aus ist.",
+        "Verwende stattdessen den 48-stelligen Wiederherstellungsschlüssel. Er liegt im Microsoft-Konto, mit dem das Laufwerk verschlüsselt wurde, auf einem Ausdruck oder in einer .txt-Datei, die beim Einschalten von BitLocker gespeichert wurde. Jedes Laufwerk hat seinen eigenen.",
+        "Wenn ein in Unbit gespeicherter Code nicht mehr funktioniert, wähle „Neuen Code eingeben“ und tippe den aktuellen ein."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Öffne an einem Windows-PC die BitLocker-Einstellungen des Laufwerks (Rechtsklick auf das Laufwerk, „BitLocker verwalten“).",
+        "Füge dem Laufwerk ein Passwort hinzu und speichere einen Wiederherstellungsschlüssel. Unbit kann TPM, Smartcards und Startschlüsseldateien nicht verwenden.",
+        "Schließe das Laufwerk wieder am Mac an und öffne es mit dem neuen Passwort oder Wiederherstellungsschlüssel."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Wähle in der Laufwerksliste eine andere Partition. Ein Laufwerk kann mehrere Partitionen haben, von denen vielleicht nur eine verschlüsselt ist.",
+        "Wenn macOS die Partition bereits lesen kann, öffne sie im Finder – sie ist nicht mit BitLocker verschlüsselt."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Öffne das Laufwerk an einem Windows-PC und kopiere die Dateien auf einen anderen Datenträger.",
+        "Um das Laufwerk später am Mac zu nutzen, schalte BitLocker aus und verschlüssele es mit einer aktuellen Windows-Version erneut."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Schließe das Laufwerk an einem Windows-PC an und führe chkdsk oder repair-bde mit dem Wiederherstellungsschlüssel aus.",
+        "Wenn Windows das Laufwerk noch ver- oder entschlüsselt, lass den Vorgang zuerst abschließen.",
+        "Formatiere das Laufwerk nicht. Kopiere zuerst, was möglich ist, auf einen anderen Datenträger."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Prüfe das Kabel und probiere einen anderen USB-Anschluss – direkt am Mac statt über einen Hub.",
+        "Stecke das Laufwerk erneut an und wähle in Unbit „Laufwerksliste aktualisieren“.",
+        "Wenn es immer wieder fehlschlägt, könnte das Laufwerk defekt sein. Kopiere die Dateien an einem Windows-PC, solange es noch geht."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Öffne Systemeinstellungen › Datenschutz & Sicherheit › Festplattenvollzugriff, aktiviere Unbit und kehre zur App zurück.",
+        "Wähle im Zahnradmenü von Unbit „Lesezugriff einrichten …“ und bestätige einmal mit deinem Mac-Passwort.",
+        "Wenn die Einstellung nicht zu wirken scheint, beende Unbit und öffne es erneut."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Warte einen Moment und wähle „Erneut versuchen“.",
+        "Stecke das Laufwerk erneut an und wähle dann in Unbit „Laufwerksliste aktualisieren“.",
+        "Wenn es weiter passiert, starte den Mac neu und versuche es noch einmal."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Der Code ist ungültig",
+      "meaning": "Der Wiederherstellungsschlüssel muss 48 Ziffern haben (8 Gruppen à 6). Prüfe, ob er richtig eingegeben ist."
+    },
+    "wrong-password": {
+      "title": "Falsches Passwort",
+      "meaning": "Falsches Passwort. Prüfe auf Tippfehler und die Feststelltaste und versuche es erneut – oder entsperre stattdessen mit dem Wiederherstellungsschlüssel."
+    },
+    "wrong-recovery-key": {
+      "title": "Falscher Wiederherstellungsschlüssel",
+      "meaning": "Falscher Wiederherstellungsschlüssel. Prüfe alle 48 Ziffern – jedes Laufwerk hat seinen eigenen Wiederherstellungsschlüssel."
+    },
+    "saved-password-stale": {
+      "title": "Das gespeicherte Passwort funktioniert nicht mehr",
+      "meaning": "Das gespeicherte Passwort passt nicht mehr zu diesem Laufwerk. Wähle „Neuen Code eingeben“ und gib das aktuelle Passwort ein."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Der gespeicherte Wiederherstellungsschlüssel funktioniert nicht mehr",
+      "meaning": "Der gespeicherte Wiederherstellungsschlüssel passt nicht mehr zu diesem Laufwerk. Wähle „Neuen Code eingeben“ und gib den aktuellen Schlüssel ein."
+    },
+    "no-password-protector": {
+      "title": "Das Laufwerk hat kein Passwort",
+      "meaning": "Das Laufwerk ist nicht mit einem Passwort geschützt. Verwende stattdessen den Wiederherstellungsschlüssel."
+    },
+    "no-recovery-protector": {
+      "title": "Das Laufwerk hat keinen Wiederherstellungsschlüssel",
+      "meaning": "Das Laufwerk hat keinen Wiederherstellungsschlüssel. Verwende stattdessen das Passwort."
+    },
+    "no-supported-protector": {
+      "title": "Nur Startschlüssel, Smartcard oder TPM",
+      "meaning": "Dieses Laufwerk lässt sich nur mit einer Startschlüsseldatei, einer Smartcard oder dem TPM entsperren, was Unbit nicht verwenden kann. Füge auf einem Windows-PC ein Kennwort oder einen Wiederherstellungsschlüssel hinzu (BitLocker verwalten) und versuche es erneut."
+    },
+    "not-bit-locker": {
+      "title": "Das ist keine BitLocker-Partition",
+      "meaning": "Diese Partition ist nicht mit BitLocker verschlüsselt. Wähle eine andere Partition oder öffne das Laufwerk im Finder, falls es nicht verschlüsselt ist."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS kann diese Partition bereits lesen",
+      "meaning": "macOS kann diese Partition bereits lesen, sie ist also nicht mit BitLocker verschlüsselt. Öffne sie im Finder oder wähle eine andere Partition."
+    },
+    "unsupported-version": {
+      "title": "Nicht unterstützte BitLocker-Version",
+      "meaning": "Unbit öffnet Laufwerke, die mit Windows 7 oder neuer verschlüsselt wurden. Dieses Laufwerk nutzt eine ältere BitLocker-Version (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Nicht unterstütztes Verschlüsselungsverfahren",
+      "meaning": "Dieses Laufwerk verwendet eine Verschlüsselungsmethode, die Unbit nicht unterstützt. Öffne es stattdessen auf einem Windows-PC."
+    },
+    "damaged-metadata": {
+      "title": "Die BitLocker-Informationen sind beschädigt",
+      "meaning": "Die BitLocker-Informationen auf diesem Laufwerk sind beschädigt oder unvollständig. Prüfe das Laufwerk auf einem Windows-PC (z. B. mit chkdsk oder repair-bde) und versuche es erneut."
+    },
+    "conversion-in-progress": {
+      "title": "Windows ver- oder entschlüsselt das Laufwerk noch",
+      "meaning": "Windows verschlüsselt oder entschlüsselt das Laufwerk gerade. Lass Windows zuerst fertig werden und versuche es dann erneut."
+    },
+    "drive-removed": {
+      "title": "Das Laufwerk wurde entfernt",
+      "meaning": "Das Laufwerk wurde entfernt. Schließe es erneut an, um es zu öffnen."
+    },
+    "damaged-key": {
+      "title": "Kein verwendbarer Volumeschlüssel",
+      "meaning": "Dieses Laufwerk hat keinen verwendbaren Volume-Schlüssel und lässt sich daher nicht öffnen. Es ist möglicherweise beschädigt oder nur teilweise verschlüsselt – prüfe es auf einem Windows-PC."
+    },
+    "drive-stopped-responding": {
+      "title": "Das Laufwerk antwortet nicht mehr",
+      "meaning": "Das Laufwerk hat beim Lesen nicht mehr reagiert. Prüfe Kabel und Anschluss, schließe das Laufwerk erneut an und versuche es noch einmal."
+    },
+    "read-failed": {
+      "title": "Vom Laufwerk konnte nicht gelesen werden",
+      "meaning": "Vom Laufwerk konnte nicht gelesen werden. Prüfe Kabel und Anschluss, schließe das Laufwerk erneut an und versuche es noch einmal."
+    },
+    "attach-timed-out": {
+      "title": "macOS hat zu lange gebraucht, das Laufwerk einzubinden",
+      "meaning": "macOS hat zu lange gebraucht, um das Laufwerk einzubinden. Warte einen Moment und versuche es erneut. Falls es wieder passiert, schließe das Laufwerk neu an."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Die Administratorabfrage ist abgelaufen",
+      "meaning": "Die Administratorabfrage ist abgelaufen. Versuche es erneut und bestätige mit deinem Mac-Passwort."
+    },
+    "helper-timed-out": {
+      "title": "Der Lesehelfer hat nicht geantwortet",
+      "meaning": "Der Lese-Helfer hat nicht geantwortet. Wähle im Zahnradmenü „Lesezugriff einrichten“ und versuche es erneut."
+    },
+    "timed-out": {
+      "title": "Ein Vorgang ist abgelaufen",
+      "meaning": "Ein Schritt hat länger als erwartet gedauert und wurde abgebrochen. Auf dem Laufwerk wurde nichts verändert."
+    },
+    "admin-access-failed": {
+      "title": "Lesezugriff auf das Laufwerk fehlgeschlagen",
+      "meaning": "Unbit konnte keinen Lesezugriff auf das Laufwerk erhalten. Versuche es erneut und bestätige mit deinem Mac-Passwort – oder wähle im Zahnradmenü „Lesezugriff einrichten“."
+    },
+    "no-access": {
+      "title": "macOS hat den Zugriff auf das Laufwerk verweigert",
+      "meaning": "macOS hat den Zugriff auf das Laufwerk verweigert. Erlaube „Unbit“ den Festplattenvollzugriff unter Systemeinstellungen › Datenschutz & Sicherheit › Festplattenvollzugriff und versuche es erneut."
+    },
+    "other": {
+      "title": "Etwas ist schiefgelaufen",
+      "meaning": "Unbit ist auf ein Problem gestoßen, für das es keine eigene Meldung gibt. Das Laufwerk wird schreibgeschützt geöffnet, es wurde also nichts verändert."
+    }
+  }
+}

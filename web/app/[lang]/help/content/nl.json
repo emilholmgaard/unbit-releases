@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Hulp bij Unbit-fouten: wat elke melding betekent",
+    "indexMetaDescription": "Korte uitleg bij de meldingen die Unbit toont als een BitLocker-schijf niet opent, en wat je kunt proberen.",
+    "indexH1": "Hulp bij meldingen in Unbit",
+    "indexSub": "Wat elke melding betekent en wat je eraan kunt doen.",
+    "whatItMeans": "Wat het betekent",
+    "whatToTry": "Wat je kunt proberen",
+    "stillStuckTitle": "Kom je er nog niet uit?",
+    "stillStuckText": "Open in Unbit het tandwielmenu, kies Foutrapport kopiëren en voeg het toe als je hulp vraagt. Het bevat geen wachtwoorden, schijfnamen of bestandspaden.",
+    "guidesTitle": "Gerelateerde gidsen",
+    "otherTitle": "Andere meldingen",
+    "helpLabel": "Hulp",
+    "breadcrumb": "Kruimelpad",
+    "metaTitle": "{title} – Unbit-hulp",
+    "readMore": "Lees meer"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Controleer het wachtwoord op typefouten en zorg dat Caps Lock uit staat.",
+        "Gebruik in plaats daarvan de herstelsleutel van 48 cijfers. Die staat in het Microsoft-account waarmee de schijf is versleuteld, op een afdruk of in een .txt-bestand dat is opgeslagen toen BitLocker werd ingeschakeld. Elke schijf heeft een eigen sleutel.",
+        "Als een in Unbit bewaarde code niet meer werkt, kies je Nieuwe code invoeren en typ je de huidige."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Open op een Windows-pc de BitLocker-instellingen van de schijf (rechtsklik op de schijf en kies BitLocker beheren).",
+        "Voeg een wachtwoord toe en bewaar een herstelsleutel voor de schijf. Unbit kan de TPM, smartcards en opstartsleutelbestanden niet gebruiken.",
+        "Sluit de schijf opnieuw aan op de Mac en open hem met het nieuwe wachtwoord of de herstelsleutel."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Kies een andere partitie in de lijst met schijven. Een schijf kan meerdere partities hebben en misschien is er maar één versleuteld.",
+        "Als macOS de partitie al kan lezen, open je hem in de Finder – hij is niet met BitLocker versleuteld."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Open de schijf op een Windows-pc en kopieer de bestanden naar een andere schijf.",
+        "Om de schijf later op een Mac te gebruiken, schakel je BitLocker uit en versleutel je hem opnieuw met een actuele Windows-versie."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Sluit de schijf aan op een Windows-pc en voer chkdsk uit, of repair-bde met de herstelsleutel.",
+        "Als Windows de schijf nog aan het versleutelen of ontsleutelen is, laat dat dan eerst afronden.",
+        "Formatteer de schijf niet. Kopieer eerst wat je kunt naar een andere schijf."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Controleer de kabel en probeer een andere USB-poort, rechtstreeks op de Mac en niet via een hub.",
+        "Sluit de schijf opnieuw aan en kies in Unbit Stationslijst vernieuwen.",
+        "Als het blijft mislukken, gaat de schijf misschien kapot. Kopieer de bestanden op een Windows-pc zolang het nog kan."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Open Systeeminstellingen › Privacy en beveiliging › Volledige schijftoegang, schakel Unbit in en ga terug naar de app.",
+        "Kies in het tandwielmenu van Unbit Stel leestoegang in… en keur het één keer goed met je Mac-wachtwoord.",
+        "Als de instelling niet lijkt te werken, sluit je Unbit af en open je het opnieuw."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Wacht even en kies Probeer opnieuw.",
+        "Sluit de schijf opnieuw aan en kies dan in Unbit Stationslijst vernieuwen.",
+        "Als het blijft gebeuren, start je de Mac opnieuw op en probeer je het nog eens."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "De code is ongeldig",
+      "meaning": "De herstelsleutel moet 48 cijfers hebben (8 groepen van 6). Controleer of hij goed is ingevoerd."
+    },
+    "wrong-password": {
+      "title": "Verkeerd wachtwoord",
+      "meaning": "Onjuist wachtwoord. Controleer op typefouten en Caps Lock en probeer het opnieuw, of ontgrendel met de herstelsleutel."
+    },
+    "wrong-recovery-key": {
+      "title": "Verkeerde herstelsleutel",
+      "meaning": "Onjuiste herstelsleutel. Controleer alle 48 cijfers – elke schijf heeft zijn eigen herstelsleutel."
+    },
+    "saved-password-stale": {
+      "title": "Het opgeslagen wachtwoord werkt niet meer",
+      "meaning": "Het opgeslagen wachtwoord komt niet meer overeen met deze schijf. Kies Nieuwe code invoeren en typ het huidige wachtwoord."
+    },
+    "saved-recovery-key-stale": {
+      "title": "De opgeslagen herstelsleutel werkt niet meer",
+      "meaning": "De opgeslagen herstelsleutel komt niet meer overeen met deze schijf. Kies Nieuwe code invoeren en typ de huidige herstelsleutel."
+    },
+    "no-password-protector": {
+      "title": "De schijf heeft geen wachtwoord",
+      "meaning": "De schijf is niet beveiligd met een wachtwoord. Gebruik in plaats daarvan de herstelsleutel."
+    },
+    "no-recovery-protector": {
+      "title": "De schijf heeft geen herstelsleutel",
+      "meaning": "De schijf heeft geen herstelsleutel. Gebruik in plaats daarvan het wachtwoord."
+    },
+    "no-supported-protector": {
+      "title": "Alleen opstartsleutel, smartcard of TPM",
+      "meaning": "Deze schijf kan alleen worden ontgrendeld met een opstartsleutelbestand, een smartcard of de TPM, wat Unbit niet kan gebruiken. Voeg op een Windows-pc een wachtwoord of herstelsleutel aan de schijf toe (BitLocker beheren) en probeer het opnieuw."
+    },
+    "not-bit-locker": {
+      "title": "Dit is geen BitLocker-partitie",
+      "meaning": "Deze partitie is niet met BitLocker versleuteld. Kies een andere partitie, of open de schijf in de Finder als hij niet versleuteld is."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS kan deze partitie al lezen",
+      "meaning": "macOS kan deze partitie al lezen, dus ze is niet met BitLocker versleuteld. Open ze in de Finder of kies een andere partitie."
+    },
+    "unsupported-version": {
+      "title": "Niet-ondersteunde BitLocker-versie",
+      "meaning": "Unbit opent schijven die zijn versleuteld met Windows 7 of nieuwer. Deze schijf gebruikt een oudere BitLocker-versie (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Niet-ondersteunde versleutelingsmethode",
+      "meaning": "Deze schijf gebruikt een versleutelingsmethode die Unbit niet ondersteunt. Open hem in plaats daarvan op een Windows-pc."
+    },
+    "damaged-metadata": {
+      "title": "De BitLocker-gegevens zijn beschadigd",
+      "meaning": "De BitLocker-gegevens op deze schijf zijn beschadigd of onvolledig. Controleer de schijf op een Windows-pc (bijvoorbeeld met chkdsk of repair-bde) en probeer het opnieuw."
+    },
+    "conversion-in-progress": {
+      "title": "Windows is de schijf nog aan het versleutelen of ontsleutelen",
+      "meaning": "Windows is de schijf op dit moment aan het versleutelen of ontsleutelen. Laat Windows eerst klaar worden en probeer het dan opnieuw."
+    },
+    "drive-removed": {
+      "title": "De schijf is verwijderd",
+      "meaning": "De schijf is verwijderd. Sluit hem opnieuw aan om hem te openen."
+    },
+    "damaged-key": {
+      "title": "Geen bruikbare volumesleutel",
+      "meaning": "Deze schijf heeft geen bruikbare volumesleutel en kan daarom niet worden geopend. Hij is mogelijk beschadigd of slechts gedeeltelijk versleuteld – controleer hem op een Windows-pc."
+    },
+    "drive-stopped-responding": {
+      "title": "De schijf reageert niet meer",
+      "meaning": "De schijf reageerde niet meer tijdens het lezen. Controleer de kabel en de poort, sluit de schijf opnieuw aan en probeer het opnieuw."
+    },
+    "read-failed": {
+      "title": "Kon niet van de schijf lezen",
+      "meaning": "Kan niet van de schijf lezen. Controleer de kabel en de poort, sluit de schijf opnieuw aan en probeer het opnieuw."
+    },
+    "attach-timed-out": {
+      "title": "macOS deed er te lang over om de schijf te koppelen",
+      "meaning": "macOS had te lang nodig om de schijf te koppelen. Wacht even en probeer het opnieuw. Gebeurt het weer, sluit de schijf dan opnieuw aan."
+    },
+    "admin-prompt-timed-out": {
+      "title": "De beheerdersvraag is verlopen",
+      "meaning": "De beheerdersvraag is verlopen. Probeer het opnieuw en keur goed met het wachtwoord van je Mac."
+    },
+    "helper-timed-out": {
+      "title": "De leeshulp reageerde niet",
+      "meaning": "De leeshulp reageerde niet. Kies Leestoegang instellen in het tandwielmenu en probeer het opnieuw."
+    },
+    "timed-out": {
+      "title": "Een bewerking is verlopen",
+      "meaning": "Een stap duurde langer dan verwacht en is gestopt, dus er is niets op de schijf gewijzigd."
+    },
+    "admin-access-failed": {
+      "title": "Kreeg geen leestoegang tot de schijf",
+      "meaning": "Unbit kreeg geen leestoegang tot de schijf. Probeer het opnieuw en keur goed met het wachtwoord van je Mac, of kies Leestoegang instellen in het tandwielmenu."
+    },
+    "no-access": {
+      "title": "macOS weigerde toegang tot de schijf",
+      "meaning": "macOS heeft toegang tot de schijf geweigerd. Geef ‘Unbit’ Volledige schijftoegang in Systeeminstellingen › Privacy en beveiliging › Volledige schijftoegang en probeer het opnieuw."
+    },
+    "other": {
+      "title": "Er ging iets mis",
+      "meaning": "Unbit kwam een probleem tegen waarvoor het geen aparte melding heeft. De schijf wordt alleen-lezen geopend, dus er is niets gewijzigd."
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Hjälp med Unbit-fel: vad varje meddelande betyder",
+    "indexMetaDescription": "Korta förklaringar av meddelandena Unbit visar när en BitLocker-enhet inte öppnas, och vad du kan prova.",
+    "indexH1": "Hjälp med meddelanden i Unbit",
+    "indexSub": "Vad varje meddelande betyder och vad du kan göra.",
+    "whatItMeans": "Vad det betyder",
+    "whatToTry": "Det här kan du prova",
+    "stillStuckTitle": "Kommer du inte vidare?",
+    "stillStuckText": "Öppna kugghjulsmenyn i Unbit, välj Kopiera felrapport och skicka med den när du ber om hjälp. Den innehåller inga lösenord, enhetsnamn eller filsökvägar.",
+    "guidesTitle": "Relaterade guider",
+    "otherTitle": "Andra meddelanden",
+    "helpLabel": "Hjälp",
+    "breadcrumb": "Sökväg",
+    "metaTitle": "{title} – Unbit-hjälp",
+    "readMore": "Läs mer"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Kontrollera lösenordet för skrivfel och se till att Caps Lock är av.",
+        "Använd i stället återställningsnyckeln med 48 siffror. Den finns i Microsoft-kontot som krypterade enheten, på en utskrift eller i en .txt-fil som sparades när BitLocker slogs på. Varje enhet har sin egen.",
+        "Om en kod du sparat i Unbit slutat fungera väljer du Ange ny kod och skriver den nuvarande."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Öppna enhetens BitLocker-inställningar på en Windows-dator (högerklicka på enheten och välj Hantera BitLocker).",
+        "Lägg till ett lösenord och spara en återställningsnyckel för enheten. Unbit kan inte använda TPM, smartkort eller startnyckelfiler.",
+        "Anslut enheten till Macen igen och öppna den med det nya lösenordet eller återställningsnyckeln."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Välj en annan partition i enhetslistan. En enhet kan ha flera partitioner och kanske bara en av dem är krypterad.",
+        "Om macOS redan kan läsa partitionen, öppna den i Finder – den är inte krypterad med BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Öppna enheten på en Windows-dator och kopiera filerna till en annan disk.",
+        "För att kunna använda enheten på en Mac senare, stäng av BitLocker och kryptera den på nytt med en aktuell Windows-version."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Anslut enheten till en Windows-dator och kör chkdsk, eller repair-bde med återställningsnyckeln.",
+        "Om Windows fortfarande krypterar eller avkrypterar enheten, låt det bli klart först.",
+        "Formatera inte enheten. Kopiera först det du kan till en annan disk."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Kontrollera kabeln och prova en annan USB-port – direkt på Macen i stället för via en hubb.",
+        "Anslut enheten igen och välj Uppdatera enhetslistan i Unbit.",
+        "Om det fortsätter att misslyckas kan enheten vara på väg att gå sönder. Kopiera filerna på en Windows-dator medan du kan."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Öppna Systeminställningar › Integritet och säkerhet › Full skivåtkomst, slå på Unbit och gå tillbaka till appen.",
+        "Välj Ställ in läsåtkomst… i Unbits kugghjulsmeny och godkänn en gång med Mac-lösenordet.",
+        "Om inställningen inte verkar slå igenom, avsluta Unbit och öppna det igen."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Vänta en stund och välj Försök igen.",
+        "Anslut enheten igen och välj sedan Uppdatera enhetslistan i Unbit.",
+        "Om det fortsätter, starta om Macen och försök en gång till."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Koden är ogiltig",
+      "meaning": "Återställningsnyckeln måste ha 48 siffror (8 grupper om 6). Kontrollera att den är rätt inskriven."
+    },
+    "wrong-password": {
+      "title": "Fel lösenord",
+      "meaning": "Fel lösenord. Kontrollera stavfel och Caps Lock och försök igen – eller lås upp med återställningsnyckeln i stället."
+    },
+    "wrong-recovery-key": {
+      "title": "Fel återställningsnyckel",
+      "meaning": "Fel återställningsnyckel. Kontrollera alla 48 siffror – varje enhet har sin egen återställningsnyckel."
+    },
+    "saved-password-stale": {
+      "title": "Det sparade lösenordet fungerar inte längre",
+      "meaning": "Det sparade lösenordet matchar inte längre den här enheten. Välj Ange ny kod och skriv det aktuella lösenordet."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Den sparade återställningsnyckeln fungerar inte längre",
+      "meaning": "Den sparade återställningsnyckeln matchar inte längre den här enheten. Välj Ange ny kod och skriv den aktuella nyckeln."
+    },
+    "no-password-protector": {
+      "title": "Enheten har inget lösenord",
+      "meaning": "Enheten är inte skyddad med ett lösenord. Använd återställningsnyckeln i stället."
+    },
+    "no-recovery-protector": {
+      "title": "Enheten har ingen återställningsnyckel",
+      "meaning": "Enheten har ingen återställningsnyckel. Använd lösenordet i stället."
+    },
+    "no-supported-protector": {
+      "title": "Endast startnyckel, smartkort eller TPM",
+      "meaning": "Den här enheten kan bara låsas upp med en startnyckelfil, ett smartkort eller TPM, vilket Unbit inte kan använda. Lägg till ett lösenord eller en återställningsnyckel på enheten på en Windows-dator (Hantera BitLocker) och försök igen."
+    },
+    "not-bit-locker": {
+      "title": "Det här är inte en BitLocker-partition",
+      "meaning": "Den här partitionen är inte BitLocker-krypterad. Välj en annan partition, eller öppna enheten i Finder om den inte är krypterad."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS kan redan läsa den här partitionen",
+      "meaning": "macOS kan redan läsa den här partitionen, så den är inte krypterad med BitLocker. Öppna den i Finder eller välj en annan partition."
+    },
+    "unsupported-version": {
+      "title": "BitLocker-versionen stöds inte",
+      "meaning": "Unbit öppnar enheter som krypterats med Windows 7 eller senare. Den här enheten använder en äldre BitLocker-version (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Krypteringsmetoden stöds inte",
+      "meaning": "Den här enheten använder en krypteringsmetod som Unbit inte stöder. Öppna den på en Windows-dator i stället."
+    },
+    "damaged-metadata": {
+      "title": "BitLocker-informationen är skadad",
+      "meaning": "BitLocker-informationen på den här enheten är skadad eller ofullständig. Kontrollera enheten på en Windows-dator (till exempel med chkdsk eller repair-bde) och försök igen."
+    },
+    "conversion-in-progress": {
+      "title": "Windows krypterar eller avkrypterar fortfarande enheten",
+      "meaning": "Windows krypterar eller dekrypterar enheten just nu. Låt Windows bli klart först och försök sedan igen."
+    },
+    "drive-removed": {
+      "title": "Enheten togs bort",
+      "meaning": "Enheten togs bort. Anslut den igen för att öppna den."
+    },
+    "damaged-key": {
+      "title": "Ingen användbar volymnyckel",
+      "meaning": "Den här enheten har ingen användbar volymnyckel och kan därför inte öppnas. Den kan vara skadad eller bara delvis krypterad – kontrollera den på en Windows-dator."
+    },
+    "drive-stopped-responding": {
+      "title": "Enheten slutade svara",
+      "meaning": "Enheten slutade svara under läsningen. Kontrollera kabeln och porten, anslut enheten igen och försök på nytt."
+    },
+    "read-failed": {
+      "title": "Det gick inte att läsa från enheten",
+      "meaning": "Det gick inte att läsa från enheten. Kontrollera kabeln och porten, anslut enheten igen och försök på nytt."
+    },
+    "attach-timed-out": {
+      "title": "macOS tog för lång tid på sig att ansluta enheten",
+      "meaning": "macOS tog för lång tid på sig att montera enheten. Vänta en stund och försök igen. Om det upprepas, anslut enheten på nytt."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Administratörsfrågan gick ut",
+      "meaning": "Administratörsfrågan gick ut. Försök igen och godkänn med lösenordet till din Mac."
+    },
+    "helper-timed-out": {
+      "title": "Läshjälparen svarade inte",
+      "meaning": "Läshjälpen svarade inte. Välj Ställ in läsåtkomst i kugghjulsmenyn och försök igen."
+    },
+    "timed-out": {
+      "title": "En åtgärd gick ut",
+      "meaning": "Ett steg tog längre tid än väntat och avbröts, så ingenting har ändrats på enheten."
+    },
+    "admin-access-failed": {
+      "title": "Fick ingen läsåtkomst till enheten",
+      "meaning": "Unbit fick ingen läsåtkomst till enheten. Försök igen och godkänn med lösenordet till din Mac – eller välj Ställ in läsåtkomst i kugghjulsmenyn."
+    },
+    "no-access": {
+      "title": "macOS nekade åtkomst till enheten",
+      "meaning": "macOS nekade åtkomst till enheten. Ge ”Unbit” Full skivåtkomst i Systeminställningar › Integritet och säkerhet › Full skivåtkomst och försök igen."
+    },
+    "other": {
+      "title": "Något gick fel",
+      "meaning": "Unbit stötte på ett problem som det inte har något eget meddelande för. Enheten öppnas skrivskyddat, så ingenting har ändrats på den."
+    }
+  }
+}

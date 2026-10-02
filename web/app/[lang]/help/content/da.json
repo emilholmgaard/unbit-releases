@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Hjælp til Unbit-fejl: hvad betyder hver besked",
+    "indexMetaDescription": "Korte forklaringer af de beskeder, Unbit viser, når et BitLocker-drev ikke vil åbne, og hvad du kan prøve.",
+    "indexH1": "Hjælp til beskeder i Unbit",
+    "indexSub": "Hvad hver besked betyder, og hvad du kan gøre ved den.",
+    "whatItMeans": "Hvad det betyder",
+    "whatToTry": "Det kan du prøve",
+    "stillStuckTitle": "Kommer du stadig ikke videre?",
+    "stillStuckText": "Åbn tandhjulsmenuen i Unbit og vælg Kopiér fejlrapport, og send den med, når du spørger om hjælp. Den indeholder hverken adgangskoder, drevnavne eller filstier.",
+    "guidesTitle": "Relaterede guides",
+    "otherTitle": "Andre beskeder",
+    "helpLabel": "Hjælp",
+    "breadcrumb": "Brødkrumme",
+    "metaTitle": "{title} – Hjælp til Unbit",
+    "readMore": "Læs mere"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Tjek adgangskoden for slåfejl, og sørg for, at Caps Lock er slået fra.",
+        "Brug i stedet den 48-cifrede recovery-key. Den ligger i den Microsoft-konto, der krypterede drevet, på en udskrift eller i en .txt-fil, der blev gemt, da BitLocker blev slået til. Hvert drev har sin egen.",
+        "Hvis en kode, du har gemt i Unbit, ikke virker længere, så vælg Indtast ny kode og skriv den nuværende."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Åbn drevets BitLocker-indstillinger på en Windows-pc (højreklik på drevet og vælg Administrer BitLocker).",
+        "Tilføj en adgangskode, og gem en recovery-key til drevet. Unbit kan ikke bruge TPM, smartcards eller startnøglefiler.",
+        "Sæt drevet i Mac’en igen, og åbn det med den nye adgangskode eller recovery-key."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Vælg en anden partition på drevlisten. Et drev kan have flere partitioner, og kun én af dem er måske krypteret.",
+        "Hvis macOS allerede kan læse partitionen, så åbn den i Finder – den er ikke krypteret med BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Åbn drevet på en Windows-pc, og kopiér filerne over på en anden disk.",
+        "Hvis du senere vil bruge drevet på en Mac, så slå BitLocker fra og kryptér det igen med en nyere version af Windows."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Sæt drevet i en Windows-pc, og kør chkdsk eller repair-bde med recovery-key.",
+        "Hvis Windows stadig er i gang med at kryptere eller dekryptere drevet, så lad det blive færdigt først.",
+        "Formatér ikke drevet. Kopiér først det, du kan, over på en anden disk."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Tjek kablet, og prøv en anden USB-port – direkte på Mac’en frem for via en hub.",
+        "Sæt drevet i igen, og vælg Opdater drevlisten i Unbit.",
+        "Hvis det bliver ved med at fejle, kan drevet være ved at gå i stykker. Kopiér filerne på en Windows-pc, mens du stadig kan."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Åbn Systemindstillinger › Anonymitet & sikkerhed › Fuld diskadgang, slå Unbit til, og vend tilbage til appen.",
+        "Vælg Opsæt læseadgang… i Unbits tandhjulsmenu, og godkend én gang med din Mac-adgangskode.",
+        "Hvis indstillingen ikke ser ud til at virke, så luk Unbit og åbn den igen."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Vent et øjeblik, og vælg Prøv igen.",
+        "Sæt drevet i igen, og vælg derefter Opdater drevlisten i Unbit.",
+        "Hvis det bliver ved, så genstart Mac’en, og prøv en gang til."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Koden er ikke gyldig",
+      "meaning": "Recovery-key skal bestå af 48 cifre (8 grupper á 6 cifre). Tjek at den er skrevet korrekt."
+    },
+    "wrong-password": {
+      "title": "Forkert adgangskode",
+      "meaning": "Forkert adgangskode. Tjek for tastefejl og Caps Lock, og prøv igen – eller lås op med recovery-key i stedet."
+    },
+    "wrong-recovery-key": {
+      "title": "Forkert recovery-key",
+      "meaning": "Forkert recovery-key. Tjek alle 48 cifre – hvert drev har sin egen recovery-key."
+    },
+    "saved-password-stale": {
+      "title": "Den gemte adgangskode virker ikke længere",
+      "meaning": "Den gemte adgangskode passer ikke længere til drevet. Vælg Indtast ny kode, og skriv den nuværende adgangskode."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Den gemte recovery-key virker ikke længere",
+      "meaning": "Den gemte recovery-key passer ikke længere til drevet. Vælg Indtast ny kode, og skriv den nuværende recovery-key."
+    },
+    "no-password-protector": {
+      "title": "Drevet har ingen adgangskode",
+      "meaning": "Drevet er ikke beskyttet med en adgangskode. Brug recovery-key i stedet."
+    },
+    "no-recovery-protector": {
+      "title": "Drevet har ingen recovery-key",
+      "meaning": "Drevet har ingen recovery-key. Brug adgangskoden i stedet."
+    },
+    "no-supported-protector": {
+      "title": "Kun startnøgle, smartcard eller TPM",
+      "meaning": "Dette drev kan kun låses op med en startnøglefil, et smartkort eller TPM, som Unbit ikke kan bruge. Tilføj en adgangskode eller gendannelsesnøgle til drevet på en Windows-pc (Administrer BitLocker), og prøv igen."
+    },
+    "not-bit-locker": {
+      "title": "Det er ikke en BitLocker-partition",
+      "meaning": "Denne partition er ikke BitLocker-krypteret. Vælg en anden partition, eller åbn drevet i Finder, hvis det ikke er krypteret."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS kan allerede læse partitionen",
+      "meaning": "macOS kan allerede læse denne partition, så den er ikke krypteret med BitLocker. Åbn den i Finder, eller vælg en anden partition."
+    },
+    "unsupported-version": {
+      "title": "BitLocker-version understøttes ikke",
+      "meaning": "Unbit åbner drev, der er krypteret med Windows 7 eller nyere. Dette drev bruger en ældre BitLocker-version (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Krypteringsmetoden understøttes ikke",
+      "meaning": "Drevet bruger en krypteringsmetode, som Unbit ikke understøtter. Åbn det på en Windows-pc i stedet."
+    },
+    "damaged-metadata": {
+      "title": "BitLocker-oplysningerne er beskadigede",
+      "meaning": "BitLocker-oplysningerne på drevet er beskadigede eller ufuldstændige. Kontrollér drevet på en Windows-pc (f.eks. med chkdsk eller repair-bde), og prøv igen."
+    },
+    "conversion-in-progress": {
+      "title": "Windows er stadig i gang med at kryptere eller dekryptere drevet",
+      "meaning": "Windows er lige nu i gang med at kryptere eller dekryptere drevet. Lad Windows blive færdig, og prøv så igen."
+    },
+    "drive-removed": {
+      "title": "Drevet blev fjernet",
+      "meaning": "Drevet blev fjernet. Sæt det i igen for at åbne det."
+    },
+    "damaged-key": {
+      "title": "Ingen brugbar volumennøgle",
+      "meaning": "Drevet har ingen brugbar volumennøgle og kan derfor ikke åbnes. Det kan være beskadiget eller kun delvist krypteret – tjek det på en Windows-pc."
+    },
+    "drive-stopped-responding": {
+      "title": "Drevet holdt op med at svare",
+      "meaning": "Drevet holdt op med at svare under læsningen. Tjek kablet og porten, sæt drevet i igen, og prøv igen."
+    },
+    "read-failed": {
+      "title": "Kunne ikke læse fra drevet",
+      "meaning": "Kunne ikke læse fra drevet. Tjek kablet og porten, sæt drevet i igen, og prøv igen."
+    },
+    "attach-timed-out": {
+      "title": "macOS var for længe om at tilslutte drevet",
+      "meaning": "macOS brugte for lang tid på at tilkoble drevet. Vent et øjeblik, og prøv igen. Sker det igen, så sæt drevet i igen."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Administratorbeskeden udløb",
+      "meaning": "Administratorvinduet udløb. Prøv igen, og godkend med din Mac-adgangskode."
+    },
+    "helper-timed-out": {
+      "title": "Læsehjælperen svarede ikke",
+      "meaning": "Læsehjælperen svarede ikke. Vælg Opsæt læseadgang i tandhjulsmenuen, og prøv igen."
+    },
+    "timed-out": {
+      "title": "En handling udløb",
+      "meaning": "Et trin tog længere tid end forventet og blev stoppet, så der er ikke ændret noget på drevet."
+    },
+    "admin-access-failed": {
+      "title": "Kunne ikke få læseadgang til drevet",
+      "meaning": "Unbit kunne ikke få læseadgang til drevet. Prøv igen, og godkend med din Mac-adgangskode – eller vælg Opsæt læseadgang i tandhjulsmenuen."
+    },
+    "no-access": {
+      "title": "macOS nægtede adgang til drevet",
+      "meaning": "macOS nægtede adgang til drevet. Giv „Unbit“ Fuld diskadgang under Systemindstillinger › Anonymitet & sikkerhed › Fuld diskadgang, og prøv igen."
+    },
+    "other": {
+      "title": "Noget gik galt",
+      "meaning": "Unbit stødte på et problem, den ikke har en særlig besked til. Drevet åbnes skrivebeskyttet, så der er ikke ændret noget på det."
+    }
+  }
+}

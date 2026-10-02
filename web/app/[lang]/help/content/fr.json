@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Aide sur les erreurs d’Unbit : sens de chaque message",
+    "indexMetaDescription": "Explications courtes des messages qu’Unbit affiche quand un disque BitLocker ne s’ouvre pas, et ce qu’il faut essayer.",
+    "indexH1": "Aide sur les messages d’Unbit",
+    "indexSub": "Ce que signifie chaque message et comment y remédier.",
+    "whatItMeans": "Ce que cela signifie",
+    "whatToTry": "Ce qu’il faut essayer",
+    "stillStuckTitle": "Toujours bloqué ?",
+    "stillStuckText": "Dans Unbit, ouvrez le menu en forme d’engrenage, choisissez « Copier le rapport d’erreur » et joignez-le à votre demande d’aide. Il ne contient ni mots de passe, ni noms de disques, ni chemins de fichiers.",
+    "guidesTitle": "Guides associés",
+    "otherTitle": "Autres messages",
+    "helpLabel": "Aide",
+    "breadcrumb": "Fil d’Ariane",
+    "metaTitle": "{title} – Aide Unbit",
+    "readMore": "En savoir plus"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Vérifiez qu’il n’y a pas de faute de frappe et que le verrouillage des majuscules est désactivé.",
+        "Utilisez plutôt la clé de récupération à 48 chiffres. Elle se trouve dans le compte Microsoft qui a chiffré le disque, sur une impression ou dans un fichier .txt enregistré lors de l’activation de BitLocker. Chaque disque a la sienne.",
+        "Si un code enregistré dans Unbit ne fonctionne plus, choisissez « Saisir un nouveau code » et saisissez le code actuel."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Sur un PC Windows, ouvrez les paramètres BitLocker du disque (clic droit sur le disque, « Gérer BitLocker »).",
+        "Ajoutez un mot de passe et enregistrez une clé de récupération pour le disque. Unbit ne peut pas utiliser le TPM, les cartes à puce ni les fichiers de clé de démarrage.",
+        "Rebranchez le disque au Mac et ouvrez-le avec le nouveau mot de passe ou la clé de récupération."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Choisissez une autre partition dans la liste des disques. Un disque peut en avoir plusieurs, et une seule peut être chiffrée.",
+        "Si macOS peut déjà lire la partition, ouvrez-la dans le Finder : elle n’est pas chiffrée avec BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Ouvrez le disque sur un PC Windows et copiez ses fichiers sur un autre disque.",
+        "Pour utiliser le disque plus tard sur un Mac, désactivez BitLocker puis chiffrez-le de nouveau avec une version récente de Windows."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Branchez le disque à un PC Windows et lancez chkdsk, ou repair-bde avec la clé de récupération.",
+        "Si Windows est encore en train de chiffrer ou de déchiffrer le disque, laissez-le terminer d’abord.",
+        "Ne formatez pas le disque. Copiez d’abord ce que vous pouvez sur un autre disque."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Vérifiez le câble et essayez un autre port USB, directement sur le Mac plutôt que via un hub.",
+        "Rebranchez le disque et choisissez « Actualiser la liste des disques » dans Unbit.",
+        "Si l’échec persiste, le disque est peut-être en train de lâcher. Copiez ses fichiers sur un PC Windows tant que c’est possible."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Ouvrez Réglages Système › Confidentialité et sécurité › Accès complet au disque, activez Unbit, puis revenez dans l’app.",
+        "Dans le menu en forme d’engrenage d’Unbit, choisissez « Configurer l’accès en lecture… » et validez une fois avec le mot de passe du Mac.",
+        "Si le réglage ne semble pas pris en compte, quittez Unbit puis rouvrez-le."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Patientez un instant, puis choisissez « Réessayer ».",
+        "Rebranchez le disque, puis choisissez « Actualiser la liste des disques » dans Unbit.",
+        "Si cela continue, redémarrez le Mac et réessayez."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Le code n’est pas valide",
+      "meaning": "La clé de récupération doit comporter 48 chiffres (8 groupes de 6). Vérifiez qu’elle est correctement saisie."
+    },
+    "wrong-password": {
+      "title": "Mot de passe incorrect",
+      "meaning": "Mot de passe incorrect. Vérifiez les fautes de frappe et le verrouillage des majuscules, puis réessayez, ou déverrouillez avec la clé de récupération."
+    },
+    "wrong-recovery-key": {
+      "title": "Clé de récupération incorrecte",
+      "meaning": "Clé de récupération incorrecte. Vérifiez les 48 chiffres : chaque disque a sa propre clé de récupération."
+    },
+    "saved-password-stale": {
+      "title": "Le mot de passe enregistré ne fonctionne plus",
+      "meaning": "Le mot de passe enregistré ne correspond plus à ce disque. Choisissez « Saisir un nouveau code » et saisissez le mot de passe actuel."
+    },
+    "saved-recovery-key-stale": {
+      "title": "La clé de récupération enregistrée ne fonctionne plus",
+      "meaning": "La clé de récupération enregistrée ne correspond plus à ce disque. Choisissez « Saisir un nouveau code » et saisissez la clé actuelle."
+    },
+    "no-password-protector": {
+      "title": "Le disque n’a pas de mot de passe",
+      "meaning": "Le disque n’est pas protégé par un mot de passe. Utilisez plutôt la clé de récupération."
+    },
+    "no-recovery-protector": {
+      "title": "Le disque n’a pas de clé de récupération",
+      "meaning": "Le disque n’a pas de clé de récupération. Utilisez plutôt le mot de passe."
+    },
+    "no-supported-protector": {
+      "title": "Uniquement clé de démarrage, carte à puce ou TPM",
+      "meaning": "Ce lecteur ne peut être déverrouillé qu’avec un fichier de clé de démarrage, une carte à puce ou le TPM, ce qu’Unbit ne peut pas utiliser. Sur un PC Windows, ajoutez un mot de passe ou une clé de récupération au lecteur (Gérer BitLocker), puis réessayez."
+    },
+    "not-bit-locker": {
+      "title": "Ce n’est pas une partition BitLocker",
+      "meaning": "Cette partition n’est pas chiffrée avec BitLocker. Choisissez une autre partition, ou ouvrez le disque dans le Finder s’il n’est pas chiffré."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS peut déjà lire cette partition",
+      "meaning": "macOS peut déjà lire cette partition : elle n’est donc pas chiffrée avec BitLocker. Ouvrez-la dans le Finder ou choisissez une autre partition."
+    },
+    "unsupported-version": {
+      "title": "Version de BitLocker non prise en charge",
+      "meaning": "Unbit ouvre les disques chiffrés avec Windows 7 ou une version plus récente. Ce disque utilise une ancienne version de BitLocker (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Méthode de chiffrement non prise en charge",
+      "meaning": "Ce disque utilise une méthode de chiffrement que Unbit ne prend pas en charge. Ouvrez-le plutôt sur un PC Windows."
+    },
+    "damaged-metadata": {
+      "title": "Les informations BitLocker sont endommagées",
+      "meaning": "Les informations BitLocker de ce disque sont endommagées ou incomplètes. Vérifiez le disque sur un PC Windows (par exemple avec chkdsk ou repair-bde), puis réessayez."
+    },
+    "conversion-in-progress": {
+      "title": "Windows est encore en train de chiffrer ou déchiffrer le disque",
+      "meaning": "Windows est en train de chiffrer ou de déchiffrer le disque. Laissez d’abord Windows terminer, puis réessayez."
+    },
+    "drive-removed": {
+      "title": "Le disque a été retiré",
+      "meaning": "Le disque a été retiré. Rebranchez-le pour l’ouvrir."
+    },
+    "damaged-key": {
+      "title": "Aucune clé de volume utilisable",
+      "meaning": "Ce disque n’a pas de clé de volume exploitable et ne peut donc pas être ouvert. Il est peut-être endommagé ou chiffré en partie seulement : vérifiez-le sur un PC Windows."
+    },
+    "drive-stopped-responding": {
+      "title": "Le disque ne répond plus",
+      "meaning": "Le disque a cessé de répondre pendant la lecture. Vérifiez le câble et le port, rebranchez le disque et réessayez."
+    },
+    "read-failed": {
+      "title": "Impossible de lire le disque",
+      "meaning": "Impossible de lire le disque. Vérifiez le câble et le port, rebranchez le disque et réessayez."
+    },
+    "attach-timed-out": {
+      "title": "macOS a mis trop de temps à monter le disque",
+      "meaning": "macOS a mis trop de temps à monter le disque. Patientez un instant et réessayez. Si cela se reproduit, rebranchez le disque."
+    },
+    "admin-prompt-timed-out": {
+      "title": "La demande d’administrateur a expiré",
+      "meaning": "La demande d’administrateur a expiré. Réessayez et validez avec le mot de passe de votre Mac."
+    },
+    "helper-timed-out": {
+      "title": "L’assistant de lecture n’a pas répondu",
+      "meaning": "L’assistant de lecture n’a pas répondu. Choisissez « Configurer l’accès en lecture » dans le menu à engrenage, puis réessayez."
+    },
+    "timed-out": {
+      "title": "Une opération a expiré",
+      "meaning": "Une étape a pris plus de temps que prévu et a été arrêtée ; rien n’a été modifié sur le disque."
+    },
+    "admin-access-failed": {
+      "title": "Impossible d’obtenir l’accès en lecture au disque",
+      "meaning": "Unbit n’a pas pu obtenir l’accès en lecture au disque. Réessayez et validez avec le mot de passe de votre Mac, ou choisissez « Configurer l’accès en lecture » dans le menu à engrenage."
+    },
+    "no-access": {
+      "title": "macOS a refusé l’accès au disque",
+      "meaning": "macOS a refusé l’accès au disque. Accordez l’Accès complet au disque à « Unbit » dans Réglages Système › Confidentialité et sécurité › Accès complet au disque, puis réessayez."
+    },
+    "other": {
+      "title": "Une erreur s’est produite",
+      "meaning": "Unbit a rencontré un problème pour lequel il n’y a pas de message précis. Le disque est ouvert en lecture seule : rien n’a été modifié."
+    }
+  }
+}

@@ -5,6 +5,7 @@ import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "@/lib/site";
 import { alternativesPath } from "@/lib/competitors";
 import { bestPath, guidePath } from "@/lib/guides";
+import { helpPath } from "@/lib/help";
 import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { hasLawyersPage, lawyersPath } from "@/lib/lawyers";
 
@@ -51,6 +52,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <h2>{t.footer.resources}</h2>
           <a href={`/${locale}#faq`}>{t.nav.faq}</a>
           <a href={guidePath(locale)}>{t.footer.guides}</a>
+          <a href={helpPath(locale)}>{t.footer.help}</a>
           <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
           <a href={alternativesPath(locale)}>{t.footer.alternatives}</a>
           {hasLawyersPage(locale) && <a href={lawyersPath(locale)}>{LAWYERS_CONTENT[locale].footerLabel}</a>}

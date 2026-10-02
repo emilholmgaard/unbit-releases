@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Aiuto per gli errori di Unbit: cosa significa ogni messaggio",
+    "indexMetaDescription": "Brevi spiegazioni dei messaggi che Unbit mostra quando un’unità BitLocker non si apre e cosa provare.",
+    "indexH1": "Aiuto per i messaggi di Unbit",
+    "indexSub": "Cosa significa ogni messaggio e cosa fare.",
+    "whatItMeans": "Cosa significa",
+    "whatToTry": "Cosa provare",
+    "stillStuckTitle": "Ancora bloccato?",
+    "stillStuckText": "In Unbit apri il menu a forma di ingranaggio e scegli «Copia rapporto errori», poi allegalo alla richiesta di aiuto. Non contiene password, nomi di unità né percorsi di file.",
+    "guidesTitle": "Guide correlate",
+    "otherTitle": "Altri messaggi",
+    "helpLabel": "Aiuto",
+    "breadcrumb": "Percorso",
+    "metaTitle": "{title} – Aiuto Unbit",
+    "readMore": "Leggi di più"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Controlla che la password non abbia errori di battitura e che il Blocco maiuscole sia disattivato.",
+        "Usa invece la chiave di ripristino di 48 cifre. Si trova nell’account Microsoft che ha cifrato l’unità, su una stampa o in un file .txt salvato quando è stato attivato BitLocker. Ogni unità ha la sua.",
+        "Se un codice salvato in Unbit non funziona più, scegli «Inserisci un nuovo codice» e digita quello attuale."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Su un PC Windows apri le impostazioni BitLocker dell’unità (clic destro sull’unità e «Gestisci BitLocker»).",
+        "Aggiungi una password e salva una chiave di ripristino per l’unità. Unbit non può usare il TPM, le smart card né i file con la chiave di avvio.",
+        "Ricollega l’unità al Mac e aprila con la nuova password o chiave di ripristino."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Scegli un’altra partizione nell’elenco delle unità. Un’unità può avere più partizioni e magari solo una è cifrata.",
+        "Se macOS riesce già a leggere la partizione, aprila nel Finder: non è cifrata con BitLocker."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Apri l’unità su un PC Windows e copia i file su un altro disco.",
+        "Per usare l’unità su un Mac in futuro, disattiva BitLocker e cifrala di nuovo con una versione recente di Windows."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Collega l’unità a un PC Windows ed esegui chkdsk, oppure repair-bde con la chiave di ripristino.",
+        "Se Windows sta ancora cifrando o decifrando l’unità, lascia che finisca prima.",
+        "Non formattare l’unità. Copia prima ciò che puoi su un altro disco."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Controlla il cavo e prova un’altra porta USB, direttamente sul Mac e non tramite un hub.",
+        "Ricollega l’unità e scegli «Aggiorna elenco unità» in Unbit.",
+        "Se continua a fallire, l’unità potrebbe star cedendo. Copia i file su un PC Windows finché puoi."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Apri Impostazioni di Sistema › Privacy e sicurezza › Accesso completo al disco, attiva Unbit e torna all’app.",
+        "Nel menu a forma di ingranaggio di Unbit scegli «Configura accesso in lettura…» e approva una volta con la password del Mac.",
+        "Se l’impostazione non sembra avere effetto, chiudi Unbit e riaprilo."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Attendi un momento e scegli «Riprova».",
+        "Ricollega l’unità, poi scegli «Aggiorna elenco unità» in Unbit.",
+        "Se continua, riavvia il Mac e riprova."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Il codice non è valido",
+      "meaning": "La chiave di ripristino deve avere 48 cifre (8 gruppi da 6). Controlla di averla digitata correttamente."
+    },
+    "wrong-password": {
+      "title": "Password errata",
+      "meaning": "Password errata. Controlla errori di battitura e Blocco maiuscole e riprova, oppure sblocca con la chiave di ripristino."
+    },
+    "wrong-recovery-key": {
+      "title": "Chiave di ripristino errata",
+      "meaning": "Chiave di ripristino errata. Controlla tutte le 48 cifre: ogni unità ha la propria chiave di ripristino."
+    },
+    "saved-password-stale": {
+      "title": "La password salvata non funziona più",
+      "meaning": "La password salvata non corrisponde più a questa unità. Scegli «Inserisci un nuovo codice» e digita la password attuale."
+    },
+    "saved-recovery-key-stale": {
+      "title": "La chiave di ripristino salvata non funziona più",
+      "meaning": "La chiave di ripristino salvata non corrisponde più a questa unità. Scegli «Inserisci un nuovo codice» e digita la chiave attuale."
+    },
+    "no-password-protector": {
+      "title": "L’unità non ha una password",
+      "meaning": "L’unità non è protetta da password. Usa la chiave di ripristino."
+    },
+    "no-recovery-protector": {
+      "title": "L’unità non ha una chiave di ripristino",
+      "meaning": "L’unità non ha una chiave di ripristino. Usa la password."
+    },
+    "no-supported-protector": {
+      "title": "Solo chiave di avvio, smart card o TPM",
+      "meaning": "Questa unità può essere sbloccata solo con un file di chiave di avvio, una smart card o il TPM, che Unbit non può usare. Su un PC Windows aggiungi una password o una chiave di ripristino all’unità (Gestisci BitLocker), poi riprova."
+    },
+    "not-bit-locker": {
+      "title": "Non è una partizione BitLocker",
+      "meaning": "Questa partizione non è crittografata con BitLocker. Scegli un’altra partizione oppure apri l’unità nel Finder se non è crittografata."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS riesce già a leggere questa partizione",
+      "meaning": "macOS può già leggere questa partizione, quindi non è cifrata con BitLocker. Aprila nel Finder oppure scegli un’altra partizione."
+    },
+    "unsupported-version": {
+      "title": "Versione di BitLocker non supportata",
+      "meaning": "Unbit apre le unità cifrate con Windows 7 o successivo. Questa unità usa una versione di BitLocker più vecchia (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Metodo di cifratura non supportato",
+      "meaning": "Questa unità usa un metodo di crittografia che Unbit non supporta. Aprila invece su un PC Windows."
+    },
+    "damaged-metadata": {
+      "title": "Le informazioni BitLocker sono danneggiate",
+      "meaning": "Le informazioni BitLocker di questa unità sono danneggiate o incomplete. Controlla l’unità su un PC Windows (ad esempio con chkdsk o repair-bde) e riprova."
+    },
+    "conversion-in-progress": {
+      "title": "Windows sta ancora cifrando o decifrando l’unità",
+      "meaning": "Windows sta crittografando o decrittografando l’unità in questo momento. Lascia prima che Windows finisca, poi riprova."
+    },
+    "drive-removed": {
+      "title": "L’unità è stata rimossa",
+      "meaning": "L’unità è stata rimossa. Ricollegala per aprirla."
+    },
+    "damaged-key": {
+      "title": "Nessuna chiave del volume utilizzabile",
+      "meaning": "Questa unità non ha una chiave del volume utilizzabile e non può essere aperta. Potrebbe essere danneggiata o solo parzialmente crittografata: controllala su un PC Windows."
+    },
+    "drive-stopped-responding": {
+      "title": "L’unità ha smesso di rispondere",
+      "meaning": "L’unità ha smesso di rispondere durante la lettura. Controlla cavo e porta, ricollega l’unità e riprova."
+    },
+    "read-failed": {
+      "title": "Impossibile leggere l’unità",
+      "meaning": "Impossibile leggere dall’unità. Controlla cavo e porta, ricollega l’unità e riprova."
+    },
+    "attach-timed-out": {
+      "title": "macOS ha impiegato troppo a collegare l’unità",
+      "meaning": "macOS ha impiegato troppo tempo per collegare l’unità. Attendi un momento e riprova. Se succede ancora, ricollega l’unità."
+    },
+    "admin-prompt-timed-out": {
+      "title": "La richiesta di amministratore è scaduta",
+      "meaning": "La richiesta di amministratore è scaduta. Riprova e approva con la password del Mac."
+    },
+    "helper-timed-out": {
+      "title": "L’helper di lettura non ha risposto",
+      "meaning": "L’assistente di lettura non ha risposto. Scegli «Configura accesso in lettura» nel menu a ingranaggio e riprova."
+    },
+    "timed-out": {
+      "title": "Un’operazione è scaduta",
+      "meaning": "Un passaggio ha richiesto più tempo del previsto ed è stato interrotto, quindi nulla è stato modificato sull’unità."
+    },
+    "admin-access-failed": {
+      "title": "Impossibile ottenere l’accesso in lettura all’unità",
+      "meaning": "Unbit non ha ottenuto l’accesso in lettura all’unità. Riprova e approva con la password del Mac, oppure scegli «Configura accesso in lettura» nel menu a ingranaggio."
+    },
+    "no-access": {
+      "title": "macOS ha negato l’accesso all’unità",
+      "meaning": "macOS ha negato l’accesso all’unità. Concedi a “Unbit” l’Accesso completo al disco in Impostazioni di Sistema › Privacy e sicurezza › Accesso completo al disco e riprova."
+    },
+    "other": {
+      "title": "Qualcosa è andato storto",
+      "meaning": "Unbit ha incontrato un problema per cui non ha un messaggio specifico. L’unità è aperta in sola lettura, quindi nulla è stato modificato."
+    }
+  }
+}

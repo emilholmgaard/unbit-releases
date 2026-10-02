@@ -1,0 +1,176 @@
+{
+  "ui": {
+    "indexMetaTitle": "Pomoc z błędami Unbit: co oznacza każdy komunikat",
+    "indexMetaDescription": "Krótkie wyjaśnienia komunikatów, które Unbit pokazuje, gdy dysk BitLocker się nie otwiera, i co wtedy zrobić.",
+    "indexH1": "Pomoc z komunikatami Unbit",
+    "indexSub": "Co oznacza każdy komunikat i co z nim zrobić.",
+    "whatItMeans": "Co to oznacza",
+    "whatToTry": "Co spróbować",
+    "stillStuckTitle": "Nadal nie działa?",
+    "stillStuckText": "W Unbit otwórz menu z kołem zębatym, wybierz „Kopiuj raport o błędzie” i dołącz go do prośby o pomoc. Nie zawiera haseł, nazw dysków ani ścieżek plików.",
+    "guidesTitle": "Powiązane poradniki",
+    "otherTitle": "Inne komunikaty",
+    "helpLabel": "Pomoc",
+    "breadcrumb": "Ścieżka nawigacji",
+    "metaTitle": "{title} – Pomoc Unbit",
+    "readMore": "Czytaj dalej"
+  },
+  "categories": {
+    "code": {
+      "steps": [
+        "Sprawdź, czy w haśle nie ma literówek i czy Caps Lock jest wyłączony.",
+        "Użyj zamiast tego 48-cyfrowego klucza odzyskiwania. Znajdziesz go na koncie Microsoft, które zaszyfrowało dysk, na wydruku albo w pliku .txt zapisanym po włączeniu BitLockera. Każdy dysk ma własny.",
+        "Jeśli zapisany w Unbit kod przestał działać, wybierz „Wpisz nowy kod” i wpisz aktualny."
+      ]
+    },
+    "protector": {
+      "steps": [
+        "Na komputerze z Windows otwórz ustawienia BitLockera dla dysku (kliknij dysk prawym przyciskiem i wybierz „Zarządzaj funkcją BitLocker”).",
+        "Dodaj hasło i zapisz klucz odzyskiwania dla dysku. Unbit nie może używać TPM, kart inteligentnych ani plików klucza startowego.",
+        "Podłącz dysk ponownie do Maca i otwórz go nowym hasłem lub kluczem odzyskiwania."
+      ]
+    },
+    "notbitlocker": {
+      "steps": [
+        "Wybierz inną partycję z listy dysków. Dysk może mieć kilka partycji, a zaszyfrowana może być tylko jedna.",
+        "Jeśli macOS może już odczytać partycję, otwórz ją w Finderze – nie jest zaszyfrowana BitLockerem."
+      ]
+    },
+    "unsupported": {
+      "steps": [
+        "Otwórz dysk na komputerze z Windows i skopiuj pliki na inny dysk.",
+        "Aby później używać dysku na Macu, wyłącz BitLockera i zaszyfruj dysk ponownie w aktualnej wersji Windows."
+      ]
+    },
+    "damaged": {
+      "steps": [
+        "Podłącz dysk do komputera z Windows i uruchom chkdsk lub repair-bde z kluczem odzyskiwania.",
+        "Jeśli Windows nadal szyfruje lub odszyfrowuje dysk, poczekaj na zakończenie.",
+        "Nie formatuj dysku. Najpierw skopiuj, co się da, na inny dysk."
+      ]
+    },
+    "connection": {
+      "steps": [
+        "Sprawdź kabel i spróbuj innego portu USB – bezpośrednio w Macu, a nie przez hub.",
+        "Podłącz dysk ponownie i wybierz w Unbit „Odśwież listę dysków”.",
+        "Jeśli problem się powtarza, dysk może się psuć. Skopiuj pliki na komputerze z Windows, póki to możliwe."
+      ]
+    },
+    "access": {
+      "steps": [
+        "Otwórz Ustawienia systemowe › Prywatność i ochrona › Pełny dostęp do dysku, włącz Unbit i wróć do aplikacji.",
+        "W menu z kołem zębatym w Unbit wybierz „Skonfiguruj dostęp do odczytu…” i zatwierdź raz hasłem do Maca.",
+        "Jeśli ustawienie nie działa, zamknij Unbit i uruchom go ponownie."
+      ]
+    },
+    "timeout": {
+      "steps": [
+        "Poczekaj chwilę i wybierz „Spróbuj ponownie”.",
+        "Podłącz dysk ponownie, a potem wybierz w Unbit „Odśwież listę dysków”.",
+        "Jeśli to się powtarza, uruchom Maca ponownie i spróbuj jeszcze raz."
+      ]
+    }
+  },
+  "reasons": {
+    "invalid-input": {
+      "title": "Kod jest nieprawidłowy",
+      "meaning": "Klucz odzyskiwania musi mieć 48 cyfr (8 grup po 6). Sprawdź, czy został wpisany poprawnie."
+    },
+    "wrong-password": {
+      "title": "Błędne hasło",
+      "meaning": "Nieprawidłowe hasło. Sprawdź literówki i Caps Lock i spróbuj ponownie albo odblokuj kluczem odzyskiwania."
+    },
+    "wrong-recovery-key": {
+      "title": "Błędny klucz odzyskiwania",
+      "meaning": "Nieprawidłowy klucz odzyskiwania. Sprawdź wszystkie 48 cyfr – każdy dysk ma własny klucz odzyskiwania."
+    },
+    "saved-password-stale": {
+      "title": "Zapisane hasło już nie działa",
+      "meaning": "Zapisane hasło nie pasuje już do tego dysku. Wybierz Wpisz nowy kod i wpisz aktualne hasło."
+    },
+    "saved-recovery-key-stale": {
+      "title": "Zapisany klucz odzyskiwania już nie działa",
+      "meaning": "Zapisany klucz odzyskiwania nie pasuje już do tego dysku. Wybierz Wpisz nowy kod i wpisz aktualny klucz odzyskiwania."
+    },
+    "no-password-protector": {
+      "title": "Dysk nie ma hasła",
+      "meaning": "Dysk nie jest chroniony hasłem. Użyj klucza odzyskiwania."
+    },
+    "no-recovery-protector": {
+      "title": "Dysk nie ma klucza odzyskiwania",
+      "meaning": "Dysk nie ma klucza odzyskiwania. Użyj hasła."
+    },
+    "no-supported-protector": {
+      "title": "Tylko klucz startowy, karta inteligentna lub TPM",
+      "meaning": "Ten dysk można odblokować tylko plikiem klucza startowego, kartą inteligentną lub modułem TPM, których Unbit nie może użyć. Na komputerze z Windows dodaj do dysku hasło lub klucz odzyskiwania (Zarządzaj funkcją BitLocker) i spróbuj ponownie."
+    },
+    "not-bit-locker": {
+      "title": "To nie jest partycja BitLocker",
+      "meaning": "Ta partycja nie jest zaszyfrowana funkcją BitLocker. Wybierz inną partycję albo otwórz dysk w Finderze, jeśli nie jest zaszyfrowany."
+    },
+    "not-bit-locker-readable": {
+      "title": "macOS może już odczytać tę partycję",
+      "meaning": "macOS już potrafi odczytać tę partycję, więc nie jest zaszyfrowana funkcją BitLocker. Otwórz ją w Finderze lub wybierz inną partycję."
+    },
+    "unsupported-version": {
+      "title": "Nieobsługiwana wersja BitLockera",
+      "meaning": "Unbit otwiera dyski zaszyfrowane w Windows 7 lub nowszym. Ten dysk używa starszej wersji BitLockera (Windows Vista)."
+    },
+    "unsupported-encryption": {
+      "title": "Nieobsługiwana metoda szyfrowania",
+      "meaning": "Ten dysk używa metody szyfrowania, której Unbit nie obsługuje. Otwórz go zamiast tego na komputerze z Windows."
+    },
+    "damaged-metadata": {
+      "title": "Informacje BitLockera są uszkodzone",
+      "meaning": "Informacje BitLocker na tym dysku są uszkodzone lub niekompletne. Sprawdź dysk na komputerze z Windows (na przykład za pomocą chkdsk lub repair-bde) i spróbuj ponownie."
+    },
+    "conversion-in-progress": {
+      "title": "Windows nadal szyfruje lub odszyfrowuje dysk",
+      "meaning": "System Windows właśnie szyfruje lub odszyfrowuje ten dysk. Poczekaj, aż Windows skończy, i spróbuj ponownie."
+    },
+    "drive-removed": {
+      "title": "Dysk został odłączony",
+      "meaning": "Dysk został odłączony. Podłącz go ponownie, aby go otworzyć."
+    },
+    "damaged-key": {
+      "title": "Brak użytecznego klucza woluminu",
+      "meaning": "Ten dysk nie ma użytecznego klucza woluminu, więc nie można go otworzyć. Może być uszkodzony lub zaszyfrowany tylko częściowo – sprawdź go na komputerze z Windows."
+    },
+    "drive-stopped-responding": {
+      "title": "Dysk przestał odpowiadać",
+      "meaning": "Dysk przestał odpowiadać podczas odczytu. Sprawdź kabel i port, podłącz dysk ponownie i spróbuj jeszcze raz."
+    },
+    "read-failed": {
+      "title": "Nie można odczytać dysku",
+      "meaning": "Nie można odczytać dysku. Sprawdź kabel i port, podłącz dysk ponownie i spróbuj jeszcze raz."
+    },
+    "attach-timed-out": {
+      "title": "macOS zbyt długo podłączał dysk",
+      "meaning": "macOS zbyt długo podłączał dysk. Poczekaj chwilę i spróbuj ponownie. Jeśli problem się powtarza, podłącz dysk ponownie."
+    },
+    "admin-prompt-timed-out": {
+      "title": "Monit administratora wygasł",
+      "meaning": "Monit administratora wygasł. Spróbuj ponownie i zatwierdź hasłem do Maca."
+    },
+    "helper-timed-out": {
+      "title": "Pomocnik odczytu nie odpowiedział",
+      "meaning": "Pomocnik odczytu nie odpowiedział. Wybierz Skonfiguruj dostęp do odczytu w menu z zębatką i spróbuj ponownie."
+    },
+    "timed-out": {
+      "title": "Operacja przekroczyła limit czasu",
+      "meaning": "Jeden z kroków trwał dłużej, niż oczekiwano, i został zatrzymany, więc nic na dysku nie zostało zmienione."
+    },
+    "admin-access-failed": {
+      "title": "Nie udało się uzyskać dostępu do odczytu dysku",
+      "meaning": "Unbit nie uzyskał dostępu do odczytu dysku. Spróbuj ponownie i zatwierdź hasłem do Maca albo wybierz Skonfiguruj dostęp do odczytu w menu z zębatką."
+    },
+    "no-access": {
+      "title": "macOS odmówił dostępu do dysku",
+      "meaning": "macOS odmówił dostępu do dysku. Przyznaj aplikacji „Unbit” Pełny dostęp do dysku w Ustawieniach systemowych › Prywatność i ochrona › Pełny dostęp do dysku i spróbuj ponownie."
+    },
+    "other": {
+      "title": "Coś poszło nie tak",
+      "meaning": "Unbit napotkał problem, dla którego nie ma osobnego komunikatu. Dysk jest otwierany tylko do odczytu, więc nic na nim nie zmieniono."
+    }
+  }
+}
