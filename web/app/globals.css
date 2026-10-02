@@ -308,17 +308,6 @@ h2 {
 .cta h2 { font-size: clamp(32px, 4.4vw, 48px); }
 .cta p { margin-top: 12px; }
 .cta .actions { margin-top: 28px; }
-.arcs { position: relative; max-width: 900px; margin: 56px auto 0; color: rgba(255, 255, 255, 0.14); }
-.arcs svg { display: block; width: 100%; height: auto; }
-.arcs img {
-  position: absolute;
-  left: 50%;
-  bottom: 18%;
-  transform: translateX(-50%);
-  width: 112px;
-  height: 112px;
-  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.6));
-}
 
 /* Footer */
 .footer {
@@ -422,7 +411,6 @@ h2 {
     radial-gradient(45% 45% at 0% 100%, rgba(58, 167, 191, 0.22) 0%, rgba(11, 11, 12, 0) 70%),
     #0b0b0c;
 }
-.grad-cta .arcs { color: rgba(255, 255, 255, 0.16); }
 
 @media (max-width: 860px) {
   .grad-panel { min-height: 220px; margin: 12px; }

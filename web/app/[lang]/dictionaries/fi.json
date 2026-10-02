@@ -91,7 +91,7 @@
     "bestText": "Rehellinen katsaus tapoihin avata BitLocker-asemia Macilla: hinta, vain luku vai luku ja kirjoitus, Apple silicon ja käyttöönotto.",
     "bestCta": "Lue vertailu"
   },
-  "cta": { "title": "Avaa BitLocker-asemasi", "text": "Windows-tietokonetta ei tarvita.", "download": "Lataa macOS:lle", "whatsNew": "Mitä uutta" },
+  "cta": { "download": "Lataa macOS:lle" },
   "footer": {
     "siteNote": "Tämä verkkosivusto käyttää tietosuojaystävällistä, evästeetöntä analytiikkaa.",
     "product": "Tuote",

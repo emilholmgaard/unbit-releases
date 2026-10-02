@@ -253,20 +253,6 @@ export default async function Home() {
               ))}
             </div>
           </section>
-
-          {/* Final CTA */}
-          <section className="cta grad-cta">
-            <h2>{t.cta.title}</h2>
-            <p>{t.cta.text}</p>
-            <div className="actions">
-              <a className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</a>
-              <a className="pill dark" href="https://github.com/emilholmgaard/unbit-releases/releases/latest">{t.cta.whatsNew}</a>
-            </div>
-            <div className="arcs" aria-hidden="true">
-              <svg viewBox="0 0 900 360" fill="none" stroke="currentColor" strokeWidth="1.2"><circle cx="450" cy="470" r="400"/><circle cx="450" cy="470" r="250"/><circle cx="450" cy="470" r="120"/></svg>
-              <Image src="/icon.png" width={112} height={112} alt="" />
-            </div>
-          </section>
         </main>
 
         <footer className="footer">

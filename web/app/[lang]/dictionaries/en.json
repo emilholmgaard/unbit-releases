@@ -111,12 +111,7 @@
     "bestText": "An honest roundup of ways to open BitLocker drives on a Mac: price, read-only or read-write, Apple silicon and setup.",
     "bestCta": "Read the comparison"
   },
-  "cta": {
-    "title": "Open your BitLocker drive",
-    "text": "No Windows PC required.",
-    "download": "Download for macOS",
-    "whatsNew": "What's new"
-  },
+  "cta": { "download": "Download for macOS" },
   "footer": {
     "siteNote": "This website uses privacy-friendly, cookieless analytics.",
     "product": "Product",

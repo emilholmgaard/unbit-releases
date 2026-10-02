@@ -91,7 +91,7 @@
     "bestText": "En ærlig oversikt over måter å åpne BitLocker-stasjoner på en Mac: pris, skrivebeskyttet eller lese/skrive, Apple silicon og oppsett.",
     "bestCta": "Les sammenligningen"
   },
-  "cta": { "title": "Åpne BitLocker-stasjonen din", "text": "Du trenger ingen Windows-PC.", "download": "Last ned for macOS", "whatsNew": "Nytt" },
+  "cta": { "download": "Last ned for macOS" },
   "footer": {
     "siteNote": "Dette nettstedet bruker personvernvennlig analyse uten informasjonskapsler.",
     "product": "Produkt",

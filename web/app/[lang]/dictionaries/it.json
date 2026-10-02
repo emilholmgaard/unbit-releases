@@ -91,7 +91,7 @@
     "bestText": "Una panoramica onesta dei modi per aprire le unità BitLocker su un Mac: prezzo, sola lettura o lettura e scrittura, Apple silicon e configurazione.",
     "bestCta": "Leggi il confronto"
   },
-  "cta": { "title": "Apri la tua unità BitLocker", "text": "Non serve un PC Windows.", "download": "Scarica per macOS", "whatsNew": "Novità" },
+  "cta": { "download": "Scarica per macOS" },
   "footer": {
     "siteNote": "Questo sito usa statistiche rispettose della privacy, senza cookie.",
     "product": "Prodotto",

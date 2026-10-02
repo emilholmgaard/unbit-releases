@@ -91,7 +91,7 @@
     "bestText": "En ärlig översikt över sätten att öppna BitLocker-enheter på en Mac: pris, skrivskyddad eller läs/skriv, Apple silicon och inställning.",
     "bestCta": "Läs jämförelsen"
   },
-  "cta": { "title": "Öppna din BitLocker-enhet", "text": "Ingen Windows-dator behövs.", "download": "Ladda ner för macOS", "whatsNew": "Nyheter" },
+  "cta": { "download": "Ladda ner för macOS" },
   "footer": {
     "siteNote": "Den här webbplatsen använder integritetsvänlig analys utan cookies.",
     "product": "Produkt",

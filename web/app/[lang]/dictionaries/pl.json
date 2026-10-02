@@ -91,7 +91,7 @@
     "bestText": "Uczciwe zestawienie sposobów otwierania dysków BitLocker na Macu: cena, tylko do odczytu czy odczyt i zapis, Apple silicon i konfiguracja.",
     "bestCta": "Przeczytaj porównanie"
   },
-  "cta": { "title": "Otwórz swój dysk BitLocker", "text": "Nie potrzebujesz komputera z Windows.", "download": "Pobierz dla macOS", "whatsNew": "Co nowego" },
+  "cta": { "download": "Pobierz dla macOS" },
   "footer": {
     "siteNote": "Ta strona korzysta z analityki przyjaznej prywatności, bez plików cookie.",
     "product": "Produkt",

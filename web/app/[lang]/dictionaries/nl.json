@@ -91,7 +91,7 @@
     "bestText": "Een eerlijk overzicht van manieren om BitLocker-schijven op een Mac te openen: prijs, alleen-lezen of lezen en schrijven, Apple silicon en installatie.",
     "bestCta": "Lees de vergelijking"
   },
-  "cta": { "title": "Open je BitLocker-schijf", "text": "Geen Windows-pc nodig.", "download": "Download voor macOS", "whatsNew": "Wat is er nieuw" },
+  "cta": { "download": "Download voor macOS" },
   "footer": {
     "siteNote": "Deze website gebruikt privacyvriendelijke analyses zonder cookies.",
     "product": "Product",

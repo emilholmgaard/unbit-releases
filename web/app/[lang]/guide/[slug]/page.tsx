@@ -165,15 +165,6 @@ export default async function GuideArticle({ params }: PageProps<"/[lang]/guide/
             </div>
           </section>
         </article>
-
-        <section className="cta grad-cta">
-          <h2>{ui.ctaTitle}</h2>
-          <p>{ui.ctaText}</p>
-          <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</a>
-            <a className="pill dark" href={guidePath(locale)}>{ui.allGuides}</a>
-          </div>
-        </section>
       </main>
       <SiteFooter locale={locale} t={t} />
     </>

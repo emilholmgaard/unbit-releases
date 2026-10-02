@@ -91,7 +91,7 @@
     "bestText": "Ein ehrlicher Überblick über die Möglichkeiten, BitLocker-Laufwerke auf dem Mac zu öffnen: Preis, schreibgeschützt oder Lesen/Schreiben, Apple Silicon und Einrichtung.",
     "bestCta": "Vergleich lesen"
   },
-  "cta": { "title": "Öffne dein BitLocker-Laufwerk", "text": "Kein Windows-PC nötig.", "download": "Für macOS herunterladen", "whatsNew": "Was ist neu" },
+  "cta": { "download": "Für macOS herunterladen" },
   "footer": {
     "siteNote": "Diese Website verwendet datenschutzfreundliche Analysen ohne Cookies.",
     "product": "Produkt",
