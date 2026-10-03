@@ -25,10 +25,8 @@ a { color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 10;
-  /* No border or shadow: content behind is only blurred, with no hard edge. */
-  background: rgba(0, 0, 0, 0.55);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  /* Solid black: a translucent, blurred bar turned the white hero text scrolling behind it into a grey smudge. */
+  background: #000;
   border: 0;
   box-shadow: none;
 }

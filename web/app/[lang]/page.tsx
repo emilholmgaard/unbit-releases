@@ -100,15 +100,15 @@ export default async function Home() {
             </div>
             <div className="desk">
               <figure>
-                <Image src="/shot-welcome.png" width={320} height={392} alt={t.mockup.welcomeAlt} />
+                <Image src="/shot-welcome.png" unoptimized width={320} height={392} alt={t.mockup.welcomeAlt} />
                 <figcaption>{t.mockup.welcomeCaption}</figcaption>
               </figure>
               <figure>
-                <Image src="/shot-unlock.png" width={320} height={488} alt={t.mockup.unlockAlt} />
+                <Image src="/shot-unlock.png" unoptimized width={320} height={488} alt={t.mockup.unlockAlt} />
                 <figcaption>{t.mockup.unlockCaption}</figcaption>
               </figure>
               <figure>
-                <Image src="/shot-open.png" width={320} height={464} alt={t.mockup.openAlt} />
+                <Image src="/shot-open.png" unoptimized width={320} height={464} alt={t.mockup.openAlt} />
                 <figcaption>{t.mockup.openCaption}</figcaption>
               </figure>
             </div>
