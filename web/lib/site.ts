@@ -13,7 +13,7 @@ const FEEDS = [
   "https://emilholmgaard.github.io/unbit-releases/appcast.xml",
   "https://raw.githubusercontent.com/emilholmgaard/unbit-releases/main/appcast.xml",
 ];
-const FALLBACK = { version: "1.0.10", minOS: "13", date: undefined as string | undefined };
+const FALLBACK = { version: "1.0.11", minOS: "13", date: undefined as string | undefined };
 
 /** Latest release from the Sparkle feed (cached by Next.js, refreshed every 10 minutes). */
 export async function latestRelease(): Promise<{ version: string; minOS: string; date?: string }> {
