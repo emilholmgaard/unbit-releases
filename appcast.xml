@@ -6,6 +6,15 @@
     <description>Opdateringer til Unbit</description>
     <language>da</language>
     <item>
+      <title>Version 1.0.11</title>
+      <pubDate>Sat, 03 Oct 2026 07:55:04 +0000</pubDate>
+      <sparkle:version>17</sparkle:version>
+      <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Unbit 1.0.11 adds a lot around copying, finding and trying out your drive. Everything stays read-only.</p><ul><li><b>Copy to Mac:</b> copy only changed files (Skip Identical Files), optional SHA-256 verification with a clear Verified status and a saveable report, MB/s and time left, pause and resume, keep-both/skip/ask for existing files, optional eject and sound when a copy finishes, and copying keeps going with the panel closed.</li><li><b>Find files:</b> search the open drive by name, preview with Quick Look, collect files in a copy basket, favorite folders and recent files, and drag files straight to Finder or a mail.</li><li><b>Try Unbit without a drive:</b> a built-in demo drive with sample files, opened read-only like a real one.</li><li><b>Opening:</b> live opening steps, a drive description before unlocking, the last drive and folder remembered, and an optional setting to open Finder when the drive opens.</li><li><b>Safety:</b> auto-lock when idle, a warning if a drive reports failing health, clearer messages for inconsistent BitLocker metadata, crash recovery for leftover images, and Erase All Unbit Data.</li><li><b>Help:</b> a short "What happens to my drive?" in the welcome card with a link to the guide, and a one-click Send Error Report that opens a pre-filled email (anonymous, you press send).</li><li><b>Look and feel:</b> compact density, an optional colorful menu bar icon, keyboard shortcuts, local statistics, an About window, and large-drive handling with stop buttons and progress.</li></ul>]]></description>
+      <enclosure url="https://github.com/emilholmgaard/unbit-releases/releases/download/v1.0.11/Unbit-1.0.11.dmg" type="application/octet-stream" sparkle:edSignature="/11zn8akN4ZtOpSTB/khgLBR5wdgGjjzqB4PT7OdhDPOJc/RhusNC3K//ZlpbmxjpSBpnnUva8/WmkzUJO+fAw==" length="6275488" />
+    </item>
+    <item>
       <title>Version 1.0.10</title>
       <pubDate>Fri, 02 Oct 2026 12:53:37 +0000</pubDate>
       <sparkle:version>12</sparkle:version>
