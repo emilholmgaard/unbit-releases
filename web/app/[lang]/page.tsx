@@ -33,6 +33,7 @@ export default async function Home() {
       installUrl: DOWNLOAD_URL,
       releaseNotes: RELEASES_URL,
       fileFormat: "application/x-apple-diskimage",
+      featureList: [...t.features.items.map((item) => item.title), ...t.features.more.groups.flatMap((group) => group.items.map((item) => item.split(" – ")[0]))],
       isAccessibleForFree: true,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       author: { "@type": "Organization", name: "Unbit" },
@@ -181,6 +182,32 @@ export default async function Home() {
               </article>
             </div>
             <p className="features-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18Z"/></svg><span><strong>{t.features.languagesTitle}</strong> – {t.features.languagesText}</span></p>
+          </section>
+
+          {/* All features, grouped */}
+          <section className="section" id="all-features" aria-labelledby="all-features-title">
+            <div className="section-head">
+              <h2 id="all-features-title">{t.features.more.title}</h2>
+              <p>{t.features.more.intro}</p>
+            </div>
+            <div className="grid three feature-groups">
+              {t.features.more.groups.map((group) => (
+                <article className="feature-group" key={group.title}>
+                  <h3>{group.title}</h3>
+                  <ul>
+                    {group.items.map((item) => {
+                      const [name, ...rest] = item.split(" – ");
+                      return (
+                        <li key={name}>
+                          <strong>{name}</strong>
+                          {rest.length ? <> – {rest.join(" – ")}</> : null}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </article>
+              ))}
+            </div>
           </section>
 
           {/* Privacy */}

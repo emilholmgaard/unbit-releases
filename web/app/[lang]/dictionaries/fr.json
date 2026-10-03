@@ -56,7 +56,71 @@
       { "title": "Se met à jour seule, notarisée par Apple", "text": "Signée avec un Developer ID et notarisée par Apple. Les nouvelles versions arrivent via des mises à jour automatiques signées." }
     ],
     "languagesTitle": "Disponible en 11 langues",
-    "languagesText": "Anglais, danois, suédois, norvégien, allemand, français, espagnol, italien, néerlandais, finnois et polonais."
+    "languagesText": "Anglais, danois, suédois, norvégien, allemand, français, espagnol, italien, néerlandais, finnois et polonais.",
+    "more": {
+      "title": "Toutes les fonctions en un coup d’œil",
+      "intro": "Tout ce que sait faire Unbit, regroupé selon ce que vous voulez faire.",
+      "groups": [
+        {
+          "title": "Ouvrir votre disque",
+          "items": [
+            "Mot de passe ou clé de récupération – Saisissez le mot de passe ou les 48 chiffres, collez-les ou déposez le fichier de clé issu de Windows.",
+            "Progression claire – Suivez chaque étape de l’ouverture et obtenez une explication simple et une solution en cas de problème.",
+            "Plusieurs disques à la fois – Ouvrez plus d’un disque, chacun avec son propre usage et sa propre activité.",
+            "Ouvre automatiquement les disques connus – En option, avec le code enregistré dans votre trousseau et, si vous le souhaitez, Touch ID.",
+            "Notifications – Soyez prévenu quand un disque est connecté, ouvert ou n’a pas pu être ouvert.",
+            "Finder et dernier dossier – Ouvrez au besoin le Finder à l’ouverture du disque et retrouvez le dernier dossier utilisé.",
+            "Essayer un disque de démonstration – Un disque fictif intégré, avec des fichiers d’exemple, montre le fonctionnement d’Unbit sans véritable disque BitLocker."
+          ]
+        },
+        {
+          "title": "Trouver et copier des fichiers",
+          "items": [
+            "Rechercher sur le disque – Cherchez des noms de fichiers et de dossiers et prévisualisez les résultats avec Aperçu rapide (Quick Look).",
+            "Panier de copie – Rassemblez des fichiers issus des résultats et copiez-les sur votre Mac en une seule fois.",
+            "Favoris et fichiers récents – Accédez à vos dossiers favoris et aux derniers fichiers utilisés.",
+            "Copier sur le Mac – Choisissez ce qui se passe si un fichier existe déjà : demander, renommer ou ignorer.",
+            "Copier uniquement ce qui a changé – Les fichiers identiques sont ignorés : recopier un dossier n’apporte que le nouveau.",
+            "Vérifier les copies – Contrôle SHA-256 facultatif de chaque fichier copié, avec un statut Vérifié clair.",
+            "Rapport de copie – Voyez ce qui a été copié, ignoré ou a échoué, et enregistrez le rapport dans un fichier.",
+            "Vitesse et temps restant – Suivez les Mo/s et le temps restant estimé dans le panneau et dans la barre des menus.",
+            "Glisser les fichiers dehors – Faites glisser des fichiers depuis les résultats, les fichiers récents ou le panier vers le Finder ou dans un e-mail. Le disque est seulement lu."
+          ]
+        },
+        {
+          "title": "Sûr dès la conception",
+          "items": [
+            "Lecture seule – Rien n’est jamais écrit sur votre disque.",
+            "Éjection sûre – Éjectez en un clic, et au besoin après la copie, à la mise en veille ou au verrouillage du Mac, ou après un temps d’inactivité.",
+            "Alerte sur l’état du disque – Recevez une alerte si le disque signale lui-même une défaillance.",
+            "Fait le ménage tout seul – Si Unbit se ferme de façon inattendue, les restes sont supprimés au prochain lancement.",
+            "Effacer toutes les données – Une seule commande supprime les réglages, les codes enregistrés et les statistiques d’Unbit de ce Mac.",
+            "Privé par défaut – Pas de compte, pas d’analyse, et les codes enregistrés restent dans votre trousseau."
+          ]
+        },
+        {
+          "title": "Barre des menus et apparence",
+          "items": [
+            "Barre des menus vivante – Une icône de cadenas indique l’état, et le pourcentage pendant une copie.",
+            "Icône, couleurs et taille – Choisissez le style d’icône, un thème de couleur, la densité et la taille du texte ; clair et sombre suivent macOS.",
+            "Raccourci global – Ouvrez le panneau depuis n’importe quelle app avec la combinaison de touches de votre choix.",
+            "Raccourcis clavier – Actualisez, recherchez, copiez et quittez sans toucher la souris.",
+            "Lancer à l’ouverture de session – En option, pour qu’Unbit soit prêt dans la barre des menus.",
+            "Raccourcis, Siri et Spotlight – Ouvrez et éjectez des disques depuis Raccourcis. Les codes ne transitent jamais par Raccourcis."
+          ]
+        },
+        {
+          "title": "Aide et transparence",
+          "items": [
+            "Des erreurs en langage clair – Chaque erreur explique ce qui s’est passé et propose la suite, avec une page d’aide dans votre langue.",
+            "Envoyer un rapport d’erreur – Un clic ouvre un e-mail prérempli avec un rapport anonyme. Vous décidez de l’envoyer ou non.",
+            "Que devient mon disque ? – Une courte explication dans la carte de bienvenue, avec un lien vers le guide pas à pas.",
+            "Vos propres statistiques – Disques ouverts et fichiers copiés, conservés uniquement sur ce Mac et réinitialisables à tout moment.",
+            "À propos et nouveautés – La version, les nouveautés et la déclaration de confidentialité sont à un clic."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Votre disque ne quitte jamais votre Mac",

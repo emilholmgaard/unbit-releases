@@ -56,7 +56,71 @@
       { "title": "Päivittyy itse, Applen notarisoima", "text": "Allekirjoitettu Developer ID:llä ja Applen notarisoima. Uudet versiot tulevat allekirjoitettuina automaattisina päivityksinä." }
     ],
     "languagesTitle": "Saatavilla 11 kielellä",
-    "languagesText": "englanti, tanska, ruotsi, norja, saksa, ranska, espanja, italia, hollanti, suomi ja puola."
+    "languagesText": "englanti, tanska, ruotsi, norja, saksa, ranska, espanja, italia, hollanti, suomi ja puola.",
+    "more": {
+      "title": "Kaikki ominaisuudet yhdellä silmäyksellä",
+      "intro": "Kaikki mitä Unbit osaa, ryhmiteltynä sen mukaan, mitä haluat tehdä.",
+      "groups": [
+        {
+          "title": "Aseman avaaminen",
+          "items": [
+            "Salasana tai palautusavain – Kirjoita salasana tai 48 numeroa, liitä ne tai pudota Windowsin avaintiedosto ikkunaan.",
+            "Selkeä eteneminen – Näet jokaisen vaiheen aseman avautuessa, ja jos jokin epäonnistuu, saat selkeän selityksen ja ratkaisun.",
+            "Useita asemia kerralla – Avaa useampi kuin yksi asema, kullakin oma käyttö ja aktiviteetti.",
+            "Avaa tutut asemat automaattisesti – Valinnainen, avainnippuun tallennetulla koodilla ja halutessasi Touch ID:llä.",
+            "Ilmoitukset – Saat tiedon, kun asema liitetään, avataan tai sitä ei voitu avata.",
+            "Finder ja viimeisin kansio – Avaa halutessasi Finder, kun asema avautuu, ja palaa viimeksi käyttämääsi kansioon.",
+            "Kokeile testiasemaa – Sisäänrakennettu, kuvitteellinen asema esimerkkitiedostoineen näyttää, miten Unbit toimii ilman oikeaa BitLocker-asemaa."
+          ]
+        },
+        {
+          "title": "Tiedostojen etsiminen ja kopiointi",
+          "items": [
+            "Hae asemalta – Hae tiedosto- ja kansionimiä ja esikatsele tuloksia Pikakatselulla (Quick Look).",
+            "Kopiointikori – Kerää tiedostoja hakutuloksista ja kopioi ne Maciin kerralla.",
+            "Suosikit ja viimeisimmät tiedostot – Siirry suosikkikansioihisi ja viimeksi käyttämiisi tiedostoihin.",
+            "Kopioi Maciin – Valitse, mitä tapahtuu, jos tiedosto on jo olemassa: kysy, nimeä uudelleen tai ohita.",
+            "Kopioi vain muuttuneet – Identtiset tiedostot ohitetaan, joten kansion kopioiminen uudelleen tuo vain uuden.",
+            "Tarkista kopiot – Valinnainen SHA-256-tarkistus jokaiselle kopioidulle tiedostolle ja selkeä Vahvistettu-tila.",
+            "Kopiointiraportti – Näet, mitä kopioitiin, ohitettiin tai epäonnistui, ja voit tallentaa raportin tiedostoksi.",
+            "Nopeus ja jäljellä oleva aika – Seuraa MB/s-nopeutta ja arvioitua jäljellä olevaa aikaa paneelissa ja valikkorivillä.",
+            "Vedä tiedostot ulos – Vedä tiedostoja hakutuloksista, viimeisimmistä tiedostoista tai korista Finderiin tai sähköpostiin. Asemaa vain luetaan."
+          ]
+        },
+        {
+          "title": "Turvallinen jo suunnittelussa",
+          "items": [
+            "Vain luku – Asemalle ei koskaan kirjoiteta mitään.",
+            "Turvallinen irrotus – Irrota yhdellä napsautuksella ja halutessasi kopioinnin jälkeen, kun Mac menee lepotilaan tai lukittuu tai kun mitään ei ole tehty hetkeen.",
+            "Aseman kuntovaroitus – Saat varoituksen, jos asema itse ilmoittaa olevansa vikaantumassa.",
+            "Siivoaa itse jälkensä – Jos Unbit sulkeutuu odottamatta, jäänteet poistetaan seuraavalla käynnistyskerralla.",
+            "Poista kaikki tiedot – Yksi komento poistaa Unbitin asetukset, tallennetut koodit ja tilastot tältä Macilta.",
+            "Oletuksena yksityinen – Ei tilejä eikä analytiikkaa, ja tallennetut koodit pysyvät avainnipussasi."
+          ]
+        },
+        {
+          "title": "Valikkorivi ja ulkoasu",
+          "items": [
+            "Elävä valikkorivi – Lukkokuvake näyttää tilan ja kopioinnin aikana prosentit.",
+            "Kuvake, värit ja koko – Valitse kuvaketyyli, väriteema, tiheys ja tekstikoko; vaalea ja tumma seuraavat macOS:ää.",
+            "Yleinen pikanäppäin – Avaa paneeli mistä tahansa sovelluksesta valitsemallasi näppäinyhdistelmällä.",
+            "Pikanäppäimet – Päivitä, hae, kopioi ja lopeta koskematta hiireen.",
+            "Käynnistä kirjautuessa – Valinnainen, jotta Unbit on valmiina valikkorivillä.",
+            "Pikakomennot, Siri ja Spotlight – Avaa ja irrota asemia Pikakomennoilla. Koodeja ei koskaan välitetä Pikakomentojen kautta."
+          ]
+        },
+        {
+          "title": "Apu ja avoimuus",
+          "items": [
+            "Virheet selkeällä kielellä – Jokainen virhe kertoo, mitä tapahtui, ja ehdottaa seuraavaa askelta; ohjesivu on omalla kielelläsi.",
+            "Lähetä virheraportti – Yksi napsautus avaa valmiiksi täytetyn sähköpostin, jossa on nimetön raportti. Päätät itse, lähetetäänkö se.",
+            "Mitä asemalleni tapahtuu? – Lyhyt selitys tervetulokortissa ja linkki vaiheittaiseen oppaaseen.",
+            "Omat tilastosi – Avatut asemat ja kopioidut tiedostot tallennetaan vain tälle Macille, ja ne voi nollata milloin tahansa.",
+            "Tietoja ja uutuudet – Versio, uutuudet ja tietosuojaseloste ovat yhden napsautuksen päässä."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Asemasi ei koskaan poistu Macistasi",

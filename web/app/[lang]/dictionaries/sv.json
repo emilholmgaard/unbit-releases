@@ -56,7 +56,71 @@
       { "title": "Uppdaterar sig själv, notariserad av Apple", "text": "Signerad med Developer ID och notariserad av Apple. Nya versioner kommer via signerade automatiska uppdateringar." }
     ],
     "languagesTitle": "Finns på 11 språk",
-    "languagesText": "Engelska, danska, svenska, norska, tyska, franska, spanska, italienska, nederländska, finska och polska."
+    "languagesText": "Engelska, danska, svenska, norska, tyska, franska, spanska, italienska, nederländska, finska och polska.",
+    "more": {
+      "title": "Alla funktioner i korthet",
+      "intro": "Allt Unbit kan, grupperat efter vad du vill göra.",
+      "groups": [
+        {
+          "title": "Öppna din enhet",
+          "items": [
+            "Lösenord eller återställningsnyckel – Skriv lösenordet eller de 48 siffrorna, klistra in dem eller släpp nyckelfilen från Windows.",
+            "Tydligt förlopp – Se varje steg medan enheten öppnas, och få en enkel förklaring och en lösning om något går fel.",
+            "Flera enheter samtidigt – Öppna fler än en enhet, var och en med eget användande och egen aktivitet.",
+            "Öppnar kända enheter automatiskt – Valfritt, med koden sparad i nyckelringen och gärna med Touch ID.",
+            "Aviseringar – Få veta när en enhet ansluts, öppnas eller inte kunde öppnas.",
+            "Finder och senaste mappen – Öppna vid behov Finder när enheten öppnas och gå tillbaka till mappen du använde senast.",
+            "Prova en demoenhet – En inbyggd, påhittad enhet med exempelfiler visar hur Unbit fungerar utan en riktig BitLocker-enhet."
+          ]
+        },
+        {
+          "title": "Hitta och kopiera filer",
+          "items": [
+            "Sök på enheten – Sök efter fil- och mappnamn och förhandsgranska resultaten med Quick Look.",
+            "Kopieringskorg – Samla filer från sökresultaten och kopiera dem till din Mac på en gång.",
+            "Favoriter och senaste filer – Hoppa till dina favoritmappar och de filer du använde senast.",
+            "Kopiera till Mac – Välj vad som händer om en fil redan finns: fråga, byt namn eller hoppa över.",
+            "Kopiera bara det som ändrats – Identiska filer hoppas över, så att en ny kopiering av en mapp bara hämtar det nya.",
+            "Verifiera kopior – Valfri SHA-256-kontroll av varje kopierad fil, med en tydlig status: Verifierad.",
+            "Kopieringsrapport – Se vad som kopierades, hoppades över eller misslyckades, och spara rapporten som en fil.",
+            "Hastighet och återstående tid – Följ MB/s och beräknad återstående tid i panelen och i menyraden.",
+            "Dra ut filer – Dra filer från sökresultat, senaste filer eller korgen till Finder eller in i ett e-postmeddelande. Enheten läses bara."
+          ]
+        },
+        {
+          "title": "Säkert från grunden",
+          "items": [
+            "Skrivskyddat – Inget skrivs någonsin till din enhet.",
+            "Säker utmatning – Mata ut med ett klick, och vid behov efter kopiering, när Macen går i vila eller låses, eller efter en tids inaktivitet.",
+            "Varning om enhetens skick – Få en varning om själva enheten rapporterar att den är på väg att fallera.",
+            "Städar efter sig – Om Unbit avslutas oväntat tas kvarlevor bort nästa gång den startar.",
+            "Radera all data – Ett kommando tar bort Unbits inställningar, sparade koder och statistik från den här Macen.",
+            "Privat som standard – Inga konton, ingen analys, och sparade koder stannar i din nyckelring."
+          ]
+        },
+        {
+          "title": "Menyrad och utseende",
+          "items": [
+            "Levande menyrad – En låsikon visar status och procent medan en kopiering pågår.",
+            "Ikon, färger och storlek – Välj ikonstil, färgtema, täthet och textstorlek; ljust och mörkt följer macOS.",
+            "Global kortkommando – Öppna panelen från vilken app som helst med en tangentkombination du väljer.",
+            "Tangentbordskommandon – Uppdatera, sök, kopiera och avsluta utan att röra musen.",
+            "Starta vid inloggning – Valfritt, så att Unbit är redo i menyraden.",
+            "Genvägar, Siri och Spotlight – Öppna och mata ut enheter från Genvägar. Koder skickas aldrig genom Genvägar."
+          ]
+        },
+        {
+          "title": "Hjälp och öppenhet",
+          "items": [
+            "Fel på vanligt språk – Varje fel förklarar vad som hände och föreslår nästa steg, med en hjälpsida på ditt språk.",
+            "Skicka en felrapport – Ett klick öppnar ett ifyllt e-postmeddelande med en anonym rapport. Du bestämmer själv om det skickas.",
+            "Vad händer med min enhet? – En kort förklaring i välkomstkortet med en länk till steg-för-steg-guiden.",
+            "Din egen statistik – Öppnade enheter och kopierade filer, sparade bara på den här Macen och nollställda när du vill.",
+            "Om och nyheter – Version, nyheter och integritetsförklaring är ett klick bort."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Din enhet lämnar aldrig din Mac",

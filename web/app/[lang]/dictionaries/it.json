@@ -56,7 +56,71 @@
       { "title": "Si aggiorna da sola, notarizzata da Apple", "text": "Firmata con Developer ID e notarizzata da Apple. Le nuove versioni arrivano tramite aggiornamenti automatici firmati." }
     ],
     "languagesTitle": "Disponibile in 11 lingue",
-    "languagesText": "Inglese, danese, svedese, norvegese, tedesco, francese, spagnolo, italiano, olandese, finlandese e polacco."
+    "languagesText": "Inglese, danese, svedese, norvegese, tedesco, francese, spagnolo, italiano, olandese, finlandese e polacco.",
+    "more": {
+      "title": "Tutte le funzioni in sintesi",
+      "intro": "Tutto ciò che Unbit sa fare, raggruppato in base a ciò che vuoi fare.",
+      "groups": [
+        {
+          "title": "Aprire l’unità",
+          "items": [
+            "Password o chiave di ripristino – Digita la password o le 48 cifre, incollale o trascina il file della chiave da Windows.",
+            "Avanzamento chiaro – Vedi ogni passaggio mentre l’unità si apre e ricevi una spiegazione semplice e una soluzione se qualcosa non va.",
+            "Più unità contemporaneamente – Apri più di un’unità, ciascuna con il proprio utilizzo e la propria attività.",
+            "Apre automaticamente le unità note – Facoltativo, con il codice salvato nel portachiavi e, se vuoi, con Touch ID.",
+            "Notifiche – Vieni avvisato quando un’unità si collega, si apre o non è stato possibile aprirla.",
+            "Finder e ultima cartella – Se vuoi, apri il Finder quando l’unità si apre e torna all’ultima cartella usata.",
+            "Prova un’unità demo – Un’unità fittizia integrata, con file di esempio, ti mostra come funziona Unbit senza un’unità BitLocker reale."
+          ]
+        },
+        {
+          "title": "Trovare e copiare i file",
+          "items": [
+            "Cerca nell’unità – Cerca nomi di file e cartelle e visualizza i risultati in anteprima con Quick Look.",
+            "Carrello di copia – Raccogli i file dai risultati della ricerca e copiali sul Mac in un colpo solo.",
+            "Preferiti e file recenti – Passa subito alle cartelle preferite e agli ultimi file usati.",
+            "Copia sul Mac – Scegli cosa succede se un file esiste già: chiedere, rinominare o saltare.",
+            "Copia solo ciò che è cambiato – I file identici vengono saltati, così ricopiare una cartella porta solo le novità.",
+            "Verifica le copie – Controllo SHA-256 facoltativo di ogni file copiato, con uno stato Verificato ben chiaro.",
+            "Rapporto di copia – Vedi cosa è stato copiato, saltato o non riuscito e salva il rapporto come file.",
+            "Velocità e tempo rimanente – Segui i MB/s e il tempo stimato rimanente nel pannello e nella barra dei menu.",
+            "Trascina i file fuori – Trascina i file dai risultati, dai recenti o dal carrello nel Finder o in una e-mail. L’unità viene solo letta."
+          ]
+        },
+        {
+          "title": "Sicuro per progetto",
+          "items": [
+            "Sola lettura – Non viene mai scritto nulla sulla tua unità.",
+            "Espulsione sicura – Espelli con un clic e, se vuoi, dopo la copia, quando il Mac va in stop o si blocca, o dopo un periodo di inattività.",
+            "Avviso sullo stato dell’unità – Ricevi un avviso se è l’unità stessa a segnalare un guasto.",
+            "Fa pulizia da sola – Se Unbit si chiude inaspettatamente, i residui vengono rimossi al successivo avvio.",
+            "Cancella tutti i dati – Un solo comando rimuove da questo Mac impostazioni, codici salvati e statistiche di Unbit.",
+            "Privato per impostazione predefinita – Nessun account, nessuna analisi, e i codici salvati restano nel tuo portachiavi."
+          ]
+        },
+        {
+          "title": "Barra dei menu e aspetto",
+          "items": [
+            "Barra dei menu dal vivo – Un’icona a lucchetto mostra lo stato e la percentuale durante una copia.",
+            "Icona, colori e dimensioni – Scegli lo stile dell’icona, un tema di colore, la densità e la dimensione del testo; chiaro e scuro seguono macOS.",
+            "Scorciatoia globale – Apri il pannello da qualsiasi app con la combinazione di tasti che scegli.",
+            "Scorciatoie da tastiera – Aggiorna, cerca, copia ed esci senza toccare il mouse.",
+            "Apri al login – Facoltativo, così Unbit è pronto nella barra dei menu.",
+            "Comandi rapidi, Siri e Spotlight – Apri ed espelli le unità da Comandi rapidi. I codici non passano mai da Comandi rapidi."
+          ]
+        },
+        {
+          "title": "Aiuto e trasparenza",
+          "items": [
+            "Errori in linguaggio chiaro – Ogni errore spiega cosa è successo e propone il passo successivo, con una pagina di aiuto nella tua lingua.",
+            "Invia un rapporto errori – Un clic apre un’e-mail già compilata con un rapporto anonimo. Decidi tu se inviarla.",
+            "Cosa succede alla mia unità? – Una breve spiegazione nella scheda di benvenuto, con un link alla guida passo passo.",
+            "Le tue statistiche – Unità aperte e file copiati, salvati solo su questo Mac e azzerabili quando vuoi.",
+            "Info e novità – Versione, novità e informativa sulla privacy sono a un clic."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "La tua unità non lascia mai il tuo Mac",

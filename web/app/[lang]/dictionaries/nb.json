@@ -56,7 +56,71 @@
       { "title": "Oppdaterer seg selv, notarisert av Apple", "text": "Signert med Developer ID og notarisert av Apple. Nye versjoner kommer som signerte automatiske oppdateringer." }
     ],
     "languagesTitle": "Tilgjengelig på 11 språk",
-    "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, nederlandsk, finsk og polsk."
+    "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, nederlandsk, finsk og polsk.",
+    "more": {
+      "title": "Alle funksjoner på et blikk",
+      "intro": "Alt Unbit kan, gruppert etter det du vil gjøre.",
+      "groups": [
+        {
+          "title": "Åpne stasjonen",
+          "items": [
+            "Passord eller gjenopprettingsnøkkel – Skriv passordet eller de 48 sifrene, lim dem inn eller slipp nøkkelfilen fra Windows.",
+            "Tydelig fremdrift – Se hvert trinn mens stasjonen åpnes, og få en enkel forklaring og en løsning hvis noe går galt.",
+            "Flere stasjoner samtidig – Åpne mer enn én stasjon, hver med sin egen bruk og aktivitet.",
+            "Åpner kjente stasjoner automatisk – Valgfritt, med koden lagret i nøkkelringen og gjerne med Touch ID.",
+            "Varsler – Få beskjed når en stasjon kobles til, åpnes eller ikke kunne åpnes.",
+            "Finder og siste mappe – Åpne eventuelt Finder når stasjonen åpnes, og gå tilbake til mappen du brukte sist.",
+            "Prøv en teststasjon – En innebygd, oppdiktet stasjon med eksempelfiler viser hvordan Unbit fungerer uten en ekte BitLocker-stasjon."
+          ]
+        },
+        {
+          "title": "Finn og kopier filer",
+          "items": [
+            "Søk på stasjonen – Søk etter fil- og mappenavn og se resultatene i forhåndsvisning med Quick Look.",
+            "Kopikurv – Samle filer fra søkeresultatene og kopier dem til Macen på én gang.",
+            "Favoritter og nylige filer – Hopp til favorittmappene dine og filene du brukte sist.",
+            "Kopier til Mac – Velg hva som skjer hvis en fil allerede finnes: spørre, gi nytt navn eller hoppe over.",
+            "Kopier bare det som er endret – Identiske filer hoppes over, så ny kopiering av en mappe henter bare det nye.",
+            "Kontroller kopier – Valgfri SHA-256-kontroll av hver kopierte fil, med tydelig status: Bekreftet.",
+            "Kopirapport – Se hva som ble kopiert, hoppet over eller feilet, og lagre rapporten som en fil.",
+            "Hastighet og gjenstående tid – Følg MB/s og beregnet gjenstående tid i panelet og i menylinjen.",
+            "Dra filer ut – Dra filer fra søkeresultater, nylige filer eller kurven til Finder eller inn i en e-post. Stasjonen leses bare."
+          ]
+        },
+        {
+          "title": "Trygt fra grunnen av",
+          "items": [
+            "Skrivebeskyttet – Det skrives aldri noe til stasjonen din.",
+            "Trygg utløsing – Løs ut med ett klikk, og eventuelt etter kopiering, når Macen går i dvale eller låses, eller etter en periode uten aktivitet.",
+            "Advarsel om stasjonens tilstand – Få en advarsel hvis selve stasjonen melder at den er i ferd med å svikte.",
+            "Rydder opp etter seg – Hvis Unbit avsluttes uventet, fjernes rester neste gang den starter.",
+            "Slett alle data – Én kommando fjerner Unbits innstillinger, lagrede koder og statistikk fra denne Macen.",
+            "Privat som standard – Ingen kontoer, ingen analyse, og lagrede koder blir i nøkkelringen din."
+          ]
+        },
+        {
+          "title": "Menylinje og utseende",
+          "items": [
+            "Levende menylinje – Et låsikon viser status og prosent mens en kopiering pågår.",
+            "Ikon, farger og størrelse – Velg ikonstil, fargetema, tetthet og tekststørrelse; lyst og mørkt følger macOS.",
+            "Global hurtigtast – Åpne panelet fra hvilken som helst app med en tastekombinasjon du velger.",
+            "Tastatursnarveier – Oppdater, søk, kopier og avslutt uten å røre musen.",
+            "Start ved pålogging – Valgfritt, slik at Unbit er klar i menylinjen.",
+            "Snarveier, Siri og Spotlight – Åpne og løs ut stasjoner fra Snarveier. Koder sendes aldri gjennom Snarveier."
+          ]
+        },
+        {
+          "title": "Hjelp og åpenhet",
+          "items": [
+            "Feil på vanlig språk – Hver feil forklarer hva som skjedde og foreslår neste steg, med en hjelpeside på ditt språk.",
+            "Send en feilrapport – Ett klikk åpner en ferdig utfylt e-post med en anonym rapport. Du bestemmer selv om den sendes.",
+            "Hva skjer med stasjonen min? – En kort forklaring i velkomstkortet med lenke til trinn-for-trinn-veiledningen.",
+            "Din egen statistikk – Åpnede stasjoner og kopierte filer, lagret bare på denne Macen og nullstilt når du vil.",
+            "Om og nyheter – Versjon, nyheter og personvernerklæring er ett klikk unna."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Stasjonen din forlater aldri Macen din",

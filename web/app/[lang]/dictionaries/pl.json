@@ -56,7 +56,71 @@
       { "title": "Aktualizuje się sama, poświadczona notarialnie przez Apple", "text": "Podpisana certyfikatem Developer ID i poświadczona notarialnie przez Apple. Nowe wersje docierają przez podpisane aktualizacje automatyczne." }
     ],
     "languagesTitle": "Dostępna w 11 językach",
-    "languagesText": "angielski, duński, szwedzki, norweski, niemiecki, francuski, hiszpański, włoski, niderlandzki, fiński i polski."
+    "languagesText": "angielski, duński, szwedzki, norweski, niemiecki, francuski, hiszpański, włoski, niderlandzki, fiński i polski.",
+    "more": {
+      "title": "Wszystkie funkcje w skrócie",
+      "intro": "Wszystko, co potrafi Unbit, pogrupowane według tego, co chcesz zrobić.",
+      "groups": [
+        {
+          "title": "Otwieranie dysku",
+          "items": [
+            "Hasło lub klucz odzyskiwania – Wpisz hasło lub 48 cyfr, wklej je albo upuść plik klucza z Windows.",
+            "Czytelny postęp – Zobacz każdy krok podczas otwierania dysku, a w razie problemu otrzymasz prosty opis i rozwiązanie.",
+            "Kilka dysków naraz – Otwieraj więcej niż jeden dysk, każdy z własnym użyciem i aktywnością.",
+            "Automatycznie otwiera znane dyski – Opcjonalnie, z kodem zapisanym w pęku kluczy i, jeśli chcesz, z Touch ID.",
+            "Powiadomienia – Dowiedz się, gdy dysk zostanie podłączony, otwarty lub nie uda się go otworzyć.",
+            "Finder i ostatni folder – Opcjonalnie otwórz Finder po otwarciu dysku i wróć do ostatnio używanego folderu.",
+            "Wypróbuj dysk demo – Wbudowany, fikcyjny dysk z przykładowymi plikami pokazuje, jak działa Unbit bez prawdziwego dysku BitLocker."
+          ]
+        },
+        {
+          "title": "Szukanie i kopiowanie plików",
+          "items": [
+            "Szukaj na dysku – Wyszukuj nazwy plików i folderów i oglądaj wyniki w podglądzie Quick Look.",
+            "Koszyk kopiowania – Zbieraj pliki z wyników wyszukiwania i kopiuj je na Maca jednym ruchem.",
+            "Ulubione i ostatnie pliki – Przejdź do ulubionych folderów i ostatnio używanych plików.",
+            "Kopiuj na Maca – Wybierz, co się stanie, gdy plik już istnieje: zapytaj, zmień nazwę lub pomiń.",
+            "Kopiuj tylko to, co się zmieniło – Identyczne pliki są pomijane, więc ponowne kopiowanie folderu przenosi tylko nowości.",
+            "Weryfikuj kopie – Opcjonalna kontrola SHA-256 każdego skopiowanego pliku z wyraźnym statusem Zweryfikowano.",
+            "Raport kopiowania – Zobacz, co skopiowano, pominięto lub co się nie udało, i zapisz raport jako plik.",
+            "Prędkość i pozostały czas – Śledź MB/s i szacowany pozostały czas w panelu i na pasku menu.",
+            "Przeciągaj pliki na zewnątrz – Przeciągaj pliki z wyników, ostatnich plików lub koszyka do Findera albo do wiadomości e-mail. Dysk jest tylko odczytywany."
+          ]
+        },
+        {
+          "title": "Bezpieczne z założenia",
+          "items": [
+            "Tylko do odczytu – Na dysk nigdy nic nie jest zapisywane.",
+            "Bezpieczne wysuwanie – Wysuń jednym kliknięciem, a opcjonalnie po skopiowaniu, gdy Mac zasypia lub się blokuje, albo po okresie bezczynności.",
+            "Ostrzeżenie o stanie dysku – Otrzymasz ostrzeżenie, jeśli sam dysk zgłasza awarię.",
+            "Sprząta po sobie – Jeśli Unbit zakończy się nieoczekiwanie, pozostałości zostaną usunięte przy następnym uruchomieniu.",
+            "Usuń wszystkie dane – Jedno polecenie usuwa z tego Maca ustawienia, zapisane kody i statystyki Unbit.",
+            "Domyślnie prywatnie – Bez kont i analityki, a zapisane kody zostają w pęku kluczy."
+          ]
+        },
+        {
+          "title": "Pasek menu i wygląd",
+          "items": [
+            "Żywy pasek menu – Ikona kłódki pokazuje stan, a podczas kopiowania także procent.",
+            "Ikona, kolory i rozmiar – Wybierz styl ikony, motyw kolorystyczny, gęstość i rozmiar tekstu; jasny i ciemny tryb podążają za macOS.",
+            "Skrót globalny – Otwórz panel z dowolnej aplikacji wybranym skrótem klawiszowym.",
+            "Skróty klawiszowe – Odśwież, szukaj, kopiuj i zakończ bez dotykania myszy.",
+            "Uruchom przy logowaniu – Opcjonalnie, aby Unbit był gotowy na pasku menu.",
+            "Skróty, Siri i Spotlight – Otwieraj i wysuwaj dyski ze Skrótów. Kody nigdy nie przechodzą przez Skróty."
+          ]
+        },
+        {
+          "title": "Pomoc i przejrzystość",
+          "items": [
+            "Błędy prostym językiem – Każdy błąd wyjaśnia, co się stało, i podpowiada kolejny krok, ze stroną pomocy w Twoim języku.",
+            "Wyślij raport o błędzie – Jedno kliknięcie otwiera wypełnioną wiadomość e-mail z anonimowym raportem. Ty decydujesz, czy ją wysłać.",
+            "Co się dzieje z moim dyskiem? – Krótkie wyjaśnienie na karcie powitalnej z linkiem do przewodnika krok po kroku.",
+            "Twoje własne statystyki – Otwarte dyski i skopiowane pliki, zapisane tylko na tym Macu i do wyzerowania w dowolnej chwili.",
+            "Informacje i nowości – Wersja, nowości i informacja o prywatności są o jedno kliknięcie dalej."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Twój dysk nigdy nie opuszcza Twojego Maca",

@@ -56,7 +56,71 @@
       { "title": "Werkt zichzelf bij, genotariseerd door Apple", "text": "Ondertekend met Developer ID en genotariseerd door Apple. Nieuwe versies komen binnen via ondertekende automatische updates." }
     ],
     "languagesTitle": "Beschikbaar in 11 talen",
-    "languagesText": "Engels, Deens, Zweeds, Noors, Duits, Frans, Spaans, Italiaans, Nederlands, Fins en Pools."
+    "languagesText": "Engels, Deens, Zweeds, Noors, Duits, Frans, Spaans, Italiaans, Nederlands, Fins en Pools.",
+    "more": {
+      "title": "Alle functies in één oogopslag",
+      "intro": "Alles wat Unbit kan, gegroepeerd naar wat je wilt doen.",
+      "groups": [
+        {
+          "title": "Je schijf openen",
+          "items": [
+            "Wachtwoord of herstelsleutel – Typ het wachtwoord of de 48 cijfers, plak ze of sleep het sleutelbestand uit Windows erheen.",
+            "Duidelijke voortgang – Zie elke stap terwijl de schijf opent, en krijg een heldere uitleg en een oplossing als er iets misgaat.",
+            "Meerdere schijven tegelijk – Open meer dan één schijf, elk met eigen gebruik en activiteit.",
+            "Opent bekende schijven automatisch – Optioneel, met de code uit je sleutelhanger en desgewenst met Touch ID.",
+            "Meldingen – Hoor het wanneer een schijf wordt aangesloten, geopend of niet kon worden geopend.",
+            "Finder en laatste map – Open desgewenst de Finder zodra de schijf opent en ga terug naar de map die je het laatst gebruikte.",
+            "Probeer een demoschijf – Een ingebouwde, verzonnen schijf met voorbeeldbestanden laat zien hoe Unbit werkt zonder echte BitLocker-schijf."
+          ]
+        },
+        {
+          "title": "Bestanden zoeken en kopiëren",
+          "items": [
+            "Zoeken op de schijf – Zoek op namen van bestanden en mappen en bekijk resultaten met Quick Look.",
+            "Kopieermandje – Verzamel bestanden uit de zoekresultaten en kopieer ze in één keer naar je Mac.",
+            "Favorieten en recente bestanden – Spring naar je favoriete mappen en de bestanden die je het laatst gebruikte.",
+            "Naar Mac kopiëren – Kies wat er gebeurt als een bestand al bestaat: vragen, hernoemen of overslaan.",
+            "Alleen wijzigingen kopiëren – Identieke bestanden worden overgeslagen, zodat opnieuw kopiëren van een map alleen het nieuwe brengt.",
+            "Kopieën controleren – Optionele SHA-256-controle van elk gekopieerd bestand, met een duidelijke status Geverifieerd.",
+            "Kopieerrapport – Zie wat is gekopieerd, overgeslagen of mislukt en bewaar het rapport als bestand.",
+            "Snelheid en resterende tijd – Volg MB/s en de geschatte resterende tijd in het paneel en in de menubalk.",
+            "Bestanden naar buiten slepen – Sleep bestanden uit zoekresultaten, recente bestanden of het mandje naar de Finder of in een e-mail. De schijf wordt alleen gelezen."
+          ]
+        },
+        {
+          "title": "Veilig door ontwerp",
+          "items": [
+            "Alleen-lezen – Er wordt nooit iets naar je schijf geschreven.",
+            "Veilig uitwerpen – Werp met één klik uit, en desgewenst na het kopiëren, bij slaapstand of vergrendeling van de Mac, of na een periode van inactiviteit.",
+            "Waarschuwing over de schijfstatus – Krijg een waarschuwing als de schijf zelf meldt dat hij defect raakt.",
+            "Ruimt zelf op – Als Unbit onverwacht stopt, worden resten bij de volgende start verwijderd.",
+            "Alle gegevens wissen – Eén opdracht verwijdert de instellingen, bewaarde codes en statistieken van Unbit van deze Mac.",
+            "Standaard privé – Geen accounts, geen analyse, en bewaarde codes blijven in je sleutelhanger."
+          ]
+        },
+        {
+          "title": "Menubalk en uiterlijk",
+          "items": [
+            "Levende menubalk – Een slotje toont de status en het percentage tijdens het kopiëren.",
+            "Symbool, kleuren en grootte – Kies de symboolstijl, een kleurthema, de dichtheid en de tekstgrootte; licht en donker volgen macOS.",
+            "Globale sneltoets – Open het paneel vanuit elke app met een toetscombinatie naar keuze.",
+            "Toetsenbordsneltoetsen – Ververs, zoek, kopieer en sluit af zonder de muis aan te raken.",
+            "Starten bij inloggen – Optioneel, zodat Unbit klaarstaat in de menubalk.",
+            "Opdrachten, Siri en Spotlight – Open en werp schijven uit via Opdrachten. Codes gaan nooit via Opdrachten."
+          ]
+        },
+        {
+          "title": "Hulp en openheid",
+          "items": [
+            "Fouten in gewone taal – Elke fout legt uit wat er gebeurde en geeft de volgende stap, met een hulppagina in jouw taal.",
+            "Foutrapport versturen – Eén klik opent een ingevulde e-mail met een anoniem rapport. Jij bepaalt of die wordt verstuurd.",
+            "Wat gebeurt er met mijn schijf? – Een korte uitleg in de welkomstkaart, met een link naar de stapsgewijze handleiding.",
+            "Je eigen statistieken – Geopende schijven en gekopieerde bestanden, alleen op deze Mac bewaard en te resetten wanneer je wilt.",
+            "Info en nieuw – Versie, nieuws en privacyverklaring zijn één klik weg."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Je schijf verlaat je Mac nooit",

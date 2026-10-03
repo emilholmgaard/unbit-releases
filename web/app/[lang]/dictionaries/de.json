@@ -56,7 +56,71 @@
       { "title": "Aktualisiert sich selbst, von Apple notarisiert", "text": "Mit Developer ID signiert und von Apple notarisiert. Neue Versionen kommen über signierte automatische Updates." }
     ],
     "languagesTitle": "In 11 Sprachen verfügbar",
-    "languagesText": "Englisch, Dänisch, Schwedisch, Norwegisch, Deutsch, Französisch, Spanisch, Italienisch, Niederländisch, Finnisch und Polnisch."
+    "languagesText": "Englisch, Dänisch, Schwedisch, Norwegisch, Deutsch, Französisch, Spanisch, Italienisch, Niederländisch, Finnisch und Polnisch.",
+    "more": {
+      "title": "Alle Funktionen im Überblick",
+      "intro": "Alles, was Unbit kann – gruppiert danach, was du tun möchtest.",
+      "groups": [
+        {
+          "title": "Laufwerk öffnen",
+          "items": [
+            "Passwort oder Wiederherstellungsschlüssel – Gib das Passwort oder die 48 Ziffern ein, füge sie ein oder ziehe die Schlüsseldatei aus Windows hinein.",
+            "Klarer Ablauf – Sieh jeden Schritt beim Öffnen und erhalte bei Problemen eine verständliche Erklärung und eine Lösung.",
+            "Mehrere Laufwerke gleichzeitig – Öffne mehr als ein Laufwerk, jedes mit eigener Auslastung und Aktivität.",
+            "Öffnet bekannte Laufwerke automatisch – Optional, mit dem im Schlüsselbund gespeicherten Code und auf Wunsch mit Touch ID.",
+            "Mitteilungen – Erfahre, wenn ein Laufwerk angeschlossen, geöffnet oder nicht geöffnet werden konnte.",
+            "Finder und letzter Ordner – Öffne optional den Finder, wenn das Laufwerk geöffnet wird, und kehre zum zuletzt benutzten Ordner zurück.",
+            "Testlaufwerk ausprobieren – Ein eingebautes, erfundenes Laufwerk mit Beispieldateien zeigt dir, wie Unbit ohne echtes BitLocker-Laufwerk funktioniert."
+          ]
+        },
+        {
+          "title": "Dateien finden und kopieren",
+          "items": [
+            "Laufwerk durchsuchen – Suche nach Datei- und Ordnernamen und sieh dir Treffer mit der Übersicht (Quick Look) an.",
+            "Kopierkorb – Sammle Dateien aus den Suchergebnissen und kopiere sie in einem Rutsch auf deinen Mac.",
+            "Favoriten und zuletzt benutzte Dateien – Springe zu deinen Lieblingsordnern und den zuletzt benutzten Dateien.",
+            "Auf den Mac kopieren – Lege fest, was bei einer vorhandenen Datei geschieht: nachfragen, umbenennen oder überspringen.",
+            "Nur Geändertes kopieren – Identische Dateien werden übersprungen, sodass ein erneutes Kopieren nur Neues bringt.",
+            "Kopien prüfen – Optionale SHA-256-Prüfung jeder kopierten Datei mit klarem Status „Verifiziert“.",
+            "Kopierbericht – Sieh, was kopiert, übersprungen oder fehlgeschlagen ist, und speichere den Bericht als Datei.",
+            "Tempo und Restzeit – Verfolge MB/s und die geschätzte Restzeit im Fenster und in der Menüleiste.",
+            "Dateien herausziehen – Ziehe Dateien aus Suchergebnissen, zuletzt benutzten Dateien oder dem Korb in den Finder oder in eine E-Mail. Das Laufwerk wird nur gelesen."
+          ]
+        },
+        {
+          "title": "Sicher von Grund auf",
+          "items": [
+            "Nur Lesen – Es wird nie etwas auf dein Laufwerk geschrieben.",
+            "Sicher auswerfen – Mit einem Klick auswerfen, auf Wunsch auch nach dem Kopieren, beim Ruhezustand oder Sperren des Macs oder nach einer Zeit ohne Aktivität.",
+            "Warnung zum Laufwerkszustand – Du wirst gewarnt, wenn das Laufwerk selbst meldet, dass es ausfällt.",
+            "Räumt hinter sich auf – Wird Unbit unerwartet beendet, werden Reste beim nächsten Start entfernt.",
+            "Alle Daten löschen – Ein Befehl entfernt Einstellungen, gespeicherte Codes und Statistiken von diesem Mac.",
+            "Standardmäßig privat – Keine Konten, keine Analyse, und gespeicherte Codes bleiben in deinem Schlüsselbund."
+          ]
+        },
+        {
+          "title": "Menüleiste und Aussehen",
+          "items": [
+            "Lebendige Menüleiste – Ein Schloss-Symbol zeigt den Status und beim Kopieren den Fortschritt in Prozent.",
+            "Symbol, Farben und Größe – Wähle Symbolstil, Farbschema, Dichte und Textgröße; Hell und Dunkel folgen macOS.",
+            "Globales Tastenkürzel – Öffne das Fenster aus jeder App mit einer Tastenkombination deiner Wahl.",
+            "Tastaturkürzel – Aktualisieren, suchen, kopieren und beenden, ohne die Maus anzufassen.",
+            "Beim Anmelden starten – Optional, damit Unbit in der Menüleiste bereitsteht.",
+            "Kurzbefehle, Siri und Spotlight – Öffne und werfe Laufwerke über Kurzbefehle aus. Codes werden nie über Kurzbefehle weitergegeben."
+          ]
+        },
+        {
+          "title": "Hilfe und Transparenz",
+          "items": [
+            "Fehler in klarer Sprache – Jeder Fehler erklärt, was passiert ist, und nennt den nächsten Schritt, mit einer Hilfeseite in deiner Sprache.",
+            "Fehlerbericht senden – Ein Klick öffnet eine vorausgefüllte E-Mail mit einem anonymen Bericht. Du entscheidest, ob sie gesendet wird.",
+            "Was passiert mit meinem Laufwerk? – Eine kurze Erklärung in der Willkommenskarte mit Link zur Schritt-für-Schritt-Anleitung.",
+            "Deine eigene Statistik – Geöffnete Laufwerke und kopierte Dateien, nur auf diesem Mac gespeichert und jederzeit zurücksetzbar.",
+            "Info und Neuigkeiten – Version, Neuerungen und Datenschutzerklärung sind einen Klick entfernt."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Dein Laufwerk verlässt nie deinen Mac",

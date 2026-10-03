@@ -72,7 +72,71 @@
       { "title": "Updates itself, notarized by Apple", "text": "Signed with Developer ID and notarized by Apple. New versions arrive through signed automatic updates." }
     ],
     "languagesTitle": "Available in 11 languages",
-    "languagesText": "English, Danish, Swedish, Norwegian, German, French, Spanish, Italian, Dutch, Finnish and Polish."
+    "languagesText": "English, Danish, Swedish, Norwegian, German, French, Spanish, Italian, Dutch, Finnish and Polish.",
+    "more": {
+      "title": "Every feature, at a glance",
+      "intro": "Everything Unbit can do, grouped by what you want to do.",
+      "groups": [
+        {
+          "title": "Opening your drive",
+          "items": [
+            "Password or recovery key – Type the password or the 48-digit key, paste it, or drop the key file from Windows.",
+            "Clear progress – See each step while the drive opens, and get a plain explanation and a fix if something fails.",
+            "Several drives at once – Open more than one drive, each with its own usage and activity.",
+            "Opens known drives automatically – Optional, using the code saved in your keychain, and with Touch ID if you like.",
+            "Notifications – Hear when a drive connects, opens or can't be opened.",
+            "Finder and last folder – Optionally open Finder when the drive opens, and return to the last folder you used.",
+            "Try a demo drive – A built-in, made-up drive with sample files lets you see how Unbit works without a real BitLocker drive."
+          ]
+        },
+        {
+          "title": "Find and copy files",
+          "items": [
+            "Search the drive – Look up file and folder names, and preview results with Quick Look.",
+            "Copy basket – Collect files from the search results and copy them to your Mac in one go.",
+            "Favorites and recent files – Jump to your favorite folders and the files you used last.",
+            "Copy to Mac – Choose what happens when a file already exists: ask, rename or skip.",
+            "Copy only what changed – Skip identical files, so copying a folder again only brings what is new.",
+            "Verify copies – An optional SHA-256 check of every copied file, with a clear Verified status.",
+            "Copy report – See what was copied, skipped or failed, and save the report as a file.",
+            "Speed and time left – Follow MB/s and the estimated time remaining in the panel and the menu bar.",
+            "Drag files out – Drag files from the search results, recent files or the basket to Finder or into a mail. The drive is only read."
+          ]
+        },
+        {
+          "title": "Safe by design",
+          "items": [
+            "Read-only – Nothing is ever written to your drive.",
+            "Safe eject – Eject with one click, and optionally after copying, when the Mac sleeps or locks, or after a period of inactivity.",
+            "Drive health warning – Get a warning if the drive itself reports that it is failing.",
+            "Cleans up after itself – If Unbit ever quits unexpectedly, leftovers are removed the next time it starts.",
+            "Erase all data – One command removes Unbit's settings, saved codes and statistics from this Mac.",
+            "Private by default – No accounts, no analytics, and saved codes stay in your keychain."
+          ]
+        },
+        {
+          "title": "Menu bar and looks",
+          "items": [
+            "Live menu bar – A lock icon shows the state, and the percentage while a copy runs.",
+            "Icon, colors and size – Choose the icon style, a color theme, the density and the text size; light and dark follow macOS.",
+            "Global shortcut – Open the panel from any app with a key combination you choose.",
+            "Keyboard shortcuts – Refresh, search, copy and quit without touching the mouse.",
+            "Start at login – Optional, so Unbit is ready in the menu bar.",
+            "Shortcuts, Siri and Spotlight – Open and eject drives from Shortcuts. Codes are never passed through Shortcuts."
+          ]
+        },
+        {
+          "title": "Help and transparency",
+          "items": [
+            "Errors in plain language – Every error explains what happened and offers the next step, with a help page in your language.",
+            "Send an error report – One click opens a pre-filled email with an anonymous report. You decide whether to send it.",
+            "What happens to my drive? – A short explanation in the welcome card, with a link to the step-by-step guide.",
+            "Your own statistics – Drives opened and files copied, kept only on this Mac and reset whenever you like.",
+            "About and what's new – Version, news and the privacy statement are one click away."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Your drive never leaves your Mac",

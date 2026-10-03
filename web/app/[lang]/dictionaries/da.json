@@ -56,7 +56,71 @@
       { "title": "Opdaterer sig selv, notariseret af Apple", "text": "Signeret med Developer ID og notariseret af Apple. Nye versioner kommer via signerede, automatiske opdateringer." }
     ],
     "languagesTitle": "Fås på 11 sprog",
-    "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, hollandsk, finsk og polsk."
+    "languagesText": "Engelsk, dansk, svensk, norsk, tysk, fransk, spansk, italiensk, hollandsk, finsk og polsk.",
+    "more": {
+      "title": "Alle funktioner i overblik",
+      "intro": "Alt, hvad Unbit kan, grupperet efter det, du vil gøre.",
+      "groups": [
+        {
+          "title": "Åbn dit drev",
+          "items": [
+            "Adgangskode eller gendannelsesnøgle – Skriv adgangskoden eller de 48 cifre, indsæt dem, eller slip nøglefilen fra Windows.",
+            "Tydeligt forløb – Se hvert trin, mens drevet åbnes, og få en klar forklaring og en løsning, hvis noget går galt.",
+            "Flere drev på én gang – Åbn mere end ét drev, hver med sit eget forbrug og sin egen aktivitet.",
+            "Åbner kendte drev automatisk – Valgfrit, med koden gemt i din nøglering og gerne med Touch ID.",
+            "Notifikationer – Få besked, når et drev tilsluttes, åbnes eller ikke kunne åbnes.",
+            "Finder og sidste mappe – Åbn evt. Finder, når drevet åbnes, og vend tilbage til den mappe, du sidst brugte.",
+            "Prøv et testdrev – Et indbygget, opdigtet drev med eksempelfiler viser dig, hvordan Unbit virker uden et rigtigt BitLocker-drev."
+          ]
+        },
+        {
+          "title": "Find og kopiér filer",
+          "items": [
+            "Søg på drevet – Slå fil- og mappenavne op, og se et eksempel af resultaterne med Quick Look.",
+            "Kopikurv – Saml filer fra søgeresultaterne og kopiér dem til din Mac på én gang.",
+            "Favoritter og seneste filer – Hop til dine favoritmapper og de filer, du brugte sidst.",
+            "Kopiér til Mac – Vælg, hvad der sker, hvis en fil allerede findes: spørg, omdøb eller spring over.",
+            "Kopiér kun det, der er ændret – Spring identiske filer over, så en ny kopiering af en mappe kun henter det nye.",
+            "Kontrollér kopier – Valgfri SHA-256-kontrol af hver kopieret fil med en tydelig status: Bekræftet.",
+            "Kopirapport – Se, hvad der blev kopieret, sprunget over eller fejlede, og gem rapporten som en fil.",
+            "Hastighed og resterende tid – Følg MB/s og den forventede resterende tid i panelet og i menulinjen.",
+            "Træk filer ud – Træk filer fra søgeresultater, seneste filer eller kurven til Finder eller ind i en mail. Drevet læses kun."
+          ]
+        },
+        {
+          "title": "Sikkert fra grunden",
+          "items": [
+            "Skrivebeskyttet – Der skrives aldrig noget til dit drev.",
+            "Sikker udskubning – Skub ud med ét klik, og evt. efter kopiering, når Macen går i dvale eller låses, eller efter en periode uden aktivitet.",
+            "Advarsel om drevets tilstand – Få en advarsel, hvis selve drevet melder, at det er ved at svigte.",
+            "Rydder op efter sig selv – Hvis Unbit afsluttes uventet, fjernes rester, næste gang den starter.",
+            "Slet alle data – Én kommando fjerner Unbits indstillinger, gemte koder og statistik fra denne Mac.",
+            "Privat som standard – Ingen konti, ingen analyse, og gemte koder bliver i din nøglering."
+          ]
+        },
+        {
+          "title": "Menulinje og udseende",
+          "items": [
+            "Levende menulinje – Et låseikon viser status og procenten, mens en kopiering kører.",
+            "Ikon, farver og størrelse – Vælg ikonstil, farvetema, tæthed og tekststørrelse; lyst og mørkt følger macOS.",
+            "Global genvej – Åbn panelet fra enhver app med en tastekombination, du selv vælger.",
+            "Tastaturgenveje – Opdatér, søg, kopiér og afslut uden at røre musen.",
+            "Start ved login – Valgfrit, så Unbit er klar i menulinjen.",
+            "Genveje, Siri og Spotlight – Åbn og skub drev ud fra Genveje. Koder sendes aldrig gennem Genveje."
+          ]
+        },
+        {
+          "title": "Hjælp og åbenhed",
+          "items": [
+            "Fejl på almindeligt sprog – Hver fejl forklarer, hvad der skete, og foreslår næste skridt, med en hjælpeside på dit sprog.",
+            "Send en fejlrapport – Ét klik åbner en udfyldt mail med en anonym rapport. Du bestemmer selv, om den sendes.",
+            "Hvad sker der med mit drev? – En kort forklaring i velkomstkortet med et link til trin-for-trin-guiden.",
+            "Din egen statistik – Åbnede drev og kopierede filer, kun gemt på denne Mac og nulstillet, når du vil.",
+            "Om og nyheder – Version, nyheder og privatlivserklæring er ét klik væk."
+          ]
+        }
+      ]
+    }
   },
   "privacy": {
     "title": "Dit drev forlader aldrig din Mac",
