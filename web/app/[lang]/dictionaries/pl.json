@@ -28,7 +28,9 @@
     "unlockAlt": "Okno Unbit na pasku menu z wykrytym dyskiem SanDisk i polem na hasło BitLocker",
     "unlockCaption": "Wybierz dysk i wpisz hasło lub klucz odzyskiwania",
     "openAlt": "Okno Unbit na pasku menu pokazujące otwarty dysk, aktywność odczytu i zajęte miejsce",
-    "openCaption": "Przeglądaj go w Finderze, a potem bezpiecznie wysuń"
+    "openCaption": "Przeglądaj go w Finderze, a potem bezpiecznie wysuń",
+    "welcomeAlt": "Okno Unbit na pasku menu bez podłączonego dysku, z kartą powitalną i przyciskiem do wypróbowania dysku demonstracyjnego",
+    "welcomeCaption": "Nie masz jeszcze dysku? Wypróbuj wbudowany dysk demonstracyjny"
   },
   "how": {
     "title": "Jak to działa",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Wszystkie funkcje w skrócie",
       "intro": "Wszystko, co potrafi Unbit, pogrupowane według tego, co chcesz zrobić.",
+      "seeAll": "Zobacz wszystkie funkcje",
+      "jump": "Przejdź do grupy",
+      "metaTitle": "Wszystkie funkcje Unbit – otwieraj i kopiuj dyski BitLocker na Macu",
+      "metaDescription": "Wszystkie funkcje Unbit na jednej stronie: otwieranie dysków BitLocker hasłem lub kluczem odzyskiwania, wyszukiwanie i kopiowanie plików, bezpieczeństwo dzięki trybowi tylko do odczytu, pasek menu i pomoc, gdy coś pójdzie nie tak.",
       "groups": [
         {
           "title": "Otwieranie dysku",

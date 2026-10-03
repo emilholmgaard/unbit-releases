@@ -5,6 +5,7 @@ import type { Locale } from "@/lib/i18n";
 import { DOWNLOAD_URL } from "@/lib/site";
 import { alternativesPath } from "@/lib/competitors";
 import { bestPath, guidePath } from "@/lib/guides";
+import { featuresPath } from "@/lib/features";
 import { helpPath } from "@/lib/help";
 import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { hasLawyersPage, lawyersPath } from "@/lib/lawyers";
@@ -46,6 +47,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={DOWNLOAD_URL}>{t.nav.download}</a>
           <a href={`/${locale}#how`}>{t.nav.how}</a>
           <a href={`/${locale}#features`}>{t.nav.features}</a>
+          <a href={featuresPath(locale)}>{t.features.more.seeAll}</a>
           <a href={`/${locale}#privacy`}>{t.nav.privacy}</a>
         </div>
         <div>

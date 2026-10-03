@@ -129,7 +129,7 @@ h1 {
 /* Mockup */
 .mockup {
   margin: clamp(56px, 9vh, 88px) auto 0;
-  max-width: 920px;
+  max-width: 1120px;
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -649,3 +649,29 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
 .feature-group li { font-size: 14px; color: var(--muted); line-height: 1.55; padding-left: 14px; position: relative; }
 .feature-group li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 4px; height: 4px; border-radius: 50%; background: #5a5a5f; }
 .feature-group li strong { color: #fff; font-weight: 500; }
+
+/* All-features page */
+.fx-jump { max-width: 1000px; margin: 56px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.fx-jump a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px 9px 12px; border: 1px solid var(--line); border-radius: 999px; background: #141416; font-size: 14px; color: var(--soft); transition: background 0.15s, color 0.15s; }
+.fx-jump a:hover, .fx-jump a:focus-visible { background: #1d1d20; color: var(--text); }
+.fx-jump svg { width: 18px; height: 18px; flex: none; }
+.fx-group { max-width: 1000px; margin: 96px auto 0; scroll-margin-top: 80px; }
+.fx-head { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.fx-head h2 { font-size: clamp(24px, 3vw, 32px); }
+.fx-icon { display: grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 14px; background: #1b1b1e; border: 1px solid var(--line); color: #fff; }
+.fx-icon svg { width: 24px; height: 24px; }
+.fx-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.fx-item { padding: 22px 24px; border-radius: 20px; }
+.fx-item h3 { font-size: 16px; }
+.fx-item p { font-size: 14px; }
+.fx-end { margin: 96px auto 0; display: flex; justify-content: center; }
+@media (max-width: 860px) {
+  .fx-grid { grid-template-columns: repeat(2, 1fr); }
+  .fx-group { margin-top: 72px; }
+}
+@media (max-width: 560px) {
+  .fx-grid { grid-template-columns: 1fr; }
+  .fx-jump { justify-content: flex-start; }
+}
+.fx-end .actions { margin-top: 0; }
+.features-all { margin-top: 40px; }

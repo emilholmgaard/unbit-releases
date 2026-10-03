@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-Fenster in der Menüleiste mit einem erkannten SanDisk-Laufwerk und einem Feld für das BitLocker-Passwort",
     "unlockCaption": "Wähle das Laufwerk und gib dein Passwort oder deinen Wiederherstellungsschlüssel ein",
     "openAlt": "Unbit-Fenster in der Menüleiste mit einem geöffneten Laufwerk, Leseaktivität und belegtem Speicher",
-    "openCaption": "Durchsuche es im Finder und wirf es dann sicher aus"
+    "openCaption": "Durchsuche es im Finder und wirf es dann sicher aus",
+    "welcomeAlt": "Unbit-Fenster in der Menüleiste ohne angeschlossenes Laufwerk, mit einer Willkommenskarte und einer Schaltfläche für ein Demo-Laufwerk",
+    "welcomeCaption": "Noch kein Laufwerk? Probiere das integrierte Demo-Laufwerk aus"
   },
   "how": {
     "title": "So funktioniert’s",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Alle Funktionen im Überblick",
       "intro": "Alles, was Unbit kann – gruppiert danach, was du tun möchtest.",
+      "seeAll": "Alle Funktionen ansehen",
+      "jump": "Zu einer Gruppe springen",
+      "metaTitle": "Alle Unbit-Funktionen – BitLocker-Laufwerke am Mac öffnen und kopieren",
+      "metaDescription": "Alle Funktionen von Unbit auf einer Seite: BitLocker-Laufwerke mit Passwort oder Wiederherstellungsschlüssel öffnen, Dateien suchen und kopieren, schreibgeschützte Sicherheit, Menüleiste und Hilfe, wenn etwas schiefgeht.",
       "groups": [
         {
           "title": "Laufwerk öffnen",

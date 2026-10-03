@@ -44,7 +44,9 @@
     "unlockAlt": "Unbit menu bar window with a detected SanDisk drive and a BitLocker password field",
     "unlockCaption": "Pick the drive and enter your password or recovery key",
     "openAlt": "Unbit menu bar window showing an open drive, read activity and storage used",
-    "openCaption": "Browse it in Finder, then eject it safely"
+    "openCaption": "Browse it in Finder, then eject it safely",
+    "welcomeAlt": "Unbit menu bar window with no drive connected, a welcome card and a button to try a demo drive",
+    "welcomeCaption": "No drive yet? Try the built-in demo drive"
   },
   "how": {
     "title": "How it works",
@@ -76,6 +78,10 @@
     "more": {
       "title": "Every feature, at a glance",
       "intro": "Everything Unbit can do, grouped by what you want to do.",
+      "seeAll": "See all features",
+      "jump": "Jump to a group",
+      "metaTitle": "All Unbit features – open and copy BitLocker drives on Mac",
+      "metaDescription": "Every Unbit feature on one page: opening BitLocker drives with a password or recovery key, searching and copying files, read-only safety, the menu bar, and help when something goes wrong.",
       "groups": [
         {
           "title": "Opening your drive",

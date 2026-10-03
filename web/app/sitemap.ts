@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { alternativesPath, competitors } from "@/lib/competitors";
 import { BEST_MODIFIED, GUIDES, GUIDES_MODIFIED, bestPath, guidePath } from "@/lib/guides";
 import { HELP_MODIFIED, HELP_REASONS, helpPath } from "@/lib/help";
+import { FEATURES_MODIFIED, featuresPath } from "@/lib/features";
 import { locales } from "@/lib/i18n";
 import { LAWYERS_LOCALES, LAWYERS_MODIFIED, lawyersPath } from "@/lib/lawyers";
 import { SITE_URL, latestRelease } from "@/lib/site";
@@ -82,6 +83,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     alternates: { languages: lawyersLangs },
   }));
 
+  // All-features page, with hreflang alternates across locales.
+  const featuresLangs = {
+    ...Object.fromEntries(locales.map((l) => [l, `${SITE_URL}${featuresPath(l)}`])),
+    "x-default": `${SITE_URL}${featuresPath("en")}`,
+  };
+  const features = locales.map((locale) => ({
+    url: `${SITE_URL}${featuresPath(locale)}`,
+    lastModified: new Date(FEATURES_MODIFIED) > built ? new Date(FEATURES_MODIFIED) : built,
+    changeFrequency: "monthly" as const,
+    priority: locale === "en" ? 0.8 : 0.7,
+    alternates: { languages: featuresLangs },
+  }));
+
   // Error help: an index and one page per reason code, each with hreflang alternates.
   const help = (slug?: string) => {
     const langs = {
@@ -99,6 +113,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...home,
+    ...features,
     ...best,
     ...lawyers,
     ...alternatives(),

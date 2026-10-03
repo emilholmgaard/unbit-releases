@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-fönster i menyraden med en identifierad SanDisk-enhet och ett fält för BitLocker-lösenord",
     "unlockCaption": "Välj enheten och ange ditt lösenord eller din återställningsnyckel",
     "openAlt": "Unbit-fönster i menyraden som visar en öppen enhet, läsaktivitet och använt utrymme",
-    "openCaption": "Bläddra i den i Finder och mata sedan ut den säkert"
+    "openCaption": "Bläddra i den i Finder och mata sedan ut den säkert",
+    "welcomeAlt": "Unbit-fönster i menyraden utan ansluten enhet, med ett välkomstkort och en knapp för att prova en demoenhet",
+    "welcomeCaption": "Ingen enhet än? Prova den inbyggda demoenheten"
   },
   "how": {
     "title": "Så fungerar det",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Alla funktioner i korthet",
       "intro": "Allt Unbit kan, grupperat efter vad du vill göra.",
+      "seeAll": "Se alla funktioner",
+      "jump": "Hoppa till en grupp",
+      "metaTitle": "Alla Unbit-funktioner – öppna och kopiera BitLocker-enheter på Mac",
+      "metaDescription": "Alla Unbits funktioner på en sida: öppna BitLocker-enheter med lösenord eller återställningsnyckel, sök och kopiera filer, skrivskyddad säkerhet, menyraden och hjälp när något går fel.",
       "groups": [
         {
           "title": "Öppna din enhet",

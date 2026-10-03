@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { lang } from "next/root-params";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { featuresPath } from "@/lib/features";
 import { bestPath, guidePath } from "@/lib/guides";
 import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
@@ -24,7 +25,7 @@ export default async function Home() {
       inLanguage: locale,
       url: `${SITE_URL}/${locale}`,
       image: `${SITE_URL}/icon.png`,
-      screenshot: [`${SITE_URL}/shot-unlock.png`, `${SITE_URL}/shot-open.png`],
+      screenshot: [`${SITE_URL}/shot-welcome.png`, `${SITE_URL}/shot-unlock.png`, `${SITE_URL}/shot-open.png`],
       operatingSystem: `macOS ${minOS} or later`,
       applicationCategory: "UtilitiesApplication",
       softwareVersion: version,
@@ -99,11 +100,15 @@ export default async function Home() {
             </div>
             <div className="desk">
               <figure>
-                <Image src="/shot-unlock.png" width={320} height={538} alt={t.mockup.unlockAlt} />
+                <Image src="/shot-welcome.png" width={320} height={392} alt={t.mockup.welcomeAlt} />
+                <figcaption>{t.mockup.welcomeCaption}</figcaption>
+              </figure>
+              <figure>
+                <Image src="/shot-unlock.png" width={320} height={488} alt={t.mockup.unlockAlt} />
                 <figcaption>{t.mockup.unlockCaption}</figcaption>
               </figure>
               <figure>
-                <Image src="/shot-open.png" width={320} height={431} alt={t.mockup.openAlt} />
+                <Image src="/shot-open.png" width={320} height={464} alt={t.mockup.openAlt} />
                 <figcaption>{t.mockup.openCaption}</figcaption>
               </figure>
             </div>
@@ -182,32 +187,7 @@ export default async function Home() {
               </article>
             </div>
             <p className="features-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18Z"/></svg><span><strong>{t.features.languagesTitle}</strong> – {t.features.languagesText}</span></p>
-          </section>
-
-          {/* All features, grouped */}
-          <section className="section" id="all-features" aria-labelledby="all-features-title">
-            <div className="section-head">
-              <h2 id="all-features-title">{t.features.more.title}</h2>
-              <p>{t.features.more.intro}</p>
-            </div>
-            <div className="grid three feature-groups">
-              {t.features.more.groups.map((group) => (
-                <article className="feature-group" key={group.title}>
-                  <h3>{group.title}</h3>
-                  <ul>
-                    {group.items.map((item) => {
-                      const [name, ...rest] = item.split(" – ");
-                      return (
-                        <li key={name}>
-                          <strong>{name}</strong>
-                          {rest.length ? <> – {rest.join(" – ")}</> : null}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </article>
-              ))}
-            </div>
+            <div className="actions features-all"><a className="pill dark" href={featuresPath(locale)}>{t.features.more.seeAll} <span aria-hidden="true">→</span></a></div>
           </section>
 
           {/* Privacy */}
@@ -270,6 +250,7 @@ export default async function Home() {
               <a href={DOWNLOAD_URL}>{t.nav.download}</a>
               <a href="#how">{t.nav.how}</a>
               <a href="#features">{t.nav.features}</a>
+              <a href={featuresPath(locale)}>{t.features.more.seeAll}</a>
               <a href="#privacy">{t.nav.privacy}</a>
             </div>
             <div>

@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy tunnistettu SanDisk-asema ja BitLocker-salasanakenttä",
     "unlockCaption": "Valitse asema ja syötä salasana tai palautusavain",
     "openAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy avattu asema, lukutoiminta ja käytetty tila",
-    "openCaption": "Selaa sitä Finderissa ja poista se sitten turvallisesti"
+    "openCaption": "Selaa sitä Finderissa ja poista se sitten turvallisesti",
+    "welcomeAlt": "Unbit-ikkuna valikkopalkissa ilman liitettyä asemaa, tervetulokortti ja painike demoaseman kokeilemiseen",
+    "welcomeCaption": "Ei vielä asemaa? Kokeile sisäänrakennettua demoasemaa"
   },
   "how": {
     "title": "Näin se toimii",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Kaikki ominaisuudet yhdellä silmäyksellä",
       "intro": "Kaikki mitä Unbit osaa, ryhmiteltynä sen mukaan, mitä haluat tehdä.",
+      "seeAll": "Näytä kaikki ominaisuudet",
+      "jump": "Siirry ryhmään",
+      "metaTitle": "Kaikki Unbitin ominaisuudet – avaa ja kopioi BitLocker-asemia Macilla",
+      "metaDescription": "Kaikki Unbitin ominaisuudet yhdellä sivulla: BitLocker-asemien avaaminen salasanalla tai palautusavaimella, tiedostojen haku ja kopiointi, kirjoitussuojattu turvallisuus, valikkopalkki ja apu, kun jokin menee pieleen.",
       "groups": [
         {
           "title": "Aseman avaaminen",

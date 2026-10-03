@@ -28,7 +28,9 @@
     "unlockAlt": "Fenêtre Unbit dans la barre des menus avec un disque SanDisk détecté et un champ de mot de passe BitLocker",
     "unlockCaption": "Choisissez le disque et saisissez votre mot de passe ou votre clé de récupération",
     "openAlt": "Fenêtre Unbit dans la barre des menus affichant un disque ouvert, l’activité de lecture et l’espace utilisé",
-    "openCaption": "Parcourez-le dans le Finder, puis éjectez-le en toute sécurité"
+    "openCaption": "Parcourez-le dans le Finder, puis éjectez-le en toute sécurité",
+    "welcomeAlt": "Fenêtre Unbit dans la barre des menus sans disque connecté, avec une carte de bienvenue et un bouton pour essayer un disque de démonstration",
+    "welcomeCaption": "Pas encore de disque ? Essayez le disque de démonstration intégré"
   },
   "how": {
     "title": "Fonctionnement",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Toutes les fonctions en un coup d’œil",
       "intro": "Tout ce que sait faire Unbit, regroupé selon ce que vous voulez faire.",
+      "seeAll": "Voir toutes les fonctionnalités",
+      "jump": "Aller à un groupe",
+      "metaTitle": "Toutes les fonctionnalités d'Unbit – ouvrir et copier des disques BitLocker sur Mac",
+      "metaDescription": "Toutes les fonctionnalités d'Unbit sur une seule page : ouvrir des disques BitLocker avec un mot de passe ou une clé de récupération, rechercher et copier des fichiers, sécurité en lecture seule, barre des menus et aide en cas de problème.",
       "groups": [
         {
           "title": "Ouvrir votre disque",

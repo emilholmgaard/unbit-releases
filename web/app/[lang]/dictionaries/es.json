@@ -28,7 +28,9 @@
     "unlockAlt": "Ventana de Unbit en la barra de menús con una unidad SanDisk detectada y un campo para la contraseña de BitLocker",
     "unlockCaption": "Elige la unidad e introduce tu contraseña o clave de recuperación",
     "openAlt": "Ventana de Unbit en la barra de menús con una unidad abierta, actividad de lectura y espacio usado",
-    "openCaption": "Explórala en el Finder y expúlsala de forma segura"
+    "openCaption": "Explórala en el Finder y expúlsala de forma segura",
+    "welcomeAlt": "Ventana de Unbit en la barra de menús sin ninguna unidad conectada, con una tarjeta de bienvenida y un botón para probar una unidad de demostración",
+    "welcomeCaption": "¿Aún no tienes una unidad? Prueba la unidad de demostración integrada"
   },
   "how": {
     "title": "Cómo funciona",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Todas las funciones de un vistazo",
       "intro": "Todo lo que Unbit puede hacer, agrupado según lo que quieras hacer.",
+      "seeAll": "Ver todas las funciones",
+      "jump": "Ir a un grupo",
+      "metaTitle": "Todas las funciones de Unbit – abre y copia unidades BitLocker en Mac",
+      "metaDescription": "Todas las funciones de Unbit en una página: abrir unidades BitLocker con contraseña o clave de recuperación, buscar y copiar archivos, seguridad de solo lectura, la barra de menús y ayuda cuando algo falla.",
       "groups": [
         {
           "title": "Abrir tu unidad",

@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-vindu i menylinjen med en gjenkjent SanDisk-stasjon og et felt for BitLocker-passord",
     "unlockCaption": "Velg stasjonen og skriv inn passordet eller gjenopprettingsnøkkelen",
     "openAlt": "Unbit-vindu i menylinjen som viser en åpen stasjon, leseaktivitet og brukt plass",
-    "openCaption": "Bla gjennom den i Finder, og løs den deretter ut trygt"
+    "openCaption": "Bla gjennom den i Finder, og løs den deretter ut trygt",
+    "welcomeAlt": "Unbit-vindu i menylinjen uten tilkoblet disk, med et velkomstkort og en knapp for å prøve en demodisk",
+    "welcomeCaption": "Ingen disk ennå? Prøv den innebygde demodisken"
   },
   "how": {
     "title": "Slik fungerer det",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Alle funksjoner på et blikk",
       "intro": "Alt Unbit kan, gruppert etter det du vil gjøre.",
+      "seeAll": "Se alle funksjoner",
+      "jump": "Hopp til en gruppe",
+      "metaTitle": "Alle Unbit-funksjoner – åpne og kopier BitLocker-disker på Mac",
+      "metaDescription": "Alle Unbits funksjoner på én side: åpne BitLocker-disker med passord eller gjenopprettingsnøkkel, søk og kopier filer, skrivebeskyttet sikkerhet, menylinjen og hjelp når noe går galt.",
       "groups": [
         {
           "title": "Åpne stasjonen",

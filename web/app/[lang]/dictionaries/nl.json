@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-venster in de menubalk met een gedetecteerde SanDisk-schijf en een veld voor het BitLocker-wachtwoord",
     "unlockCaption": "Kies de schijf en voer je wachtwoord of herstelsleutel in",
     "openAlt": "Unbit-venster in de menubalk met een geopende schijf, leesactiviteit en gebruikte opslagruimte",
-    "openCaption": "Blader erdoorheen in de Finder en werp de schijf daarna veilig uit"
+    "openCaption": "Blader erdoorheen in de Finder en werp de schijf daarna veilig uit",
+    "welcomeAlt": "Unbit-venster in de menubalk zonder aangesloten schijf, met een welkomstkaart en een knop om een demoschijf te proberen",
+    "welcomeCaption": "Nog geen schijf? Probeer de ingebouwde demoschijf"
   },
   "how": {
     "title": "Hoe het werkt",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Alle functies in één oogopslag",
       "intro": "Alles wat Unbit kan, gegroepeerd naar wat je wilt doen.",
+      "seeAll": "Alle functies bekijken",
+      "jump": "Ga naar een groep",
+      "metaTitle": "Alle Unbit-functies – BitLocker-schijven openen en kopiëren op de Mac",
+      "metaDescription": "Alle functies van Unbit op één pagina: BitLocker-schijven openen met een wachtwoord of herstelsleutel, bestanden zoeken en kopiëren, veiligheid door alleen-lezen, de menubalk en hulp als er iets misgaat.",
       "groups": [
         {
           "title": "Je schijf openen",

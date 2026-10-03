@@ -28,7 +28,9 @@
     "unlockAlt": "Unbit-vindue i menulinjen med et registreret SanDisk-drev og et felt til BitLocker-adgangskode",
     "unlockCaption": "Vælg drevet, og indtast din adgangskode eller recovery-key",
     "openAlt": "Unbit-vindue i menulinjen, der viser et åbent drev, læseaktivitet og brugt plads",
-    "openCaption": "Gennemse det i Finder, og skub det derefter sikkert ud"
+    "openCaption": "Gennemse det i Finder, og skub det derefter sikkert ud",
+    "welcomeAlt": "Unbit-vindue i menulinjen uden tilsluttet drev, med et velkomstkort og en knap til at prøve et demodrev",
+    "welcomeCaption": "Intet drev endnu? Prøv det indbyggede demodrev"
   },
   "how": {
     "title": "Sådan virker det",
@@ -60,6 +62,10 @@
     "more": {
       "title": "Alle funktioner i overblik",
       "intro": "Alt, hvad Unbit kan, grupperet efter det, du vil gøre.",
+      "seeAll": "Se alle funktioner",
+      "jump": "Spring til en gruppe",
+      "metaTitle": "Alle Unbit-funktioner – åbn og kopiér BitLocker-drev på Mac",
+      "metaDescription": "Alle Unbits funktioner på én side: åbn BitLocker-drev med adgangskode eller gendannelsesnøgle, søg og kopiér filer, skrivebeskyttet sikkerhed, menulinjen og hjælp, når noget går galt.",
       "groups": [
         {
           "title": "Åbn dit drev",
