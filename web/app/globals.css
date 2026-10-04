@@ -127,7 +127,7 @@ h1 {
 /* Mockup */
 .mockup {
   margin: clamp(56px, 9vh, 88px) auto 0;
-  max-width: 1120px;
+  max-width: 1160px;
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -163,17 +163,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: clamp(20px, 5vw, 56px);
-  padding: 28px 24px 44px;
+  gap: clamp(8px, 1.5vw, 16px);
+  padding: 28px 8px 36px;
 }
-.desk figure { margin: 0; width: 320px; max-width: 100%; }
+.desk figure { margin: 0; width: 340px; max-width: 100%; }
+/* Real window screenshots with their own macOS shadow (transparent PNG at 2x): no extra frame. */
 .desk img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.85);
 }
 .desk figcaption { margin-top: 14px; font-size: 13px; color: var(--soft); text-align: center; }
 
@@ -581,7 +579,7 @@ main > .alt-disclaimer { max-width: 1000px; margin: 48px auto 0; }
 .guide-steps li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
 .guide-shots { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 32px; }
 .guide-shots figure { margin: 0; width: 300px; max-width: 100%; }
-.guide-shots img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.12); }
+.guide-shots img { display: block; width: 100%; height: auto; }
 .guide-shots figcaption { margin-top: 12px; font-size: 13px; color: var(--muted); text-align: center; }
 .guide .faq.guide-faq { display: block; max-width: none; margin: 72px 0 0; }
 .guide-faq h2 { margin-bottom: 20px; padding-top: 0; }

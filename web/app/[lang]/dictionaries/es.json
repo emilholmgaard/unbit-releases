@@ -25,7 +25,7 @@
     "label": "Unbit en la barra de menús",
     "menu": ["Archivo", "Edición", "Visualización", "Ir", "Ventana"],
     "day": "mié",
-    "unlockAlt": "Ventana de Unbit en la barra de menús con una unidad SanDisk detectada y un campo para la contraseña de BitLocker",
+    "unlockAlt": "Ventana de Unbit en la barra de menús con una unidad de demostración detectada y un campo para la contraseña de BitLocker",
     "unlockCaption": "Elige la unidad e introduce tu contraseña o clave de recuperación",
     "openAlt": "Ventana de Unbit en la barra de menús con una unidad abierta, actividad de lectura y espacio usado",
     "openCaption": "Explórala en el Finder y expúlsala de forma segura",

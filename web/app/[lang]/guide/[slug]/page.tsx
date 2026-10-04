@@ -128,11 +128,11 @@ export default async function GuideArticle({ params }: PageProps<"/[lang]/guide/
               {guide.key === "open" && i === 2 && (
                 <div className="guide-shots">
                   <figure>
-                    <Image src="/shot-unlock.png" unoptimized width={320} height={488} sizes="(max-width: 600px) 80vw, 300px" loading="lazy" alt={t.mockup.unlockAlt} />
+                    <Image src="/shot-unlock.png" unoptimized width={340} height={568} sizes="(max-width: 600px) 80vw, 300px" loading="lazy" alt={t.mockup.unlockAlt} />
                     <figcaption>{t.mockup.unlockCaption}</figcaption>
                   </figure>
                   <figure>
-                    <Image src="/shot-open.png" unoptimized width={320} height={464} sizes="(max-width: 600px) 80vw, 300px" loading="lazy" alt={t.mockup.openAlt} />
+                    <Image src="/shot-open.png" unoptimized width={340} height={461} sizes="(max-width: 600px) 80vw, 300px" loading="lazy" alt={t.mockup.openAlt} />
                     <figcaption>{t.mockup.openCaption}</figcaption>
                   </figure>
                 </div>

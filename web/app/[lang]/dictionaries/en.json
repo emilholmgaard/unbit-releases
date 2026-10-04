@@ -41,7 +41,7 @@
     "label": "Unbit in the menu bar",
     "menu": ["File", "Edit", "View", "Go", "Window"],
     "day": "Wed",
-    "unlockAlt": "Unbit menu bar window with a detected SanDisk drive and a BitLocker password field",
+    "unlockAlt": "Unbit menu bar window with a detected demo drive and a BitLocker password field",
     "unlockCaption": "Pick the drive and enter your password or recovery key",
     "openAlt": "Unbit menu bar window showing an open drive, read activity and storage used",
     "openCaption": "Browse it in Finder, then eject it safely",

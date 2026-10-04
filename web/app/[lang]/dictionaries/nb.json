@@ -25,7 +25,7 @@
     "label": "Unbit i menylinjen",
     "menu": ["Arkiv", "Rediger", "Vis", "Gå", "Vindu"],
     "day": "ons.",
-    "unlockAlt": "Unbit-vindu i menylinjen med en gjenkjent SanDisk-stasjon og et felt for BitLocker-passord",
+    "unlockAlt": "Unbit-vindu i menylinjen med en gjenkjent demostasjon og et felt for BitLocker-passord",
     "unlockCaption": "Velg stasjonen og skriv inn passordet eller gjenopprettingsnøkkelen",
     "openAlt": "Unbit-vindu i menylinjen som viser en åpen stasjon, leseaktivitet og brukt plass",
     "openCaption": "Bla gjennom den i Finder, og løs den deretter ut trygt",

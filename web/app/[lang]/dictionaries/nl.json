@@ -25,7 +25,7 @@
     "label": "Unbit in de menubalk",
     "menu": ["Archief", "Wijzig", "Weergave", "Ga", "Venster"],
     "day": "wo",
-    "unlockAlt": "Unbit-venster in de menubalk met een gedetecteerde SanDisk-schijf en een veld voor het BitLocker-wachtwoord",
+    "unlockAlt": "Unbit-venster in de menubalk met een gedetecteerde demoschijf en een veld voor het BitLocker-wachtwoord",
     "unlockCaption": "Kies de schijf en voer je wachtwoord of herstelsleutel in",
     "openAlt": "Unbit-venster in de menubalk met een geopende schijf, leesactiviteit en gebruikte opslagruimte",
     "openCaption": "Blader erdoorheen in de Finder en werp de schijf daarna veilig uit",

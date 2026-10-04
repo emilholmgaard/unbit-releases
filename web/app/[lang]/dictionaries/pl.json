@@ -25,7 +25,7 @@
     "label": "Unbit na pasku menu",
     "menu": ["Plik", "Edycja", "Widok", "Idź", "Okno"],
     "day": "śr.",
-    "unlockAlt": "Okno Unbit na pasku menu z wykrytym dyskiem SanDisk i polem na hasło BitLocker",
+    "unlockAlt": "Okno Unbit na pasku menu z wykrytym dyskiem demonstracyjnym i polem na hasło BitLocker",
     "unlockCaption": "Wybierz dysk i wpisz hasło lub klucz odzyskiwania",
     "openAlt": "Okno Unbit na pasku menu pokazujące otwarty dysk, aktywność odczytu i zajęte miejsce",
     "openCaption": "Przeglądaj go w Finderze, a potem bezpiecznie wysuń",

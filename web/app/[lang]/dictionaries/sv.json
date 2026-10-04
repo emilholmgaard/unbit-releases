@@ -25,7 +25,7 @@
     "label": "Unbit i menyraden",
     "menu": ["Arkiv", "Redigera", "Visa", "Gå", "Fönster"],
     "day": "ons",
-    "unlockAlt": "Unbit-fönster i menyraden med en identifierad SanDisk-enhet och ett fält för BitLocker-lösenord",
+    "unlockAlt": "Unbit-fönster i menyraden med en identifierad demoenhet och ett fält för BitLocker-lösenord",
     "unlockCaption": "Välj enheten och ange ditt lösenord eller din återställningsnyckel",
     "openAlt": "Unbit-fönster i menyraden som visar en öppen enhet, läsaktivitet och använt utrymme",
     "openCaption": "Bläddra i den i Finder och mata sedan ut den säkert",

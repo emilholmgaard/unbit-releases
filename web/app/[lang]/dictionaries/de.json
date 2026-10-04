@@ -25,7 +25,7 @@
     "label": "Unbit in der Menüleiste",
     "menu": ["Ablage", "Bearbeiten", "Darstellung", "Gehe zu", "Fenster"],
     "day": "Mi.",
-    "unlockAlt": "Unbit-Fenster in der Menüleiste mit einem erkannten SanDisk-Laufwerk und einem Feld für das BitLocker-Passwort",
+    "unlockAlt": "Unbit-Fenster in der Menüleiste mit einem erkannten Demo-Laufwerk und einem Feld für das BitLocker-Passwort",
     "unlockCaption": "Wähle das Laufwerk und gib dein Passwort oder deinen Wiederherstellungsschlüssel ein",
     "openAlt": "Unbit-Fenster in der Menüleiste mit einem geöffneten Laufwerk, Leseaktivität und belegtem Speicher",
     "openCaption": "Durchsuche es im Finder und wirf es dann sicher aus",

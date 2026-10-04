@@ -25,7 +25,7 @@
     "label": "Unbit i menulinjen",
     "menu": ["Arkiv", "Rediger", "Vis", "Gå", "Vindue"],
     "day": "ons.",
-    "unlockAlt": "Unbit-vindue i menulinjen med et registreret SanDisk-drev og et felt til BitLocker-adgangskode",
+    "unlockAlt": "Unbit-vindue i menulinjen med et registreret demodrev og et felt til BitLocker-adgangskode",
     "unlockCaption": "Vælg drevet, og indtast din adgangskode eller recovery-key",
     "openAlt": "Unbit-vindue i menulinjen, der viser et åbent drev, læseaktivitet og brugt plads",
     "openCaption": "Gennemse det i Finder, og skub det derefter sikkert ud",

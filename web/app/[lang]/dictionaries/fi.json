@@ -25,7 +25,7 @@
     "label": "Unbit valikkopalkissa",
     "menu": ["Arkisto", "Muokkaa", "Tarkastele", "Siirry", "Ikkuna"],
     "day": "ke",
-    "unlockAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy tunnistettu SanDisk-asema ja BitLocker-salasanakenttä",
+    "unlockAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy tunnistettu demoasema ja BitLocker-salasanakenttä",
     "unlockCaption": "Valitse asema ja syötä salasana tai palautusavain",
     "openAlt": "Unbit-ikkuna valikkopalkissa, jossa näkyy avattu asema, lukutoiminta ja käytetty tila",
     "openCaption": "Selaa sitä Finderissa ja poista se sitten turvallisesti",

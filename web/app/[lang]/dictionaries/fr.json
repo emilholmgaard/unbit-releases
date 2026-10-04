@@ -25,7 +25,7 @@
     "label": "Unbit dans la barre des menus",
     "menu": ["Fichier", "Édition", "Présentation", "Aller", "Fenêtre"],
     "day": "mer.",
-    "unlockAlt": "Fenêtre Unbit dans la barre des menus avec un disque SanDisk détecté et un champ de mot de passe BitLocker",
+    "unlockAlt": "Fenêtre Unbit dans la barre des menus avec un disque de démonstration détecté et un champ de mot de passe BitLocker",
     "unlockCaption": "Choisissez le disque et saisissez votre mot de passe ou votre clé de récupération",
     "openAlt": "Fenêtre Unbit dans la barre des menus affichant un disque ouvert, l’activité de lecture et l’espace utilisé",
     "openCaption": "Parcourez-le dans le Finder, puis éjectez-le en toute sécurité",
