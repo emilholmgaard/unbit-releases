@@ -9,6 +9,7 @@ import { languages } from "@/lib/i18n";
 import { LAWYERS_MODIFIED, LAWYERS_PUBLISHED, LAWYERS_LOCALES, lawyersPath, type LawyersLocale } from "@/lib/lawyers";
 import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from "@/lib/site";
+import DownloadLink from "@/components/DownloadLink";
 
 const RELATED = ["open", "usb", "recovery", "safe"] as const;
 
@@ -107,7 +108,7 @@ export default async function LawyersPage({ locale }: { locale: LawyersLocale })
               <strong>{c.disclaimer.label}.</strong> <GuideText text={c.disclaimer.text} locale={locale} />
             </aside>
             <div className="actions lawyers-actions">
-              <a className="pill white" href={DOWNLOAD_URL}>{c.actions.download}</a>
+              <DownloadLink locale={locale} place="hero" className="pill white" href={DOWNLOAD_URL}>{c.actions.download}</DownloadLink>
               <a className="pill dark" href={`#${c.note.id}`}>{c.actions.note}</a>
             </div>
           </header>

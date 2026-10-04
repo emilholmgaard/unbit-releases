@@ -9,6 +9,7 @@ import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import { getDictionary, hasLocale } from "../dictionaries";
 import { getGuideContent } from "./content";
+import DownloadLink from "@/components/DownloadLink";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await lang();
@@ -68,7 +69,7 @@ export default async function GuideIndex() {
           <h1>{ui.indexH1}</h1>
           <p className="sub">{ui.indexSub}</p>
           <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</a>
+            <DownloadLink locale={locale} place="hero" className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</DownloadLink>
             <a className="pill dark" href={`/${locale}`}>Unbit</a>
           </div>
         </section>

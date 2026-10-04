@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Dit drev forlader aldrig din Mac",
-    "text": "Dekrypteringen sker helt og holdent på din Mac. Din adgangskode, recovery-key og dine filer bliver aldrig sendt nogen steder hen. Appen har ingen konti, analyse eller sporing. Det eneste, Unbit henter fra internettet, er den daglige søgning efter opdateringer.",
+    "text": "Dekrypteringen sker helt og holdent på din Mac. Din adgangskode, recovery-key og dine filer bliver aldrig sendt nogen steder hen. Appen har ingen konti, analyse eller sporing. Det eneste, Unbit henter fra internettet, er den daglige søgning efter opdateringer. Hjemmesiden (ikke appen) tæller besøg og klik på download-knapperne anonymt og uden cookies.",
     "ticks": ["Dekrypterede data bliver på din Mac", "Gemte koder ligger kun i din nøglering", "Ingen konti, analyse eller sporing i appen"],
     "panelLine1": "Bliver på",
     "panelLine2": "din Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Download til macOS" },
   "footer": {
-    "siteNote": "Dette websted bruger privatlivsvenlig analyse uden cookies.",
+    "siteNote": "Denne hjemmeside (ikke appen) bruger anonym besøgsstatistik uden cookies. Selve appen har ingen telemetri.",
     "product": "Produkt",
     "resources": "Ressourcer",
     "releaseNotes": "Udgivelsesnoter",

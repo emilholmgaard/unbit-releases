@@ -6,6 +6,7 @@ import { alternativesPath, competitors } from "@/lib/competitors";
 import { languages, locales } from "@/lib/i18n";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import { getDictionary, hasLocale } from "../dictionaries";
+import DownloadLink from "@/components/DownloadLink";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await lang();
@@ -64,7 +65,7 @@ export default async function AlternativesIndex() {
           <h1>{a.index.h1}</h1>
           <p className="sub">{a.index.sub}</p>
           <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</a>
+            <DownloadLink locale={locale} place="hero" className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</DownloadLink>
             <a className="pill dark" href={`/${locale}`}>Unbit</a>
           </div>
         </section>

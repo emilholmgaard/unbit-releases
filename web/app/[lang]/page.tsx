@@ -6,6 +6,7 @@ import { bestPath, guidePath } from "@/lib/guides";
 import { DOWNLOAD_URL, RELEASES_URL, SITE_URL, latestRelease } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
+import DownloadLink from "@/components/DownloadLink";
 
 export const revalidate = 600;
 
@@ -63,25 +64,25 @@ export default async function Home() {
               <a href="#faq">{t.nav.faq}</a>
             </nav>
             <LanguageSwitcher locale={locale} label={t.language.label} />
-            <a className="pill dark small hide-sm" href="https://github.com/emilholmgaard/unbit-releases/releases">{t.nav.releases}</a>
-            <a className="pill white small" href={DOWNLOAD_URL}>{t.nav.download}</a>
+            <DownloadLink locale={locale} place="header" kind="releases" className="pill dark small hide-sm" href="https://github.com/emilholmgaard/unbit-releases/releases">{t.nav.releases}</DownloadLink>
+            <DownloadLink locale={locale} place="header" className="pill white small" href={DOWNLOAD_URL}>{t.nav.download}</DownloadLink>
           </div>
         </header>
 
         <main>
           {/* Hero */}
           <section className="hero">
-            <a className="badge" href="https://github.com/emilholmgaard/unbit-releases/releases/latest">
+            <DownloadLink locale={locale} place="hero" kind="releases" className="badge" href="https://github.com/emilholmgaard/unbit-releases/releases/latest">
               <strong><span>{v(t.hero.badgeHighlight)}</span> {t.hero.badgeRest}</strong><span className="dot">·</span>{t.hero.badgeLink}
               <span className="arrow" aria-hidden="true">↗</span>
-            </a>
+            </DownloadLink>
             <h1>{t.hero.h1Before} <Image className="inline-icon" src="/icon.png" width={96} height={96} alt="" loading="eager" fetchPriority="high" /> {t.hero.h1After}</h1>
             <p className="sub">{t.hero.sub}</p>
             <div className="actions">
-              <a className="pill white" href={DOWNLOAD_URL}>
+              <DownloadLink locale={locale} place="hero" className="pill white" href={DOWNLOAD_URL}>
                 <svg aria-hidden="true" width="15" height="18" viewBox="0 0 814 1000" fill="currentColor"><path d="M788 341c-6 4-108 62-108 190 0 149 131 201 135 203-1 3-21 72-69 142-43 62-88 124-156 124s-86-40-165-40c-77 0-104 41-167 41s-106-58-156-128C44 791 0 669 0 553c0-186 121-285 240-285 63 0 116 42 156 42 38 0 97-44 169-44 27 0 125 2 190 75zM554 167c30-35 51-84 51-133 0-7-1-14-2-19-48 2-106 32-141 73-27 31-53 80-53 130 0 8 1 15 2 18 3 1 9 1 14 1 43 0 97-29 129-70z"/></svg>
                 {t.hero.download}
-              </a>
+              </DownloadLink>
               <a className="pill dark" href="#how">{t.hero.how}</a>
             </div>
             <p className="meta"><span>{v(t.hero.metaVersion)}</span> · {t.hero.metaRest}</p>
@@ -211,16 +212,16 @@ export default async function Home() {
               <p>{t.download.text}</p>
             </div>
             <div className="dl-list">
-              <a className="dl" href={DOWNLOAD_URL}>
+              <DownloadLink locale={locale} place="download" className="dl" href={DOWNLOAD_URL}>
                 <svg width="18" height="22" viewBox="0 0 814 1000" fill="currentColor" aria-hidden="true"><path d="M788 341c-6 4-108 62-108 190 0 149 131 201 135 203-1 3-21 72-69 142-43 62-88 124-156 124s-86-40-165-40c-77 0-104 41-167 41s-106-58-156-128C44 791 0 669 0 553c0-186 121-285 240-285 63 0 116 42 156 42 38 0 97-44 169-44 27 0 125 2 190 75zM554 167c30-35 51-84 51-133 0-7-1-14-2-19-48 2-106 32-141 73-27 31-53 80-53 130 0 8 1 15 2 18 3 1 9 1 14 1 43 0 97-29 129-70z"/></svg>
                 <span><strong>macOS</strong><small>{t.download.macosSub} · <span>{version}</span></small></span>
                 <svg className="end" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
-              </a>
-              <a className="dl" href="https://github.com/emilholmgaard/unbit-releases/releases">
+              </DownloadLink>
+              <DownloadLink locale={locale} place="download" kind="releases" className="dl" href="https://github.com/emilholmgaard/unbit-releases/releases">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg>
                 <span><strong>{t.download.allTitle}</strong><small>{t.download.allSub}</small></span>
                 <svg className="end" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
-              </a>
+              </DownloadLink>
             </div>
           </section>
 
@@ -247,7 +248,7 @@ export default async function Home() {
           <div className="foot-cols">
             <div>
               <h2>{t.footer.product}</h2>
-              <a href={DOWNLOAD_URL}>{t.nav.download}</a>
+              <DownloadLink locale={locale} place="footer" href={DOWNLOAD_URL}>{t.nav.download}</DownloadLink>
               <a href="#how">{t.nav.how}</a>
               <a href="#features">{t.nav.features}</a>
               <a href={featuresPath(locale)}>{t.features.more.seeAll}</a>
@@ -259,7 +260,7 @@ export default async function Home() {
               <a href={guidePath(locale)}>{t.footer.guides}</a>
               <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
               <a href={`/${locale}/alternatives`}>{t.footer.alternatives}</a>
-              <a href="https://github.com/emilholmgaard/unbit-releases/releases">{t.footer.releaseNotes}</a>
+              <DownloadLink locale={locale} place="footer" kind="releases" href="https://github.com/emilholmgaard/unbit-releases/releases">{t.footer.releaseNotes}</DownloadLink>
               <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
             </div>
           </div>

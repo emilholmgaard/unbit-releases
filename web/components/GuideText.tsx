@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { Locale } from "@/lib/i18n";
 import { alternativesPath } from "@/lib/competitors";
 import { GUIDES, bestPath, guidePath } from "@/lib/guides";
+import DownloadLink from "@/components/DownloadLink";
 import { DOWNLOAD_URL, SITE_URL } from "@/lib/site";
 
 /** Resolves a link target used in guide copy: a guide key (open, safe, drives, usb, togo, recovery), `home`, `alternatives`, `best` `download` or an absolute https:// URL (opens in a new tab). */
@@ -28,7 +29,9 @@ export default function GuideText({ text, locale }: { text: string; locale: Loca
     else {
       const href = linkTarget(locale, match[2]);
       const external = href.startsWith("https://") && !href.startsWith(SITE_URL);
-      parts.push(external
+      parts.push(href === DOWNLOAD_URL
+        ? <DownloadLink key={match.index} href={href} locale={locale} place="guide" target="_blank" rel="noopener noreferrer">{match[1]}</DownloadLink>
+        : external
         ? <a key={match.index} href={href} target="_blank" rel="noopener noreferrer">{match[1]}</a>
         : <a key={match.index} href={href}>{match[1]}</a>);
     }

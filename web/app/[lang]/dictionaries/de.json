@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Dein Laufwerk verlässt nie deinen Mac",
-    "text": "Die Entschlüsselung findet komplett auf deinem Mac statt. Dein Passwort, dein Wiederherstellungsschlüssel und deine Dateien werden nirgendwohin gesendet. Die App hat keine Konten, keine Analyse und kein Tracking. Das Einzige, was Unbit aus dem Internet abruft, ist die tägliche Update-Prüfung.",
+    "text": "Die Entschlüsselung findet komplett auf deinem Mac statt. Dein Passwort, dein Wiederherstellungsschlüssel und deine Dateien werden nirgendwohin gesendet. Die App hat keine Konten, keine Analyse und kein Tracking. Das Einzige, was Unbit aus dem Internet abruft, ist die tägliche Update-Prüfung. Die Website (nicht die App) zählt Besuche und Klicks auf die Download-Buttons anonym und ohne Cookies.",
     "ticks": ["Entschlüsselte Daten bleiben auf deinem Mac", "Gespeicherte Codes liegen nur in deinem Schlüsselbund", "Keine Konten, Analyse oder Tracking in der App"],
     "panelLine1": "Bleibt auf",
     "panelLine2": "deinem Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Für macOS herunterladen" },
   "footer": {
-    "siteNote": "Diese Website verwendet datenschutzfreundliche Analysen ohne Cookies.",
+    "siteNote": "Diese Website (nicht die App) nutzt anonyme Besucherstatistiken ohne Cookies. Die App selbst hat keine Telemetrie.",
     "product": "Produkt",
     "resources": "Ressourcen",
     "releaseNotes": "Versionshinweise",

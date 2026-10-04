@@ -6,6 +6,7 @@ import { LAST_CHECKED, ROW_ORDER, alternativesPath, competitors, formatDate, get
 import { languages, locales } from "@/lib/i18n";
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL, latestRelease } from "@/lib/site";
 import { getDictionary, hasLocale } from "../../dictionaries";
+import DownloadLink from "@/components/DownloadLink";
 
 export const revalidate = 600;
 export const dynamicParams = false;
@@ -109,7 +110,7 @@ export default async function AlternativePage({ params }: PageProps<"/[lang]/alt
           <h1>{fill(a.page.h1)}</h1>
           <p className="sub">{fill(a.page.sub)}</p>
           <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</a>
+            <DownloadLink locale={locale} place="hero" className="pill white" href={DOWNLOAD_URL}>{t.hero.download}</DownloadLink>
             <a className="pill dark" href="#compare">{a.page.compareLink}</a>
           </div>
           <p className="meta">{t.hero.metaVersion.replace("{version}", version).replace("{minOS}", minOS)} · {fill(a.page.lastChecked)}</p>
@@ -189,7 +190,7 @@ export default async function AlternativePage({ params }: PageProps<"/[lang]/alt
           <h2>{a.page.ctaTitle}</h2>
           <p>{a.page.ctaText}</p>
           <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</a>
+            <DownloadLink locale={locale} place="cta" className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</DownloadLink>
             <a className="pill dark" href={alternativesPath(locale)}>{a.page.back}</a>
           </div>
         </section>

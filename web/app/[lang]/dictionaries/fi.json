@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Asemasi ei koskaan poistu Macistasi",
-    "text": "Salauksen purku tapahtuu kokonaan Macillasi. Salasanaasi, palautusavaintasi tai tiedostojasi ei lähetetä minnekään. Apissa ei ole tilejä, analytiikkaa eikä seurantaa. Ainoa asia, jonka Unbit hakee internetistä, on päivittäinen päivitystarkistus.",
+    "text": "Salauksen purku tapahtuu kokonaan Macillasi. Salasanaasi, palautusavaintasi tai tiedostojasi ei lähetetä minnekään. Apissa ei ole tilejä, analytiikkaa eikä seurantaa. Ainoa asia, jonka Unbit hakee internetistä, on päivittäinen päivitystarkistus. Verkkosivusto (ei sovellus) laskee käynnit ja latauspainikkeiden napsautukset anonyymisti ja ilman evästeitä.",
     "ticks": ["Purettu data pysyy Macillasi", "Tallennetut koodit ovat vain avainnipussasi", "Ei tilejä, analytiikkaa tai seurantaa apissa"],
     "panelLine1": "Pysyy",
     "panelLine2": "Macillasi"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Lataa macOS:lle" },
   "footer": {
-    "siteNote": "Tämä verkkosivusto käyttää tietosuojaystävällistä, evästeetöntä analytiikkaa.",
+    "siteNote": "Tämä verkkosivusto (ei sovellus) käyttää anonyymia kävijätilastointia ilman evästeitä. Itse sovelluksessa ei ole telemetriaa.",
     "product": "Tuote",
     "resources": "Resurssit",
     "releaseNotes": "Julkaisutiedot",

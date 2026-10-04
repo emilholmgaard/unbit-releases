@@ -9,6 +9,7 @@ import { featuresPath } from "@/lib/features";
 import { helpPath } from "@/lib/help";
 import { LAWYERS_CONTENT } from "@/lib/lawyers-content";
 import { hasLawyersPage, lawyersPath } from "@/lib/lawyers";
+import DownloadLink from "@/components/DownloadLink";
 
 const RELEASES = "https://github.com/emilholmgaard/unbit-releases/releases";
 
@@ -25,8 +26,8 @@ export function SiteHeader({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={`/${locale}#faq`}>{t.nav.faq}</a>
         </nav>
         <LanguageSwitcher locale={locale} label={t.language.label} />
-        <a className="pill dark small hide-sm" href={RELEASES}>{t.nav.releases}</a>
-        <a className="pill white small" href={DOWNLOAD_URL}>{t.nav.download}</a>
+        <DownloadLink locale={locale} place="header" kind="releases" className="pill dark small hide-sm" href={RELEASES}>{t.nav.releases}</DownloadLink>
+        <DownloadLink locale={locale} place="header" className="pill white small" href={DOWNLOAD_URL}>{t.nav.download}</DownloadLink>
       </div>
     </header>
   );
@@ -44,7 +45,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
       <div className="foot-cols">
         <div>
           <h2>{t.footer.product}</h2>
-          <a href={DOWNLOAD_URL}>{t.nav.download}</a>
+          <DownloadLink locale={locale} place="footer" href={DOWNLOAD_URL}>{t.nav.download}</DownloadLink>
           <a href={`/${locale}#how`}>{t.nav.how}</a>
           <a href={`/${locale}#features`}>{t.nav.features}</a>
           <a href={featuresPath(locale)}>{t.features.more.seeAll}</a>
@@ -58,7 +59,7 @@ export function SiteFooter({ locale, t }: { locale: Locale; t: Dictionary }) {
           <a href={bestPath(locale)}>{t.guides.bestTitle}</a>
           <a href={alternativesPath(locale)}>{t.footer.alternatives}</a>
           {hasLawyersPage(locale) && <a href={lawyersPath(locale)}>{LAWYERS_CONTENT[locale].footerLabel}</a>}
-          <a href={`${RELEASES}`}>{t.footer.releaseNotes}</a>
+          <DownloadLink locale={locale} place="footer" kind="releases" href={`${RELEASES}`}>{t.footer.releaseNotes}</DownloadLink>
           <a href="https://github.com/emilholmgaard/unbit-releases">{t.footer.github}</a>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { DOWNLOAD_URL, SITE_NAME, SITE_URL, latestRelease } from "@/lib/site";
 import { getDictionary, hasLocale } from "../dictionaries";
 import { getGuideContent } from "../guide/content";
 import { getBestContent } from "./content";
+import DownloadLink from "@/components/DownloadLink";
 
 export const revalidate = 600;
 
@@ -203,7 +204,7 @@ export default async function BestBitLockerForMac() {
                   {p.slug ? (
                     <p><a href={alternativesPath(locale, p.slug)}>{b.products.compare.replace("{name}", p.name)} <span aria-hidden="true">→</span></a></p>
                   ) : (
-                    <p><a href={DOWNLOAD_URL}>{t.nav.download}</a> · <a href={guidePath(locale, GUIDES[0].slug)}>{g.articles.open.h1}</a></p>
+                    <p><DownloadLink locale={locale} place="content" href={DOWNLOAD_URL}>{t.nav.download}</DownloadLink> · <a href={guidePath(locale, GUIDES[0].slug)}>{g.articles.open.h1}</a></p>
                   )}
                 </div>
               );
@@ -247,7 +248,7 @@ export default async function BestBitLockerForMac() {
           <h2>{g.ui.ctaTitle}</h2>
           <p>{g.ui.ctaText}</p>
           <div className="actions">
-            <a className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</a>
+            <DownloadLink locale={locale} place="cta" className="pill white" href={DOWNLOAD_URL}>{t.cta.download}</DownloadLink>
             <a className="pill dark" href={alternativesPath(locale)}>{t.footer.alternatives}</a>
           </div>
         </section>

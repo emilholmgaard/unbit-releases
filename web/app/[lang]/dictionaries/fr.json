@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Votre disque ne quitte jamais votre Mac",
-    "text": "Le déchiffrement se fait entièrement sur votre Mac. Votre mot de passe, votre clé de récupération et vos fichiers ne sont jamais envoyés où que ce soit. L’app n’a ni compte, ni outil d’analyse, ni suivi. La seule chose qu’Unbit récupère sur internet est sa vérification quotidienne des mises à jour.",
+    "text": "Le déchiffrement se fait entièrement sur votre Mac. Votre mot de passe, votre clé de récupération et vos fichiers ne sont jamais envoyés où que ce soit. L’app n’a ni compte, ni outil d’analyse, ni suivi. La seule chose qu’Unbit récupère sur internet est sa vérification quotidienne des mises à jour. Ce site web (pas l’app) compte les visites et les clics sur les boutons de téléchargement de façon anonyme et sans cookies.",
     "ticks": ["Les données déchiffrées restent sur votre Mac", "Les codes enregistrés ne vivent que dans votre trousseau", "Ni compte, ni analyse, ni suivi dans l’app"],
     "panelLine1": "Reste sur",
     "panelLine2": "votre Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Télécharger pour macOS" },
   "footer": {
-    "siteNote": "Ce site utilise des statistiques respectueuses de la vie privée, sans cookies.",
+    "siteNote": "Ce site web (pas l’app) utilise des statistiques de visite anonymes, sans cookies. L’app elle-même n’a aucune télémétrie.",
     "product": "Produit",
     "resources": "Ressources",
     "releaseNotes": "Notes de version",

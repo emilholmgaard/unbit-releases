@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Je schijf verlaat je Mac nooit",
-    "text": "Het ontsleutelen gebeurt volledig op je Mac. Je wachtwoord, herstelsleutel en bestanden worden nergens naartoe gestuurd. De app heeft geen accounts, analyses of tracking. Het enige wat Unbit van internet haalt, is de dagelijkse controle op updates.",
+    "text": "Het ontsleutelen gebeurt volledig op je Mac. Je wachtwoord, herstelsleutel en bestanden worden nergens naartoe gestuurd. De app heeft geen accounts, analyses of tracking. Het enige wat Unbit van internet haalt, is de dagelijkse controle op updates. De website (niet de app) telt bezoeken en klikken op de downloadknoppen anoniem en zonder cookies.",
     "ticks": ["Ontsleutelde gegevens blijven op je Mac", "Opgeslagen codes staan alleen in je sleutelhanger", "Geen accounts, analyses of tracking in de app"],
     "panelLine1": "Blijft op",
     "panelLine2": "je Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Download voor macOS" },
   "footer": {
-    "siteNote": "Deze website gebruikt privacyvriendelijke analyses zonder cookies.",
+    "siteNote": "Deze website (niet de app) gebruikt anonieme bezoekstatistieken zonder cookies. De app zelf heeft geen telemetrie.",
     "product": "Product",
     "resources": "Bronnen",
     "releaseNotes": "Release-opmerkingen",

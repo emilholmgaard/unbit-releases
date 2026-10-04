@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Stasjonen din forlater aldri Macen din",
-    "text": "Dekrypteringen skjer helt og holdent på Macen din. Passordet, gjenopprettingsnøkkelen og filene dine sendes aldri noe sted. Appen har ingen kontoer, analyse eller sporing. Det eneste Unbit henter fra internett, er den daglige sjekken etter oppdateringer.",
+    "text": "Dekrypteringen skjer helt og holdent på Macen din. Passordet, gjenopprettingsnøkkelen og filene dine sendes aldri noe sted. Appen har ingen kontoer, analyse eller sporing. Det eneste Unbit henter fra internett, er den daglige sjekken etter oppdateringer. Nettstedet (ikke appen) teller besøk og klikk på nedlastingsknappene anonymt og uten informasjonskapsler.",
     "ticks": ["Dekrypterte data blir på Macen din", "Lagrede koder ligger bare i nøkkelringen din", "Ingen kontoer, analyse eller sporing i appen"],
     "panelLine1": "Blir på",
     "panelLine2": "Macen din"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Last ned for macOS" },
   "footer": {
-    "siteNote": "Dette nettstedet bruker personvernvennlig analyse uten informasjonskapsler.",
+    "siteNote": "Dette nettstedet (ikke appen) bruker anonym besøksstatistikk uten informasjonskapsler. Selve appen har ingen telemetri.",
     "product": "Produkt",
     "resources": "Ressurser",
     "releaseNotes": "Utgivelsesnotater",

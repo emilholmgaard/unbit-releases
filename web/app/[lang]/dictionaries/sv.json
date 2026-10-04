@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Din enhet lämnar aldrig din Mac",
-    "text": "Dekrypteringen sker helt och hållet på din Mac. Ditt lösenord, din återställningsnyckel och dina filer skickas aldrig någonstans. Appen har inga konton, ingen analys och ingen spårning. Det enda Unbit hämtar från internet är den dagliga kontrollen efter uppdateringar.",
+    "text": "Dekrypteringen sker helt och hållet på din Mac. Ditt lösenord, din återställningsnyckel och dina filer skickas aldrig någonstans. Appen har inga konton, ingen analys och ingen spårning. Det enda Unbit hämtar från internet är den dagliga kontrollen efter uppdateringar. Webbplatsen (inte appen) räknar besök och klick på nedladdningsknapparna anonymt och utan cookies.",
     "ticks": ["Dekrypterad data stannar på din Mac", "Sparade koder finns bara i din nyckelring", "Inga konton, ingen analys eller spårning i appen"],
     "panelLine1": "Stannar på",
     "panelLine2": "din Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Ladda ner för macOS" },
   "footer": {
-    "siteNote": "Den här webbplatsen använder integritetsvänlig analys utan cookies.",
+    "siteNote": "Den här webbplatsen (inte appen) använder anonym besöksstatistik utan cookies. Själva appen har ingen telemetri.",
     "product": "Produkt",
     "resources": "Resurser",
     "releaseNotes": "Versionsanteckningar",

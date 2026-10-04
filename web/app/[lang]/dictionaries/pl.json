@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Twój dysk nigdy nie opuszcza Twojego Maca",
-    "text": "Odszyfrowywanie odbywa się w całości na Twoim Macu. Twoje hasło, klucz odzyskiwania i pliki nigdy nie są nigdzie wysyłane. Aplikacja nie ma kont, analityki ani śledzenia. Jedyne, co Unbit pobiera z internetu, to codzienne sprawdzanie aktualizacji.",
+    "text": "Odszyfrowywanie odbywa się w całości na Twoim Macu. Twoje hasło, klucz odzyskiwania i pliki nigdy nie są nigdzie wysyłane. Aplikacja nie ma kont, analityki ani śledzenia. Jedyne, co Unbit pobiera z internetu, to codzienne sprawdzanie aktualizacji. Strona (nie aplikacja) zlicza odwiedziny i kliknięcia przycisków pobierania anonimowo i bez plików cookie.",
     "ticks": ["Odszyfrowane dane zostają na Twoim Macu", "Zapisane kody są tylko w Twoim pęku kluczy", "Bez kont, analityki i śledzenia w aplikacji"],
     "panelLine1": "Zostaje na",
     "panelLine2": "Twoim Macu"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Pobierz dla macOS" },
   "footer": {
-    "siteNote": "Ta strona korzysta z analityki przyjaznej prywatności, bez plików cookie.",
+    "siteNote": "Ta strona (nie aplikacja) korzysta z anonimowych statystyk odwiedzin bez plików cookie. Sama aplikacja nie ma telemetrii.",
     "product": "Produkt",
     "resources": "Zasoby",
     "releaseNotes": "Informacje o wydaniach",

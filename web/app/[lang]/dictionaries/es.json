@@ -130,7 +130,7 @@
   },
   "privacy": {
     "title": "Tu unidad nunca sale de tu Mac",
-    "text": "El descifrado se realiza por completo en tu Mac. Tu contraseña, tu clave de recuperación y tus archivos nunca se envían a ningún sitio. La app no tiene cuentas, analíticas ni seguimiento. Lo único que Unbit descarga de internet es su comprobación diaria de actualizaciones.",
+    "text": "El descifrado se realiza por completo en tu Mac. Tu contraseña, tu clave de recuperación y tus archivos nunca se envían a ningún sitio. La app no tiene cuentas, analíticas ni seguimiento. Lo único que Unbit descarga de internet es su comprobación diaria de actualizaciones. Este sitio web (no la app) cuenta las visitas y los clics en los botones de descarga de forma anónima y sin cookies.",
     "ticks": ["Los datos descifrados se quedan en tu Mac", "Los códigos guardados solo están en tu llavero", "Sin cuentas, analíticas ni seguimiento en la app"],
     "panelLine1": "Se queda en",
     "panelLine2": "tu Mac"
@@ -176,7 +176,7 @@
   },
   "cta": { "download": "Descargar para macOS" },
   "footer": {
-    "siteNote": "Este sitio web usa analíticas respetuosas con la privacidad y sin cookies.",
+    "siteNote": "Este sitio web (no la app) usa estadísticas de visitas anónimas sin cookies. La app en sí no tiene telemetría.",
     "product": "Producto",
     "resources": "Recursos",
     "releaseNotes": "Notas de la versión",

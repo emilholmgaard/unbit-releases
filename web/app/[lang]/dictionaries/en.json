@@ -146,7 +146,7 @@
   },
   "privacy": {
     "title": "Your drive never leaves your Mac",
-    "text": "Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere. The app has no accounts, analytics or tracking. The only thing Unbit fetches from the internet is its daily update check.",
+    "text": "Decryption happens entirely on your Mac. Your password, recovery key and files are never sent anywhere. The app has no accounts, analytics or tracking. The only thing Unbit fetches from the internet is its daily update check. This website (not the app) counts visits and clicks on the download buttons anonymously, without cookies.",
     "ticks": [
       "Decrypted data stays on your Mac",
       "Saved codes live only in your keychain",
@@ -196,7 +196,7 @@
   },
   "cta": { "download": "Download for macOS" },
   "footer": {
-    "siteNote": "This website uses privacy-friendly, cookieless analytics.",
+    "siteNote": "This website (not the app) uses anonymous visit statistics without cookies. The app itself has no telemetry.",
     "product": "Product",
     "resources": "Resources",
     "releaseNotes": "Release notes",
